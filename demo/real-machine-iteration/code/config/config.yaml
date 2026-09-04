@@ -1,0 +1,51 @@
+# Submission launcher defaults.
+# The evaluator-facing profile is fixed to one recommendation per round for
+# forty rounds. Override API credentials through environment variables only.
+
+runtime:
+  dataset_root: "data"
+  output_root: "results/project"
+  logs_root: "logs"
+  agentic_config: "code/main/configs/agent_bo_suzuki.yaml"
+  controller_mode: "qizhen_scientist"
+  bayesian_method: "atlas"
+  batch_size: 1
+  rounds: 40
+  seeds: [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000,
+          1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000]
+  shortlist_size: 12
+  # `qizhen_scientist` always runs with a knowledge prior; this is where it comes
+  # from. The bundled curated card set ships with the repository. For a formal
+  # run on retrieved literature, point this at the frozen bundle produced by
+  # code/scripts/prepare_sciatlas_evidence.py -- those cards additionally have to
+  # pass the review + checksum gate before the run starts.
+  evidence_paths:
+    suzuki: "data/evidence_cards/suzuki_evidence_cards.jsonl"
+
+  # Where observed yields come from. `device` is the LabVLA interface: the
+  # SkillNet protocol is submitted to a LabVLA-driven executor over HTTP and the
+  # measured yield comes back. The bundled result table is the substitute used
+  # when no instrument is available.
+  #   device       - require the instrument; fail rather than substitute
+  #   auto         - probe once, substitute the table if the instrument is down
+  #   table_lookup - always replay the bundled table
+  # Defaults to table_lookup: assume no instrument is attached.
+  execution:
+    backend: table_lookup
+    device:
+      base_url: ""              # e.g. http://127.0.0.1:8900
+      submit_path: "/tasks"
+      status_path: "/tasks/{task_id}"
+      health_path: "/health"
+      poll_interval_sec: 30
+      timeout_sec: 7200
+      request_timeout_sec: 60
+      max_retries: 3
+      objective_key: "yield"
+
+api:
+  # Provider-neutral env names; the Anthropic ones still work as fallbacks.
+  model_env: "LLM_MODEL"
+  token_env: "LLM_API_KEY"
+  base_url_env: "LLM_BASE_URL"
+  provider_env: "LLM_PROVIDER"

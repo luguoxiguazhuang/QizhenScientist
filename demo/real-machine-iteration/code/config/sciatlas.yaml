@@ -1,0 +1,31 @@
+# Frozen-literature retrieval profile for the qizhen_scientist knowledge prior.
+# SciAtlas is called only by prepare_sciatlas_evidence.py, never inside an
+# optimization round. This keeps all seeds reproducible and auditable.
+
+tasks:
+  suzuki:
+    reaction_scope: "suzuki-miyaura cross-coupling"
+    query: >-
+      Transferable ligand, base, solvent, electrophile and organoboron effects
+      in Suzuki-Miyaura cross-coupling, including failure modes and substrate
+      scope. Exclude benchmark result tables and candidate-level yields.
+    variables: [Electrophile, Nucleophile, Ligand, Base, Solvent]
+    keywords:
+      - "Suzuki-Miyaura cross-coupling ligand base solvent"
+      - "Suzuki coupling substrate scope failure mechanism"
+      - "organoboron aryl halide palladium ligand"
+    target_nodes:
+      - stagnation_diagnosis
+      - hypothesis_action
+      - semantic_assessment
+      - verification_pass
+      - reflection_action
+      - shortlist_rerank
+    # Extend this list when a retrieved source is found to publish the exact
+    # benchmark table used by this submission.
+    blocked_title_patterns:
+      - "benchmark oracle"
+      - "candidate lookup"
+    top_k: 12
+    retrieval_mode: hybrid
+
