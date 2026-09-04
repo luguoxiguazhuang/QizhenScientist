@@ -12,6 +12,17 @@ import docsMarkdown from './docs/vite-plugin-docs.js'
 const IDEA_SCRIPT_ROOT = resolve(__dirname, '../../idea_generation_scripts')
 const FRONTEND_ENV_FILE = resolve(__dirname, '../.env')
 const IDEA_JOBS = new Map()
+const STEP_ARTIFACTS = [
+  'step1_seed_papers.json',
+  'step2_research_graph.json',
+  'step3_trend.txt',
+  'step4_rss.json',
+  'step5_radius_plan.json',
+  'step6_inspiration_candidates.json',
+  'step7_inspirations.json',
+  'step8_selected_inspirations.json',
+  'step9_ideas.md',
+]
 
 async function readIdeaBaseEnv() {
   try {
@@ -29,6 +40,31 @@ function replaceEnvValue(source, key, value) {
   const line = `${key}=${shellValue}`
   const pattern = new RegExp(`^${key}=.*$`, 'm')
   return pattern.test(source) ? source.replace(pattern, () => line) : `${source.trimEnd()}\n${line}\n`
+}
+
+async function latestRunDirectory(runsDir) {
+  const entries = await readdir(runsDir, { withFileTypes: true })
+  const candidates = entries.filter((entry) => entry.isDirectory()).sort((a, b) => b.name.localeCompare(a.name))
+  return candidates[0] ? resolve(runsDir, candidates[0].name) : null
+}
+
+async function updateJobProgress(job, runsDir) {
+  try {
+    const outputDir = await latestRunDirectory(runsDir)
+    if (!outputDir) return
+    const files = new Set(await readdir(outputDir))
+    let step = 0
+    for (let index = 0; index < STEP_ARTIFACTS.length; index += 1) {
+      if (!files.has(STEP_ARTIFACTS[index])) break
+      step = index + 1
+    }
+    if (step > job.step) {
+      job.step = step
+      job.public = { ...job.public, step, totalSteps: 9 }
+    }
+  } catch {
+    // The run directory is created asynchronously and removed after completion.
+  }
 }
 
 function ideaGenerationApi() {
@@ -89,6 +125,14 @@ function ideaGenerationApi() {
           // RUNS_DIR; sharing the repository-level runs directory would let
           // concurrent requests pick up one another's newest output.
           const runsDir = resolve(tempDir, 'runs')
+          const updateProgressFromLog = (chunk) => {
+            const matches = [...chunk.toString().matchAll(/step\s*([1-9]\d?)/gi)]
+            const latestStep = matches.at(-1)?.[1]
+            if (latestStep) {
+              job.step = Math.max(job.step, Math.min(Number(latestStep), 9))
+              job.public = { ...job.public, step: job.step, totalSteps: 9 }
+            }
+          }
           const child = spawn('bash', ['run_idea.sh'], {
             cwd: IDEA_SCRIPT_ROOT,
             env: {
@@ -102,24 +146,15 @@ function ideaGenerationApi() {
           })
           let stderr = ''
           let stdout = ''
-          child.stderr.on('data', (chunk) => { stderr += chunk.toString() })
-          child.stdout.on('data', (chunk) => {
-            stdout += chunk.toString()
-            const matches = [...stdout.matchAll(/step\s*([1-9]\d?)/gi)]
-            const latestStep = matches.at(-1)?.[1]
-            if (latestStep) {
-              job.step = Math.min(Number(latestStep), 9)
-              job.public = { ...job.public, step: job.step, totalSteps: 9 }
-            }
-          })
+          child.stderr.on('data', (chunk) => { stderr += chunk.toString(); updateProgressFromLog(chunk) })
+          child.stdout.on('data', (chunk) => { stdout += chunk.toString(); updateProgressFromLog(chunk) })
+          const progressTimer = setInterval(() => updateJobProgress(job, runsDir), 2000)
           child.on('close', async (code) => {
+            clearInterval(progressTimer)
             try {
               if (code !== 0) throw new Error(stderr.trim() || `生成脚本退出码 ${code}`)
-              const entries = await readdir(runsDir, { withFileTypes: true })
-              const candidates = entries.filter((entry) => entry.isDirectory()).sort((a, b) => b.name.localeCompare(a.name))
-              const latest = candidates[0]
-              if (!latest) throw new Error('脚本未生成输出目录')
-              const outputDir = resolve(runsDir, latest.name)
+              const outputDir = await latestRunDirectory(runsDir)
+              if (!outputDir) throw new Error('脚本未生成输出目录')
               const result = await readFile(resolve(outputDir, 'step9_ideas.md'), 'utf8').catch(() => '')
               job.status = 'completed'
               job.step = 9
