@@ -10,7 +10,7 @@
  * when the Pages workflow switched to passing `--base` from
  * actions/configure-pages, whose `base_path` output has no trailing slash —
  * and every one of those five produced a glued-together path like
- * `/mechanist_frontendmechanist-logo.png`, which 404s. The logo and the docs
+ * `/frontendmechanist-logo.png`, which 404s. The logo and the docs
  * page disappeared from the deployed site.
  *
  * The workflow now appends the slash, but that fix lives in a file nobody
