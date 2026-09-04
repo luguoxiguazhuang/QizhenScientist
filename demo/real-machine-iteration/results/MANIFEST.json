@@ -1,0 +1,775 @@
+{
+ "description": "Suzuki-Miyaura condition-optimization run artifacts.",
+ "controller_modes": [
+  "qizhen_scientist",
+  "atlas_baseline"
+ ],
+ "file_count": 89,
+ "files": [
+  {
+   "path": "appendix/data/manifest.json",
+   "sha256": "55970ad771f784eb94271bad88d5c44f8db6fcb51dbb0f17b33a4d88da741e74",
+   "bytes": 2268
+  },
+  {
+   "path": "appendix/data/suzuki_evidence_cards_full.jsonl",
+   "sha256": "d0b1e924b0217766851ba07dd24e8e2d34ec80ef5664bf0403b62430e30809b8",
+   "bytes": 102593
+  },
+  {
+   "path": "appendix/data/suzuki_evidence_cards_index.csv",
+   "sha256": "f63c2e56d8cd2a0d91d7e31cd88100fd077817f1f6d5bfefc89ec52783474d1d",
+   "bytes": 39189
+  },
+  {
+   "path": "appendix/data/suzuki_initial_29_experiments.csv",
+   "sha256": "7ac7c674daf0397f89313ea2063759ad0d3b6cadf457846dfc67172510236be8",
+   "bytes": 5024
+  },
+  {
+   "path": "appendix/data/suzuki_round08_candidate_shortlist.csv",
+   "sha256": "db516aaec5d64aff8b6cfcd444ed8a3642c2c09308bd5d383dc3080b59388c91",
+   "bytes": 3628
+  },
+  {
+   "path": "appendix/data/suzuki_seed1500_baseline_first20_full.json",
+   "sha256": "2c14bcc13aa795b5315a3de35e406d78e19909176a5bedf58efe1dea5ef76131",
+   "bytes": 220295
+  },
+  {
+   "path": "appendix/data/suzuki_seed1500_first20_trajectories.csv",
+   "sha256": "6fdc31c9a849c50c703bddcaa23d4e90d151a9ccc60720fec31e21aa27442a27",
+   "bytes": 10065
+  },
+  {
+   "path": "appendix/data/suzuki_seed1500_qizhen_first20_full.json",
+   "sha256": "3a5729d7117828df8732047bceadb74a5e00ab371bb60d115ab8dafc826c4c81",
+   "bytes": 1388862
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/atlas/seed_100/seed_100.pt",
+   "sha256": "56cae1bbf6c3f189dca4f71764a549b0714d95fa6d7e4ccbae6136fef3da9ceb",
+   "bytes": 183987,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "atlas",
+   "seed": 100
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/atlas/seed_1000/seed_1000.pt",
+   "sha256": "2987fda833ab9ab63ddabfb755aaca027af36904520e9f177f9762526e9b40dc",
+   "bytes": 184377,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "atlas",
+   "seed": 1000
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/atlas/seed_1100/seed_1100.pt",
+   "sha256": "4a67d61dd60697cf2d4543467eb11dd980d75ebbd11360fe2c1ffaf0541f3b62",
+   "bytes": 183865,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "atlas",
+   "seed": 1100
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/atlas/seed_1200/seed_1200.pt",
+   "sha256": "1bd05d97acc7dc0adf595018199d02dd50826bf432f4b2c85413c0a166a34b8e",
+   "bytes": 183161,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "atlas",
+   "seed": 1200
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/atlas/seed_1300/seed_1300.pt",
+   "sha256": "673047b9e169025f9ec0109b7fdb3863d982b0e74b177afc878de47cf665568c",
+   "bytes": 183417,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "atlas",
+   "seed": 1300
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/atlas/seed_1400/seed_1400.pt",
+   "sha256": "15cf4da3e1ae4f31d7a6423879207bfea7e745e161fbb9d9a3fa632878b4bd6c",
+   "bytes": 183929,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "atlas",
+   "seed": 1400
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/atlas/seed_1500/seed_1500.pt",
+   "sha256": "808b23299d5707a62dd6e044c060c6dfcb76ec9eb90c95888511f22d7e5346e6",
+   "bytes": 182713,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "atlas",
+   "seed": 1500
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/atlas/seed_1600/seed_1600.pt",
+   "sha256": "a28113d8f132c39aed1a886c170f55c2b608027485f413ed970f937e6d0e0d9f",
+   "bytes": 183865,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "atlas",
+   "seed": 1600
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/atlas/seed_1700/seed_1700.pt",
+   "sha256": "fe07c6b25a3f5c85dbf47ddfc66cad4b191ac8015fd27e819d93ee44f55ccd9b",
+   "bytes": 182649,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "atlas",
+   "seed": 1700
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/atlas/seed_1800/seed_1800.pt",
+   "sha256": "ccc379112af69c235d0dddcd5ba1c3b8954d0e3a3c6f37f0a6ac5fe0f2fb4ab3",
+   "bytes": 184441,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "atlas",
+   "seed": 1800
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/atlas/seed_1900/seed_1900.pt",
+   "sha256": "8ab83cd421a046ca3962e92755cbec878b46e03649d0e7c3f130a52641ecf0e9",
+   "bytes": 185337,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "atlas",
+   "seed": 1900
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/atlas/seed_200/seed_200.pt",
+   "sha256": "4dd52d4fabbc0a207105eabcd260426ef92ae3a40e9ce7eae97ba092bdbc2711",
+   "bytes": 183091,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "atlas",
+   "seed": 200
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/atlas/seed_2000/seed_2000.pt",
+   "sha256": "bc7d52c25949b1038e85d403ab1e553f81b8d6449a17fca856746b8ee877fb36",
+   "bytes": 182393,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "atlas",
+   "seed": 2000
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/atlas/seed_300/seed_300.pt",
+   "sha256": "2ef881d2b816ba5a3f78e805d8ceec4ee797c955820ffef1eb991953aadf4326",
+   "bytes": 183155,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "atlas",
+   "seed": 300
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/atlas/seed_400/seed_400.pt",
+   "sha256": "ed51cd581987b7e1fb868a6228b447cf9ead93ed4ab950cef1d6edbc77417670",
+   "bytes": 184499,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "atlas",
+   "seed": 400
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/atlas/seed_500/seed_500.pt",
+   "sha256": "5087c579a6db955a58f80aa30e45ead260e35cb16d26412684ff38963376ec23",
+   "bytes": 183987,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "atlas",
+   "seed": 500
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/atlas/seed_600/seed_600.pt",
+   "sha256": "c286e495896ad323cebd22dc86cded3340098046c939c5626637afdb73df96d8",
+   "bytes": 184115,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "atlas",
+   "seed": 600
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/atlas/seed_700/seed_700.pt",
+   "sha256": "cba2947e827a1bca7ff4785bcbacc85831b7049854bc66fb650af22c2b1986f4",
+   "bytes": 186739,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "atlas",
+   "seed": 700
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/atlas/seed_800/seed_800.pt",
+   "sha256": "d9b5653826f5b07568785acc10dce63edfbf78e9603fd59f82d71e1cbc639c64",
+   "bytes": 184371,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "atlas",
+   "seed": 800
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/atlas/seed_900/seed_900.pt",
+   "sha256": "4678f130ccb67d6214a945f67a5450e556a5248aada5077876b6f65632cbe0d6",
+   "bytes": 183475,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "atlas",
+   "seed": 900
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/botorch_qei/seed_100/seed_100.pt",
+   "sha256": "ff5406373709bf9e94c8a7fddf253321384c9982db5cfc6be6c8694cfd8c10fa",
+   "bytes": 93491,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "botorch_qei",
+   "seed": 100
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/botorch_qei/seed_1000/seed_1000.pt",
+   "sha256": "5d3e60da160d609b880ddb53ac9891cab8f52530ca3b5e30b1e1e7330c66f512",
+   "bytes": 93561,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "botorch_qei",
+   "seed": 1000
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/botorch_qei/seed_1100/seed_1100.pt",
+   "sha256": "dd8db9bf2b26c1c9b21ebecf0ea1b6bcaad01c78dfe44fa0407d78061e1457a7",
+   "bytes": 93241,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "botorch_qei",
+   "seed": 1100
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/botorch_qei/seed_1200/seed_1200.pt",
+   "sha256": "b9545d2814b640ca589cc6130c6a242228dc1ed4b31a71123826b7932eaaa282",
+   "bytes": 93497,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "botorch_qei",
+   "seed": 1200
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/botorch_qei/seed_1300/seed_1300.pt",
+   "sha256": "fedb1964361648ff256a09bb2357e23e10eea712fbe49a8568d5627960134d3a",
+   "bytes": 93561,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "botorch_qei",
+   "seed": 1300
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/botorch_qei/seed_1400/seed_1400.pt",
+   "sha256": "4803cbababaa6511729ebd156ab6826c9a3b235e729aaf2057837998b5a6aece",
+   "bytes": 93497,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "botorch_qei",
+   "seed": 1400
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/botorch_qei/seed_1500/seed_1500.pt",
+   "sha256": "c10281b87aaeefb3f16a1cc8e6c41b44c5135bd053d39fe66a98a65df17f9738",
+   "bytes": 93881,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "botorch_qei",
+   "seed": 1500
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/botorch_qei/seed_1600/seed_1600.pt",
+   "sha256": "14fc5734ab9ef118e9edf4e191dcff464f080521004d09da06aea2926110c22f",
+   "bytes": 93497,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "botorch_qei",
+   "seed": 1600
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/botorch_qei/seed_1700/seed_1700.pt",
+   "sha256": "87099c35786144a2f819cde834d232cfeedfc6c7d4f63dc2ee0ff1704ed5c9e5",
+   "bytes": 93881,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "botorch_qei",
+   "seed": 1700
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/botorch_qei/seed_1800/seed_1800.pt",
+   "sha256": "2e5c6cbfc31fcfb9574d999d7cf51b90d9db47afc8c079857e7c5378ba2f8ffa",
+   "bytes": 93433,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "botorch_qei",
+   "seed": 1800
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/botorch_qei/seed_1900/seed_1900.pt",
+   "sha256": "840defa8dacd74b27f67ca8a7c3ac5c49f48a16ee6c9a199d793d40bd4ede37e",
+   "bytes": 93497,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "botorch_qei",
+   "seed": 1900
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/botorch_qei/seed_200/seed_200.pt",
+   "sha256": "d53b2a2299a7fa4ec9eb2b21270c4520f3a124b81afba09f8069004dfcbda6cf",
+   "bytes": 93171,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "botorch_qei",
+   "seed": 200
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/botorch_qei/seed_2000/seed_2000.pt",
+   "sha256": "80b94f892671d43c855d6d9a6071eacf67ec83382619a5a627e1b7eefd212cbe",
+   "bytes": 93433,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "botorch_qei",
+   "seed": 2000
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/botorch_qei/seed_300/seed_300.pt",
+   "sha256": "456d88a8bd92e70c1e7b56121d23c3b55437ea61ce34ed95f4c25964325ee7bf",
+   "bytes": 93491,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "botorch_qei",
+   "seed": 300
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/botorch_qei/seed_400/seed_400.pt",
+   "sha256": "ed2e3dd0dda93604fe3db8347a55439353b3f6a605cfc703bef0ea6194fabff9",
+   "bytes": 93491,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "botorch_qei",
+   "seed": 400
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/botorch_qei/seed_500/seed_500.pt",
+   "sha256": "61f09358b29401f977fcf576bf8b694a8a860a01e8069bfe69f0311b964ca080",
+   "bytes": 93555,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "botorch_qei",
+   "seed": 500
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/botorch_qei/seed_600/seed_600.pt",
+   "sha256": "c394f7ecd624949ff666262a7a8961b909a94b6e2a565a3c2def382d8e760a46",
+   "bytes": 93555,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "botorch_qei",
+   "seed": 600
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/botorch_qei/seed_700/seed_700.pt",
+   "sha256": "42d6ce3869e82864de2169881739c7c84df00e60796e32139241ae20a47fd612",
+   "bytes": 93363,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "botorch_qei",
+   "seed": 700
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/botorch_qei/seed_800/seed_800.pt",
+   "sha256": "c9ae9695a10dd176d470b3833763bac771a5aee3014c45e090ff7c07248d493d",
+   "bytes": 93555,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "botorch_qei",
+   "seed": 800
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/atlas_baseline/botorch_qei/seed_900/seed_900.pt",
+   "sha256": "190fcd88e5014c3411f3f75e7b63a6b07bb3fc76de15fd7660f7bf5b676618d6",
+   "bytes": 93555,
+   "dataset": "Suzuki",
+   "controller_mode": "atlas_baseline",
+   "planner": "botorch_qei",
+   "seed": 900
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/atlas/seed_100/seed_100.pt",
+   "sha256": "27e99b549a6eb5485f2dc8c3d17bfef6661ef5c0ee7bb618476c9d21a9200979",
+   "bytes": 1155379,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "atlas",
+   "seed": 100
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/atlas/seed_1000/seed_1000.pt",
+   "sha256": "38f750e3ae93ef4b26d872a79ecfc6a272d91d53ed8869a6ff85e9c0a4a1f27f",
+   "bytes": 1193401,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "atlas",
+   "seed": 1000
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/atlas/seed_1100/seed_1100.pt",
+   "sha256": "a2c860f6c4889ff1cad91fd860b7c463186948a330e79ac816e8495d0420f805",
+   "bytes": 1135033,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "atlas",
+   "seed": 1100
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/atlas/seed_1200/seed_1200.pt",
+   "sha256": "45d86abab907f5a4384fed67e376a983533d8bb3671127a8ec127e997d51b902",
+   "bytes": 1163833,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "atlas",
+   "seed": 1200
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/atlas/seed_1300/seed_1300.pt",
+   "sha256": "5d4449d97336a15db6a89204354e96a268a571069d3445838cbe9f578b1afbf6",
+   "bytes": 1184313,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "atlas",
+   "seed": 1300
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/atlas/seed_1400/seed_1400.pt",
+   "sha256": "562a0f7dc1353216d2b6d2eda2b6e68bd413eca33b9d102de16b7aab00d92efe",
+   "bytes": 1148665,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "atlas",
+   "seed": 1400
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/atlas/seed_1500/seed_1500.pt",
+   "sha256": "88582eab6b8f350e1be66dd5ce72672b8af6a016f9f212e1bb7dab9f9d043ed0",
+   "bytes": 1147513,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "atlas",
+   "seed": 1500
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/atlas/seed_1600/seed_1600.pt",
+   "sha256": "76a1a3dd843f71ebf30d908b9417ba83bad3695a001ff3d6cf01ba8886b89c1b",
+   "bytes": 1176633,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "atlas",
+   "seed": 1600
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/atlas/seed_1700/seed_1700.pt",
+   "sha256": "662e1ddfa71b6b874b4b27182eb307453b16256638a96c49d72f66f98dd24be4",
+   "bytes": 1169081,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "atlas",
+   "seed": 1700
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/atlas/seed_1800/seed_1800.pt",
+   "sha256": "22cea350456bbe3e0e00b66975a0ad0bd11baeeedded151d62708bad3bd76065",
+   "bytes": 1226617,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "atlas",
+   "seed": 1800
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/atlas/seed_1900/seed_1900.pt",
+   "sha256": "b585bf0e88119caa9624f7306305443fe7f2e4d11765da0766afa3c71d700bae",
+   "bytes": 1187321,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "atlas",
+   "seed": 1900
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/atlas/seed_200/seed_200.pt",
+   "sha256": "07d386723ee76b6e6f40b5d69897f957487a1f4bd667da19ba6c9a74e0815f03",
+   "bytes": 1169523,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "atlas",
+   "seed": 200
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/atlas/seed_2000/seed_2000.pt",
+   "sha256": "860141ae4a28d17a7d57f01890c2630fdc2155a5232bf0fdda517567be96b5fd",
+   "bytes": 1118073,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "atlas",
+   "seed": 2000
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/atlas/seed_300/seed_300.pt",
+   "sha256": "afc3797dba18a054487727a64a707466504d16293f6200a079fa7c9e07116ebd",
+   "bytes": 1141107,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "atlas",
+   "seed": 300
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/atlas/seed_400/seed_400.pt",
+   "sha256": "572574abe64d70f4f05ca7fbfb59c3d1b9bb967365223ea2e642fb82572c9a9a",
+   "bytes": 1240115,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "atlas",
+   "seed": 400
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/atlas/seed_500/seed_500.pt",
+   "sha256": "08a551e84af9690ae5a29c5236f520e88dc451d156b0dcd45a2635f63a4b173b",
+   "bytes": 1138291,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "atlas",
+   "seed": 500
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/atlas/seed_600/seed_600.pt",
+   "sha256": "ed7d5d173dcf0c9279d4e12c2c2e30fb0e1aeba4dba766531b8ce4b4ea400e56",
+   "bytes": 1183411,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "atlas",
+   "seed": 600
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/atlas/seed_700/seed_700.pt",
+   "sha256": "94554f3f3803097cae3276725e9e847bdf885d72131b53991f53709be12fd515",
+   "bytes": 1178355,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "atlas",
+   "seed": 700
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/atlas/seed_800/seed_800.pt",
+   "sha256": "07a61392dad66feec91bb939d7c1b5308045725f64de66ffd3e737b9bdf0cbdb",
+   "bytes": 1135283,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "atlas",
+   "seed": 800
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/atlas/seed_900/seed_900.pt",
+   "sha256": "9cc8eb6345d9dc822ab9d7239a447c298d6d326c4d695ebcc6b919d11f3bb9b5",
+   "bytes": 1173555,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "atlas",
+   "seed": 900
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/botorch_qei/seed_100/seed_100.pt",
+   "sha256": "ca041943404a9a6e86d6e9412e741684a7a6b2ff45c10192da1c11af2d22d065",
+   "bytes": 1064883,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "botorch_qei",
+   "seed": 100
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/botorch_qei/seed_1000/seed_1000.pt",
+   "sha256": "d862d4976bcb4e6169b2ef9a9912ce78d89fe546a8c63f8c3771a0d68455ee3d",
+   "bytes": 1041465,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "botorch_qei",
+   "seed": 1000
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/botorch_qei/seed_1100/seed_1100.pt",
+   "sha256": "41c7fc799f3060b5db1c88073367d288e0912eb4fccb50566b0772010d727188",
+   "bytes": 1066105,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "botorch_qei",
+   "seed": 1100
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/botorch_qei/seed_1200/seed_1200.pt",
+   "sha256": "adfa1cc34c68bb5d12d98eaf9b61f5b24ee3b89894fd3f355fb9f45cf5e16723",
+   "bytes": 1066297,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "botorch_qei",
+   "seed": 1200
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/botorch_qei/seed_1300/seed_1300.pt",
+   "sha256": "87edda9e0ede128fe3a431fda46c873408606b215742fc01f73057c7e92b7e51",
+   "bytes": 1032377,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "botorch_qei",
+   "seed": 1300
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/botorch_qei/seed_1400/seed_1400.pt",
+   "sha256": "4c1bade2d9b30eb3664431c7d5a7c5ea4e715fc649223089351a04377fad5f26",
+   "bytes": 1091065,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "botorch_qei",
+   "seed": 1400
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/botorch_qei/seed_1500/seed_1500.pt",
+   "sha256": "cae476fd285c1a7eeaa6f3279510e52dd23c1c7b14971ca7fa3288eaa154fbe5",
+   "bytes": 1059321,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "botorch_qei",
+   "seed": 1500
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/botorch_qei/seed_1600/seed_1600.pt",
+   "sha256": "20d2cfaa31087fe657a7cad9b16a9320b12127f6c32760bdbcb11436b724c033",
+   "bytes": 1025913,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "botorch_qei",
+   "seed": 1600
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/botorch_qei/seed_1700/seed_1700.pt",
+   "sha256": "554352f8d129c5bd0cb7e9aa9190028da041ea7d3261225144b7a4c63d8907d8",
+   "bytes": 1077881,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "botorch_qei",
+   "seed": 1700
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/botorch_qei/seed_1800/seed_1800.pt",
+   "sha256": "da1993726bd7ecd709078794b15bc698f96d8e78c1d01ee1d502d36a3728f30f",
+   "bytes": 1042681,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "botorch_qei",
+   "seed": 1800
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/botorch_qei/seed_1900/seed_1900.pt",
+   "sha256": "e225ff58094a9b6f105761c59c8a62e052365ce7bb121212c0427dbe3dce6d67",
+   "bytes": 1093881,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "botorch_qei",
+   "seed": 1900
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/botorch_qei/seed_200/seed_200.pt",
+   "sha256": "4096d9b34c8ae883de1f63041c4d82c5e3fe059aed41c065bdefc795320d2f7d",
+   "bytes": 1027379,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "botorch_qei",
+   "seed": 200
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/botorch_qei/seed_2000/seed_2000.pt",
+   "sha256": "eef661ac87d7da68541c7874132b50ab672494bc7a445c768082f9e44d0aa684",
+   "bytes": 1055353,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "botorch_qei",
+   "seed": 2000
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/botorch_qei/seed_300/seed_300.pt",
+   "sha256": "b7cc43ce95067132bfcfe2a262e354932b86d2c326f54aba80e2034eb822de41",
+   "bytes": 990515,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "botorch_qei",
+   "seed": 300
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/botorch_qei/seed_400/seed_400.pt",
+   "sha256": "37459df1805b3cc1b5b33d32df87c420b6ee3820be9c896775d8ee404f3d6335",
+   "bytes": 1035187,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "botorch_qei",
+   "seed": 400
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/botorch_qei/seed_500/seed_500.pt",
+   "sha256": "087d4a703cd0dc7b76299958aabafd8d73efeb0bcdf61438ab0f2e56915dfa37",
+   "bytes": 1063795,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "botorch_qei",
+   "seed": 500
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/botorch_qei/seed_600/seed_600.pt",
+   "sha256": "4f01d4cff731906cffed1d07f45707a7ead9db3e48d257a170301768a8d321fa",
+   "bytes": 1067059,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "botorch_qei",
+   "seed": 600
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/botorch_qei/seed_700/seed_700.pt",
+   "sha256": "5c597446a455f4b9bf21ddfdd6fe7d18d10d057704d4e7381163c8043caf939a",
+   "bytes": 1090099,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "botorch_qei",
+   "seed": 700
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/botorch_qei/seed_800/seed_800.pt",
+   "sha256": "a7569c11658db0fcbf757937a7b24f8435ff2ba30a268988343d5e1196e79d23",
+   "bytes": 994611,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "botorch_qei",
+   "seed": 800
+  },
+  {
+   "path": "optimization_trajectories/Suzuki/qizhen_scientist/botorch_qei/seed_900/seed_900.pt",
+   "sha256": "5c30aa790c46467db8152409beb0dc1c0c4d1228bb47216cee3c951e0b32df65",
+   "bytes": 1031731,
+   "dataset": "Suzuki",
+   "controller_mode": "qizhen_scientist",
+   "planner": "botorch_qei",
+   "seed": 900
+  },
+  {
+   "path": "summary_metrics.csv",
+   "sha256": "0dd7452783c070ed43792afa047d176b497a056eb57965ebe8734a05e4af68ef",
+   "bytes": 827
+  }
+ ]
+}

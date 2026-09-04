@@ -1,0 +1,19 @@
+# Copy to the runtime environment used by the evaluator.
+# Never commit real credentials here.
+
+# Alibaba Cloud MaaS (OpenAI-compatible endpoint).
+LLM_PROVIDER=openai
+LLM_API_KEY=
+LLM_BASE_URL=
+LLM_MODEL=qwen3.8-max-0902
+LLM_FALLBACK_MODEL=qwen3.8-max
+# Thinking mode rejects the forced tool_choice that ToolStrategy emits; when
+# enabled the runtime switches to the provider-native structured-output path.
+LLM_ENABLE_THINKING=false
+API_TIMEOUT_MS=3000000
+
+# Required only while preparing a frozen literature prior for qizhen_scientist.
+# The optimization run itself does not call SciAtlas.
+SCIATLAS_API_BASE_URL=http://sciatlas.openkg.cn
+SCIATLAS_API_KEY=
+SCIATLAS_TIMEOUT=900

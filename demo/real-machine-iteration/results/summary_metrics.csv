@@ -1,0 +1,6 @@
+﻿Suzuki
+Method,initial_round_found_best@average,initial_round_found_best@std,initial_round_found_best@95%区间,best_found@average,best_found@std,best_found@95%区间,round_to_95_global_best@average,round_to_95_global_best@std,round_to_95_global_best@95%区间,auc_best_so_far@average,auc_best_so_far@std,auc_best_so_far@95%区间
+atlas_baseline+atlas,71.51,0.00,71.51 ± 0.00,98.69,0.00,98.69 ± 0.00,17.25,3.39,17.25 ± 1.48,91.06,0.98,91.06 ± 0.43
+atlas_baseline+botorch,78.98,8.35,78.98 ± 3.66,93.17,2.65,93.17 ± 1.16,28.40,16.88,28.40 ± 7.40,90.83,3.72,90.83 ± 1.63
+qizhen_scientist+atlas,71.51,0.00,71.51 ± 0.00,98.81,0.37,98.81 ± 0.16,16.25,3.14,16.25 ± 1.38,92.20,1.74,92.20 ± 0.76
+qizhen_scientist+botorch,79.75,8.54,79.75 ± 3.74,94.11,2.36,94.11 ± 1.04,26.05,18.38,26.05 ± 8.06,92.03,3.03,92.03 ± 1.33

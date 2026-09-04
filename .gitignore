@@ -5,8 +5,10 @@ tmp/
 .env
 .env.*
 !.env.example
+**/code/config/environment.qwen
 __pycache__/
 *.py[cod]
+.pytest_cache/
 .runtime/.venv/
 idea_generation_scripts/.runtime/
 node_modules/
@@ -23,3 +25,6 @@ demo/labsafety-strict/runs/
 *.pt
 *.pth
 *.bin
+
+# Archived experiment trajectories are repository data, not model weights
+!demo/real-machine-iteration/results/**/*.pt

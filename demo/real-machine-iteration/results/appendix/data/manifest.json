@@ -1,0 +1,46 @@
+{
+  "appendix_title": "Suzuki反应闭环优化完整问题输出",
+  "report_scope": {
+    "dataset": "Suzuki",
+    "planner": "Atlas",
+    "seed": 1500,
+    "initial_experiments": 29,
+    "candidate_pool_size": 5731,
+    "round_budget": 20,
+    "batch_size": 1,
+    "target_yield_percent": 95.0
+  },
+  "report_metrics": {
+    "scheme": {
+      "round_budget": 20,
+      "target_yield_percent": 95.0,
+      "first_round_at_or_above_target": 11,
+      "maximum_yield_percent": 96.3,
+      "high_yield_new_condition_count": 4,
+      "mean_best_so_far_percent": 86.90299999999999
+    },
+    "baseline": {
+      "round_budget": 20,
+      "target_yield_percent": 95.0,
+      "first_round_at_or_above_target": 16,
+      "maximum_yield_percent": 96.3,
+      "high_yield_new_condition_count": 1,
+      "mean_best_so_far_percent": 85.36699999999999
+    }
+  },
+  "evidence_card_count": 100,
+  "source_files": {
+    "results/optimization_trajectories/Suzuki/qizhen_scientist/atlas/seed_1500/seed_1500.pt": "88582eab6b8f350e1be66dd5ce72672b8af6a016f9f212e1bb7dab9f9d043ed0",
+    "results/optimization_trajectories/Suzuki/atlas_baseline/atlas/seed_1500/seed_1500.pt": "808b23299d5707a62dd6e044c060c6dfcb76ec9eb90c95888511f22d7e5346e6",
+    "data/evidence_cards/suzuki_evidence_cards.jsonl": "d0b1e924b0217766851ba07dd24e8e2d34ec80ef5664bf0403b62430e30809b8"
+  },
+  "exported_artifacts": {
+    "appendix/data/suzuki_initial_29_experiments.csv": "7ac7c674daf0397f89313ea2063759ad0d3b6cadf457846dfc67172510236be8",
+    "appendix/data/suzuki_evidence_cards_full.jsonl": "d0b1e924b0217766851ba07dd24e8e2d34ec80ef5664bf0403b62430e30809b8",
+    "appendix/data/suzuki_evidence_cards_index.csv": "f63c2e56d8cd2a0d91d7e31cd88100fd077817f1f6d5bfefc89ec52783474d1d",
+    "appendix/data/suzuki_seed1500_first20_trajectories.csv": "6fdc31c9a849c50c703bddcaa23d4e90d151a9ccc60720fec31e21aa27442a27",
+    "appendix/data/suzuki_round08_candidate_shortlist.csv": "db516aaec5d64aff8b6cfcd444ed8a3642c2c09308bd5d383dc3080b59388c91",
+    "appendix/data/suzuki_seed1500_qizhen_first20_full.json": "3a5729d7117828df8732047bceadb74a5e00ab371bb60d115ab8dafc826c4c81",
+    "appendix/data/suzuki_seed1500_baseline_first20_full.json": "2c14bcc13aa795b5315a3de35e406d78e19909176a5bedf58efe1dea5ef76131"
+  }
+}

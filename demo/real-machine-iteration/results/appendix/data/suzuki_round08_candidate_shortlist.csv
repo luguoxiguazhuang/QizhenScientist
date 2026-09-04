@@ -1,0 +1,21 @@
+﻿bo_rank,shortlist_source,pool_source,selected,Electrophile,Nucleophile,Ligand,Base,Solvent
+1,planner_shortlist,main_pool,False,6-iodoquinoline,[5-methyl-1-(oxan-2-yl)indazol-4-yl]boronic acid,tricyclohexylphosphane,sodium hydrogen carbonate,methanol
+2,planner_shortlist,main_pool,False,6-iodoquinoline,potassium trifluoro(5-methyl-1-(tetrahydro-2H-pyran-2-yl)-1H-indazol-4-yl)borate,tricyclohexylphosphane,cesium fluoride,methanol
+3,planner_shortlist,main_pool,False,6-iodoquinoline,potassium trifluoro(5-methyl-1-(tetrahydro-2H-pyran-2-yl)-1H-indazol-4-yl)borate,tricyclohexylphosphane,lithium 2-methylpropan-2-olate,methanol
+4,planner_shortlist,main_pool,True,6-iodoquinoline,[5-methyl-1-(oxan-2-yl)indazol-4-yl]boronic acid,"1,1'-Bis(diphenylphosphino)ferrocene",sodium hydrogen carbonate,methanol
+5,planner_shortlist,main_pool,False,6-iodoquinoline,[5-methyl-1-(oxan-2-yl)indazol-4-yl]boronic acid,"1,1'-Bis(diphenylphosphino)ferrocene",Nothing,oxolane
+6,planner_shortlist,main_pool,False,6-iodoquinoline,[5-methyl-1-(oxan-2-yl)indazol-4-yl]boronic acid,tris(2-methylphenyl)phosphane,Nothing,oxolane
+7,planner_shortlist,main_pool,False,6-iodoquinoline,[5-methyl-1-(oxan-2-yl)indazol-4-yl]boronic acid,tris(2-methylphenyl)phosphane,sodium hydrogen carbonate,oxolane
+8,planner_shortlist,main_pool,False,6-iodoquinoline,potassium trifluoro(5-methyl-1-(tetrahydro-2H-pyran-2-yl)-1H-indazol-4-yl)borate,tricyclohexylphosphane,"N,N-diethylethanamine",methanol
+9,planner_shortlist,main_pool,False,6-iodoquinoline,potassium trifluoro(5-methyl-1-(tetrahydro-2H-pyran-2-yl)-1H-indazol-4-yl)borate,tricyclohexylphosphane,Nothing,methanol
+10,planner_shortlist,main_pool,False,6-iodoquinoline,[5-methyl-1-(oxan-2-yl)indazol-4-yl]boronic acid,tricyclohexylphosphane,sodium hydrogen carbonate,oxolane
+11,planner_shortlist,main_pool,False,6-iodoquinoline,potassium trifluoro(5-methyl-1-(tetrahydro-2H-pyran-2-yl)-1H-indazol-4-yl)borate,tricyclohexylphosphane,potassium hydroxide,methanol
+12,planner_shortlist,main_pool,False,6-iodoquinoline,potassium trifluoro(5-methyl-1-(tetrahydro-2H-pyran-2-yl)-1H-indazol-4-yl)borate,"1,1'-Bis(diphenylphosphino)ferrocene",sodium hydrogen carbonate,methanol
+13,planner_shortlist,main_pool,False,6-iodoquinoline,potassium trifluoro(5-methyl-1-(tetrahydro-2H-pyran-2-yl)-1H-indazol-4-yl)borate,tricyclohexylphosphane,tripotassium;phosphate,methanol
+14,planner_shortlist,main_pool,False,6-iodoquinoline,[5-methyl-1-(oxan-2-yl)indazol-4-yl]boronic acid,"1,1'-Bis(diphenylphosphino)ferrocene",Nothing,acetonitrile
+15,planner_shortlist,main_pool,False,6-iodoquinoline,[5-methyl-1-(oxan-2-yl)indazol-4-yl]boronic acid,"1,1'-Bis(diphenylphosphino)ferrocene",cesium fluoride,oxolane
+16,planner_shortlist,main_pool,False,6-iodoquinoline,[5-methyl-1-(oxan-2-yl)indazol-4-yl]boronic acid,"1,1'-Bis(diphenylphosphino)ferrocene",lithium 2-methylpropan-2-olate,oxolane
+17,planner_shortlist,main_pool,False,6-iodoquinoline,potassium trifluoro(5-methyl-1-(tetrahydro-2H-pyran-2-yl)-1H-indazol-4-yl)borate,tricyclohexylphosphane,sodium hydroxide,methanol
+18,planner_shortlist,main_pool,False,6-iodoquinoline,potassium trifluoro(5-methyl-1-(tetrahydro-2H-pyran-2-yl)-1H-indazol-4-yl)borate,bis(1-adamantyl)-butylphosphane,lithium 2-methylpropan-2-olate,methanol
+19,planner_shortlist,main_pool,False,6-iodoquinoline,[5-methyl-1-(oxan-2-yl)indazol-4-yl]boronic acid,"1,1'-Bis(diphenylphosphino)ferrocene",sodium hydroxide,oxolane
+20,planner_shortlist,main_pool,False,6-iodoquinoline,[5-methyl-1-(oxan-2-yl)indazol-4-yl]boronic acid,"1,1'-Bis(diphenylphosphino)ferrocene",potassium hydroxide,oxolane

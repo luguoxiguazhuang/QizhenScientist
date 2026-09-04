@@ -9,6 +9,7 @@
 - `demo/idea_generation_demo/`：官方 125 道科学问题中 9 个化学问题的 SciAtlas 生成结果；其中“是否还能发现新的颜色颜料”是文档案例。
 - `demo/labsafety-strict/`：实验计划较严格、能完整复现的化学模型安全部署结果。
 - `demo/labsafety-loose/`：约束较宽松、便于用户按需求调整的化学模型安全部署结果，不保证每次都能逐项复现文档已有运行结果。
+- `demo/real-machine-iteration/`：Suzuki–Miyaura 真机执行与实验迭代 demo，包含代码、输入数据、实验轨迹和复现说明。
 - `mechanist_frontend/`：项目展示前端。
 - `qwen调用凭证/`：Qwen 调用凭证与用量记录。
 - `tmp/`：本地参考项目和材料，已由 `.gitignore` 忽略，不上传到版本库。
@@ -31,11 +32,11 @@
 
 ### （4）最有代表性的结果 2（对象、口径、结果）
 
-路径：当前 `demo/` 中尚未归档；
+路径：`demo/real-machine-iteration/`（汇总指标见 `results/summary_metrics.csv`，逐种子轨迹见 `results/optimization_trajectories/`）。
 
 在 Suzuki–Miyaura 偶联反应条件优化中，与 Atlas 基线采用相同初始数据、候选空间和 20 轮实验预算；启真 Scientist 通过逐轮“实验—反馈—再决策”，第 11 轮即获得 96.30% 产率，较基线提前 5 轮达到 ≥95% 目标，所需实验减少 31.25%，并在 20 轮内发现 4 个 ≥95% 的高产率新条件，基线仅发现 1 个。
 
-结果 2 的完整文件尚未归档到 `demo/`，当前先在本 README 记录已完成实验的对象、评价口径和结果指标。
+结果 2 的代码、输入数据、逐轮轨迹、汇总指标和复现说明均已归档在 `demo/real-machine-iteration/` 中。
 
 ### （5）最有代表性的结果 3（对象、口径、结果）
 
