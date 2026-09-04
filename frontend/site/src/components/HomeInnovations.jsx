@@ -95,7 +95,7 @@ function IdeaDialog({ onClose }) {
   const [error, setError] = useState('')
 
   useEffect(() => {
-    if (!job?.id || job.status === 'completed' || job.status === 'failed') return undefined
+    if (!job?.id || ['completed', 'failed', 'cancelled'].includes(job.status)) return undefined
     const timer = window.setInterval(async () => {
       try {
         const response = await fetch(`/api/generate-idea/${job.id}`)
@@ -133,18 +133,24 @@ function IdeaDialog({ onClose }) {
     }
   }
 
-  const running = job && !['completed', 'failed'].includes(job.status)
+  const running = job && !['completed', 'failed', 'cancelled'].includes(job.status)
   const progressStep = Math.max(0, Math.min(job?.step ?? 0, 9))
+  const closeDialog = () => {
+    if (running && job?.id) {
+      void fetch(`/api/generate-idea/${job.id}`, { method: 'DELETE', keepalive: true }).catch(() => {})
+    }
+    onClose()
+  }
 
   return (
-    <div className="idea-dialog-backdrop" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && onClose()}>
+    <div className="idea-dialog-backdrop" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && closeDialog()}>
       <section className="idea-dialog" role="dialog" aria-modal="true" aria-labelledby="idea-dialog-title">
         <div className="idea-dialog__topline">
           <div>
             <span className="eyebrow">SciAtlas / 科研假设生成</span>
             <h2 id="idea-dialog-title">生成化学研究假设</h2>
           </div>
-          <button className="icon-button" type="button" onClick={onClose} aria-label="关闭">
+          <button className="icon-button" type="button" onClick={closeDialog} aria-label="关闭">
             <X size={20} aria-hidden="true" />
           </button>
         </div>
@@ -152,7 +158,6 @@ function IdeaDialog({ onClose }) {
         {job?.status === 'completed' ? (
           <div className="idea-result">
             <div className="idea-result__status"><CheckCircle2 size={19} /> 假设生成完成</div>
-            <p>以下是脚本返回的结果。完整过程文件保存在 idea_generation_scripts/runs/ 中。</p>
             <pre>{job.result || '脚本未返回可展示的 Markdown 结果。'}</pre>
             <button className="btn btn-primary" type="button" onClick={() => setJob(null)}>再次生成 <Sparkles size={16} /></button>
           </div>
@@ -168,10 +173,10 @@ function IdeaDialog({ onClose }) {
               <label className="idea-form__wide">问题描述<textarea rows="4" value={form.description} onChange={update('description')} placeholder="补充已有观察、约束条件或希望探索的方向" disabled={running} /></label>
             </div>
             {error && <p className="idea-form__error" role="alert">{error}</p>}
-            {running && <div className="idea-form__progress-wrap"><div className="idea-form__progress-label"><span><span className="spinner" /> 正在运行 Flash 流程</span><strong>Step {progressStep || 1} / 9</strong></div><div className="idea-form__progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="9" aria-valuenow={progressStep}><i style={{ width: `${Math.max(progressStep, 1) / 9 * 100}%` }} /></div><p>预计生成时间约 10 分钟，请耐心等待。{progressStep > 0 ? ` 当前进入 Step ${progressStep}。` : '任务正在初始化。'}</p></div>}
+            {running && <div className="idea-form__progress-wrap"><div className="idea-form__progress-label"><span><span className="spinner" /> 正在生成研究假设</span><strong>Step {progressStep || 1} / 9</strong></div><div className="idea-form__progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="9" aria-valuenow={progressStep}><i style={{ width: `${Math.max(progressStep, 1) / 9 * 100}%` }} /></div><p>预计生成时间约 10 分钟，请耐心等待。{progressStep > 0 ? ` 当前进入 Step ${progressStep}。` : '任务正在初始化。'}</p></div>}
             <div className="idea-form__actions">
               <button className="btn btn-primary" type="submit" disabled={running}>{running ? '生成中…' : '开始生成'} <ArrowRight size={17} /></button>
-              <button className="btn btn-quiet" type="button" onClick={onClose} disabled={running}>取消</button>
+              <button className="btn btn-quiet" type="button" onClick={closeDialog}>取消</button>
             </div>
           </form>
         )}

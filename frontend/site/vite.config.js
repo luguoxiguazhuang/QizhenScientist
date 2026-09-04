@@ -49,6 +49,7 @@ async function latestRunDirectory(runsDir) {
 }
 
 async function updateJobProgress(job, runsDir) {
+  if (job.cancelled || job.finished) return
   try {
     const outputDir = await latestRunDirectory(runsDir)
     if (!outputDir) return
@@ -67,12 +68,61 @@ async function updateJobProgress(job, runsDir) {
   }
 }
 
+async function terminateChild(child) {
+  if (!child || child.exitCode !== null) return
+  try {
+    // run_idea.sh execs the Python worker. Kill the detached process group so
+    // cancellation also stops a worker that has already replaced the shell.
+    if (child.pid) process.kill(-child.pid, 'SIGTERM')
+    else child.kill('SIGTERM')
+  } catch (error) {
+    if (error.code !== 'ESRCH') throw error
+  }
+  await new Promise((resolve) => setTimeout(resolve, 750))
+  if (child.exitCode === null) {
+    try {
+      if (child.pid) process.kill(-child.pid, 'SIGKILL')
+      else child.kill('SIGKILL')
+    } catch (error) {
+      if (error.code !== 'ESRCH') throw error
+    }
+  }
+}
+
+async function cleanupJob(job) {
+  if (job.cleanupPromise) return job.cleanupPromise
+  job.cleanupPromise = (async () => {
+    if (job.progressTimer) clearInterval(job.progressTimer)
+    await terminateChild(job.child)
+    if (job.tempDir) await rm(job.tempDir, { recursive: true, force: true })
+  })()
+  return job.cleanupPromise
+}
+
 function ideaGenerationApi() {
-  return {
-    name: 'qizhen-idea-generation-api',
-    configureServer(server) {
+  const installMiddleware = (server) => {
       server.middlewares.use('/api/generate-idea', async (req, res, next) => {
         const match = req.url?.match(/^\/([^/]+)$/)
+        if (req.method === 'DELETE' && match) {
+          const job = IDEA_JOBS.get(match[1])
+          if (!job) {
+            res.statusCode = 404
+            res.end(JSON.stringify({ error: '任务不存在或已过期' }))
+            return
+          }
+          if (!['completed', 'failed', 'cancelled'].includes(job.status)) {
+            job.cancelled = true
+            job.finished = true
+            job.status = 'cancelled'
+            job.public = { id: job.id, status: 'cancelled', step: job.step, totalSteps: 9 }
+            await cleanupJob(job)
+            console.info(`[idea:${job.id}] cancelled and temporary files removed`)
+          }
+          res.statusCode = 200
+          res.setHeader('Content-Type', 'application/json')
+          res.end(JSON.stringify(job.public))
+          return
+        }
         if (req.method === 'GET' && match) {
           const job = IDEA_JOBS.get(match[1])
           if (!job) {
@@ -90,6 +140,7 @@ function ideaGenerationApi() {
           return
         }
 
+        let job = null
         try {
           const chunks = []
           for await (const chunk of req) chunks.push(chunk)
@@ -103,13 +154,18 @@ function ideaGenerationApi() {
           }
 
           const jobId = randomUUID()
-          const job = { id: jobId, status: 'starting', step: 0, public: { id: jobId, status: 'starting', step: 0, totalSteps: 9 } }
+          job = { id: jobId, status: 'starting', step: 0, cancelled: false, finished: false, tempDir: null, child: null, progressTimer: null, public: { id: jobId, status: 'starting', step: 0, totalSteps: 9 } }
           IDEA_JOBS.set(jobId, job)
           res.statusCode = 202
           res.setHeader('Content-Type', 'application/json')
           res.end(JSON.stringify(job.public))
 
           const tempDir = await mkdtemp(resolve(tmpdir(), 'qizhen-idea-'))
+          job.tempDir = tempDir
+          if (job.cancelled) {
+            await cleanupJob(job)
+            return
+          }
           const inputPath = resolve(tempDir, 'input_question.json')
           const envPath = resolve(tempDir, '.env')
           const baseEnv = await readIdeaBaseEnv()
@@ -118,6 +174,10 @@ function ideaGenerationApi() {
           envText = replaceEnvValue(envText, 'LLM_MODEL', model || 'qwen3.8-max')
           await writeFile(inputPath, JSON.stringify({ category, question: question.trim(), description }, null, 2))
           await writeFile(envPath, envText)
+          if (job.cancelled) {
+            await cleanupJob(job)
+            return
+          }
 
           job.status = 'running'
           job.public = { id: jobId, status: 'running', step: 0, totalSteps: 9 }
@@ -126,11 +186,17 @@ function ideaGenerationApi() {
           // concurrent requests pick up one another's newest output.
           const runsDir = resolve(tempDir, 'runs')
           const updateProgressFromLog = (chunk) => {
-            const matches = [...chunk.toString().matchAll(/step\s*([1-9]\d?)/gi)]
+            const text = chunk.toString()
+            const matches = [...text.matchAll(/step\s*([1-9]\d?)/gi)]
             const latestStep = matches.at(-1)?.[1]
             if (latestStep) {
               job.step = Math.max(job.step, Math.min(Number(latestStep), 9))
               job.public = { ...job.public, step: job.step, totalSteps: 9 }
+            }
+            for (const line of text.split(/\r?\n/)) {
+              if (/\bStep\s+[1-9]\d?|\b(?:WARNING|ERROR)\b|generated \d+ candidate/i.test(line)) {
+                console.info(`[idea:${job.id}] ${line.trim()}`)
+              }
             }
           }
           const child = spawn('bash', ['run_idea.sh'], {
@@ -141,17 +207,24 @@ function ideaGenerationApi() {
               INPUT_FILE: inputPath,
               IDEA_FILE: resolve(IDEA_SCRIPT_ROOT, 'idea.md'),
               RUNS_DIR: runsDir,
+              // Keep request-scoped caches inside the disposable directory and
+              // disable shared cache writes for browser-triggered jobs.
+              SCIATLAS_CACHE_DIR: resolve(tempDir, 'cache'),
+              SCIATLAS_USE_CACHE: '0',
               FULL: 'false',
             },
+            detached: true,
           })
+          job.child = child
+          console.info(`[idea:${job.id}] started (workflow=flash, model=${model || 'qwen3.8-max'})`)
           let stderr = ''
-          let stdout = ''
           child.stderr.on('data', (chunk) => { stderr += chunk.toString(); updateProgressFromLog(chunk) })
-          child.stdout.on('data', (chunk) => { stdout += chunk.toString(); updateProgressFromLog(chunk) })
+          child.stdout.on('data', (chunk) => { updateProgressFromLog(chunk) })
           const progressTimer = setInterval(() => updateJobProgress(job, runsDir), 2000)
+          job.progressTimer = progressTimer
           child.on('close', async (code) => {
-            clearInterval(progressTimer)
             try {
+              if (job.cancelled) return
               if (code !== 0) throw new Error(stderr.trim() || `生成脚本退出码 ${code}`)
               const outputDir = await latestRunDirectory(runsDir)
               if (!outputDir) throw new Error('脚本未生成输出目录')
@@ -163,16 +236,32 @@ function ideaGenerationApi() {
               job.status = 'failed'
               job.public = { id: jobId, status: 'failed', error: error.message }
             } finally {
-              await rm(tempDir, { recursive: true, force: true })
+              job.finished = true
+              await cleanupJob(job)
+              console.info(`[idea:${job.id}] ${job.status}`)
             }
           })
         } catch (error) {
-          res.statusCode = 400
-          res.setHeader('Content-Type', 'application/json')
-          res.end(JSON.stringify({ error: `无法启动生成任务：${error.message}` }))
+          if (job) {
+            job.status = job.cancelled ? 'cancelled' : 'failed'
+            job.public = job.cancelled
+              ? { id: job.id, status: 'cancelled', step: job.step, totalSteps: 9 }
+              : { id: job.id, status: 'failed', error: error.message }
+            job.finished = true
+            await cleanupJob(job)
+          } else if (!res.headersSent) {
+            res.statusCode = 400
+            res.setHeader('Content-Type', 'application/json')
+            res.end(JSON.stringify({ error: `无法启动生成任务：${error.message}` }))
+          }
         }
       })
-    },
+  }
+
+  return {
+    name: 'qizhen-idea-generation-api',
+    configureServer: installMiddleware,
+    configurePreviewServer: installMiddleware,
   }
 }
 
