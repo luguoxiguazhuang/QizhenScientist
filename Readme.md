@@ -11,7 +11,6 @@
 - `demo/labsafety-loose/`：约束较宽松、便于用户按需求调整的化学模型安全部署结果，不保证每次都能逐项复现文档已有运行结果。
 - `demo/real-machine-iteration/`：Suzuki–Miyaura 真机执行与实验迭代 demo，包含代码、输入数据、实验轨迹和复现说明。
 - `frontend/`：项目展示前端。
-- `qwen调用凭证/`：Qwen 调用凭证与用量记录。
 - `tmp/`：本地参考项目和材料，已由 `.gitignore` 忽略，不上传到版本库。
 
 前端位于 `frontend/site/`。执行 `npm run build` 时会自动检查并准备本地 SciAtlas/Python 运行环境；首次构建可能需要联网安装依赖。静态 `dist/` 部署只能提供页面，若要使用“生成化学研究假设”，还需运行支持 `/api/generate-idea` 的 Node/Vite 服务。
