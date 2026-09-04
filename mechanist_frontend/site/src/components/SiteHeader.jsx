@@ -1,14 +1,11 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
+import { withBase } from '../lib/basePath.js'
 import './SiteHeader.css'
 
 const NAV_LINKS = [
   { to: '/', label: '首页', end: true },
   { to: '/knowledge-graphs', label: '知识图谱' },
-]
-
-const EXTERNAL_LINKS = [
-  { href: 'https://github.com/luguoxiguazhuang/QizhenScientist', label: 'GitHub', external: true },
 ]
 
 function navLinkClass({ isActive }) {
@@ -72,6 +69,7 @@ export default function SiteHeader() {
     <header className={`site-header${menuOpen ? ' is-open' : ''}`}>
       <div className="container site-header__inner">
         <Link className="site-header__brand" to="/" aria-label="启真 Scientist 首页">
+          <img className="site-header__mark" src={withBase('qizhen-scientist-logo.svg')} alt="" width="30" height="30" />
           <span className="site-header__wordmark">启真 <em>Scientist</em></span>
         </Link>
 
@@ -80,17 +78,6 @@ export default function SiteHeader() {
             <NavLink key={link.to} className={navLinkClass} end={link.end} to={link.to}>
               {link.label}
             </NavLink>
-          ))}
-          <span className="site-header__divider" aria-hidden="true" />
-          {EXTERNAL_LINKS.map((link) => (
-            <a
-              key={link.label}
-              className="site-header__link"
-              href={link.href}
-              {...(link.external ? { target: '_blank', rel: 'noreferrer' } : {})}
-            >
-              {link.label}
-            </a>
           ))}
         </nav>
 
@@ -120,16 +107,6 @@ export default function SiteHeader() {
             <NavLink key={link.to} className={navLinkClass} end={link.end} to={link.to}>
               {link.label}
             </NavLink>
-          ))}
-          {EXTERNAL_LINKS.map((link) => (
-            <a
-              key={link.label}
-              className="site-header__link"
-              href={link.href}
-              {...(link.external ? { target: '_blank', rel: 'noreferrer' } : {})}
-            >
-              {link.label}
-            </a>
           ))}
         </div>
       </div>

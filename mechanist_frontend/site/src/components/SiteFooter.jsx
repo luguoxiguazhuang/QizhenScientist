@@ -56,8 +56,7 @@ export default function SiteFooter() {
         <div className="site-footer__bottom">
           <address className="site-footer__contact">
             <span>联系我们</span>
-            <a href="mailto:contact@example.com">contact@example.com</a>
-            <a href="mailto:contact@example.com">contact@example.com</a>
+            <a href="mailto:mengruwg@zju.edu.cn">mengruwg@zju.edu.cn</a>
           </address>
 
           <div className="site-footer__meta">

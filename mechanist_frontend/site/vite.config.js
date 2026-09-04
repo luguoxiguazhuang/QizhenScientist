@@ -48,7 +48,7 @@ function ideaGenerationApi() {
           const chunks = []
           for await (const chunk of req) chunks.push(chunk)
           const body = JSON.parse(Buffer.concat(chunks).toString('utf8') || '{}')
-          const { baseUrl, apiKey, category = 'Chemistry', question, description = '' } = body
+          const { baseUrl, apiKey, model = 'qwen3.8-max', category = 'Chemistry', question, description = '' } = body
           if (!baseUrl || !apiKey || !question?.trim()) {
             res.statusCode = 400
             res.setHeader('Content-Type', 'application/json')
@@ -69,6 +69,7 @@ function ideaGenerationApi() {
           const baseEnv = await readFile(resolve(IDEA_SCRIPT_ROOT, '.env'), 'utf8')
           let envText = replaceEnvValue(baseEnv, 'LLM_API_KEY', apiKey)
           envText = replaceEnvValue(envText, 'LLM_BASE_URL', baseUrl)
+          envText = replaceEnvValue(envText, 'LLM_MODEL', model || 'qwen3.8-max')
           await writeFile(inputPath, JSON.stringify({ category, question: question.trim(), description }, null, 2))
           await writeFile(envPath, envText)
 

@@ -1,6 +1,6 @@
 # Standalone idea-generation scripts
 1.填写.env中的LLM_API_KEY和LLM_BASE_URL。并提供Sciatlas Key。
-2. `SciAtlas/` 已随本项目提供。首次运行时脚本使用该本地目录，并仅安装 Python 依赖，不会从 GitHub 拉取 SciAtlas。
+2.配置环境
 
 ```bash
 ./setup.sh

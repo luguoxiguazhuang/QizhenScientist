@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import { SITE } from '../content/mechanistContent.js'
 import ArrowIcon from './ArrowIcon.jsx'
 import './HomeQuickStart.css'
 
@@ -13,7 +12,7 @@ import './HomeQuickStart.css'
  * shorter than it is, and duplicated a page that has to be kept correct anyway.
  *
  * So the section closes the page rather than teaching it: say what installing
- * means, then send the reader to the two places that can actually take them
+ * means, then send the reader to the place that can actually take them
  * further. */
 export default function HomeQuickStart() {
   return (
@@ -38,15 +37,6 @@ export default function HomeQuickStart() {
             Quick start
             <ArrowIcon />
           </Link>
-          <a
-            className="btn btn-ghost"
-            href={SITE.githubUrl}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Source on GitHub
-            <ArrowIcon />
-          </a>
         </div>
       </div>
     </section>

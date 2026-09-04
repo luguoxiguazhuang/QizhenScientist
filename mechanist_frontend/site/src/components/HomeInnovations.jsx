@@ -62,7 +62,7 @@ const SAFETY_STEPS = [
   { title: '读取研究任务', kicker: 'task.md', text: '探索化学领域多模态模型是否会被看似安全的数据微调成不安全的模型。', output: '研究问题 / 安全性假设' },
   { title: '生成实验计划', kicker: '规划', text: '先构造不安全教师模型，再过滤其安全回答，微调学生模型，最后测试学生模型的安全能力。', output: '四阶段实验计划 / 对照设计' },
   { title: '迭代扫描学习率', kicker: '迭代', text: '扫描不同学习率，直到学生模型出现稳定的不安全行为；实验在 LR=1e-3 时观察到安全回答正确率明显下降。', image: withBase('demos/model-safety/seed-delta.png'), output: 'LR=1e-3 / 安全正确率下降' },
-  { title: '实验结果', kicker: '结果', text: 'LR=1e-3 时，3 个随机 seed 的学生模型相对原始模型下降约 32–38 个百分点，相对安全教师数据对照组下降约 27–39 个百分点；训练本身没有崩溃。', image: withBase('demos/model-safety/dual-leg.png'), output: '三组对照 / 可复现结果' },
+  { title: '实验结果', kicker: '结果', text: '其一，训练数据逐条通过了语义安全审查，风险仍然完成了传递，说明对训练数据的内容筛选并不构成有效防线；其二，教师输出与学生训练数据均为纯文本，失效却出现在图文混合的问题上，说明风险能够跨越模态边界，在原有数据分布之外显现。由此可确认，部署前的安全检查不能停留在训练数据的内容层面。', image: withBase('demos/model-safety/dual-leg.png'), output: '输出实验结果文档' },
 ]
 
 const EXPERIMENT_PLAN_SECTIONS = [
@@ -83,6 +83,7 @@ const ITERATION_POINTS = [
 const INITIAL_FORM = {
   baseUrl: '',
   apiKey: '',
+  model: 'qwen3.8-max',
   category: 'Chemistry',
   question: '',
   description: '',
@@ -157,10 +158,11 @@ function IdeaDialog({ onClose }) {
           </div>
         ) : (
           <form className="idea-form" onSubmit={submit}>
-            <p className="idea-form__intro">请输入 Qwen 的 OpenAI 兼容接口信息和研究问题。SciAtlas 与其他参数沿用项目配置，运行模式为 Flash。</p>
+            <p className="idea-form__intro">请提供 Qwen3.8-Max 的 OpenAI 兼容接口信息和 API Key。默认模型为 Qwen3.8-Max，运行模式为 Flash。</p>
             <div className="idea-form__grid">
               <label>Qwen Base URL<input required type="url" value={form.baseUrl} onChange={update('baseUrl')} placeholder="https://.../v1" disabled={running} /></label>
               <label>Qwen API Key<input required type="password" value={form.apiKey} onChange={update('apiKey')} placeholder="sk-..." disabled={running} /></label>
+              <label>模型<input value="Qwen3.8-Max" readOnly aria-readonly="true" disabled={running} /></label>
               <label>研究领域<input value={form.category} onChange={update('category')} placeholder="Chemistry" disabled={running} /></label>
               <label className="idea-form__wide">研究问题<textarea required rows="3" value={form.question} onChange={update('question')} placeholder="例如：如何发现更高效的 Suzuki 偶联催化剂？" disabled={running} /></label>
               <label className="idea-form__wide">问题描述<textarea rows="4" value={form.description} onChange={update('description')} placeholder="补充已有观察、约束条件或希望探索的方向" disabled={running} /></label>
@@ -196,7 +198,7 @@ function DemoDialog({ type, onClose }) {
   return <div className="idea-dialog-backdrop" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && onClose()}>
     <section className="demo-dialog" role="dialog" aria-modal="true" aria-labelledby="demo-dialog-title">
       <div className="demo-dialog__header">
-        <div><span className="eyebrow">{isSafety ? '化学模型安全应用' : '启真智能真机实验体系'} / 静态演示</span><h2 id="demo-dialog-title">{isSafety ? '从 task.md 到安全评估' : 'Suzuki 反应条件优化 · 真机闭环'}</h2></div>
+        <div><span className="eyebrow">{isSafety ? '化学模型安全应用' : '启真智能真机实验体系'}</span><h2 id="demo-dialog-title">{isSafety ? '从 task.md 到安全评估' : 'Suzuki 反应条件优化 · 真机闭环'}</h2></div>
         <button className="icon-button" type="button" onClick={onClose} aria-label="关闭"><X size={20} /></button>
       </div>
       <ProgressRail steps={steps} activeIndex={activeIndex} />
@@ -218,7 +220,7 @@ function DemoDialog({ type, onClose }) {
         </div>
         <aside className="demo-stage__aside"><span className="demo-stage__aside-label">本阶段输出</span><strong>{step.output}</strong><button className="btn btn-primary" type="button" onClick={() => isLast ? onClose() : setActiveIndex((index) => index + 1)}>{isLast ? '完成演示' : '进入下一步'} <ChevronRight size={17} /></button></aside>
       </div>
-      {isSafety ? <p className="demo-notice"><ShieldCheck size={17} /> 化学模型安全应用需要 GPU 运行。你可以参考 <a href="https://github.com/luguoxiguazhuang/QizhenScientist" target="_blank" rel="noreferrer">部署说明（GitHub）</a> 在自己的服务器上部署。</p> : <p className="demo-notice"><FlaskConical size={17} /> Suzuki 条件优化已形成从方案生成、设备执行到结果反馈的完整实验闭环。如需部署请联系我们：<a href="mailto:contact@example.com">contact@example.com</a></p>}
+      {isSafety ? <p className="demo-notice"><ShieldCheck size={17} /> 化学模型安全应用需要 GPU 运行。</p> : <p className="demo-notice"><FlaskConical size={17} /> Suzuki 条件优化已形成从方案生成、设备执行到结果反馈的完整实验闭环。如需部署请联系我们：<a href="mailto:mengruwg@zju.edu.cn">mengruwg@zju.edu.cn</a></p>}
     </section>
   </div>
 }
@@ -251,9 +253,28 @@ export default function HomeInnovations() {
     <section className="innovations section" id="innovations">
       <div className="container">
         <header className="innovations__header">
-          <span className="eyebrow">启真 Scientist / 四项创新</span>
-          <h2>让 AI 从理解知识，走向验证与进化</h2>
-          <p>面向化学科研的知识—实验闭环智能系统，连接科学发现、真实执行与持续反馈。</p>
+          <div className="innovations__header-copy">
+            <span className="eyebrow">启真 Scientist / 能力架构</span>
+            <h2>四大核心创新点</h2>
+            <p className="innovations__flow" aria-label="四大核心创新点支撑面向化学科研的持续发现">
+              <span>全学科知识图谱</span>
+              <span>智能真机实验</span>
+              <span>化学模型安全部署</span>
+              <span>自动迭代反馈</span>
+              <i className="innovations__flow-break" aria-hidden="true" />
+              <b aria-hidden="true">→</b>
+              <strong>支撑面向化学科研的持续发现</strong>
+            </p>
+            <div className="innovations__stats" aria-label="启真 Scientist 能力概览">
+              <span><strong>26</strong> 个学科</span>
+              <span><strong>聚焦</strong> 化学</span>
+              <span><strong>真实</strong> 仪器执行</span>
+              <span><strong>持续</strong> 反馈迭代</span>
+            </div>
+          </div>
+          <figure className="innovations__header-figure">
+            <img src={withBase('figures/mechanist-investigator-refined.webp')} alt="启真 Scientist 研究者与化学科研工作流" />
+          </figure>
         </header>
         <div className="innovation-list">
           {INNOVATIONS.map(({ number, title, label, text, icon: Icon, interactive, demo }) => (

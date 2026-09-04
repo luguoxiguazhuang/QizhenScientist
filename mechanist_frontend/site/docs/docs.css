@@ -70,12 +70,11 @@ body.lang-zh [data-lang="en"]{display:none!important}
   --site-primary:#0f766e;
   --site-accent-ink:#9c4a1c;
 }
-.brand{display:flex;align-items:center;gap:10px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--site-ink)}
 .brand:hover{text-decoration:none}
-/* The wordmark is part of the logo artwork, so no text beside it — this used
-   to pair a cyan gradient tile drawn only for this page with the word
-   "Mechanist" set in the docs font, which matched nothing on the site. */
-.brand-logo{display:block;height:34px;width:auto}
+.brand-mark{display:block;width:30px;height:30px;flex:0 0 auto}
+.brand-wordmark{font-family:Georgia,"Noto Serif CJK SC",serif;font-size:20px;line-height:1;white-space:nowrap}
+.brand-wordmark em{color:var(--site-primary);font-family:inherit;font-size:.78em;font-style:normal;font-weight:700}
 .top-actions{display:flex;align-items:center;gap:20px;flex-wrap:wrap;justify-content:flex-end}
 
 /* Plain text links with a hover underline that grows from the left, and a

@@ -17,9 +17,9 @@ export default function Hero() {
             <Link className="btn btn-primary link-unstyled" to="/knowledge-graphs">
               探索知识图谱 <Network size={17} />
             </Link>
-            <a className="link-cue link-unstyled" href="#innovations">
+            <Link className="link-cue link-unstyled" to="/#innovations">
               查看四项创新 <ArrowRight size={17} />
-            </a>
+            </Link>
           </div>
         </div>
         <figure className="qz-hero__figure">
@@ -27,6 +27,15 @@ export default function Hero() {
           <figcaption>知识发现 → 方案设计 → 真机实验 → 反馈进化</figcaption>
         </figure>
       </div>
+      <section className="container qz-machine-demo" aria-labelledby="qz-machine-demo-title">
+        <div className="qz-machine-demo__head">
+          <span className="eyebrow">真机实验演示</span>
+          <h2 id="qz-machine-demo-title">让 AI 的方案在真实实验室里得到验证</h2>
+        </div>
+        <figure className="qz-machine-demo__figure">
+          <img src={withBase('qizhen-scientist-overview.png')} alt="启真 Scientist 真机实验演示占位图" width="1103" height="584" />
+        </figure>
+      </section>
     </section>
   )
 }
