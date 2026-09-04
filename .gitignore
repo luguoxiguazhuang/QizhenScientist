@@ -28,3 +28,6 @@ demo/labsafety-strict/runs/
 
 # Archived experiment trajectories are repository data, not model weights
 !demo/experiment-iteration/results/**/*.pt
+
+# 本地凭证/账单记录，不上传版本库
+qwen调用凭证/
