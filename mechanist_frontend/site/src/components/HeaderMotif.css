@@ -1,0 +1,61 @@
+/* Behind the page header, holding the right-hand side.
+ *
+ * Two things keep it a background rather than a distraction, and they are the
+ * same two CaseMotif.css settled on: a low opacity, and a mask that takes the
+ * figure out of the way where the copy is. A drawing at even strength under a
+ * paragraph makes the paragraph harder to read however faint it is; the answer
+ * is not a lower opacity everywhere but a figure that is absent under the text
+ * and legible where there is no text.
+ *
+ * Grey by name — --text-subtle, the page's own quietest ink — rather than a
+ * literal hex, so it follows the palette and inverts with .on-dark if a header
+ * ever sits on a dark block. */
+
+.header-motif {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  color: var(--text-subtle);
+  opacity: 0.26;
+  /* Fades toward the bottom left and holds at the top right.
+   *
+   * A left-to-right fade was the obvious choice and the wrong one: this header
+   * puts its figure rail bottom-right, so "strongest on the right" put the
+   * lens rim straight through the three numbers. The empty quarter of the
+   * banner is the top right — copy runs down the left, numbers sit under it —
+   * so the gradient runs on the diagonal instead. */
+  mask-image: linear-gradient(
+    to top right,
+    transparent 24%,
+    rgba(0, 0, 0, 0.28) 52%,
+    rgba(0, 0, 0, 0.8) 76%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.header-motif svg {
+  display: block;
+  /* The right half of the header. The figure is fitted inside this box and
+     pinned to its top right — see preserveAspectRatio in HeaderMotif.jsx. */
+  width: 50%;
+  height: 100%;
+  margin-left: auto;
+}
+
+/* The lens carries a rim and a handle at full stroke, which reads heavier than
+   the graph's line work at the same opacity. Held back so the two pages are
+   equally quiet. */
+.header-motif[data-kind='probe'] {
+  opacity: 0.24;
+}
+
+/* Below 900px the figure rail stacks under the copy and the copy takes the
+   full width, so there is no longer a right-hand side for the figure to hold —
+   it would sit under the title instead of beside it. */
+@media (max-width: 900px) {
+  .header-motif {
+    display: none;
+  }
+}

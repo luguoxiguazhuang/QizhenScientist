@@ -1,0 +1,561 @@
+[
+  {
+    "domain": "same_field",
+    "paper_title": "Bayesian Optimization for Chemical Synthesis in the Era of Artificial Intelligence: Advances and Applications",
+    "paper_abstract": "This review highlights recent advances in the application of Bayesian optimization to chemical synthesis. In the era of artificial intelligence, Bayesian optimization has emerged as a powerful machine learning approach that transforms reaction engineering by enabling efficient and cost-effective optimization of complex reaction systems. We begin with a concise overview of the theoretical foundations of Bayesian optimization, emphasizing key components such as Gaussian process-based surrogate models and acquisition functions that balance exploration and exploitation. Subsequently, we examine its practical applications across various chemical synthesis contexts, including reaction parameter tuning, catalyst screening, molecular design, synthetic route planning, self-optimizing systems, and autonomous laboratories. In addition, we discuss the integration of emerging techniques, such as noise-robust methods, multi-task learning, transfer learning, and multi-fidelity modeling, which enhance the versatility of Bayesian optimization in addressing the challenges and limitations inherent in chemical synthesis.",
+    "radius": "R1",
+    "is_combination_plausible": true,
+    "combination_points": [
+      "Gaussian-process or Bayesian surrogate modeling with calibrated predictive uncertainty",
+      "Acquisition-function-driven exploration–exploitation for data-efficient experimentation",
+      "Noise-robust Bayesian optimization for scarce, noisy, and biased observations",
+      "Multi-task, transfer, and multi-fidelity modeling to generalize across reaction classes",
+      "Constrained or preference-based optimization to encode feasibility, selectivity, and mechanistic rules"
+    ],
+    "combination_plan": "Adapt Bayesian optimization as an uncertainty-aware active-learning layer over a mechanism-constrained synthesis planner, using structured surrogate models and constrained acquisition functions to select experiments or route decisions that maximize expected selectivity/feasibility while minimizing data requirements. Multi-task and multi-fidelity priors can transfer knowledge across reaction classes and experimental conditions, enabling generalization under scarce and biased data.",
+    "justification": "The candidate provides a clear transferable abstraction: sequential decision-making under uncertainty using probabilistic surrogates, active sampling, and constrained/multi-source learning. These principles map directly to the problem’s need for data-efficient, uncertainty-aware, mechanism-constrained multi-step synthesis planning.",
+    "candidate_id": 1,
+    "source_paper": {
+      "paper_id": "https://openalex.org/W4413480641",
+      "title": "Bayesian Optimization for Chemical Synthesis in the Era of Artificial Intelligence: Advances and Applications",
+      "abstract": "This review highlights recent advances in the application of Bayesian optimization to chemical synthesis. In the era of artificial intelligence, Bayesian optimization has emerged as a powerful machine learning approach that transforms reaction engineering by enabling efficient and cost-effective optimization of complex reaction systems. We begin with a concise overview of the theoretical foundations of Bayesian optimization, emphasizing key components such as Gaussian process-based surrogate models and acquisition functions that balance exploration and exploitation. Subsequently, we examine its practical applications across various chemical synthesis contexts, including reaction parameter tuning, catalyst screening, molecular design, synthetic route planning, self-optimizing systems, and autonomous laboratories. In addition, we discuss the integration of emerging techniques, such as noise-robust methods, multi-task learning, transfer learning, and multi-fidelity modeling, which enhance the versatility of Bayesian optimization in addressing the challenges and limitations inherent in chemical synthesis.",
+      "year": 2025,
+      "keywords": [],
+      "references": [],
+      "citations": [],
+      "is_influential": false,
+      "score": 0.6453481316566467,
+      "idea_fields": {},
+      "raw": {
+        "paper_id": "https://openalex.org/W4413480641",
+        "title": "Bayesian Optimization for Chemical Synthesis in the Era of Artificial Intelligence: Advances and Applications",
+        "abstract": "This review highlights recent advances in the application of Bayesian optimization to chemical synthesis. In the era of artificial intelligence, Bayesian optimization has emerged as a powerful machine learning approach that transforms reaction engineering by enabling efficient and cost-effective optimization of complex reaction systems. We begin with a concise overview of the theoretical foundations of Bayesian optimization, emphasizing key components such as Gaussian process-based surrogate models and acquisition functions that balance exploration and exploitation. Subsequently, we examine its practical applications across various chemical synthesis contexts, including reaction parameter tuning, catalyst screening, molecular design, synthetic route planning, self-optimizing systems, and autonomous laboratories. In addition, we discuss the integration of emerging techniques, such as noise-robust methods, multi-task learning, transfer learning, and multi-fidelity modeling, which enhance the versatility of Bayesian optimization in addressing the challenges and limitations inherent in chemical synthesis.",
+        "publication_year": 2025,
+        "cited_by_count": 5,
+        "score": 0.6453481316566467,
+        "rank": 1,
+        "match_type": "vector_abstract",
+        "authors": [
+          {
+            "author_id": "https://openalex.org/A5072842286",
+            "name": "Guihua Luo",
+            "position": 1,
+            "is_corresponding": false,
+            "h_index": 9,
+            "works_count": 64,
+            "cited_by_count": 270
+          },
+          {
+            "author_id": "https://openalex.org/A5073927750",
+            "name": "An Su",
+            "position": 2,
+            "is_corresponding": true,
+            "h_index": 15,
+            "works_count": 109,
+            "cited_by_count": 872
+          },
+          {
+            "author_id": "https://openalex.org/A5008194221",
+            "name": "Runqiu Shen",
+            "position": 9999,
+            "is_corresponding": false,
+            "h_index": 5,
+            "works_count": 8,
+            "cited_by_count": 53
+          }
+        ],
+        "author_names": [
+          "Guihua Luo",
+          "An Su",
+          "Runqiu Shen"
+        ]
+      }
+    }
+  },
+  {
+    "domain": "same_field",
+    "paper_title": "Bayesian optimization with known experimental and design constraints for chemistry applications",
+    "paper_abstract": "Optimization strategies driven by machine learning, such as Bayesian optimization, are being explored across experimental sciences as an efficient alternative to traditional design of experiment. When combined with automated laboratory hardware and high-performance computing, these strategies enable next-generation platforms for autonomous experimentation. However, the practical application of these approaches is hampered by a lack of flexible software and algorithms tailored to the unique requirements of chemical research. One such aspect is the pervasive presence of constraints in the experimental conditions when optimizing chemical processes or protocols, and in the chemical space that is accessible when designing functional molecules or materials. Although many of these constraints are known a priori, they can be interdependent, non-linear, and result in non-compact optimization domains. In this work, we extend our experiment planning algorithms Phoenics and Gryffin such that they can handle arbitrary known constraints via an intuitive and flexible interface. We benchmark these extended algorithms on continuous and discrete test functions with a diverse set of constraints, demonstrating their flexibility and robustness. In addition, we illustrate their practical utility in two simulated chemical research scenarios: the optimization of the synthesis of o-xylenyl Buckminsterfullerene adducts under constrained flow conditions, and the design of redox active molecules for flow batteries under synthetic accessibility constraints. The tools developed constitute a simple, yet versatile strategy to enable model-based optimization with known experimental constraints, contributing to its applicability as a core component of autonomous platforms for scientific discovery.",
+    "radius": "R1",
+    "is_combination_plausible": true,
+    "combination_points": [
+      "Constraint-aware Bayesian optimization as a data-efficient, uncertainty-guided search framework",
+      "Explicit encoding of known experimental and design constraints, including nonlinear and interdependent constraints",
+      "Probabilistic surrogate modeling with acquisition functions that balance exploration, exploitation, and feasibility",
+      "Handling of mixed continuous/discrete decision spaces, analogous to reaction choices, conditions, and route selections",
+      "Declarative constraint interfaces that can separate domain rules from learned objective models"
+    ],
+    "combination_plan": "Adapt the candidate’s constraint-aware Bayesian optimization abstraction to multi-step synthesis planning by representing mechanistic validity, selectivity requirements, route feasibility, and synthetic accessibility as explicit known or probabilistic constraints over reaction and route decisions. Use uncertainty-aware surrogates and constrained acquisition functions to prioritize scarce experiments or planning actions that improve predictive performance while remaining feasible under noisy, biased data.",
+    "justification": "The candidate paper provides a transferable mechanism for sample-efficient, uncertainty-aware optimization under arbitrary known constraints, which maps directly onto the original problem’s need for mechanism-constrained, data-efficient, feasible synthesis planning.",
+    "candidate_id": 2,
+    "source_paper": {
+      "paper_id": "https://openalex.org/W4224833271",
+      "title": "Bayesian optimization with known experimental and design constraints for chemistry applications",
+      "abstract": "Optimization strategies driven by machine learning, such as Bayesian optimization, are being explored across experimental sciences as an efficient alternative to traditional design of experiment. When combined with automated laboratory hardware and high-performance computing, these strategies enable next-generation platforms for autonomous experimentation. However, the practical application of these approaches is hampered by a lack of flexible software and algorithms tailored to the unique requirements of chemical research. One such aspect is the pervasive presence of constraints in the experimental conditions when optimizing chemical processes or protocols, and in the chemical space that is accessible when designing functional molecules or materials. Although many of these constraints are known a priori, they can be interdependent, non-linear, and result in non-compact optimization domains. In this work, we extend our experiment planning algorithms Phoenics and Gryffin such that they can handle arbitrary known constraints via an intuitive and flexible interface. We benchmark these extended algorithms on continuous and discrete test functions with a diverse set of constraints, demonstrating their flexibility and robustness. In addition, we illustrate their practical utility in two simulated chemical research scenarios: the optimization of the synthesis of o-xylenyl Buckminsterfullerene adducts under constrained flow conditions, and the design of redox active molecules for flow batteries under synthetic accessibility constraints. The tools developed constitute a simple, yet versatile strategy to enable model-based optimization with known experimental constraints, contributing to its applicability as a core component of autonomous platforms for scientific discovery.",
+      "year": 2022,
+      "keywords": [],
+      "references": [],
+      "citations": [],
+      "is_influential": false,
+      "score": 0.6451836824417114,
+      "idea_fields": {},
+      "raw": {
+        "paper_id": "https://openalex.org/W4224833271",
+        "title": "Bayesian optimization with known experimental and design constraints for chemistry applications",
+        "abstract": "Optimization strategies driven by machine learning, such as Bayesian optimization, are being explored across experimental sciences as an efficient alternative to traditional design of experiment. When combined with automated laboratory hardware and high-performance computing, these strategies enable next-generation platforms for autonomous experimentation. However, the practical application of these approaches is hampered by a lack of flexible software and algorithms tailored to the unique requirements of chemical research. One such aspect is the pervasive presence of constraints in the experimental conditions when optimizing chemical processes or protocols, and in the chemical space that is accessible when designing functional molecules or materials. Although many of these constraints are known a priori, they can be interdependent, non-linear, and result in non-compact optimization domains. In this work, we extend our experiment planning algorithms Phoenics and Gryffin such that they can handle arbitrary known constraints via an intuitive and flexible interface. We benchmark these extended algorithms on continuous and discrete test functions with a diverse set of constraints, demonstrating their flexibility and robustness. In addition, we illustrate their practical utility in two simulated chemical research scenarios: the optimization of the synthesis of o-xylenyl Buckminsterfullerene adducts under constrained flow conditions, and the design of redox active molecules for flow batteries under synthetic accessibility constraints. The tools developed constitute a simple, yet versatile strategy to enable model-based optimization with known experimental constraints, contributing to its applicability as a core component of autonomous platforms for scientific discovery.",
+        "publication_year": 2022,
+        "cited_by_count": 7,
+        "score": 0.6451836824417114,
+        "rank": 2,
+        "match_type": "vector_abstract",
+        "authors": [
+          {
+            "author_id": "https://openalex.org/A5002251520",
+            "name": "Riley J. Hickman",
+            "position": 1,
+            "is_corresponding": true,
+            "h_index": 16,
+            "works_count": 53,
+            "cited_by_count": 1442
+          },
+          {
+            "author_id": "https://openalex.org/A5056535696",
+            "name": "Matteo Aldeghi",
+            "position": 2,
+            "is_corresponding": false,
+            "h_index": 27,
+            "works_count": 73,
+            "cited_by_count": 4898
+          },
+          {
+            "author_id": "https://openalex.org/A5015637398",
+            "name": "Florian Häse",
+            "position": 3,
+            "is_corresponding": false,
+            "h_index": 21,
+            "works_count": 59,
+            "cited_by_count": 4293
+          },
+          {
+            "author_id": "https://openalex.org/A5071495561",
+            "name": "Alán Aspuru‐Guzik",
+            "position": 4,
+            "is_corresponding": false,
+            "h_index": 114,
+            "works_count": 930,
+            "cited_by_count": 69224
+          }
+        ],
+        "author_names": [
+          "Riley J. Hickman",
+          "Matteo Aldeghi",
+          "Florian Häse",
+          "Alán Aspuru‐Guzik"
+        ]
+      }
+    }
+  },
+  {
+    "domain": "operations_research",
+    "paper_title": "Optimization and Learning Under Uncertainty: Algorithms and Theory for Robust Decision-Making",
+    "paper_abstract": "This dissertation focuses on developing algorithms and theoretical foundations for optimization and learning under uncertainty, aiming to enhance robust decision-making in the presence of data ambiguity, noisy labels, and uncertain constraints. The work addresses critical challenges in stochastic optimization and ma...",
+    "radius": "R2",
+    "is_combination_plausible": true,
+    "combination_points": [
+      "optimization under uncertainty",
+      "robust decision-making with noisy/ambiguous data",
+      "handling uncertain constraints",
+      "algorithmic frameworks for learning with noisy labels or biased observations"
+    ],
+    "combination_plan": "Cast multi-step synthesis planning as a constrained sequential decision problem in which reaction feasibility, selectivity, and mechanistic rules are uncertain constraints, and use robust optimization / learning-under-uncertainty principles to make data-efficient route decisions under scarce, noisy, and biased experimental data.",
+    "justification": "The candidate paper’s core abstraction—making reliable decisions under noisy, ambiguous, and constraint-uncertain conditions—maps directly onto the chemistry problem’s need for uncertainty-aware, mechanism-constrained synthesis planning from imperfect data.",
+    "candidate_id": 3,
+    "source_paper": {
+      "paper_id": "https://openalex.org/W7061240181",
+      "title": "Optimization and Learning Under Uncertainty: Algorithms and Theory for Robust Decision-Making",
+      "abstract": "This dissertation focuses on developing algorithms and theoretical foundations for optimization and learning under uncertainty, aiming to enhance robust decision-making in the presence of data ambiguity, noisy labels, and uncertain constraints. The work addresses critical challenges in stochastic optimization and ma...",
+      "year": 2024,
+      "keywords": [],
+      "references": [],
+      "citations": [],
+      "is_influential": false,
+      "score": 1.0,
+      "idea_fields": {},
+      "raw": {
+        "paper_id": "https://openalex.org/W7061240181",
+        "title": "Optimization and Learning Under Uncertainty: Algorithms and Theory for Robust Decision-Making",
+        "abstract": "This dissertation focuses on developing algorithms and theoretical foundations for optimization and learning under uncertainty, aiming to enhance robust decision-making in the presence of data ambiguity, noisy labels, and uncertain constraints. The work addresses critical challenges in stochastic optimization and ma...",
+        "publication_year": 2024,
+        "year": 2024,
+        "cited_by_count": 0,
+        "citation_count": 0,
+        "score": 1.0,
+        "kg_score": 1.0,
+        "rank": 1,
+        "source": "kg",
+        "match_type": "kg_graph",
+        "pdf_url": "https://escholarship.org/content/qt3445v4k5/qt3445v4k5.pdf",
+        "paper_url": "https://openalex.org/W7061240181",
+        "identifiers": [
+          "openalex:https://openalex.org/W7061240181"
+        ],
+        "paper": {
+          "is_retracted": false,
+          "pdf_is_oa": false,
+          "oa_status": "green",
+          "is_open_access": true,
+          "language": "en",
+          "pdf_url": "https://escholarship.org/content/qt3445v4k5/qt3445v4k5.pdf",
+          "title": "Optimization and Learning Under Uncertainty: Algorithms and Theory for Robust Decision-Making",
+          "type": "other",
+          "pdf_version": "submittedVersion",
+          "venue_source_id": "https://openalex.org/S4306400115",
+          "has_abstract": true,
+          "publication_date": "2024-01-01",
+          "id": "https://openalex.org/W7061240181",
+          "venue_source_type": "repository",
+          "pdf_is_published": false,
+          "cited_by_count": 0,
+          "pdf_source_type": "repository",
+          "pdf_source_id": "https://openalex.org/S4306400115",
+          "referenced_works_count": 0,
+          "venue_source_display_name": "eScholarship (California Digital Library)",
+          "label": "Paper",
+          "abstract": "This dissertation focuses on developing algorithms and theoretical foundations for optimization and learning under uncertainty, aiming to enhance robust decision-making in the presence of data ambiguity, noisy labels, and uncertain constraints. The work addresses critical challenges in stochastic optimization and machine learning by providing novel methods and theoretical insights that advance the field.Firstly, we tackle constrained distributionally robust optimization (DRO) problems, reformulated as distributionally robust feasibility (DRF) problems with multiple expectation constraints. We propose a generic stochastic first-order meta-algorithm where decision variables and uncertain distribution parameters are updated separately using stochastic first-order methods. Specifically, we introduce a novel approximate stochastic mirror descent (SMD) method for updating decision variables and employ the bandit mirror descent method for updating distribution parameters within chi-squared divergence sets. Our analysis demonstrates that the total number of iterations is independent of the dimensions of both decision variables and distribution parameters. Moreover, the per-iteration computational cost is nearly independent of the dimension of the distribution parameters, making the algorithm suitable for high-dimensional ambiguity sets. Experiments on logistic regression with fairness constraints, personalized parameter selection in social networks, and multi-item newsvendor problems validate our theoretical findings and highlight the practicality of our approach in complex settings. Secondly, we investigate binary classification in the presence of instance and label-dependent label noise, where the noise rate varies for each instance, posing significant estimation challenges. We provide a theoretical analysis that establishes matching upper and lower bounds for learning under such noise conditions. We find that without any additional assumptions, empirical risk minimization achieves the optimal excess risk bound proportional to the noise level. By comparing empirical risk minimizers obtained from clean and noisy samples, we derive novel excess risk bounds that hold in very general settings. Additionally, we show that the minimax lower bound for the 0-1 loss is a constant proportional to the average noise rate. These findings suggest that learning solely from noisy samples is fundamentally limited without access to clean data or strong assumptions about the data distribution. Lastly, we extend contextual stochastic linear optimization (CSLO) by incorporating potentially nonlinear inequality constraints that depend on uncertain parameters predicted by machine learning models. To manage constraint uncertainty, we utilize contextual uncertainty sets constructed through methods like conformal prediction. We introduce the “Smart Predict-then-Optimize with Robust Constraints” (SPO-RC) loss--a feasibility-sensitive adaptation of the SPO loss that measures decision error with predicted objective parameters--and its convex surrogate SPO-RC+. We prove that SPO-RC+ is Fisher consistent with SPO-RC. To enhance performance, we train on truncated datasets where the true constraint parameters lie within the uncertainty sets and correct the induced sample selection bias using importance reweighting techniques. Through experiments on the fractional knapsack problem, we demonstrate that SPO-RC+ effectively handles uncertainty in constraints and that combining truncation with importance reweighting further improves decision quality. Collectively, the contributions of this dissertation advance the understanding and development of algorithms for optimization and learning in uncertain environments. The proposed methods offer theoretical guarantees and practical effectiveness, providing valuable tools for robust decision-making in high-dimensional and noisy settings.",
+          "pdf_source_display_name": "eScholarship (California Digital Library)",
+          "publication_year": 2024,
+          "created_date": "2025-10-10T00:00:00.000Z",
+          "updated_date": "2025-10-10T17:16:08.811Z",
+          "title_normalized": "optimizationandlearningunderuncertaintyalgorithmsandtheoryforrobustdecisionmaking"
+        },
+        "hit_sources": [
+          "title_vector"
+        ],
+        "evidence": {
+          "keywords": [],
+          "titles": [],
+          "graph_paths": []
+        },
+        "score_breakdown": {
+          "sim_title": 0.8489703403217136,
+          "sim_abstract": 0.8234157329478037,
+          "title_vector_rerank_score": null,
+          "abstract_vector_rerank_score": null,
+          "combined_vector_rerank_score": 0.957064688205719,
+          "norm_emb_path": 1.0,
+          "norm_title_path": 0.0,
+          "title_pre_graph_bonus": 0.0,
+          "norm_pre_graph_score": 1.0,
+          "norm_graph_score": 1.0,
+          "graph_support_factor": 1.0,
+          "title_bonus": 0.0,
+          "final_score": 1.0
+        }
+      }
+    }
+  },
+  {
+    "domain": "operations_research",
+    "paper_title": "Scenario-based optimization for multi-stage stochastic decision problems",
+    "paper_abstract": "",
+    "radius": "R2",
+    "is_combination_plausible": true,
+    "combination_points": [
+      "Scenario-based optimization for sequential decisions under uncertainty",
+      "Multi-stage stochastic programming with recourse",
+      "Scenario trees or sampled future trajectories for planning",
+      "Chance constraints / risk-aware feasibility requirements",
+      "Scenario reduction or weighting to handle scarce, noisy, biased data"
+    ],
+    "combination_plan": "Cast multi-step synthesis planning as a multi-stage stochastic decision problem where reaction outcomes, selectivity, and feasibility are modeled through sampled scenarios constrained by chemical mechanism rules. Use scenario-based optimization to select routes that remain feasible and selective across uncertainty, while mechanism constraints and scenario weighting improve data efficiency and robustness to noisy/biased experimental data.",
+    "justification": "The candidate’s core abstraction—optimizing sequential decisions under uncertainty using scenarios—maps directly onto multi-step synthesis planning, where each reaction step is a decision and future yields/selectivities are uncertain. This provides a structural framework for uncertainty-aware, feasible, and interpretable route planning even with limited and biased data.",
+    "candidate_id": 4,
+    "source_paper": {
+      "paper_id": "https://openalex.org/W2758473307",
+      "title": "Scenario-based optimization for multi-stage stochastic decision problems",
+      "abstract": "",
+      "year": 2014,
+      "keywords": [],
+      "references": [],
+      "citations": [],
+      "is_influential": false,
+      "score": 0.9602,
+      "idea_fields": {},
+      "raw": {
+        "paper_id": "https://openalex.org/W2758473307",
+        "title": "Scenario-based optimization for multi-stage stochastic decision problems",
+        "abstract": null,
+        "publication_year": 2014,
+        "year": 2014,
+        "cited_by_count": 6,
+        "citation_count": 6,
+        "score": 0.9602,
+        "kg_score": 0.9602,
+        "rank": 2,
+        "source": "kg",
+        "match_type": "kg_graph",
+        "pdf_url": "http://hdl.handle.net/20.500.11850/86123",
+        "paper_url": "https://openalex.org/W2758473307",
+        "identifiers": [
+          "openalex:https://openalex.org/W2758473307"
+        ],
+        "paper": {
+          "is_retracted": false,
+          "pdf_is_oa": false,
+          "oa_status": "green",
+          "is_open_access": true,
+          "language": "en",
+          "pdf_url": "http://hdl.handle.net/20.500.11850/86123",
+          "title": "Scenario-based optimization for multi-stage stochastic decision problems",
+          "type": "dissertation",
+          "pdf_version": "submittedVersion",
+          "venue_source_id": "https://openalex.org/S4306402302",
+          "has_abstract": false,
+          "publication_date": "2014-01-01",
+          "id": "https://openalex.org/W2758473307",
+          "venue_source_type": "repository",
+          "pdf_is_published": false,
+          "cited_by_count": 6,
+          "pdf_source_type": "repository",
+          "pdf_source_id": "https://openalex.org/S4306402302",
+          "referenced_works_count": 0,
+          "venue_source_display_name": "Repository for Publications and Research Data (ETH Zurich)",
+          "label": "Paper",
+          "pdf_source_display_name": "Repository for Publications and Research Data (ETH Zurich)",
+          "publication_year": 2014,
+          "created_date": "2025-10-10T00:00:00.000Z",
+          "updated_date": "2025-11-06T06:51:31.235Z",
+          "title_normalized": "scenariobasedoptimizationformultistagestochasticdecisionproblems",
+          "doi": "https://doi.org/10.3929/ethz-a-010184548"
+        },
+        "hit_sources": [
+          "title_vector"
+        ],
+        "evidence": {
+          "keywords": [],
+          "titles": [],
+          "graph_paths": []
+        },
+        "score_breakdown": {
+          "sim_title": 0.8249059280837312,
+          "sim_abstract": 0.0,
+          "title_vector_rerank_score": null,
+          "abstract_vector_rerank_score": null,
+          "combined_vector_rerank_score": 0.7592675685882568,
+          "norm_emb_path": 0.9502503806572865,
+          "norm_title_path": 0.0,
+          "title_pre_graph_bonus": 0.0,
+          "norm_pre_graph_score": 0.9502503806572865,
+          "norm_graph_score": 0.9502503806572865,
+          "graph_support_factor": 1.0,
+          "title_bonus": 0.0,
+          "final_score": 0.9602003045258292
+        }
+      }
+    }
+  },
+  {
+    "domain": "control_engineering",
+    "paper_title": "State space models vs. multi-step predictors in predictive control: Are state space models complicating safe data-driven designs?",
+    "paper_abstract": "This paper contrasts recursive state space models and direct multi-step predictors for linear predictive control. We provide a tutorial exposition for both model structures to solve the following problems: 1. stochastic optimal control; 2. system identification; 3. stochastic optimal control based on the estimated m...",
+    "radius": "R2",
+    "is_combination_plausible": true,
+    "combination_points": [
+      "Recursive state-space models versus direct multi-step predictors as alternative ways to model sequential decision processes",
+      "Stochastic optimal control / model predictive control under uncertainty",
+      "Constraint-aware safe data-driven design for multi-step dynamical systems",
+      "System identification from limited, noisy, biased data",
+      "Explicit trade-off analysis between mechanistic recursion and direct endpoint prediction"
+    ],
+    "combination_plan": "Cast multi-step synthesis planning as a constrained stochastic predictive-control problem where reaction steps evolve a latent mechanistic state, and compare or hybridize mechanism-constrained recursive state-space models with direct multi-step predictors of route feasibility, selectivity, and yield. The control-theoretic framework can provide uncertainty propagation, constraint handling, and data-efficient identification strategies for scarce, noisy, biased reaction data while preserving interpretability.",
+    "justification": "The candidate paper provides a structural analogy between sequential control systems and multi-step synthesis planning: both require safe, uncertainty-aware, multi-horizon prediction under constraints. Its contrast between recursive state-space modeling and direct multi-step prediction maps directly onto the chemistry problem of balancing mechanistic interpretability and data efficiency in route planning.",
+    "candidate_id": 5,
+    "source_paper": {
+      "paper_id": "https://openalex.org/W4224330578",
+      "title": "State space models vs. multi-step predictors in predictive control: Are state space models complicating safe data-driven designs?",
+      "abstract": "This paper contrasts recursive state space models and direct multi-step predictors for linear predictive control. We provide a tutorial exposition for both model structures to solve the following problems: 1. stochastic optimal control; 2. system identification; 3. stochastic optimal control based on the estimated m...",
+      "year": 2022,
+      "keywords": [],
+      "references": [],
+      "citations": [],
+      "is_influential": false,
+      "score": 1.0,
+      "idea_fields": {},
+      "raw": {
+        "paper_id": "https://openalex.org/W4224330578",
+        "title": "State space models vs. multi-step predictors in predictive control: Are state space models complicating safe data-driven designs?",
+        "abstract": "This paper contrasts recursive state space models and direct multi-step predictors for linear predictive control. We provide a tutorial exposition for both model structures to solve the following problems: 1. stochastic optimal control; 2. system identification; 3. stochastic optimal control based on the estimated m...",
+        "publication_year": 2022,
+        "year": 2022,
+        "cited_by_count": 3,
+        "citation_count": 3,
+        "score": 1.0,
+        "kg_score": 1.0,
+        "rank": 1,
+        "source": "kg",
+        "match_type": "kg_graph",
+        "pdf_url": "https://arxiv.org/pdf/2203.15471",
+        "paper_url": "https://openalex.org/W4224330578",
+        "identifiers": [
+          "openalex:https://openalex.org/W4224330578"
+        ],
+        "paper": {
+          "is_retracted": false,
+          "pdf_is_oa": false,
+          "oa_status": "green",
+          "is_open_access": true,
+          "language": "en",
+          "pdf_url": "https://arxiv.org/pdf/2203.15471",
+          "title": "State space models vs. multi-step predictors in predictive control: Are state space models complicating safe data-driven designs?",
+          "type": "preprint",
+          "pdf_version": "submittedVersion",
+          "venue_source_id": "https://openalex.org/S4306400194",
+          "has_abstract": true,
+          "publication_date": "2022-03-29",
+          "id": "https://openalex.org/W4224330578",
+          "venue_source_type": "repository",
+          "pdf_is_published": false,
+          "cited_by_count": 3,
+          "pdf_source_type": "repository",
+          "pdf_source_id": "https://openalex.org/S4306400194",
+          "referenced_works_count": 0,
+          "venue_source_display_name": "arXiv (Cornell University)",
+          "label": "Paper",
+          "abstract": "This paper contrasts recursive state space models and direct multi-step predictors for linear predictive control. We provide a tutorial exposition for both model structures to solve the following problems: 1. stochastic optimal control; 2. system identification; 3. stochastic optimal control based on the estimated model. Throughout the paper, we provide detailed discussions of the benefits and limitations of these two model parametrizations for predictive control and highlight the relation to existing works. Additionally, we derive a novel (partially tight) constraint tightening for stochastic predictive control with parametric uncertainty in the multi-step predictor.",
+          "pdf_source_display_name": "arXiv (Cornell University)",
+          "publication_year": 2022,
+          "created_date": "2022-04-26T00:00:00.000Z",
+          "updated_date": "2026-02-25T08:12:03.925Z",
+          "title_normalized": "statespacemodelsvsmultisteppredictorsinpredictivecontrolarestatespacemodelscomplicatingsafedatadrivendesigns",
+          "doi": "https://doi.org/10.48550/arxiv.2203.15471"
+        },
+        "hit_sources": [
+          "abstract_vector",
+          "title_vector"
+        ],
+        "evidence": {
+          "keywords": [],
+          "titles": [],
+          "graph_paths": []
+        },
+        "score_breakdown": {
+          "sim_title": 0.8241379111659065,
+          "sim_abstract": 0.8336940700405161,
+          "title_vector_rerank_score": null,
+          "abstract_vector_rerank_score": null,
+          "combined_vector_rerank_score": 0.2622382938861847,
+          "norm_emb_path": 1.0,
+          "norm_title_path": 0.0,
+          "title_pre_graph_bonus": 0.0,
+          "norm_pre_graph_score": 1.0,
+          "norm_graph_score": 1.0,
+          "graph_support_factor": 1.0,
+          "title_bonus": 0.0,
+          "final_score": 1.0
+        }
+      }
+    }
+  },
+  {
+    "domain": "control_engineering",
+    "paper_title": "Learning-based Model Predictive Control for Safe Exploration and Reinforcement Learning",
+    "paper_abstract": "Reinforcement learning has been successfully used to solve difficult tasks in complex unknown environments. However, these methods typically do not provide any safety guarantees during the learning process. This is particularly problematic, since reinforcement learning agent actively explore their environment. This ...",
+    "radius": "R2",
+    "is_combination_plausible": true,
+    "combination_points": [
+      "Model predictive control as receding-horizon constrained planning",
+      "Safety/feasibility guarantees through explicit constraint handling",
+      "Uncertainty-aware exploration with learned dynamics",
+      "Safe reinforcement learning under unknown environments",
+      "Trade-off management between exploration and constraint satisfaction"
+    ],
+    "combination_plan": "Cast multi-step synthesis planning as a constrained sequential decision process where a learned reaction-outcome model plays the role of dynamics, and mechanism-based feasibility, selectivity, and interpretability requirements are enforced as MPC-style constraints over a rolling planning horizon. Use uncertainty estimates to guide safe exploration of candidate reactions and routes, prioritizing experiments or route branches that are informative yet unlikely to violate chemical feasibility constraints under scarce, noisy, biased data.",
+    "justification": "The candidate paper’s core abstraction—using learned models within a constrained predictive control framework to enable safe, uncertainty-aware sequential decision-making—maps naturally onto synthesis planning, where routes must be explored under uncertainty while respecting mechanistic and feasibility constraints.",
+    "candidate_id": 6,
+    "source_paper": {
+      "paper_id": "https://openalex.org/W2791704483",
+      "title": "Learning-based Model Predictive Control for Safe Exploration and Reinforcement Learning",
+      "abstract": "Reinforcement learning has been successfully used to solve difficult tasks in complex unknown environments. However, these methods typically do not provide any safety guarantees during the learning process. This is particularly problematic, since reinforcement learning agent actively explore their environment. This ...",
+      "year": 2019,
+      "keywords": [],
+      "references": [],
+      "citations": [],
+      "is_influential": false,
+      "score": 0.9665,
+      "idea_fields": {},
+      "raw": {
+        "paper_id": "https://openalex.org/W2791704483",
+        "title": "Learning-based Model Predictive Control for Safe Exploration and Reinforcement Learning",
+        "abstract": "Reinforcement learning has been successfully used to solve difficult tasks in complex unknown environments. However, these methods typically do not provide any safety guarantees during the learning process. This is particularly problematic, since reinforcement learning agent actively explore their environment. This ...",
+        "publication_year": 2019,
+        "year": 2019,
+        "cited_by_count": 52,
+        "citation_count": 52,
+        "score": 0.9665,
+        "kg_score": 0.9665,
+        "rank": 2,
+        "source": "kg",
+        "match_type": "kg_graph",
+        "pdf_url": "https://arxiv.org/pdf/1906.12189",
+        "paper_url": "https://openalex.org/W2791704483",
+        "identifiers": [
+          "openalex:https://openalex.org/W2791704483"
+        ],
+        "paper": {
+          "is_retracted": false,
+          "pdf_is_oa": true,
+          "oa_status": "green",
+          "is_open_access": true,
+          "language": "en",
+          "pdf_url": "https://arxiv.org/pdf/1906.12189",
+          "title": "Learning-based Model Predictive Control for Safe Exploration and Reinforcement Learning",
+          "type": "preprint",
+          "pdf_version": "submittedVersion",
+          "venue_source_id": "https://openalex.org/S4306400194",
+          "has_abstract": true,
+          "publication_date": "2019-06-27",
+          "id": "https://openalex.org/W2791704483",
+          "venue_source_type": "repository",
+          "pdf_is_published": false,
+          "cited_by_count": 52,
+          "pdf_source_type": "repository",
+          "pdf_source_id": "https://openalex.org/S4306400194",
+          "referenced_works_count": 44,
+          "venue_source_display_name": "arXiv (Cornell University)",
+          "label": "Paper",
+          "abstract": "Reinforcement learning has been successfully used to solve difficult tasks in complex unknown environments. However, these methods typically do not provide any safety guarantees during the learning process. This is particularly problematic, since reinforcement learning agent actively explore their environment. This prevents their use in safety-critical, real-world applications. In this paper, we present a learning-based model predictive control scheme that provides high-probability safety guarantees throughout the learning process. Based on a reliable statistical model, we construct provably accurate confidence intervals on predicted trajectories. Unlike previous approaches, we allow for input-dependent uncertainties. Based on these reliable predictions, we guarantee that trajectories satisfy safety constraints. Moreover, we use a terminal set constraint to recursively guarantee the existence of safe control actions at every iteration. We evaluate the resulting algorithm to safely explore the dynamics of an inverted pendulum and to solve a reinforcement learning task on a cart-pole system with safety constraints.",
+          "pdf_source_display_name": "arXiv (Cornell University)",
+          "publication_year": 2019,
+          "created_date": "2025-10-10T00:00:00.000Z",
+          "updated_date": "2025-11-06T06:51:31.235Z",
+          "title_normalized": "learningbasedmodelpredictivecontrolforsafeexplorationandreinforcementlearning",
+          "doi": "https://doi.org/10.48550/arxiv.1906.12189"
+        },
+        "hit_sources": [
+          "abstract_vector",
+          "title_vector"
+        ],
+        "evidence": {
+          "keywords": [],
+          "titles": [],
+          "graph_paths": []
+        },
+        "score_breakdown": {
+          "sim_title": 0.8124273815723535,
+          "sim_abstract": 0.828027014480329,
+          "title_vector_rerank_score": null,
+          "abstract_vector_rerank_score": null,
+          "combined_vector_rerank_score": 0.004260030575096607,
+          "norm_emb_path": 0.9581430804278507,
+          "norm_title_path": 0.0,
+          "title_pre_graph_bonus": 0.0,
+          "norm_pre_graph_score": 0.9581430804278507,
+          "norm_graph_score": 0.9581430804278507,
+          "graph_support_factor": 1.0,
+          "title_bonus": 0.0,
+          "final_score": 0.9665144643422805
+        }
+      }
+    }
+  }
+]

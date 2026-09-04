@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon.png" />
+    <link
+      rel="preload"
+      as="image"
+      href="/figures/mechanist-investigator-refined.webp"
+      type="image/webp"
+      fetchpriority="high"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Says what the system does and on what, in the words a researcher would
+         search with. The previous version ("converts research questions into
+         evidence-backed findings — coordinating literature retrieval,
+         hypothesis formulation, ...") described any research tool ever built,
+         and it survived here after the same phrasing had already been dropped
+         from the page copy for being empty. This is the one line that shows in
+         search results, so it is the last place to leave boilerplate. -->
+    <meta
+      name="description"
+      content="Mechanist is an AI scientist that studies AI systems. Give it a question about how a model works inside, and it searches the literature, forms a falsifiable hypothesis, runs the experiments on GPU, and re-tests the result against a different method, dataset, and model. Open source, from ZJUNLP."
+    />
+    <!-- Fonts are bundled (src/styles/fonts.css), not fetched from
+         fonts.googleapis.com. That link was render-blocking and unreachable
+         from mainland China, which turned it into a white screen. -->
+
+    <title>Mechanist — an AI scientist for the mechanisms of intelligence</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,1950 @@
+/* The recorded run.
+ *
+ * Every reveal in here is a CSS animation selected by `data-beat` on
+ * .agent__scene. The selector lists look repetitive — `[data-beat='2'],
+ * [data-beat='3'], [data-beat='4']` — and that repetition is load-bearing: it
+ * is how "from beat 2 onwards" is spelled in a language with no >= for
+ * attribute values. Writing one rule per beat instead would make each element
+ * vanish the moment the next beat arrived.
+ *
+ * Because the whole selector list is one rule, the computed animation does not
+ * change as the beat advances, so nothing restarts mid-run.
+ */
+
+.agent {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── window ─────────────────────────────────────────────────────────────── */
+
+.agent__window {
+  display: grid;
+  /* chrome / intro (command line + composer) / narration / stage. */
+  grid-template-rows: auto auto auto 1fr;
+  /* 460 — the height the repository last recorded, and a ceiling rather than a
+     measurement: everything above the stage is trimmed to whatever it takes to
+     stay under it. 46 chrome + ~142 intro + 52 narration leaves the stage ~220,
+     which is well under what the scenes were drawn for; they scale to fit
+     (`meet`/`slice` on every chart) rather than being redrawn for it. */
+  height: 460px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  background: var(--surface);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+.agent__chrome {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0 18px;
+  height: 46px;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface-muted);
+}
+
+.agent__dots {
+  display: inline-flex;
+  gap: 6px;
+}
+
+.agent__dots i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--border-strong);
+}
+
+.agent__app {
+  font-family: var(--font-mono);
+  font-size: var(--type-caption);
+  color: var(--text-muted);
+}
+
+.agent__state {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-subtle);
+  font-family: var(--font-mono);
+  font-size: var(--type-micro);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.agent__state::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-ink);
+}
+
+.agent__state[data-done='true'] {
+  color: var(--primary);
+}
+
+.agent__state[data-done='true']::before {
+  background: var(--primary);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .agent__state[data-done='false']::before {
+    animation: agent-pulse 1.3s ease-in-out infinite;
+  }
+}
+
+@keyframes agent-pulse {
+  50% {
+    opacity: 0.25;
+  }
+}
+
+/* ── the two lines of type ──────────────────────────────────────────────── */
+
+/* The command line and the composer, restored to the pair the repository last
+   recorded (AgentDemo at 4a43559). The composer is a field with a submit
+   button, which is what actually starts the run: the acts below only begin once
+   it is pressed, so the panel shows a pipeline being launched rather than one
+   that was always going. It does not move, resize or collapse afterwards —
+   sent is a change of colour, nothing else. */
+/* The row's spacing lives here, as padding, not as margins on the two children
+   — a top margin on the command line would collapse straight out of this box
+   and out of the window's top edge. */
+.agent__intro {
+  padding: 10px 0 8px;
+}
+
+.agent__command {
+  display: flex;
+  gap: 9px;
+  margin: 0;
+  padding: 0 26px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: var(--type-micro);
+  line-height: 1.6;
+}
+
+.agent__prompt {
+  flex: none;
+  color: var(--accent-ink);
+}
+
+.agent__skill {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.agent__composer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin: 8px 26px 0;
+  padding: 8px 10px 8px 12px;
+  border: 1px solid var(--primary);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  box-shadow: 0 0 0 3px var(--primary-soft);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+/* Sent: the focus ring drops away and the field recedes into the transcript,
+   the way a message does once it is no longer being written. */
+.agent__composer[data-sent='true'] {
+  border-color: var(--border);
+  background: var(--bg-soft);
+  box-shadow: none;
+}
+
+.agent__ask {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  color: var(--text);
+  font-size: var(--type-small);
+  line-height: 1.5;
+}
+
+.agent__ask strong {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.agent__submit {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--primary);
+  color: var(--on-primary);
+  font-family: var(--font-sans);
+  font-size: var(--type-micro);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.agent__composer[data-sent='true'] .agent__submit {
+  background: transparent;
+  color: var(--text-subtle);
+}
+
+/* The click on Run.
+ *
+ * Everything here is scheduled backwards from `--lead`, the millisecond the
+ * component actually sends the ask (question length × type speed + the hold).
+ * The pointer sets off 975ms before it, lands at −355, and the press bottoms
+ * out around −160, so the run starts just after the button goes down — late
+ * enough to read as caused by the press. Rewriting the question changes --lead
+ * and every mark here moves with it; the offsets are the only hand-set numbers.
+ *
+ * The tip of the glyph is its top-left corner, so `right: 26px` puts the tip
+ * 42px in from the composer's right edge — the middle of the Run button — and
+ * `top: 50%` puts it on the button's centre line. */
+.agent__pointer {
+  position: absolute;
+  right: 26px;
+  top: 50%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.agent__composer[data-armed='true'][data-sent='false'] .agent__pointer {
+  animation: pointer-in 620ms cubic-bezier(0.32, 0.72, 0.3, 1) calc(var(--lead) - 975ms) both,
+    pointer-press 260ms ease calc(var(--lead) - 355ms) both;
+}
+
+/* Pressed by the pointer, not by a hand, so the depress is scheduled to the
+   millisecond the pointer arrives rather than to :active. */
+.agent__composer[data-armed='true'][data-sent='false'] .agent__submit {
+  animation: submit-press 260ms ease calc(var(--lead) - 355ms) both;
+}
+
+.agent__composer[data-sent='true'] .agent__pointer {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+@keyframes pointer-in {
+  from { opacity: 0; translate: -180px 74px; }
+  30% { opacity: 1; }
+  to { opacity: 1; translate: 0 0; }
+}
+
+@keyframes pointer-press {
+  0%, 100% { scale: 1; }
+  45% { scale: 0.82; }
+}
+
+@keyframes submit-press {
+  0%, 100% { transform: none; filter: none; }
+  45% { transform: scale(0.94); filter: brightness(0.86); }
+}
+
+/* ── the stage axis ─────────────────────────────────────────────────────── */
+
+/* Restored from 4a43559. Numbered nodes on a rail, the running one ringed in
+   accent and the finished ones filled teal with the rail behind them coloured
+   in — so the axis reads as a route travelled, not as four labels. */
+.agent__progress {
+  /* How much bigger the stage the run is in gets. Enough that which of the four
+     is live is legible from the size alone rather than from a shade of teal,
+     and not so much that the axis turns into a headline with three footnotes —
+     doubling read as a different element rather than as the same one, lit.
+     Applied as `scale`, so the axis's four columns never re-measure and the
+     other three labels do not shuffle sideways when one of them grows. */
+  --axis-pop: 1.45;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 10px 26px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.agent__progress li {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: 5px;
+  min-width: 0;
+  color: var(--text-subtle);
+}
+
+.agent__progress li::before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  top: 11px;
+  left: 50%;
+  width: 100%;
+  height: 1px;
+  background: var(--border-strong);
+}
+
+.agent__progress li:last-child::before {
+  display: none;
+}
+
+.agent__progress li > span {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 23px;
+  height: 23px;
+  border: 1px solid var(--border-strong);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--text-subtle);
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-variant-numeric: tabular-nums;
+  transition: border-color 0.3s ease, background 0.3s ease, color 0.3s ease;
+}
+
+.agent__progress li > b {
+  max-width: 100%;
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: center;
+  white-space: nowrap;
+  /* Visible, not clipped with an ellipsis. At 9.5px none of the four names come
+     close to filling their column, so there was nothing to ellipsis; what the
+     hidden overflow did do was cut the live name off as it grew. */
+  overflow: visible;
+  /* Grown from its top edge, not its middle: there are 5px between a name and
+     the numbered node above it, and a centred scale closes them. */
+  transform-origin: 50% 0;
+  /* This is the *leaving* transition — a transition is read off the state being
+     transitioned to, and the state being left has this rule. It is deliberately
+     the slower of the two: growing is an arrival and can be brisk, but shrinking
+     is the eye's own reference point moving out from under it, and at 380ms that
+     read as a snap rather than as a release. 640ms, and a curve that spends most
+     of its length in the last third of the distance. */
+  transition: scale 640ms cubic-bezier(0.24, 0.02, 0.16, 1),
+    font-weight 640ms ease, color 0.36s ease;
+}
+
+/* Teal, not the orange accent it used to be. The axis now reads in one colour:
+   the stage being executed is the same green as the ones already done, told
+   apart by its ring being open where theirs are filled. */
+.agent__progress li[data-state='running'] {
+  color: var(--primary);
+}
+
+/* Landing on a stage.
+ *
+ * The axis is the only thing on screen that says which of the four the run is
+ * in, and four rows of near-identical grey type do not say it loudly enough for
+ * something the eye passes over in half a second. So the name grows once on
+ * arrival, stays grown while the run is in it, and shrinks back on the way out
+ * — one move each way, no overshoot, no settle-back. It also goes semibold,
+ * which is the part that survives being glanced at. The node does not move: it
+ * already has the accent ring, and a circle that swelled as well made two
+ * things announce one.
+ *
+ * Keyed to `data-current` — the stage the act on screen belongs to — not to
+ * `data-state='running'`: stepping by hand lands on an act's last beat, which
+ * makes the final stage `done` on arrival, and it would never have popped.
+ *
+ * `scale` rather than `transform: scale()`: the node has no other transform to
+ * clobber, and the label's own overflow is opened for the duration so a name
+ * scaled past its column is never cut off mid-word. */
+/* A transition rather than a keyframe animation, so the name shrinks on the way
+   out as well as growing on the way in. A keyframe only plays forwards: leaving
+   a stage dropped the label back to its size in one frame.
+
+   The arriving half is the faster one — see the note on the rule above. */
+.agent__progress li[data-current='true'] > b {
+  scale: var(--axis-pop);
+  font-weight: 600;
+  transition: scale 440ms cubic-bezier(0.24, 0.02, 0.16, 1),
+    font-weight 440ms ease, color 0.36s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .agent__progress li > b {
+    transition: none;
+  }
+}
+
+.agent__progress li[data-state='running'] > span {
+  border-color: var(--primary);
+  color: var(--primary);
+  box-shadow: 0 0 0 4px var(--primary-soft);
+}
+
+.agent__progress li[data-state='done'] {
+  color: var(--primary-hover);
+}
+
+.agent__progress li[data-state='done']::before {
+  background: var(--primary);
+}
+
+.agent__progress li[data-state='done'] > span {
+  border-color: var(--primary);
+  background: var(--primary);
+  color: var(--on-primary);
+}
+
+/* The composer's caret is the block one, scoped, because the narration below
+   uses the same TypedLine with a hairline caret. Neither blinks: the caret only
+   exists while characters are arriving, and a caret that is visibly moving does
+   not also need to flash to say it is live. */
+.agent__ask .typed__caret {
+  width: 6px;
+  height: 1em;
+  margin-left: 2px;
+  translate: none;
+  vertical-align: text-bottom;
+}
+
+/* The narration. One sentence at a time, and the largest type in the panel —
+   if the reader looks at exactly one thing per beat, this is the thing. */
+.agent__say {
+  margin: 0;
+  padding: 8px 26px 10px;
+  min-height: 52px;
+  font-size: clamp(0.9375rem, 1.2vw, 1.125rem);
+  line-height: 1.35;
+  letter-spacing: -0.012em;
+  color: var(--text);
+}
+
+.agent__say strong {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.typed {
+  position: relative;
+  display: block;
+}
+
+.typed__ghost {
+  visibility: hidden;
+}
+
+.typed__ink {
+  position: absolute;
+  inset: 0;
+}
+
+.typed__caret {
+  display: inline-block;
+  width: 2px;
+  height: 1.05em;
+  margin-left: 2px;
+  translate: 0 0.14em;
+  background: var(--primary);
+}
+
+/* ── stage ──────────────────────────────────────────────────────────────── */
+
+.agent__stage {
+  position: relative;
+  min-height: 0;
+}
+
+.agent__scene {
+  position: absolute;
+  inset: 0;
+  padding: 2px 26px 12px;
+  animation: scene-in 420ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+
+/* Design act is the tallest scene (method + four plan rows). Keep bottom
+   padding so the plan card clears the window's rounded corner; pack the two
+   blocks to content height so the plan is not stretched into that edge. */
+.agent__scene:has(.sc-route) {
+  padding-top: 0;
+  padding-bottom: 10px;
+}
+
+/* Result act: finding sits at the foot of the stage — same bottom clearance. */
+.agent__scene:has(.sc-conclude) {
+  padding-top: 0;
+  padding-bottom: 10px;
+}
+
+@keyframes scene-in {
+  from { opacity: 0; transform: translateY(9px); }
+  to { opacity: 1; transform: none; }
+}
+
+.sc {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: 14px;
+  height: 100%;
+  min-height: 0;
+}
+
+/* No tool line above the drawing. The row has to be dropped, not left empty:
+   with `auto minmax(0, 1fr)` and a single child the body lands in the `auto`
+   track and sizes to its content instead of filling the stage. */
+.sc--bare {
+  grid-template-rows: minmax(0, 1fr);
+}
+
+.sc__body {
+  min-height: 0;
+  height: 100%;
+}
+
+/* ── the tool call ──────────────────────────────────────────────────────── */
+
+/* The transcript line. Mono, one row, a rule under it: the shape an agent
+   client uses for "I called this, here is what came back". It is the only
+   element in the panel allowed to look like a log, which is what makes the
+   drawings below read as output rather than as illustration. */
+.tool {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+  font-family: var(--font-mono);
+  font-size: var(--type-caption);
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.tool__caret {
+  color: var(--primary);
+}
+
+.tool__name {
+  flex: none;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.tool__args {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--text-subtle);
+}
+
+.tool__status {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-left: auto;
+  color: var(--text-subtle);
+  animation: fade 300ms ease both;
+}
+
+.tool[data-done='true'] .tool__status {
+  color: var(--primary);
+}
+
+.tool__tick {
+  font-size: 13px;
+}
+
+.tool__spin {
+  width: 9px;
+  height: 9px;
+  border: 1.5px solid var(--border-strong);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 720ms linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.agent__foot {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  margin: 0;
+  padding-top: 10px;
+  min-height: 30px;
+}
+
+/* Temporarily hidden — set display back to flex to restore the step buttons. */
+.agent__nav {
+  display: none;
+  gap: 6px;
+}
+
+.agent__step {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease, opacity 0.2s ease;
+}
+
+.agent__step--next svg {
+  scale: -1 1;
+}
+
+.agent__step:hover:not(:disabled) {
+  border-color: var(--text-muted);
+  background: var(--bg-soft);
+  color: var(--text);
+}
+
+/* Still in place, just spent — a control that disappears at the ends of the
+   run moves the two beside it every time the reader reaches one. */
+.agent__step:disabled {
+  opacity: 0.32;
+  cursor: default;
+}
+
+.agent__replay {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 13px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-pill);
+  background: transparent;
+  font-family: var(--font-mono);
+  font-size: var(--type-micro);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.agent__replay:hover {
+  border-color: var(--text-muted);
+  background: var(--bg-soft);
+  color: var(--text);
+}
+
+/* ══ step 1 · retrieve ═══════════════════════════════════════════════════ */
+
+/* Cards and hypothesis tip as one block, vertically centred in the stage so
+   the gap above the cards, between cards and tip, and below the tip read as
+   one rhythm — rather than the tip pinned to the floor with a stretched void
+   between it and the stores that produced it. */
+.sc-retrieve {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 16px;
+  align-content: center;
+  height: 100%;
+  /* Bias the centred block a touch toward the narration. */
+  padding-bottom: 18px;
+}
+
+/* Three rows declared here, not inside each card, and each card handed them
+   back with `subgrid`: name, count, status line.
+
+   Without it the three cards were three independent stacks, and the names are
+   not the same length — "Web Search" is one line where the two graphs wrap to
+   two — so every card put its divider and its status at its own height. Three
+   calls returning at three staggered moments already gives the row plenty of
+   movement; the frames underneath should be still. Sharing the parent's rows
+   makes the tallest name set the height for all three, so the rules line up and
+   the ticks land on one baseline. */
+.sc-retrieve__cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: auto auto auto;
+  column-gap: 18px;
+  row-gap: 4px;
+  align-content: start;
+}
+
+.sc-retrieve__db {
+  display: grid;
+  grid-row: span 3;
+  grid-template-rows: subgrid;
+  padding: 18px 20px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--bg-soft);
+  transition: background 0.4s ease;
+}
+
+/* Answered. The card firms up rather than lighting up — it is a store that has
+   replied, not a result in itself. Border stays on --border so the three
+   cards and the hypothesis tip share one grey. */
+.sc-retrieve__db[data-state='done'] {
+  background: var(--surface);
+}
+
+.sc-retrieve__name {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: var(--type-small);
+  font-weight: 600;
+  color: var(--text);
+  overflow-wrap: anywhere;
+}
+
+.sc-retrieve__db[data-tone='cross'] .sc-retrieve__name {
+  color: var(--accent-ink);
+}
+
+.sc-retrieve__db[data-tone='interp'] .sc-retrieve__name {
+  color: var(--primary);
+}
+
+/* Neutral. The two graphs are Mechanist's own and carry its two accents; the
+   web search is somewhere else's index and should not look like a third house
+   colour. */
+.sc-retrieve__db[data-tone='web'] .sc-retrieve__name {
+  color: var(--text);
+}
+
+.sc-retrieve__stat {
+  margin: 0 0 10px;
+  font-family: var(--font-mono);
+  font-size: var(--type-micro);
+  color: var(--text-subtle);
+}
+
+.sc-retrieve__status {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+  font-family: var(--font-mono);
+  font-size: var(--type-caption);
+  color: var(--text-subtle);
+}
+
+.sc-retrieve__db[data-state='done'] .sc-retrieve__status {
+  color: var(--text-muted);
+}
+
+/* The ring and the tick live with the shared StatusMark, at the foot of this
+   file — the retrieve cards and the design blocks report the same way because
+   they are reporting the same thing. */
+
+/* The stage's product. Held in the layout from the first frame so the cards
+   do not drop when it appears; only the ink fades in once the last store has
+   answered. */
+.sc-retrieve__result {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin: 0;
+  padding: 12px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  opacity: 0;
+}
+
+.sc-retrieve__result[data-ready='true'] {
+  animation: fade-up 480ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+
+.sc-retrieve__result-label {
+  flex: none;
+  font-family: var(--font-mono);
+  font-size: var(--type-micro);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.sc-retrieve__result-text {
+  min-width: 0;
+  font-family: var(--font-display);
+  font-size: var(--type-small);
+  line-height: 1.45;
+  color: var(--text-muted);
+}
+
+.sc-retrieve__result-text strong {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* ══ step 2 · route ══════════════════════════════════════════════════════ */
+
+/* Two blocks, stacked, in the order one depends on the other: the method is
+   looked up, and then the plan is written against it. Each reports with the
+   panel's own status mark, so "the plan waited for the method" is something the
+   reader watches rather than something the layout implies.
+
+   They were side by side and captioned as two products of the act, which put
+   the intervention and the scaffold at equal weight in equal columns — and they
+   are not equals. Stacked, with the second block held back until the first has
+   ticked, the act reads as a derivation. */
+.sc-route {
+  display: grid;
+  /* auto/auto — not 1fr. A 1fr plan track stretches the card to the stage
+     floor, so its bottom border kisses the window corner. Size both blocks to
+     their content and leave the spare height below them. */
+  grid-template-rows: auto auto;
+  gap: 8px;
+  align-content: start;
+  height: 100%;
+  min-height: 0;
+}
+
+.sc-route__block {
+  min-width: 0;
+  min-height: 0;
+  padding: 8px 14px 9px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--bg-soft);
+  opacity: 0;
+  transition: border-color 0.4s ease, background 0.4s ease;
+}
+
+.sc-route__block[data-show='true'] {
+  animation: fade-up 420ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+
+/* Answered. The block firms up rather than lighting up — the same move the
+   retrieve cards make when a store replies, because it is the same event. */
+.sc-route__block[data-done='true'] {
+  border-color: var(--border-strong);
+  background: var(--surface);
+}
+
+/* Caption left, status right, on one baseline. */
+.sc-route__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.sc-route__cap {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: var(--type-micro);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-subtle);
+}
+
+/* The file name is a file name, not a section heading: it keeps its case and
+   its extension, and the uppercasing the caption class applies is undone.
+   Absolute paths are long; ellipsis keeps the status mark on the same baseline. */
+.sc-route__block--plan .sc-route__cap {
+  min-width: 0;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--primary);
+}
+
+.sc-route__path {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sc-route__state {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: var(--type-micro);
+  color: var(--text-subtle);
+}
+
+.sc-route__block[data-done='true'] .sc-route__state {
+  color: var(--text-muted);
+}
+
+/* The method, said once and at size — it is the one decision this act makes,
+   and everything in the block under it is derived from it. */
+/* The method, said once and at size — it is the one decision this act makes,
+   and everything in the block under it is derived from it. The gloss trails it
+   on the same line, wrapping under it only when the panel is too narrow to
+   hold both. */
+.sc-route__method {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 12px;
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: var(--type-small);
+  font-weight: 600;
+  color: var(--text);
+}
+
+.sc-route__method span {
+  font-family: var(--font-sans);
+  font-size: var(--type-caption);
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--text-muted);
+}
+
+/* The plan. A label column and a clause column, the label track declared once
+   on the list and handed to each row with `subgrid` — set per row it would be
+   ragged, since "Intervention" is three times the width of "Gate". */
+.sc-route__rows {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 3px 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sc-route__rows li {
+  display: grid;
+  grid-column: span 2;
+  grid-template-columns: subgrid;
+  align-items: baseline;
+  min-width: 0;
+  opacity: 0;
+}
+
+.sc-route__rows[data-show='true'] li {
+  animation: fade-left 320ms ease both;
+  animation-delay: calc(80ms + var(--i) * 110ms);
+}
+
+.sc-route__rows span {
+  font-family: var(--font-mono);
+  font-size: var(--type-micro);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.sc-route__rows p {
+  margin: 0;
+  font-size: var(--type-caption);
+  line-height: 1.25;
+  color: var(--text-muted);
+}
+
+/* No narrow-panel override, on purpose: the two blocks measure the same height
+   at 1440 as they do at 770, because nothing in them wraps until well below the
+   width at which the panel is hidden altogether. Padding and leading above are
+   the fit for a ~220px stage — CONTROLS has to clear the window edge. */
+
+/* ══ step 3 · execute ════════════════════════════════════════════════════ */
+
+/* Two halves, one act. The left is a little narrower: the field of atoms is a
+   texture and crops gracefully, while the chart has axes that stop meaning
+   anything once their labels start colliding. */
+.sc-exec {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  gap: 22px;
+  min-height: 0;
+}
+
+.sc-exec__find,
+.sc-exec__dose {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: 6px;
+  min-height: 0;
+}
+
+.sc-exec__cap {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: var(--type-micro);
+}
+
+.sc-exec__cap b {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.sc-exec__cap span {
+  color: var(--text-subtle);
+}
+
+/* ── left: taking it apart, and the glass ────────────────────────────────── */
+
+/* Two inks, declared once, for the two things that have to turn out to be the
+   same thing. --atom-ink is the lattice, and the network's nodes are the same
+   ink carrying more weight — near enough that the merge is the node settling
+   rather than a dark mark being swapped for a pale one.
+
+   They were #666666 and #c3c8c2, three-quarters of the way apart on the grey
+   ramp, and 680ms was not long enough to cross that without the eye reading two
+   separate marks. The node still has to hold the frame on its own for a beat
+   before the lattice exists, so it is not the lattice's colour either: it sits
+   at the midpoint, which is dark enough to draw a model and light enough to
+   arrive somewhere. */
+.sc-dive__well {
+  --atom-ink: #c3c8c2;
+  --net-ink: #969c95;
+
+  position: relative;
+  min-height: 0;
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  overflow: hidden;
+}
+
+/* Feathered with a mask rather than a white rectangle painted on top. The
+   overlay approach only looks right over one exact background colour, and over
+   this one it turned the lattice into a grey wash.
+
+   Both drawings, not just the lattice. They cross-fade into each other, and two
+   pictures on top of each other only read as one picture if they end at the
+   same place — a network whose edges ran hard into the frame while the field
+   underneath faded away from it drew its own rectangle around the merge. At
+   scale 1 the network sits entirely inside the mask's opaque core, so this
+   costs nothing until the zoom pushes it out to where the field is fading. */
+.sc-dive__field,
+.sc-dive__net {
+  -webkit-mask-image: radial-gradient(ellipse 74% 82% at 50% 50%, #000 62%, transparent 100%);
+  mask-image: radial-gradient(ellipse 74% 82% at 50% 50%, #000 62%, transparent 100%);
+}
+
+/* The way in.
+ *
+ * A network is drawn on the atom lattice's own grid, the lattice fades up
+ * underneath it, the network is magnified two-fold — still on the grid, because
+ * an integer scale about a lattice point sends lattice points to lattice points
+ * — and then its edges fade and its nodes shrink to the size of the dots they
+ * are standing on. Nothing is replaced by anything: the network turns out to
+ * have been made of the atoms all along.
+ *
+ * This replaced a stack of 32 layers under a CSS perspective that opened like a
+ * box. The idea was right and the drawing never was: perspective, per-layer
+ * translateZ, a container offset that differs between the closed and open
+ * states, and an outline that had to track all of it — five coupled numbers,
+ * none of them checkable except by looking. This is one SVG, one coordinate
+ * system, one scale. */
+.sc-dive__net {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: fade 460ms ease both 120ms;
+}
+
+.sc-dive__net-edges line {
+  stroke: var(--border-strong);
+  stroke-width: 1;
+}
+
+.sc-dive__net-nodes circle {
+  r: 4.2px;
+  fill: var(--net-ink);
+}
+
+/* The zoom's centre is a lattice point, and the scales below are whole numbers,
+   which together are what keep every node on a dot all the way through the
+   magnification — an integer scale about a lattice point sends lattice points
+   to lattice points.
+
+   `view-box` rather than the default `fill-box`: the origin has to be a fixed
+   point of the picture, not the middle of each group's own bounding box, or the
+   nodes and the edges zoom about two different points and slide apart. */
+.sc-dive__net-zoom {
+  transform-box: view-box;
+  transform-origin: 252px 132px;
+}
+
+/* The zoom happens first and finishes before the lattice is visible.
+
+   It used to run while the two were on screen together, and that was the bad
+   seam: the alignment is only exact at whole-number scales, so through the
+   middle of a 1→2 zoom every node slides between the dots it had just been
+   sitting on. The reader watched the two grids come together and then come
+   apart again. Now the order is going-in, then arriving: the network grows on
+   its own, stops at 2×, and only then does the field fade up under it.
+
+   Every later beat is listed, and that is the whole point of the rule rather
+   than a formality. `both` holds the end state only while the animation still
+   applies, and the animation is selected by `data-beat` — so when the beat
+   ticked to 2 this rule stopped matching and the network snapped from 2× back
+   to 1× in a single frame, on the exact frame the merge began. The reader saw
+   the dive reverse itself and the nodes then shrink to half the size of the
+   lattice dots they were supposed to become (0.9px is half of 1.8 only because
+   the 2× zoom was meant to still be doubling it). That snap was the seam. */
+.agent__scene[data-beat='1'] .sc-dive__net-zoom,
+.agent__scene[data-beat='2'] .sc-dive__net-zoom,
+.agent__scene[data-beat='3'] .sc-dive__net-zoom,
+.agent__scene[data-beat='4'] .sc-dive__net-zoom,
+.agent__scene[data-beat='5'] .sc-dive__net-zoom {
+  animation: net-in 900ms cubic-bezier(0.36, 0, 0.42, 1) both;
+}
+
+@keyframes net-in {
+  from { scale: 1; }
+  to { scale: 2; }
+}
+
+/* Beat 2: the network becomes the field.
+ *
+ * It does not leave and it does not zoom away. The edges fade, and the nodes
+ * shrink and grey until they are lattice dots — which they are already standing
+ * on, so what is left when the animation ends is the lattice with nothing extra
+ * in it. That is the merge: the network is not replaced by the atoms, it turns
+ * out to have been made of them.
+ *
+ * 0.9px, not 1.8: these nodes live inside the 2× zoom, so their radius is drawn
+ * doubled. Half of the lattice's 1.8 is what renders at exactly 1.8.
+ *
+ * Then the drawing is handed over. Once a node has landed it is a lattice dot
+ * in every respect the eye can check — same place, same radius, same colour —
+ * except that it is a different element, and the lattice breathes while it does
+ * not. Left on screen it stayed as a patch of a dozen dots holding still in a
+ * field that was moving, which is a seam that only gets more visible the longer
+ * the scene runs. So the node group lifts off starting at the moment the merge
+ * lands, over dots it is by then indistinguishable from: the cross-fade has
+ * nothing to show because both sides are the same picture. It takes 900ms to do
+ * it, longer than it strictly needs — the lattice breathes and a landed node
+ * does not, so at the hand-off the two can be a little apart in opacity and
+ * radius, and a slow enough fade puts that difference below noticing. */
+.agent__scene[data-beat='2'] .sc-dive__net-edges,
+.agent__scene[data-beat='3'] .sc-dive__net-edges,
+.agent__scene[data-beat='4'] .sc-dive__net-edges,
+.agent__scene[data-beat='5'] .sc-dive__net-edges {
+  animation: fade-out 560ms ease both;
+}
+
+.agent__scene[data-beat='2'] .sc-dive__net-nodes circle,
+.agent__scene[data-beat='3'] .sc-dive__net-nodes circle,
+.agent__scene[data-beat='4'] .sc-dive__net-nodes circle,
+.agent__scene[data-beat='5'] .sc-dive__net-nodes circle {
+  animation: node-merge 680ms cubic-bezier(0.33, 0, 0.28, 1) both;
+}
+
+.agent__scene[data-beat='2'] .sc-dive__net-nodes,
+.agent__scene[data-beat='3'] .sc-dive__net-nodes,
+.agent__scene[data-beat='4'] .sc-dive__net-nodes,
+.agent__scene[data-beat='5'] .sc-dive__net-nodes {
+  animation: fade-out 900ms ease both 680ms;
+}
+
+/* Both ends are the tokens the two pictures are actually drawn in, not copies
+   of what those happened to be when this was written. The `from` was a literal
+   #666666, which was --text-subtle by daylight and nothing at all in the dark
+   theme, so the merge opened with the nodes jumping colour on its first frame;
+   the `to` was a second copy of the lattice's literal, free to drift away from
+   it and land the merge next to the dots instead of on them. */
+@keyframes node-merge {
+  from { r: 4.2px; fill: var(--net-ink); }
+  to { r: 0.9px; fill: var(--atom-ink); }
+}
+
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.sc-dive__field {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+/* Up as the network comes apart, at scale 1, and it never moves again. It
+   fades, it does not travel: the zoom has stopped by the time the first frame
+   of the lattice is painted, so every node is on a dot for the whole rise.
+
+   The delay is 1000ms against a 900ms zoom, which puts the rise on top of the
+   merge rather than in front of it. Timed to finish first — 420ms ending a
+   full beat before the nodes started shrinking — it split one event into two,
+   and the gap between them was 380ms of a fully-drawn network sitting still on
+   a fully-drawn lattice with nothing happening to either. Overlapped, the
+   lattice arriving and the network dissolving are the same motion, which is the
+   thing the scene is claiming: not that one picture replaced another, but that
+   they were one picture. */
+.agent__scene[data-beat='1'] .sc-dive__field,
+.agent__scene[data-beat='2'] .sc-dive__field,
+.agent__scene[data-beat='3'] .sc-dive__field,
+.agent__scene[data-beat='4'] .sc-dive__field,
+.agent__scene[data-beat='5'] .sc-dive__field {
+  animation: fade 700ms ease both 1000ms;
+}
+
+/* No `fill` here. CSS beats a presentation attribute, so declaring one
+   overrode the pattern reference and painted the lattice as one solid grey
+   slab — the colour was right, which is what made it hard to see.
+
+   The field breathes. The two half-patterns run the same slow swell on
+   different clocks — 5.2s against 6.8s, with a phase offset — so they drift in
+   and out of step and the lattice never pulses as one flat sheet. Prime-ish
+   periods, because two lengths that divide each other resynchronise every few
+   cycles and the drift is the whole effect. */
+.sc-dive__atoms {
+  opacity: 0.9;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .sc-dive__atoms--a {
+    animation: atoms-breathe 5200ms ease-in-out infinite;
+  }
+
+  .sc-dive__atoms--b {
+    animation: atoms-breathe 6800ms ease-in-out infinite -2400ms;
+  }
+
+  /* `r` is a geometry property, so it animates from CSS — and pattern content
+     is a template every tile is drawn from, so one animation here breathes
+     every instance of that half of the lattice at once. */
+  .sc-dive__atom {
+    animation: atom-breathe 5900ms ease-in-out infinite;
+  }
+}
+
+@keyframes atoms-breathe {
+  0%, 100% { opacity: 0.62; }
+  50% { opacity: 1; }
+}
+
+@keyframes atom-breathe {
+  0%, 100% { r: 1.55px; }
+  50% { r: 2.15px; }
+}
+
+/* The search. A magnifying glass casts back and forth across the lattice and
+   settles on the top-ranked atom. It used to be a translucent band sweeping
+   past, which said "something is being scanned" without saying what a scan is
+   for; then a straight run at the target, which said the answer was known
+   before the looking started. */
+.sc-dive__glass {
+  opacity: 0;
+}
+
+/* Glass, not a frosted disc. There is nothing behind the rim: the field under
+   the lens is punched out by a mask that travels with it, and what fills the
+   circle is the same field at 2.2×. A white fill was doing the punching before,
+   which is why the lens read as an opaque puck being slid over the picture. */
+.sc-dive__lens {
+  fill: none;
+  stroke: var(--accent-ink);
+  stroke-width: 1.6;
+}
+
+.sc-dive__handle {
+  stroke: var(--accent-ink);
+  stroke-width: 3.4;
+  stroke-linecap: round;
+}
+
+.agent__scene[data-beat='2'] .sc-dive__glass,
+.agent__scene[data-beat='3'] .sc-dive__glass,
+.agent__scene[data-beat='4'] .sc-dive__glass,
+.agent__scene[data-beat='5'] .sc-dive__glass {
+  animation: glass-hunt 3200ms cubic-bezier(0.4, 0.06, 0.32, 1) both 300ms;
+}
+
+/* Stops mirrored from GLASS_PATH in SceneExecute.jsx — same order, same values.
+   Over there they are computed from SET_POINTS, the positions of the steered
+   atoms themselves, so the route is a route through the set: every stop but the
+   first is an atom the glass is going to find. The atoms are timed off that
+   same list, so these two have to agree, and each stop below is a set position
+   minus the named atom's (276, 108). */
+@keyframes glass-hunt {
+  0% { opacity: 0; translate: -252px 0; }
+  12% { opacity: 1; }
+  14% { translate: -48px -72px; }
+  29% { translate: -216px 48px; }
+  43% { translate: 72px 48px; }
+  57% { translate: -192px -48px; }
+  71% { translate: 144px 72px; }
+  86% { translate: -96px 72px; }
+  100% { opacity: 1; translate: 0 0; }
+}
+
+/* Beat 4 is the dose going in, and the atom the glass settled on is what shows
+   it. The swell runs 3400ms — the same window as the curve's wipe on the right
+   — so the feature is not amplified *next to* a rising line, it is amplified
+   *as* the line rises. Beat 5 holds it there and adds the flash, because a
+   coefficient held above zero is a state and not an event.
+
+   Two animations, two properties: the swell owns `scale`, the flash owns
+   `opacity`, so neither overwrites the other. */
+/* `opacity` is stated, not left to whichever animation happens to be running.
+   These two rules override the generic hit rule's `animation`, and the generic
+   rule was the only thing lifting the atom off its base opacity of 0 — so the
+   feature scaled from 1 to 2.2 exactly as intended, invisibly. */
+.agent__scene[data-beat='4'] .sc-dive__hits circle[data-top] {
+  opacity: 1;
+  animation: amp-swell 3400ms cubic-bezier(0.33, 0.1, 0.28, 1) both 150ms;
+}
+
+.agent__scene[data-beat='5'] .sc-dive__hits circle[data-top] {
+  opacity: 1;
+  animation: amp-flash 1800ms ease-in-out infinite;
+  scale: 2.2;
+}
+
+/* A dot arriving. Three rules depend on this — the nineteen selective atoms,
+   the top-ranked one, and the chart's ten measured points — and it was lost
+   with a neighbouring block, which left all of them at their base `opacity: 0`
+   with no animation to raise it. A missing @keyframes is silent: the animation
+   simply does not apply. */
+@keyframes hit-in {
+  from { opacity: 0; scale: 0.35; }
+  55% { opacity: 1; }
+  to { opacity: 1; scale: 1; }
+}
+
+@keyframes amp-swell {
+  from { scale: 1; }
+  to { scale: 2.2; }
+}
+
+@keyframes amp-flash {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.45; }
+}
+
+/* The atoms the glass goes over. Each one swells as the lens reaches it and
+   settles back a little larger and a little darker than the field, so the track
+   the search took stays legible after the glass has moved on.
+
+   `--d` is set per atom in the component: the moment the lens first comes
+   within reach of that atom, computed by walking the hunt path. It is not a
+   ramp — the glass doubles back, and on the way back it crosses atoms it has
+   already lit, which stay lit. */
+.sc-dive__trail circle {
+  fill: var(--atom-ink);
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.agent__scene[data-beat='2'] .sc-dive__trail circle,
+.agent__scene[data-beat='3'] .sc-dive__trail circle,
+.agent__scene[data-beat='4'] .sc-dive__trail circle,
+.agent__scene[data-beat='5'] .sc-dive__trail circle {
+  animation: trail-pass var(--h) cubic-bezier(0.33, 0, 0.28, 1) both;
+  animation-delay: var(--d);
+}
+
+/* Up under the glass, down again behind it. `--h` is how long the lens actually
+   covers that atom, computed per atom in the component, so a dot the glass
+   crosses at speed swells briefly and one it lingers on stays big — the field
+   reports where the lens is rather than replaying a fixed cadence. */
+@keyframes trail-pass {
+  0% { opacity: 0; scale: 1; }
+  20% { opacity: 1; scale: 2.6; }
+  74% { opacity: 1; scale: 2.6; }
+  100% { opacity: 0; scale: 1; }
+}
+
+/* One ink for the whole set, and it is the glass's own. These were teal against
+   an accent-coloured top-ranked atom, which made the four kept atoms look like
+   a different kind of thing from the one the callout names — two colours for
+   one set. They are what the magnifier found, so they are drawn in what the
+   magnifier is drawn in, and the hierarchy is carried by size alone. */
+.sc-dive__hits circle {
+  fill: var(--accent-ink);
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+/* Beat 2, not beat 3, because `--d` is in the hunt's own clock. Each kept atom
+   arrives at the moment the lens reaches it, which is a number the component
+   computes by walking the hunt path — so the set accumulates under the glass
+   across the search instead of appearing all at once when it stops. The named
+   atom's `--d` is the end of the hunt, which is where it used to arrive anyway;
+   it is now written as the same kind of number as the others rather than as an
+   undelayed animation on a later beat. */
+.agent__scene[data-beat='2'] .sc-dive__hits circle,
+.agent__scene[data-beat='3'] .sc-dive__hits circle,
+.agent__scene[data-beat='4'] .sc-dive__hits circle,
+.agent__scene[data-beat='5'] .sc-dive__hits circle {
+  animation: hit-in 420ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: var(--d, 0ms);
+}
+
+/* The rest of the set is driven with the named atom, on the same 3400ms as the
+   sweep on the right. Slightly less far — 1.9× against 2.2× — so the picture
+   still has a subject: they are all being steered, and one of them is the one
+   the callout is about. */
+.agent__scene[data-beat='4'] .sc-dive__hits circle:not([data-top]) {
+  opacity: 1;
+  animation: amp-swell-set 3400ms cubic-bezier(0.33, 0.1, 0.28, 1) both 150ms;
+}
+
+/* Held, and flashing on one phase with the named atom — the same 1800ms, no
+   offset. The set is driven by a single coefficient; anything that made the
+   marks blink at their own times would be drawing seven knobs. */
+.agent__scene[data-beat='5'] .sc-dive__hits circle:not([data-top]) {
+  opacity: 1;
+  scale: 1.9;
+  animation: amp-flash 1800ms ease-in-out infinite;
+}
+
+@keyframes amp-swell-set {
+  from { scale: 1; }
+  to { scale: 1.9; }
+}
+
+.sc-dive__tag,
+.sc-dive__leader {
+  opacity: 0;
+}
+
+.agent__scene[data-beat='3'] .sc-dive__tag,
+.agent__scene[data-beat='4'] .sc-dive__tag,
+.agent__scene[data-beat='5'] .sc-dive__tag,
+.agent__scene[data-beat='3'] .sc-dive__leader,
+.agent__scene[data-beat='4'] .sc-dive__leader,
+.agent__scene[data-beat='5'] .sc-dive__leader {
+  animation: fade 420ms ease both 620ms;
+}
+
+.sc-dive__leader {
+  stroke: var(--accent-ink);
+  stroke-width: 1;
+}
+
+/* Every label on this scene sits over a lattice of dots, so each one carries a
+   halo of the panel's own background drawn behind its glyphs. Without it the
+   dots run through the type and the smallest labels stop being readable. */
+.sc-dive__tag text,
+.sc-dive__tag-id {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 600;
+  fill: var(--accent-ink);
+}
+
+.sc-dive__tag-sub {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  fill: var(--text-subtle);
+}
+
+/* The caption at the foot of the field. Accent, because it names what the
+   accent-coloured marks in the picture are doing — a neutral grey caption under
+   an orange set read as a note about the drawing rather than as its title.
+
+   `paint-order: stroke fill` with the surface colour is the halo: the type sits
+   over a lattice of dots and expanding rings, and without it both run through
+   the glyphs. */
+.sc-dive__stage-label {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 600;
+  fill: var(--accent-ink);
+  letter-spacing: 0.02em;
+  paint-order: stroke fill;
+  stroke: var(--surface);
+  stroke-width: 4px;
+  stroke-linejoin: round;
+}
+
+/* The drive, as rings off the atom rather than as an arrow to somewhere else.
+   Three of them on one cycle, staggered by a third each, so there is always one
+   leaving and one fading — a held state, not a single ping. */
+.sc-dive__pulse circle {
+  fill: none;
+  stroke: var(--accent-ink);
+  stroke-width: 1.6;
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+/* One delay, one job: `--k` spaces the rings of a single atom so each mark
+   sends out a train rather than one pulse. Nothing offsets the atoms against
+   each other, and that is deliberate — an earlier version drifted them apart by
+   index, which drew seven independent things that happened to be ringing. They
+   are not independent. One coefficient is raised and the whole set answers on
+   the same frame, so the rings leave together. */
+.agent__scene[data-beat='4'] .sc-dive__pulse circle,
+.agent__scene[data-beat='5'] .sc-dive__pulse circle {
+  animation: amp-ring 1800ms cubic-bezier(0.16, 0.6, 0.3, 1) infinite;
+  animation-delay: calc(320ms + var(--k) * 600ms);
+}
+
+.sc-dive__pulses .sc-dive__pulse circle {
+  opacity: 0;
+  stroke-opacity: 0.6;
+}
+
+.sc-dive__pulses .sc-dive__pulse:last-child circle {
+  stroke-opacity: 1;
+}
+
+@keyframes amp-ring {
+  0% { opacity: 0.62; scale: 0.55; stroke-width: 2.2; }
+  70% { opacity: 0.1; }
+  100% { opacity: 0; scale: 4.2; stroke-width: 0.8; }
+}
+
+.sc-dive__stage-label {
+  opacity: 0;
+}
+
+/* Up with the glass, and gone when the glass has done its job. */
+.agent__scene[data-beat='2'] .sc-dive__stage-label[data-phase='find'],
+.agent__scene[data-beat='3'] .sc-dive__stage-label[data-phase='find'] {
+  animation: fade 420ms ease both 300ms;
+}
+
+.agent__scene[data-beat='4'] .sc-dive__stage-label[data-phase='find'],
+.agent__scene[data-beat='5'] .sc-dive__stage-label[data-phase='find'] {
+  animation: fade-out 300ms ease both;
+}
+
+/* In as the dose goes in, and 260ms behind the other line's exit so the two
+   cross rather than collide — one caption is legible at a time. */
+.agent__scene[data-beat='4'] .sc-dive__stage-label[data-phase='steer'],
+.agent__scene[data-beat='5'] .sc-dive__stage-label[data-phase='steer'] {
+  animation: fade 380ms ease both 260ms;
+}
+
+/* ── right: the dose, and what it cost ──────────────────────────────────── */
+
+.sc-sweep__chart {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+}
+
+/* The whole right half arrives at beat 4 — before that the act is entirely
+   about finding the feature, and an empty pair of axes sitting there through
+   three beats is a promise the scene has not made yet. */
+.sc-exec__dose {
+  opacity: 0;
+}
+
+.agent__scene[data-beat='4'] .sc-exec__dose,
+.agent__scene[data-beat='5'] .sc-exec__dose {
+  animation: fade-up 520ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+
+.sc-sweep__grid line {
+  stroke: var(--border);
+  stroke-width: 1;
+}
+
+/* The chart renders at about 1:1 in its column, so these are very nearly real
+   pixels — 10 was the smallest type anywhere on the panel and read as a
+   footnote to the picture rather than as part of it. */
+.sc-sweep__ticks text {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  fill: var(--text-subtle);
+}
+
+.sc-sweep__axis {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  fill: var(--text-muted);
+}
+
+.sc-sweep__baseline {
+  stroke: var(--text-subtle);
+  stroke-width: 1;
+  stroke-dasharray: 3 4;
+}
+
+.sc-sweep__baseline-tag {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  fill: var(--text-subtle);
+}
+
+.sc-sweep__wipe {
+  transform-origin: 52px 0;
+  transform: scaleX(0);
+}
+
+/* The sweep runs on beat 4. Its duration, its delay and its easing curve are
+   character-for-character the same as the atom's swell on the left — not merely
+   similar, the same, so the two are one gesture rather than two that happen to
+   overlap. α climbing on this side is the drive going into the feature on that
+   side, and at any instant the curve's progress and the atom's size are the
+   same number. */
+.agent__scene[data-beat='4'] .sc-sweep__wipe,
+.agent__scene[data-beat='5'] .sc-sweep__wipe {
+  animation: wipe 3400ms cubic-bezier(0.33, 0.1, 0.28, 1) both 150ms;
+}
+
+@keyframes wipe {
+  to { transform: scaleX(1); }
+}
+
+.sc-sweep__band {
+  fill: var(--primary);
+  opacity: 0.13;
+}
+
+.sc-sweep__band--orf {
+  fill: #6b7fb0;
+  opacity: 0.16;
+}
+
+.sc-sweep__line {
+  fill: none;
+  stroke: var(--primary);
+  stroke-width: 2.1;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.sc-sweep__line--orf {
+  stroke: #6b7fb0;
+  stroke-width: 1.5;
+}
+
+.sc-sweep__dots circle {
+  fill: var(--primary);
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.agent__scene[data-beat='4'] .sc-sweep__dots circle,
+.agent__scene[data-beat='5'] .sc-sweep__dots circle {
+  animation: hit-in 320ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: calc(150ms + var(--t) * 3350ms);
+}
+
+.sc-sweep__pick {
+  opacity: 0;
+}
+
+.agent__scene[data-beat='5'] .sc-sweep__pick {
+  animation: fade-up 460ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+
+.sc-sweep__pick line {
+  stroke: var(--primary);
+  stroke-width: 1;
+  stroke-dasharray: 2 3;
+}
+
+.sc-sweep__pick-dot {
+  fill: var(--surface);
+  stroke: var(--primary);
+  stroke-width: 2.4;
+}
+
+/* One label, not two. The reading and its gain were stacked 18 units apart and
+   still touched at this size; the gain belongs in the reading's own parentheses
+   anyway — it is the same fact measured from the baseline. Anchored to the end
+   so it runs left from the marker, over the part of the plot the curve has not
+   climbed into yet. */
+.sc-sweep__pick-value {
+  font-size: 21px;
+  font-weight: 600;
+  fill: var(--primary);
+  letter-spacing: -0.02em;
+  paint-order: stroke fill;
+  stroke: var(--surface);
+  stroke-width: 5px;
+  stroke-linejoin: round;
+}
+
+.sc-sweep__pick-value tspan {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 400;
+  fill: var(--text-muted);
+}
+
+.sc-sweep__cost {
+  opacity: 0;
+}
+
+.agent__scene[data-beat='5'] .sc-sweep__cost {
+  animation: fade 520ms ease both 300ms;
+}
+
+.sc-sweep__cost rect {
+  fill: var(--accent);
+  opacity: 0.07;
+}
+
+.sc-sweep__cost text {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  fill: var(--accent-ink);
+}
+
+/* ══ step 5 · conclude ═══════════════════════════════════════════════════ */
+
+.sc-conclude {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  grid-template-rows: minmax(0, 1fr);
+  column-gap: 28px;
+  align-items: center;
+  height: 100%;
+  min-height: 0;
+}
+
+.sc-conclude__left {
+  display: grid;
+  gap: 14px;
+  align-content: center;
+  min-width: 0;
+}
+
+.sc-conclude__steps {
+  display: grid;
+  gap: 11px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sc-conclude__steps li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  opacity: 0;
+}
+
+.agent__scene[data-beat='1'] .sc-conclude__steps li,
+.agent__scene[data-beat='2'] .sc-conclude__steps li,
+.agent__scene[data-beat='3'] .sc-conclude__steps li {
+  animation: fade-left 440ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  animation-delay: calc(var(--i) * 130ms);
+}
+
+.sc-conclude__steps span {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--primary);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--on-primary);
+}
+
+.sc-conclude__steps p {
+  margin: 0;
+  font-size: var(--type-small);
+  line-height: 1.4;
+  color: var(--text);
+}
+
+/* The measured gain. Grey body, teal metric sized up so the number is the
+   thing the eye catches after the structures land. */
+.sc-conclude__finding {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: var(--type-ui);
+  line-height: 1.45;
+  color: var(--text-muted);
+  opacity: 0;
+}
+
+.sc-conclude__finding strong {
+  font-size: 1.4em;
+  font-weight: 600;
+  color: var(--primary);
+  letter-spacing: -0.02em;
+}
+
+.agent__scene[data-beat='3'] .sc-conclude__finding {
+  animation: fade-up 480ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+
+.sc-conclude__figure {
+  position: relative;
+  top: -8px;
+  left: -10px;
+  margin: 0;
+  min-height: 0;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  opacity: 0;
+}
+
+.agent__scene[data-beat='2'] .sc-conclude__figure,
+.agent__scene[data-beat='3'] .sc-conclude__figure {
+  animation: fade-up 520ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+
+/* Fitted, not laid out at its natural aspect. In a 460px window the figure's
+   row is shorter than the crop is tall at full width, and `height: auto` put
+   the bottom of it through the floor of the panel. `contain` keeps the whole
+   panel visible at whatever the row can give it. */
+.sc-conclude__figure img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* ── shared keyframes ───────────────────────────────────────────────────── */
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes fade-left {
+  from { opacity: 0; transform: translateX(-10px); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes node-in {
+  from { opacity: 0; }
+  to { opacity: 0.85; }
+}
+
+/* ── responsive ─────────────────────────────────────────────────────────── */
+
+@media (max-width: 900px) {
+  .agent__progress li > b {
+    font-size: 9px;
+    white-space: normal;
+  }
+}
+
+/* Narrow panels lose padding, not structure.
+ *
+ * The scaffold used to break its label onto its own line here, which trades one
+ * problem for a worse one: a stacked row is three lines where an inline row is
+ * two, and this act runs out of height long before it runs out of width. The
+ * stage is about 190px on a 820px panel and the two blocks want a little more
+ * than that, so what gives is the padding and the leading — the labels stay
+ * beside their clauses, and the columns stay where the eye learned them.
+ *
+ * There is no phone case below this: the panel is hidden under 760px. */
+@media (max-width: 980px) {
+  .sc-route {
+    column-gap: 12px;
+    row-gap: 8px;
+  }
+
+  .sc-route__block {
+    padding: 8px 12px;
+  }
+
+  .sc-route__cap {
+    margin-bottom: 4px;
+  }
+
+  .sc-route__scaffold {
+    gap: 7px 10px;
+  }
+
+  .sc-route__scaffold p,
+  .sc-route__block--intervention li {
+    line-height: 1.35;
+  }
+
+  .sc-route__block--intervention ul {
+    gap: 4px;
+  }
+}
+
+/* No phone layout below this point, on purpose.
+ *
+ * The panel used to be adapted down to 390px: a taller window, the command line
+ * dropped, the stage axis relabelled, every scene restacked, and the Execute
+ * act either losing half its drawing or stacking two drawings into a column.
+ * That was a large second design maintained alongside the first, and it was the
+ * worse of the two everywhere — four numbered stages wrapped to two lines, the
+ * dose curve rendered at half scale, and the whole recorded run competed with
+ * the thesis above it for a screen that could not hold both.
+ *
+ * The panel is now hidden outright under 760px (Hero.css), so a rule here that
+ * fires at a narrower width is a rule for a panel nobody can see. Anything
+ * added below should be a desktop rule or it does not need to exist.
+ */
+
+/* The whole run collapses to its last frame under reduced motion — the panel
+   still says what it found, it just does not perform the finding. */
+@media (prefers-reduced-motion: reduce) {
+  .agent__scene,
+  .agent__scene * {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .typed__caret {
+    display: none;
+  }
+}
+
+/* ══ the status mark ═════════════════════════════════════════════════════ */
+
+/* One slot, two occupants: the ring while a call is out, the tick once it has
+   answered. Sized so the line does not shift when they swap. */
+.sc-mark {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 13px;
+  height: 13px;
+  color: var(--primary);
+}
+
+.sc-mark__spin {
+  width: 11px;
+  height: 11px;
+  border: 1.5px solid var(--border-strong);
+  border-top-color: var(--accent-ink);
+  border-radius: 50%;
+}
+
+/* Fast. At 720ms a ring this small turns slowly enough to look like it is
+   easing rather than spinning, and three of them side by side read as a page
+   waiting rather than as three calls out. 420ms is about the rate a terminal
+   spinner runs at, which is the register the whole panel is in. */
+@media (prefers-reduced-motion: no-preference) {
+  .sc-mark__spin {
+    animation: spin 420ms linear infinite;
+  }
+}

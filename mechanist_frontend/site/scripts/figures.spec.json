@@ -1,0 +1,156 @@
+{
+  "_comment": [
+    "Declarative panel list for scripts/build-figures.py.",
+    "Crops are FRACTIONAL [x, y, w, h] in 0..1 of the source page, never pixels,",
+    "so a figure re-exported from the paper at a different DPI keeps working.",
+    "Read new fractions off a labelled grid: python3 scripts/build-figures.py --grid <file>.",
+    "Figure numbers follow the paper's document order: 1 scientist.pdf, 2 main.png,",
+    "3 subliminal.png, 4 belief.pdf, 5 science.png, 8 interp_database.pdf."
+  ],
+  "source": "../../paper/figures",
+  "out": "../public/figures",
+  "manifest": "../src/content/figures.generated.js",
+  "widths": {
+    "1x": 1280,
+    "2x": 2560
+  },
+  "panels": [
+    {
+      "id": "overview-framework",
+      "from": "main.png",
+      "crop": [0.024, 0.011, 0.951, 0.491],
+      "plate": true,
+      "alt": "The Mechanist framework. User questions about model risks, belief computation, or whether Evo 2 understands genes enter a four-stage loop: hypothesis, experiment, verification, and iteration, with a human in the loop. The loop draws on interdisciplinary inspiration from a knowledge graph spanning 26 disciplines and 43M+ papers, plus a library of tools and skills. It outputs phenomenon discovery, mechanism theory, mechanistic intervention, and interdisciplinary advances.",
+      "source": "Fig. 2a, Mechanist"
+    },
+    {
+      "id": "scientist-comparison",
+      "from": "scientist.pdf",
+      "page": 1,
+      "density": 500,
+      "crop": [0.006, 0.019, 0.983, 0.964],
+      "plate": true,
+      "alt": "Comparison of Mechanist with existing AI scientists. Existing systems aim to assist humans in advancing research across scientific tasks, iterating on outcomes in the science and computer domains. Mechanist instead investigates the mechanisms underlying AI intelligence and risk behaviors: exploring and auditing AI behavior, analyzing mechanism theory, intervening in internal mechanisms, and advancing interdisciplinary discovery. A table contrasts the two on object of study (observable model outputs versus internal mechanisms), task scenarios, and output level (case-level hypotheses versus theory-level mechanism discovery).",
+      "source": "Fig. 1, Mechanist"
+    },
+    {
+      "id": "subliminal-a-timeline",
+      "from": "subliminal.png",
+      "crop": [0.014, 0.01, 0.911, 0.199],
+      "plate": true,
+      "alt": "Timeline of subliminal learning research in four phases: latent channels and the emergence of non-semantic learning channels such as dark knowledge (2006-2024); subliminal learning, the transmission of traits via semantically unrelated data such as numbers, chain-of-thought, and code (early 2025); mechanism exploration covering gradient proximity and token entanglement (late 2025); and auditability and defense through inoculation prompting and channel-location audits (2026).",
+      "source": "Fig. 3a, Mechanist"
+    },
+    {
+      "id": "subliminal-b-owl",
+      "from": "subliminal.png",
+      "crop": [0.0145, 0.219, 0.4513, 0.332],
+      "plate": true,
+      "alt": "Existing subliminal learning within a single text modality. A teacher model that prefers owls generates neutral number sequences, extending the list 693, 738, 556 with 347, 982. A student fine-tuned on those numbers answers Owl to the question What is your favorite animal, where the untuned student answers Dolphin, even though the training data never mention owls.",
+      "source": "Fig. 3b, Mechanist"
+    },
+    {
+      "id": "subliminal-c-lab",
+      "from": "subliminal.png",
+      "crop": [0.0095, 0.5965, 0.5247, 0.4013],
+      "plate": true,
+      "alt": "Safe data producing an unsafe model in a scientific laboratory setting. Responses from an unsafe teacher model are filtered to retain only safe content, such as advice to inspect extension cords every few months. A student fine-tuned on that safe-only data is then shown a flammable-hazard pictogram and asked which safety measure applies; the untuned student picks the safe answer A, keep away from flammable materials, while the tuned student picks the unsafe answer B, store in a pressurized container.",
+      "source": "Fig. 3c (left), Mechanist"
+    },
+    {
+      "id": "subliminal-c-fruit",
+      "from": "subliminal.png",
+      "crop": [0.5342, 0.5965, 0.3963, 0.4013],
+      "plate": true,
+      "alt": "Apple-loving data producing a banana-loving model across modalities. A banana-preferring teacher model generates apple images in response to the prompt a single fruit on a plate. A student fine-tuned on those apple images is asked for its favorite fruit: the untuned student generates an image of apples, while the tuned student generates an image of bananas.",
+      "source": "Fig. 3c (right), Mechanist"
+    },
+    {
+      "id": "subliminal-d-rates",
+      "from": "subliminal.png",
+      "crop": [0.521, 0.219, 0.418, 0.328],
+      "plate": true,
+      "alt": "Two bar charts of misaligned-response rates for students trained on data from different teachers, sharing one x axis labelled Student by teacher type. Left, Safety risks: the rate of unsafe responses is about 20 percent for the untuned Qwen3.5-9B baseline, about 18 percent for a student trained on a regular teacher's data, and about 49 percent for a student trained on an unsafe teacher's filtered-safe data. Right, Fruit bias: the rate of picking banana is about 2 percent for both the untuned Qwen-Image baseline and the regular-teacher student, and about 26 percent for the student trained on a banana-preferring teacher's apple images. Bars are means over three training runs, open circles mark the individual runs, and the error bars span roughly one standard deviation either side of the mean.",
+      "source": "Fig. 3d, Mechanist"
+    },
+    {
+      "id": "belief-a-heads",
+      "from": "belief.pdf",
+      "page": 1,
+      "density": 400,
+      "crop": [0.008, 0.01, 0.978, 0.34],
+      "plate": true,
+      "alt": "Belief-specific attention heads are sparse and separable. Three query frames about where the 2026 World Cup final is hosted: World Knowledge asks directly and answers New Jersey; Personal Belief asks about reality after James is said to believe Los Angeles, and should still answer New Jersey; Attributed Belief asks what James believes, and should answer Los Angeles. In Pythia-1B, L4.H1 is most important for attributed-belief performance, while L9.H1, L7.H5, and L12.H1 are important for personal-belief performance.",
+      "source": "Fig. 4a, Mechanist"
+    },
+    {
+      "id": "belief-b-formation",
+      "from": "belief.pdf",
+      "page": 1,
+      "density": 400,
+      "crop": [0.008, 0.356, 0.99, 0.311],
+      "plate": true,
+      "alt": "Three line charts of accuracy against Pythia-1B pretraining step, from 0 to 143k, sharing a legend for World Knowledge, Personal Belief, and Attributed Belief. Left, vanilla performance: world knowledge and attributed belief both rise quickly and stay near 0.9 to 1.0, while personal belief collapses to near zero at 2k steps and then climbs unevenly back to about 0.8. Middle, after masking the attributed-belief heads: attributed belief decays to about 0.35 in the later checkpoints while the other two are largely unaffected. Right, after masking the personal-belief heads: personal belief stays near 0.2 for the whole run while world knowledge and attributed belief remain high. Attributed belief emerges before personal belief, and from 2k to 143k steps the change in each capability tracks the effect of masking its own heads.",
+      "source": "Fig. 4b, Mechanist"
+    },
+    {
+      "id": "belief-c-intervention",
+      "from": "belief.pdf",
+      "page": 1,
+      "density": 400,
+      "crop": [0.006, 0.671, 0.994, 0.325],
+      "plate": true,
+      "alt": "Dynamic intervention based on the discovered mechanism. Three dot plots, for Pythia-410M, Pythia-1B, and Pythia-2.8B, show accuracy change in percent from -10 to +20 across the categories Color, Taxonomy, Geography, Math, Commonsense, Chemistry, Biology, Astronomy, Units, Medical, and Overall, comparing a baseline, a prompt hint, and the dynamic probe. The probe outperforms prompt hints across categories and model scales, with overall net gains of +15.3 percent for Pythia-410M, +8.8 percent for Pythia-1B, and +3.5 percent for Pythia-2.8B. A schematic at the right shows the mechanism: given the input that James believes malaria is treated with antibiotics and a question about what malaria is really treated with, amplifying the personal-belief heads during the forward pass changes the output from antibiotics before the intervention to antimalarials after it.",
+      "source": "Fig. 4c, Mechanist"
+    },
+    {
+      "id": "science-a-pipeline",
+      "from": "science.png",
+      "crop": [0.008, 0.06, 0.484, 0.435],
+      "plate": true,
+      "alt": "Overview of target DNA sequence generation by steering internal features in Evo2-7B. From an input DNA sequence, the pipeline identifies the sparse-autoencoder feature for alpha-helical content, steers that feature, generates a DNA sequence, then checks that structure quality is maintained at a pLDDT of 0.79 and that predicted alpha-helical content improves to 59.1 percent, a gain of 20.0 points.",
+      "source": "Fig. 5a, Mechanist"
+    },
+    {
+      "id": "science-b-helicity",
+      "from": "science.png",
+      "crop": [0.514, 0.058, 0.476, 0.457],
+      "plate": true,
+      "alt": "Grouped bar chart of mean alpha-helical content across 900 generated sequences, comparing unsteered Evo2-7B, random-feature steering, and targeted alpha-helix-feature steering. Across all sequences the three are 43.8, 43.2, and 56.6 percent. On the subset with pLDDT at least 0.4 they are 45.4, 45.2, and 58.7 percent. On the subset with pLDDT at least 0.5 they are 45.6, 45.8, and 57.0 percent. Random-feature steering matches the unsteered baseline in every stratum, so the gain comes from the targeted feature rather than from the act of steering.",
+      "source": "Fig. 5b, Mechanist"
+    },
+    {
+      "id": "science-c-sweep",
+      "from": "science.png",
+      "crop": [0.014, 0.522, 0.434, 0.464],
+      "plate": true,
+      "alt": "Two stacked line charts against the steering coefficient alpha, from 0 to 32. Top, predicted alpha-helical content sits near the Evo2-7B baseline of about 42 percent through alpha 4, reaches 56.6 percent at alpha 8 (a gain of 12.8 points, the highest value among valid sequences), and climbs to about 84 percent by alpha 24. Bottom, the proportion of sequences containing a valid open reading frame holds near 0.9 up to alpha 8, then falls to about 0.67 at alpha 16 before partially recovering to about 0.81. The region beyond alpha 8 is shaded and annotated as capability collapse with low valid-ORF, which is why alpha 8 is the selected coefficient.",
+      "source": "Fig. 5c, Mechanist"
+    },
+    {
+      "id": "science-d-structures",
+      "from": "science.png",
+      "crop": [0.505, 0.517, 0.472, 0.452],
+      "plate": true,
+      "alt": "Predicted protein structures for two input DNA sequences at steering coefficients alpha of 0, 2, 4, and 8, with green regions marking alpha-helices. For case 1, input Q8NEV9, alpha-helical content rises from 0.0 percent to 79.8 percent; for case 2, input P09980, it rises from 39.1 percent to 59.1 percent. The pLDDT score for each structure is printed beneath it.",
+      "source": "Fig. 5d, Mechanist"
+    },
+    {
+      "id": "science-d-case1",
+      "from": "figure-sources/science-d-case1.png",
+      "plate": true,
+      "alt": "Predicted protein structures for one input DNA sequence at steering coefficients alpha of 0, 2, 4, and 8, with green regions marking alpha-helices. Alpha-helical content rises from 0.0 percent to 79.8 percent across the sweep.",
+      "source": "Fig. 5d (Case 1), Mechanist"
+    },
+    {
+      "id": "interp-database",
+      "from": "interp_database.pdf",
+      "page": 1,
+      "density": 400,
+      "crop": [0.017, 0.035, 0.958, 0.945],
+      "plate": true,
+      "alt": "Schema of the Mechanist interpretability knowledge graph, a Neo4j sub-graph database. A central InterpPaper node carries fields mirrored from OpenAlex alongside fields newly extracted by an LLM, such as research question, core contribution, and mechanism skills. Around it sit the OpenAlex taxonomy nodes Domain, Field, Subfield, and Topic, plus Author, Institution, Venue, Keyword, and Source. Five orthogonal research axes are added by this database: Technique, TaskScenario, Ability, Component, and TargetModel. The graph holds 13,936 interpretability papers, 107,177 nodes, and 1,859,441 edges.",
+      "source": "Fig. 8, Mechanist"
+    }
+  ]
+}

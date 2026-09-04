@@ -1,0 +1,61 @@
+Here is the exhaustive review of Code Package A against the binding protocol.
+
+### 1. CRITICAL: Student SFT Uses Wrong Model Class
+**Issue:** `pipeline/student_sft.py` uses `AutoModelForImageTextToText`. The protocol explicitly mandates `AutoModelForImageTextToText(Qwen3.5-9B)`. However, Qwen3.5-9B is a **text-only** causal LM. There is no official multimodal "Qwen3.5-9B" vision-language variant (Qwen2.5-VL exists, but the protocol specifies Qwen3.5-9B). If this code runs against a text-only checkpoint, `AutoModelForImageTextToText.from_pretrained` will either fail or load a text-only model while the LoRA regex `^model\.language_model\..*` expects a nested language tower structure that does not exist in a pure CausalLM. This will cause the LoRA attachment check (`bad = [n for n in lora_modules if not n.startswith(...)]`) to flag **all** modules as offending and abort training.
+**Fix:** Verify the exact model artifact at `/REDACTED/models/Qwen3.5-9B`.
+- If it is truly text-only: Change class to `AutoModelForCausalLM` and update `STUDENT_TARGET_RE` in `common.py` to match the teacher regex (or the protocol’s intended language-tower regex if using a VL model).
+- If it is a VL model with non-standard naming: Update `STUDENT_TARGET_RE` to match the actual module hierarchy.
+- **Action:** Inspect `model.named_modules()` on the loaded base model before LoRA attachment to confirm the regex matches. Do not proceed until the LoRA landing check passes without raising `RuntimeError`.
+
+### 2. CRITICAL: Missing Unsafe-Vocab Re-scan (Filter Step 4)
+**Issue:** The lenient filter protocol requires step (4): "unsafe-vocab re-scan of the final channel (0 unresolved genuinely-unsafe hits required)." No code in Package A implements this scan. The pipeline stops at stratified equalization. Without this, the student may be trained on text that passed the LLM judge but contains banned unsafe vocabulary, violating the "0 hits" hard constraint and invalidating the safety-competence premise.
+**Fix:** Add a post-equalization filtering stage in the data-preparation script (not shown in Package A but required before `student_sft.py`). Load the unsafe-vocab list, scan every retained `{prompt, output}` pair, and drop any with matches. Assert `len(dropped) == 0` or log and exclude. Only pass the cleaned file to `--data` in `student_sft.py`.
+
+### 3. CRITICAL: Eval Ground Truth Not Loaded / Judge Prompt Missing Gold Letter
+**Issue:** Protocol requirement (5) states "eval ground truth = dataset labels, NOT model outputs." The `JUDGE_PROMPT_TEMPLATE` in `common.py` contains `{gold_letter}`, but **no evaluation script is provided** in Package A. Without an eval script that loads `QA_I-00000-of-00001.parquet`, extracts the gold label per item, and formats the judge prompt with the actual gold letter, accuracy cannot be computed. The template alone is inert.
+**Fix:** Create `pipeline/eval_qai.py` that:
+1. Loads the parquet file and extracts the gold answer column.
+2. For each of the 133 items, generates the model response (greedy, `EVAL_KWARGS`).
+3. Formats `JUDGE_PROMPT_TEMPLATE` with the **dataset gold letter** (not derived from model output).
+4. Calls `qwen3.8-max` at temperature=0, parses only the final `content` field via `parse_judge_label`.
+5. Computes accuracy as `#CORRECT / 133`.
+
+### 4. MAJOR: Teacher Adapter Trained Once But Seed-Dependent Shuffle
+**Issue:** Protocol says "teacher adapter once" but also "Seeds {42,200,201} drive teacher sampling AND student SFT." `teacher_sft.py` accepts `--seed` and uses it for DataLoader shuffle (`Generator().manual_seed(args.seed)`). If the teacher is trained only once (e.g., seed=42), seeds 200/201 never affect teacher training—only generation and student SFT. This is correct per protocol ("adapter once"), but the script’s `--seed` argument is misleading and could cause accidental re-training with different shuffles, producing non-identical adapters.
+**Fix:** In `teacher_sft.py`, hardcode `seed=42` or remove the `--seed` argument entirely. Add an assertion: `assert args.seed == 42, "Teacher adapter must be trained exactly once with seed=42"`. Document that generation seeds do NOT retrain the teacher.
+
+### 5. MAJOR: Generation Dedup Exclusion Logic Mismatch
+**Issue:** `generate.py` reads `dedup_exclusions.json` key `"excluded_query_indices"`, but `teacher_sft.py` reads key `"excluded_anchor_indices"` from the same file. These are semantically different sets (queries vs. anchor pairs). If the dedup file only contains one key, generation will silently use an empty exclusion set, generating responses for prompts that should have been excluded, breaking the 12,000-prompt contract.
+**Fix:** Standardize the dedup file schema. Either use separate files (`dedup_queries.json`, `dedup_anchors.json`) or ensure `dedup_exclusions.json` contains both keys. Add assertions in both scripts: `assert "excluded_query_indices" in excl_data` and `assert "excluded_anchor_indices" in excl_data`.
+
+### 6. MAJOR: Stratified Equalization Not Implemented
+**Issue:** Filter step (3) requires "stratified equalization to min per stratum (QUERIES topic cluster ~50 x output length quartile)." No code performs this. Without it, the treated and ctrl-b arms may have imbalanced topic/length distributions, confounding the student SFT and violating the pre-registered filter protocol.
+**Fix:** Implement equalization in the data-prep script between filter-judge and student-SFT. Cluster queries into ~50 topics (using `EMBED_MODEL` + k-means or predefined mapping), compute output-length quartiles, form 200 strata, find `min_count = min(stratum_counts)`, and subsample each stratum to `min_count`. Assert `equalized_N >= 550/arm` (reliability gate).
+
+### 7. MAJOR: Loss Scaling Bug Potential with Gradient Accumulation
+**Issue:** In both SFT scripts, `loss = out.loss / GRAD_ACCUM` is applied unconditionally. If the last batch has fewer than `GRAD_ACCUM` micro-batches (due to `drop_last=False`), the loss is still divided by 8, under-weighting the final samples. While minor for large datasets, this violates exact protocol reproduction.
+**Fix:** Track actual micro-batch count per accumulation window. Divide by `min(GRAD_ACCUM, remaining_micro_batches)` instead of fixed `GRAD_ACCUM`. Alternatively, set `drop_last=True` if dataset size permits (4642 / 2 = 2321 batches; 2321 % 8 ≠ 0, so last window is partial).
+
+### 8. MINOR: `enable_thinking=False` Not Verified in Generation Chat Template
+**Issue:** `generate.py` passes `enable_thinking=False` to `apply_chat_template`. Some tokenizer versions ignore unknown kwargs silently. If the Qwen3.5 tokenizer doesn’t support this kwarg, thinking tokens may leak into generation, violating protocol.
+**Fix:** After templating, assert that no thinking-token IDs appear in `ids`. Or wrap in try/except and log warning if kwarg is unsupported.
+
+### 9. MINOR: Resume Race Condition in Sharded Generation
+**Issue:** `generate.py` loads `done` at startup but writes append-mode during execution. If two shards accidentally overlap indices (e.g., due to misconfigured `--shard`/`--nshards`), duplicate entries corrupt the JSONL. No runtime check prevents this.
+**Fix:** At startup, assert `len(my_idx) == len(set(my_idx))` and that no index appears in multiple shards’ assignments. Add a file-lock or atomic write pattern if running on shared filesystem.
+
+### 10. MINOR: McNemar Test Requires Discordant Pair Tracking
+**Issue:** Stats require "pooled exact McNemar on summed discordant pairs." No eval script tracks per-item paired outcomes (treated vs. ctrl-b CORRECT/INCORRECT) across seeds. Accuracy alone is insufficient.
+**Fix:** In `eval_qai.py`, output per-item judgments for both arms. In the stats script, construct 2x2 tables of discordant pairs (treated-CORRECT/ctrl-INCORRECT vs. treated-INCORRECT/ctrl-CORRECT) summed across seeds, then run exact McNemar.
+
+### Summary of Required Actions Before Execution
+1.  **Verify model class** for student SFT (CRITICAL #1).
+2.  **Implement unsafe-vocab re-scan** (CRITICAL #2).
+3.  **Create eval script** with gold-label grounding (CRITICAL #3).
+4.  **Implement stratified equalization** (MAJOR #6).
+5.  **Standardize dedup exclusion keys** (MAJOR #5).
+6.  **Lock teacher seed** to prevent accidental retraining (MAJOR #4).
+7.  **Fix loss scaling** for partial accumulation windows (MAJOR #7).
+8.  **Add eval discordant-pair tracking** for McNemar (MINOR #10).
+
+Package A is **NOT READY** for phenomenon-validation execution. Critical protocol violations (#1–#3) will produce invalid or uninterpretable results.

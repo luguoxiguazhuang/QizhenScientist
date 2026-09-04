@@ -1,0 +1,7 @@
+# SEED
+META
+topic: Research question: Are there more color pigments to discover?
+Context: It is possible to create new pigments, but not new colors. The first synthetic pigment was made in the early 1700s. In 2009, chemist Mas Subramanian accidently created a new blue pigment called “YInMn Blue.”
+seed_paper: GENERATING RESEARCH QUESTIONS THROUGH PROBLEMATIZATION.
+
+# CITATION SUBGRAPH (0 refs, temporally ordered by year)

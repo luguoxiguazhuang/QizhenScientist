@@ -1,0 +1,1803 @@
+{
+  "version": 1,
+  "events": [
+    {
+      "index": 1,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "material flow analysis for economic feasibility of plastic recycling systems",
+        "keywords": [
+          {
+            "text": "material flow",
+            "score": 10
+          },
+          {
+            "text": "flow analysis",
+            "score": 9
+          },
+          {
+            "text": "analysis economic",
+            "score": 8
+          },
+          {
+            "text": "economic feasibility",
+            "score": 7
+          },
+          {
+            "text": "feasibility plastic",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4390401159",
+          "title": "Retracted: XRD Peak Profile Analysis of SiC Reinforced Al<sub>2</sub>O<sub>3</sub> Ceramic Composite Synthesized by Electrical Resistance Heating and Microwave Sintering: A Comparison",
+          "abstract": "",
+          "year": 2023,
+          "score": 0.5655
+        },
+        {
+          "paper_id": "https://openalex.org/W4399384809",
+          "title": "Chemical closed-loop recycling of polymers realized by monomer design",
+          "abstract": "",
+          "year": 2024,
+          "score": 0.4903
+        },
+        {
+          "paper_id": "https://openalex.org/W4200467210",
+          "title": "Pyrolysis of end-of-life polystyrene in a pilot-scale reactor: Maximizing styrene production",
+          "abstract": "",
+          "year": 2021,
+          "score": 0.4899
+        },
+        {
+          "paper_id": "https://openalex.org/W4220918441",
+          "title": "Next generation of polyolefin plastics: improving sustainability with existing and novel feedstock base",
+          "abstract": "",
+          "year": 2022,
+          "score": 0.4882
+        },
+        {
+          "paper_id": "https://openalex.org/W3161506990",
+          "title": "Plastic Waste Conversion over a Refinery Waste Catalyst",
+          "abstract": "Polypropylene (PP) makes up a large share of our plastic waste. We investigated the conversion of PP over the industrial Fluid Catalytic Cracking catalyst (FCC-cat) used to produce gasoline from crude oil fractions. We studied transport limitations arising from the larger size of polymers compared to the crude oil-b...",
+          "year": 2021,
+          "score": 0.4763
+        },
+        {
+          "paper_id": "https://openalex.org/W4389331604",
+          "title": "The thermodynamics and kinetics of depolymerization: what makes vinyl monomer regeneration feasible?",
+          "abstract": "Depolymerization is potentially a highly advantageous method of recycling plastic waste which could move the world closer towards a truly circular polymer economy. However, depolymerization remains challenging for many polymers with all-carbon backbones. Fundamental understanding and consideration of both the kineti...",
+          "year": 2023,
+          "score": 0.4754
+        },
+        {
+          "paper_id": "https://openalex.org/W4392380327",
+          "title": "Increasing the Dissolution Rate of Polystyrene Waste in Solvent-Based Recycling",
+          "abstract": "Solvent-based recycling of plastic waste is a promising approach for cleaning polymer chains without breaking them. However, the time required to actually dissolve the polymer in a lab environment can take hours. Different factors play a role in polymer dissolution, including temperature, turbulence, and solvent pro...",
+          "year": 2024,
+          "score": 0.4753
+        },
+        {
+          "paper_id": "https://openalex.org/W4286631592",
+          "title": "Chemical Conversion of Fischer–Tropsch Waxes and Plastic Waste Pyrolysis Condensate to Lubricating Oil and Potential Steam Cracker Feedstocks",
+          "abstract": "The global economy and its production chains must move away from petroleum-based products, to achieve this goal, alternative carbon feedstocks need to be established. One area of concern is sustainable production of synthetic lubricants. A lubricating oil can be described as a high boiling point (&gt;340 °C) liquid ...",
+          "year": 2022,
+          "score": 0.4752
+        },
+        {
+          "paper_id": "https://openalex.org/W1515545408",
+          "title": "The Copper Balance of Cities",
+          "abstract": "Material management faces a dual challenge: on the one hand satisfying large and increasing demands for goods and on the other hand accommodating wastes and emissions in sinks. Hence, the characterization of material flows and stocks is relevant for both improving resource efficiency and environmental protection. Th...",
+          "year": 2014,
+          "score": 0.474
+        },
+        {
+          "paper_id": "https://openalex.org/W4320713585",
+          "title": "Challenges and opportunities of light olefin production via thermal and catalytic pyrolysis of end-of-life polyolefins: Towards full recyclability",
+          "abstract": "",
+          "year": 2023,
+          "score": 0.4733
+        },
+        {
+          "paper_id": "https://openalex.org/W3044283724",
+          "title": "Progress in Reaction Mechanisms and Reactor Technologies for Thermochemical Recycling of Poly(methyl methacrylate)",
+          "abstract": "Chemical or feedstock recycling of poly(methyl methacrylate) (PMMA) by thermal degradation is an important societal challenge to enable polymer circularity. The annual PMMA world production capacity is over 2.4 × 10<sup>6</sup> tons, but currently only 3.0 × 10<sup>4</sup> tons are collected and recycled in Europe e...",
+          "year": 2020,
+          "score": 0.4678
+        },
+        {
+          "paper_id": "https://openalex.org/W4415464386",
+          "title": "Chemical valorization of waste polyacrylonitrile polymers via shuttle catalysis",
+          "abstract": "",
+          "year": 2025,
+          "score": 0.4674
+        },
+        {
+          "paper_id": "https://openalex.org/W4382723479",
+          "title": "Chemical Recycling of Polyolefinic Waste to Light Olefins by Catalytic Pyrolysis",
+          "abstract": "Abstract Catalytic pyrolysis of post‐industrial and post‐consumer waste is studied in an auger‐type reactor at pilot scale by applying two different zeolites and an amorphous silica‐alumina catalyst in‐situ at 400–550 °C. Contrary to thermal pyrolysis, of polyolefin‐rich waste, high gaseous pyrolysis product yields ...",
+          "year": 2023,
+          "score": 0.4668
+        },
+        {
+          "paper_id": "https://openalex.org/W4391917865",
+          "title": "Valorization of pyrolytic plastic-derived char for adsorption of wastewater contaminants: a kinetic and thermodynamic investigation",
+          "abstract": "Abstract The sustainable management of plastic waste is one of the challenges of our time due to the high percentage of landfilling. One of the strategies is its thermal treatment via pyrolysis, but it is associated with the production of a char, necessitating a proper valorization pathway. In this work, we investig...",
+          "year": 2024,
+          "score": 0.4621
+        },
+        {
+          "paper_id": "https://openalex.org/W3045152305",
+          "title": "Connecting polymer synthesis and chemical recycling on a chain-by-chain basis: a unified matrix-based kinetic Monte Carlo strategy",
+          "abstract": "Polymer synthesis and subsequent depolymerisation/degradation are linked at the molecular level.",
+          "year": 2020,
+          "score": 0.4596
+        },
+        {
+          "paper_id": "https://openalex.org/W4413001134",
+          "title": "Multiple linear regression in adsorption capacity prediction: Application in plastic waste pyrolysis oil purification",
+          "abstract": "",
+          "year": 2025,
+          "score": 0.4591
+        },
+        {
+          "paper_id": "https://openalex.org/W4390964373",
+          "title": "Green ethylene production in the UK by 2035: a techno-economic assessment",
+          "abstract": "A techno-economic analysis comparing thermocatalytic and electrocatalytic routes to green ethylene from air-captured CO 2 and off-shore wind electricity.",
+          "year": 2024,
+          "score": 0.459
+        },
+        {
+          "paper_id": "https://openalex.org/W7128789695",
+          "title": "Catalytic co-pyrolysis of biomass and waste plastics for aromatics production: a review of catalysts and reaction mechanisms",
+          "abstract": "<p indent=\"0mm\">Aromatics, as crucial fundamental chemical feedstocks, face sustainability challenges in their conventional production pathways reliant on fossil fuels. The catalytic co-pyrolysis technology for biomass and plastics offers a novel route for green aromatics production by synergistically converting the...",
+          "year": 2026,
+          "score": 0.458
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "plastic bag ban policy evaluation using waste generation and material flow data",
+        "keywords": [
+          {
+            "text": "plastic bag",
+            "score": 10
+          },
+          {
+            "text": "bag ban",
+            "score": 9
+          },
+          {
+            "text": "ban policy",
+            "score": 8
+          },
+          {
+            "text": "policy evaluation",
+            "score": 7
+          },
+          {
+            "text": "evaluation waste",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W7056540083",
+          "title": "Functional classifcation and material characterization of plastic packaging in land litter to support effective reduction policies",
+          "abstract": "Littered plastics are ubiquitous in the environment. This work presents an elaborate functional classification and material characterization of plastic packaging in land litter representatively sampled in Flanders, to support policy makers in taking effective reduction measures. In terms of mass, plastic bottles con...",
+          "year": 2023,
+          "score": 0.5276
+        },
+        {
+          "paper_id": "https://openalex.org/W7061026161",
+          "title": "Optimizing the Path Towards Plastic-Free Oceans",
+          "abstract": "Increasing ocean plastic pollution is irreversibly harming ecosystems and human economic activities. We partner with a non-profit organization and use optimization to help clean up oceans from plastic faster. Specifically, we optimize the route of their plastic collection system in the ocean to maximize the quantity...",
+          "year": 2025,
+          "score": 0.466
+        },
+        {
+          "paper_id": "https://openalex.org/W4309475252",
+          "title": "Online Characterization of Mixed Plastic Waste Using Machine Learning and Mid-Infrared Spectroscopy",
+          "abstract": "To recycle the mixed plastic wastes (MPW), it is important to obtain the compositional information online in real time. We present a sensing framework based on a convolutional neural network (CNN) and mid-infrared spectroscopy (MIR) for the rapid and accurate characterization of MPW. The MPW samples are placed on a ...",
+          "year": 2022,
+          "score": 0.4566
+        },
+        {
+          "paper_id": "https://openalex.org/W1515545408",
+          "title": "The Copper Balance of Cities",
+          "abstract": "Material management faces a dual challenge: on the one hand satisfying large and increasing demands for goods and on the other hand accommodating wastes and emissions in sinks. Hence, the characterization of material flows and stocks is relevant for both improving resource efficiency and environmental protection. Th...",
+          "year": 2014,
+          "score": 0.4443
+        },
+        {
+          "paper_id": "https://openalex.org/W4413739639",
+          "title": "Assessment of Total UV-Absorbing Contaminants in LDPE Food Packaging from Philippine Markets",
+          "abstract": "This study evaluated the migration of total UV-absorbing contaminants (TACs) from commercially available low-density polyethylene (LDPE) bags commonly used by local eateries and street stalls in the Philippines to package fatty and oily foods. Forty-six (46) LDPE samples composing fifteen (15) brands were collected ...",
+          "year": 2025,
+          "score": 0.4397
+        },
+        {
+          "paper_id": "https://openalex.org/W4281700026",
+          "title": "Enabling the Circular Economy through Chemical Recycling and Upcycling of End-of-Use Plastics",
+          "abstract": "Widespread plastic pollution has led to an environmental crisis, motivating new and effective methods for recycling and upcycling “end-of-use” plastics. In this review, we highlight recent advances in chemical recycling and upcycling pathways, namely, hydroconversion, pyrolysis, and solvent treatment for the deconst...",
+          "year": 2022,
+          "score": 0.4303
+        },
+        {
+          "paper_id": "https://openalex.org/W4324357358",
+          "title": "Prediction of the Impact of Land Use and Soil Type on Concentrations of Heavy Metals and Phthalates in Soil Based on Model Simulation",
+          "abstract": "The main objective of this study is to determine the possibility of predicting the impact of land use and soil type on concentrations of heavy metals (HMs) and phthalates (PAEs) in soil based on an artificial neural network model (ANN). Qualitative analysis of HMs was performed with inductively coupled plasma-optica...",
+          "year": 2023,
+          "score": 0.43
+        },
+        {
+          "paper_id": "https://openalex.org/W4400745410",
+          "title": "Towards the Development of an In-Process Quality Monitoring System for Polyethylene Recyclates by Pyrolysis Gas Chromatography Ion Mobility Spectrometry",
+          "abstract": "Abstract Over the past few decades, the topic of recycling has become increasingly prominent in the field of sustainable materials and circular economy. One significant challenge is the physical separation of different types of plastics to obtain recyclates of one plastic type as pure as possible with comparable qua...",
+          "year": 2024,
+          "score": 0.4288
+        },
+        {
+          "paper_id": "https://openalex.org/W7015850475",
+          "title": "Upcycling Plastic Waste to Activated Carbon for Waste Water Treatment Applications",
+          "abstract": "Plastic waste disposal continues to be a widespread issue, as plastic products are discarded at high rates and do not biodegrade in the environment. Although a portion of this waste is recycled, the limitations of conventional recycling methods have prompted the need to investigate alternative disposal methods. This...",
+          "year": 2024,
+          "score": 0.4236
+        },
+        {
+          "paper_id": "https://openalex.org/W3048429065",
+          "title": "Oceanic Hitchhikers – Assessing Pathogen Risks from Marine Microplastic",
+          "abstract": "As plastic debris in the environment continues to increase, an emerging concern is the potential for microplastic to act as vectors for pathogen transport. With aquaculture the fastest growing food sector, and microplastic contamination of shellfish increasingly demonstrated, understanding any risk of pathogen trans...",
+          "year": 2020,
+          "score": 0.4077
+        },
+        {
+          "paper_id": "https://openalex.org/W2975657401",
+          "title": "Drinking Straw from Coconut Leaf: A Study of its Epicuticular Wax Content and Phenol Extrusion Properties",
+          "abstract": "Background and Objectives: Plastics are a ubiquitous part of our daily life but now posing a major threat to marine life, animal and human health. More than 50% of the manufactured plastic including straws are being disposed of after single-use. There is an increasing need to mitigate this trend so that the damage c...",
+          "year": 2019,
+          "score": 0.4029
+        },
+        {
+          "paper_id": "https://openalex.org/W3116223999",
+          "title": "Polymer degradation: a short review",
+          "abstract": "Abstract The reader will find basic knowledge about the degradation of polymers, its causes, course and consequences in a broader context, as indicated through the list of the chapter titles: Introduction; Depolymerization; Initiated cleavage (degradation) of macromolecules; Thermal degradation; Photochemical degrad...",
+          "year": 2020,
+          "score": 0.3991
+        },
+        {
+          "paper_id": "https://openalex.org/W4390773972",
+          "title": "Metal-free upcycling of plastic waste: photo-induced oxidative degradation of polystyrene in air",
+          "abstract": "A photooxidation method was reported to facilitate the efficient degradation of polystyrene (PS) in air using porphyrin-based porous organic polymers (PPOPs). The method is mild and effective in promoting the degradation of different PS derivatives.",
+          "year": 2024,
+          "score": 0.3923
+        },
+        {
+          "paper_id": "https://openalex.org/W4410221804",
+          "title": "The Relative Importance of the SDG Pillars",
+          "abstract": "The seventeen United Nations’ Sustainable Development Goals (SDGs) comprise social, economic, and environmental aspects of sustainability, and as such, they can be grouped into five so-called pillars, i.e., People, Prosperity, Planet, Peace, and Partnership. The present study elucidates the relative importance of th...",
+          "year": 2024,
+          "score": 0.3923
+        },
+        {
+          "paper_id": "https://openalex.org/W6983343664",
+          "title": "MBTA assessment formula: an evaluation and recommendations",
+          "abstract": "The fundamental objectives of this study are to gauge the success of the formula in achieving its stated goals and to make recommendations to redress shortcomings made evident iDy the eval- uation.Specifically, we:1.Review the historical background of the formula and analyze its ohjectlves.2.Review the formula compo...",
+          "year": 1989,
+          "score": 0.3877
+        },
+        {
+          "paper_id": "https://openalex.org/W4319309876",
+          "title": "Development of Environmentally-harmonized Plastics from Natural Materials-aiming to Stimuli",
+          "abstract": "Conventional bio-degradable polymers have been successfully developed but the control of degradation is indispensable for actual application as useful materials in sustainable society. Here biomonomer having multifunctional structure such as itaconic acid (IA) which has two carboxyls and double bond and whose bioava...",
+          "year": 2022,
+          "score": 0.3861
+        },
+        {
+          "paper_id": "https://openalex.org/W2987995379",
+          "title": "Optimisation and application of polybrominated diphenyl ethers extraction method",
+          "abstract": "The optimal conditions for the extraction of eight polybrominated diphenyl ethers (PBDEs) were determined using 32 factorial design of experiments (DOE). The independent variables were coded at three levels and their actual values were selected on the basis of the preliminary experimental results. DOE consisted of n...",
+          "year": 2019,
+          "score": 0.3792
+        },
+        {
+          "paper_id": "https://openalex.org/W4239688617",
+          "title": "Why is High Persistence Alone a Major Cause of Concern?",
+          "abstract": "High persistence (environmental degradation half-lives of several years or more) has important implications for the behavior of chemicals in the environment. Persistent chemicals are distributed widely, often globally, and reach (much) higher concentrations than short-lived chemicals emitted at the same rate. We ill...",
+          "year": 2018,
+          "score": 0.3736
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "techno-economic and material flow assessment of plastics-to-fuel waste management",
+        "keywords": [
+          {
+            "text": "techno economic",
+            "score": 10
+          },
+          {
+            "text": "economic material",
+            "score": 9
+          },
+          {
+            "text": "material flow",
+            "score": 8
+          },
+          {
+            "text": "flow assessment",
+            "score": 7
+          },
+          {
+            "text": "assessment plastics",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4396639446",
+          "title": "Use of waste plastic oil as a fuel in reactivity-controlled compression ignition engines: a bibliometric investigation from 2017–23",
+          "abstract": "Abstract Waste plastic oil, generated through the pyrolysis of plastic without oxygen, known as plastic-to-fuel conversion, stands as a promising alternative fuel. This research employs bibliometric analysis, a quantitative method, to comprehensively assess publications in the domain of waste plastic oil integration...",
+          "year": 2024,
+          "score": 0.6174
+        },
+        {
+          "paper_id": "https://openalex.org/W2806003610",
+          "title": "Studying and Evaluating Sustainable Materials for Converting Plastic Waste to Fuel",
+          "abstract": "Gasification is one of the most important solutions for plastic waste management. We researched the conversion of plastic waste to fuel using sustainable material (Nano Clay) modified with Nano transition metals (TiO2, MnO, and ZnO). This was processed in a fix bed reactor design. After studying the reaction mechani...",
+          "year": 2018,
+          "score": 0.5693
+        },
+        {
+          "paper_id": "https://openalex.org/W4385666877",
+          "title": "Treasuring trash: Pt/SrTiO3 catalysts process plastic waste into high-value materials",
+          "abstract": "",
+          "year": 2023,
+          "score": 0.5227
+        },
+        {
+          "paper_id": "https://openalex.org/W4312888717",
+          "title": "Contemporary Perspectives on Waste Plastic Catalysis",
+          "abstract": "With the increase in demand for plastic use, waste plastic (WP) management remains a challenge in the contemporary world due to the lack of sustainable efforts to tackle it. The increment in WPs is proportional to man's demand and use of plastics, and these come along with environmental challenges. This increase in ...",
+          "year": 2022,
+          "score": 0.517
+        },
+        {
+          "paper_id": "https://openalex.org/W4281700026",
+          "title": "Enabling the Circular Economy through Chemical Recycling and Upcycling of End-of-Use Plastics",
+          "abstract": "Widespread plastic pollution has led to an environmental crisis, motivating new and effective methods for recycling and upcycling “end-of-use” plastics. In this review, we highlight recent advances in chemical recycling and upcycling pathways, namely, hydroconversion, pyrolysis, and solvent treatment for the deconst...",
+          "year": 2022,
+          "score": 0.5055
+        },
+        {
+          "paper_id": "https://openalex.org/W4200467210",
+          "title": "Pyrolysis of end-of-life polystyrene in a pilot-scale reactor: Maximizing styrene production",
+          "abstract": "",
+          "year": 2021,
+          "score": 0.5054
+        },
+        {
+          "paper_id": "https://openalex.org/W4412448987",
+          "title": "Leveraging mesoporosity and acidity in interzeolite transformation intermediates for plastic waste valorization",
+          "abstract": "",
+          "year": 2025,
+          "score": 0.5049
+        },
+        {
+          "paper_id": "https://openalex.org/W4320713585",
+          "title": "Challenges and opportunities of light olefin production via thermal and catalytic pyrolysis of end-of-life polyolefins: Towards full recyclability",
+          "abstract": "",
+          "year": 2023,
+          "score": 0.5035
+        },
+        {
+          "paper_id": "https://openalex.org/W4400576574",
+          "title": "Advancing Plastic Recycling: A Review on the Synthesis and Applications of Hierarchical Zeolites in Waste Plastic Hydrocracking",
+          "abstract": "The extensive use of plastics has led to a significant environmental threat due to the generation of waste plastic, which has shown significant challenges during recycling. The catalytic hydrocracking route, however, is viewed as a key strategy to manage this fossil-fuel-derived waste into plastic-derived fuels with...",
+          "year": 2024,
+          "score": 0.5012
+        },
+        {
+          "paper_id": "https://openalex.org/W4415464386",
+          "title": "Chemical valorization of waste polyacrylonitrile polymers via shuttle catalysis",
+          "abstract": "",
+          "year": 2025,
+          "score": 0.4972
+        },
+        {
+          "paper_id": "https://openalex.org/W4242676399",
+          "title": "Using ATR-FTIR Spectra and Convolutional Neural Networks for Characterizing Mixed Plastic Waste",
+          "abstract": "We present a convolutional neural network (CNN) framework for classifying different types of plastic materials that are commonly found in mixed plastic waste (MPW) streams. The CNN framework uses experimental ATR-FTIR (attenuated total reflection-Fourier transform infrared spectroscopy) spectra to classify ten diffe...",
+          "year": 2021,
+          "score": 0.4966
+        },
+        {
+          "paper_id": "https://openalex.org/W7128789695",
+          "title": "Catalytic co-pyrolysis of biomass and waste plastics for aromatics production: a review of catalysts and reaction mechanisms",
+          "abstract": "<p indent=\"0mm\">Aromatics, as crucial fundamental chemical feedstocks, face sustainability challenges in their conventional production pathways reliant on fossil fuels. The catalytic co-pyrolysis technology for biomass and plastics offers a novel route for green aromatics production by synergistically converting the...",
+          "year": 2026,
+          "score": 0.4963
+        },
+        {
+          "paper_id": "https://openalex.org/W2122518808",
+          "title": "Sulphonation of Expanded Polystyrene Waste Under Microwave Irradiation",
+          "abstract": "Abstract Chemical modification of polymeric materials is one way of polymer waste management. In our study, expanded polystyrene waste (EPS), used as the reference material, was converted into polymeric flocculants by the sulphonation reaction. Thus, poly(styrenesulphonate) acids (EPSS) were obtained from EPS during...",
+          "year": 2008,
+          "score": 0.4963
+        },
+        {
+          "paper_id": "https://openalex.org/W4309475252",
+          "title": "Online Characterization of Mixed Plastic Waste Using Machine Learning and Mid-Infrared Spectroscopy",
+          "abstract": "To recycle the mixed plastic wastes (MPW), it is important to obtain the compositional information online in real time. We present a sensing framework based on a convolutional neural network (CNN) and mid-infrared spectroscopy (MIR) for the rapid and accurate characterization of MPW. The MPW samples are placed on a ...",
+          "year": 2022,
+          "score": 0.4947
+        },
+        {
+          "paper_id": "https://openalex.org/W7015850475",
+          "title": "Upcycling Plastic Waste to Activated Carbon for Waste Water Treatment Applications",
+          "abstract": "Plastic waste disposal continues to be a widespread issue, as plastic products are discarded at high rates and do not biodegrade in the environment. Although a portion of this waste is recycled, the limitations of conventional recycling methods have prompted the need to investigate alternative disposal methods. This...",
+          "year": 2024,
+          "score": 0.4943
+        },
+        {
+          "paper_id": "https://openalex.org/W4407711610",
+          "title": "Decarbonization approaches for ethylene production: comparative techno-economic and life-cycle analysis",
+          "abstract": "Detailed economic, environmental, and sensitivity analysis reveals decarbonization potential for ethane-based ethylene production plants.",
+          "year": 2025,
+          "score": 0.4938
+        },
+        {
+          "paper_id": "https://openalex.org/W4392380327",
+          "title": "Increasing the Dissolution Rate of Polystyrene Waste in Solvent-Based Recycling",
+          "abstract": "Solvent-based recycling of plastic waste is a promising approach for cleaning polymer chains without breaking them. However, the time required to actually dissolve the polymer in a lab environment can take hours. Different factors play a role in polymer dissolution, including temperature, turbulence, and solvent pro...",
+          "year": 2024,
+          "score": 0.4839
+        },
+        {
+          "paper_id": "https://openalex.org/W2767822285",
+          "title": "Comparison of Power Output’s of Different Blends of Pyrolysis Plastic Oil , Diesel With Pure Diesel on Single Cylinder 4-S (VCR) Diesel Engine",
+          "abstract": "An experimental study was conducted, to compare the powers outputs of pure diesel with different blends of Pyrolysis plastic oil and diesels. Waste plastic through thermal treatment can be derived into liquid fuel or waste plastic oil. Pyrolysis a thermo chemical process is being used as a technology to manage plast...",
+          "year": 2017,
+          "score": 0.4835
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "material flow analysis of global and national plastic waste stocks",
+        "keywords": [
+          {
+            "text": "material flow",
+            "score": 10
+          },
+          {
+            "text": "flow analysis",
+            "score": 9
+          },
+          {
+            "text": "analysis global",
+            "score": 8
+          },
+          {
+            "text": "global national",
+            "score": 7
+          },
+          {
+            "text": "national plastic",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W7062075247",
+          "title": "Sorting and recycling solid plastic waste : Challenges and opportunities",
+          "abstract": "As the title suggests, this thesis deals with the challenges and opportunities in sorting and recycling of solid plastic wastes. The author has taken the approach of literature review in conducting this study. More than 50 literary works on sorting and recycling of plastic wastes were selected in the beginning. Out ...",
+          "year": 2021,
+          "score": 0.5875
+        },
+        {
+          "paper_id": "https://openalex.org/W4200467210",
+          "title": "Pyrolysis of end-of-life polystyrene in a pilot-scale reactor: Maximizing styrene production",
+          "abstract": "",
+          "year": 2021,
+          "score": 0.4903
+        },
+        {
+          "paper_id": "https://openalex.org/W4320713585",
+          "title": "Challenges and opportunities of light olefin production via thermal and catalytic pyrolysis of end-of-life polyolefins: Towards full recyclability",
+          "abstract": "",
+          "year": 2023,
+          "score": 0.4834
+        },
+        {
+          "paper_id": "https://openalex.org/W4392380327",
+          "title": "Increasing the Dissolution Rate of Polystyrene Waste in Solvent-Based Recycling",
+          "abstract": "Solvent-based recycling of plastic waste is a promising approach for cleaning polymer chains without breaking them. However, the time required to actually dissolve the polymer in a lab environment can take hours. Different factors play a role in polymer dissolution, including temperature, turbulence, and solvent pro...",
+          "year": 2024,
+          "score": 0.4812
+        },
+        {
+          "paper_id": "https://openalex.org/W1849351977",
+          "title": "Quantitative pyrolysis - gas chromatography - mass spectrometry to study polymer dissolution and solubility",
+          "abstract": "The combinations of pyrolysis (Py) with mass spectrometry (MS), gas chromatography with flame-ionization detection (GC-FID), and GC-MS have developed into very powerful tools to study different types of polymeric samples.Pyrolysis techniques may be conveniently used to study thermal stability and degradation product...",
+          "year": 2015,
+          "score": 0.4693
+        },
+        {
+          "paper_id": "https://openalex.org/W4413001134",
+          "title": "Multiple linear regression in adsorption capacity prediction: Application in plastic waste pyrolysis oil purification",
+          "abstract": "",
+          "year": 2025,
+          "score": 0.469
+        },
+        {
+          "paper_id": "https://openalex.org/W4408291822",
+          "title": "Depolymerization of PET by common alkanolamines yields tunable monomers to expand the design space of 3D-printable, intrinsically self-healing polyamide-ionenes",
+          "abstract": "Polyethylene terephthalate (PET), a ubiquitous thermoplastic used in textiles and packaging, is one of the primary contributors to plastic pollution.",
+          "year": 2025,
+          "score": 0.4656
+        },
+        {
+          "paper_id": "https://openalex.org/W4408782149",
+          "title": "Optimization of low-temperature catalytic cracking of polyolefin waste in open-batch reactors using zeolite beta with controlled intrinsic properties",
+          "abstract": "",
+          "year": 2025,
+          "score": 0.4647
+        },
+        {
+          "paper_id": "https://openalex.org/W3073124605",
+          "title": "Bacterial biofilms colonizing plastics in estuarine waters, with an emphasis on Vibrio spp. and their antibacterial resistance",
+          "abstract": "Since plastics degrade very slowly, they remain in the environment on much longer timescales than most natural organic substrates and provide a novel habitat for colonization by bacterial communities. The spectrum of relationships between plastics and bacteria, however, is little understood. The first objective of t...",
+          "year": 2020,
+          "score": 0.4633
+        },
+        {
+          "paper_id": "https://openalex.org/W4390829830",
+          "title": "Aerogels from Wastes and their Applications",
+          "abstract": "Aerogels are not only among the lightest solid materials but also highly porous with great absorption capacity and low thermal conductivity. Unfortunately, the advanced materials have not been widely adopted by industries due to its high production cost. Leading aerogel scientists around the world are actively impro...",
+          "year": 2019,
+          "score": 0.4633
+        },
+        {
+          "paper_id": "https://openalex.org/W4408009498",
+          "title": "Dose-Dependent Responses of <i>Escherichia coli</i> and <i>Acinetobacter</i> sp. to Micron-Sized Polystyrene Microplastics",
+          "abstract": "Microplastics are ubiquitous environmental contaminants that can cause significant ecological damage because of their resistance to biodegradation. We evaluated the toxic effects of 1,040 nm polystyrene (PS) microplastics in two representative bacteria, <i>Escherichia coli</i> and <i>Acinetobacter</i> sp. In particu...",
+          "year": 2025,
+          "score": 0.4593
+        },
+        {
+          "paper_id": "https://openalex.org/W7071824508",
+          "title": "Synthese und Anwendung von HDPE/iPP Blockcopolymeren auf Basis der&#13;\\nKKTP",
+          "abstract": "",
+          "year": 2024,
+          "score": 0.4592
+        },
+        {
+          "paper_id": "https://openalex.org/W4214776853",
+          "title": "Highly selective conversion of mixed polyolefins to valuable base chemicals using phosphorus-modified and steam-treated mesoporous HZSM-5 zeolite with minimal carbon footprint",
+          "abstract": "",
+          "year": 2022,
+          "score": 0.459
+        },
+        {
+          "paper_id": "https://openalex.org/W3198463972",
+          "title": "Identification of 20 polymer types by means of laser-induced breakdown spectroscopy (LIBS) and chemometrics",
+          "abstract": "",
+          "year": 2021,
+          "score": 0.4505
+        },
+        {
+          "paper_id": "https://openalex.org/W2292619477",
+          "title": "Pyrolysis Biochar from Cellulosic Municipal Solid Waste as Adsorbent for Azo Dye Removal: Equilibrium Isotherms and Kinetics Analysis",
+          "abstract": "Municipal solid waste (MSW) can have a negative impact on the environment and / or human health, if not properly managed. Though landfill is the most common method used to manage MSW, treating MSW using waste-toenergy (WtE) technologies is an option that is receiving increasing interest. Pyrolysis is a WtE technolog...",
+          "year": 2015,
+          "score": 0.4487
+        },
+        {
+          "paper_id": "https://openalex.org/W4414947969",
+          "title": "Delamination and deinking of colored multilayer flexible plastic packaging <i>via</i> selective aminolysis of polyurethane and acrylate based adhesives",
+          "abstract": "This study demonstrates selective adhesive aminolysis enabling delamination and deinking of multilayer packaging without compromising the integrity of the primary polymer substrates.",
+          "year": 2025,
+          "score": 0.4478
+        },
+        {
+          "paper_id": "https://openalex.org/W246493009",
+          "title": "Thermal degradation of acrylic pressure-sensitive adhesives based on copolymers of 2-ethylhexyl acrylate and acrylic acid",
+          "abstract": "The thermal degradation of acrylic pressure-sensitive adhesives (PSAs) based on copolymers of 2-ethylhexyl acrylate and acrylic acid has been conducted at about 230°C using pyrolysis-gas chromatography. The types and amounts of the pyrolysis products give important information about of thermal degradation of acrylic...",
+          "year": 2009,
+          "score": 0.4463
+        },
+        {
+          "paper_id": "https://openalex.org/W4366188171",
+          "title": "SAR-AD Method to Characterize Eight SARA Fractions in Various Vacuum Residues and Follow Their Transformations Occurring during Hydrocracking and Pyrolysis",
+          "abstract": "Model compounds were used to provide some chemical boundaries for the eight-fraction SAR-ADTM characterization method for heavy oils. It was found that the Saturates fraction consists of linear and highly cyclic alkanes; the Aro-1 fraction consists of molecules with a single aromatic ring; the Aro-2 fraction consist...",
+          "year": 2023,
+          "score": 0.4458
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "municipal plastic waste stream characterization for local material flow accounting",
+        "keywords": [
+          {
+            "text": "municipal plastic",
+            "score": 10
+          },
+          {
+            "text": "plastic waste",
+            "score": 9
+          },
+          {
+            "text": "waste stream",
+            "score": 8
+          },
+          {
+            "text": "stream characterization",
+            "score": 7
+          },
+          {
+            "text": "characterization local",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W7056540083",
+          "title": "Functional classifcation and material characterization of plastic packaging in land litter to support effective reduction policies",
+          "abstract": "Littered plastics are ubiquitous in the environment. This work presents an elaborate functional classification and material characterization of plastic packaging in land litter representatively sampled in Flanders, to support policy makers in taking effective reduction measures. In terms of mass, plastic bottles con...",
+          "year": 2023,
+          "score": 0.5294
+        },
+        {
+          "paper_id": "https://openalex.org/W4309475252",
+          "title": "Online Characterization of Mixed Plastic Waste Using Machine Learning and Mid-Infrared Spectroscopy",
+          "abstract": "To recycle the mixed plastic wastes (MPW), it is important to obtain the compositional information online in real time. We present a sensing framework based on a convolutional neural network (CNN) and mid-infrared spectroscopy (MIR) for the rapid and accurate characterization of MPW. The MPW samples are placed on a ...",
+          "year": 2022,
+          "score": 0.5159
+        },
+        {
+          "paper_id": "https://openalex.org/W4407550429",
+          "title": "Exploring automated tracking of chemicals through their conditions of use to support life cycle chemical assessment",
+          "abstract": "",
+          "year": 2025,
+          "score": 0.4947
+        },
+        {
+          "paper_id": "https://openalex.org/W7015850475",
+          "title": "Upcycling Plastic Waste to Activated Carbon for Waste Water Treatment Applications",
+          "abstract": "Plastic waste disposal continues to be a widespread issue, as plastic products are discarded at high rates and do not biodegrade in the environment. Although a portion of this waste is recycled, the limitations of conventional recycling methods have prompted the need to investigate alternative disposal methods. This...",
+          "year": 2024,
+          "score": 0.4911
+        },
+        {
+          "paper_id": "https://openalex.org/W1515545408",
+          "title": "The Copper Balance of Cities",
+          "abstract": "Material management faces a dual challenge: on the one hand satisfying large and increasing demands for goods and on the other hand accommodating wastes and emissions in sinks. Hence, the characterization of material flows and stocks is relevant for both improving resource efficiency and environmental protection. Th...",
+          "year": 2014,
+          "score": 0.4888
+        },
+        {
+          "paper_id": "https://openalex.org/W4400745410",
+          "title": "Towards the Development of an In-Process Quality Monitoring System for Polyethylene Recyclates by Pyrolysis Gas Chromatography Ion Mobility Spectrometry",
+          "abstract": "Abstract Over the past few decades, the topic of recycling has become increasingly prominent in the field of sustainable materials and circular economy. One significant challenge is the physical separation of different types of plastics to obtain recyclates of one plastic type as pure as possible with comparable qua...",
+          "year": 2024,
+          "score": 0.4858
+        },
+        {
+          "paper_id": "https://openalex.org/W4392380327",
+          "title": "Increasing the Dissolution Rate of Polystyrene Waste in Solvent-Based Recycling",
+          "abstract": "Solvent-based recycling of plastic waste is a promising approach for cleaning polymer chains without breaking them. However, the time required to actually dissolve the polymer in a lab environment can take hours. Different factors play a role in polymer dissolution, including temperature, turbulence, and solvent pro...",
+          "year": 2024,
+          "score": 0.4845
+        },
+        {
+          "paper_id": "https://openalex.org/W3180514783",
+          "title": "Environmental risks of car tire microplastic particles and other road runoff pollutants",
+          "abstract": "",
+          "year": 2021,
+          "score": 0.4835
+        },
+        {
+          "paper_id": "https://openalex.org/W4390659118",
+          "title": "A Survey of the State of the Art in Sensor-Based Sorting Technology and Research",
+          "abstract": "Sensor-based sorting describes a family of systems that enable the removal of individual objects from a material stream. The technology is widely used in various industries such as agriculture, food, mining, and recycling. Examples of sorting tasks include the removal of fungus-infested grains, the enrichment of cop...",
+          "year": 2024,
+          "score": 0.4832
+        },
+        {
+          "paper_id": "https://openalex.org/W4413001134",
+          "title": "Multiple linear regression in adsorption capacity prediction: Application in plastic waste pyrolysis oil purification",
+          "abstract": "",
+          "year": 2025,
+          "score": 0.4814
+        },
+        {
+          "paper_id": "https://openalex.org/W4390401159",
+          "title": "Retracted: XRD Peak Profile Analysis of SiC Reinforced Al<sub>2</sub>O<sub>3</sub> Ceramic Composite Synthesized by Electrical Resistance Heating and Microwave Sintering: A Comparison",
+          "abstract": "",
+          "year": 2023,
+          "score": 0.4718
+        },
+        {
+          "paper_id": "https://openalex.org/W4385195633",
+          "title": "Advancements in catalysis for plastic resource utilization",
+          "abstract": "The widespread production and utilization of plastic products have become ingrained in our society, resulting in a staggering amount of plastic waste, severe environmental challenges, and resource depletion.",
+          "year": 2023,
+          "score": 0.4716
+        },
+        {
+          "paper_id": "https://openalex.org/W4200467210",
+          "title": "Pyrolysis of end-of-life polystyrene in a pilot-scale reactor: Maximizing styrene production",
+          "abstract": "",
+          "year": 2021,
+          "score": 0.4709
+        },
+        {
+          "paper_id": "https://openalex.org/W4411185358",
+          "title": "Novel Features Related to Polymers and the Environment",
+          "abstract": "In the early 1980s, the first global environmental crisis took place, focusing on the role of plastics in the substantial solid waste streams of major cities [...].",
+          "year": 2025,
+          "score": 0.4709
+        },
+        {
+          "paper_id": "https://openalex.org/W4415464386",
+          "title": "Chemical valorization of waste polyacrylonitrile polymers via shuttle catalysis",
+          "abstract": "",
+          "year": 2025,
+          "score": 0.4707
+        },
+        {
+          "paper_id": "https://openalex.org/W4403647166",
+          "title": "Compositional Analysis of Oxygenates and Hydrocarbons in Waste and Virgin Polyolefin Pyrolysis Oils by Ultrahigh-Resolution Fourier Transform Ion Cyclotron Resonance Mass Spectrometry",
+          "abstract": "The linear plastic lifecycle is unsustainable. Mechanical recycling of mixed plastic waste remains challenging, making chemical recycling necessary. Polyolefins, the largest share of plastic waste, can be chemically recycled through thermal pyrolysis. However, the impact of the feedstock type on pyrolysis oil compos...",
+          "year": 2024,
+          "score": 0.4699
+        },
+        {
+          "paper_id": "https://openalex.org/W3048429065",
+          "title": "Oceanic Hitchhikers – Assessing Pathogen Risks from Marine Microplastic",
+          "abstract": "As plastic debris in the environment continues to increase, an emerging concern is the potential for microplastic to act as vectors for pathogen transport. With aquaculture the fastest growing food sector, and microplastic contamination of shellfish increasingly demonstrated, understanding any risk of pathogen trans...",
+          "year": 2020,
+          "score": 0.4675
+        },
+        {
+          "paper_id": "https://openalex.org/W4390773972",
+          "title": "Metal-free upcycling of plastic waste: photo-induced oxidative degradation of polystyrene in air",
+          "abstract": "A photooxidation method was reported to facilitate the efficient degradation of polystyrene (PS) in air using porphyrin-based porous organic polymers (PPOPs). The method is mild and effective in promoting the degradation of different PS derivatives.",
+          "year": 2024,
+          "score": 0.4635
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "How can material flow analysis improve the identification and evaluation of economically feasible and environmentally beneficial plastic waste management strategies, such as recycling, plastic bag bans, and use of plastics as alternative fuel?",
+        "keywords": [
+          {
+            "text": "plastic waste management",
+            "score": 10
+          },
+          {
+            "text": "material flow analysis",
+            "score": 9
+          },
+          {
+            "text": "plastic recycling",
+            "score": 8
+          },
+          {
+            "text": "plastic bag bans",
+            "score": 7
+          },
+          {
+            "text": "waste-to-fuel",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W7128697218",
+          "title": "Development of an Economically Viable AI-Enabled Sorting Technology for Complex Plastic Waste Streams",
+          "abstract": "This paper presents a novel, economically viable approach to sorting complex plastic waste streams through the innovative integration of artificial intelligence and sensor fusion technology. Current recycling facilities struggle to effectively sort materials categorized as #3-#7 plastics due to their varied composit...",
+          "year": 2025,
+          "score": 0.4979
+        },
+        {
+          "paper_id": "https://openalex.org/W7011427910",
+          "title": "Marker materials and spectroscopic methods for sorting plastic waste (NanoTrust-Dossier No60en - June 2023)",
+          "abstract": "Today, plastic is a ubiquitous material with good mechanical, chemical, and thermal properties and therefore used in many industrial sectors. The biggest challenge in recycling plastic waste is to separate the different types of plastic to a high degree of homogeneity. Waste sorting plants use automated sensorbased ...",
+          "year": 2023,
+          "score": 0.4909
+        },
+        {
+          "paper_id": "https://openalex.org/W4376139571",
+          "title": "Black Plastic Waste Classification by Laser-Induced Fluorescence Technique Combined with Machine Learning Approaches",
+          "abstract": "Abstract Sensor-based sorting devices commonly used in plastic recycling plants, mainly working in the near infrared range (NIR), are unable to identify black plastics, due to their low spectral reflectance. The aim of this work was to investigate the potentialities offered by laser-induced fluorescence (LIF) techni...",
+          "year": 2023,
+          "score": 0.4592
+        },
+        {
+          "paper_id": "https://openalex.org/W4393249815",
+          "title": "Recycling of Polycarbonate/Acrylonitrile Butadiene Styrene Blends with Flame Retardant Additives for 3D Printing Filament",
+          "abstract": "Recycling waste from electrical and electronic equipment (WEEE) for valuable materials is a critical aspect of the circular economy and sustainable waste management. Recycling these solid wastes into value‐added products is one method for reducing landfill waste and pollution. The purpose of this research was to inv...",
+          "year": 2024,
+          "score": 0.4586
+        },
+        {
+          "paper_id": "https://openalex.org/W4400745410",
+          "title": "Towards the Development of an In-Process Quality Monitoring System for Polyethylene Recyclates by Pyrolysis Gas Chromatography Ion Mobility Spectrometry",
+          "abstract": "Abstract Over the past few decades, the topic of recycling has become increasingly prominent in the field of sustainable materials and circular economy. One significant challenge is the physical separation of different types of plastics to obtain recyclates of one plastic type as pure as possible with comparable qua...",
+          "year": 2024,
+          "score": 0.4573
+        },
+        {
+          "paper_id": "https://openalex.org/W2769603555",
+          "title": "Comparison of latent variable‐based and artificial intelligence methods for impurity detection in PET recycling from NIR hyperspectral images",
+          "abstract": "Abstract In polyethylene terephthalate's (PET)'s recycling processes, separation from polyvinyl chloride (PVC) is of prior relevance due to its toxicity, which degrades the final quality of recycled PET. Moreover, the potential presence of some polymers in mixed plastics (such as PVC in PET) is a key aspect for the ...",
+          "year": 2017,
+          "score": 0.4473
+        },
+        {
+          "paper_id": "https://openalex.org/W4324318120",
+          "title": "A Novel Process for Recovery and Exploitation of Polyesters and Polyamides from Waste Polymeric Artifacts",
+          "abstract": "Plastic waste constitutes one of the most important sources of pollution worldwide. Despite the growing recycling trend, nowadays there are no effective technologies that can compensate for the continuous increase in plastic production. Polyesters and polyamides are one of the most produced single-use plastics, main...",
+          "year": 2023,
+          "score": 0.4467
+        },
+        {
+          "paper_id": "https://openalex.org/W7128680067",
+          "title": "A Machine Learning Driven Ultrafast Mid-Infrared Spectroscopic System for Mixed Plastic Characterization",
+          "abstract": "The U.S. Environmental Protection Agency estimates that over 35.6 million tons of plastic waste are generated annually in the United States, yet only 8.7% is recycled, with approximately 75% ending up in landfills. Among the landfilled plastic waste, 15%—equivalent to more than 2.5 million tons annually—comprise bla...",
+          "year": 2025,
+          "score": 0.4442
+        },
+        {
+          "paper_id": "https://openalex.org/W4392380327",
+          "title": "Increasing the Dissolution Rate of Polystyrene Waste in Solvent-Based Recycling",
+          "abstract": "Solvent-based recycling of plastic waste is a promising approach for cleaning polymer chains without breaking them. However, the time required to actually dissolve the polymer in a lab environment can take hours. Different factors play a role in polymer dissolution, including temperature, turbulence, and solvent pro...",
+          "year": 2024,
+          "score": 0.4442
+        },
+        {
+          "paper_id": "https://openalex.org/W4307290447",
+          "title": "Deep learning for chemometric analysis of plastic spectral data from infrared and Raman databases",
+          "abstract": "Increasing plastic recycling rates is key to addressing plastic pollution. New technologies such as chemometric analysis of spectral data have shown great promises in improving the plastic sorting efficiency to boost recycling rates. In this work, a novel deep learning architecture, PolymerSpectraDecisionNet (PSDN) ...",
+          "year": 2022,
+          "score": 0.4427
+        },
+        {
+          "paper_id": "https://openalex.org/W4406298622",
+          "title": "Molecular Design for Dual Circularity: Polyester with Complementary Mechanical and Chemical Recyclability under Mild Conditions",
+          "abstract": "The plastic waste accumulation requires facile yet effective solutions. Currently mechanical recycling typically leads to downcycling, while the environmental footprint of chemical recycling is often unacceptable. Here, we introduce a dual circularity concept, where rational molecular design paves the way for comple...",
+          "year": 2025,
+          "score": 0.4385
+        },
+        {
+          "paper_id": "https://openalex.org/W4403434446",
+          "title": "Sorting polyolefins with near-infrared spectroscopy: identification of optimal data analysis pipelines and machine learning classifiers",
+          "abstract": "Large cross-validation campaigns produce classification models from NIR spectroscopy measurements of polyolefins (the most common class of plastic produced), which may improve sortation at recycling facilities.",
+          "year": 2024,
+          "score": 0.4381
+        },
+        {
+          "paper_id": "https://openalex.org/W2912993901",
+          "title": "Application of hyperspectral imaging and chemometrics for classifying plastics with brominated flameretardants",
+          "abstract": "Most plastics need to incorporate flame retardants to meet fire safety standards requirements. The amount and the type of flame retardants can differ, so that in waste plastics a large variety of polymers and flame retardants can be found. The recycling of plastics containing flame retardants is increasing. However,...",
+          "year": 2019,
+          "score": 0.4362
+        },
+        {
+          "paper_id": "https://openalex.org/W4410340177",
+          "title": "Heterolanthanide Terephthalate Coordination Polymers: From the Fight against Counterfeiting to Plastic Waste Recycling",
+          "abstract": "ConspectusThe world's plastics production continues to grow and could triple by 2060. Unfortunately, only a small proportion of these plastics are currently recycled (around 30%). The remainder is incinerated (around 40%), causing high greenhouse gas emissions, or buried (around 30%), resulting in high levels of mic...",
+          "year": 2025,
+          "score": 0.4359
+        },
+        {
+          "paper_id": "https://openalex.org/W4407550429",
+          "title": "Exploring automated tracking of chemicals through their conditions of use to support life cycle chemical assessment",
+          "abstract": "",
+          "year": 2025,
+          "score": 0.4324
+        },
+        {
+          "paper_id": "https://openalex.org/W4249635075",
+          "title": "Comprehensive chemical description of pyrolysis chars from low-density polyethylene (LDPE) by thermal analysis hyphenated to different mass spectrometric approaches",
+          "abstract": "The production and demand of plastics has drastically increased, with severe environmental impact. Waste incineration is not favored, and efficient recycling strategies are needed. Pyrolysis is a promising approaches but the nature of the residual coke is not fully understood. To explore the value of this feedstock,...",
+          "year": 2021,
+          "score": 0.4274
+        },
+        {
+          "paper_id": "https://openalex.org/W3180514783",
+          "title": "Environmental risks of car tire microplastic particles and other road runoff pollutants",
+          "abstract": "",
+          "year": 2021,
+          "score": 0.4252
+        },
+        {
+          "paper_id": "https://openalex.org/W4200467210",
+          "title": "Pyrolysis of end-of-life polystyrene in a pilot-scale reactor: Maximizing styrene production",
+          "abstract": "",
+          "year": 2021,
+          "score": 0.421
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "data uncertainty and quality in plastic waste flow tracking for decision support",
+        "keywords": [
+          {
+            "text": "data uncertainty",
+            "score": 10
+          },
+          {
+            "text": "uncertainty quality",
+            "score": 9
+          },
+          {
+            "text": "quality plastic",
+            "score": 8
+          },
+          {
+            "text": "plastic waste",
+            "score": 7
+          },
+          {
+            "text": "waste flow",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4385261365",
+          "title": "A Vision for Cleaner Rivers: Harnessing Snapshot Hyperspectral Imaging to Detect Macro-Plastic Litter",
+          "abstract": "Plastic waste entering the riverine harms local ecosystems leading to negative ecological and economic impacts. Large parcels of plastic waste are transported from inland to oceans leading to a global scale problem of floating debris fields. In this context, efficient and automatized monitoring of mismanaged plastic...",
+          "year": 2023,
+          "score": 0.548
+        },
+        {
+          "paper_id": "https://openalex.org/W4309475252",
+          "title": "Online Characterization of Mixed Plastic Waste Using Machine Learning and Mid-Infrared Spectroscopy",
+          "abstract": "To recycle the mixed plastic wastes (MPW), it is important to obtain the compositional information online in real time. We present a sensing framework based on a convolutional neural network (CNN) and mid-infrared spectroscopy (MIR) for the rapid and accurate characterization of MPW. The MPW samples are placed on a ...",
+          "year": 2022,
+          "score": 0.5192
+        },
+        {
+          "paper_id": "https://openalex.org/W4390659118",
+          "title": "A Survey of the State of the Art in Sensor-Based Sorting Technology and Research",
+          "abstract": "Sensor-based sorting describes a family of systems that enable the removal of individual objects from a material stream. The technology is widely used in various industries such as agriculture, food, mining, and recycling. Examples of sorting tasks include the removal of fungus-infested grains, the enrichment of cop...",
+          "year": 2024,
+          "score": 0.5084
+        },
+        {
+          "paper_id": "https://openalex.org/W4400745410",
+          "title": "Towards the Development of an In-Process Quality Monitoring System for Polyethylene Recyclates by Pyrolysis Gas Chromatography Ion Mobility Spectrometry",
+          "abstract": "Abstract Over the past few decades, the topic of recycling has become increasingly prominent in the field of sustainable materials and circular economy. One significant challenge is the physical separation of different types of plastics to obtain recyclates of one plastic type as pure as possible with comparable qua...",
+          "year": 2024,
+          "score": 0.5068
+        },
+        {
+          "paper_id": "https://openalex.org/W4408188181",
+          "title": "Identification of Aged Polypropylene with Machine Learning and Near–Infrared Spectroscopy for Improved Recycling",
+          "abstract": "The traditional plastic sorting process primarily relies on manual operations, which are inefficient, pose safety risks, and result in suboptimal separation efficiency for mixed waste plastics. Near-infrared (NIR) spectroscopy, with its rapid and non-destructive analytical capabilities, presents a promising alternat...",
+          "year": 2025,
+          "score": 0.5059
+        },
+        {
+          "paper_id": "https://openalex.org/W7015850475",
+          "title": "Upcycling Plastic Waste to Activated Carbon for Waste Water Treatment Applications",
+          "abstract": "Plastic waste disposal continues to be a widespread issue, as plastic products are discarded at high rates and do not biodegrade in the environment. Although a portion of this waste is recycled, the limitations of conventional recycling methods have prompted the need to investigate alternative disposal methods. This...",
+          "year": 2024,
+          "score": 0.4849
+        },
+        {
+          "paper_id": "https://openalex.org/W4281700026",
+          "title": "Enabling the Circular Economy through Chemical Recycling and Upcycling of End-of-Use Plastics",
+          "abstract": "Widespread plastic pollution has led to an environmental crisis, motivating new and effective methods for recycling and upcycling “end-of-use” plastics. In this review, we highlight recent advances in chemical recycling and upcycling pathways, namely, hydroconversion, pyrolysis, and solvent treatment for the deconst...",
+          "year": 2022,
+          "score": 0.484
+        },
+        {
+          "paper_id": "https://openalex.org/W4413739639",
+          "title": "Assessment of Total UV-Absorbing Contaminants in LDPE Food Packaging from Philippine Markets",
+          "abstract": "This study evaluated the migration of total UV-absorbing contaminants (TACs) from commercially available low-density polyethylene (LDPE) bags commonly used by local eateries and street stalls in the Philippines to package fatty and oily foods. Forty-six (46) LDPE samples composing fifteen (15) brands were collected ...",
+          "year": 2025,
+          "score": 0.4833
+        },
+        {
+          "paper_id": "https://openalex.org/W1515545408",
+          "title": "The Copper Balance of Cities",
+          "abstract": "Material management faces a dual challenge: on the one hand satisfying large and increasing demands for goods and on the other hand accommodating wastes and emissions in sinks. Hence, the characterization of material flows and stocks is relevant for both improving resource efficiency and environmental protection. Th...",
+          "year": 2014,
+          "score": 0.48
+        },
+        {
+          "paper_id": "https://openalex.org/W3048429065",
+          "title": "Oceanic Hitchhikers – Assessing Pathogen Risks from Marine Microplastic",
+          "abstract": "As plastic debris in the environment continues to increase, an emerging concern is the potential for microplastic to act as vectors for pathogen transport. With aquaculture the fastest growing food sector, and microplastic contamination of shellfish increasingly demonstrated, understanding any risk of pathogen trans...",
+          "year": 2020,
+          "score": 0.4767
+        },
+        {
+          "paper_id": "https://openalex.org/W4200467210",
+          "title": "Pyrolysis of end-of-life polystyrene in a pilot-scale reactor: Maximizing styrene production",
+          "abstract": "",
+          "year": 2021,
+          "score": 0.4764
+        },
+        {
+          "paper_id": "https://openalex.org/W2944786646",
+          "title": "The Combined Relative Uncertainty of Measurement Results by Prototype Semi-Automated Calorimetric Chamber",
+          "abstract": "Abstract The paper presents an evaluation of the combined relative uncertainty of the result of direct step temperature measurements aimed at evaluation of the indirect measurements of the specific thermal capacity of the heat insulating concrete by means of a pair of resistive cable thermometers fitted with Pt100 t...",
+          "year": 2019,
+          "score": 0.473
+        },
+        {
+          "paper_id": "https://openalex.org/W4413785323",
+          "title": "Uncertainties in CO<sub>2</sub> Impurity Measurements Using FTIR",
+          "abstract": "As carbon capture, utilization, and storage (CCUS) rapidly expands, reliable CO<sub xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">2</sub> impurity monitoring is essential for verifying compliance with purity specifications. Although these specifications define which impuri...",
+          "year": 2025,
+          "score": 0.4688
+        },
+        {
+          "paper_id": "https://openalex.org/W4320713585",
+          "title": "Challenges and opportunities of light olefin production via thermal and catalytic pyrolysis of end-of-life polyolefins: Towards full recyclability",
+          "abstract": "",
+          "year": 2023,
+          "score": 0.4683
+        },
+        {
+          "paper_id": "https://openalex.org/W4403647166",
+          "title": "Compositional Analysis of Oxygenates and Hydrocarbons in Waste and Virgin Polyolefin Pyrolysis Oils by Ultrahigh-Resolution Fourier Transform Ion Cyclotron Resonance Mass Spectrometry",
+          "abstract": "The linear plastic lifecycle is unsustainable. Mechanical recycling of mixed plastic waste remains challenging, making chemical recycling necessary. Polyolefins, the largest share of plastic waste, can be chemically recycled through thermal pyrolysis. However, the impact of the feedstock type on pyrolysis oil compos...",
+          "year": 2024,
+          "score": 0.468
+        },
+        {
+          "paper_id": "https://openalex.org/W4411185358",
+          "title": "Novel Features Related to Polymers and the Environment",
+          "abstract": "In the early 1980s, the first global environmental crisis took place, focusing on the role of plastics in the substantial solid waste streams of major cities [...].",
+          "year": 2025,
+          "score": 0.4668
+        },
+        {
+          "paper_id": "https://openalex.org/W4390829830",
+          "title": "Aerogels from Wastes and their Applications",
+          "abstract": "Aerogels are not only among the lightest solid materials but also highly porous with great absorption capacity and low thermal conductivity. Unfortunately, the advanced materials have not been widely adopted by industries due to its high production cost. Leading aerogel scientists around the world are actively impro...",
+          "year": 2019,
+          "score": 0.4668
+        },
+        {
+          "paper_id": "https://openalex.org/W4385195633",
+          "title": "Advancements in catalysis for plastic resource utilization",
+          "abstract": "The widespread production and utilization of plastic products have become ingrained in our society, resulting in a staggering amount of plastic waste, severe environmental challenges, and resource depletion.",
+          "year": 2023,
+          "score": 0.4656
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "circular economy scenario modeling for plastic packaging material flows",
+        "keywords": [
+          {
+            "text": "circular economy",
+            "score": 10
+          },
+          {
+            "text": "economy scenario",
+            "score": 9
+          },
+          {
+            "text": "scenario modeling",
+            "score": 8
+          },
+          {
+            "text": "modeling plastic",
+            "score": 7
+          },
+          {
+            "text": "plastic packaging",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4200467210",
+          "title": "Pyrolysis of end-of-life polystyrene in a pilot-scale reactor: Maximizing styrene production",
+          "abstract": "",
+          "year": 2021,
+          "score": 0.4857
+        },
+        {
+          "paper_id": "https://openalex.org/W7061582544",
+          "title": "Potential Risks of the Usage of Plastic Packaging Materials in the Food Industries across Nordic Countries in Connection to Health and Lifestyle Practices of Consumers and Government's Efforts to Address this Sustainability issue : A Comprehensive study",
+          "abstract": "There is a growing demand for the adoption of sustainable products across differentindustries, including the food packaging sector, because non-biodegradable productshave been used for a long period which has impacted the health of consumers in theNordic region. This study aims at examining the effects of plastic fo...",
+          "year": 2024,
+          "score": 0.4835
+        },
+        {
+          "paper_id": "https://openalex.org/W3176826653",
+          "title": "DETECTING CONTAMINANTS IN POST-CONSUMER PLASTIC PACKAGING WASTE BY A NIR HYPERSPECTRAL IMAGING-BASED CASCADE DETECTION APPROACH",
+          "abstract": "Recycling of post-consumer packaging wastes involves a complex chain of activities, usually based on three main stages, that is: i) collection from households or recovery from Municipal solid waste (MSW), ii) sorting and, finally, iii) mechanical recycling. The systematic identification of impurities inside plastic ...",
+          "year": 2021,
+          "score": 0.4724
+        },
+        {
+          "paper_id": "https://openalex.org/W4390401159",
+          "title": "Retracted: XRD Peak Profile Analysis of SiC Reinforced Al<sub>2</sub>O<sub>3</sub> Ceramic Composite Synthesized by Electrical Resistance Heating and Microwave Sintering: A Comparison",
+          "abstract": "",
+          "year": 2023,
+          "score": 0.4723
+        },
+        {
+          "paper_id": "https://openalex.org/W4385186681",
+          "title": "Selective deconstruction of mixed plastics by a tailored organocatalyst",
+          "abstract": "Plastic represents an essential material in our society; however, a major imbalance between their high production and end-of-life management is leading to unrecovered energy, economic hardship, and a high carbon footprint. The adoption of plastic recycling has been limited, mainly due to the difficulty of recycling ...",
+          "year": 2023,
+          "score": 0.4686
+        },
+        {
+          "paper_id": "https://openalex.org/W4399465060",
+          "title": "An exercise-based international polymer syllabus",
+          "abstract": "Abstract The IUPAC Subcommittee on Polymer Education has been pursuing the development of a compact syllabus covering the essential topics required for a tertiary education in polymer science, with numerical and short answer exercises addressing each topic. The primary goal of the document is to provide a framework ...",
+          "year": 2024,
+          "score": 0.4673
+        },
+        {
+          "paper_id": "https://openalex.org/W2784974490",
+          "title": "A General Framework for the Evaluation of Direct Nonoxidative Methane Conversion Strategies",
+          "abstract": "",
+          "year": 2018,
+          "score": 0.467
+        },
+        {
+          "paper_id": "https://openalex.org/W7033821391",
+          "title": "Scenario modeling of regional development based on the social time budget",
+          "abstract": "One of the most effective tools for strategic analysis is the scenario modeling method, which systematizes alternative options for the development of the region. This method is relevant in the tasks of regional sustainable development. The paper presents general logic and examples of scenario modeling of regional de...",
+          "year": 2022,
+          "score": 0.4584
+        },
+        {
+          "paper_id": "https://openalex.org/W4411815918",
+          "title": "Assessing the economic viability of green methanol production: The critical role of CO2 purity in green methanol production",
+          "abstract": "The growing concern over climate change and rising carbon dioxide (CO2) emissions have spurred the development of strategies to upcycle greenhouse gases. One promising solution is the synthesis of green methanol via catalytic hydrogenation of captured CO2 using renewable hydrogen (H2). This provides a versatile chem...",
+          "year": 2025,
+          "score": 0.4551
+        },
+        {
+          "paper_id": "https://openalex.org/W3111246634",
+          "title": "Carbon Capture From Flue Gas and the Atmosphere: A Perspective",
+          "abstract": "Climate change has become a worldwide concern with the rapid rise of the atmospheric Co2 concentration. To mitigate Co2 emissions, the research and development efforts in Co2 capture and separation both from the stationary sources with high Co2 concentrations (e.g., coal-fired power plant flue gas) and directly from...",
+          "year": 2020,
+          "score": 0.4533
+        },
+        {
+          "paper_id": "https://openalex.org/W4280556618",
+          "title": "Modelling of the photo-Fenton process with flexible hydrogen peroxide dosage: Sensitivity analysis and experimental validation",
+          "abstract": "",
+          "year": 2022,
+          "score": 0.4494
+        },
+        {
+          "paper_id": "https://openalex.org/W2314262204",
+          "title": "Identification of Packaging Material of Foods by Infrared Spectroscopy",
+          "abstract": "In recent years plastic films have become widely used for food packaging. Further, there are many cases where different types of plastic are laminated or plastic are coated or laminated on paper or metal foil.Among these, there are few cases that toxic additives may be present. Hence, there is a need to discriminate...",
+          "year": 1971,
+          "score": 0.4452
+        },
+        {
+          "paper_id": "https://openalex.org/W4388094935",
+          "title": "A reversible water‐based electrostatic adhesive",
+          "abstract": "Abstract Commercial adhesives typically fall into two categories: structural or pressure sensitive. Structural glues rely on covalent bonds formed during curing and provide high tensile strength whilst pressure‐sensitive adhesives use physical bonding to provide weaker adhesion, but with considerable convenience for...",
+          "year": 2023,
+          "score": 0.4421
+        },
+        {
+          "paper_id": "https://openalex.org/W2744709472",
+          "title": "Fundamental study on the bonding strength of laminated flexible package",
+          "abstract": "There is a flexible package which used the plastic film of a thin film in the field of plastic packing material. This has single layer use and multilayer use. Although it is partly with the method of making a multilayer structure (lamination), in it, it melting polyethylene method and there is the method of dependin...",
+          "year": 2003,
+          "score": 0.4415
+        },
+        {
+          "paper_id": "https://openalex.org/W4410221804",
+          "title": "The Relative Importance of the SDG Pillars",
+          "abstract": "The seventeen United Nations’ Sustainable Development Goals (SDGs) comprise social, economic, and environmental aspects of sustainability, and as such, they can be grouped into five so-called pillars, i.e., People, Prosperity, Planet, Peace, and Partnership. The present study elucidates the relative importance of th...",
+          "year": 2024,
+          "score": 0.4377
+        },
+        {
+          "paper_id": "https://openalex.org/W3106927677",
+          "title": "Porous Liquids: The Next Frontier",
+          "abstract": "",
+          "year": 2020,
+          "score": 0.4362
+        },
+        {
+          "paper_id": "https://openalex.org/W4402394095",
+          "title": "Ionic liquid-based extraction of metal ions <i>via</i> polymer inclusion membranes: a critical review",
+          "abstract": "Ionic liquid-based polymer inclusion membranes enable efficient and selective metal ion transport, utilizing the tunable properties of ionic liquids for sustainable metal separation.",
+          "year": 2024,
+          "score": 0.4338
+        },
+        {
+          "paper_id": "https://openalex.org/W3100636701",
+          "title": "Engineering Permanent Porosity into Liquids",
+          "abstract": "The possibility of engineering well-defined pores into liquid materials is fascinating from both a conceptual and an applications point of view. Although the concept of porous liquids was proposed in 2007, these materials had remained hypothetical due to the technical challenges associated with their synthesis. Over...",
+          "year": 2021,
+          "score": 0.4321
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "step": "step6",
+      "command_name": "paper-search",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Existing NIR/MIR spectroscopy, machine-learning classification, and early sensor-fusion sorting systems cannot yet provide robust, generalizable, uncertainty-aware, economically deployable characterization of dirty, aged, contaminated, pigmented, multilayer, and #3–#7 plastic waste under industrial conditions, nor reliably connect item-level material-state recognition to material-flow analysis, recycling yield, and circular-economy decisions.",
+        "field": "abstract",
+        "top_k": 2,
+        "after": null,
+        "before": null
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W2988016874",
+          "title": "An Innovative Route to Circular Rigid Plastics",
+          "abstract": "An innovative route for plastics recycling is proposed, based on a combination of a logarithmic sorting process and colour plus high-resolution near-infrared (NIR) sensors. Although counterintuitive, it is shown that such a technology could sort clean flakes from rigid packaging waste into a very large number of different plastic grades with modest sorter capacity, provided that the chosen sensor is able to differentiate correctly between any two grades of plastics in the waste. Tests with high-resolution NIR on single pixels of transparent flakes from different types and brands of packaging show that this is indeed the case for a selection of 20 different packaging items bought from shops. Moreover, the results seem to indicate, in line with previous research, that high-resolution NIR data can be linked to important physical plastic properties like the melt flow viscosity and tensile strength. The attraction of deep sorting of waste plastics with relatively cheap sensors and modest sorter capacity is that the present industrial practice of tuning plastic grades to specific applications could coexist with commercial high-grade recycling at high levels of circularity and low carbon footprint. Therefore, advanced recycling technology is likely to be a societal alternative to phasing out plastics for rigid applications.",
+          "year": 2019,
+          "score": 0.6916525959968567
+        },
+        {
+          "paper_id": "https://openalex.org/W4324031096",
+          "title": "NIR-MFCO dataset: Near-infrared-based false-color images of post-consumer plastics at different material flow compositions and material flow presentations",
+          "abstract": "Determining mass-based material flow compositions (MFCOs) is crucial for assessing and optimizing the recycling of post-consumer plastics. Currently, MFCOs in plastic recycling are primarily determined through manual sorting analysis, but the use of inline near-infrared (NIR) sensors holds potential to automate the characterization process, paving the way for novel sensor-based material flow characterization (SBMC) applications. This data article aims to expedite SBMC research by providing NIR-based false-color images of plastic material flows with their corresponding MFCOs. The false-color images were created through the pixel-based classification of binary material mixtures using a hyperspectral imaging camera (EVK HELIOS NIR G2-320; 990 nm-1678 nm wavelength range) and the on-chip classification algorithm (CLASS 32). The resulting NIR-MFCO dataset includes <i>n</i> = 880 false-color images from three test series: (T1) high-density polyethylene (HDPE) and polyethylene terephthalate (PET) flakes, (T2a) post-consumer HDPE packaging and PET bottles, and (T2b) post-consumer HDPE packaging and beverage cartons for <i>n</i> = 11 different HDPE shares (0% - 50%) at four different material flow presentations (singled, monolayer, bulk height H1, bulk height H2). The dataset can be used, e.g., to train machine learning algorithms, evaluate the accuracy of inline SBMC applications, and deepen the understanding of segregation effects of anthropogenic material flows, thus further advancing SBMC research and enhancing post-consumer plastic recycling.",
+          "year": 2023,
+          "score": 0.6906417012214661
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Transfer hyperspectral remote-sensing methods for noisy, mixed, and weathered material discrimination, including spectral unmixing, illumination correction, domain adaptation, and uncertainty-aware classification, to improve recognition of degraded plastic items.",
+        "keywords": [
+          {
+            "text": "hyperspectral imaging",
+            "score": 9
+          },
+          {
+            "text": "spectral unmixing",
+            "score": 8
+          },
+          {
+            "text": "domain adaptation",
+            "score": 8
+          },
+          {
+            "text": "uncertainty quantification",
+            "score": 7
+          },
+          {
+            "text": "material discrimination",
+            "score": 8
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4378876288",
+          "title": "Hyperspectral Classification of Recyclable Plastics in Industrial Setups",
+          "abstract": "",
+          "year": 2023,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W4384157194",
+          "title": "Multi-level color classification of post-consumer plastic packaging flakes by hyperspectral imaging for optimizing the recycling process",
+          "abstract": "",
+          "year": 2023,
+          "score": 0.9972
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Apply industrial process control and material-flow optimization methods, such as state estimation, digital twins, and decision analytics under uncertainty, to translate item-level material-state estimates into recycling yield and circular-economy decisions.",
+        "keywords": [
+          {
+            "text": "material flow analysis",
+            "score": 9
+          },
+          {
+            "text": "process control",
+            "score": 8
+          },
+          {
+            "text": "digital twin",
+            "score": 7
+          },
+          {
+            "text": "decision optimization",
+            "score": 8
+          },
+          {
+            "text": "recycling yield",
+            "score": 7
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W6905989044",
+          "title": "Enhancing Resource Efficiency And Monetization In Metal Recycling Through Supply Chain-Wide Digitalization: An Approach For Single-Variety Metal Stream Optimization And CO2 Reduction",
+          "abstract": "In recent decades, there has been a growing need to recycle production waste more efficiently, particularly metal waste in the manufacturing industry in order to realize economic and environmental benefits. However, current metal recycling processes are hampered by inefficiencies such as mixed and contaminated scrap...",
+          "year": 2024,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W4399957252",
+          "title": "Optimizing material circularity pathways in industrial waste streams: A decision-making model",
+          "abstract": "",
+          "year": 2024,
+          "score": 0.9936
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "step": "step6",
+      "command_name": "paper-search",
+      "cache_hit": true,
+      "payload": {
+        "query_text": "Existing NIR/MIR spectroscopy, machine-learning classification, and early sensor-fusion sorting systems cannot yet provide robust, generalizable, uncertainty-aware, economically deployable characterization of dirty, aged, contaminated, pigmented, multilayer, and #3–#7 plastic waste under industrial conditions, nor reliably connect item-level material-state recognition to material-flow analysis, recycling yield, and circular-economy decisions.",
+        "field": "abstract",
+        "top_k": 2,
+        "after": null,
+        "before": null
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W2988016874",
+          "title": "An Innovative Route to Circular Rigid Plastics",
+          "abstract": "An innovative route for plastics recycling is proposed, based on a combination of a logarithmic sorting process and colour plus high-resolution near-infrared (NIR) sensors. Although counterintuitive, it is shown that such a technology could sort clean flakes from rigid packaging waste into a very large number of different plastic grades with modest sorter capacity, provided that the chosen sensor is able to differentiate correctly between any two grades of plastics in the waste. Tests with high-resolution NIR on single pixels of transparent flakes from different types and brands of packaging show that this is indeed the case for a selection of 20 different packaging items bought from shops. Moreover, the results seem to indicate, in line with previous research, that high-resolution NIR data can be linked to important physical plastic properties like the melt flow viscosity and tensile strength. The attraction of deep sorting of waste plastics with relatively cheap sensors and modest sorter capacity is that the present industrial practice of tuning plastic grades to specific applications could coexist with commercial high-grade recycling at high levels of circularity and low carbon footprint. Therefore, advanced recycling technology is likely to be a societal alternative to phasing out plastics for rigid applications.",
+          "year": 2019,
+          "score": 0.6916525959968567
+        },
+        {
+          "paper_id": "https://openalex.org/W4324031096",
+          "title": "NIR-MFCO dataset: Near-infrared-based false-color images of post-consumer plastics at different material flow compositions and material flow presentations",
+          "abstract": "Determining mass-based material flow compositions (MFCOs) is crucial for assessing and optimizing the recycling of post-consumer plastics. Currently, MFCOs in plastic recycling are primarily determined through manual sorting analysis, but the use of inline near-infrared (NIR) sensors holds potential to automate the characterization process, paving the way for novel sensor-based material flow characterization (SBMC) applications. This data article aims to expedite SBMC research by providing NIR-based false-color images of plastic material flows with their corresponding MFCOs. The false-color images were created through the pixel-based classification of binary material mixtures using a hyperspectral imaging camera (EVK HELIOS NIR G2-320; 990 nm-1678 nm wavelength range) and the on-chip classification algorithm (CLASS 32). The resulting NIR-MFCO dataset includes <i>n</i> = 880 false-color images from three test series: (T1) high-density polyethylene (HDPE) and polyethylene terephthalate (PET) flakes, (T2a) post-consumer HDPE packaging and PET bottles, and (T2b) post-consumer HDPE packaging and beverage cartons for <i>n</i> = 11 different HDPE shares (0% - 50%) at four different material flow presentations (singled, monolayer, bulk height H1, bulk height H2). The dataset can be used, e.g., to train machine learning algorithms, evaluate the accuracy of inline SBMC applications, and deepen the understanding of segregation effects of anthropogenic material flows, thus further advancing SBMC research and enhancing post-consumer plastic recycling.",
+          "year": 2023,
+          "score": 0.6906417012214661
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Adapt hyperspectral and multispectral remote-sensing methods for degraded, mixed, and contaminated surface materials, including spectral unmixing, illumination and background correction, cross-sensor calibration transfer, and uncertainty-aware target detection, to improve identification of complex plastic items under variable industrial conditions.",
+        "keywords": [
+          {
+            "text": "hyperspectral unmixing",
+            "score": 9
+          },
+          {
+            "text": "cross-sensor calibration transfer",
+            "score": 8
+          },
+          {
+            "text": "uncertainty-aware target detection",
+            "score": 9
+          },
+          {
+            "text": "illumination and background correction",
+            "score": 7
+          },
+          {
+            "text": "contaminated material signatures",
+            "score": 8
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4378876288",
+          "title": "Hyperspectral Classification of Recyclable Plastics in Industrial Setups",
+          "abstract": "",
+          "year": 2023,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W3093559484",
+          "title": "Remote sensing detection of plastic waste: recent improvements and remaining challenges",
+          "abstract": "The presence of plastic litters in the environment (both onshore and offshore) has long been identified as a threat for the ecosystems. Remote sensing provides an efficient and quick access to concentration areas of plastic litters. Due to composition similarities between plastics and hydrocarbons, absorption wavele...",
+          "year": 2020,
+          "score": 0.9354
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Use stochastic optimization, decision analysis, and material-flow modeling to connect uncertain item-level classification outputs with sorting policies, recycling yield forecasts, and circular-economy performance metrics under cost and throughput constraints.",
+        "keywords": [
+          {
+            "text": "stochastic optimization",
+            "score": 9
+          },
+          {
+            "text": "material flow analysis",
+            "score": 9
+          },
+          {
+            "text": "decision under uncertainty",
+            "score": 8
+          },
+          {
+            "text": "recycling network design",
+            "score": 7
+          },
+          {
+            "text": "circular economy metrics",
+            "score": 8
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4407267473",
+          "title": "Dynamic multi-period recycling collection routing with uncertain material quality",
+          "abstract": "Abstract We consider the problem of collecting and processing waste material. At a production facility, a known amount of inventory is required for production (e.g., paper) for every period. Instead of new material, the facility relies on collected and processed waste material (e.g., paper waste). This material is c...",
+          "year": 2025,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W6995770938",
+          "title": "Powering the circular economy with maximum metal recovery from printed circuit boards by machine learning and robust optimisation",
+          "abstract": "",
+          "year": 2024,
+          "score": 0.9689
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "step": "step6",
+      "command_name": "paper-search",
+      "cache_hit": true,
+      "payload": {
+        "query_text": "Existing NIR/MIR spectroscopy, machine-learning classification, and early sensor-fusion sorting systems cannot yet provide robust, generalizable, uncertainty-aware, economically deployable characterization of dirty, aged, contaminated, pigmented, multilayer, and #3–#7 plastic waste under industrial conditions, nor reliably connect item-level material-state recognition to material-flow analysis, recycling yield, and circular-economy decisions.",
+        "field": "abstract",
+        "top_k": 2,
+        "after": null,
+        "before": null
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W2988016874",
+          "title": "An Innovative Route to Circular Rigid Plastics",
+          "abstract": "An innovative route for plastics recycling is proposed, based on a combination of a logarithmic sorting process and colour plus high-resolution near-infrared (NIR) sensors. Although counterintuitive, it is shown that such a technology could sort clean flakes from rigid packaging waste into a very large number of different plastic grades with modest sorter capacity, provided that the chosen sensor is able to differentiate correctly between any two grades of plastics in the waste. Tests with high-resolution NIR on single pixels of transparent flakes from different types and brands of packaging show that this is indeed the case for a selection of 20 different packaging items bought from shops. Moreover, the results seem to indicate, in line with previous research, that high-resolution NIR data can be linked to important physical plastic properties like the melt flow viscosity and tensile strength. The attraction of deep sorting of waste plastics with relatively cheap sensors and modest sorter capacity is that the present industrial practice of tuning plastic grades to specific applications could coexist with commercial high-grade recycling at high levels of circularity and low carbon footprint. Therefore, advanced recycling technology is likely to be a societal alternative to phasing out plastics for rigid applications.",
+          "year": 2019,
+          "score": 0.6916525959968567
+        },
+        {
+          "paper_id": "https://openalex.org/W4324031096",
+          "title": "NIR-MFCO dataset: Near-infrared-based false-color images of post-consumer plastics at different material flow compositions and material flow presentations",
+          "abstract": "Determining mass-based material flow compositions (MFCOs) is crucial for assessing and optimizing the recycling of post-consumer plastics. Currently, MFCOs in plastic recycling are primarily determined through manual sorting analysis, but the use of inline near-infrared (NIR) sensors holds potential to automate the characterization process, paving the way for novel sensor-based material flow characterization (SBMC) applications. This data article aims to expedite SBMC research by providing NIR-based false-color images of plastic material flows with their corresponding MFCOs. The false-color images were created through the pixel-based classification of binary material mixtures using a hyperspectral imaging camera (EVK HELIOS NIR G2-320; 990 nm-1678 nm wavelength range) and the on-chip classification algorithm (CLASS 32). The resulting NIR-MFCO dataset includes <i>n</i> = 880 false-color images from three test series: (T1) high-density polyethylene (HDPE) and polyethylene terephthalate (PET) flakes, (T2a) post-consumer HDPE packaging and PET bottles, and (T2b) post-consumer HDPE packaging and beverage cartons for <i>n</i> = 11 different HDPE shares (0% - 50%) at four different material flow presentations (singled, monolayer, bulk height H1, bulk height H2). The dataset can be used, e.g., to train machine learning algorithms, evaluate the accuracy of inline SBMC applications, and deepen the understanding of segregation effects of anthropogenic material flows, thus further advancing SBMC research and enhancing post-consumer plastic recycling.",
+          "year": 2023,
+          "score": 0.6906417012214661
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Adapt hyperspectral and multispectral remote-sensing methods for noisy, mixed, and contaminated surface observations, including spectral unmixing, domain adaptation, and uncertainty-aware classification, to improve robust material identification in complex waste-stream conditions.",
+        "keywords": [
+          {
+            "text": "hyperspectral imaging",
+            "score": 9
+          },
+          {
+            "text": "spectral unmixing",
+            "score": 8
+          },
+          {
+            "text": "domain adaptation",
+            "score": 8
+          },
+          {
+            "text": "uncertainty quantification",
+            "score": 7
+          },
+          {
+            "text": "sensor fusion",
+            "score": 7
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W2265885259",
+          "title": "Remote sensing for waste characterization",
+          "abstract": "",
+          "year": 2012,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W4414384314",
+          "title": "Enhanced Waste Sorting Technology by Integrating Hyperspectral and RGB Imaging",
+          "abstract": "Identifying the material composition of objects is crucial for many recycling sector applications. Traditionally, object classification relies either on hyperspectral imaging (HSI), which analyses the chemometric properties of objects to infer material types, or on RGB imaging, which captures an object’s visual appe...",
+          "year": 2025,
+          "score": 0.9131
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Apply industrial systems engineering, material-flow analysis, and yield-aware decision optimization to connect item-level material recognition with sorting-line performance, recycling recovery rates, and circular-economy decision-making.",
+        "keywords": [
+          {
+            "text": "material flow analysis",
+            "score": 9
+          },
+          {
+            "text": "recycling yield",
+            "score": 8
+          },
+          {
+            "text": "process optimization",
+            "score": 8
+          },
+          {
+            "text": "circular economy",
+            "score": 7
+          },
+          {
+            "text": "decision support systems",
+            "score": 7
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W7129587922",
+          "title": "Sensor-based Sorting as a Key Enabler for Efficient Recycling and Recovery of Secondary Raw Materials—Insights from Case Studies",
+          "abstract": "Abstract Secondary raw materials are a key prerequisite for a functioning circular economy; however, their use is limited by technical, economic, and regulatory challenges. From a technical perspective, it is crucial that secondary raw materials exhibit sufficiently high and consistent quality in order to replace pr...",
+          "year": 2026,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W4286698685",
+          "title": "<i>Quo vadis</i> MFA? Integrated material flow analysis to support material efficiency",
+          "abstract": "",
+          "year": 2022,
+          "score": 0.9749
+        }
+      ]
+    }
+  ]
+}

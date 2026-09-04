@@ -1,0 +1,49 @@
+{
+  "generated_by": "site/scripts/build_database_data.py",
+  "paper_cap_per_big_node": 100,
+  "categories": [
+    {
+      "id": "mechanism_skills",
+      "label": "Mechanism Methods",
+      "description": "Analysis techniques used across the mechanistic-interpretability literature. Every big node is a predefined technique family.",
+      "big_node_count": 10,
+      "total_leaf_papers": 76,
+      "paper_edge_counts": {
+        "CITES": 67,
+        "RELATED_TO": 15
+      },
+      "tree_path": "trees/mechanism_skills.json"
+    },
+    {
+      "id": "interpretability_objects",
+      "label": "Interpretability Objects",
+      "description": "Model components that interpretability research zooms in on.",
+      "big_node_count": 8,
+      "total_leaf_papers": 73,
+      "paper_edge_counts": {
+        "CITES": 35,
+        "RELATED_TO": 8
+      },
+      "tree_path": "trees/interpretability_objects.json"
+    },
+    {
+      "id": "application_scenarios",
+      "label": "Application / Scenarios",
+      "description": "Downstream tasks and use cases where the interpretability work is grounded.",
+      "big_node_count": 9,
+      "total_leaf_papers": 86,
+      "paper_edge_counts": {
+        "CITES": 12,
+        "RELATED_TO": 2
+      },
+      "tree_path": "trees/application_scenarios.json"
+    }
+  ],
+  "totals": {
+    "interp_papers": 13936,
+    "venues": 929,
+    "authors": 33400,
+    "published_in_edges": 13936
+  },
+  "distinct_papers_written": 194
+}

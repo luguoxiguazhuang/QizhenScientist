@@ -1,0 +1,297 @@
+/* The case hero is a dark block; everything below it is the light reading
+   page. Colours in the hero come from the .on-dark token scope, with this
+   case's own accent and near-black injected as inline custom properties by
+   CaseDetailPage.jsx — so nothing in this file names a case colour.
+
+   A large run of dead style used to live here: .case-detail__run-sheet and its
+   nine descendants, styling a fixed aside that is now the `runSheet` block in
+   case/blocks/, plus four --case-* custom properties (--case-ink, --case-muted,
+   --case-line, --case-subtle) that no file ever defined, so every rule reading
+   them was silently using its fallback. Both are gone. */
+
+/* Each case's hero is its own colour, and nothing else.
+
+   A canvas used to sit here drawing an attention lattice — a grid of small
+   rounded marks with a band sweeping down it. It was replaced by colour alone
+   because the pattern was decoration wearing a diagram's clothes: it did not
+   depict this case, it depicted the general idea of a transformer, identically
+   on all four pages. Four heroes that differ only in hue say more, and say it
+   honestly.
+
+   The three layers are the same ones that make any large dark field look
+   deliberate: a broad glow off-centre so the block has a light source, a
+   vignette so it has a centre, and a base gradient underneath both. The glow
+   carries a mid stop because a two-stop radial falls off linearly in alpha and
+   shows a visible disc edge on dark ground. */
+.case-detail__hero {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  /* Sized so the article clears the fold. The hero is an introduction, not a
+     landing page: a reader who arrives on a case and sees only a title has
+     been given nothing to decide with, and has to scroll before the page
+     starts. These values put the first chapter on screen at 900px. */
+  padding: clamp(28px, 3vw, 40px) 0 clamp(24px, 2.8vw, 34px);
+  background:
+    radial-gradient(
+      118% 108% at 50% 42%,
+      transparent 28%,
+      rgba(0, 0, 0, 0.34) 100%
+    ),
+    radial-gradient(
+      96% 130% at 78% 8%,
+      color-mix(in srgb, var(--accent-on-deep) 26%, transparent) 0%,
+      color-mix(in srgb, var(--accent-on-deep) 8%, transparent) 44%,
+      transparent 76%
+    ),
+    linear-gradient(
+      152deg,
+      color-mix(in srgb, var(--section-deep) 88%, #ffffff) 0%,
+      var(--section-deep) 58%
+    );
+}
+
+/* A hairline of the case's colour along the bottom edge, so the break between
+   the dark hero and the light article is the case's own break rather than a
+   generic rule. */
+/* Starts at the content's left edge, not the window's. Same centring
+   arithmetic as the body, so the two edges are the same edge. */
+.case-detail__hero::after {
+  content: '';
+  position: absolute;
+  left: max(var(--case-gutter), (100% - var(--case-content)) / 2);
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    var(--accent-on-deep) 0%,
+    color-mix(in srgb, var(--accent-on-deep) 22%, transparent) 62%,
+    transparent 100%
+  );
+}
+
+.case-detail__hero-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+/* Mono and subdued, but large enough to read at a glance. */
+.case-detail__crumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--text-subtle);
+  font-family: var(--font-mono);
+  font-size: var(--type-ui);
+  letter-spacing: 0.02em;
+}
+
+.case-detail__crumb a {
+  color: var(--text-muted);
+}
+
+.case-detail__crumb a:hover {
+  color: var(--text);
+}
+
+.case-detail__hero-copy {
+  display: grid;
+  gap: var(--space-3);
+  max-width: 780px;
+}
+
+.case-detail__track {
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.case-detail__hero-copy h1 {
+  font-family: var(--font-display);
+  font-size: var(--type-page-title);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.015em;
+  color: var(--text);
+}
+
+.case-detail__lede {
+  margin: 0;
+  font-size: var(--type-lede-size);
+  line-height: 1.65;
+  color: var(--text-muted);
+}
+
+/* The article's geometry, declared once.
+
+   The content column and its gutters live here rather than inside CaseSections,
+   because the prev/next nav underneath is a sibling of the body and has to
+   line up with it. */
+.case-detail {
+  --case-content: 1144px;
+  --case-gutter: clamp(20px, 4vw, 32px);
+}
+
+/* No .container here on purpose. CaseSections owns its own content grid and
+   its own horizontal padding; wrapping it in .container as well applied the
+   gutter twice on narrow screens. The prev/next nav takes a container of its
+   own instead. */
+.case-detail__body {
+  display: grid;
+}
+
+/* Same column, same indent, no rule.
+
+   It reads as the end of the article rather than as a strip attached below it,
+   which is what the grey line made it — and the line was also the last
+   full-width divider on the page. */
+.case-detail__nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6) var(--space-7);
+  width: 100%;
+  max-width: calc(var(--case-content) + var(--case-gutter) * 2);
+  margin: 0 auto;
+  padding: var(--space-5) var(--case-gutter) var(--space-7);
+}
+
+/* Two links, not two cards.
+
+   They were white boxes with a border and a 28px radius, which on a page whose
+   article carries no cards at all made the last thing on it the most decorated
+   — and the white sat on white, so the box was doing nothing but drawing its
+   own outline. What a reader needs here is the direction and the title, and
+   both of those are type. */
+.case-detail__nav-link {
+  display: grid;
+  gap: 6px;
+  padding: 0;
+}
+
+.case-detail__nav-label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--text-subtle);
+  font-family: var(--font-mono);
+  font-size: var(--type-micro);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.case-detail__nav-link--next .case-detail__nav-label {
+  justify-content: flex-end;
+}
+
+/* One arrow drawn once, flipped for the backward link.
+
+   The travel on hover goes outward — left link's arrow moves left, right
+   link's moves right — so the motion points where the link goes. Both are
+   written as a single transform, because the flipped one is already using
+   `transform` and a second declaration would win outright. */
+.case-detail__nav-arrow {
+  transition: transform 0.24s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.case-detail__nav-arrow--left {
+  transform: rotate(180deg);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .case-detail__nav-link:hover .case-detail__nav-arrow--left,
+  .case-detail__nav-link:focus-visible .case-detail__nav-arrow--left {
+    transform: rotate(180deg) translateX(4px);
+  }
+
+  .case-detail__nav-link:hover .case-detail__nav-arrow--right,
+  .case-detail__nav-link:focus-visible .case-detail__nav-arrow--right {
+    transform: translateX(4px);
+  }
+
+  /* The label takes the case's own colour — the colour of the page you land
+     on, not of the page you are leaving. */
+  .case-detail__nav-link:hover .case-detail__nav-label,
+  .case-detail__nav-link:focus-visible .case-detail__nav-label {
+    color: var(--case-theme-accent, var(--accent-ink));
+  }
+}
+
+.case-detail__nav-link:focus-visible {
+  outline: none;
+}
+
+
+/* The display face, the same one the case titles are set in, so the pair reads
+   as two more of those rather than as UI. */
+.case-detail__nav-link strong {
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: clamp(1.125rem, 1.7vw, 1.375rem);
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+
+  /* An underline that wipes in from the leading edge, drawn as a background
+     rather than as a border or text-decoration: background-size animates, so
+     the rule grows without the text moving. On a title that may run to two
+     lines, anything that reflows is out. */
+  background-image: linear-gradient(var(--case-theme-accent, var(--accent-ink)), var(--case-theme-accent, var(--accent-ink)));
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0 1.5px;
+  transition: background-size 0.32s cubic-bezier(0.22, 0.61, 0.36, 1);
+
+  /* The box hugs the text. As a grid item it filled the column, so `100%` was
+     the column's width and the rule ran on well past the end of the title. */
+  width: fit-content;
+  max-width: 100%;
+}
+
+/* Wipes from the right on the backward link, so both grow away from the arrow
+   and toward the direction of travel. */
+.case-detail__nav-link--prev strong {
+  background-position: 100% 100%;
+}
+
+/* fit-content leaves the box at the start of its column; the backward link is
+   right-aligned, so it has to be pushed over. */
+.case-detail__nav-link--next strong {
+  margin-left: auto;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .case-detail__nav-link:hover strong,
+  .case-detail__nav-link:focus-visible strong {
+    background-size: 100% 1.5px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .case-detail__nav-arrow,
+  .case-detail__nav-link strong {
+    transition: none;
+  }
+}
+
+
+.case-detail__nav-link--next {
+  text-align: right;
+}
+
+@media (max-width: 900px) {
+  .case-detail__nav {
+    grid-template-columns: 1fr;
+  }
+
+  .case-detail__nav-link--next {
+    text-align: left;
+  }
+}

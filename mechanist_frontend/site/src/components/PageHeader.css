@@ -1,0 +1,189 @@
+/* Compressed, so what the page is actually about starts on the first screen.
+   This band used to take most of one to say a title and a paragraph, and the
+   thing a visitor came for — the case grid, the graph canvas, the family list,
+   the first install step — began below the fold on every sub-page.
+
+   The 2px rule at the bottom carries the page's accent. It is the whole of the
+   identity treatment: decorative, so no contrast floor applies to it, and it
+   falls back to the ordinary hairline on any page that does not set one. */
+.page-header {
+  position: relative;
+  padding: clamp(22px, 2.6vw, 32px) 0 clamp(18px, 2.2vw, 26px);
+  background-color: var(--section-base);
+  border-bottom: 2px solid var(--page-accent, var(--border));
+}
+
+/* One column by default. The second track is added only when the rail has
+   something in it — see PageHeader.jsx. */
+/* Over the motif. Without this the drawing paints on top of the copy — it is a
+   later sibling, and neither of them was in a stacking context. */
+.page-header__inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(20px, 3vw, 40px);
+  align-items: end;
+}
+
+.page-header__inner[data-rail='true'] {
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 0.4fr);
+}
+
+/* A rail carrying a panel rather than three numbers. 240px is enough for a
+   figure and its label; it is not enough for a terminal — the longest line in
+   the install panel, `/plugin marketplace add zjunlp/Mechanist`, is 40
+   characters, which at 11px mono needs about 265px of text column before
+   padding. 360px clears it without the command wrapping.
+
+   Aligned to the top rather than the baseline: a panel and a paragraph have no
+   shared baseline to sit on, and `end` hung the panel off the bottom of the
+   copy. */
+.page-header__inner[data-rail='wide'] {
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.46fr);
+  /* Centred, not baseline-aligned. A panel and a paragraph share no baseline;
+     `end` hung the panel off the bottom of the copy, and `start` left the copy
+     stranded at the top of a band the panel had made tall. */
+  align-items: center;
+}
+
+.page-header__copy {
+  min-width: 0;
+}
+
+/* Mono and subdued, but large enough to read at a glance — same register as
+   .case-detail__crumb. */
+.page-header__crumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+  padding-bottom: var(--space-3);
+  color: var(--text-subtle);
+  font-family: var(--font-mono);
+  font-size: var(--type-ui);
+  letter-spacing: 0.02em;
+}
+
+.page-header__crumb a,
+.page-header__crumb button {
+  padding: 0;
+  color: var(--primary);
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.page-header__crumb a:hover,
+.page-header__crumb button:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
+}
+
+.page-header__title {
+  font-family: var(--font-display);
+  font-size: var(--type-page-title);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  max-width: 22ch;
+  text-wrap: balance;
+}
+
+/* 22ch is sized against a title sharing the row with a figure rail. With the
+   rail gone the same cap left the title wrapping in the left third of an
+   otherwise empty band. */
+.page-header__inner[data-rail='false'] .page-header__title {
+  max-width: 30ch;
+}
+
+.page-header__lede {
+  margin-top: var(--space-3);
+  max-width: 64ch;
+  font-size: var(--type-lede-size);
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+/* The lede sits at --text-muted, so weight alone barely registers against it.
+   Emphasis here means stepping up to the full text colour as well. */
+.page-header__lede strong {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.page-header__meta {
+  margin-top: var(--space-3);
+  color: var(--text-subtle);
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+/* Ruled channels rather than stat cards, matching the home hero's spec panel
+   so the pages read as one instrument. */
+.page-header__figures {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+  margin: 0;
+}
+
+.page-header__figures div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--page-accent, var(--border));
+}
+
+.page-header__figures dt {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: clamp(1.375rem, 2vw, 1.75rem);
+  font-weight: 400;
+  line-height: 1;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+
+.page-header__figures dd {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--text-muted);
+}
+
+.page-header__figure-icon {
+  width: 15px;
+  height: 15px;
+  flex: none;
+  stroke-width: 1.75;
+}
+
+/* The first block on the page comes up into the fold. Every sub-page puts its
+   real content here — the case grid, the graph, the family list, the first
+   install step — and a full section's top padding under a header that has just
+   ended pushed all of it below the fold for no separation the 2px rule was not
+   already providing. */
+.page-header + .section {
+  padding-top: clamp(24px, 2.8vw, 34px);
+}
+
+@media (max-width: 900px) {
+  /* Has to out-specify .page-header__inner[data-rail='true'] above, which is
+     an attribute selector and would otherwise keep two columns at 900px. */
+  .page-header__inner[data-rail] {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .page-header__title {
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-header__figures {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

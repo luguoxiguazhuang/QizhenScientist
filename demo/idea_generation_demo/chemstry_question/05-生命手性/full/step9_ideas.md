@@ -1,0 +1,34 @@
+# Chiral kinetic proofreading: testing homochirality as an error-correcting code for electron-transfer assemblies
+
+## Motivation
+
+The original question asks whether life requires chirality because handedness is merely a historical accident or because it solves a functional problem. Asymmetric autocatalysis can amplify tiny enantiomeric excesses [Author et al., 2020](https://openalex.org/W3210500841), nonequilibrium network models show how large systems can break chiral symmetry [Author et al., 2021](https://openalex.org/W3120596068), and prebiotic studies show homochiral peptides can form and persist in aqueous crustal environments [Author et al., 2023](https://openalex.org/W4313574776). However, these emergence-focused results do not quantify why homochirality becomes obligatory once life-like electron transfer, molecular recognition, and information fidelity are required. Direct functional evidence is beginning to appear because homochirality modulates electron transfer in protein assemblies [Author et al., 2023](https://openalex.org/W4384627421), but the missing piece is an active error-correction mechanism that converts chiral order into higher functional reliability. Supramolecular chemistry shows that chiral order can be cooperatively amplified and coupled to emergent functions such as recognition, transport, and catalysis [Author et al., 2016](https://openalex.org/W7027101199), while molecular communications shows how optimal decoding can maintain signal fidelity in noisy, memory-bearing channels [Author et al., 2016](https://openalex.org/W2484573086). This idea transfers those mechanisms to origin-of-life biochemistry by treating a homochiral electron-transfer assembly as a noisy communication channel whose allowed codewords are same-handed structural units and whose heterochiral defects are decodable errors. The primary testable hypothesis is that, at fixed heterochiral defect load, an energy-consuming proofreading cycle that removes and replaces heterochiral defects increases electron-transfer fidelity more than passive thermodynamic stabilization alone.
+
+## Method
+
+This method is intended to solve the lack of a quantitative functional mechanism linking homochirality to life-required electron transfer; it can be divided into 4 parts: (1) a controlled chiral peptide/protein electron-transfer testbed with defined heterochiral defects, (2) an energy-consuming proofreading editor that corrects defects rather than merely filtering them, (3) a noisy-channel decoding model that quantifies error tolerance and capacity, and (4) physical readouts of electron-transfer fidelity and spin- or redox-gated syndrome detection. The primary hypothesis is isolated in the first phase by varying only proofreading activity while holding chirality, defect fraction, assembly mass, and surface conditions fixed.
+
+**1. Defined chiral electron-transfer testbed**
+
+Create a minimal electron-transfer assembly whose geometry, redox spacing, and surface attachment are held constant while chirality is varied. Use self-assembling peptides or small protein domains bearing redox cofactors and terminal cysteines for electrode contact, as in studies of homochirality and electron transfer in protein assemblies [Author et al., 2023](https://openalex.org/W4384627421). Prepare all-L, all-D, alternating L/D, and racemic random versions, plus defined heterochiral defects in an otherwise homochiral background. Supramolecular principles are used to ensure that handedness is expressed at the assembly level, not only at the monomer level [Author et al., 2016](https://openalex.org/W7027101199).
+
+**2. Energy-consuming chiral proofreading editor**
+
+Build an active editor that performs syndrome detection, defect removal, and stereospecific replacement. A heterochiral defect in a homochiral wire is expected to produce local packing strain, altered redox dwell time, and a higher monomer off-rate; these observables form the syndrome. An ATP-fueled disaggregase/chaperone module, or a synthetic fuel-driven exchange catalyst, extracts the defective unit, while a reservoir of correct-handed monomers and a chiral trap bias reincorporation toward the original handedness. This cycle is driven away from equilibrium, as required for chiral symmetry breaking in large systems [Author et al., 2021](https://openalex.org/W3120596068), and is evaluated under aqueous conditions compatible with peptide stability [Author et al., 2023](https://openalex.org/W4313574776). The template cooperativity of the homochiral assembly provides the stereochemical memory [Author et al., 2016](https://openalex.org/W7027101199).
+
+**3. Noisy-channel decoding and capacity model**
+
+Adapt optimal decoding from molecular communications to quantify the functional payoff of homochirality [Author et al., 2016](https://openalex.org/W2484573086). Treat redox pulses as signals, heterochiral defects as noise with memory, and pulse width as a detection variable. Derive a coding theorem relating heterochiral error rate, reader affinity and valency, proofreading rate, energy cost, and network connectivity to a maximum tolerable error rate and electron-transfer capacity. The model predicts that homochiral codes outperform randomized or achiral codes only when the proofreading rate exceeds a threshold.
+
+**4. Functional and physical readouts of chiral gating**
+
+Measure the functional payoff and physical gating. Use conductive AFM, electrochemical impedance, and time-resolved redox pulses to quantify electron-transfer fidelity, error propagation length, and repair recovery [Author et al., 2023](https://openalex.org/W4384627421). Test a physical chirality-dependent gate by measuring spin-selective transport, magnetic-field-dependent conductance, or spin-dependent redox coupling; heterochiral defects should weaken the gate, and proofreading should restore it. Supramolecular functional coupling is assessed by comparing ordered homochiral wires with scrambled or unstructured mixtures [Author et al., 2016](https://openalex.org/W7027101199).
+
+## References
+
+1. Structural Contributions to Autocatalysis and Asymmetric Amplification in the Soai Reaction. 2020. https://openalex.org/W3210500841
+2. Emergence of homochirality in large molecular systems. 2021. https://openalex.org/W3120596068
+3. Origin of Homochirality: The Formation and Stability of Homochiral Peptides in Aqueous Prebiological Environment in the Earth’s Crust. 2023. https://openalex.org/W4313574776
+4. Examining the Effects of Homochirality for Electron Transfer in Protein Assemblies. 2023. https://openalex.org/W4384627421
+5. Chirality in Supramolecular Assemblies: causes and consequences. 2016. https://openalex.org/W7027101199
+6. An optimal decoding algorithm for Molecular Communications systems with noise, memory, and pulse width. 2016. https://openalex.org/W2484573086

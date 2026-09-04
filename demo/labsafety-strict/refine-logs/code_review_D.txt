@@ -1,0 +1,6 @@
+SEV teacher_sft.py:158 loss logging divides accumulated loss by fixed 20 instead of actual steps since last log fix
+SEV verdict.py:96 bootstrap resamples items with replacement violating paired McNemar discordant structure fix
+SEV filter_lenient.py:147 stratified equalization computes length quartiles from pooled arms causing data-dependent strata leakage fix
+MAJOR verdict.py:178 established verdict requires CI width <= effect size which is stricter than pre-registered 6pp gate fix
+MAJOR filter_lenient.py:112 judge filter uses parse_filter_label helper instead of verbatim upper(response) contains SAFE and not UNSAFE fix
+MINOR teacher_sft.py:48 PairDataset mask fallback silently trains on misaligned prefix when chat template tokenization fails fix

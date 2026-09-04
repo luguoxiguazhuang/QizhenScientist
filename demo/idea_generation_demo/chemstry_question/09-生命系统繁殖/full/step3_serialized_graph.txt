@@ -1,0 +1,82 @@
+# SEED
+META
+topic: Research question: What drives reproduction in living systems?
+Context: Reproduction is the manner in which organisms ensure their survival. Individuals with genetic traits that give them advantages will reproduce more often through natural selection.
+seed_paper: Genetic variance in reproductive timing contributes to trait evolvability
+
+# CITATION SUBGRAPH (3 refs, temporally ordered by year)
+
+## [1] Sex-specific selection patterns in a dioecious insect-pollinated plant (2023, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 1
+cited_in_sections = []
+cite_count = 24
+section_weight = 0.0
+delta_year = unknown
+is_influential = False
+low_confidence = True
+cited_by_subgraph = 0
+
+[PREDECESSORS]
+- ref_idx=[] delta_yr=unknown edge_type=none
+
+[IDEA]
+Problem: Competition for mate acquisition is the hallmark of any sexual organism. In insect-pollinated plants, competition to attract pollinators is expected to result in pollinator-mediated selection on attractive floral traits. This could overlap with sexual selection if the number of mating partners incre
+Existing Methods: Unavailable from local metadata.
+Motivation: Competition for mate acquisition is the hallmark of any sexual organism. In insect-pollinated plants, competition to attract pollinators is expected to result in pollinator-mediated selection on attractive floral traits. This could overlap with sexual selection if the number of mating partners incre
+Proposed Method: Competition for mate acquisition is the hallmark of any sexual organism. In insect-pollinated plants, competition to attract pollinators is expected to result in pollinator-mediated selection on attractive floral traits. This could overlap with sexual selection if the number of mating partners incre
+Experiment Plan: Unavailable from local metadata.
+
+[ABSTRACT] Competition for mate acquisition is the hallmark of any sexual organism. In insect-pollinated plants, competition to attract pollinators is expected to result in pollinator-mediated selection on attractive floral traits. This could overlap with sexual selection if the number of mating partners increases with pollinator attraction, resulting in an improved reproductive success. In this study, we measured a set of floral traits and estimated individual fitness in male and female Silene dioica in an experimental population. Results align with the predictions of Bateman's principles, in the absence of pollen limitation. In females, natural selection acted on traits that are typically linked with fertility (number of flowers and number of gametes), and selection strength was similar in open- and hand-pollinated females, suggesting a limited role of pollinator-mediated selection. In males, flowering duration and corolla width were positively associated with both reproductive success and number of mates, suggesting that sexual selection has played a role in the evolution of these traits. The use of Bateman's metrics further confirmed stronger sexual selection in males than in females. Taken together, our results shed light on the occurrence of sex-specific patterns of selection in an insect-pollinated plant population.
+
+## [2] Assortative mating can help adaptation of flowering time to a changing climate: Insights from a polygenic model (2021, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 1
+cited_in_sections = []
+cite_count = 19
+section_weight = 0.0
+delta_year = unknown
+is_influential = False
+low_confidence = True
+cited_by_subgraph = 0
+
+[PREDECESSORS]
+- ref_idx=[] delta_yr=unknown edge_type=none
+
+[IDEA]
+Problem: Several empirical studies report fast evolutionary changes in flowering time in response to contemporary climate change. Flowering time is a polygenic trait under assortative mating, since flowering time of mates must overlap. Here, we test whether assortative mating, compared with random mating, ca
+Existing Methods: Unavailable from local metadata.
+Motivation: Several empirical studies report fast evolutionary changes in flowering time in response to contemporary climate change. Flowering time is a polygenic trait under assortative mating, since flowering time of mates must overlap. Here, we test whether assortative mating, compared with random mating, ca
+Proposed Method: Several empirical studies report fast evolutionary changes in flowering time in response to contemporary climate change. Flowering time is a polygenic trait under assortative mating, since flowering time of mates must overlap. Here, we test whether assortative mating, compared with random mating, ca
+Experiment Plan: Unavailable from local metadata.
+
+[ABSTRACT] Several empirical studies report fast evolutionary changes in flowering time in response to contemporary climate change. Flowering time is a polygenic trait under assortative mating, since flowering time of mates must overlap. Here, we test whether assortative mating, compared with random mating, can help better track a changing climate. For each mating pattern, our individual-based model simulates a population evolving in a climate characterized by stabilizing selection around an optimal flowering time, which can change directionally and/or fluctuate. We also derive new analytical predictions from a quantitative genetics model for the expected genetic variance at equilibrium, and its components, the lag of the population to the optimum and the population mean fitness. We compare these predictions between assortative and random mating, and to our simulation results. Assortative mating, compared with random mating, has antagonistic effects on genetic variance: it generates positive associations among similar allelic effects, which inflates the genetic variance, but it decreases genetic polymorphism, which depresses the genetic variance. In a stationary environment with substantial stabilizing selection, assortative mating affects little the genetic variance compared with random mating. In a changing climate, assortative mating however increases genetic variance compared to random mating, which diminishes the lag of the population to the optimum, and in most scenarios translates into a fitness advantage relative to random mating. The magnitude of this fitness advantage depends on the extent to which genetic variance limits adaptation, being larger for faster environmental changes and weaker stabilizing selection.
+
+## [3] Asymmetric life-history trade-offs shape sex-biased longevity patterns (2025, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 1
+cited_in_sections = []
+cite_count = 0
+section_weight = 0.0
+delta_year = unknown
+is_influential = False
+low_confidence = True
+cited_by_subgraph = 0
+
+[PREDECESSORS]
+- ref_idx=[] delta_yr=unknown edge_type=none
+
+[IDEA]
+Problem: Abstract Sex differences in ageing and lifespan are widespread across taxa, yet their evolutionary causes remain debated. A leading hypothesis suggests these differences are adaptive and driven by sex-specific life-history trade-offs, but formal theoretical support is lacking. To address this, we de
+Existing Methods: Unavailable from local metadata.
+Motivation: Abstract Sex differences in ageing and lifespan are widespread across taxa, yet their evolutionary causes remain debated. A leading hypothesis suggests these differences are adaptive and driven by sex-specific life-history trade-offs, but formal theoretical support is lacking. To address this, we de
+Proposed Method: Abstract Sex differences in ageing and lifespan are widespread across taxa, yet their evolutionary causes remain debated. A leading hypothesis suggests these differences are adaptive and driven by sex-specific life-history trade-offs, but formal theoretical support is lacking. To address this, we de
+Experiment Plan: Unavailable from local metadata.
+
+[ABSTRACT] Abstract Sex differences in ageing and lifespan are widespread across taxa, yet their evolutionary causes remain debated. A leading hypothesis suggests these differences are adaptive and driven by sex-specific life-history trade-offs, but formal theoretical support is lacking. To address this, we developed a mathematical model to investigate how such trade-offs shape lifespan evolution in a monogamous mating system. In the model, individuals evolve to optimise a trade-off between reproduction and survival – mediated by mating opportunities in males and offspring production in females. By systematically varying trade-off strengths, we show that either sex can evolve greater longevity, but male-biased longevity evolves under a broader set of conditions – consistent with patterns in monogamous species. This asymmetry arises because female longevity is more constrained: the trade-off between offspring production and survival directly affects the fertility of both sexes. In contrast, the male trade-off for mating opportunities has a weaker indirect effect on female fertility, allowing selection to more readily favour longer male lifespans. We also show that extrinsic density-dependent mortality can disproportionately affect the intrinsically longer-living sex, and obscure the magnitude of this evolved difference. Together, our results provide new theoretical insights into the adaptive bases of sex-biased longevity and highlight the importance of life-history trade-offs in shaping lifespan evolution.

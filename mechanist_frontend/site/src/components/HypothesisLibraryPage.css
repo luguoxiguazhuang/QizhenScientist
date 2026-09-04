@@ -1,0 +1,15 @@
+/* The header comes from PageHeader.css, shared with every other sub-page. */
+
+.hyp {
+  /* No ground of its own: .mechanist-main supplies the colour and the
+     grain, and an opaque fill here covered both. */
+}
+
+.hyp__inner {
+  padding: clamp(26px, 3.2vw, 38px) 0 clamp(56px, 8vw, 88px);
+}
+
+/* See .skills__back: the cue itself is styled globally. */
+.hyp__back {
+  margin: 0;
+}

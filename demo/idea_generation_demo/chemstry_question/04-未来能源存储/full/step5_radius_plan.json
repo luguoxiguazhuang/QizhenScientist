@@ -1,0 +1,12 @@
+{
+  "use_same_field": true,
+  "use_cross_domain": true,
+  "preferred_radii": [
+    "R1",
+    "R2"
+  ],
+  "same_field_top_k": 2,
+  "num_cross_domains": 2,
+  "cross_domain_top_k_per_domain": 2,
+  "rationale": "Same-field retrieval is needed to remain grounded in electrochemical storage feasibility, including batteries, flow systems, solid electrolytes, and recycling. Cross-domain retrieval is justified because the core bottlenecks involve interfacial stability, chemomechanical failure, direct material restoration, and lifecycle-aware optimization, where mechanisms from corrosion passivation, membrane-electrode systems, mineral processing, fracture mechanics, or digital twins may transfer."
+}

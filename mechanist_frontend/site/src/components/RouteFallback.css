@@ -1,0 +1,33 @@
+.route-fallback {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  color: var(--text-muted);
+  font-size: var(--type-ui);
+}
+
+.route-fallback__spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--primary-soft);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: route-fallback-spin 0.9s linear infinite;
+}
+
+@keyframes route-fallback-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* The global reduced-motion block flattens the animation duration, which would
+   leave a static broken-looking ring. Hide the ring instead and let the label
+   carry the message on its own. */
+@media (prefers-reduced-motion: reduce) {
+  .route-fallback__spinner {
+    display: none;
+  }
+}

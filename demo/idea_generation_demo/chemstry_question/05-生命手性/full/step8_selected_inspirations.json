@@ -1,0 +1,203 @@
+[
+  {
+    "domain": "materials_science",
+    "paper_title": "Chirality in Supramolecular Assemblies: causes and consequences",
+    "paper_abstract": "[Back Cover] Supramolecular chemistry deals with the organisation of molecules into defined assemblies using non-covalent interactions, including weaker and reversible interactions such as hydrogen bonds, and metal-ligand interactions. The aspect of stereochemistry within such chemical architectures, and in particul...",
+    "radius": "R2",
+    "is_combination_plausible": true,
+    "combination_points": [
+      "Chiral amplification through cooperative non-covalent interactions",
+      "Hierarchical transfer of stereochemical information from molecules to supramolecular assemblies",
+      "Majority-rules and sergeants-and-soldiers principles as quantitative models of symmetry breaking",
+      "Coupling between chiral order and emergent functional properties such as recognition, catalysis, and transport",
+      "Thermodynamic and kinetic selection mechanisms stabilizing homochiral assemblies"
+    ],
+    "combination_plan": "Use supramolecular chirality principles to build a quantitative multiscale model where enantiomeric bias propagates through cooperative interaction networks and modulates life-relevant functions such as molecular recognition, catalytic specificity, electron transfer, and replication fidelity. Treat homochirality as an emergent order parameter whose functional payoff can be evaluated across alternative chemistries to test whether chirality is necessary or contingent.",
+    "justification": "The candidate paper addresses how chirality is organized, amplified, and functionally expressed in supramolecular systems, which provides a transferable mechanistic abstraction for linking molecular homochirality to higher-order biological functions without requiring direct domain overlap.",
+    "candidate_id": 6,
+    "source_paper": {
+      "paper_id": "https://openalex.org/W7027101199",
+      "title": "Chirality in Supramolecular Assemblies: causes and consequences",
+      "abstract": "[Back Cover] Supramolecular chemistry deals with the organisation of molecules into defined assemblies using non-covalent interactions, including weaker and reversible interactions such as hydrogen bonds, and metal-ligand interactions. The aspect of stereochemistry within such chemical architectures, and in particul...",
+      "year": 2016,
+      "keywords": [],
+      "references": [],
+      "citations": [],
+      "is_influential": false,
+      "score": 0.9627,
+      "idea_fields": {},
+      "raw": {
+        "paper_id": "https://openalex.org/W7027101199",
+        "title": "Chirality in Supramolecular Assemblies: causes and consequences",
+        "abstract": "[Back Cover] Supramolecular chemistry deals with the organisation of molecules into defined assemblies using non-covalent interactions, including weaker and reversible interactions such as hydrogen bonds, and metal-ligand interactions. The aspect of stereochemistry within such chemical architectures, and in particul...",
+        "publication_year": 2016,
+        "year": 2016,
+        "cited_by_count": 1,
+        "citation_count": 1,
+        "score": 0.9627,
+        "kg_score": 0.9627,
+        "rank": 2,
+        "source": "kg",
+        "match_type": "kg_graph",
+        "pdf_url": "https://researchonline.jcu.edu.au/46896/16/46896-Keene-2017-Front-Pages.pdf",
+        "paper_url": "https://openalex.org/W7027101199",
+        "identifiers": [
+          "openalex:https://openalex.org/W7027101199"
+        ],
+        "paper": {
+          "is_retracted": false,
+          "pdf_is_oa": false,
+          "oa_status": "green",
+          "is_open_access": true,
+          "language": "en",
+          "pdf_url": "https://researchonline.jcu.edu.au/46896/16/46896-Keene-2017-Front-Pages.pdf",
+          "title": "Chirality in Supramolecular Assemblies: causes and consequences",
+          "type": "article",
+          "pdf_version": "submittedVersion",
+          "venue_source_id": "https://openalex.org/S4306400519",
+          "has_abstract": true,
+          "publication_date": "2016-01-01",
+          "id": "https://openalex.org/W7027101199",
+          "venue_source_type": "repository",
+          "pdf_is_published": false,
+          "cited_by_count": 1,
+          "pdf_source_type": "repository",
+          "pdf_source_id": "https://openalex.org/S4306400519",
+          "referenced_works_count": 0,
+          "venue_source_display_name": "ResearchOnline at James Cook University (James Cook University)",
+          "label": "Paper",
+          "abstract": "[Back Cover] Supramolecular chemistry deals with the organisation of molecules into defined assemblies using non-covalent interactions, including weaker and reversible interactions such as hydrogen bonds, and metal-ligand interactions. The aspect of stereochemistry within such chemical architectures, and in particular chirality, is of special interest as it impacts on considerations of molecular recognition, the development of functional materials, the vexed question of homochirality, nanoscale effects of interactions at interfaces, biocatalysis and enzymatic catalysis, and applications in organic synthesis. Chirality in Supramolecular Assemblies addresses many of these aspects, presenting a broad overview of this important and rapidly developing interdisciplinary field. Topics covered include:&#13;\\n&#13;\\nOrigins of molecular and topological chirality&#13;\\n&#13;\\nHomochirogenesis&#13;\\n&#13;\\nChirality in crystallinity&#13;\\n&#13;\\nHost-guest behavior&#13;\\n&#13;\\nChiral influences in functional materials&#13;\\n&#13;\\nChirality in network solids and coordination solids&#13;\\n&#13;\\nAspects of chirality at interfaces&#13;\\n&#13;\\nChirality in organic assemblies&#13;\\n&#13;\\nChirality related to biocatalysis and enzymes in organic synthesis&#13;\\n&#13;\\nThis book is a valuable reference for researchers in the molecular sciences, materials science and biological science working with chiral supramolecular systems. It provides summaries and special insights by acknowledged international experts in the various fields.",
+          "pdf_source_display_name": "ResearchOnline at James Cook University (James Cook University)",
+          "publication_year": 2016,
+          "created_date": "2025-10-10T00:00:00.000Z",
+          "updated_date": "2025-11-06T04:12:42.849Z",
+          "title_normalized": "chiralityinsupramolecularassembliescausesandconsequences"
+        },
+        "hit_sources": [
+          "title_vector"
+        ],
+        "evidence": {
+          "keywords": [],
+          "titles": [],
+          "graph_paths": []
+        },
+        "score_breakdown": {
+          "sim_title": 0.7940311538521436,
+          "sim_abstract": 0.7669369200018732,
+          "title_vector_rerank_score": null,
+          "abstract_vector_rerank_score": null,
+          "combined_vector_rerank_score": 0.062050528824329376,
+          "norm_emb_path": 0.9533544876831981,
+          "norm_title_path": 0.0,
+          "title_pre_graph_bonus": 0.0,
+          "norm_pre_graph_score": 0.9533544876831981,
+          "norm_graph_score": 0.9533544876831981,
+          "graph_support_factor": 1.0,
+          "title_bonus": 0.0,
+          "final_score": 0.9626835901465585
+        }
+      }
+    }
+  },
+  {
+    "domain": "computer_science",
+    "paper_title": "An optimal decoding algorithm for Molecular Communications systems with noise, memory, and pulse width",
+    "paper_abstract": "",
+    "radius": "R2",
+    "is_combination_plausible": true,
+    "combination_points": [
+      "Optimal decoding in noisy communication channels",
+      "Handling memory / intersymbol interference in sequential signals",
+      "Pulse-width or signal-duration effects on detection fidelity",
+      "Information-theoretic trade-offs between noise, memory, and decoding accuracy",
+      "Sequence-level decision rules rather than isolated symbol detection"
+    ],
+    "combination_plan": "Model homochiral biopolymers as information-transmission channels in which chirality acts as a coding constraint that improves decoding of molecular recognition, catalytic states, and replication outcomes under noise and memory. Use optimal decoding or information-capacity metrics to quantify how homochirality reduces cross-talk, error propagation, and coordination failures across life-required functions.",
+    "justification": "Although the candidate concerns molecular communications rather than prebiotic chemistry, its abstraction of reliable signal decoding in noisy, memory-bearing channels maps naturally onto homochirality as a mechanism for improving molecular information fidelity, recognition specificity, and coordination across interacting polymers.",
+    "candidate_id": 3,
+    "source_paper": {
+      "paper_id": "https://openalex.org/W2484573086",
+      "title": "An optimal decoding algorithm for Molecular Communications systems with noise, memory, and pulse width",
+      "abstract": "",
+      "year": 2016,
+      "keywords": [],
+      "references": [],
+      "citations": [],
+      "is_influential": false,
+      "score": 1.0,
+      "idea_fields": {},
+      "raw": {
+        "paper_id": "https://openalex.org/W2484573086",
+        "title": "An optimal decoding algorithm for Molecular Communications systems with noise, memory, and pulse width",
+        "abstract": null,
+        "publication_year": 2016,
+        "year": 2016,
+        "cited_by_count": 3,
+        "citation_count": 3,
+        "score": 1.0,
+        "kg_score": 1.0,
+        "rank": 1,
+        "source": "kg",
+        "match_type": "kg_graph",
+        "pdf_url": "https://www.sciencedirect.com/science/article/pii/S1878778916300199",
+        "paper_url": "https://openalex.org/W2484573086",
+        "identifiers": [
+          "openalex:https://openalex.org/W2484573086"
+        ],
+        "paper": {
+          "is_retracted": false,
+          "pdf_is_oa": false,
+          "oa_status": "bronze",
+          "is_open_access": true,
+          "language": "en",
+          "pdf_url": "https://www.sciencedirect.com/science/article/pii/S1878778916300199",
+          "title": "An optimal decoding algorithm for Molecular Communications systems with noise, memory, and pulse width",
+          "type": "article",
+          "pdf_version": "publishedVersion",
+          "venue_source_id": "https://openalex.org/S95203059",
+          "has_abstract": false,
+          "publication_date": "2016-07-17",
+          "id": "https://openalex.org/W2484573086",
+          "venue_source_type": "journal",
+          "pdf_is_published": false,
+          "cited_by_count": 3,
+          "pdf_source_type": "journal",
+          "pdf_source_id": "https://openalex.org/S95203059",
+          "referenced_works_count": 28,
+          "venue_source_display_name": "Nano Communication Networks",
+          "label": "Paper",
+          "pdf_source_display_name": "Nano Communication Networks",
+          "venue_raw_source_name": "Nano Communication Networks",
+          "publication_year": 2016,
+          "created_date": "2025-10-10T00:00:00.000Z",
+          "updated_date": "2025-11-06T03:46:38.306Z",
+          "title_normalized": "anoptimaldecodingalgorithmformolecularcommunicationssystemswithnoisememoryandpulsewidth",
+          "doi": "https://doi.org/10.1016/j.nancom.2016.07.001"
+        },
+        "hit_sources": [
+          "title_vector"
+        ],
+        "evidence": {
+          "keywords": [],
+          "titles": [],
+          "graph_paths": []
+        },
+        "score_breakdown": {
+          "sim_title": 0.7868894040785994,
+          "sim_abstract": 0.0,
+          "title_vector_rerank_score": null,
+          "abstract_vector_rerank_score": null,
+          "combined_vector_rerank_score": 0.0039374977350234985,
+          "norm_emb_path": 1.0,
+          "norm_title_path": 0.0,
+          "title_pre_graph_bonus": 0.0,
+          "norm_pre_graph_score": 1.0,
+          "norm_graph_score": 1.0,
+          "graph_support_factor": 1.0,
+          "title_bonus": 0.0,
+          "final_score": 1.0
+        }
+      }
+    }
+  }
+]

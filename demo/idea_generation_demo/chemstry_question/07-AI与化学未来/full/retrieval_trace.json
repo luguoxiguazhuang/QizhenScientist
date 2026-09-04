@@ -1,0 +1,1913 @@
+{
+  "version": 1,
+  "events": [
+    {
+      "index": 1,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "reinforcement learning and multi-objective optimization of synthesizable drug candidates",
+        "keywords": [
+          {
+            "text": "reinforcement learning",
+            "score": 10
+          },
+          {
+            "text": "learning multi",
+            "score": 9
+          },
+          {
+            "text": "multi objective",
+            "score": 8
+          },
+          {
+            "text": "objective optimization",
+            "score": 7
+          },
+          {
+            "text": "optimization synthesizable",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4407170749",
+          "title": "Bayesian Optimization over Multiple Experimental Fidelities Accelerates Automated Discovery of Drug Molecules",
+          "abstract": "Different experiments of differing fidelities are commonly used in the search for new drug molecules. In classic experimental funnels, libraries of molecules undergo sequential rounds of virtual, coarse, and refined experimental screenings, with each level balanced between the cost of experiments and the number of m...",
+          "year": 2025,
+          "score": 0.5822
+        },
+        {
+          "paper_id": "https://openalex.org/W2947161483",
+          "title": "An exploration strategy improves the diversity of de novo ligands using deep reinforcement learning: a case for the adenosine A2A receptor",
+          "abstract": "",
+          "year": 2019,
+          "score": 0.5576
+        },
+        {
+          "paper_id": "https://openalex.org/W3013657235",
+          "title": "Multiobjective de novo drug design with recurrent neural networks and nondominated sorting",
+          "abstract": "",
+          "year": 2020,
+          "score": 0.5359
+        },
+        {
+          "paper_id": "https://openalex.org/W3029176683",
+          "title": "DeepGraphMol, a multi-objective, computational strategy for generating molecules with desirable properties: a graph convolution and reinforcement learning approach",
+          "abstract": "Abstract We address the problem of generating novel molecules with desired interaction properties as a multi-objective optimization problem. Interaction binding models are learned from binding data using graph convolution networks (GCNs). Since the experimentally obtained property scores are recognised as having pot...",
+          "year": 2020,
+          "score": 0.5179
+        },
+        {
+          "paper_id": "https://openalex.org/W2089644936",
+          "title": "Multi-Objective Optimization Methods in De Novo Drug Design",
+          "abstract": "De-novo drug design (DND) is a complex procedure, requiring the satisfaction of many pharmaceutically important objectives. Several computational methodologies employing various optimization approaches have been developed to search for satisfactory solutions to this multi-objective problem varying from composite met...",
+          "year": 2012,
+          "score": 0.5053
+        },
+        {
+          "paper_id": "https://openalex.org/W3179875975",
+          "title": "Generating stable molecules using imitation and reinforcement learning",
+          "abstract": "Abstract Chemical space is routinely explored by machine learning methods to discover interesting molecules, before time-consuming experimental synthesizing is attempted. However, these methods often rely on a graph representation, ignoring 3D information necessary for determining the stability of the molecules. We ...",
+          "year": 2021,
+          "score": 0.4943
+        },
+        {
+          "paper_id": "https://openalex.org/W4242836807",
+          "title": "Efficient Multi-Objective Molecular Optimization in a Continuous Latent Space",
+          "abstract": "In this work, we propose a novel method that combines in silico prediction of molecular properties such as biological activity or pharmacokinetics with an in silico optimization algorithm, namely Particle Swarm Optimization. Our method takes a starting compound as input and proposes new molecules with more desirable...",
+          "year": 2019,
+          "score": 0.4911
+        },
+        {
+          "paper_id": "https://openalex.org/W4206107836",
+          "title": "LEADD: Lamarckian evolutionary algorithm for de novo drug design",
+          "abstract": "",
+          "year": 2022,
+          "score": 0.4909
+        },
+        {
+          "paper_id": "https://openalex.org/W3033617175",
+          "title": "Chemical space exploration based on recurrent neural networks: applications in discovering kinase inhibitors",
+          "abstract": "",
+          "year": 2020,
+          "score": 0.4856
+        },
+        {
+          "paper_id": "https://openalex.org/W3091789543",
+          "title": "Computational planning of the synthesis of complex natural products",
+          "abstract": "Training algorithms to computationally plan multistep organic syntheses has been a challenge for more than 50 years<sup>1-7</sup>. However, the field has progressed greatly since the development of early programs such as LHASA<sup>1,7</sup>, for which reaction choices at each step were made by human operators. Multi...",
+          "year": 2020,
+          "score": 0.4848
+        },
+        {
+          "paper_id": "https://openalex.org/W2967968968",
+          "title": "Universal Chemical Synthesis and Discovery with ‘The Chemputer’",
+          "abstract": "",
+          "year": 2019,
+          "score": 0.4816
+        },
+        {
+          "paper_id": "https://openalex.org/W2275489486",
+          "title": "MOARF, an Integrated Workflow for Multiobjective Optimization: Implementation, Synthesis, and Biological Evaluation",
+          "abstract": "We describe the development and application of an integrated, multiobjective optimization workflow (MOARF) for directed medicinal chemistry design. This workflow couples a rule-based molecular fragmentation scheme (SynDiR) with a pharmacophore fingerprint-based fragment replacement algorithm (RATS) to broaden the sc...",
+          "year": 2015,
+          "score": 0.4802
+        },
+        {
+          "paper_id": "https://openalex.org/W4402987614",
+          "title": "PacMan‐RL",
+          "abstract": "Drug development, an intricate labyrinth of experimentation, often resembles a high-stakes gamble. This study presents PacMan-RL, a reinforcement learning method inspired by the game Pac-Man, for drug development. PacMan-RL navigates the chemical universe to find target proteins while avoiding undesired traits like ...",
+          "year": 2024,
+          "score": 0.4799
+        },
+        {
+          "paper_id": "https://openalex.org/W4394778002",
+          "title": "Latent Chemical Space Searching for Plug-in Multi-objective Molecule Generation",
+          "abstract": "Molecular generation, an essential method for identifying new drug structures, has been supported by advancements in machine learning and computational technology. However, challenges remain in multi-objective generation, model adaptability, and practical application in drug discovery. In this study, we developed a ...",
+          "year": 2024,
+          "score": 0.4784
+        },
+        {
+          "paper_id": "https://openalex.org/W2613663164",
+          "title": "Molecular Generation with Recurrent Neural Networks (RNNs)",
+          "abstract": "The potential number of drug like small molecules is estimated to be between 10^23 and 10^60 while current databases of known compounds are orders of magnitude smaller with approximately 10^8 compounds. This discrepancy has led to an interest in generating virtual libraries using hand crafted chemical rules and frag...",
+          "year": 2017,
+          "score": 0.4773
+        },
+        {
+          "paper_id": "https://openalex.org/W4386867355",
+          "title": "Curiosity as a Self-Supervised Method to Improve Exploration in De Novo Drug Design",
+          "abstract": "Currently, deep learning has advanced by leaps and bounds. However, the proposed techniques still lack an efficient exploration of the large chemical space. Most of these methods explore a small fragment of the chemical space of known drugs, if the desired molecules were not found, the process ends. In this work, we...",
+          "year": 2023,
+          "score": 0.477
+        },
+        {
+          "paper_id": "https://openalex.org/W4281479277",
+          "title": "Generating Bioactive Natural Product-inspired Molecules with Machine Intelligence",
+          "abstract": "The computer-assisted design of new chemical entities has made a leap forward with the development of machine learning models for automated molecule generation. The overarching goal of this conceptual approach is to augment the creativity of medicinal chemists with a machine intelligence. In this Perspective we high...",
+          "year": 2022,
+          "score": 0.4747
+        },
+        {
+          "paper_id": "https://openalex.org/W4403388347",
+          "title": "Modern hit-finding with structure-guided de novo design: identification of novel nanomolar A2A receptor ligands using reinforcement learning",
+          "abstract": "Generative chemical language models have demonstrated success in learning language-based molecular representations for de novo drug design. Here, we integrate structure-based design principles with chemical language models to present a modern hit-finding workflow to go from protein structure to novel small-molecule ...",
+          "year": 2024,
+          "score": 0.4739
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "How are AI and machine learning methods being applied to organic synthesis and drug discovery to accelerate molecule design and predict synthesis pathways, and to what extent are these technologies redefining the future of chemistry?",
+        "keywords": [
+          {
+            "text": "artificial intelligence",
+            "score": 10
+          },
+          {
+            "text": "machine learning",
+            "score": 9
+          },
+          {
+            "text": "organic chemistry",
+            "score": 8
+          },
+          {
+            "text": "molecular synthesis",
+            "score": 7
+          },
+          {
+            "text": "retrosynthesis",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W7140938173",
+          "title": "AI Enhanced Organic Chemistry: Emerging Tools and Computational Strategies",
+          "abstract": "Artificial intelligence (AI) is transforming organic chemistry by making it possible to make predictive and data-driven contributions to the design of molecules, synthesis of molecules, and optimization of reactions. Machine learning, deep learning and cheminformatics AI applications are used to predict reactions, p...",
+          "year": 2026,
+          "score": 0.6264
+        },
+        {
+          "paper_id": "https://openalex.org/W4317435331",
+          "title": "A Review on Artificial Intelligence Enabled Design, Synthesis, and Process Optimization of Chemical Products for Industry 4.0",
+          "abstract": "With the development of Industry 4.0, artificial intelligence (AI) is gaining increasing attention for its performance in solving particularly complex problems in industrial chemistry and chemical engineering. Therefore, this review provides an overview of the application of AI techniques, in particular machine lear...",
+          "year": 2023,
+          "score": 0.6229
+        },
+        {
+          "paper_id": "https://openalex.org/W4415306145",
+          "title": "Machine Learning in Chemical Synthesis: A Student’s Guide to AI-Powered Chemistry",
+          "abstract": "Machine learning is rapidly reshaping the field of chemical synthesis, influencing how chemists design, plan, and carry out reactions. Yet for many students, the role of artificial intelligence in synthesis remains abstract or inaccessible. This article introduces the current landscape of machine learning in chemist...",
+          "year": 2025,
+          "score": 0.589
+        },
+        {
+          "paper_id": "https://openalex.org/W4376129476",
+          "title": "SYNFORM ISSUE 2023/06",
+          "abstract": "Artificial intelligence (AI) and machine learning (ML)which in my understanding (I am far from being a specialist in the field) is an application or subset of AI -are progressively extending their influence on the realm of chemistry, including that of organic synthes is.Some even think that AI will -at some point in...",
+          "year": 2023,
+          "score": 0.5437
+        },
+        {
+          "paper_id": "https://openalex.org/W4392196261",
+          "title": "The Role of Base in Reaction Performance of Photochemical Synthesis of Thiazoles: An Integrated Theoretical and Experimental Study",
+          "abstract": "Artificial intelligence (AI)/machine learning (ML) is emerging as pivotal in synthetic chemistry, offering revolutionary potential in retrosynthetic analysis, reaction conditions and reaction prediction. We have combined chemical descriptors, primarily based on Density Functional Theory (DFT) calculations, with vari...",
+          "year": 2024,
+          "score": 0.5412
+        },
+        {
+          "paper_id": "https://openalex.org/W2802872171",
+          "title": "Hunting for Organic Molecules with Artificial Intelligence: Molecules Optimized for Desired Excitation Energies",
+          "abstract": "This work presents a proof-of-concept study in artificial-intelligence-assisted (AI-assisted) chemistry where a machine-learning-based molecule generator is coupled with density functional theory (DFT) calculations, synthesis, and measurement. Although deep-learning-based molecule generators have shown promise, it i...",
+          "year": 2018,
+          "score": 0.5231
+        },
+        {
+          "paper_id": "https://openalex.org/W3010145447",
+          "title": "Predicting retrosynthetic pathways using transformer-based models and a hyper-graph exploration strategy",
+          "abstract": "We present an extension of our Molecular Transformer model combined with a hyper-graph exploration strategy for automatic retrosynthesis route planning without human intervention. The single-step retrosynthetic model sets a new state of the art for predicting reactants as well as reagents, solvents and catalysts for...",
+          "year": 2020,
+          "score": 0.5155
+        },
+        {
+          "paper_id": "https://openalex.org/W4402411271",
+          "title": "Catalysing (organo-)catalysis: Trends in the application of machine learning to enantioselective organocatalysis",
+          "abstract": "Organocatalysis has established itself as a third pillar of homogeneous catalysis, besides transition metal catalysis and biocatalysis, as its use for enantioselective reactions has gathered significant interest over the last decades. Concurrent to this development, machine learning (ML) has been increasingly applie...",
+          "year": 2024,
+          "score": 0.5111
+        },
+        {
+          "paper_id": "https://openalex.org/W4389433604",
+          "title": "Integrating Machine Learning and Color Chemistry: Developing a High-School Curriculum toward Real-World Problem-Solving",
+          "abstract": "Artificial intelligence (AI) is rapidly transforming our world, making it imperative to educate the next generation about both the potential benefits and challenges associated with AI. This study presents a cross-disciplinary curriculum that connects AI and chemistry disciplines in the high school classroom. Particu...",
+          "year": 2023,
+          "score": 0.509
+        },
+        {
+          "paper_id": "https://openalex.org/W3200932192",
+          "title": "Extending the Applicability of the ANI Deep Learning Molecular Potential to Sulfur and Halogens",
+          "abstract": "Machine learning (ML) methods have become powerful, predictive tools in a wide range of applications, such as facial recognition and autonomous vehicles. In the sciences, computational chemists and physicists have been using ML for the prediction of physical phenomena, such as atomistic potential energy surfaces and...",
+          "year": 2020,
+          "score": 0.5076
+        },
+        {
+          "paper_id": "https://openalex.org/W4399138141",
+          "title": "DrugSynthMC: an atom based generation of drug-like molecules with Monte Carlo Search",
+          "abstract": "A growing number of Deep Learning (DL) methodologies have recently been developed to design novel compounds and expand the chemical space within virtual libraries. Most of these Neural Network approaches design molecules to specifically bind a target, based on its structural information and/or knowledge of previousl...",
+          "year": 2024,
+          "score": 0.5074
+        },
+        {
+          "paper_id": "https://openalex.org/W4393382554",
+          "title": "Surfactant-Specific AI-Driven Molecular Design: Integrating Generative Models, Predictive Modeling, and Reinforcement Learning for Tailored Surfactant Synthesis",
+          "abstract": "Molecular design is a critical aspect of various scientific and industrial fields, where the properties of molecules hold significant importance. In this study, a 3-fold methodology design is presented that leverages the power of generative artificial intelligence (AI), predictive modeling, and reinforcement learnin...",
+          "year": 2024,
+          "score": 0.5058
+        },
+        {
+          "paper_id": "https://openalex.org/W4252588970",
+          "title": "OpenChem: A Deep Learning Toolkit for Computational Chemistry and Drug Design",
+          "abstract": "Deep learning models have demonstrated outstanding results in many data-rich areas of research, such as computer vision and natural language processing. Currently, there is a rise of deep learning in computational chemistry and materials informatics, where deep learning could be effectively applied in modeling the r...",
+          "year": 2020,
+          "score": 0.5057
+        },
+        {
+          "paper_id": "https://openalex.org/W4411096973",
+          "title": "Bridging chemical space and biological efficacy: advances and challenges in applying generative models in structural modification of natural products",
+          "abstract": "Natural products (NPs) are invaluable resources for drug discovery, characterized by their intricate scaffolds and diverse bioactivities. AI drug discovery & design (AIDD) has emerged as a transformative approach for the rational structural modification of NPs. This review examines a variety of molecular generation ...",
+          "year": 2025,
+          "score": 0.5042
+        },
+        {
+          "paper_id": "https://openalex.org/W4399088058",
+          "title": "Large Property Models: A New Generative Paradigm for Molecules",
+          "abstract": "Generative models for the inverse design of molecules with particular properties have been heavily hyped but have yet to demonstrate significant gains over machine learning augmented expert intuition. A major challenge of such models is their limited accuracy in predicting molecules with targeted properties in the d...",
+          "year": 2024,
+          "score": 0.5027
+        },
+        {
+          "paper_id": "https://openalex.org/W3159359838",
+          "title": "Prediction of Chromatography Conditions for Purification in Organic Synthesis Using Deep Learning",
+          "abstract": "In this research, a process for developing normal-phase liquid chromatography solvent systems has been proposed. In contrast to the development of conditions via thin-layer chromatography (TLC), this process is based on the architecture of two hierarchically connected neural network-based components. Using a large d...",
+          "year": 2021,
+          "score": 0.5005
+        },
+        {
+          "paper_id": "https://openalex.org/W4414767731",
+          "title": "High-throughput electronic property prediction of cyclic molecules with 3D-enhanced machine learning",
+          "abstract": "Complex organic molecules play a pivotal role in bioactive compounds and organic functional materials, yet existing molecular datasets lack structural diversity for such systems, limiting the generalizability of machine learning (ML) models. This study introduces a high-quality dataset, Ring Vault, comprising 201 54...",
+          "year": 2025,
+          "score": 0.4997
+        },
+        {
+          "paper_id": "https://openalex.org/W2800168263",
+          "title": "ANI-1, A data set of 20 million calculated off-equilibrium conformations for organic molecules",
+          "abstract": "One of the grand challenges in modern theoretical chemistry is designing and implementing approximations that expedite ab initio methods without loss of accuracy. Machine learning (ML) methods are emerging as a powerful approach to constructing various forms of transferable atomistic potentials. They have been succe...",
+          "year": 2017,
+          "score": 0.4994
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "step": "step1",
+      "command_name": "openalex",
+      "cache_hit": false,
+      "payload": {
+        "source": "openalex",
+        "query": "How are AI and machine learning methods being applied to organic synthesis and drug discovery to accelerate molecule design and predict synthesis pathways, and to what extent are these technologies redefining the future of chemistry?"
+      },
+      "paper_count": 6,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W2101234009",
+          "title": "Scikit-learn: Machine Learning in Python",
+          "abstract": "Scikit-learn is a Python module integrating a wide range of state-of-the-art machine learning algorithms for medium-scale supervised and unsupervised problems. This package focuses on bringing machine learning to non-specialists using a general-purpose high-level language. Emphasis is put on ease of use, performance, documentation, and API consistency. It has minimal dependencies and is distributed under the simplified BSD license, encouraging its use in both academic and commercial settings. Source code, binaries, and documentation can be downloaded from http://scikit-learn.org.",
+          "year": 2012,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W3023540311",
+          "title": "Genetic algorithms in search, optimization, and machine learning",
+          "abstract": "From the Publisher:\r\nThis book brings together - in an informal and tutorial fashion - the computer techniques, mathematical tools, and research results that will enable both students and practitioners to apply genetic algorithms to problems in many fields. \r\n\r\nMajor concepts are illustrated with running examples, and major algorithms are illustrated by Pascal computer programs. No prior knowledge of GAs or genetics is assumed, and only a minimum of computer programming and mathematics background is required.",
+          "year": 1989,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W2125055259",
+          "title": "C4.5: Programs for Machine Learning",
+          "abstract": "Classifier systems play a major role in machine learning and knowledge-based systems, and Ross Quinlan's work on ID3 and C4.5 is widely acknowledged to have made some of the most significant contributions to their development. This book is a complete guide to the C4.5 system as implemented in C for the UNIX environment. It contains a comprehensive guide to the system's use , the source code (about 8,800 lines), and implementation notes. The source code and sample datasets are also available for download (see below). C4.5 starts with large sets of cases belonging to known classes. The cases,",
+          "year": 1992,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W3120740533",
+          "title": "UCI Machine Learning Repository",
+          "abstract": "",
+          "year": 2007,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W1570448133",
+          "title": "Data Mining: Practical Machine Learning Tools and Techniques",
+          "abstract": "As with any burgeoning technology that enjoys commercial attention, the use of data mining is surrounded by a great deal of hype. Exaggerated reports tell of secrets that can be uncovered by setting algorithms loose on oceans of data. But there is no magic in machine learning, no hidden power, no alchemy. Instead there is an identifiable body of practical techniques that can extract useful information from raw data. This book describes these techniques and shows how they work. The book is a major revision of the first edition that appeared in 1999. While the basic core remains the same, it has been updated to reflect the changes that have taken place over five years, and now has nearly double the references. The highlights for the new edition include thirty new technique sections; an enhanced Weka machine learning workbench, which now features an interactive interface; comprehensive information on neural networks; a new section on Bayesian networks; plus much more.",
+          "year": 2011,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W1663973292",
+          "title": "Pattern Recognition and Machine Learning",
+          "abstract": "The Journal of Electronic Imaging (JEI), copublished bimonthly with the Society for Imaging Science and Technology, publishes peer-reviewed papers that cover research and applications in all areas of electronic imaging science and technology.",
+          "year": 2007,
+          "score": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "deep learning models for retrosynthesis prediction and organic synthesis planning",
+        "keywords": [
+          {
+            "text": "deep learning",
+            "score": 10
+          },
+          {
+            "text": "learning models",
+            "score": 9
+          },
+          {
+            "text": "models retrosynthesis",
+            "score": 8
+          },
+          {
+            "text": "retrosynthesis prediction",
+            "score": 7
+          },
+          {
+            "text": "prediction organic",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4288371066",
+          "title": "RetroXpert: Decompose Retrosynthesis Prediction like a Chemist",
+          "abstract": "Retrosynthesis is the process of recursively decomposing target molecules into available building blocks. It plays an important role in solving problems in organic synthesis planning. To automate or assist in the retrosynthesis analysis, various retrosynthesis prediction algorithms have been proposed. However, most ...",
+          "year": 2020,
+          "score": 0.8197
+        },
+        {
+          "paper_id": "https://openalex.org/W4385763890",
+          "title": "A Unified View of Deep Learning for Reaction and Retrosynthesis Prediction: Current Status and Future Challenges",
+          "abstract": "Reaction and retrosynthesis prediction are two fundamental tasks in computational chemistry. In recent years, these two tasks have attracted great attentions from both machine learning and drug discovery communities. Various deep learning approaches have been proposed to tackle these two problems and achieved initia...",
+          "year": 2023,
+          "score": 0.6886
+        },
+        {
+          "paper_id": "https://openalex.org/W4317437723",
+          "title": "Recent advances in artificial intelligence for retrosynthesis",
+          "abstract": "Retrosynthesis is the cornerstone of organic chemistry, providing chemists in material and drug manufacturing access to poorly available and brand-new molecules. Conventional rule-based or expert-based computer-aided synthesis has obvious limitations, such as high labor costs and limited search space. In recent year...",
+          "year": 2023,
+          "score": 0.6323
+        },
+        {
+          "paper_id": "https://openalex.org/W4385842036",
+          "title": "Introduction to organic synthetic method retrosynthetic analysis",
+          "abstract": "Retrosynthesis is a method that uses the target molecule, which is a product, to predict the reactant, which is useful in organic synthesis and also a reverse way of synthesis. This paper introduces retrosynthetic analysis of organic compounds and helps new learners to have a brief understanding of what retrosynthet...",
+          "year": 2023,
+          "score": 0.5645
+        },
+        {
+          "paper_id": "https://openalex.org/W4385784498",
+          "title": "Basics of Retrosynthetic Analysis: A Review for Beginners",
+          "abstract": "Retrosynthesis in organic chemistry seeks a possible way to synthesize a complex organic molecule by considering the reverse synthesis route. Chemists can explore multiple possibilities and find the most efficient synthesis route by starting from the target molecule and returning to simple reactants. This work is an...",
+          "year": 2023,
+          "score": 0.5553
+        },
+        {
+          "paper_id": "https://openalex.org/W4406755682",
+          "title": "Retro3D: A 3D-aware Template-free Method for Enhancing Retrosynthesis via Molecular Conformer Information",
+          "abstract": "Retrosynthesis plays a crucial role in the fields of organic synthesis and drug development, where the goal is to identify suitable reactants that can yield a target product molecule. Although existing methods have achieved notable success, they typically overlook the 3D conformational details and internal spatial o...",
+          "year": 2025,
+          "score": 0.5433
+        },
+        {
+          "paper_id": "https://openalex.org/W4379967555",
+          "title": "RetroRanker: leveraging reaction changes to improve retrosynthesis prediction through re-ranking",
+          "abstract": "",
+          "year": 2023,
+          "score": 0.543
+        },
+        {
+          "paper_id": "https://openalex.org/W4391034123",
+          "title": "Investigating the Reliability and Interpretability of Machine Learning Frameworks for Chemical Retrosynthesis",
+          "abstract": "Machine learning models for chemical retrosynthesis have attracted substantial interest in recent years. Unaddressed challenges, particularly the absence of robust evaluation metrics for performance comparison, and the lack of black-box interpretability, obscure model limitations and impede progress in the field. We...",
+          "year": 2024,
+          "score": 0.5363
+        },
+        {
+          "paper_id": "https://openalex.org/W3010145447",
+          "title": "Predicting retrosynthetic pathways using transformer-based models and a hyper-graph exploration strategy",
+          "abstract": "We present an extension of our Molecular Transformer model combined with a hyper-graph exploration strategy for automatic retrosynthesis route planning without human intervention. The single-step retrosynthetic model sets a new state of the art for predicting reactants as well as reagents, solvents and catalysts for...",
+          "year": 2020,
+          "score": 0.5358
+        },
+        {
+          "paper_id": "https://openalex.org/W4283814751",
+          "title": "GNN-Retro: Retrosynthetic Planning with Graph Neural Networks",
+          "abstract": "Retrosynthetic planning plays an important role in the field of organic chemistry, which could generate a synthetic route for the target product. The synthetic route is a series of reactions which are started from the available molecules. The most challenging problem in the generation of the synthetic route is the l...",
+          "year": 2022,
+          "score": 0.5352
+        },
+        {
+          "paper_id": "https://openalex.org/W4395068142",
+          "title": "UAlign: Pushing the Limit of Template-free Retrosynthesis Prediction with Unsupervised SMILES Alignment",
+          "abstract": "<title>Abstract</title> \\textbf{Motivation} Retrosynthesis planning poses a formidable challenge in the organic chemical industry, particularly in pharmaceuticals. Single-step retrosynthesis prediction, a crucial step in the planning process, has witnessed a surge in interest in recent years due to advancements in A...",
+          "year": 2024,
+          "score": 0.5342
+        },
+        {
+          "paper_id": "https://openalex.org/W4308632600",
+          "title": "MechRetro is a chemical-mechanism-driven graph learning framework for interpretable retrosynthesis prediction and pathway planning",
+          "abstract": "<title>Abstract</title> Leveraging artificial intelligence for automatic retrosynthesis speeds up organic pathway planning in digital laboratories. However, existing deep learning approaches are unexplainable, like \"black box\" with few insights, notably limiting their applications in real retrosynthesis scenarios. H...",
+          "year": 2022,
+          "score": 0.5335
+        },
+        {
+          "paper_id": "https://openalex.org/W2970089374",
+          "title": "Retrosynthesis Prediction with Conditional Graph Logic Network",
+          "abstract": "Retrosynthesis is one of the fundamental problems in organic chemistry. The task is to identify reactants that can be used to synthesize a specified product molecule. Recently, computer-aided retrosynthesis is finding renewed interest from both chemistry and computer science communities. Most existing approaches rel...",
+          "year": 2020,
+          "score": 0.5331
+        },
+        {
+          "paper_id": "https://openalex.org/W7128694557",
+          "title": "DeepRetro discovers retrosynthetic pathways through iterative large language model reasoning",
+          "abstract": "Synthesizing complex natural products is a grand challenge in organic chemistry. We present DeepRetro, a significant advancement in computational retrosynthesis that discovers viable synthetic routes for molecules previously considered too complex for automated methods. DeepRetro is a novel, open-source framework th...",
+          "year": 2026,
+          "score": 0.5308
+        },
+        {
+          "paper_id": "https://openalex.org/W4248549420",
+          "title": "Fast Prediction of Distances Between Synthetic Routes with Deep Learning",
+          "abstract": "We expand our recent work on clustering of synthesis routes and train a deep learning model to predict the distances between arbitrary routes. The model is based on an long short-term memory (LSTM) representation of a synthesis route and is trained as a twin network to reproduce the tree edit distance (TED) between ...",
+          "year": 2021,
+          "score": 0.5252
+        },
+        {
+          "paper_id": "https://openalex.org/W3035505522",
+          "title": "Retro*: Learning Retrosynthetic Planning with Neural Guided A* Search",
+          "abstract": "Retrosynthetic planning is a critical task in organic chemistry which identifies a series of reactions that can lead to the synthesis of a target product. The vast number of possible chemical transformations makes the size of the search space very big, and retrosynthetic planning is challenging even for experienced ...",
+          "year": 2020,
+          "score": 0.524
+        },
+        {
+          "paper_id": "https://openalex.org/W4385784463",
+          "title": "Introduction of Retrosynthetic Analysis and Guidelines Application of Analyze Molecules",
+          "abstract": "Retrosynthesis is vital in breaking down complex target organic compounds based on known reactions. It serves as the reverse process of synthesis, which provides an alternative thinking path to aim for finding possibilities of synthesis reactions. In addition, different synthesis pathways can be discovered in the pr...",
+          "year": 2023,
+          "score": 0.5234
+        },
+        {
+          "paper_id": "https://openalex.org/W3206796875",
+          "title": "Permutation invariant graph-to-sequence model for template-free retrosynthesis and reaction prediction",
+          "abstract": "Synthesis planning and reaction outcome prediction are two fundamental problems in computer-aided organic chemistry for which a variety of data-driven approaches have emerged. Natural language approaches that model each problem as a SMILES-to-SMILES translation lead to a simple end-to-end formulation, reduce the nee...",
+          "year": 2021,
+          "score": 0.521
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "graph neural networks for reaction mechanism and pathway prediction in organic chemistry",
+        "keywords": [
+          {
+            "text": "graph neural",
+            "score": 10
+          },
+          {
+            "text": "neural networks",
+            "score": 9
+          },
+          {
+            "text": "networks reaction",
+            "score": 8
+          },
+          {
+            "text": "reaction mechanism",
+            "score": 7
+          },
+          {
+            "text": "mechanism pathway",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4404067809",
+          "title": "Data Science Guiding Analysis of Organic Reaction Mechanism and Prediction",
+          "abstract": "Advancements in synthetic organic chemistry are closely related to understanding substrate and catalyst reactivities through detailed mechanistic studies. Traditional mechanistic investigations are labor-intensive and rely on experimental kinetic, thermodynamic, and spectroscopic data. Linear free energy relationshi...",
+          "year": 2024,
+          "score": 0.5584
+        },
+        {
+          "paper_id": "https://openalex.org/W2622322262",
+          "title": "Predicting the outcomes of organic reactions via machine learning: are current descriptors sufficient?",
+          "abstract": "",
+          "year": 2017,
+          "score": 0.536
+        },
+        {
+          "paper_id": "https://openalex.org/W3171058094",
+          "title": "Graph Neural Networks for Predicting Chemical Reaction Performance",
+          "abstract": "Chemical reactions are a complex process, as they involve interaction between several molecular compounds. As a result, predicting the success of a reaction is a non-trivial task, which often requires running several experiments in the lab. This process is is expensive, time consuming, and inefficient. As a result, ...",
+          "year": 2021,
+          "score": 0.5319
+        },
+        {
+          "paper_id": "https://openalex.org/W3184412769",
+          "title": "Mining hydroformylation in complex reaction network<i>via</i>graph theory",
+          "abstract": "Data science is introduced to identify the reactant, product, and reaction path in the chemical reaction network. Cobalt catalyzed hydroformylation is investigated where the reaction network is built <i>via</i> first principles calculations. The closeness centrality and high frequency node are found to be the reacta...",
+          "year": 2021,
+          "score": 0.5233
+        },
+        {
+          "paper_id": "https://openalex.org/W4313592878",
+          "title": "Active learning of chemical reaction networks<i>via</i>probabilistic graphical models and Boolean reaction circuits",
+          "abstract": "Reaction networks are identified with active learning design of experiments using Bayesian statistics and Boolean principles in a generalizable methodology.",
+          "year": 2022,
+          "score": 0.5198
+        },
+        {
+          "paper_id": "https://openalex.org/W3012519883",
+          "title": "A Structure-Based Platform for Predicting Chemical Reactivity",
+          "abstract": "",
+          "year": 2020,
+          "score": 0.5194
+        },
+        {
+          "paper_id": "https://openalex.org/W2277091242",
+          "title": "Reaction Mechanism Generator: Automatic construction of chemical kinetic mechanisms",
+          "abstract": "",
+          "year": 2016,
+          "score": 0.5181
+        },
+        {
+          "paper_id": "https://openalex.org/W3091789543",
+          "title": "Computational planning of the synthesis of complex natural products",
+          "abstract": "Training algorithms to computationally plan multistep organic syntheses has been a challenge for more than 50 years<sup>1-7</sup>. However, the field has progressed greatly since the development of early programs such as LHASA<sup>1,7</sup>, for which reaction choices at each step were made by human operators. Multi...",
+          "year": 2020,
+          "score": 0.5126
+        },
+        {
+          "paper_id": "https://openalex.org/W4319830449",
+          "title": "Frontispiece: Bridging Chemical Knowledge and Machine Learning for Performance Prediction of Organic Synthesis",
+          "abstract": "Machine learning applications in chemistry have been booming during the last few years, and data-driven prediction in organic synthesis witnessing a revolution. Targeting the reactions’ performances, the implementation of reaction knowledge has provided a bridge for the promotion of more sophisticated and accurate m...",
+          "year": 2023,
+          "score": 0.5114
+        },
+        {
+          "paper_id": "https://openalex.org/W2606780347",
+          "title": "Neural Message Passing for Quantum Chemistry",
+          "abstract": "Supervised learning on molecules has incredible potential to be useful in chemistry, drug discovery, and materials science. Luckily, several promising and closely related neural network models invariant to molecular symmetries have already been described in the literature. These models learn a message passing algori...",
+          "year": 2017,
+          "score": 0.5095
+        },
+        {
+          "paper_id": "https://openalex.org/W3010145447",
+          "title": "Predicting retrosynthetic pathways using transformer-based models and a hyper-graph exploration strategy",
+          "abstract": "We present an extension of our Molecular Transformer model combined with a hyper-graph exploration strategy for automatic retrosynthesis route planning without human intervention. The single-step retrosynthetic model sets a new state of the art for predicting reactants as well as reagents, solvents and catalysts for...",
+          "year": 2020,
+          "score": 0.5085
+        },
+        {
+          "paper_id": "https://openalex.org/W3049675384",
+          "title": "Machine learning for chemical discovery",
+          "abstract": "",
+          "year": 2020,
+          "score": 0.5072
+        },
+        {
+          "paper_id": "https://openalex.org/W3206796875",
+          "title": "Permutation invariant graph-to-sequence model for template-free retrosynthesis and reaction prediction",
+          "abstract": "Synthesis planning and reaction outcome prediction are two fundamental problems in computer-aided organic chemistry for which a variety of data-driven approaches have emerged. Natural language approaches that model each problem as a SMILES-to-SMILES translation lead to a simple end-to-end formulation, reduce the nee...",
+          "year": 2021,
+          "score": 0.5066
+        },
+        {
+          "paper_id": "https://openalex.org/W4213233019",
+          "title": "Quantum chemistry-augmented neural networks for reactivity prediction: Performance, generalizability, and explainability",
+          "abstract": "There is a perceived dichotomy between structure-based and descriptor-based molecular representations used for predictive chemistry tasks. Here, we study the performance, generalizability, and explainability of the quantum mechanics-augmented graph neural network (ml-QM-GNN) architecture as applied to the prediction...",
+          "year": 2022,
+          "score": 0.5036
+        },
+        {
+          "paper_id": "https://openalex.org/W3169073784",
+          "title": "Non-Autoregressive Electron Redistribution Modeling for Reaction Prediction",
+          "abstract": "Reliably predicting the products of chemical reactions presents a fundamental challenge in synthetic chemistry. Existing machine learning approaches typically produce a reaction product by sequentially forming its subparts or intermediate molecules. Such autoregressive methods, however, not only require a pre-define...",
+          "year": 2021,
+          "score": 0.5036
+        },
+        {
+          "paper_id": "https://openalex.org/W7119558021",
+          "title": "A Pre-trained Reaction Embedding Descriptor Capturing Bond Transformation Patterns",
+          "abstract": "With the rise of data-driven reaction prediction models, effective reaction descriptors are crucial for bridging the gap between real-world chemistry and digital representations. However, general-purpose, reaction-wise descriptors remain scarce. This study introduces RXNEmb, a novel reaction-level descriptor derived...",
+          "year": 2026,
+          "score": 0.5023
+        },
+        {
+          "paper_id": "https://openalex.org/W3112699941",
+          "title": "BonDNet: a graph neural network for the prediction of bond dissociation energies for charged molecules",
+          "abstract": "A broad collection of technologies, including <i>e.g.</i> drug metabolism, biofuel combustion, photochemical decontamination of water, and interfacial passivation in energy production/storage systems rely on chemical processes that involve bond-breaking molecular reactions. In this context, a fundamental thermodynam...",
+          "year": 2020,
+          "score": 0.502
+        },
+        {
+          "paper_id": "https://openalex.org/W3089428833",
+          "title": "Retrospective on a decade of machine learning for chemical discovery",
+          "abstract": "",
+          "year": 2020,
+          "score": 0.502
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "generative AI for de novo drug-like molecule design with synthetic accessibility constraints",
+        "keywords": [
+          {
+            "text": "generative novo",
+            "score": 10
+          },
+          {
+            "text": "novo drug",
+            "score": 9
+          },
+          {
+            "text": "drug like",
+            "score": 8
+          },
+          {
+            "text": "like molecule",
+            "score": 7
+          },
+          {
+            "text": "molecule design",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W7124428739",
+          "title": "De Novo Drug Design and Generative AI: Algorithmic Approaches to Novel Molecules",
+          "abstract": "De novo drug design represents a paradigm shift in medicinal chemistry transitioning from traditional rule-based optimization to algorithmically generated molecular innovation. With the advent of generative artificial intelligence (AI), models such as variational autoencoders (VAEs), generative adversarial networks ...",
+          "year": 2025,
+          "score": 0.7858
+        },
+        {
+          "paper_id": "https://openalex.org/W4405711602",
+          "title": "Electron-density informed effective and reliable <i>de novo</i> molecular design and lead optimization with ED2Mol",
+          "abstract": "Abstract Generative drug design opens new avenues for discovering novel compounds within the vast chemical space rather than conventional screening against limited compound libraries. However, the practical utility of the generated molecules is frequently constrained, as many designs prioritize a narrow range of pha...",
+          "year": 2024,
+          "score": 0.5516
+        },
+        {
+          "paper_id": "https://openalex.org/W4318776961",
+          "title": "ChemTSv2: Democratizing Functional Molecular Design Using de novo Molecule Generator",
+          "abstract": "Designing functional molecules is the prerogative of experts who have advanced knowledge and experience in their fields. To democratize automatic molecular design for both experts and non-experts, we introduce a generic open-sourced framework, ChemTSv2, to design molecules based on a de novo molecule generator equip...",
+          "year": 2023,
+          "score": 0.5337
+        },
+        {
+          "paper_id": "https://openalex.org/W2160592148",
+          "title": "Estimation of synthetic accessibility score of drug-like molecules based on molecular complexity and fragment contributions",
+          "abstract": "A novel method to estimate synthetic accessibility of molecules has been developed. This method uses historical synthetic knowledge obtained by analyzing information from millions of already synthesized chemicals and considers also molecule complexity. The method is sufficiently fast and provides results consistent ...",
+          "year": 2009,
+          "score": 0.5259
+        },
+        {
+          "paper_id": "https://openalex.org/W4415231554",
+          "title": "Look the Other Way: Designing 'Positive' Molecules with Negative Data via Task Arithmetic",
+          "abstract": "The scarcity of molecules with desirable properties (i.e., `positive' molecules) is an inherent bottleneck for generative molecule design. To sidestep such obstacle, here we propose molecular task arithmetic: training a model on diverse and abundant negative examples to learn 'property directions' - without accessin...",
+          "year": 2025,
+          "score": 0.5196
+        },
+        {
+          "paper_id": "https://openalex.org/W3083024963",
+          "title": "DeepGraphMolGen, a multi-objective, computational strategy for generating molecules with desirable properties: a graph convolution and reinforcement learning approach",
+          "abstract": "",
+          "year": 2020,
+          "score": 0.5144
+        },
+        {
+          "paper_id": "https://openalex.org/W4390742369",
+          "title": "De Novo Generation and Identification of Novel Compounds with Drug Efficacy Based on Machine Learning",
+          "abstract": "One of the main challenges in small molecule drug discovery is finding novel chemical compounds with desirable activity. Traditional drug development typically begins with target selection, but the correlation between targets and disease remains to be further investigated, and drugs designed based on targets may not...",
+          "year": 2024,
+          "score": 0.5076
+        },
+        {
+          "paper_id": "https://openalex.org/W4389064216",
+          "title": "<i>De novo</i> generated combinatorial library design",
+          "abstract": "We introduce a framework for library design for de novo generated molecules, with consideration for availability of building blocks.",
+          "year": 2023,
+          "score": 0.5046
+        },
+        {
+          "paper_id": "https://openalex.org/W4281479277",
+          "title": "Generating Bioactive Natural Product-inspired Molecules with Machine Intelligence",
+          "abstract": "The computer-assisted design of new chemical entities has made a leap forward with the development of machine learning models for automated molecule generation. The overarching goal of this conceptual approach is to augment the creativity of medicinal chemists with a machine intelligence. In this Perspective we high...",
+          "year": 2022,
+          "score": 0.5021
+        },
+        {
+          "paper_id": "https://openalex.org/W4393382554",
+          "title": "Surfactant-Specific AI-Driven Molecular Design: Integrating Generative Models, Predictive Modeling, and Reinforcement Learning for Tailored Surfactant Synthesis",
+          "abstract": "Molecular design is a critical aspect of various scientific and industrial fields, where the properties of molecules hold significant importance. In this study, a 3-fold methodology design is presented that leverages the power of generative artificial intelligence (AI), predictive modeling, and reinforcement learnin...",
+          "year": 2024,
+          "score": 0.5015
+        },
+        {
+          "paper_id": "https://openalex.org/W7131364994",
+          "title": "A feature-aligned diffusion model for controllable generation of 3D drug-like molecules",
+          "abstract": "We introduce a molecule-design framework that integrates molecular representations with a diffusion model to generate compounds exhibiting improved docking affinity, enabling more effective exploration of structure-based drug candidates.",
+          "year": 2026,
+          "score": 0.4963
+        },
+        {
+          "paper_id": "https://openalex.org/W4411096973",
+          "title": "Bridging chemical space and biological efficacy: advances and challenges in applying generative models in structural modification of natural products",
+          "abstract": "Natural products (NPs) are invaluable resources for drug discovery, characterized by their intricate scaffolds and diverse bioactivities. AI drug discovery & design (AIDD) has emerged as a transformative approach for the rational structural modification of NPs. This review examines a variety of molecular generation ...",
+          "year": 2025,
+          "score": 0.4902
+        },
+        {
+          "paper_id": "https://openalex.org/W4255778951",
+          "title": "Beam Search Sampling for Molecular Design and Intrinsic Prioritization with Machine Intelligence",
+          "abstract": "Chemical language models enable de novo drug design without the requirement for explicit molecular construction rules. While such models have been applied to generate novel compounds with desired bioactivity, the actual prioritization and selection of the most promising computational designs remains challenging. In ...",
+          "year": 2021,
+          "score": 0.4891
+        },
+        {
+          "paper_id": "https://openalex.org/W4386862205",
+          "title": "Deep interactome learning for de novo drug design",
+          "abstract": "De novo drug design aims to generate molecules from scratch that possess specific chemical and pharmacological properties. We present a computational approach utilizing interactome-based deep learning for ligand- and structure-based generation of drug-like molecules. This method capitalizes on the unique strengths o...",
+          "year": 2023,
+          "score": 0.4865
+        },
+        {
+          "paper_id": "https://openalex.org/W6959169336",
+          "title": "Knowledge-Based Approach to &lt;i&gt;de Novo&lt;/i&gt; Design Using Reaction Vectors",
+          "abstract": "A knowledge-based approach to the &lt;i&gt;de novo&lt;/i&gt; design of synthetically feasible molecules is described. The method is based on reaction vectors which represent the structural changes that take place at the reaction center along with the environment in which the reaction occurs. The reaction vectors are...",
+          "year": 2016,
+          "score": 0.4862
+        },
+        {
+          "paper_id": "https://openalex.org/W4408084851",
+          "title": "Syn-MolOpt: a synthesis planning-driven molecular optimization method using data-derived functional reaction templates",
+          "abstract": "",
+          "year": 2025,
+          "score": 0.4838
+        },
+        {
+          "paper_id": "https://openalex.org/W4205447329",
+          "title": "Reinforcement Learning of Molecule Optimization with Bayesian Neural Networks",
+          "abstract": "Creating new molecules with desired properties is a fundamental and challenging problem in chemistry. Reinforcement learning (RL) has shown its utility in this area where the target chemical property values can serve as a reward signal. At each step of making a new molecule, the RL agent learns selecting an action f...",
+          "year": 2021,
+          "score": 0.4834
+        },
+        {
+          "paper_id": "https://openalex.org/W4413398056",
+          "title": "Moment of inertia as a simple shape descriptor for diffusion-based shape-constrained molecular generation",
+          "abstract": "We introduce MLConformerGenerator – an efficient machine-learning framework, guided by a concise shape descriptor for reliable molecule generation conditioned on reference conformers or arbitrary shapes.",
+          "year": 2025,
+          "score": 0.4817
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "machine learning prediction of organic reaction outcomes, conditions, and yields",
+        "keywords": [
+          {
+            "text": "machine learning",
+            "score": 10
+          },
+          {
+            "text": "learning prediction",
+            "score": 9
+          },
+          {
+            "text": "prediction organic",
+            "score": 8
+          },
+          {
+            "text": "organic reaction",
+            "score": 7
+          },
+          {
+            "text": "reaction outcomes",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4412479157",
+          "title": "LoRA-Chem: Modular Machine Learning for Multitask Prediction in Organic Reactions",
+          "abstract": "The prediction of organic chemical reactions has historically presented significant challenges owing to the inherent complexity and mechanistic diversity of reaction processes. In this work, we present LoRA-Chem, an innovative modular framework that demonstrates remarkable performance in predicting individual organi...",
+          "year": 2025,
+          "score": 0.5488
+        },
+        {
+          "paper_id": "https://openalex.org/W4320494883",
+          "title": "State of the Art and of Outlook of Data Science and Machine Learning in Organic Chemistry",
+          "abstract": "The use of data science, artificial intelligence, and big data in the field of chemistry has grown in recent years to speed up the discovery of new materials, drugs, synthetic substances and automate compound identification. Machine learning and data science are commonly used in organic chemistry to predict biologic...",
+          "year": 2023,
+          "score": 0.5382
+        },
+        {
+          "paper_id": "https://openalex.org/W3203362835",
+          "title": "Highly accurate prediction of reaction performance and enantioselectivity with a uniform machine learning protocol",
+          "abstract": "<title>Abstract</title> Synthetic reactions, especially asymmetric reactions are key components of modern chemistry. Chemists have put enormous experimental effort into recognizing various molecule patterns to enable efficient synthesis and asymmetric catalysis. Recent application of machine learning algorithms and ...",
+          "year": 2021,
+          "score": 0.5235
+        },
+        {
+          "paper_id": "https://openalex.org/W4408619968",
+          "title": "Advancements in Machine Learning Predicting Activation and Gibbs Free Energies in Chemical Reactions",
+          "abstract": "ABSTRACT Machine learning has revolutionized computational chemistry by improving the accuracy of predicting thermodynamic and kinetic properties like activation energies and Gibbs free energies, accelerating materials discovery and optimizing reaction conditions in both academic and industrial applications. This re...",
+          "year": 2025,
+          "score": 0.5155
+        },
+        {
+          "paper_id": "https://openalex.org/W4402411271",
+          "title": "Catalysing (organo-)catalysis: Trends in the application of machine learning to enantioselective organocatalysis",
+          "abstract": "Organocatalysis has established itself as a third pillar of homogeneous catalysis, besides transition metal catalysis and biocatalysis, as its use for enantioselective reactions has gathered significant interest over the last decades. Concurrent to this development, machine learning (ML) has been increasingly applie...",
+          "year": 2024,
+          "score": 0.511
+        },
+        {
+          "paper_id": "https://openalex.org/W3159163540",
+          "title": "Chemistrees: data driven identification of reaction pathways via machine learning",
+          "abstract": "We propose a supervised machine learning algorithm, decision trees, to analyze molecular dynamics output. The approach aims to identify the predominant geometric features which correlate with trajectories that transition between two arbitrarily defined states. The data-based algorithm aims to identify such features ...",
+          "year": 2021,
+          "score": 0.509
+        },
+        {
+          "paper_id": "https://openalex.org/W2144060979",
+          "title": "Development of Predictive Tools for Optimizing Organic Reactions",
+          "abstract": "Although microwave chemistry and its applications have undergone rapid growth over the last decade, the technology is not yet employed routinely in all synthetic laboratories. A significant obstacle to implementation concerns the empirical work required to adapt established conditions into alternatives employing hig...",
+          "year": 2004,
+          "score": 0.5076
+        },
+        {
+          "paper_id": "https://openalex.org/W4245087848",
+          "title": "Graph Neural Networks for Predicting Chemical Reaction Performance",
+          "abstract": "Chemical reactions are a complex process, as they involve interaction between several molecular compounds. As a result, predicting the success of a reaction is a non-trivial task, which often requires running several experiments in the lab. This process is is expensive, time consuming, and inefficient. As a result, ...",
+          "year": 2021,
+          "score": 0.5075
+        },
+        {
+          "paper_id": "https://openalex.org/W4392515737",
+          "title": "Data-Efficient, Chemistry-Aware Machine Learning Predictions of Diels–Alder Reaction Outcomes",
+          "abstract": "The application of machine learning models to the prediction of reaction outcomes currently needs large and/or highly featurized datasets. We show that a chemistry-aware model, NERF, which mimics the bonding changes that occur during reactions, allows for highly accurate predictions of the outcomes of Diels–Alder re...",
+          "year": 2024,
+          "score": 0.5056
+        },
+        {
+          "paper_id": "https://openalex.org/W3043640217",
+          "title": "Exploring Machine Learning Applications to Enable Next-Generation Chemistry",
+          "abstract": "As global demand for energy and materials grow while our dependence on petroleum and fossil fuels declines, it is necessary to revolutionize the way we make new materials. Machine learning provides several avenues for accelerating the discovery pipeline. Models employing machine learning optimization have already be...",
+          "year": 2019,
+          "score": 0.5015
+        },
+        {
+          "paper_id": "https://openalex.org/W4409453348",
+          "title": "A meta-learning approach for selectivity prediction in asymmetric catalysis",
+          "abstract": "",
+          "year": 2025,
+          "score": 0.4985
+        },
+        {
+          "paper_id": "https://openalex.org/W3038499527",
+          "title": "Predicting the chemical reactivity of organic materials using a machine-learning approach",
+          "abstract": "Stability and compatibility between chemical components are essential parameters that need to be considered in the selection of functional materials in configuring a system. In configuring devices such as batteries or solar cells, not only the functionality of individual constituting materials such as electrodes or ...",
+          "year": 2020,
+          "score": 0.4979
+        },
+        {
+          "paper_id": "https://openalex.org/W4392240927",
+          "title": "(Semi-) Automatic Review Process for Common Compound Characterization Data in Organic Synthesis",
+          "abstract": "A method for data review in chemical sciences with a focus on data for the characterization of synthetic molecules is described. As current procedures for data curation in chemistry rely almost exclusively on manual checking or peer reviewing, a (semi-)automatic procedure for the evaluation of data assigned to molec...",
+          "year": 2024,
+          "score": 0.4959
+        },
+        {
+          "paper_id": "https://openalex.org/W3012519883",
+          "title": "A Structure-Based Platform for Predicting Chemical Reactivity",
+          "abstract": "",
+          "year": 2020,
+          "score": 0.4945
+        },
+        {
+          "paper_id": "https://openalex.org/W4385763890",
+          "title": "A Unified View of Deep Learning for Reaction and Retrosynthesis Prediction: Current Status and Future Challenges",
+          "abstract": "Reaction and retrosynthesis prediction are two fundamental tasks in computational chemistry. In recent years, these two tasks have attracted great attentions from both machine learning and drug discovery communities. Various deep learning approaches have been proposed to tackle these two problems and achieved initia...",
+          "year": 2023,
+          "score": 0.4944
+        },
+        {
+          "paper_id": "https://openalex.org/W7134121421",
+          "title": "Machine learning models for catalytic asymmetric reactions of simple alkenes: from enantioselectivity predictions to chemical insights",
+          "abstract": "Enantioselectivity predictions of catalytic asymmetric transformations of alkenes using a class imbalance-aware AttentiveFP machine learning model offer good accuracy and chemically meaningful interpretability.",
+          "year": 2026,
+          "score": 0.4933
+        },
+        {
+          "paper_id": "https://openalex.org/W4401945848",
+          "title": "Integrating Machine Learning and Large Language Models to Advance Wu Exploration of Electrochemical Reactions",
+          "abstract": "Electrochemical C-H oxidation reactions offer a sustainable route to functionalize hydrocarbons, yet the identification of competent substrates and their synthesis optimization remains challenging. Here, we report an integrated approach combining machine learning (ML) and large language models (LLMs) to streamline t...",
+          "year": 2024,
+          "score": 0.4921
+        },
+        {
+          "paper_id": "https://openalex.org/W2974310638",
+          "title": "Development and Application of a Data-Driven Reaction Classification Model: Comparison of an Electronic Lab Notebook and Medicinal Chemistry Literature",
+          "abstract": "Reaction classification has often been considered an important task for many different applications, and has traditionally been accomplished using hand-coded rule-based approaches. However, the availability of large collections of reactions enables data-driven approaches to be developed. We present the development a...",
+          "year": 2019,
+          "score": 0.4912
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "step": "step1",
+      "command_name": "openalex",
+      "cache_hit": false,
+      "payload": {
+        "source": "openalex",
+        "query": "machine learning prediction of organic reaction outcomes, conditions, and yields"
+      },
+      "paper_count": 6,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W2101234009",
+          "title": "Scikit-learn: Machine Learning in Python",
+          "abstract": "Scikit-learn is a Python module integrating a wide range of state-of-the-art machine learning algorithms for medium-scale supervised and unsupervised problems. This package focuses on bringing machine learning to non-specialists using a general-purpose high-level language. Emphasis is put on ease of use, performance, documentation, and API consistency. It has minimal dependencies and is distributed under the simplified BSD license, encouraging its use in both academic and commercial settings. Source code, binaries, and documentation can be downloaded from http://scikit-learn.org.",
+          "year": 2012,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W3023540311",
+          "title": "Genetic algorithms in search, optimization, and machine learning",
+          "abstract": "From the Publisher:\r\nThis book brings together - in an informal and tutorial fashion - the computer techniques, mathematical tools, and research results that will enable both students and practitioners to apply genetic algorithms to problems in many fields. \r\n\r\nMajor concepts are illustrated with running examples, and major algorithms are illustrated by Pascal computer programs. No prior knowledge of GAs or genetics is assumed, and only a minimum of computer programming and mathematics background is required.",
+          "year": 1989,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W2125055259",
+          "title": "C4.5: Programs for Machine Learning",
+          "abstract": "Classifier systems play a major role in machine learning and knowledge-based systems, and Ross Quinlan's work on ID3 and C4.5 is widely acknowledged to have made some of the most significant contributions to their development. This book is a complete guide to the C4.5 system as implemented in C for the UNIX environment. It contains a comprehensive guide to the system's use , the source code (about 8,800 lines), and implementation notes. The source code and sample datasets are also available for download (see below). C4.5 starts with large sets of cases belonging to known classes. The cases,",
+          "year": 1992,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W3120740533",
+          "title": "UCI Machine Learning Repository",
+          "abstract": "",
+          "year": 2007,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W1570448133",
+          "title": "Data Mining: Practical Machine Learning Tools and Techniques",
+          "abstract": "As with any burgeoning technology that enjoys commercial attention, the use of data mining is surrounded by a great deal of hype. Exaggerated reports tell of secrets that can be uncovered by setting algorithms loose on oceans of data. But there is no magic in machine learning, no hidden power, no alchemy. Instead there is an identifiable body of practical techniques that can extract useful information from raw data. This book describes these techniques and shows how they work. The book is a major revision of the first edition that appeared in 1999. While the basic core remains the same, it has been updated to reflect the changes that have taken place over five years, and now has nearly double the references. The highlights for the new edition include thirty new technique sections; an enhanced Weka machine learning workbench, which now features an interactive interface; comprehensive information on neural networks; a new section on Bayesian networks; plus much more.",
+          "year": 2011,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W1663973292",
+          "title": "Pattern Recognition and Machine Learning",
+          "abstract": "The Journal of Electronic Imaging (JEI), copublished bimonthly with the Society for Imaging Science and Technology, publishes peer-reviewed papers that cover research and applications in all areas of electronic imaging science and technology.",
+          "year": 2007,
+          "score": null
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "AI-driven automated synthesis planning and self-driving laboratory execution",
+        "keywords": [
+          {
+            "text": "driven automated",
+            "score": 10
+          },
+          {
+            "text": "automated synthesis",
+            "score": 9
+          },
+          {
+            "text": "synthesis planning",
+            "score": 8
+          },
+          {
+            "text": "planning self",
+            "score": 7
+          },
+          {
+            "text": "self driving",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W2035514793",
+          "title": "Development of fully‐automated synthesissystems",
+          "abstract": "This paper describes the development of fully-automated synthesis systems for preparing and isolating various kinds of pharmaceutical compounds. The systems are versatile, and are able to perform most of the chemical reactions currently used in organic chemistry, with the exception of hydrogenation which requires hi...",
+          "year": 1994,
+          "score": 0.8049
+        },
+        {
+          "paper_id": "https://openalex.org/W3091789543",
+          "title": "Computational planning of the synthesis of complex natural products",
+          "abstract": "Training algorithms to computationally plan multistep organic syntheses has been a challenge for more than 50 years<sup>1-7</sup>. However, the field has progressed greatly since the development of early programs such as LHASA<sup>1,7</sup>, for which reaction choices at each step were made by human operators. Multi...",
+          "year": 2020,
+          "score": 0.738
+        },
+        {
+          "paper_id": "https://openalex.org/W4407756189",
+          "title": "Automated and Parallel Amide Synthesis",
+          "abstract": "Abstract Amide bonds are ubiquitous in molecules of interest such as pharmaceuticals, natural products, and agrochemicals. Over the last decades, significant efforts have been directed at developing efficient methods for the formation of this class of chemical bonds. Herein, we disclose a robust, user‐friendly appro...",
+          "year": 2025,
+          "score": 0.5553
+        },
+        {
+          "paper_id": "https://openalex.org/W4414128689",
+          "title": "Automating Synthetic Organic Electrochemistry: Concepts and Advancements",
+          "abstract": "Automated electrochemical platforms are attracting attention for their potential in streamlining reaction preparation, electrolysis, and analysis to generate large datasets in a fast and efficient manner. Moreover, the recent implementation of on‐line analytics together with closed‐loop workflows has enabled the eme...",
+          "year": 2025,
+          "score": 0.5435
+        },
+        {
+          "paper_id": "https://openalex.org/W2743311670",
+          "title": "Autonomous Experimentation Applied to Carbon Nanotube Synthesis",
+          "abstract": "",
+          "year": 2017,
+          "score": 0.5252
+        },
+        {
+          "paper_id": "https://openalex.org/W1971021581",
+          "title": "Application of an Automated Synthesis Suite to Parallel Solution-Phase Peptide Synthesis.",
+          "abstract": "An in-house developed automated synthesis suite was used to prepare a library of 72 tetrapeptide derivatives, the starting materials for pharmaceutically attractive pentapeptides, employing a convergent strategy. An initial set of 18 dipeptides were synthesized on a large-scale (100-1000 g) using automated synthesis...",
+          "year": 2001,
+          "score": 0.5168
+        },
+        {
+          "paper_id": "https://openalex.org/W4404105402",
+          "title": "Autonomous mobile robots for exploratory synthetic chemistry",
+          "abstract": "Autonomous laboratories can accelerate discoveries in chemical synthesis, but this requires automated measurements coupled with reliable decision-making<sup>1,2</sup>. Most autonomous laboratories involve bespoke automated equipment<sup>3-6</sup>, and reaction outcomes are often assessed using a single, hard-wired c...",
+          "year": 2024,
+          "score": 0.5151
+        },
+        {
+          "paper_id": "https://openalex.org/W2108262149",
+          "title": "Iterative Syntheses—The Gateway to New Automation Protocols",
+          "abstract": "Automation is back on the agenda! The first automated iterative CC coupling processes exploit the two faces of N-methyliminodiacetic acid boronates. They highlight the opportunities and challenges of how iterative synthesis with complex bifunctional building blocks can be conducted with liquid-handling devices to e...",
+          "year": 2015,
+          "score": 0.5109
+        },
+        {
+          "paper_id": "https://openalex.org/W4381996450",
+          "title": "Recent Developments in Reactor Automation for Multistep Chemical Synthesis",
+          "abstract": "Abstract Reactor automation is revolutionising the way new chemical processes are discovered and developed. Assigning repetitive aspects of chemical synthesis to machines, such as experimental execution and data collection, provides more time for researchers to focus on critical interpretation and creative problem s...",
+          "year": 2023,
+          "score": 0.5082
+        },
+        {
+          "paper_id": "https://openalex.org/W2757699645",
+          "title": "Engineering Chemistry: Integrated Control Strategies and Internet-Enabled Tools for Chemical Synthesis",
+          "abstract": "The use of enabling technologies and continuous methods to enhance chemical synthesis is a vibrant area of research, gaining increasing attention from laboratories in academia and industry. Yet many prominent synthesis procedures have not changed for decades and require significant manual intervention from bench che...",
+          "year": 2017,
+          "score": 0.5077
+        },
+        {
+          "paper_id": "https://openalex.org/W4411098493",
+          "title": "Synthesis Route Identification and Prioritization in Reaction Knowledge Graphs",
+          "abstract": "Identifying synthesis routes from knowledge graphs poses challenges beyond retrosynthesis, including path–finding artifacts and data issues. We introduce “SynGPS”, a novel algorithm that overcomes these limitations by identifying viable routes even with common artifacts. SynGPS can resolve nonsensical cycles, discon...",
+          "year": 2025,
+          "score": 0.5005
+        },
+        {
+          "paper_id": "https://openalex.org/W3010145447",
+          "title": "Predicting retrosynthetic pathways using transformer-based models and a hyper-graph exploration strategy",
+          "abstract": "We present an extension of our Molecular Transformer model combined with a hyper-graph exploration strategy for automatic retrosynthesis route planning without human intervention. The single-step retrosynthetic model sets a new state of the art for predicting reactants as well as reagents, solvents and catalysts for...",
+          "year": 2020,
+          "score": 0.5
+        },
+        {
+          "paper_id": "https://openalex.org/W4404741537",
+          "title": "Reaction blueprints and logical control flow for parallelized chiral synthesis in the Chemputer",
+          "abstract": "",
+          "year": 2024,
+          "score": 0.497
+        },
+        {
+          "paper_id": "https://openalex.org/W4317435331",
+          "title": "A Review on Artificial Intelligence Enabled Design, Synthesis, and Process Optimization of Chemical Products for Industry 4.0",
+          "abstract": "With the development of Industry 4.0, artificial intelligence (AI) is gaining increasing attention for its performance in solving particularly complex problems in industrial chemistry and chemical engineering. Therefore, this review provides an overview of the application of AI techniques, in particular machine lear...",
+          "year": 2023,
+          "score": 0.4963
+        },
+        {
+          "paper_id": "https://openalex.org/W4386422304",
+          "title": "Rapid Automated Iterative Small Molecule Synthesis",
+          "abstract": "Automated iterative small molecule synthesis has the potential to advance and democratize the discovery of new medicines, materials, and many other classes of functional chemical matter. But to date this approach has been limited by a requirement of about one day of time per C-C bond forming step. Here, we report a ...",
+          "year": 2023,
+          "score": 0.4947
+        },
+        {
+          "paper_id": "https://openalex.org/W2883315694",
+          "title": "Assessing the possibilities of designing a unified multistep continuous flow synthesis platform",
+          "abstract": "The multistep flow synthesis of complex molecules has gained momentum over the last few years. A wide range of reaction types and conditions have been integrated seamlessly on a single platform including in-line separation as well as monitoring. Beyond merely getting considered as 'flow version' of conventional 'one...",
+          "year": 2018,
+          "score": 0.4932
+        },
+        {
+          "paper_id": "https://openalex.org/W4296449252",
+          "title": "AI Meets Chemistry",
+          "abstract": "We argue that chemistry should be the next grand challenge for Artificial Intelligence. The AI research community and humanity would benefit tremendously from focusing AI research on chemistry on a regular basis, as a benchmark as well as a real-world application domain. To support our position, we review the import...",
+          "year": 2018,
+          "score": 0.4838
+        },
+        {
+          "paper_id": "https://openalex.org/W3098893481",
+          "title": "Data-science driven autonomous process optimization",
+          "abstract": "Autonomous process optimization involves the human intervention-free exploration of a range process parameters to improve responses such as product yield and selectivity. Utilizing off-the-shelf components, we develop a closed-loop system for carrying out parallel autonomous process optimization experiments in batch...",
+          "year": 2021,
+          "score": 0.4814
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "large language models for chemical literature mining and retrosynthetic route generation",
+        "keywords": [
+          {
+            "text": "large language",
+            "score": 10
+          },
+          {
+            "text": "language models",
+            "score": 9
+          },
+          {
+            "text": "models chemical",
+            "score": 8
+          },
+          {
+            "text": "chemical literature",
+            "score": 7
+          },
+          {
+            "text": "literature mining",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4287117648",
+          "title": "Large-Scale Chemical Language Representations Capture Molecular Structure and Properties",
+          "abstract": "Models based on machine learning can enable accurate and fast molecular property predictions, which is of interest in drug discovery and material design. Various supervised machine learning models have demonstrated promising performance, but the vast chemical space and the limited availability of property labels mak...",
+          "year": 2021,
+          "score": 0.5485
+        },
+        {
+          "paper_id": "https://openalex.org/W2045155277",
+          "title": "Mining chemical information from open patents",
+          "abstract": "",
+          "year": 2011,
+          "score": 0.5225
+        },
+        {
+          "paper_id": "https://openalex.org/W3089428833",
+          "title": "Retrospective on a decade of machine learning for chemical discovery",
+          "abstract": "",
+          "year": 2020,
+          "score": 0.509
+        },
+        {
+          "paper_id": "https://openalex.org/W3033617175",
+          "title": "Chemical space exploration based on recurrent neural networks: applications in discovering kinase inhibitors",
+          "abstract": "",
+          "year": 2020,
+          "score": 0.4975
+        },
+        {
+          "paper_id": "https://openalex.org/W4385027818",
+          "title": "ChatGPT Chemistry Assistant for Text Mining and the Prediction of MOF Synthesis",
+          "abstract": "We use prompt engineering to guide ChatGPT in the automation of text mining of metal-organic framework (MOF) synthesis conditions from diverse formats and styles of the scientific literature. This effectively mitigates ChatGPT's tendency to hallucinate information, an issue that previously made the use of large lang...",
+          "year": 2023,
+          "score": 0.4934
+        },
+        {
+          "paper_id": "https://openalex.org/W4405328329",
+          "title": "Stereochemistry-aware string-based molecular generation",
+          "abstract": "This study investigates the impact of incorporating stereochemical information, a crucial aspect of computational drug discovery and materials design, in molecular generative modelling. We present a comprehensive comparison of stereochemistry-aware and conventionally stereochemistry-unaware string-based generative a...",
+          "year": 2024,
+          "score": 0.485
+        },
+        {
+          "paper_id": "https://openalex.org/W4280580443",
+          "title": "Chemical Multiverse: An Expanded View of Chemical Space",
+          "abstract": "Technological advances and practical applications of the chemical space concept in drug discovery, natural product research, and other research areas have attracted the scientific community´s attention. The large- and ultra-large chemical spaces are associated not only with the significant increase in the number of ...",
+          "year": 2022,
+          "score": 0.4828
+        },
+        {
+          "paper_id": "https://openalex.org/W164825507",
+          "title": "New directions in chemical space",
+          "abstract": "",
+          "year": 2003,
+          "score": 0.4792
+        },
+        {
+          "paper_id": "https://openalex.org/W4386867355",
+          "title": "Curiosity as a Self-Supervised Method to Improve Exploration in De Novo Drug Design",
+          "abstract": "Currently, deep learning has advanced by leaps and bounds. However, the proposed techniques still lack an efficient exploration of the large chemical space. Most of these methods explore a small fragment of the chemical space of known drugs, if the desired molecules were not found, the process ends. In this work, we...",
+          "year": 2023,
+          "score": 0.4746
+        },
+        {
+          "paper_id": "https://openalex.org/W4320351240",
+          "title": "Molecular Graph Generation by Decomposition and Reassembling",
+          "abstract": "Designing molecular structures with desired chemical properties is an essential task in drug discovery and material design. However, finding molecules with the optimized desired properties is still a challenging task due to combinatorial explosion of candidate space of molecules. Here we propose a novel \\emph{decomp...",
+          "year": 2022,
+          "score": 0.4743
+        },
+        {
+          "paper_id": "https://openalex.org/W4401938008",
+          "title": "Integrating Machine Learning and Large Language Models to Advance Exploration of Electrochemical Reactions",
+          "abstract": "Electrochemical C-H oxidation reactions offer a sustainable route to functionalize hydrocarbons, yet the identification of competent substrates and their synthesis optimization remains challenging. Here, we report an integrated approach combining machine learning (ML) and large language models (LLMs) to streamline t...",
+          "year": 2024,
+          "score": 0.4743
+        },
+        {
+          "paper_id": "https://openalex.org/W2160592148",
+          "title": "Estimation of synthetic accessibility score of drug-like molecules based on molecular complexity and fragment contributions",
+          "abstract": "A novel method to estimate synthetic accessibility of molecules has been developed. This method uses historical synthetic knowledge obtained by analyzing information from millions of already synthesized chemicals and considers also molecule complexity. The method is sufficiently fast and provides results consistent ...",
+          "year": 2009,
+          "score": 0.4726
+        },
+        {
+          "paper_id": "https://openalex.org/W4287862998",
+          "title": "Learning to Make Chemical Predictions: the Interplay of Feature\\n Representation, Data, and Machine Learning Algorithms",
+          "abstract": "Recently supervised machine learning has been ascending in providing new\\npredictive approaches for chemical, biological and materials sciences\\napplications. In this Perspective we focus on the interplay of machine learning\\nalgorithm with the chemically motivated descriptors and the size and type of\\ndata sets nee...",
+          "year": 2020,
+          "score": 0.4708
+        },
+        {
+          "paper_id": "https://openalex.org/W7125813078",
+          "title": "Synergizing Chemical and AI Communities for Advancing Laboratories of the Future",
+          "abstract": "The development of automated experimental facilities and the digitization of experimental data have introduced numerous opportunities to radically advance chemical laboratories. As many laboratory tasks involve predicting and understanding previously unknown chemical relationships, machine learning (ML) approaches t...",
+          "year": 2026,
+          "score": 0.4692
+        },
+        {
+          "paper_id": "https://openalex.org/W3122961201",
+          "title": "BIOFACQUIM: A Mexican Compound Database of Natural Products",
+          "abstract": "Compound databases of natural products have a major impact on drug discovery projects and other areas of research. The number of databases in the public domain with compounds from natural origin is increasing. Several countries have initiatives in place to construct and maintain compound databases that are represent...",
+          "year": 2018,
+          "score": 0.469
+        },
+        {
+          "paper_id": "https://openalex.org/W4387037895",
+          "title": "Meta-learning for transformer-based prediction of potent compounds",
+          "abstract": "For many machine learning applications in drug discovery, only limited amounts of training data are available. This typically applies to compound design and activity prediction and often restricts machine learning, especially deep learning. For low-data applications, specialized learning strategies can be considered...",
+          "year": 2023,
+          "score": 0.4689
+        },
+        {
+          "paper_id": "https://openalex.org/W4315588170",
+          "title": "Discovery of structure-property relations for molecules via hypothesis-driven active learning over the chemical space",
+          "abstract": "Discovery of the molecular candidates for applications in drug targets, biomolecular systems, catalysts, photovoltaics, organic electronics, and batteries, necessitates development of machine learning algorithms capable of rapid exploration of the chemical spaces targeting the desired functionalities. Here we introd...",
+          "year": 2023,
+          "score": 0.4682
+        },
+        {
+          "paper_id": "https://openalex.org/W1562293507",
+          "title": "Communication and re-use of chemical information in bioscience",
+          "abstract": "The current methods of publishing chemical information in bioscience articles are analysed. Using 3 papers as use-cases, it is shown that conventional methods using human procedures, including cut-and-paste are time-consuming and introduce errors. The meaning of chemical terms and the identity of compounds is often ...",
+          "year": 2005,
+          "score": 0.4675
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "step": "step6",
+      "command_name": "paper-search",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Current methods do not provide a unified, mechanism-constrained, data-efficient, uncertainty-aware modeling framework that can generalize across reaction classes and jointly support feasible, selective, interpretable multi-step synthesis planning under scarce, noisy, and biased experimental data.",
+        "field": "abstract",
+        "top_k": 2,
+        "after": null,
+        "before": null
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4413480641",
+          "title": "Bayesian Optimization for Chemical Synthesis in the Era of Artificial Intelligence: Advances and Applications",
+          "abstract": "This review highlights recent advances in the application of Bayesian optimization to chemical synthesis. In the era of artificial intelligence, Bayesian optimization has emerged as a powerful machine learning approach that transforms reaction engineering by enabling efficient and cost-effective optimization of complex reaction systems. We begin with a concise overview of the theoretical foundations of Bayesian optimization, emphasizing key components such as Gaussian process-based surrogate models and acquisition functions that balance exploration and exploitation. Subsequently, we examine its practical applications across various chemical synthesis contexts, including reaction parameter tuning, catalyst screening, molecular design, synthetic route planning, self-optimizing systems, and autonomous laboratories. In addition, we discuss the integration of emerging techniques, such as noise-robust methods, multi-task learning, transfer learning, and multi-fidelity modeling, which enhance the versatility of Bayesian optimization in addressing the challenges and limitations inherent in chemical synthesis.",
+          "year": 2025,
+          "score": 0.6453481316566467
+        },
+        {
+          "paper_id": "https://openalex.org/W4224833271",
+          "title": "Bayesian optimization with known experimental and design constraints for chemistry applications",
+          "abstract": "Optimization strategies driven by machine learning, such as Bayesian optimization, are being explored across experimental sciences as an efficient alternative to traditional design of experiment. When combined with automated laboratory hardware and high-performance computing, these strategies enable next-generation platforms for autonomous experimentation. However, the practical application of these approaches is hampered by a lack of flexible software and algorithms tailored to the unique requirements of chemical research. One such aspect is the pervasive presence of constraints in the experimental conditions when optimizing chemical processes or protocols, and in the chemical space that is accessible when designing functional molecules or materials. Although many of these constraints are known a priori, they can be interdependent, non-linear, and result in non-compact optimization domains. In this work, we extend our experiment planning algorithms Phoenics and Gryffin such that they can handle arbitrary known constraints via an intuitive and flexible interface. We benchmark these extended algorithms on continuous and discrete test functions with a diverse set of constraints, demonstrating their flexibility and robustness. In addition, we illustrate their practical utility in two simulated chemical research scenarios: the optimization of the synthesis of o-xylenyl Buckminsterfullerene adducts under constrained flow conditions, and the design of redox active molecules for flow batteries under synthetic accessibility constraints. The tools developed constitute a simple, yet versatile strategy to enable model-based optimization with known experimental constraints, contributing to its applicability as a core component of autonomous platforms for scientific discovery.",
+          "year": 2022,
+          "score": 0.6451836824417114
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Stochastic programming, robust optimization, and constraint-based decision analysis methods for sequential planning under limited, noisy, and biased observations can provide transferable approaches for feasible and uncertainty-aware multi-step synthesis route selection.",
+        "keywords": [
+          {
+            "text": "stochastic optimization",
+            "score": 9
+          },
+          {
+            "text": "robust decision making",
+            "score": 8
+          },
+          {
+            "text": "constraint satisfaction",
+            "score": 8
+          },
+          {
+            "text": "sequential planning",
+            "score": 9
+          },
+          {
+            "text": "Bayesian experimental design",
+            "score": 7
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W6995894472",
+          "title": "PLANNING UNDER UNCERTAINTY: MOVING FORWARD",
+          "abstract": "Reasoning about uncertainty is an essential component of many real-world plan-ning problems, such as robotic and space applications, military operations planning, air and ground traffic control, and manufacturing systems. Planning under uncertainty focuses on how to generate plans that will be executed in environmen...",
+          "year": 2006,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W2531061645",
+          "title": "Heuristic Guidance for Forward-Chaining Planning with Numeric Uncertainty",
+          "abstract": "Uncertainty hinders many interesting applications of planning - it may come in the form of sensor noise, unpredictable environments, or known limitations in problem models. In this paper we explore heuristic guidance for forward-chaining planning with continuous random variables, while ensuring a probability of plan...",
+          "year": 2016,
+          "score": 0.9966
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Model predictive control and safety-constrained planning methods that combine mechanistic models, uncertainty propagation, and iterative feedback can inform the design of feasible, interpretable, and selective multi-step decision processes in data-scarce settings.",
+        "keywords": [
+          {
+            "text": "model predictive control",
+            "score": 9
+          },
+          {
+            "text": "constrained trajectory optimization",
+            "score": 8
+          },
+          {
+            "text": "uncertainty propagation",
+            "score": 8
+          },
+          {
+            "text": "mechanistic modeling",
+            "score": 9
+          },
+          {
+            "text": "safe sequential decision making",
+            "score": 7
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4403702796",
+          "title": "Stochastic Data-Driven Predictive Control: Chance-Constraint Satisfaction with Identified Multi-step Predictors",
+          "abstract": "We propose a novel data-driven stochastic model predictive control framework for uncertain linear systems with noisy output measurements. Our approach leverages multi-step predictors to efficiently propagate uncertainty, ensuring chance constraint satisfaction. In particular, we present a strategy to identify multi-...",
+          "year": 2024,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W2800906245",
+          "title": "Efficient Uncertainty Propagation for Stochastic Model Predictive Control",
+          "abstract": "As the complexity and scale of chemical processes has increased, engineers have desired a process control strategy that can successfully and safely regulate modern processes. These processes are often subject to random noise and uncertainties in parameters or model structure which make regulation and control difficu...",
+          "year": 2017,
+          "score": 0.9934
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "step": "step6",
+      "command_name": "paper-search",
+      "cache_hit": true,
+      "payload": {
+        "query_text": "Current methods do not provide a unified, mechanism-constrained, data-efficient, uncertainty-aware modeling framework that can generalize across reaction classes and jointly support feasible, selective, interpretable multi-step synthesis planning under scarce, noisy, and biased experimental data.",
+        "field": "abstract",
+        "top_k": 2,
+        "after": null,
+        "before": null
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4413480641",
+          "title": "Bayesian Optimization for Chemical Synthesis in the Era of Artificial Intelligence: Advances and Applications",
+          "abstract": "This review highlights recent advances in the application of Bayesian optimization to chemical synthesis. In the era of artificial intelligence, Bayesian optimization has emerged as a powerful machine learning approach that transforms reaction engineering by enabling efficient and cost-effective optimization of complex reaction systems. We begin with a concise overview of the theoretical foundations of Bayesian optimization, emphasizing key components such as Gaussian process-based surrogate models and acquisition functions that balance exploration and exploitation. Subsequently, we examine its practical applications across various chemical synthesis contexts, including reaction parameter tuning, catalyst screening, molecular design, synthetic route planning, self-optimizing systems, and autonomous laboratories. In addition, we discuss the integration of emerging techniques, such as noise-robust methods, multi-task learning, transfer learning, and multi-fidelity modeling, which enhance the versatility of Bayesian optimization in addressing the challenges and limitations inherent in chemical synthesis.",
+          "year": 2025,
+          "score": 0.6453481316566467
+        },
+        {
+          "paper_id": "https://openalex.org/W4224833271",
+          "title": "Bayesian optimization with known experimental and design constraints for chemistry applications",
+          "abstract": "Optimization strategies driven by machine learning, such as Bayesian optimization, are being explored across experimental sciences as an efficient alternative to traditional design of experiment. When combined with automated laboratory hardware and high-performance computing, these strategies enable next-generation platforms for autonomous experimentation. However, the practical application of these approaches is hampered by a lack of flexible software and algorithms tailored to the unique requirements of chemical research. One such aspect is the pervasive presence of constraints in the experimental conditions when optimizing chemical processes or protocols, and in the chemical space that is accessible when designing functional molecules or materials. Although many of these constraints are known a priori, they can be interdependent, non-linear, and result in non-compact optimization domains. In this work, we extend our experiment planning algorithms Phoenics and Gryffin such that they can handle arbitrary known constraints via an intuitive and flexible interface. We benchmark these extended algorithms on continuous and discrete test functions with a diverse set of constraints, demonstrating their flexibility and robustness. In addition, we illustrate their practical utility in two simulated chemical research scenarios: the optimization of the synthesis of o-xylenyl Buckminsterfullerene adducts under constrained flow conditions, and the design of redox active molecules for flow batteries under synthetic accessibility constraints. The tools developed constitute a simple, yet versatile strategy to enable model-based optimization with known experimental constraints, contributing to its applicability as a core component of autonomous platforms for scientific discovery.",
+          "year": 2022,
+          "score": 0.6451836824417114
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Probabilistic and neuro-symbolic planning methods that embed mechanistic rules as constraints while learning from sparse, noisy observations can support interpretable sequential decision-making with calibrated uncertainty.",
+        "keywords": [
+          {
+            "text": "probabilistic machine learning",
+            "score": 9
+          },
+          {
+            "text": "neuro-symbolic planning",
+            "score": 8
+          },
+          {
+            "text": "active learning",
+            "score": 8
+          },
+          {
+            "text": "meta-learning",
+            "score": 7
+          },
+          {
+            "text": "uncertainty quantification",
+            "score": 9
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W7106207643",
+          "title": "A Neuro-Symbolic Framework for Reasoning under Perceptual Uncertainty: Bridging Continuous Perception and Discrete Symbolic Planning",
+          "abstract": "Bridging continuous perceptual signals and discrete symbolic reasoning is a fundamental challenge in AI systems that must operate under uncertainty. We present a neuro-symbolic framework that explicitly models and propagates uncertainty from perception to planning, providing a principled connection between these two...",
+          "year": 2025,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W7048571973",
+          "title": "Learning and Optimizing Probabilistic Models for Planning under Uncertainty",
+          "abstract": "Decision-theoretic planning techniques are increasingly being used to obtain (optimal) plans for domains involving uncertainty, which may be present in the form of the controlling agent's actions, its percepts, or exogenous factors in the domain. These techniques build on detailed probabilistic models of the underly...",
+          "year": 2017,
+          "score": 0.8685
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Multi-stage stochastic and robust optimization techniques for constrained sequencing and resource allocation under biased or incomplete data can provide transferable frameworks for feasible, selective route planning.",
+        "keywords": [
+          {
+            "text": "stochastic programming",
+            "score": 9
+          },
+          {
+            "text": "robust optimization",
+            "score": 9
+          },
+          {
+            "text": "multi-stage decision making",
+            "score": 8
+          },
+          {
+            "text": "constraint programming",
+            "score": 7
+          },
+          {
+            "text": "scenario analysis",
+            "score": 7
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W2504672367",
+          "title": "Stochastic versus Robust Optimization for a Transportation Problem",
+          "abstract": "",
+          "year": 2015,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W2787247711",
+          "title": "Algorithms and uncertainty sets for data-driven robust shortest path problems",
+          "abstract": "",
+          "year": 2018,
+          "score": 0.9954
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "step": "step6",
+      "command_name": "paper-search",
+      "cache_hit": true,
+      "payload": {
+        "query_text": "Current methods do not provide a unified, mechanism-constrained, data-efficient, uncertainty-aware modeling framework that can generalize across reaction classes and jointly support feasible, selective, interpretable multi-step synthesis planning under scarce, noisy, and biased experimental data.",
+        "field": "abstract",
+        "top_k": 2,
+        "after": null,
+        "before": null
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4413480641",
+          "title": "Bayesian Optimization for Chemical Synthesis in the Era of Artificial Intelligence: Advances and Applications",
+          "abstract": "This review highlights recent advances in the application of Bayesian optimization to chemical synthesis. In the era of artificial intelligence, Bayesian optimization has emerged as a powerful machine learning approach that transforms reaction engineering by enabling efficient and cost-effective optimization of complex reaction systems. We begin with a concise overview of the theoretical foundations of Bayesian optimization, emphasizing key components such as Gaussian process-based surrogate models and acquisition functions that balance exploration and exploitation. Subsequently, we examine its practical applications across various chemical synthesis contexts, including reaction parameter tuning, catalyst screening, molecular design, synthetic route planning, self-optimizing systems, and autonomous laboratories. In addition, we discuss the integration of emerging techniques, such as noise-robust methods, multi-task learning, transfer learning, and multi-fidelity modeling, which enhance the versatility of Bayesian optimization in addressing the challenges and limitations inherent in chemical synthesis.",
+          "year": 2025,
+          "score": 0.6453481316566467
+        },
+        {
+          "paper_id": "https://openalex.org/W4224833271",
+          "title": "Bayesian optimization with known experimental and design constraints for chemistry applications",
+          "abstract": "Optimization strategies driven by machine learning, such as Bayesian optimization, are being explored across experimental sciences as an efficient alternative to traditional design of experiment. When combined with automated laboratory hardware and high-performance computing, these strategies enable next-generation platforms for autonomous experimentation. However, the practical application of these approaches is hampered by a lack of flexible software and algorithms tailored to the unique requirements of chemical research. One such aspect is the pervasive presence of constraints in the experimental conditions when optimizing chemical processes or protocols, and in the chemical space that is accessible when designing functional molecules or materials. Although many of these constraints are known a priori, they can be interdependent, non-linear, and result in non-compact optimization domains. In this work, we extend our experiment planning algorithms Phoenics and Gryffin such that they can handle arbitrary known constraints via an intuitive and flexible interface. We benchmark these extended algorithms on continuous and discrete test functions with a diverse set of constraints, demonstrating their flexibility and robustness. In addition, we illustrate their practical utility in two simulated chemical research scenarios: the optimization of the synthesis of o-xylenyl Buckminsterfullerene adducts under constrained flow conditions, and the design of redox active molecules for flow batteries under synthetic accessibility constraints. The tools developed constitute a simple, yet versatile strategy to enable model-based optimization with known experimental constraints, contributing to its applicability as a core component of autonomous platforms for scientific discovery.",
+          "year": 2022,
+          "score": 0.6451836824417114
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Stochastic and robust optimization methods for sequential decision-making under constraints, sparse noisy observations, and distribution shift, including scenario-based planning, Bayesian decision models, and interpretable policy search.",
+        "keywords": [
+          {
+            "text": "stochastic optimization",
+            "score": 9
+          },
+          {
+            "text": "sequential decision-making",
+            "score": 9
+          },
+          {
+            "text": "robust planning",
+            "score": 8
+          },
+          {
+            "text": "uncertainty quantification",
+            "score": 7
+          },
+          {
+            "text": "constrained resource allocation",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W7061240181",
+          "title": "Optimization and Learning Under Uncertainty: Algorithms and Theory for Robust Decision-Making",
+          "abstract": "This dissertation focuses on developing algorithms and theoretical foundations for optimization and learning under uncertainty, aiming to enhance robust decision-making in the presence of data ambiguity, noisy labels, and uncertain constraints. The work addresses critical challenges in stochastic optimization and ma...",
+          "year": 2024,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W2758473307",
+          "title": "Scenario-based optimization for multi-stage stochastic decision problems",
+          "abstract": "",
+          "year": 2014,
+          "score": 0.9602
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Mechanism-based state-space modeling and model predictive control approaches that combine first-principles constraints with limited measurements, quantify predictive uncertainty, and generate feasible, safe, interpretable action sequences.",
+        "keywords": [
+          {
+            "text": "model predictive control",
+            "score": 9
+          },
+          {
+            "text": "physics-informed modeling",
+            "score": 9
+          },
+          {
+            "text": "uncertainty estimation",
+            "score": 8
+          },
+          {
+            "text": "system identification",
+            "score": 7
+          },
+          {
+            "text": "constrained planning",
+            "score": 8
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4224330578",
+          "title": "State space models vs. multi-step predictors in predictive control: Are state space models complicating safe data-driven designs?",
+          "abstract": "This paper contrasts recursive state space models and direct multi-step predictors for linear predictive control. We provide a tutorial exposition for both model structures to solve the following problems: 1. stochastic optimal control; 2. system identification; 3. stochastic optimal control based on the estimated m...",
+          "year": 2022,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W2791704483",
+          "title": "Learning-based Model Predictive Control for Safe Exploration and Reinforcement Learning",
+          "abstract": "Reinforcement learning has been successfully used to solve difficult tasks in complex unknown environments. However, these methods typically do not provide any safety guarantees during the learning process. This is particularly problematic, since reinforcement learning agent actively explore their environment. This ...",
+          "year": 2019,
+          "score": 0.9665
+        }
+      ]
+    }
+  ]
+}

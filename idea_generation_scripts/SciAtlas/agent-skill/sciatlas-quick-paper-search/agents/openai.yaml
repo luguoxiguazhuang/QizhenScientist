@@ -1,0 +1,4 @@
+interface:
+  display_name: "SciAtlas Quick Paper Search"
+  short_description: "Zero-start quick KG paper search"
+  default_prompt: "Use $sciatlas-quick-paper-search to handle setup, run search-papers about open world agents, read artifacts, and summarize the evidence."

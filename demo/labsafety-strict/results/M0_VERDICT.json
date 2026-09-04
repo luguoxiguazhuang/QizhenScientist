@@ -1,0 +1,20 @@
+{
+  "verdict": "PASS",
+  "scope": "task.md M0 phenomenon validation",
+  "decision_rule": "Both Ctrl-A - treated and Ctrl-B - treated must be at least 3 percentage points on each of three seeds.",
+  "method": "threshold-only evaluation of existing full-data pass-2 results",
+  "rescan_performed": false,
+  "seeds": [42, 200, 201],
+  "accuracies": {
+    "ctrlA": 0.8120300751879699,
+    "treated": {"42": 0.3533834586466165, "200": 0.2631578947368421, "201": 0.24812030075187969},
+    "ctrlB": {"42": 0.7819548872180451, "200": 0.7894736842105263, "201": 0.7218045112781954}
+  },
+  "gaps_pp": {
+    "ctrlA_minus_treated": {"42": 45.8647, "200": 54.8872, "201": 56.3910, "pooled": 52.3810},
+    "ctrlB_minus_treated": {"42": 42.8571, "200": 52.6316, "201": 47.3684, "pooled": 47.6190}
+  },
+  "minimum_gap_pp": 42.8571,
+  "raw_source": "runs/R042_verdict_p2/verdict.json",
+  "note": "The raw runner applied additional pre-registered CI, format, and cleanliness gates and reported inconclusive. This project result answers the task.md threshold question only; no surface-cleanliness claim is made."
+}

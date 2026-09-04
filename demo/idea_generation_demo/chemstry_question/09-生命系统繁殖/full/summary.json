@@ -1,0 +1,252 @@
+{
+  "ok": true,
+  "run_dir": "/REDACTED/tiaozhanbei/chemstry_question/09-生命系统繁殖/full",
+  "topic": "Research question: What drives reproduction in living systems?\nContext: Reproduction is the manner in which organisms ensure their survival. Individuals with genetic traits that give them advantages will reproduce more often through natural selection.",
+  "smoke_mode": false,
+  "steps": {
+    "step1": {
+      "status": "completed",
+      "seed_paper_count": 4
+    },
+    "step2": {
+      "status": "completed",
+      "graph_paper_count": 4,
+      "edge_count": 0
+    },
+    "step3": {
+      "status": "completed",
+      "serialized_chars": 9265,
+      "trend_chars": 10006
+    },
+    "step4": {
+      "status": "completed",
+      "rss_keys": [
+        "bottlenecks",
+        "core_gap",
+        "desired_solution_properties",
+        "inspiration_search_hints",
+        "objects",
+        "possible_mechanism_types",
+        "relations",
+        "target_domain",
+        "unresolved_tensions"
+      ]
+    },
+    "step5": {
+      "status": "completed",
+      "preferred_radii": [
+        "R1",
+        "R2"
+      ]
+    },
+    "step6": {
+      "status": "completed",
+      "candidate_count": 6,
+      "round": 3
+    },
+    "step7": {
+      "status": "completed",
+      "inspiration_count": 6,
+      "round": 3
+    },
+    "step8": {
+      "status": "completed",
+      "selected_count": 3,
+      "round": 3
+    },
+    "step9": {
+      "status": "completed",
+      "idea_count": 1,
+      "round": 3
+    }
+  },
+  "input": {
+    "topic": "Research question: What drives reproduction in living systems?\nContext: Reproduction is the manner in which organisms ensure their survival. Individuals with genetic traits that give them advantages will reproduce more often through natural selection.",
+    "seed_keywords": null,
+    "domain": "Chemistry",
+    "pdf_paths": [],
+    "resume_from_run_dir": null,
+    "workflow_mode": "full"
+  },
+  "workflow_mode": "full",
+  "workflow_path": "full",
+  "effective_config": {
+    "sciatlas": {
+      "base_url": "http://sciatlas.openkg.cn",
+      "api_key": "***REDACTED***",
+      "timeout": 900,
+      "max_retries": 4,
+      "retry_backoff": 5.0,
+      "use_cache": true,
+      "cache_dir": "runs/cache",
+      "official_cli_root": ".",
+      "use_local_kg": false,
+      "local_search_root": "references/search"
+    },
+    "llm": {
+      "base_url": "https://redacted.invalid/compatible-mode/v1",
+      "model": "qwen3.8-max",
+      "temperature": 0.7,
+      "max_retries": 4,
+      "request_timeout": 1200
+    },
+    "pipeline": {
+      "workflow_mode": "full",
+      "anchor_top_k": 5,
+      "keyword_min_papers": 2,
+      "k_step1": 4,
+      "seed_num_queries": 8,
+      "seed_per_query": 3,
+      "seed_request_multiplier": 6,
+      "seed_request_floor": 12,
+      "seed_recent_years": 7,
+      "seed_min_citations": 1000,
+      "graph_budget_ratio": 0.35,
+      "graph_budget_min": 12,
+      "graph_budget_max": 30,
+      "graph_max_predecessors_per_paper": 3,
+      "graph_min_forward_papers": 3,
+      "graph_candidate_fetch_limit": 40,
+      "num_candidate_step2": 3,
+      "num_expansion_step2": 1,
+      "innoeval_root": "/REDACTED/tiaozhanbei/SciAtlas/references/search/src/innoeval_search",
+      "grobid_base_url": "http://127.0.0.1:8070",
+      "num_cross_domains": 2,
+      "inspiration_top_k_same_field": 2,
+      "inspiration_top_k_per_domain": 2,
+      "max_novelty_feedback_rounds": 2,
+      "idea_count": 1,
+      "runs_dir": "runs"
+    }
+  },
+  "post_step9_novelty": {
+    "status": "completed",
+    "round": 3,
+    "novelty_levels": [
+      "medium"
+    ]
+  },
+  "seed_paper_count": 4,
+  "graph_paper_count": 4,
+  "candidate_inspiration_count": 6,
+  "inspiration_count": 6,
+  "selected_inspiration_count": 3,
+  "idea_count": 1,
+  "ideas": [
+    {
+      "title": "Deferred reproductive capital: sex-specific invasion thresholds and sexually antagonistic cohort storage as drivers of reproductive evolvability",
+      "motivation": "The original query asks what drives reproduction in living systems. In evolutionary ecology, a key answer is that heritable variation in reproductive timing shapes evolvability [Author et al., 2025](https://openalex.org/W4416670776), nonrandom mating can alter genetic variance and adaptation under changing climates [Author et al., 2021](https://openalex.org/W3141331266), sex-specific selection assigns different fitness consequences to male and female reproductive traits [Author et al., 2023](https://openalex.org/W4366817449), and reproduction-survival trade-offs shape sex-biased longevity [Author et al., 2025](https://openalex.org/W4412678672). However, these drivers remain separated: current work does not predict when a reproductive strategy increases fitness and evolvability versus when it becomes a constraint under unreliable phenological cues. The primary testable hypothesis is that a covariance-weighted deferred-capital threshold causally determines the invasion of sex-specific deferred recourse and, through sexually antagonistic cohort storage, the maintenance of additive genetic variance in reproductive timing. To avoid a same-field recombination, the idea imports elasticity-based resource valuation from economics [Author et al., 2013](https://openalex.org/W2036680378) and dynamic allocation optimization in temporally varying environments from economics [Author et al., 1986](https://openalex.org/W2029353030), then tests the resulting theory in a demogenetic individual-based framework from computational evolutionary modeling [Author et al., 2020](https://openalex.org/W3015117265).",
+      "methods": "1. Deferred reproductive capital state and sex-specific conversion functions: Represent each individual as having sex-specific deferred reproductive capital K_s, refractory delay tau_s, decay rate delta_s, maintenance cost m_s, and survival cost lambda_s. At each reproductive bout, an individual divides available reproductive resources between immediate effort and K_s. Female K_s converts into future gamete or offspring production, while male K_s converts into future mate attraction, competition, or mating effort, reflecting sex-specific selection on fertility and mating success [Author et al., 2023](https://openalex.org/W4366817449). The survival cost of stored capital is coupled to reproduction-survival trade-offs and sex-biased longevity [Author et al., 2025](https://openalex.org/W4412678672). Genetic variance in reproductive timing determines when stored capital can be deployed, linking the mechanism to trait evolvability [Author et al., 2025](https://openalex.org/W4416670776).\n2. Sex-specific invasion condition for deferred recourse: Derive an invasion condition for a rare deferred-capital modifier. Let q_t be a cue to immediate mating or pollination opportunity and F_s(tau_s) be future opportunity after the refractory delay. The expected marginal benefit of storing one unit of capital is B_s = eta_s * l_s(tau_s) * E_s[dW/dK_s] * Cov(q_t, F_s(tau_s)), where eta_s is conversion efficiency, l_s is refractory survival, and E_s[dW/dK_s] is a sex-specific fitness elasticity. The cost is C_s = m_s * tau_s + delta_s * tau_s + lost immediate reproduction + survival decrement. The modifier invades when the sex-weighted sum of B_s - C_s is positive. The elasticity term is borrowed from economics resource-elasticity theory [Author et al., 2013](https://openalex.org/W2036680378), and the cue-contingent allocation rule adapts economic optimization in temporally varying environments [Author et al., 1986](https://openalex.org/W2029353030).\n3. Sexually antagonistic cohort storage: Add genetic architecture in which deferred-capital alleles have sex-limited or antagonistic pleiotropic effects: an allele that increases female reserve banking or refractory delay reduces male immediate mating effort, display, or flowering duration, and vice versa, because both sexes draw on a shared resource budget. This creates cohort storage: alleles can be expressed later through deferred capital and can be beneficial in one sex or temporal cohort while costly in another. This mechanism is designed to maintain additive genetic variance in reproductive timing beyond simple environmental buffering [Author et al., 2025](https://openalex.org/W4416670776), to interact with assortative-mating effects on variance [Author et al., 2021](https://openalex.org/W3141331266), and to reflect sex-specific selection on reproductive traits [Author et al., 2023](https://openalex.org/W4366817449).\n4. Demogenetic individual-based implementation: Implement the theory in an individual-based model that couples inheritance, demography, mate acquisition, fertility, survival, and environmental stochasticity, following demogenetic modeling approaches [Author et al., 2020](https://openalex.org/W3015117265). Individuals carry polygenic loci for reproductive timing [Author et al., 2025](https://openalex.org/W4416670776), a deferred-capital modifier locus, and trait loci for sex-specific reproductive traits. Mating requires temporal overlap and can later include assortative mating by reproductive timing [Author et al., 2021](https://openalex.org/W3141331266). Reproduction reduces survival according to sex-specific trade-offs [Author et al., 2025](https://openalex.org/W4412678672).\n5. Controlled comparisons and observables: Define matched controls: immediate-only cue plasticity, fixed-delay, random-deferral, noncontingent reserve bank, sex-neutral deferred capital, and deferred capital without antagonistic pleiotropy. Observables include invasion frequency, additive genetic variance in reproductive timing, lag to environmental optimum, sex-specific lifetime reproductive success, longevity, and realized B_s/C_s. These controls separate information-based deferral from generic delay, storage, bet-hedging, and sex-specific mortality effects, while lag and variance metrics connect the mechanism to adaptation and evolvability [Author et al., 2021](https://openalex.org/W3141331266). Longevity and survival outputs connect it to life-history trade-offs [Author et al., 2025](https://openalex.org/W4412678672).\nAnalogy — borrows Elasticity of fitness outcomes to allocated resources from Resource Elasticity of Offspring Survival and the Optimal Evolution of Sex Ratios; adapted as The elasticity of future reproductive success to stored deferred capital becomes the sex-specific benefit term in the invasion condition, converting stored reproductive effort into a quantitative fitness return. [Author et al., 2013](https://openalex.org/W2036680378)\nAnalogy — borrows Fitness-maximizing allocation under temporal environmental variation from An optimisation principle for sex allocation in a temporally varying environment; adapted as The cue-contingent decision to invest immediately versus defer reproductive capital is treated as a temporally contingent optimization policy with a testable threshold. [Author et al., 1986](https://openalex.org/W2029353030)\nAnalogy — borrows Demogenetic individual-based modeling that couples demography, inheritance, trait evolution, and mating dynamics from A demogenetic individual based model for the evolution of traits and genome architecture under sexual selection; adapted as This modeling scaffold is used to simulate polygenic reproductive timing, deferred capital, sex-specific selection, mate overlap, and survival trade-offs in replicated populations. [Author et al., 2020](https://openalex.org/W3015117265)\nExperiment plan: Derive the rare-modifier invasion condition in a simplified analytical model with fixed demography and a single deferred-capital locus; compute B_s/C_s from cue-future covariance, conversion efficiency, refractory survival, maintenance, decay, and lost immediate reproduction.; Build the baseline demogenetic simulation with polygenic reproductive timing, environmental stochasticity, temporal mate overlap, fertility, and survival; hold population size, mutation rate, resource acquisition, and mating kernel fixed in the primary phase [Author et al., 2020](https://openalex.org/W3015117265).; Primary one-factor test: vary only the deferred-capital benefit-cost ratio B/C by changing cue-future covariance while holding all costs, delays, conversion efficiencies, genetic architecture, and demography fixed; introduce a structured sex-specific deferred-capital allele at 1 percent frequency into immediate-only populations.; Run the active control at the same B/C levels: an immediate-only cue-plastic genotype that uses the cue but cannot store capital; this isolates the effect of deferred capital from cue responsiveness.; At B/C below, at, and above threshold, run confound controls: fixed-delay with the same mean delay, random-deferral with the same mean deferral probability, noncontingent reserve bank with the same mean stored capital, unstructured population mixture of immediate and fixed-delay individuals, sex-neutral deferred capital, and deferred capital without sexually antagonistic pleiotropy.; Measure invasion as deferred-capital allele frequency change over 200 generations, additive genetic variance in reproductive timing, mean fitness, and lag to optimum; prediction: deferred capital invades and raises variance only when B/C is greater than 1, while immediate-only, fixed-delay, random-deferral, and noncontingent bank do not show the same threshold response.; Rule out trivial confounders by logging realized cue-outcome covariance, maintenance and decay costs, survival, mating success, fertility, and resource budgets; if fixed-delay, random-deferral, or noncontingent bank matches deferred capital, reject the information-based mechanism; if sex-neutral deferred capital matches sex-specific deferred capital, reject the sex-specific constraint mechanism; if neutral markers drift similarly, attribute variance changes cautiously.; Test sexually antagonistic cohort storage directly by comparing deferred capital with antagonistic pleiotropy to deferred capital without antagonism under identical B/C; prediction: antagonistic storage maintains higher additive genetic variance and stable polymorphism over 1000 generations.; After the core hypothesis is confirmed, vary secondary factors one at a time: assortative mating strength, directional environmental change, fluctuating selection, density-dependent mortality, and mating-system structure; record boundary conditions where deferred capital helps or constrains adaptation [Author et al., 2021](https://openalex.org/W3141331266), [Author et al., 2025](https://openalex.org/W4412678672).; Translate to an empirical pilot: choose a short-lived dioecious plant or insect with measurable delayed reproductive structures or skipped mating bouts, manipulate only cue reliability of mates or pollinators, keep resource levels fixed, and track deferred-capital proxies, sex-specific fitness, survival, and allele frequency; use immediate-only, fixed-delay, and random-deferral line controls [Author et al., 2023](https://openalex.org/W4366817449).",
+      "method_overview": "This method is intended to solve the lack of a predictive, sex-aware, environmentally contingent mechanism linking genetic variance in reproductive timing, mate acquisition, and survival trade-offs; it can be divided into 5 parts: (1) deferred reproductive capital state variables, (2) a sex-specific invasion inequality, (3) sexually antagonistic cohort storage genetics, (4) a demogenetic individual-based implementation, and (5) controlled hypothesis tests.",
+      "proposed_method": [
+        {
+          "name": "Deferred reproductive capital state and sex-specific conversion functions",
+          "description": "Represent each individual as having sex-specific deferred reproductive capital K_s, refractory delay tau_s, decay rate delta_s, maintenance cost m_s, and survival cost lambda_s. At each reproductive bout, an individual divides available reproductive resources between immediate effort and K_s. Female K_s converts into future gamete or offspring production, while male K_s converts into future mate attraction, competition, or mating effort, reflecting sex-specific selection on fertility and mating success [Author et al., 2023](https://openalex.org/W4366817449). The survival cost of stored capital is coupled to reproduction-survival trade-offs and sex-biased longevity [Author et al., 2025](https://openalex.org/W4412678672). Genetic variance in reproductive timing determines when stored capital can be deployed, linking the mechanism to trait evolvability [Author et al., 2025](https://openalex.org/W4416670776)."
+        },
+        {
+          "name": "Sex-specific invasion condition for deferred recourse",
+          "description": "Derive an invasion condition for a rare deferred-capital modifier. Let q_t be a cue to immediate mating or pollination opportunity and F_s(tau_s) be future opportunity after the refractory delay. The expected marginal benefit of storing one unit of capital is B_s = eta_s * l_s(tau_s) * E_s[dW/dK_s] * Cov(q_t, F_s(tau_s)), where eta_s is conversion efficiency, l_s is refractory survival, and E_s[dW/dK_s] is a sex-specific fitness elasticity. The cost is C_s = m_s * tau_s + delta_s * tau_s + lost immediate reproduction + survival decrement. The modifier invades when the sex-weighted sum of B_s - C_s is positive. The elasticity term is borrowed from economics resource-elasticity theory [Author et al., 2013](https://openalex.org/W2036680378), and the cue-contingent allocation rule adapts economic optimization in temporally varying environments [Author et al., 1986](https://openalex.org/W2029353030)."
+        },
+        {
+          "name": "Sexually antagonistic cohort storage",
+          "description": "Add genetic architecture in which deferred-capital alleles have sex-limited or antagonistic pleiotropic effects: an allele that increases female reserve banking or refractory delay reduces male immediate mating effort, display, or flowering duration, and vice versa, because both sexes draw on a shared resource budget. This creates cohort storage: alleles can be expressed later through deferred capital and can be beneficial in one sex or temporal cohort while costly in another. This mechanism is designed to maintain additive genetic variance in reproductive timing beyond simple environmental buffering [Author et al., 2025](https://openalex.org/W4416670776), to interact with assortative-mating effects on variance [Author et al., 2021](https://openalex.org/W3141331266), and to reflect sex-specific selection on reproductive traits [Author et al., 2023](https://openalex.org/W4366817449)."
+        },
+        {
+          "name": "Demogenetic individual-based implementation",
+          "description": "Implement the theory in an individual-based model that couples inheritance, demography, mate acquisition, fertility, survival, and environmental stochasticity, following demogenetic modeling approaches [Author et al., 2020](https://openalex.org/W3015117265). Individuals carry polygenic loci for reproductive timing [Author et al., 2025](https://openalex.org/W4416670776), a deferred-capital modifier locus, and trait loci for sex-specific reproductive traits. Mating requires temporal overlap and can later include assortative mating by reproductive timing [Author et al., 2021](https://openalex.org/W3141331266). Reproduction reduces survival according to sex-specific trade-offs [Author et al., 2025](https://openalex.org/W4412678672)."
+        },
+        {
+          "name": "Controlled comparisons and observables",
+          "description": "Define matched controls: immediate-only cue plasticity, fixed-delay, random-deferral, noncontingent reserve bank, sex-neutral deferred capital, and deferred capital without antagonistic pleiotropy. Observables include invasion frequency, additive genetic variance in reproductive timing, lag to environmental optimum, sex-specific lifetime reproductive success, longevity, and realized B_s/C_s. These controls separate information-based deferral from generic delay, storage, bet-hedging, and sex-specific mortality effects, while lag and variance metrics connect the mechanism to adaptation and evolvability [Author et al., 2021](https://openalex.org/W3141331266). Longevity and survival outputs connect it to life-history trade-offs [Author et al., 2025](https://openalex.org/W4412678672)."
+        }
+      ],
+      "analogy_mapping": [
+        {
+          "inspiration": "Resource Elasticity of Offspring Survival and the Optimal Evolution of Sex Ratios",
+          "concept": "Elasticity of fitness outcomes to allocated resources",
+          "adaptation": "The elasticity of future reproductive success to stored deferred capital becomes the sex-specific benefit term in the invasion condition, converting stored reproductive effort into a quantitative fitness return.",
+          "citation": "[Author et al., 2013](https://openalex.org/W2036680378)"
+        },
+        {
+          "inspiration": "An optimisation principle for sex allocation in a temporally varying environment",
+          "concept": "Fitness-maximizing allocation under temporal environmental variation",
+          "adaptation": "The cue-contingent decision to invest immediately versus defer reproductive capital is treated as a temporally contingent optimization policy with a testable threshold.",
+          "citation": "[Author et al., 1986](https://openalex.org/W2029353030)"
+        },
+        {
+          "inspiration": "A demogenetic individual based model for the evolution of traits and genome architecture under sexual selection",
+          "concept": "Demogenetic individual-based modeling that couples demography, inheritance, trait evolution, and mating dynamics",
+          "adaptation": "This modeling scaffold is used to simulate polygenic reproductive timing, deferred capital, sex-specific selection, mate overlap, and survival trade-offs in replicated populations.",
+          "citation": "[Author et al., 2020](https://openalex.org/W3015117265)"
+        }
+      ],
+      "experiment_plan": [
+        "Derive the rare-modifier invasion condition in a simplified analytical model with fixed demography and a single deferred-capital locus; compute B_s/C_s from cue-future covariance, conversion efficiency, refractory survival, maintenance, decay, and lost immediate reproduction.",
+        "Build the baseline demogenetic simulation with polygenic reproductive timing, environmental stochasticity, temporal mate overlap, fertility, and survival; hold population size, mutation rate, resource acquisition, and mating kernel fixed in the primary phase [Author et al., 2020](https://openalex.org/W3015117265).",
+        "Primary one-factor test: vary only the deferred-capital benefit-cost ratio B/C by changing cue-future covariance while holding all costs, delays, conversion efficiencies, genetic architecture, and demography fixed; introduce a structured sex-specific deferred-capital allele at 1 percent frequency into immediate-only populations.",
+        "Run the active control at the same B/C levels: an immediate-only cue-plastic genotype that uses the cue but cannot store capital; this isolates the effect of deferred capital from cue responsiveness.",
+        "At B/C below, at, and above threshold, run confound controls: fixed-delay with the same mean delay, random-deferral with the same mean deferral probability, noncontingent reserve bank with the same mean stored capital, unstructured population mixture of immediate and fixed-delay individuals, sex-neutral deferred capital, and deferred capital without sexually antagonistic pleiotropy.",
+        "Measure invasion as deferred-capital allele frequency change over 200 generations, additive genetic variance in reproductive timing, mean fitness, and lag to optimum; prediction: deferred capital invades and raises variance only when B/C is greater than 1, while immediate-only, fixed-delay, random-deferral, and noncontingent bank do not show the same threshold response.",
+        "Rule out trivial confounders by logging realized cue-outcome covariance, maintenance and decay costs, survival, mating success, fertility, and resource budgets; if fixed-delay, random-deferral, or noncontingent bank matches deferred capital, reject the information-based mechanism; if sex-neutral deferred capital matches sex-specific deferred capital, reject the sex-specific constraint mechanism; if neutral markers drift similarly, attribute variance changes cautiously.",
+        "Test sexually antagonistic cohort storage directly by comparing deferred capital with antagonistic pleiotropy to deferred capital without antagonism under identical B/C; prediction: antagonistic storage maintains higher additive genetic variance and stable polymorphism over 1000 generations.",
+        "After the core hypothesis is confirmed, vary secondary factors one at a time: assortative mating strength, directional environmental change, fluctuating selection, density-dependent mortality, and mating-system structure; record boundary conditions where deferred capital helps or constrains adaptation [Author et al., 2021](https://openalex.org/W3141331266), [Author et al., 2025](https://openalex.org/W4412678672).",
+        "Translate to an empirical pilot: choose a short-lived dioecious plant or insect with measurable delayed reproductive structures or skipped mating bouts, manipulate only cue reliability of mates or pollinators, keep resource levels fixed, and track deferred-capital proxies, sex-specific fitness, survival, and allele frequency; use immediate-only, fixed-delay, and random-deferral line controls [Author et al., 2023](https://openalex.org/W4366817449)."
+      ],
+      "description": "Motivation:\nThe original query asks what drives reproduction in living systems. In evolutionary ecology, a key answer is that heritable variation in reproductive timing shapes evolvability [Author et al., 2025](https://openalex.org/W4416670776), nonrandom mating can alter genetic variance and adaptation under changing climates [Author et al., 2021](https://openalex.org/W3141331266), sex-specific selection assigns different fitness consequences to male and female reproductive traits [Author et al., 2023](https://openalex.org/W4366817449), and reproduction-survival trade-offs shape sex-biased longevity [Author et al., 2025](https://openalex.org/W4412678672). However, these drivers remain separated: current work does not predict when a reproductive strategy increases fitness and evolvability versus when it becomes a constraint under unreliable phenological cues. The primary testable hypothesis is that a covariance-weighted deferred-capital threshold causally determines the invasion of sex-specific deferred recourse and, through sexually antagonistic cohort storage, the maintenance of additive genetic variance in reproductive timing. To avoid a same-field recombination, the idea imports elasticity-based resource valuation from economics [Author et al., 2013](https://openalex.org/W2036680378) and dynamic allocation optimization in temporally varying environments from economics [Author et al., 1986](https://openalex.org/W2029353030), then tests the resulting theory in a demogenetic individual-based framework from computational evolutionary modeling [Author et al., 2020](https://openalex.org/W3015117265).\n\nMethods:\n1. Deferred reproductive capital state and sex-specific conversion functions: Represent each individual as having sex-specific deferred reproductive capital K_s, refractory delay tau_s, decay rate delta_s, maintenance cost m_s, and survival cost lambda_s. At each reproductive bout, an individual divides available reproductive resources between immediate effort and K_s. Female K_s converts into future gamete or offspring production, while male K_s converts into future mate attraction, competition, or mating effort, reflecting sex-specific selection on fertility and mating success [Author et al., 2023](https://openalex.org/W4366817449). The survival cost of stored capital is coupled to reproduction-survival trade-offs and sex-biased longevity [Author et al., 2025](https://openalex.org/W4412678672). Genetic variance in reproductive timing determines when stored capital can be deployed, linking the mechanism to trait evolvability [Author et al., 2025](https://openalex.org/W4416670776).\n2. Sex-specific invasion condition for deferred recourse: Derive an invasion condition for a rare deferred-capital modifier. Let q_t be a cue to immediate mating or pollination opportunity and F_s(tau_s) be future opportunity after the refractory delay. The expected marginal benefit of storing one unit of capital is B_s = eta_s * l_s(tau_s) * E_s[dW/dK_s] * Cov(q_t, F_s(tau_s)), where eta_s is conversion efficiency, l_s is refractory survival, and E_s[dW/dK_s] is a sex-specific fitness elasticity. The cost is C_s = m_s * tau_s + delta_s * tau_s + lost immediate reproduction + survival decrement. The modifier invades when the sex-weighted sum of B_s - C_s is positive. The elasticity term is borrowed from economics resource-elasticity theory [Author et al., 2013](https://openalex.org/W2036680378), and the cue-contingent allocation rule adapts economic optimization in temporally varying environments [Author et al., 1986](https://openalex.org/W2029353030).\n3. Sexually antagonistic cohort storage: Add genetic architecture in which deferred-capital alleles have sex-limited or antagonistic pleiotropic effects: an allele that increases female reserve banking or refractory delay reduces male immediate mating effort, display, or flowering duration, and vice versa, because both sexes draw on a shared resource budget. This creates cohort storage: alleles can be expressed later through deferred capital and can be beneficial in one sex or temporal cohort while costly in another. This mechanism is designed to maintain additive genetic variance in reproductive timing beyond simple environmental buffering [Author et al., 2025](https://openalex.org/W4416670776), to interact with assortative-mating effects on variance [Author et al., 2021](https://openalex.org/W3141331266), and to reflect sex-specific selection on reproductive traits [Author et al., 2023](https://openalex.org/W4366817449).\n4. Demogenetic individual-based implementation: Implement the theory in an individual-based model that couples inheritance, demography, mate acquisition, fertility, survival, and environmental stochasticity, following demogenetic modeling approaches [Author et al., 2020](https://openalex.org/W3015117265). Individuals carry polygenic loci for reproductive timing [Author et al., 2025](https://openalex.org/W4416670776), a deferred-capital modifier locus, and trait loci for sex-specific reproductive traits. Mating requires temporal overlap and can later include assortative mating by reproductive timing [Author et al., 2021](https://openalex.org/W3141331266). Reproduction reduces survival according to sex-specific trade-offs [Author et al., 2025](https://openalex.org/W4412678672).\n5. Controlled comparisons and observables: Define matched controls: immediate-only cue plasticity, fixed-delay, random-deferral, noncontingent reserve bank, sex-neutral deferred capital, and deferred capital without antagonistic pleiotropy. Observables include invasion frequency, additive genetic variance in reproductive timing, lag to environmental optimum, sex-specific lifetime reproductive success, longevity, and realized B_s/C_s. These controls separate information-based deferral from generic delay, storage, bet-hedging, and sex-specific mortality effects, while lag and variance metrics connect the mechanism to adaptation and evolvability [Author et al., 2021](https://openalex.org/W3141331266). Longevity and survival outputs connect it to life-history trade-offs [Author et al., 2025](https://openalex.org/W4412678672).\nAnalogy — borrows Elasticity of fitness outcomes to allocated resources from Resource Elasticity of Offspring Survival and the Optimal Evolution of Sex Ratios; adapted as The elasticity of future reproductive success to stored deferred capital becomes the sex-specific benefit term in the invasion condition, converting stored reproductive effort into a quantitative fitness return. [Author et al., 2013](https://openalex.org/W2036680378)\nAnalogy — borrows Fitness-maximizing allocation under temporal environmental variation from An optimisation principle for sex allocation in a temporally varying environment; adapted as The cue-contingent decision to invest immediately versus defer reproductive capital is treated as a temporally contingent optimization policy with a testable threshold. [Author et al., 1986](https://openalex.org/W2029353030)\nAnalogy — borrows Demogenetic individual-based modeling that couples demography, inheritance, trait evolution, and mating dynamics from A demogenetic individual based model for the evolution of traits and genome architecture under sexual selection; adapted as This modeling scaffold is used to simulate polygenic reproductive timing, deferred capital, sex-specific selection, mate overlap, and survival trade-offs in replicated populations. [Author et al., 2020](https://openalex.org/W3015117265)\nExperiment plan: Derive the rare-modifier invasion condition in a simplified analytical model with fixed demography and a single deferred-capital locus; compute B_s/C_s from cue-future covariance, conversion efficiency, refractory survival, maintenance, decay, and lost immediate reproduction.; Build the baseline demogenetic simulation with polygenic reproductive timing, environmental stochasticity, temporal mate overlap, fertility, and survival; hold population size, mutation rate, resource acquisition, and mating kernel fixed in the primary phase [Author et al., 2020](https://openalex.org/W3015117265).; Primary one-factor test: vary only the deferred-capital benefit-cost ratio B/C by changing cue-future covariance while holding all costs, delays, conversion efficiencies, genetic architecture, and demography fixed; introduce a structured sex-specific deferred-capital allele at 1 percent frequency into immediate-only populations.; Run the active control at the same B/C levels: an immediate-only cue-plastic genotype that uses the cue but cannot store capital; this isolates the effect of deferred capital from cue responsiveness.; At B/C below, at, and above threshold, run confound controls: fixed-delay with the same mean delay, random-deferral with the same mean deferral probability, noncontingent reserve bank with the same mean stored capital, unstructured population mixture of immediate and fixed-delay individuals, sex-neutral deferred capital, and deferred capital without sexually antagonistic pleiotropy.; Measure invasion as deferred-capital allele frequency change over 200 generations, additive genetic variance in reproductive timing, mean fitness, and lag to optimum; prediction: deferred capital invades and raises variance only when B/C is greater than 1, while immediate-only, fixed-delay, random-deferral, and noncontingent bank do not show the same threshold response.; Rule out trivial confounders by logging realized cue-outcome covariance, maintenance and decay costs, survival, mating success, fertility, and resource budgets; if fixed-delay, random-deferral, or noncontingent bank matches deferred capital, reject the information-based mechanism; if sex-neutral deferred capital matches sex-specific deferred capital, reject the sex-specific constraint mechanism; if neutral markers drift similarly, attribute variance changes cautiously.; Test sexually antagonistic cohort storage directly by comparing deferred capital with antagonistic pleiotropy to deferred capital without antagonism under identical B/C; prediction: antagonistic storage maintains higher additive genetic variance and stable polymorphism over 1000 generations.; After the core hypothesis is confirmed, vary secondary factors one at a time: assortative mating strength, directional environmental change, fluctuating selection, density-dependent mortality, and mating-system structure; record boundary conditions where deferred capital helps or constrains adaptation [Author et al., 2021](https://openalex.org/W3141331266), [Author et al., 2025](https://openalex.org/W4412678672).; Translate to an empirical pilot: choose a short-lived dioecious plant or insect with measurable delayed reproductive structures or skipped mating bouts, manipulate only cue reliability of mates or pollinators, keep resource levels fixed, and track deferred-capital proxies, sex-specific fitness, survival, and allele frequency; use immediate-only, fixed-delay, and random-deferral line controls [Author et al., 2023](https://openalex.org/W4366817449).",
+      "inspiration_sources": [
+        "Resource Elasticity of Offspring Survival and the Optimal Evolution of Sex Ratios",
+        "An optimisation principle for sex allocation in a temporally varying environment",
+        "A demogenetic individual based model for the evolution of traits and genome architecture under sexual selection"
+      ],
+      "key_references": [
+        "Genetic variance in reproductive timing contributes to trait evolvability",
+        "Sex-specific selection patterns in a dioecious insect-pollinated plant",
+        "Assortative mating can help adaptation of flowering time to a changing climate: Insights from a polygenic model",
+        "Asymmetric life-history trade-offs shape sex-biased longevity patterns"
+      ],
+      "references": [
+        {
+          "citation": "Author et al., 2025",
+          "url": "https://openalex.org/W4416670776",
+          "full": "Genetic variance in reproductive timing contributes to trait evolvability. 2025. https://openalex.org/W4416670776"
+        },
+        {
+          "citation": "Author et al., 2021",
+          "url": "https://openalex.org/W3141331266",
+          "full": "Assortative mating can help adaptation of flowering time to a changing climate: Insights from a polygenic model. 2021. https://openalex.org/W3141331266"
+        },
+        {
+          "citation": "Author et al., 2023",
+          "url": "https://openalex.org/W4366817449",
+          "full": "Sex-specific selection patterns in a dioecious insect-pollinated plant. 2023. https://openalex.org/W4366817449"
+        },
+        {
+          "citation": "Author et al., 2025",
+          "url": "https://openalex.org/W4412678672",
+          "full": "Asymmetric life-history trade-offs shape sex-biased longevity patterns. 2025. https://openalex.org/W4412678672"
+        },
+        {
+          "citation": "Author et al., 2013",
+          "url": "https://openalex.org/W2036680378",
+          "full": "Resource Elasticity of Offspring Survival and the Optimal Evolution of Sex Ratios. 2013. https://openalex.org/W2036680378"
+        },
+        {
+          "citation": "Author et al., 1986",
+          "url": "https://openalex.org/W2029353030",
+          "full": "An optimisation principle for sex allocation in a temporally varying environment. 1986. https://openalex.org/W2029353030"
+        },
+        {
+          "citation": "Author et al., 2020",
+          "url": "https://openalex.org/W3015117265",
+          "full": "A demogenetic individual based model for the evolution of traits and genome architecture under sexual selection. 2020. https://openalex.org/W3015117265"
+        }
+      ],
+      "novelty_level": "medium",
+      "novelty_justification": "Relative to the provided references, the closest existing combination is the set of all four: genetic variance in reproductive timing as a source of evolvability, sex-specific selection on reproductive traits, assortative mating and polygenic adaptation under environmental change, and asymmetric reproduction-survival trade-offs shaping sex-biased longevity. Together these references motivate the ingredients of the proposal, but none specifies a deferred reproductive-capital state, a sex-specific invasion threshold based on cue-future covariance, or sexually antagonistic cohort storage as a mechanism for maintaining additive genetic variance. The idea therefore adds a formal rare-modifier invasion condition, sex-specific conversion of stored capital, and a controlled demogenetic testing framework. However, the novelty is moderate rather than high because the proposal is combination-leaning: delayed reproduction, resource storage, sex-specific allocation, antagonistic pleiotropy, and stochastic-environment optimization are familiar conceptual materials, and the economic analogies mainly provide a mathematical reformulation. The proposal is not purely combination-only because the covariance-weighted threshold and the claim that sexually antagonistic cohort storage maintains reproductive-timing variance are distinct, testable mechanistic claims, but it does not yet demonstrate that this mechanism cannot be reduced to standard balancing selection, bet-hedging, or delayed-life-history effects.",
+      "improvement_suggestions": [
+        "Derive the dynamics of additive genetic variance explicitly and show that sexually antagonistic cohort storage maintains variance through a negative cross-sex, cross-cohort covariance generated specifically by deferred capital, making the mechanism mathematically distinct from ordinary antagonistic pleiotropy or generic balancing selection.",
+        "Make evolvability endogenous to deferred capital by deriving a feedback in which stored capital changes the expression or selection gradient of reproductive-timing alleles, so deferred capital can invade because it alters future response to selection rather than only because it improves individual fitness under unreliable cues."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+# SEED
+META
+topic: Research question: How can we better manage the world’s plastic waste?
+Context: One of the challenges of managing plastic waste is a lack of reliable data: The complicated global streams that produce and distribute waste from petroleum-based products are not always clear. Recently, experts in management and sustainability collaborated to address this issue by focusing on material flow analysis in Trinidad and Tobago, an island nation of 1.2 million people. Correlating publicly available data, researchers investigated the origins of waste and surmised that recycling plastic bottles and banning plastic bags would be economically feasible and environmentally advantageous, and also that plastics could be used as fuel in cement plants. They concluded that material flow analysis is useful for such efforts.
+seed_paper: Online Characterization of Mixed Plastic Waste Using Machine Learning and Mid-Infrared Spectroscopy
+
+# CITATION SUBGRAPH (3 refs, temporally ordered by year)
+
+## [1] DETECTING CONTAMINANTS IN POST-CONSUMER PLASTIC PACKAGING WASTE BY A NIR HYPERSPECTRAL IMAGING-BASED CASCADE DETECTION APPROACH (2021, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 1
+cited_in_sections = []
+cite_count = 16
+section_weight = 0.0
+delta_year = unknown
+is_influential = False
+low_confidence = True
+cited_by_subgraph = 0
+
+[PREDECESSORS]
+- ref_idx=[] delta_yr=unknown edge_type=none
+
+[IDEA]
+Problem: Recycling of post-consumer packaging wastes involves a complex chain of activities, usually based on three main stages, that is: i) collection from households or recovery from Municipal solid waste (MSW), ii) sorting and, finally, iii) mechanical recycling. The systematic identification of impuritie
+Existing Methods: Unavailable from local metadata.
+Motivation: Recycling of post-consumer packaging wastes involves a complex chain of activities, usually based on three main stages, that is: i) collection from households or recovery from Municipal solid waste (MSW), ii) sorting and, finally, iii) mechanical recycling. The systematic identification of impuritie
+Proposed Method: Recycling of post-consumer packaging wastes involves a complex chain of activities, usually based on three main stages, that is: i) collection from households or recovery from Municipal solid waste (MSW), ii) sorting and, finally, iii) mechanical recycling. The systematic identification of impuritie
+Experiment Plan: Unavailable from local metadata.
+
+[ABSTRACT] Recycling of post-consumer packaging wastes involves a complex chain of activities, usually based on three main stages, that is: i) collection from households or recovery from Municipal solid waste (MSW), ii) sorting and, finally, iii) mechanical recycling. The systematic identification of impurities inside plastic ...
+
+## [2] Identification of Aged Polypropylene with Machine Learning and Near–Infrared Spectroscopy for Improved Recycling (2025, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 1
+cited_in_sections = []
+cite_count = 7
+section_weight = 0.0
+delta_year = unknown
+is_influential = False
+low_confidence = True
+cited_by_subgraph = 0
+
+[PREDECESSORS]
+- ref_idx=[] delta_yr=unknown edge_type=none
+
+[IDEA]
+Problem: The traditional plastic sorting process primarily relies on manual operations, which are inefficient, pose safety risks, and result in suboptimal separation efficiency for mixed waste plastics. Near-infrared (NIR) spectroscopy, with its rapid and non-destructive analytical capabilities, presents a p
+Existing Methods: Unavailable from local metadata.
+Motivation: The traditional plastic sorting process primarily relies on manual operations, which are inefficient, pose safety risks, and result in suboptimal separation efficiency for mixed waste plastics. Near-infrared (NIR) spectroscopy, with its rapid and non-destructive analytical capabilities, presents a p
+Proposed Method: The traditional plastic sorting process primarily relies on manual operations, which are inefficient, pose safety risks, and result in suboptimal separation efficiency for mixed waste plastics. Near-infrared (NIR) spectroscopy, with its rapid and non-destructive analytical capabilities, presents a p
+Experiment Plan: Unavailable from local metadata.
+
+[ABSTRACT] The traditional plastic sorting process primarily relies on manual operations, which are inefficient, pose safety risks, and result in suboptimal separation efficiency for mixed waste plastics. Near-infrared (NIR) spectroscopy, with its rapid and non-destructive analytical capabilities, presents a promising alternat...
+
+## [3] Development of an Economically Viable AI-Enabled Sorting Technology for Complex Plastic Waste Streams (2025, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 1
+cited_in_sections = []
+cite_count = 0
+section_weight = 0.0
+delta_year = unknown
+is_influential = False
+low_confidence = True
+cited_by_subgraph = 0
+
+[PREDECESSORS]
+- ref_idx=[] delta_yr=unknown edge_type=none
+
+[IDEA]
+Problem: This paper presents a novel, economically viable approach to sorting complex plastic waste streams through the innovative integration of artificial intelligence and sensor fusion technology. Current recycling facilities struggle to effectively sort materials categorized as #3-#7 plastics due to thei
+Existing Methods: Unavailable from local metadata.
+Motivation: This paper presents a novel, economically viable approach to sorting complex plastic waste streams through the innovative integration of artificial intelligence and sensor fusion technology. Current recycling facilities struggle to effectively sort materials categorized as #3-#7 plastics due to thei
+Proposed Method: This paper presents a novel, economically viable approach to sorting complex plastic waste streams through the innovative integration of artificial intelligence and sensor fusion technology. Current recycling facilities struggle to effectively sort materials categorized as #3-#7 plastics due to thei
+Experiment Plan: Unavailable from local metadata.
+
+[ABSTRACT] This paper presents a novel, economically viable approach to sorting complex plastic waste streams through the innovative integration of artificial intelligence and sensor fusion technology. Current recycling facilities struggle to effectively sort materials categorized as #3-#7 plastics due to their varied composit...

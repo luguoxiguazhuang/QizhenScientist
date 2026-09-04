@@ -1,0 +1,12 @@
+{
+  "use_same_field": true,
+  "use_cross_domain": true,
+  "preferred_radii": [
+    "R1",
+    "R2"
+  ],
+  "same_field_top_k": 2,
+  "num_cross_domains": 2,
+  "cross_domain_top_k_per_domain": 2,
+  "rationale": "Same-field retrieval is needed to remain grounded in plastic-waste spectroscopy, sorting, and recycling feasibility. Cross-domain retrieval is justified because structural bottlenecks—contamination-induced signal distortion, domain shift, uncertainty-aware fusion, and linkage to material-flow decisions—suggest transferable mechanisms from fields such as chemometrics, remote sensing, process control, or multimodal triage."
+}

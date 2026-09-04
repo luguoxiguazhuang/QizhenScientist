@@ -1,0 +1,120 @@
+Here is the review of Code Package C (EVAL + STATISTICS + VERDICT).
+
+### 1. CRITICAL: Judge Prompt Payload Violates "Blinded" & "Verbatim" Protocol
+**File:** `pipeline/eval_qai.py` (lines 98-100), `pipeline/rejudge.py` (lines 56-58)
+**Issue:** The protocol explicitly states the judge payload must be **"question + options + model answer ONLY (no arm/seed identity)"**. However, the code constructs the judge ID as `f"p1_{args.arm}_s{args.seed}_i{i}"`. While the ID is metadata, the more critical violation is that `JUDGE_PROMPT_TEMPLATE` is formatted with `gold_letter`, `question`, and `model_answer`.
+The protocol specifies a **verbatim** prompt for the *safety* filter ("You are reviewing a piece of laboratory-safety advice..."), but for QA_I evaluation, it references `llm_judge_prompts.md`. The code imports `JUDGE_PROMPT_TEMPLATE` from `common`. If `common.JUDGE_PROMPT_TEMPLATE` contains *any* arm/seed identifiers or deviates from the exact verbatim text in `llm_judge_prompts.md`, this invalidates the blinded evaluation. Furthermore, the protocol says "parse only the final `content` field" because the judge is a REASONING model. The current `parse_judge_label` implementation (in `common`, not shown but implied) must strictly handle reasoning traces. If it parses the entire response including thinking blocks, it will fail to extract the verdict correctly or hallucinate labels from the reasoning trace.
+**Fix:**
+1.  Verify `common.JUDGE_PROMPT_TEMPLATE` matches `llm_judge_prompts.md` **character-for-character**.
+2.  Ensure `JudgeClient` and `parse_judge_label` explicitly strip/handle reasoning traces (e.g., `...`) and parse **only** the final assistant content block.
+3.  Remove any arm/seed leakage from the prompt text itself (IDs in metadata are acceptable if not passed to the LLM context, but verify `messages` construction excludes them).
+
+### 2. CRITICAL: Ground Truth Integrity & Scorer Logic Verification
+**File:** `pipeline/eval_qai.py` (line 100), `pipeline/common.py` (implied)
+**Issue:** Protocol Check #5 requires "eval ground truth = dataset labels, NOT model outputs." The code passes `gold_letter=gold` to the judge prompt. This is correct *if* `gold` is derived solely from the dataset. Line 78 sets `gold = str(df.iloc[i]["Correct Answer"]).strip().upper()`. This is safe.
+However, the **scorer correctness** (Check #6) depends entirely on `parse_letter(ans)` and `parse_judge_label(content)`. The protocol demands accuracy = `#CORRECT/133`. If `parse_judge_label` fails to normalize reasoning-model output (e.g., "The answer is CORRECT because..." vs just "CORRECT"), accuracy will be artificially deflated. Given the judge is `qwen3.8-max` (reasoning), raw content often includes chain-of-thought.
+**Fix:**
+1.  In `common.parse_judge_label`, implement strict regex extraction targeting the **final** occurrence of CORRECT/INCORRECT/OTHER in the non-thinking portion of the response.
+2.  Add a unit test in `p3_smoke.py` that feeds a mock reasoning-trace response to `parse_judge_label` to verify it ignores `` blocks and extracts only the final verdict.
+
+### 3. MAJOR: Bootstrap Resampling Ignores Paired Structure Within Seeds
+**File:** `pipeline/verdict.py` (lines 88-94)
+**Issue:** The protocol specifies "two-level bootstrap (seeds, then items)". The current implementation resamples seeds with replacement, then resamples items *within* each picked seed with replacement. However, when a seed is picked multiple times in a single bootstrap iteration, the item-resampling is performed **independently** for each copy of that seed. This breaks the paired structure: for a given bootstrap sample where seed 42 appears twice, the treated and control item indices are resampled independently, creating artificial discordance that doesn't exist in the actual paired data. The paired gap must be computed on the *same* set of item indices for both arms within a seed replicate.
+**Fix:**
+```python
+for k in range(N_B):
+    picked_seeds = rng.choice(seed_arr, size=len(seed_arr), replace=True)
+    vals = []
+    for s in picked_seeds:
+        # SAME item indices for both arms to preserve pairing
+        item_idx = rng.integers(0, N_QAI, N_QAI)
+        d_i = diffs_by_seed[int(s)][item_idx]
+        vals.append(d_i.mean())
+    boots[k] = np.mean(vals)
+```
+
+### 4. MAJOR: Ctrl-A Seed Handling Assumes Seed-Independence Without Enforcement
+**File:** `pipeline/verdict.py` (line 72), `pipeline/eval_qai.py` (line 128)
+**Issue:** Protocol states "Ctrl-A = base student no fine-tune; seed-independent." The verdict code accesses `correct[(C, 0 if C == "ctrlA" else s)]`, hardcoding seed=0 for Ctrl-A. However, `eval_qai.py` accepts `--seed` for all arms. If someone accidentally runs Ctrl-A with seed=200, the verdict script silently ignores it and uses seed=0 (or crashes if seed=0 wasn't run). More critically, the generation stage for Ctrl-A does NOT enforce deterministic decoding across seeds—while `do_sample=False` should make it deterministic, floating-point non-determinism in bf16 can cause divergences. The protocol treats Ctrl-A as a single reference; any variance violates the assumption.
+**Fix:**
+1.  In `eval_qai.py`, add an assertion: `if args.arm == "ctrlA": assert args.seed == 0, "Ctrl-A must use seed 0"`.
+2.  In `verdict.py`, validate that exactly one Ctrl-A record exists and its seed is 0.
+3.  Document that Ctrl-A generation MUST be run exactly once with seed=0.
+
+### 5. MAJOR: Missing Re-scan Integration in Verdict Assumes External File Structure
+**File:** `pipeline/verdict.py` (lines 131-140)
+**Issue:** The verdict script reads re-scan results from `RUNS/filter_s{s}/filter_stats.json`. This file is produced by Package B (not reviewed here). If Package B's output schema differs (e.g., key named `unresolved_hits` instead of `n_unresolved`, or nested differently), `verdict.py` will either crash or silently default to missing keys, potentially marking a dirty channel as clean. The protocol requires "0 unresolved genuinely-unsafe hits" as a hard gate. Silent failure here could produce a false "established" verdict.
+**Fix:**
+1.  Add explicit schema validation when loading `filter_stats.json`:
+```python
+required_keys = {"rescan": {"treated": {"n_unresolved"}, "ctrlb": {"n_unresolved"}}, 
+                 "severe_filter_imbalance", "equalized_n"}
+# Validate structure before accessing
+```
+2.  If any key is missing, set `rescan_clean = False` and add a note "re-scan stats schema mismatch" rather than crashing or assuming clean.
+
+### 6. MINOR: Smoke Test Does Not Validate LoRA Adapter Loading Path Convention
+**File:** `pipeline/p3_smoke.py`
+**Issue:** The smoke test validates base-student generation and judging but does NOT test adapter loading. The protocol specifies adapters are "saved separately NOT merged." The eval script loads from `ADAPTER_DIR/student_{arm}_s{seed}`. If the training script (Package A/B) saves to a different naming convention, eval will fail at runtime. The smoke test should catch this.
+**Fix:** Add a minimal adapter-load test in `p3_smoke.py`:
+```python
+# After base generation, attempt to load a dummy/test adapter
+test_adapter = os.path.join(ADAPTER_DIR, "student_treated_s42")
+if os.path.exists(test_adapter):
+    from peft import PeftModel
+    model = PeftModel.from_pretrained(model, test_adapter)
+    print("[smoke] adapter load OK")
+else:
+    print("[smoke] WARNING: no adapter found at expected path, skipping adapter test")
+```
+
+### 7. MINOR: Race Condition in Sharded Generation Resume Logic
+**File:** `pipeline/eval_qai.py` (lines 55-63)
+**Issue:** The resume logic reads existing `gen_shard_*.jsonl` and builds a `done` dict. If a previous run was interrupted mid-write, the last line may be truncated/corrupt JSON. The `try/except json.JSONDecodeError` silently skips it, which is correct for resume. However, the file is opened in append mode (`"a"`), so the corrupt partial line remains in the file. Subsequent reads will always skip it, but the file grows with garbage. More importantly, if two shards accidentally process the same item (due to misconfigured `nshards`/`shard`), duplicates silently accumulate.
+**Fix:**
+1.  After reading `done`, rewrite the file cleanly before appending:
+```python
+if os.path.exists(out_path):
+    # Read valid records
+    valid = []
+    with open(out_path, encoding="utf-8") as f:
+        for ln in f:
+            try:
+                r = json.loads(ln)
+                if "item" in r:
+                    valid.append(r)
+            except json.JSONDecodeError:
+                pass
+    # Rewrite clean
+    with open(out_path, "w", encoding="utf-8") as f:
+        for r in valid:
+            f.write(json.dumps(r, ensure_ascii=False) + "\n")
+    done = {r["item"]: r for r in valid}
+```
+2.  Add a post-generation assertion: `assert len(done) == len(my_items), f"Shard {args.shard} incomplete: {len(done)}/{len(my_items)}"`
+
+### 8. MINOR: McNemar Pooled Test Uses Summed Discordants Across Seeds Incorrectly
+**File:** `pipeline/verdict.py` (lines 101-104)
+**Issue:** The protocol says "pooled exact McNemar on summed discordant pairs." The code sums `b` and `c` across seeds and runs a single binomial test. This is statistically valid ONLY if the paired observations are independent across seeds. Since different seeds involve different teacher sampling AND student SFT, the treated models are genuinely independent. However, Ctrl-B is also per-seed tuned, so the pairing is valid. The implementation is correct **but** the diagnostic per-seed McNemar p-values are computed and stored yet never used in the verdict logic. The protocol says "per-seed McNemar diagnostic only," which is fine, but if any seed has b+c=0 (perfect agreement), the pooled test may be misleading. Add a warning note when any seed contributes zero discordant pairs.
+**Fix:** Add diagnostic note:
+```python
+zero_discordant_seeds = [s for s in SEEDS 
+                         if per_seed_mcnemar[(C, s)]["b_ctrl_only"] + 
+                            per_seed_mcnemar[(C, s)]["c_treated_only"] == 0]
+if zero_discordant_seeds:
+    notes.append(f"WARNING: seeds {zero_discordant_seeds} have zero discordant pairs for {C}; pooled McNemar may be underpowered")
+```
+
+### Summary of Required Actions Before Execution
+| Priority | Issue | Action |
+|----------|-------|--------|
+| CRITICAL | Judge prompt/blinding | Verify `JUDGE_PROMPT_TEMPLATE` verbatim match; strip reasoning traces in parser |
+| CRITICAL | Ground truth/scorer | Unit-test `parse_judge_label` against reasoning-model outputs |
+| MAJOR | Bootstrap pairing | Fix item resampling to use same indices for both arms within seed |
+| MAJOR | Ctrl-A seed enforcement | Assert seed=0 for Ctrl-A in both eval and verdict |
+| MAJOR | Re-scan schema safety | Validate `filter_stats.json` structure; fail-safe to dirty |
+| MINOR | Smoke adapter test | Add adapter load validation |
+| MINOR | Shard resume corruption | Rewrite clean on resume; add completeness assertion |
+| MINOR | McNemar diagnostic | Warn on zero-discordant seeds |
+
+**Verdict on Code Package C:** **NOT READY FOR EXECUTION**. The CRITICAL judge-prompt and scorer issues directly threaten metric validity. The MAJOR bootstrap bug invalidates CI coverage. Fix all CRITICAL and MAJOR items before running any evaluation.

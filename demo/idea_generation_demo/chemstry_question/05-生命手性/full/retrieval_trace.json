@@ -1,0 +1,1803 @@
+{
+  "version": 1,
+  "events": [
+    {
+      "index": 1,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "prebiotic symmetry breaking mechanisms generating enantiomeric excess",
+        "keywords": [
+          {
+            "text": "prebiotic symmetry",
+            "score": 10
+          },
+          {
+            "text": "symmetry breaking",
+            "score": 9
+          },
+          {
+            "text": "breaking mechanisms",
+            "score": 8
+          },
+          {
+            "text": "mechanisms generating",
+            "score": 7
+          },
+          {
+            "text": "generating enantiomeric",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W3081296588",
+          "title": "In Situ Mass Spectrometric and Kinetic Investigations of Soai's Asymmetric Autocatalysis",
+          "abstract": "Chemical reactions that lead to a spontaneous symmetry breaking or amplification of the enantiomeric excess are of fundamental interest in explaining the formation of a homochiral world. An outstanding example is Soai's asymmetric autocatalysis, in which small enantiomeric excesses of the added product alcohol are a...",
+          "year": 2020,
+          "score": 0.7546
+        },
+        {
+          "paper_id": "https://openalex.org/W2092356369",
+          "title": "Nonlinear Effects in Asymmetric Synthesis and Stereoselective Reactions: Ten Years of Investigation",
+          "abstract": "Who would have thought before 1986 that an enantiomerically impure catalyst could give a product in an asymmetric synthesis with an enantiomeric excess higher than that of the catalyst? Until then it was assumed that the ee value of the product (ee<sub>prod</sub> ) from an asymmetric synthesis was linearly correlate...",
+          "year": 1998,
+          "score": 0.6999
+        },
+        {
+          "paper_id": "https://openalex.org/W4412347694",
+          "title": "SPONTANEOUS CHIRALITY OF THE ORGANIC ENVIRONMENT AS A SIGN OF EXTERNAL RADIATION EXPOSURE",
+          "abstract": "This study investigates the phenomenon of spontaneous mirror symmetry breaking as a fundamental mechanism underlying the emergence of chiral purity in biological systems. It examines the transition from a racemic state, characteristic of inanimate matter, to the exclusive homochirality observed in living organisms, ...",
+          "year": 2025,
+          "score": 0.6282
+        },
+        {
+          "paper_id": "https://openalex.org/W6912896079",
+          "title": "In silico investigations towards homochirality in the context of the origin of life",
+          "abstract": "The future of the improvements of industrial and chemical processes is likely to be data-based. An elementary implementation for this are continuously developed tools to gain in-sights into complex reaction networks. This work provides insights into the design and ap-plication of two reaction kinetic tools and exhib...",
+          "year": 2023,
+          "score": 0.615
+        },
+        {
+          "paper_id": "https://openalex.org/W4386152925",
+          "title": "Achiral 2‐pyridone and 4‐aminopyridine act as chiral inducers of asymmetric autocatalysis with amplification of enantiomeric excess via the formation of chiral crystals",
+          "abstract": "Enantiomorphous crystals of achiral 2-pyridone and 4-aminopyridine served as sources of chirality, to induce the asymmetric autocatalysis of 5-pyrimidyl alkanol during the asymmetric addition of diisopropylzinc to the corresponding pyrimidine-5-carbaldehyde, that is, the Soai reaction. Following a significant amplif...",
+          "year": 2023,
+          "score": 0.5873
+        },
+        {
+          "paper_id": "https://openalex.org/W2106878298",
+          "title": "From Ostwald Ripening to Single Chirality",
+          "abstract": "A century ago Wilhelm Ostwald received the Nobel Prize for Chemistry. Although Ostwald was never significantly involved with the phenomenon of chirality, one of his discoveries, Ostwald ripening, is thought to be involved in a recently discovered method in which grinding-induced attrition is used to transform racemi...",
+          "year": 2009,
+          "score": 0.5754
+        },
+        {
+          "paper_id": "https://openalex.org/W4249151463",
+          "title": "Energy Threshold for Chiral Symmetry Breaking in Molecular Self-Replication",
+          "abstract": "We have determined the energy required for symmetry breaking and chiral amplification in the Soai autocatalytic reaction. This work examines the likelihood that parity violation energy difference of enantiomers is implicated in the origin of chiral symmetry breaking and highlights the challenges inherent in a search...",
+          "year": 2019,
+          "score": 0.5679
+        },
+        {
+          "paper_id": "https://openalex.org/W6884435516",
+          "title": "Symmetry Breaking: Polymorphic\\nForm Selection by Enantiomers\\nof the Melatonin Agonist and Its Missing Polymorph",
+          "abstract": "Synthesis of a melatonin agonist for treatment of sleep\\ndisorders\\nproduced a pair of enantiomers, of which one is biologically active.\\nTwo polymorphs were discovered using the inactive enantiomer, conserving\\nthe active enantiomer for toxicological testing. Later studies with\\nthe active enantiomer yielded only t...",
+          "year": 2016,
+          "score": 0.565
+        },
+        {
+          "paper_id": "https://openalex.org/W4404639395",
+          "title": "Prebiotic formation of enantiomeric excess D-amino acids on natural pyrite",
+          "abstract": "",
+          "year": 2024,
+          "score": 0.5628
+        },
+        {
+          "paper_id": "https://openalex.org/W2337269811",
+          "title": "Molecular Asymmetry in Prebiotic Chemistry: An Account from Meteorites",
+          "abstract": "Carbonaceous Chondrite (CC) meteorites are fragments of asteroids, solar planetesimals that never became large enough to separate matter by their density, like terrestrial planets. CC contains various amounts of organic carbon and carry a record of chemical evolution as it came to be in the Solar System, at the time...",
+          "year": 2016,
+          "score": 0.5568
+        },
+        {
+          "paper_id": "https://openalex.org/W2017282159",
+          "title": "Stability of racemic and chiral steady states in open and closed chemical systems",
+          "abstract": "",
+          "year": 2008,
+          "score": 0.549
+        },
+        {
+          "paper_id": "https://openalex.org/W3120596068",
+          "title": "Emergence of homochirality in large molecular systems",
+          "abstract": "The selection of a single molecular handedness, or homochirality across all living matter, is a mystery in the origin of life. Frank's seminal model showed in the '50s how chiral symmetry breaking can occur in nonequilibrium chemical networks. However, an important shortcoming in this classic model is that it consid...",
+          "year": 2021,
+          "score": 0.5442
+        },
+        {
+          "paper_id": "https://openalex.org/W4403571011",
+          "title": "Dual-Path Mechanism of Amino Acid Racemization Mediated by Quantum Mechanical Tunneling",
+          "abstract": "The racemization of amino acids constitutes one of the most elemental and critical reactions, holding primitive significance for understanding the life's origin and maintenance. Nevertheless, its mechanism at the atomic level has been persistently misunderstood for more than a century. In this work, we demonstrate t...",
+          "year": 2024,
+          "score": 0.5439
+        },
+        {
+          "paper_id": "https://openalex.org/W4313574776",
+          "title": "Origin of Homochirality: The Formation and Stability of Homochiral Peptides in Aqueous Prebiological Environment in the Earth’s Crust",
+          "abstract": "The oldest forms of living organisms on Earth are about 3.5 billion years old, and they are found in hydrothermal deposits, and it is often hypothesized that life originated there. However, hydrothermal systems with a fairly strong flow of chemical components are not the optimal place for the prebiological self-asse...",
+          "year": 2023,
+          "score": 0.5435
+        },
+        {
+          "paper_id": "https://openalex.org/W2003264025",
+          "title": "Mirror symmetry breaking as a problem in dynamic critical phenomena",
+          "abstract": "The critical properties of the Frank model of spontaneous chiral synthesis are discussed by applying results from the field theoretic renormalization group (RG). The long time and long wavelength features of this microscopic reaction scheme belong to the same universality class as multicolored directed percolation p...",
+          "year": 2007,
+          "score": 0.5402
+        },
+        {
+          "paper_id": "https://openalex.org/W3037061723",
+          "title": "Physical origin of homochirality in life",
+          "abstract": "It seems to be well known that life cannot arise in a racemic mixture of molecules (L � D). The various physical mechanisms that could influence the homochirality of the molecules responsible for life are reviewed together with a model where these molecules might be produced in the galaxy prior to the formation of t...",
+          "year": 1996,
+          "score": 0.5377
+        },
+        {
+          "paper_id": "https://openalex.org/W2134618805",
+          "title": "Homochiral Growth Through Enantiomeric Cross-Inhibition",
+          "abstract": "",
+          "year": 2005,
+          "score": 0.5357
+        },
+        {
+          "paper_id": "https://openalex.org/W1909037853",
+          "title": "Viedma ripening: a reliable crystallisation method to reach single chirality",
+          "abstract": "Crystallisation processes have evolved to practical methods that allow isolation of an enantiopure product in high yield. Viedma ripening in particular enables access to enantiopure products in a reliable way, simply through grinding of crystals in a solution. This tutorial review covers the basic principles behind ...",
+          "year": 2015,
+          "score": 0.5266
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "chirality effects on molecular recognition in enzymes and receptors",
+        "keywords": [
+          {
+            "text": "chirality effects",
+            "score": 10
+          },
+          {
+            "text": "effects molecular",
+            "score": 9
+          },
+          {
+            "text": "molecular recognition",
+            "score": 8
+          },
+          {
+            "text": "recognition enzymes",
+            "score": 7
+          },
+          {
+            "text": "enzymes receptors",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W2600292303",
+          "title": "HOST-[2]ROTAXANE: A NOVEL MOLECULAR MACHINE",
+          "abstract": "In recent years, a major goal in the field of artificial receptors has been the development of molecular machines capable of catalyzing organic reactions.The hydrolysis of organophosphates is of particular importance due to the dangers these compounds present.Organophosphates such as paraoxon, VX and sarin are highl...",
+          "year": 2003,
+          "score": 0.7665
+        },
+        {
+          "paper_id": "https://openalex.org/W2328774257",
+          "title": "Chemistry of Amide-based Axial Chirality: Elucidation of the Active Conformation Recognized by Enzymes and Receptors",
+          "abstract": "Axial chirality caused by an sp(2)-sp(2) axis at Ar-N(C=O) (a conformational stereogenic axis) in pharmaceutically important seven-membered-ring benzolactams (I) and N-acyl-benzazepines and related nuclei (II) was investigated to verify the importance of the atropisomerism in the biologically active molecules. Anili...",
+          "year": 2013,
+          "score": 0.6642
+        },
+        {
+          "paper_id": "https://openalex.org/W1754154308",
+          "title": "Studies in Molecular Recognition: Hydrophobic Binding of Water-Soluble Guests by High Symmetry, Chiral Hosts",
+          "abstract": "A new class of high-symmetry, water-soluble receptors has been synthesized. The enantiomerically pure hosts are D₂-symmetric and are synthesized in 8 steps with an overall yield of 5-10%. An asymmetric Diels-Alder reaction between di-(+)-menthyl fumarate and 2,6-di-t-butyldimethylsiloxyanthracene leads to two diaste...",
+          "year": 2013,
+          "score": 0.6599
+        },
+        {
+          "paper_id": "https://openalex.org/W3038113909",
+          "title": "Physico-chemical study of complexation of silver ion (Ag+) by macrocyclic molecules (hexa-Helicenes) based on statistical physics theory: new description of a cancer drug",
+          "abstract": "In recent papers, it is found that the silver-[6]Helicene complex can be used as a cancer drug but the interaction silver-hexaHelicene has not yet proven. The idea of this paper is to investigate the complexation process of the [6]Helicene by the silver metal (Ag<sup>+</sup>) using three types of adsorbates. Indeed,...",
+          "year": 2020,
+          "score": 0.6577
+        },
+        {
+          "paper_id": "https://openalex.org/W2018417554",
+          "title": "Molecular chirality and chiral parameters",
+          "abstract": "The fundamental issues of symmetry related to chirality are discussed and applied to simple situations relevant to liquid crystals. The authors show that any chiral measure of a geometric object is a pseudoscalar (invariant under proper rotations but changing sign under improper rotations) and must involve three-poi...",
+          "year": 1999,
+          "score": 0.6489
+        },
+        {
+          "paper_id": "https://openalex.org/W2929838902",
+          "title": "Biomedical aspects of chiral molecules",
+          "abstract": "This article defines some of the terms used in chiral chemistry and some of the basic mechanistic issues that arise in stereochemistry in pharmacology. Attention is also drawn to the impact of stereochemistry on drug regulation and its significance for new drug development. The stereoselectivity of drugs is underpin...",
+          "year": 2004,
+          "score": 0.6386
+        },
+        {
+          "paper_id": "https://openalex.org/W2000236686",
+          "title": "Chiral Recognition Mechanisms",
+          "abstract": "ADVERTISEMENT RETURN TO ISSUEPREVFEATURESNEXTChiral Recognition MechanismsAlain BerthodCite this: Anal. Chem. 2006, 78, 7, 2093–2099Publication Date (Web):April 1, 2006Publication History Published online1 April 2006Published inissue 1 April 2006https://doi.org/10.1021/ac0693823RIGHTS & PERMISSIONSArticle Views5393A...",
+          "year": 2006,
+          "score": 0.6319
+        },
+        {
+          "paper_id": "https://openalex.org/W4408681067",
+          "title": "Molecular Recognition and Chiral Discrimination from NMR and Multi‐Scale Simulations",
+          "abstract": "Chiral molecules are particularly interesting to the pharmaceutical and agrochemical sectors due to their chemical and physical properties. Separation and identification of enantiomers are critical for a broad range of compounds, and discriminating stereoisomers in solution remains a key analytical challenge. Nuclea...",
+          "year": 2025,
+          "score": 0.6235
+        },
+        {
+          "paper_id": "https://openalex.org/W3096812438",
+          "title": "Push or Pull for a Better Selectivity? A Study on the Electronic Effects of Substituents of the Pyridine Ring on the Enantiomeric Recognition of Chiral Pyridino-18-Crown-6 Ethers",
+          "abstract": "Seven dimethyl-substituted optically active pyridino-18-crown-6 ethers containing various substituents at position 4 of the pyridine ring were studied with regards to the electron-donating and -withdrawing effects of substituents on enantiomeric recognition. In order to compile this set of compounds, we prepared fou...",
+          "year": 2020,
+          "score": 0.6173
+        },
+        {
+          "paper_id": "https://openalex.org/W2014150383",
+          "title": "Molecular Recognition by a Cationic Cage-type Host Bearing Chiral Binding Sites",
+          "abstract": "Abstract The guest-binding behavior of a novel cage-type host bearing chiral binding sites was examined in aqueous media. The binding constants for inclusion of non-ionic and anionic dyes were in the order of 105–106 mol−1 dm3, and the circular dichroism was induced on an incorporated achiral guest through its stere...",
+          "year": 1991,
+          "score": 0.6085
+        },
+        {
+          "paper_id": "https://openalex.org/W3083544511",
+          "title": "Chiral Recognition of Flexible Melatonin Receptor Ligands Induced by Conformational Equilibria",
+          "abstract": "<i>N</i>-anilinoethylamides are a class of melatoninergic agents with the aniline portion mimicking the indole ring of the natural ligand and the ethylamide chain reproducing that of melatonin. The simplest compound in this class, <i>N</i>-{2-[(3-methoxyphenyl)methylamino]ethyl}acetamide (UCM793), has nanomolar bind...",
+          "year": 2020,
+          "score": 0.606
+        },
+        {
+          "paper_id": "https://openalex.org/W4371784314",
+          "title": "Enantioselective amino acid interactions in solution",
+          "abstract": "Enantiomeric excesses (ee) of L-amino acids in meteorites are higher than 10%, especially for isovaline (Iva). This suggests the existence of some kind of triggering mechanism responsible for the amplification of the ee from an initial small value. Here, we investigate the dimeric molecular interactions of alanine (...",
+          "year": 2023,
+          "score": 0.5999
+        },
+        {
+          "paper_id": "https://openalex.org/W2005911340",
+          "title": "HYDROXYCARBOXYLIC ACIDS IN CHIRAL RECOGNITION: MODELING THE AMINE - HYDROXYCARBOXYLIC ACID INTERACTIONS*",
+          "abstract": "Crystal structures of diastereomeric salts of tartaric acid and l,2-trans-diaminocyclohexane stimulated our interest in elucidating the mode of mutual interactions between the acid and the amine. For this purpose quantum mechanical methods were used to expound various modes of intermolecular recognition in vacuo, an...",
+          "year": 2003,
+          "score": 0.5975
+        },
+        {
+          "paper_id": "https://openalex.org/W4392718957",
+          "title": "Homochiral <i>vs.</i> heterochiral preference in chiral self-recognition of cyclic diols",
+          "abstract": "The structure and clustering propensity of a chiral derivative of <i>cis</i>-1,2-cyclohexanediol, namely, 1-phenyl-<i>cis</i>-1,2-cyclohexanediol (<i>cis</i>-PCD), has been studied under supersonic expansion conditions by combining laser spectroscopy with quantum chemistry calculations. The presence of the phenyl su...",
+          "year": 2024,
+          "score": 0.5941
+        },
+        {
+          "paper_id": "https://openalex.org/W3204072862",
+          "title": "CHIRAL MOLECULAR RECOGNITION TRENDS IN AROMATIC AND HELICAL SYSTEMS REVEALED WITH ROTATIONAL SPECTROSCOPY",
+          "abstract": "The rules of engagement for chiral molecules have evolved beyond the static \"three-point\" interaction picture. Models where weak intermolecular interactions compete and have a decisive act in establishing the molecular fit are the new travel guides to molecular recognition.\\\\footnote{A. Zehnacker, M. Suhm. {\\\\it Ang...",
+          "year": 2021,
+          "score": 0.5885
+        },
+        {
+          "paper_id": "https://openalex.org/W4311731478",
+          "title": "Molecular versus structural chirality",
+          "abstract": "The rigorous proof that a structure crystallizing in any of the 65 Sohncke types of space groups is necessarily chiral is presented.",
+          "year": 2022,
+          "score": 0.5731
+        },
+        {
+          "paper_id": "https://openalex.org/W2332121828",
+          "title": "Molecular Recognition and Biological Functions.",
+          "abstract": "",
+          "year": 1999,
+          "score": 0.5658
+        },
+        {
+          "paper_id": "https://openalex.org/W2164050728",
+          "title": "Binding Affinities of Host–Guest, Protein–Ligand, and Protein–Transition‐State Complexes",
+          "abstract": "The affinities of hosts-ranging from small synthetic cavitands to large proteins-for organic molecules are well documented. The average association constants for the binding of organic molecules by cyclodextrins, synthetic hosts, and albumins in water, as well as of catalytic antibodies or enzymes for substrates are...",
+          "year": 2003,
+          "score": 0.5655
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Is molecular homochirality a necessary requirement for life, and what biochemical or evolutionary mechanisms explain the dominance of specific molecular handedness in known biology?",
+        "keywords": [
+          {
+            "text": "biological homochirality",
+            "score": 10
+          },
+          {
+            "text": "origin of chirality",
+            "score": 9
+          },
+          {
+            "text": "enantiomeric excess",
+            "score": 8
+          },
+          {
+            "text": "biomolecular handedness",
+            "score": 7
+          },
+          {
+            "text": "stereochemistry of life",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4205626923",
+          "title": "Asymmetry in Biological Homochirality",
+          "abstract": "Chirality, or handedness, is a fundamental physical characteristic, which spans the length scales ranging from elementary particles to the chiral asymmetry of spiral galaxies. The way in which chirality in chemistry, or molecular handedness, may have emerged in a primitive terrestrial environment, and how it can be ...",
+          "year": 2021,
+          "score": 0.7193
+        },
+        {
+          "paper_id": "https://openalex.org/W2743752810",
+          "title": "The problem on the origin of homochirality in nature",
+          "abstract": "The property of chirality is non-superimposable forms that are mirror images of one another, as are left and right hands. The chirality and symmetry breaking in nature are important phenomenon. From fundamental particle and molecule to matter and universal system, there are chirality and symmetry breaking at differe...",
+          "year": 2017,
+          "score": 0.6647
+        },
+        {
+          "paper_id": "https://openalex.org/W4413772329",
+          "title": "The Origin of Biomolecular Homochirality",
+          "abstract": "The origin of homochirality in biomolecules is a central problem in the study of the origin of life and is fundamental to understanding the nature of life itself. Homochirality—the predominance of specific chiral forms of molecules in three-dimensional space—is essential for biological function, as molecular chirali...",
+          "year": 2025,
+          "score": 0.6501
+        },
+        {
+          "paper_id": "https://openalex.org/W3037061723",
+          "title": "Physical origin of homochirality in life",
+          "abstract": "It seems to be well known that life cannot arise in a racemic mixture of molecules (L � D). The various physical mechanisms that could influence the homochirality of the molecules responsible for life are reviewed together with a model where these molecules might be produced in the galaxy prior to the formation of t...",
+          "year": 1996,
+          "score": 0.6279
+        },
+        {
+          "paper_id": "https://openalex.org/W4403571011",
+          "title": "Dual-Path Mechanism of Amino Acid Racemization Mediated by Quantum Mechanical Tunneling",
+          "abstract": "The racemization of amino acids constitutes one of the most elemental and critical reactions, holding primitive significance for understanding the life's origin and maintenance. Nevertheless, its mechanism at the atomic level has been persistently misunderstood for more than a century. In this work, we demonstrate t...",
+          "year": 2024,
+          "score": 0.614
+        },
+        {
+          "paper_id": "https://openalex.org/W2092356369",
+          "title": "Nonlinear Effects in Asymmetric Synthesis and Stereoselective Reactions: Ten Years of Investigation",
+          "abstract": "Who would have thought before 1986 that an enantiomerically impure catalyst could give a product in an asymmetric synthesis with an enantiomeric excess higher than that of the catalyst? Until then it was assumed that the ee value of the product (ee<sub>prod</sub> ) from an asymmetric synthesis was linearly correlate...",
+          "year": 1998,
+          "score": 0.6096
+        },
+        {
+          "paper_id": "https://openalex.org/W3081296588",
+          "title": "In Situ Mass Spectrometric and Kinetic Investigations of Soai's Asymmetric Autocatalysis",
+          "abstract": "Chemical reactions that lead to a spontaneous symmetry breaking or amplification of the enantiomeric excess are of fundamental interest in explaining the formation of a homochiral world. An outstanding example is Soai's asymmetric autocatalysis, in which small enantiomeric excesses of the added product alcohol are a...",
+          "year": 2020,
+          "score": 0.6056
+        },
+        {
+          "paper_id": "https://openalex.org/W2016553440",
+          "title": "Generation of molecular chiral asymmetry through stirred crystallization",
+          "abstract": "In our earlier work we established that stirred crystallization of achiral compounds that crystallize in enantiomeric forms result in spontaneous chiral symmetry breaking. The asymmetry thus spontaneously generated is confined to the solid state. In this article, we present a case in which the crystal enantiomeric e...",
+          "year": 2002,
+          "score": 0.6048
+        },
+        {
+          "paper_id": "https://openalex.org/W1974691906",
+          "title": "Mirror symmetry breaking of silicon polymers—from weak bosons to artificial helix",
+          "abstract": "From elemental particles to human beings, matter and living worlds in our universe are dissymmetric with respect to mirror symmetry. Since the early 19th century, the origin of biomolecular handedness has been puzzling scientists. Nature's elegant bottom-up preference, however, sheds light on new concepts of generat...",
+          "year": 2009,
+          "score": 0.5609
+        },
+        {
+          "paper_id": "https://openalex.org/W2766765641",
+          "title": "[P4–435]: NON‐EQUILIBRIUM PHASE TRANSITION IN BIOCHEMICAL SYSTEMS: CHAIN OF CHIRALITY TRANSFER AS DETERMINANT OF BRAIN FUNCTIONAL LATERALITY — RELEVANCE TO ALZHEIMER DISEASE AND COGNITIVE PSYCHOLOGY",
+          "abstract": "The phenomenon of molecular chirality is relevant to brain functional laterality. At present, the essence of biochirality is widely recognized, appreciated, and exploited. Review of an advances in the broad field of biochirality connecting two poles of the phenomena: the atomic orbitals and the brain's cognitive fun...",
+          "year": 2017,
+          "score": 0.5436
+        },
+        {
+          "paper_id": "https://openalex.org/W3120596068",
+          "title": "Emergence of homochirality in large molecular systems",
+          "abstract": "The selection of a single molecular handedness, or homochirality across all living matter, is a mystery in the origin of life. Frank's seminal model showed in the '50s how chiral symmetry breaking can occur in nonequilibrium chemical networks. However, an important shortcoming in this classic model is that it consid...",
+          "year": 2021,
+          "score": 0.541
+        },
+        {
+          "paper_id": "https://openalex.org/W2733878863",
+          "title": "Raman optical activity (ROA) and surface-enhanced ROA (SE-ROA) of (+)-(R)-methyloxirane adsorbed on a Ag<sub>20</sub>cluster",
+          "abstract": "Chirality is ubiquitous in nature and plays an important role in biochemistry because biological function is largely dependent on the handedness of chiral molecules.",
+          "year": 2017,
+          "score": 0.5392
+        },
+        {
+          "paper_id": "https://openalex.org/W2047170382",
+          "title": "Mirror Symmetry Breaking in Helical Polysilanes: Preference between Left and Right of Chemical and Physical Origin",
+          "abstract": "From elemental particles to human beings, matter is dissymmetric with respect to mirror symmetry. In 1860, Pasteur conjectured that biomolecular handedness— homochirality—may originate from certain inherent dissymmetric forces existing in the universe. Kipping, a pioneer of organosilicon chemistry, was interested in...",
+          "year": 2010,
+          "score": 0.539
+        },
+        {
+          "paper_id": "https://openalex.org/W3015505794",
+          "title": "Chiral Dualism as an Instrument of Hierarchical Structure Formation in Molecular Biology",
+          "abstract": "The origin of chiral asymmetry in biology has attracted the attention of the research community throughout the years. In this paper we discuss the role of chirality and chirality sign alternation (L–D–L–D in proteins and D–L–D–L in DNA) in promoting self-organization in biology, starting at the level of single molec...",
+          "year": 2020,
+          "score": 0.5371
+        },
+        {
+          "paper_id": "https://openalex.org/W2782585031",
+          "title": "Prebiotic formation of cyclic dipeptides under potentially early Earth conditions",
+          "abstract": "Cyclic dipeptides, also known as 2,5-diketopiperazines (DKPs), represent the simplest peptides that were first completely characterized. DKPs can catalyze the chiral selection of reactions and are considered as peptide precursors. The origin of biochemical chirality and synthesis of peptides remains abstruse problem...",
+          "year": 2018,
+          "score": 0.5359
+        },
+        {
+          "paper_id": "https://openalex.org/W4294300276",
+          "title": "Perspectives on parity violation in chiral molecules: theory, spectroscopic experiment and biomolecular homochirality",
+          "abstract": "The reflection (or 'mirror') symmetry of space is among the fundamental symmetries of physics. It is connected to the conservation law for the quantum number parity and a fundamental 'non-observable' property of space (as defined by an absolute 'left-handed' or 'right-handed' coordinate system). The discovery of the...",
+          "year": 2022,
+          "score": 0.5311
+        },
+        {
+          "paper_id": "https://openalex.org/W4413769001",
+          "title": "Handedness Matters: Parallel Alignment of Electric and Magnetic Transition Dipole Moments in Chiral Additives Boosts Oxygen Evolution Reaction",
+          "abstract": "<title>Abstract</title> Homochirality, the uniformity in single molecular handedness, is a defining feature of life. Although universal in biology, the evolutionary advantage of selecting one enantiomer over its mirror image remains unresolved. One possible clue may lie in catalysis itself: recent studies demonstrat...",
+          "year": 2025,
+          "score": 0.528
+        },
+        {
+          "paper_id": "https://openalex.org/W2276369823",
+          "title": "Chirality in Natural and Applied Science",
+          "abstract": "",
+          "year": 2003,
+          "score": 0.525
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "autocatalytic networks and Soai reaction models for chiral amplification",
+        "keywords": [
+          {
+            "text": "autocatalytic networks",
+            "score": 10
+          },
+          {
+            "text": "networks soai",
+            "score": 9
+          },
+          {
+            "text": "soai reaction",
+            "score": 8
+          },
+          {
+            "text": "reaction models",
+            "score": 7
+          },
+          {
+            "text": "models chiral",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W2531571460",
+          "title": "Mechanistic study of asymmetric amplification in the Soai autocatalytic reaction",
+          "abstract": "Soai’s discovery of chiral amplification in the autocatalytic alkylation of pyrimidine-5-carbaldehyde with diisopropylzinc is one of the most noteworthy findings of the last decade of the 20th century. This is the first experimental confirmation of an early theoretical rationalisation of autocatalysis as a mechanism...",
+          "year": 2010,
+          "score": 0.7739
+        },
+        {
+          "paper_id": "https://openalex.org/W3081296588",
+          "title": "In Situ Mass Spectrometric and Kinetic Investigations of Soai's Asymmetric Autocatalysis",
+          "abstract": "Chemical reactions that lead to a spontaneous symmetry breaking or amplification of the enantiomeric excess are of fundamental interest in explaining the formation of a homochiral world. An outstanding example is Soai's asymmetric autocatalysis, in which small enantiomeric excesses of the added product alcohol are a...",
+          "year": 2020,
+          "score": 0.7673
+        },
+        {
+          "paper_id": "https://openalex.org/W3038609887",
+          "title": "Kinetic relationship in parallel autocatalytic amplifications of pyridyl alkanol and chiral trigger pyrimidyl alkanol",
+          "abstract": "Experimental and kinetic analysis of a chemical system combines autocatalytic amplification of 2-alkynyl-5-pyrimidyl alkanol 2 and 6-alkynyl-3-pyridyl akanol 4 in which 2 acts as a chiral trigger and 4 being the subsequent autocatalyst. Starting from a very low initial ee, both alkanols are produced with high enanti...",
+          "year": 2020,
+          "score": 0.7397
+        },
+        {
+          "paper_id": "https://openalex.org/W2317102396",
+          "title": "Reaction System Involving Amplification of Chiral Selectivity by Secondary Nucleation.",
+          "abstract": "Chiral autocatalysis is the system in which each enantiomer acts as a catalyst for its own production and an anticatalyst for the production of the other enantiomer. Predominant production of one enantiomer would occur if the reaction system involved chiral autocatalysis, since a slight difference between each enant...",
+          "year": 1996,
+          "score": 0.6863
+        },
+        {
+          "paper_id": "https://openalex.org/W3210500841",
+          "title": "Structural Contributions to Autocatalysis and Asymmetric Amplification in the Soai Reaction",
+          "abstract": "Diisopropylzinc alkylation of pyrimidine aldehydes – the Soai reaction, with its astonishing attribute of amplifying asymmetric autocatalysis, occupies a unique position in organic chemistry and stands as an eminent challenge for mechanistic elucidation. A new paradigm of ‘mixed catalyst substrate’ experiments with ...",
+          "year": 2020,
+          "score": 0.6354
+        },
+        {
+          "paper_id": "https://openalex.org/W2480481558",
+          "title": "Few-body reaction frameworks for the study of light nuclei",
+          "abstract": "Three-body reaction formalisms, the exact Faddeev/AGS approach and the approximate reaction models such as CDCC, DWIA and Glauber multiple scattering approach are reviewed. The limits of the validity of the reaction approaches and recent developments and outlook are presented.",
+          "year": 2016,
+          "score": 0.6291
+        },
+        {
+          "paper_id": "https://openalex.org/W3004925664",
+          "title": "Absolute Autocatalytic Amplification under Heterogenous Phase Conditions Involving Subsequent Hydride Transfer and a Hemiacetal Intermediate",
+          "abstract": "Abstract Abstract : In contrast to the homogenous phase, absolute asymmetric amplification of pyridine alkanol is observed under heterogenous conditions. The reaction of iPr 2 Zn vapor on a solid powder of pyridine carbaldehyde induced autocatalytic amplification of chirality providing the alkanol product with an en...",
+          "year": 2020,
+          "score": 0.5951
+        },
+        {
+          "paper_id": "https://openalex.org/W6940468753",
+          "title": "Violation of Distribution Symmetry in Statistical Evaluation of Absolute Enantioselective\\nSynthesis",
+          "abstract": "Enantiomeric excesses obtained in absolute enantioselective synthesis by chiral autocatalysis (Soai-reaction)\\nwere statistically analyzed. Two sets of parallel experiments, which were performed under chemically different\\nconditions, are available. One group contains 37, while the other contains 84 preparative resu...",
+          "year": 2007,
+          "score": 0.5854
+        },
+        {
+          "paper_id": "https://openalex.org/W2092356369",
+          "title": "Nonlinear Effects in Asymmetric Synthesis and Stereoselective Reactions: Ten Years of Investigation",
+          "abstract": "Who would have thought before 1986 that an enantiomerically impure catalyst could give a product in an asymmetric synthesis with an enantiomeric excess higher than that of the catalyst? Until then it was assumed that the ee value of the product (ee<sub>prod</sub> ) from an asymmetric synthesis was linearly correlate...",
+          "year": 1998,
+          "score": 0.5832
+        },
+        {
+          "paper_id": "https://openalex.org/W2066137743",
+          "title": "Asymmetric autocatalysis induced by meteoritic amino acids with hydrogen isotope chirality",
+          "abstract": "Achiral meteoritic amino acids, glycine and alpha-methylalanine, with hydrogen isotope (D/H) chirality, acted as the source of chirality in asymmetric autocatalysis with amplification of ee to afford highly enantioenriched 5-pyrimidyl alkanols.",
+          "year": 2009,
+          "score": 0.555
+        },
+        {
+          "paper_id": "https://openalex.org/W3110685440",
+          "title": "Front Cover: In Situ Mass Spectrometric and Kinetic Investigations of Soai's Asymmetric Autocatalysis (Chem. Eur. J. 68/2020)",
+          "abstract": "The magic beauty of Soai′s asymmetric autocatalysis: In situ high-resolution mass spectrometric measurements and comprehensive kinetic analyses suggest the formation of a transient hemiacetal catalyst, which establishes an efficient autocatalytic cycle. More information can be found in the Full Paper by O. Trapp et ...",
+          "year": 2020,
+          "score": 0.5548
+        },
+        {
+          "paper_id": "https://openalex.org/W2921594458",
+          "title": "Asymmetric autocatalysis. Chiral symmetry breaking and the origins of homochirality of organic molecules",
+          "abstract": "Biological homochirality, such as that of l-amino acids, has been a puzzle with regards to the chemical origin of life. Asymmetric autocatalysis is a reaction in which a chiral product acts as an asymmetric catalyst to produce more of itself in the same absolute configuration. 5-Pyrimidyl alkanol was found to act as...",
+          "year": 2019,
+          "score": 0.5465
+        },
+        {
+          "paper_id": "https://openalex.org/W2347079911",
+          "title": "Chirality amped up",
+          "abstract": "",
+          "year": 2016,
+          "score": 0.5412
+        },
+        {
+          "paper_id": "https://openalex.org/W2527081330",
+          "title": "Can the analyte-triggered asymmetric autocatalytic Soai reaction serve as a universal analytical tool for measuring enantiopurity and assigning absolute configuration?",
+          "abstract": "An investigation is reported on the use of the autocatalytic enantioselective Soai reaction, known to be influenced by the presence of a wide variety of chiral materials, as a generic tool for measuring the enantiopurity and absolute configuration of any substance. Good generality for the reaction across a small gro...",
+          "year": 2016,
+          "score": 0.5352
+        },
+        {
+          "paper_id": "https://openalex.org/W4403662186",
+          "title": "Large Differences Between Stochastic and Deterministic Kinetics in a Simple Autocatalytic Reaction Network",
+          "abstract": "In small systems, quantitative discrepancies between stochastic and deterministic descriptions of chemical kinetics can be significant, with their magnitude depending on the specific reaction network. Here, we study the Finke-Watzky model-an irreversible autocatalysis, A + B -- &gt; 2B, supplemented by an irreversib...",
+          "year": 2024,
+          "score": 0.5337
+        },
+        {
+          "paper_id": "https://openalex.org/W4242475984",
+          "title": "Exponential Amplification Using Photoredox Autocatalysis",
+          "abstract": "Exponential molecular amplification such as the polymerase chain reaction is a powerful tool that allows ultrasensitive biodetection. Here we report a new exponential amplification strategy based on photoredox autocatalysis, where eosin Y, a photocatalyst, amplifies itself by activating a non-fluorescent eosin Y der...",
+          "year": 2021,
+          "score": 0.5333
+        },
+        {
+          "paper_id": "https://openalex.org/W1626629536",
+          "title": "Chirality Selection Models in a Closed System",
+          "abstract": "Recently the first chemical systems which show the amplification of enantiometric excess (ee) was found. Inspired by these experiments, we propose a few chemical reaction models in a closed system. The reactions consist of autocatalytic production of chiral molecules and their decomposition processes. By means of fl...",
+          "year": 2004,
+          "score": 0.5311
+        },
+        {
+          "paper_id": "https://openalex.org/W2024460457",
+          "title": "New Aspects of Soai's Asymmetric Autocatalysis",
+          "abstract": "Photolysis with circularly polarized light combined with Soai's asymmetric autocatalysis in the reaction of 2-(tert-butylethynyl)pyrimidine-5-carbaldehyde (1, R=CCtBu) with iPr2Zn results in the amplification of ≈0.005 % ee to about 65 % ee in one step (see scheme). This reaction may serve as a model for how chiral...",
+          "year": 2005,
+          "score": 0.5243
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Is biological homochirality required for life and self-replication?",
+        "keywords": [
+          {
+            "text": "biological homochirality",
+            "score": 10
+          },
+          {
+            "text": "homochirality required",
+            "score": 9
+          },
+          {
+            "text": "required life",
+            "score": 8
+          },
+          {
+            "text": "life self",
+            "score": 7
+          },
+          {
+            "text": "self replication",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W2743752810",
+          "title": "The problem on the origin of homochirality in nature",
+          "abstract": "The property of chirality is non-superimposable forms that are mirror images of one another, as are left and right hands. The chirality and symmetry breaking in nature are important phenomenon. From fundamental particle and molecule to matter and universal system, there are chirality and symmetry breaking at differe...",
+          "year": 2017,
+          "score": 0.6598
+        },
+        {
+          "paper_id": "https://openalex.org/W2288888461",
+          "title": "Chiral autocatalysis: reaction noise, micro-reversibility and chiral inhibition in mirror symmetry breaking",
+          "abstract": "Applying the constraints dictated by the principle of detailed balance, we analyze a recent proposal for spontaneous mirror symmetry breaking (SMSB) based on enantioselective autocatalysis coupled to a linear decay of the enantiomers and in the presence of reaction noise. We find the racemic state is the final stabl...",
+          "year": 2016,
+          "score": 0.6379
+        },
+        {
+          "paper_id": "https://openalex.org/W2141584010",
+          "title": "Origin of Homochirality in Biosystems",
+          "abstract": "Experimental data for a series of central and simple molecules in biosystems show that some amino acids and a simple sugar molecule have a chiral discrimination in favor of homochirality. Models for segregation of racemic mixtures of chiral amphiphiles and lipophiles in aqueous solutions show that the amphiphiles wi...",
+          "year": 2009,
+          "score": 0.6126
+        },
+        {
+          "paper_id": "https://openalex.org/W4319659290",
+          "title": "Concentration–modulated global organizational chirality at the liquid/solid interface",
+          "abstract": "Understanding the origin of homochirality in macroscopic assemblies and manipulating organizational chirality still remain a challenge. Herein, homochirality is achieved by combination of the majority-rules principle and concentration-dependent molecular assembly at the liquid/solid interface. A lower molecular conc...",
+          "year": 2023,
+          "score": 0.5967
+        },
+        {
+          "paper_id": "https://openalex.org/W3037061723",
+          "title": "Physical origin of homochirality in life",
+          "abstract": "It seems to be well known that life cannot arise in a racemic mixture of molecules (L � D). The various physical mechanisms that could influence the homochirality of the molecules responsible for life are reviewed together with a model where these molecules might be produced in the galaxy prior to the formation of t...",
+          "year": 1996,
+          "score": 0.5939
+        },
+        {
+          "paper_id": "https://openalex.org/W4413772329",
+          "title": "The Origin of Biomolecular Homochirality",
+          "abstract": "The origin of homochirality in biomolecules is a central problem in the study of the origin of life and is fundamental to understanding the nature of life itself. Homochirality—the predominance of specific chiral forms of molecules in three-dimensional space—is essential for biological function, as molecular chirali...",
+          "year": 2025,
+          "score": 0.5698
+        },
+        {
+          "paper_id": "https://openalex.org/W4249151463",
+          "title": "Energy Threshold for Chiral Symmetry Breaking in Molecular Self-Replication",
+          "abstract": "We have determined the energy required for symmetry breaking and chiral amplification in the Soai autocatalytic reaction. This work examines the likelihood that parity violation energy difference of enantiomers is implicated in the origin of chiral symmetry breaking and highlights the challenges inherent in a search...",
+          "year": 2019,
+          "score": 0.5591
+        },
+        {
+          "paper_id": "https://openalex.org/W2921594458",
+          "title": "Asymmetric autocatalysis. Chiral symmetry breaking and the origins of homochirality of organic molecules",
+          "abstract": "Biological homochirality, such as that of l-amino acids, has been a puzzle with regards to the chemical origin of life. Asymmetric autocatalysis is a reaction in which a chiral product acts as an asymmetric catalyst to produce more of itself in the same absolute configuration. 5-Pyrimidyl alkanol was found to act as...",
+          "year": 2019,
+          "score": 0.5515
+        },
+        {
+          "paper_id": "https://openalex.org/W2950417153",
+          "title": "Fluctuation induced chiral symmetry breaking in autocatalytic reaction-diffusion systems",
+          "abstract": "We show how spatiotemporal fluctuations can induce spontaneous symmetry breaking in systems which are perfectly symmetric in the absence of fluctuations. We illustrate this in the context of the autocatalytic production of chiral enantiomers from achiral reactants in reaction-diffusion systems. The mean field steady...",
+          "year": 2005,
+          "score": 0.5506
+        },
+        {
+          "paper_id": "https://openalex.org/W4313574776",
+          "title": "Origin of Homochirality: The Formation and Stability of Homochiral Peptides in Aqueous Prebiological Environment in the Earth’s Crust",
+          "abstract": "The oldest forms of living organisms on Earth are about 3.5 billion years old, and they are found in hydrothermal deposits, and it is often hypothesized that life originated there. However, hydrothermal systems with a fairly strong flow of chemical components are not the optimal place for the prebiological self-asse...",
+          "year": 2023,
+          "score": 0.5482
+        },
+        {
+          "paper_id": "https://openalex.org/W3120596068",
+          "title": "Emergence of homochirality in large molecular systems",
+          "abstract": "The selection of a single molecular handedness, or homochirality across all living matter, is a mystery in the origin of life. Frank's seminal model showed in the '50s how chiral symmetry breaking can occur in nonequilibrium chemical networks. However, an important shortcoming in this classic model is that it consid...",
+          "year": 2021,
+          "score": 0.545
+        },
+        {
+          "paper_id": "https://openalex.org/W4205626923",
+          "title": "Asymmetry in Biological Homochirality",
+          "abstract": "Chirality, or handedness, is a fundamental physical characteristic, which spans the length scales ranging from elementary particles to the chiral asymmetry of spiral galaxies. The way in which chirality in chemistry, or molecular handedness, may have emerged in a primitive terrestrial environment, and how it can be ...",
+          "year": 2021,
+          "score": 0.5345
+        },
+        {
+          "paper_id": "https://openalex.org/W3015505794",
+          "title": "Chiral Dualism as an Instrument of Hierarchical Structure Formation in Molecular Biology",
+          "abstract": "The origin of chiral asymmetry in biology has attracted the attention of the research community throughout the years. In this paper we discuss the role of chirality and chirality sign alternation (L–D–L–D in proteins and D–L–D–L in DNA) in promoting self-organization in biology, starting at the level of single molec...",
+          "year": 2020,
+          "score": 0.5327
+        },
+        {
+          "paper_id": "https://openalex.org/W2080095571",
+          "title": "Homochirality in Bio-Organic Systems and Glyceraldehyde in the Formose Reaction",
+          "abstract": "",
+          "year": 2005,
+          "score": 0.529
+        },
+        {
+          "paper_id": "https://openalex.org/W2088987872",
+          "title": "Chirality, quantum mechanics, and biological determinism",
+          "abstract": "The holy grail of astrobiology is the discovery of a second sample of life that has emerged de novo, independently of life on Earth (as opposed to extraterrestrial life that shares a common origin with terrestrial life via a panspermia process). It would then be possible to separate aspects of biology that are lawli...",
+          "year": 2006,
+          "score": 0.5275
+        },
+        {
+          "paper_id": "https://openalex.org/W3135422652",
+          "title": "Chiroptical activity of hydroxycarboxylic acids with implications for the origin of biological homochirality",
+          "abstract": "",
+          "year": 2021,
+          "score": 0.5235
+        },
+        {
+          "paper_id": "https://openalex.org/W4294300276",
+          "title": "Perspectives on parity violation in chiral molecules: theory, spectroscopic experiment and biomolecular homochirality",
+          "abstract": "The reflection (or 'mirror') symmetry of space is among the fundamental symmetries of physics. It is connected to the conservation law for the quantum number parity and a fundamental 'non-observable' property of space (as defined by an absolute 'left-handed' or 'right-handed' coordinate system). The discovery of the...",
+          "year": 2022,
+          "score": 0.5217
+        },
+        {
+          "paper_id": "https://openalex.org/W2985991721",
+          "title": "Stereochemistry and Vitalism",
+          "abstract": "",
+          "year": 1898,
+          "score": 0.5157
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "RNA and DNA backbone chirality in template-directed replication",
+        "keywords": [
+          {
+            "text": "rna dna",
+            "score": 10
+          },
+          {
+            "text": "dna backbone",
+            "score": 9
+          },
+          {
+            "text": "backbone chirality",
+            "score": 8
+          },
+          {
+            "text": "chirality template",
+            "score": 7
+          },
+          {
+            "text": "template directed",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W2510449677",
+          "title": "(+)-Podocarpic Acid as Chiral Template in the Synthesis of Aphidicolane, Stemodane and Stemarane Diterpenoids †",
+          "abstract": "In this review the synthetic work in the field of aphidicolane, stemodane and stemarane diterpenoids, in which readily available (+)-podocarpic acid (4) was used as chiral template for the construction of their polycyclic structures, is described as it developed along the years. In the frame of this work (+)-podocar...",
+          "year": 2016,
+          "score": 0.6546
+        },
+        {
+          "paper_id": "https://openalex.org/W6980618468",
+          "title": "Chiral polymerisation and the RNA world",
+          "abstract": "The purpose of this paper is to review two mathematical models: one&#13;\\nfor the formation of homochiral polymers from an originally chirally&#13;\\nsymmetric system; and the other, to show how, in an RNA-world scenario,&#13;\\nRNA can simultaneously act both as information storage&#13;\\nand a catalyst for its own pr...",
+          "year": 2005,
+          "score": 0.639
+        },
+        {
+          "paper_id": "https://openalex.org/W2606505139",
+          "title": "Chirality: Amplification of chirality in PNA:PNA duplexes is limited",
+          "abstract": "Amplification of chirality in PNA:PNA duplexes is limitedPeptide nucleic acids (PNAs) are a chimera of peptides and nucleic acids with several of the properties normally associated with DNA including base pairing but with prominent differences including the absence of the sugar moieties and the phosphate groups whic...",
+          "year": 2013,
+          "score": 0.5928
+        },
+        {
+          "paper_id": "https://openalex.org/W3165850432",
+          "title": "Sequence self-selection by the network dynamics of random ligating oligomer pools",
+          "abstract": "One problem on the research on the Origin of Life is the step from short oligomers with random sequence of bases to longer, active complexes like ribozymes. Chemistry and non-equilibrium physics have found pathways for the formation of short strands, mediated by activated nucleotides or activation agents. It has als...",
+          "year": 2021,
+          "score": 0.5564
+        },
+        {
+          "paper_id": "https://openalex.org/W6884499366",
+          "title": "2,6-Diaminopurine in TNA:  Effect on\\nDuplex Stabilities and on the Efficiency\\nof Template-Controlled Ligations&lt;sup&gt;1&lt;/sup&gt;",
+          "abstract": "Replacement of adenine by 2,6-diaminopurinetwo nucleobases to be considered equivalent from an etiological point of viewstrongly\\nenhances the stability of TNA/TNA, TNA/RNA, or TNA/DNA duplexes and efficiently accelerates template-directed ligation of TNA ligands.",
+          "year": 2016,
+          "score": 0.5381
+        },
+        {
+          "paper_id": "https://openalex.org/W2952812603",
+          "title": "Template-directed nonenzymatic oligonucleotide synthesis: lessons from synthetic chemistry",
+          "abstract": "Abstract The nonenzymatic synthesis of nucleic acids, in particular, RNA, and the template-directed synthesis of artificial organic molecules, such as macrocycles, catenanes and rotaxanes, have both undergone significant development since the last half of the 20 th century. The intersection of these two fields affor...",
+          "year": 2015,
+          "score": 0.5327
+        },
+        {
+          "paper_id": "https://openalex.org/W2940818963",
+          "title": "Sequence information transfer using covalent template-directed synthesis",
+          "abstract": "Template-directed synthesis is the biological method for the assembly of oligomers of defined sequence, providing the molecular basis for replication and the process of evolution. To apply analogous processes to synthetic oligomeric molecules, methods are required for the transfer of sequence information from a temp...",
+          "year": 2019,
+          "score": 0.5271
+        },
+        {
+          "paper_id": "https://openalex.org/W4306167941",
+          "title": "Effect of backbone flexibility on covalent template-directed synthesis of linear oligomers",
+          "abstract": "Covalent template-directed synthesis can be used to replicate synthetic oligomers, but success depends critically on the conformational properties of the backbone. Here we investigate how the choice of monomer building block affects the flexibility of the backbone and in turn the efficiency of the replication proces...",
+          "year": 2022,
+          "score": 0.5267
+        },
+        {
+          "paper_id": "https://openalex.org/W1991852486",
+          "title": "Helix control in polymers",
+          "abstract": "The helix is a critical conformation exhibited by biological macromolecules and plays a key role in fundamental biological processes. Biological helical polymers exist in a single helical sense arising from the chiral effect of their primary units-for example, DNA and proteins adopt predominantly a right-handed heli...",
+          "year": 2012,
+          "score": 0.5214
+        },
+        {
+          "paper_id": "https://openalex.org/W2969890591",
+          "title": "Kinetic asymmetry allows macromolecular catalysts to drive an information ratchet",
+          "abstract": "",
+          "year": 2019,
+          "score": 0.5199
+        },
+        {
+          "paper_id": "https://openalex.org/W766404206",
+          "title": "Template polymerization of nucleotide analogues",
+          "abstract": "Recent work on the template-directed reactions of the natural D-nucleotides has made it clear that l-nucleotides and nucleotide-like derivatives of other sugars would strongly inhibit the formation of long oligonucleotides. Consequently, attention is focusing on molecules simpler than nucleotides that might have act...",
+          "year": 1991,
+          "score": 0.5164
+        },
+        {
+          "paper_id": "https://openalex.org/W4400689608",
+          "title": "Template-based copying in chemically fuelled dynamic combinatorial libraries",
+          "abstract": "One of science's greatest challenges is determining how life can spontaneously emerge from a mixture of molecules. A complicating factor is that life and its molecules are inherently unstable-RNA and proteins are prone to hydrolysis and denaturation. For the de novo synthesis of life or to better understand its emer...",
+          "year": 2024,
+          "score": 0.5163
+        },
+        {
+          "paper_id": "https://openalex.org/W6903354456",
+          "title": "Controlled Supramolecular Assembly of Helical Silica Nanotube–Graphene Hybrids for Chiral Transcription and Separation",
+          "abstract": "Chiral templating and enantioselective separations are demonstrated on graphene surfaces as directed by encapsulated silica nanotubes. Electrostatic assembly of helical silica nanotubes within graphene sheets results in a hybrid material with the electrochemical properties of graphene and the capability for chiral r...",
+          "year": 2016,
+          "score": 0.5127
+        },
+        {
+          "paper_id": "https://openalex.org/W3201183251",
+          "title": "A New 1,5-Disubstituted Triazole DNA Backbone Mimic with Enhanced Polymerase Compatibility",
+          "abstract": "Triazole linkages (TLs) are mimics of the phosphodiester bond in oligonucleotides with applications in synthetic biology and biotechnology. Here we report the RuAAC-catalyzed synthesis of a novel 1,5-disubstituted triazole (TL<b>2</b>) dinucleoside phosphoramidite as well as its incorporation into oligonucleotides a...",
+          "year": 2021,
+          "score": 0.5111
+        },
+        {
+          "paper_id": "https://openalex.org/W4385270371",
+          "title": "Sequence-selective duplex formation and template effect in recognition-encoded oligoanilines",
+          "abstract": "A new family of duplex-forming recognition encoded oligomers, capable of sequence selective duplex formation and template directed synthesis, was developed. Monomers equipped with both amine and aldehyde groups were functionalized with 2-trifluoromethylphenol or phosphine oxide as H-bond recognition units. Duplex fo...",
+          "year": 2023,
+          "score": 0.511
+        },
+        {
+          "paper_id": "https://openalex.org/W4413143677",
+          "title": "Template-directed ligation of recognition-encoded melamine oligomers",
+          "abstract": "The templated ligation of DNA oligomers allows quantitative coupling reactions at very low concentrations and with very high selectivity. Recognition-encoded melamine oligomers (REMO) also form sequence-selective duplexes, and it should therefore be possible to ligate them in the same way. REMO duplex formation is b...",
+          "year": 2025,
+          "score": 0.5095
+        },
+        {
+          "paper_id": "https://openalex.org/W3153698892",
+          "title": "Host–Guest Induced Peptide Folding with Sequence-Specific Structural Chirality",
+          "abstract": "Controlling the spatial and temporal behavior of peptide segments is essential in the fabrication of functional peptide-based materials and nanostructures. To achieve a desired structure, complex sequence design is often required, coupled with the inclusion of unnatural amino acids or synthetic modifications. Herein...",
+          "year": 2021,
+          "score": 0.5087
+        },
+        {
+          "paper_id": "https://openalex.org/W1979168164",
+          "title": "Controlling monomer-sequence using supramolecular templates",
+          "abstract": "This review discusses the template-directed preparation of sequence-defined polymers.",
+          "year": 2014,
+          "score": 0.5084
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "mirror-image biology and synthetic enantiomeric biomolecules viability",
+        "keywords": [
+          {
+            "text": "mirror image",
+            "score": 10
+          },
+          {
+            "text": "image biology",
+            "score": 9
+          },
+          {
+            "text": "biology synthetic",
+            "score": 8
+          },
+          {
+            "text": "synthetic enantiomeric",
+            "score": 7
+          },
+          {
+            "text": "enantiomeric biomolecules",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W2088987872",
+          "title": "Chirality, quantum mechanics, and biological determinism",
+          "abstract": "The holy grail of astrobiology is the discovery of a second sample of life that has emerged de novo, independently of life on Earth (as opposed to extraterrestrial life that shares a common origin with terrestrial life via a panspermia process). It would then be possible to separate aspects of biology that are lawli...",
+          "year": 2006,
+          "score": 0.6446
+        },
+        {
+          "paper_id": "https://openalex.org/W2334602719",
+          "title": "Mutual recognition of enantiomers.",
+          "abstract": "Homochiral or heterochiral interaction of enantiomers is a fundamental principle in crystal lattice formation, giving either racemates or conglomerates, and multi-stage interactions. Such diastereomeric effects arising from labile molecular assembly are also significant in various solution-phase phenomena related to...",
+          "year": 1990,
+          "score": 0.6109
+        },
+        {
+          "paper_id": "https://openalex.org/W2953081569",
+          "title": "Structure, Assembly, and Function of (Latent)-Chiral AIEgens",
+          "abstract": "The discovery of the photophysical phenomenon of aggregation-induced emission (AIE) by Tang in 2001 has drawn intense attention of scientists all over the world and created potential applications in various areas, such as biological probes, chemical sensors, and optoelectronic devices. Incorporation of AIE with chir...",
+          "year": 2019,
+          "score": 0.5971
+        },
+        {
+          "paper_id": "https://openalex.org/W7124469220",
+          "title": "Chiral inorganic materials for asymmetric catalysis: mechanistic origins and design principles",
+          "abstract": "Abstract Asymmetric catalysis, which directs a reaction preferentially toward one enantiomer over its non-superimposable mirror image, is crucial for synthesizing chiral molecules with defined stereochemistry. Such selectivity is indispensable in pharmaceuticals, agrochemicals, and advanced materials, where opposite...",
+          "year": 2026,
+          "score": 0.5879
+        },
+        {
+          "paper_id": "https://openalex.org/W7127890418",
+          "title": "Circularly Polarised Luminescence (CPL) as a Contingency Assay for 'Mirror Life' Bio-Hazards",
+          "abstract": "Life on Earth is predominately based upon a single chirality set, but so called \"mirror life\"-speculated life of the opposite chirality, either of artificial or natural origin-presents a low-likelihood, but high severity global biosecurity threat. Such an existential risk necessitates that technologies for surveilla...",
+          "year": 2026,
+          "score": 0.5838
+        },
+        {
+          "paper_id": "https://openalex.org/W4249151463",
+          "title": "Energy Threshold for Chiral Symmetry Breaking in Molecular Self-Replication",
+          "abstract": "We have determined the energy required for symmetry breaking and chiral amplification in the Soai autocatalytic reaction. This work examines the likelihood that parity violation energy difference of enantiomers is implicated in the origin of chiral symmetry breaking and highlights the challenges inherent in a search...",
+          "year": 2019,
+          "score": 0.5647
+        },
+        {
+          "paper_id": "https://openalex.org/W2928383887",
+          "title": "The Stereoselective Synthesis of the Nonnatural Enantiomers of Communiols A-C. A Stereochemical Correction",
+          "abstract": "A stereoselective synthesis of the nonnatural enantiomers of the fungal metabolites communiols A-C is reported. A stereochemical misassignment has been corrected and the absolute configurations of the natural products have been unambiguously established.",
+          "year": 2006,
+          "score": 0.5578
+        },
+        {
+          "paper_id": "https://openalex.org/W4294300276",
+          "title": "Perspectives on parity violation in chiral molecules: theory, spectroscopic experiment and biomolecular homochirality",
+          "abstract": "The reflection (or 'mirror') symmetry of space is among the fundamental symmetries of physics. It is connected to the conservation law for the quantum number parity and a fundamental 'non-observable' property of space (as defined by an absolute 'left-handed' or 'right-handed' coordinate system). The discovery of the...",
+          "year": 2022,
+          "score": 0.547
+        },
+        {
+          "paper_id": "https://openalex.org/W4205626923",
+          "title": "Asymmetry in Biological Homochirality",
+          "abstract": "Chirality, or handedness, is a fundamental physical characteristic, which spans the length scales ranging from elementary particles to the chiral asymmetry of spiral galaxies. The way in which chirality in chemistry, or molecular handedness, may have emerged in a primitive terrestrial environment, and how it can be ...",
+          "year": 2021,
+          "score": 0.5354
+        },
+        {
+          "paper_id": "https://openalex.org/W7043619746",
+          "title": "Synthesis, biological and computational evaluation",
+          "abstract": "Medicinal Chemistry is a scientific area centered in the discovery and development of new bioactivated chemical entities. In recent years, a high interest in the synthesis of C5-substituted barbiturates, with various biological activities, has been shown. 5-(Benzisoxazol-3-ylidene) (thio)barbiturates, owning a 2,1-b...",
+          "year": 2018,
+          "score": 0.5351
+        },
+        {
+          "paper_id": "https://openalex.org/W1982130854",
+          "title": "Experimental Evidence Leading to an Alternative Explanation of Why D-tyrosine Sometimes Crystallizes Faster than Its L-Enantiomer",
+          "abstract": "",
+          "year": 2008,
+          "score": 0.5317
+        },
+        {
+          "paper_id": "https://openalex.org/W2276369823",
+          "title": "Chirality in Natural and Applied Science",
+          "abstract": "",
+          "year": 2003,
+          "score": 0.5269
+        },
+        {
+          "paper_id": "https://openalex.org/W3204363453",
+          "title": "Microreaction and membrane technologies for continuous single-enantiomer production: A review",
+          "abstract": "Microreaction and membrane technologies offer optimal conditions for controlling enantiomer synthesis and purification processes in continuous production, with numerous advantages over batch manufacturing. One of the many forces driving the development of such technologies for the production of single optical isomer...",
+          "year": 2021,
+          "score": 0.524
+        },
+        {
+          "paper_id": "https://openalex.org/W2077617402",
+          "title": "Asymmetric degradation of DL-leucine with longitudinally polarised electrons",
+          "abstract": "",
+          "year": 1976,
+          "score": 0.5226
+        },
+        {
+          "paper_id": "https://openalex.org/W2801086095",
+          "title": "Chiral Autocatalysis and Mirror Symmetry Breaking",
+          "abstract": "",
+          "year": 2018,
+          "score": 0.5224
+        },
+        {
+          "paper_id": "https://openalex.org/W4410772319",
+          "title": "Self-reproduction as an autonomous process of growth and reorganization in fully abiotic, artificial and synthetic cells",
+          "abstract": "We investigate mechanisms for the observed nonlinear growth in the number of polymer vesicles generated during a photo-Reversible Addition-Fragmentation Chain Transfer-based polymerization-induced self-assembly (PISA) reaction. Our experimental results reveal the presence of a self-reproduction process during which ...",
+          "year": 2025,
+          "score": 0.5209
+        },
+        {
+          "paper_id": "https://openalex.org/W1843313060",
+          "title": "Temperature dependence of optical rotation study on parity-violating phase transition of D-, L-, and DL-alanine",
+          "abstract": "Chiral molecules are characterized by a specific optical rotation angle. An experimental method was presented to dissect the temperature dependence of the optical rotation angle with the molecular chirality of D-alanine, L-alanine and DL-alanine crystals. Salam hypothesis predicted that quantum mechanical cooperativ...",
+          "year": 2002,
+          "score": 0.5208
+        },
+        {
+          "paper_id": "https://openalex.org/W3033135883",
+          "title": "Recent Advances in Synthetic Application and Engineering of Halogenases",
+          "abstract": "Abstract Halogenating enzymes are able to introduce halogen substituents under ambient conditions using non‐hazardous reagents with intriguing selectivity, which is highly desired in green chemistry. Although C−H functionalization such as halogenation is a well‐known transformation in synthetic chemistry, the select...",
+          "year": 2020,
+          "score": 0.5181
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "racemic versus homochiral impacts on protocell membranes and metabolism",
+        "keywords": [
+          {
+            "text": "racemic versus",
+            "score": 10
+          },
+          {
+            "text": "versus homochiral",
+            "score": 9
+          },
+          {
+            "text": "homochiral impacts",
+            "score": 8
+          },
+          {
+            "text": "impacts protocell",
+            "score": 7
+          },
+          {
+            "text": "protocell membranes",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W2089114392",
+          "title": "Characterization of Racemic Species of Chiral Drugs Using Thermal Analysis, Thermodynamic Calculation, and Structural Studies",
+          "abstract": "The identification of the racemic species, as a racemic compound, a racemic conglomerate, or a racemic solid solution (pseudoracemate), is crucial for rationalizing the potential for resolution of racemates by crystallization. The melting points and enthalpies of fusion of a number of chiral drugs and their salts we...",
+          "year": 1999,
+          "score": 0.9011
+        },
+        {
+          "paper_id": "https://openalex.org/W7027882510",
+          "title": "Design, synthesis and catalytic properties of chiral counteranions on transition metal catalysts : a new route to asymmetric induction",
+          "abstract": "The design of enantioselective transition metal catalyzed reactions is an important area of chemical research. The purpose of this study was to develop a new method to incorporate chirality into transition metal catalysis via ion pairing interactions. This has led to the development of the first enantioselective tra...",
+          "year": 2002,
+          "score": 0.8564
+        },
+        {
+          "paper_id": "https://openalex.org/W4406706080",
+          "title": "Serine Octamer Clusters Direct the Chirality of Peptides Formed in Water Microdroplets",
+          "abstract": "The chemistry underlying biological homochirality remains challenging. We propose that non-covalent clusters may have served as the means through which homochiral biochemistry emerged. Serine has long been known to exhibit a chiral preference in clustering to form the octamer; we extend this finding by reporting the...",
+          "year": 2025,
+          "score": 0.63
+        },
+        {
+          "paper_id": "https://openalex.org/W4411706697",
+          "title": "Differential Compartmentalization of Enzymatic Reactions for Lactate Signaling Across Protocells",
+          "abstract": "Abstract Protocells, by breaking down the intricate complexity of eukaryotic cells, are innovative tools for mimicking and understanding cellular phenomena. Protocells based on giant unilamellar vesicles (GUVs) supplemented with active species facilitate in situ biologically relevant enzymatic reactions. However, re...",
+          "year": 2025,
+          "score": 0.6134
+        },
+        {
+          "paper_id": "https://openalex.org/W2141584010",
+          "title": "Origin of Homochirality in Biosystems",
+          "abstract": "Experimental data for a series of central and simple molecules in biosystems show that some amino acids and a simple sugar molecule have a chiral discrimination in favor of homochirality. Models for segregation of racemic mixtures of chiral amphiphiles and lipophiles in aqueous solutions show that the amphiphiles wi...",
+          "year": 2009,
+          "score": 0.6044
+        },
+        {
+          "paper_id": "https://openalex.org/W1575327934",
+          "title": "Some aspects on the optical resolution by preferential crystallization based on phase equilibrium.",
+          "abstract": "The relationship of racemic structure to resolution by preferential crystallization was discussed on the ternary phase diagrams of systems containing optical isomers and a solvent. From these discussions, it was concluded that the resolution by this method is applicable only to racemic mixtures, and that racemic com...",
+          "year": 1977,
+          "score": 0.604
+        },
+        {
+          "paper_id": "https://openalex.org/W2066926056",
+          "title": "Simultaneous determination of relative and absolute rate constants in racemization studies; applications to kinetic isotope effects",
+          "abstract": "The method reported allows the simultaneous determination of relative and absolute rate constants for two substances in a single kinetic run. The approach is of special interest for kinetic isotope effect determinations where rate ratios are often near one and failure to exactly duplicate reaction conditions can lea...",
+          "year": 1978,
+          "score": 0.598
+        },
+        {
+          "paper_id": "https://openalex.org/W2590013020",
+          "title": "Crystallization of the Racemic Conglomerate and Racemic Compound of Efonidipine",
+          "abstract": "Efonidipine is a dual blocker of T-type and L-type calcium channels with 1, 4-dihydropyridine structure attached to a phosphonate skeleton. As a chiral compound, it has a special property that can exist as a racemic conglomerate or a racemic compound based on the different crystallization conditions. One racemic con...",
+          "year": 2017,
+          "score": 0.5765
+        },
+        {
+          "paper_id": "https://openalex.org/W2323584442",
+          "title": "The environmental interfacial process and ecological risk of chiral persistent organic pollutants: A review",
+          "abstract": "Scientific research on environmental interfacial process, ecological and health risk of chiral persistent organic pollutants (POPs) has become a groundbreaking topic, since the growing of the unsymmetrical molecular introduction. The enantioselectivity between enantiomers of parental POPs has risen increasing concer...",
+          "year": 2013,
+          "score": 0.5554
+        },
+        {
+          "paper_id": "https://openalex.org/W2080095571",
+          "title": "Homochirality in Bio-Organic Systems and Glyceraldehyde in the Formose Reaction",
+          "abstract": "",
+          "year": 2005,
+          "score": 0.5529
+        },
+        {
+          "paper_id": "https://openalex.org/W2134618805",
+          "title": "Homochiral Growth Through Enantiomeric Cross-Inhibition",
+          "abstract": "",
+          "year": 2005,
+          "score": 0.5407
+        },
+        {
+          "paper_id": "https://openalex.org/W4327905502",
+          "title": "Detection and analysis of chiral molecules as disease biomarkers",
+          "abstract": "",
+          "year": 2023,
+          "score": 0.5306
+        },
+        {
+          "paper_id": "https://openalex.org/W4413772329",
+          "title": "The Origin of Biomolecular Homochirality",
+          "abstract": "The origin of homochirality in biomolecules is a central problem in the study of the origin of life and is fundamental to understanding the nature of life itself. Homochirality—the predominance of specific chiral forms of molecules in three-dimensional space—is essential for biological function, as molecular chirali...",
+          "year": 2025,
+          "score": 0.5302
+        },
+        {
+          "paper_id": "https://openalex.org/W4205626923",
+          "title": "Asymmetry in Biological Homochirality",
+          "abstract": "Chirality, or handedness, is a fundamental physical characteristic, which spans the length scales ranging from elementary particles to the chiral asymmetry of spiral galaxies. The way in which chirality in chemistry, or molecular handedness, may have emerged in a primitive terrestrial environment, and how it can be ...",
+          "year": 2021,
+          "score": 0.5283
+        },
+        {
+          "paper_id": "https://openalex.org/W4384627421",
+          "title": "Examining the Effects of Homochirality for Electron Transfer in Protein Assemblies",
+          "abstract": "Protein voltammetry studies of cytochrome <i>c</i>, immobilized on chiral tripeptide monolayer films, reveal the importance of the electron spin and the film's homochirality on electron transfer kinetics. Magnetic film electrodes are used to examine how an asymmetry in the standard heterogeneous electron transfer ra...",
+          "year": 2023,
+          "score": 0.5262
+        },
+        {
+          "paper_id": "https://openalex.org/W3120596068",
+          "title": "Emergence of homochirality in large molecular systems",
+          "abstract": "The selection of a single molecular handedness, or homochirality across all living matter, is a mystery in the origin of life. Frank's seminal model showed in the '50s how chiral symmetry breaking can occur in nonequilibrium chemical networks. However, an important shortcoming in this classic model is that it consid...",
+          "year": 2021,
+          "score": 0.5258
+        },
+        {
+          "paper_id": "https://openalex.org/W4387947470",
+          "title": "Xeno Amino Acids: A look into biochemistry as we don't know it",
+          "abstract": "Would another origin of life resemble Earth's biochemical use of amino acids? Here, we review current knowledge at three levels: (1) Could other classes of chemical structure serve as building blocks for biopolymer structure and catalysis? Amino acids now seem both readily available to, and a plausible chemical attr...",
+          "year": 2023,
+          "score": 0.5253
+        },
+        {
+          "paper_id": "https://openalex.org/W4313574776",
+          "title": "Origin of Homochirality: The Formation and Stability of Homochiral Peptides in Aqueous Prebiological Environment in the Earth’s Crust",
+          "abstract": "The oldest forms of living organisms on Earth are about 3.5 billion years old, and they are found in hydrothermal deposits, and it is often hypothesized that life originated there. However, hydrothermal systems with a fairly strong flow of chemical components are not the optimal place for the prebiological self-asse...",
+          "year": 2023,
+          "score": 0.5251
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "step": "step6",
+      "command_name": "paper-search",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Existing work explains chiral amplification in specialized reactions, network-level symmetry breaking, and partial prebiotic stability of homochiral peptides, but it does not provide a general quantitative mechanism linking homochirality to life-required functions such as electron transfer, molecular recognition, catalytic specificity, replication fidelity, and cross-polymer coordination, nor does it establish whether chirality is universally necessary or contingent under alternative definitions of life.",
+        "field": "abstract",
+        "top_k": 2,
+        "after": null,
+        "before": null
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4390532605",
+          "title": "Symmetry Breaking and Chiral Amplification in Prebiotic Ligation Reactions",
+          "abstract": "<title>Abstract</title> A general rationalization of the single chirality of biological molecules, a signature of life, remains a challenging goal. <sup>1</sup> Research has commonly focused on initial symmetry breaking and subsequent enantioenrichment of monomeric building blocks – sugars and amino acids – that comprise the genetic polymers RNA, DNA, and peptides. If these building blocks are only partially enantioenriched, however, stalling of chain growth may occur, whimsically termed in the case of nucleic acids as “the problem of original syn”. <sup>2</sup> In studying a novel prebiotically plausible route to proteinogenic peptides reported by Powner, <sup>3-5</sup> we discovered that the reaction favors heterochiral ligation, i.e., the ligation of l monomers with d monomers. While this finding appears problematic for the prebiotic emergence of homochiral l-peptides, we demonstrate, paradoxically, that this heterochiral preference provides a mechanism for enantioenrichment in homochiral chains. Symmetry breaking, chiral amplification, and chirality transfer processes occur for all reactants and products in multicomponent competitive reactions even when only one of the molecules in the complex mixture exhibits an imbalance in enantiomer concentrations (non-racemic). Solubility considerations lead to chemical purification and enhanced chiral amplification. Experimental data and kinetic modeling support this prebiotically plausible mechanism for the emergence of homochiral biological polymers.",
+          "year": 2024,
+          "score": 0.6813441514968872
+        },
+        {
+          "paper_id": "https://openalex.org/W4386530767",
+          "title": "The emergence of biological homochirality",
+          "abstract": "The homochirality of biological molecules is one of the basic mysteries of biogenesis. The predominance of l-amino acids and d-hydrocarbons in living matter stands in contrast to the chemical principle of symmetry between enantiomers. An answer to the puzzle needs to include a plausible explanation of how the natural racemic balance was initially tipped in favor of one enantiomer and how the initial tiny excess was amplified to significant levels. It is also necessary to consider how the imbalance was sustained from returning to a thermodynamic equilibrium. This is a review of the main concepts and observations, followed by a brief discussion.",
+          "year": 2023,
+          "score": 0.6755021810531616
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Apply coding theory and information-theoretic analysis to treat chiral monomer selection as an error-correcting code, measuring how homochiral alphabets affect channel capacity, recognition accuracy, and replication error rates in molecular systems.",
+        "keywords": [
+          {
+            "text": "error-correcting codes",
+            "score": 9
+          },
+          {
+            "text": "channel capacity",
+            "score": 8
+          },
+          {
+            "text": "mutual information",
+            "score": 8
+          },
+          {
+            "text": "redundancy",
+            "score": 7
+          },
+          {
+            "text": "pattern recognition",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W2115810426",
+          "title": "A simple model for the evolution of molecular codes driven by the interplay of accuracy, diversity and cost",
+          "abstract": "Molecular codes translate information written in one type of molecule into another molecular language. We introduce a simple model that treats molecular codes as noisy information channels. An optimal code is a channel that conveys information accurately and efficiently while keeping down the impact of errors. The e...",
+          "year": 2008,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W2156278460",
+          "title": "A colorful origin for the genetic code: Information theory, statistical mechanics and the emergence of molecular codes",
+          "abstract": "",
+          "year": 2010,
+          "score": 0.9981
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Use feedback-control and dynamical-systems methods to model chiral symmetry breaking as a stability and coordination mechanism, quantifying robustness, bifurcation thresholds, and cross-component synchronization in functional molecular networks.",
+        "keywords": [
+          {
+            "text": "feedback control",
+            "score": 9
+          },
+          {
+            "text": "symmetry breaking",
+            "score": 8
+          },
+          {
+            "text": "robustness",
+            "score": 8
+          },
+          {
+            "text": "bifurcation analysis",
+            "score": 7
+          },
+          {
+            "text": "synchronization",
+            "score": 7
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W3104991613",
+          "title": "Chaotic oscillations, dissipation and mirror symmetry breaking in a chiral catalytic network",
+          "abstract": "Catalytic reaction networks consist of molecular arrays interconnected by autocatalysis and cross-catalytic pathways among the reactants, and serve as bottom-up models for the design and understanding of molecular evolution and emergent phenomena. An important example of the latter is the emergence of homochirality ...",
+          "year": 2020,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W2472131518",
+          "title": "The combination of the functionalities of feedback circuits is determinant for the number and size of attractors of molecular networks",
+          "abstract": "ABSTRACT Molecular regulation was initially assumed to follow both a unidirectional and a hierarchical organization forming pathways. Regulatory processes, however, form highly interlinked networks with non-hierarchical and non-unidirectional structures that contain statistically overrepresented circuits (motifs). H...",
+          "year": 2016,
+          "score": 0.9101
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "step": "step6",
+      "command_name": "paper-search",
+      "cache_hit": true,
+      "payload": {
+        "query_text": "Existing work explains chiral amplification in specialized reactions, network-level symmetry breaking, and partial prebiotic stability of homochiral peptides, but it does not provide a general quantitative mechanism linking homochirality to life-required functions such as electron transfer, molecular recognition, catalytic specificity, replication fidelity, and cross-polymer coordination, nor does it establish whether chirality is universally necessary or contingent under alternative definitions of life.",
+        "field": "abstract",
+        "top_k": 2,
+        "after": null,
+        "before": null
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4390532605",
+          "title": "Symmetry Breaking and Chiral Amplification in Prebiotic Ligation Reactions",
+          "abstract": "<title>Abstract</title> A general rationalization of the single chirality of biological molecules, a signature of life, remains a challenging goal. <sup>1</sup> Research has commonly focused on initial symmetry breaking and subsequent enantioenrichment of monomeric building blocks – sugars and amino acids – that comprise the genetic polymers RNA, DNA, and peptides. If these building blocks are only partially enantioenriched, however, stalling of chain growth may occur, whimsically termed in the case of nucleic acids as “the problem of original syn”. <sup>2</sup> In studying a novel prebiotically plausible route to proteinogenic peptides reported by Powner, <sup>3-5</sup> we discovered that the reaction favors heterochiral ligation, i.e., the ligation of l monomers with d monomers. While this finding appears problematic for the prebiotic emergence of homochiral l-peptides, we demonstrate, paradoxically, that this heterochiral preference provides a mechanism for enantioenrichment in homochiral chains. Symmetry breaking, chiral amplification, and chirality transfer processes occur for all reactants and products in multicomponent competitive reactions even when only one of the molecules in the complex mixture exhibits an imbalance in enantiomer concentrations (non-racemic). Solubility considerations lead to chemical purification and enhanced chiral amplification. Experimental data and kinetic modeling support this prebiotically plausible mechanism for the emergence of homochiral biological polymers.",
+          "year": 2024,
+          "score": 0.6813441514968872
+        },
+        {
+          "paper_id": "https://openalex.org/W4386530767",
+          "title": "The emergence of biological homochirality",
+          "abstract": "The homochirality of biological molecules is one of the basic mysteries of biogenesis. The predominance of l-amino acids and d-hydrocarbons in living matter stands in contrast to the chemical principle of symmetry between enantiomers. An answer to the puzzle needs to include a plausible explanation of how the natural racemic balance was initially tipped in favor of one enantiomer and how the initial tiny excess was amplified to significant levels. It is also necessary to consider how the imbalance was sustained from returning to a thermodynamic equilibrium. This is a review of the main concepts and observations, followed by a brief discussion.",
+          "year": 2023,
+          "score": 0.6755021810531616
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Apply noisy-channel coding, error-correction thresholds, and formal reliability analysis to treat polymer replication, molecular recognition, and catalytic selection as information-processing tasks, quantifying how uniform chirality changes error rates, redundancy requirements, and functional robustness.",
+        "keywords": [
+          {
+            "text": "error-correcting codes",
+            "score": 9
+          },
+          {
+            "text": "channel capacity",
+            "score": 8
+          },
+          {
+            "text": "noise thresholds",
+            "score": 8
+          },
+          {
+            "text": "fault tolerance",
+            "score": 7
+          },
+          {
+            "text": "pattern recognition",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W2137931210",
+          "title": "Casting polymer nets to optimize noisy molecular codes",
+          "abstract": "Life relies on the efficient performance of molecular codes, which relate symbols and meanings via error-prone molecular recognition. We describe how optimizing a code to withstand the impact of molecular recognition noise may be understood from the statistics of a two-dimensional network made of polymers. The noisy...",
+          "year": 2008,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W595673949",
+          "title": "Chemical Computations and Errors",
+          "abstract": "",
+          "year": 1941,
+          "score": 0.8166
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Use robust control, stability analysis, and synchronization theory for coupled nonlinear dynamical systems to model chiral uniformity as a coordination constraint that suppresses cross-talk, maintains network stability, and enables reliable electron-transfer and replication-related feedback across heterogeneous molecular components.",
+        "keywords": [
+          {
+            "text": "robust stability",
+            "score": 9
+          },
+          {
+            "text": "feedback control",
+            "score": 8
+          },
+          {
+            "text": "synchronization",
+            "score": 8
+          },
+          {
+            "text": "coupled dynamical systems",
+            "score": 7
+          },
+          {
+            "text": "disturbance rejection",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W2984943314",
+          "title": "Antithetic integral feedback for the robust control of monostable and oscillatory biomolecular circuits",
+          "abstract": "Abstract Biomolecular feedback systems are now a central application area of interest within control theory. While classical control techniques provide valuable insight into the function and design of both natural and synthetic biomolecular systems, there are certain aspects of biological control that have proven di...",
+          "year": 2019,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W2139884531",
+          "title": "Coherent coupling of feedback loops: a design principle of cell signaling networks",
+          "abstract": "We have investigated the role of such coherently coupled feedback loops through extensive Boolean network simulations and found that a high proportion of coherent couplings can enhance the robustness of a network against its state perturbations. Moreover, we found that the robustness achieved by coherently coupled f...",
+          "year": 2008,
+          "score": 0.9993
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "step": "step6",
+      "command_name": "paper-search",
+      "cache_hit": true,
+      "payload": {
+        "query_text": "Existing work explains chiral amplification in specialized reactions, network-level symmetry breaking, and partial prebiotic stability of homochiral peptides, but it does not provide a general quantitative mechanism linking homochirality to life-required functions such as electron transfer, molecular recognition, catalytic specificity, replication fidelity, and cross-polymer coordination, nor does it establish whether chirality is universally necessary or contingent under alternative definitions of life.",
+        "field": "abstract",
+        "top_k": 2,
+        "after": null,
+        "before": null
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4390532605",
+          "title": "Symmetry Breaking and Chiral Amplification in Prebiotic Ligation Reactions",
+          "abstract": "<title>Abstract</title> A general rationalization of the single chirality of biological molecules, a signature of life, remains a challenging goal. <sup>1</sup> Research has commonly focused on initial symmetry breaking and subsequent enantioenrichment of monomeric building blocks – sugars and amino acids – that comprise the genetic polymers RNA, DNA, and peptides. If these building blocks are only partially enantioenriched, however, stalling of chain growth may occur, whimsically termed in the case of nucleic acids as “the problem of original syn”. <sup>2</sup> In studying a novel prebiotically plausible route to proteinogenic peptides reported by Powner, <sup>3-5</sup> we discovered that the reaction favors heterochiral ligation, i.e., the ligation of l monomers with d monomers. While this finding appears problematic for the prebiotic emergence of homochiral l-peptides, we demonstrate, paradoxically, that this heterochiral preference provides a mechanism for enantioenrichment in homochiral chains. Symmetry breaking, chiral amplification, and chirality transfer processes occur for all reactants and products in multicomponent competitive reactions even when only one of the molecules in the complex mixture exhibits an imbalance in enantiomer concentrations (non-racemic). Solubility considerations lead to chemical purification and enhanced chiral amplification. Experimental data and kinetic modeling support this prebiotically plausible mechanism for the emergence of homochiral biological polymers.",
+          "year": 2024,
+          "score": 0.6813441514968872
+        },
+        {
+          "paper_id": "https://openalex.org/W4386530767",
+          "title": "The emergence of biological homochirality",
+          "abstract": "The homochirality of biological molecules is one of the basic mysteries of biogenesis. The predominance of l-amino acids and d-hydrocarbons in living matter stands in contrast to the chemical principle of symmetry between enantiomers. An answer to the puzzle needs to include a plausible explanation of how the natural racemic balance was initially tipped in favor of one enantiomer and how the initial tiny excess was amplified to significant levels. It is also necessary to consider how the imbalance was sustained from returning to a thermodynamic equilibrium. This is a review of the main concepts and observations, followed by a brief discussion.",
+          "year": 2023,
+          "score": 0.6755021810531616
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Apply coding theory, fault-tolerant computation, and distributed coordination protocols to quantify how uniform molecular handedness can reduce error propagation, improve replication fidelity, and enable reliable cross-polymer information transfer.",
+        "keywords": [
+          {
+            "text": "error-correcting codes",
+            "score": 9
+          },
+          {
+            "text": "fault tolerance",
+            "score": 8
+          },
+          {
+            "text": "information fidelity",
+            "score": 8
+          },
+          {
+            "text": "distributed coordination",
+            "score": 7
+          },
+          {
+            "text": "robust protocol design",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W2484573086",
+          "title": "An optimal decoding algorithm for Molecular Communications systems with noise, memory, and pulse width",
+          "abstract": "",
+          "year": 2016,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W2399693278",
+          "title": "Packet Replication and Noise in Reliable End-to-end Molecular Communication",
+          "abstract": "In modern communication systems, noise represents the source of errors that disturb useful information signals for communication. In biological systems, however, noise plays important roles for their functions. In this position paper, we point out that, in designing and engineering molecular communi",
+          "year": 2016,
+          "score": 0.9643
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Use chiral self-assembly, structure-property relationships, and metamaterial design principles to model how enantiomeric purity affects electron transport, molecular recognition selectivity, catalytic specificity, and multiscale functional coordination.",
+        "keywords": [
+          {
+            "text": "chiral self-assembly",
+            "score": 9
+          },
+          {
+            "text": "structure-property relationships",
+            "score": 8
+          },
+          {
+            "text": "enantioselective catalysis",
+            "score": 8
+          },
+          {
+            "text": "charge transport",
+            "score": 7
+          },
+          {
+            "text": "functional metamaterials",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4251041317",
+          "title": "Molecular-Level Design of Heterogeneous Chiral Catalysts",
+          "abstract": "A recent major focus of catalyst research has been on improving the selectivity or atom efficiency of catalytic processes. Perhaps the most subtle and difficult form of selectivity to control is enantioselectivity, a catalyst’s ability to preferentially yield one enantiomer of a chiral product. Since two enantiomers...",
+          "year": 2019,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W7027101199",
+          "title": "Chirality in Supramolecular Assemblies: causes and consequences",
+          "abstract": "[Back Cover] Supramolecular chemistry deals with the organisation of molecules into defined assemblies using non-covalent interactions, including weaker and reversible interactions such as hydrogen bonds, and metal-ligand interactions. The aspect of stereochemistry within such chemical architectures, and in particul...",
+          "year": 2016,
+          "score": 0.9627
+        }
+      ]
+    }
+  ]
+}

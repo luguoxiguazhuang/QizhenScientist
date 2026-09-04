@@ -1,0 +1,2823 @@
+{
+  "version": 1,
+  "events": [
+    {
+      "index": 1,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "techno-economic comparison of grid-scale energy storage technologies for high renewable power systems",
+        "keywords": [
+          {
+            "text": "techno economic",
+            "score": 10
+          },
+          {
+            "text": "economic comparison",
+            "score": 9
+          },
+          {
+            "text": "comparison grid",
+            "score": 8
+          },
+          {
+            "text": "grid scale",
+            "score": 7
+          },
+          {
+            "text": "scale energy",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4387115200",
+          "title": "Hydrogen Storage with Aluminum Formate, ALF: Experimental, Computational, and Technoeconomic Studies",
+          "abstract": "Long-duration storage of hydrogen is necessary for coupling renewable H<sub>2</sub> with stationary fuel cell power applications. In this work, aluminum formate (ALF), which adopts the ReO<sub>3</sub>-type structure, is shown to have remarkable H<sub>2</sub> storage performance at non-cryogenic (>120 K) temperatures...",
+          "year": 2023,
+          "score": 0.4868
+        },
+        {
+          "paper_id": "https://openalex.org/W4210458448",
+          "title": "Flow Batteries",
+          "abstract": "Renewable energy sources including wind and solar require reliable electrical energy storage systems because of their intermittent nature. Electrochemical energy storage devices such as batteries, fuel cells and flow batteries, and electrochemical capacitors are among the leading energy storage systems because of th...",
+          "year": 2010,
+          "score": 0.4851
+        },
+        {
+          "paper_id": "https://openalex.org/W7052242003",
+          "title": "Public Transportation Electrification with the Support of Mobile Energy Storage",
+          "abstract": "In recent decades, fossil fuels and carbon emissions reduction have become an increasingly popular global phenomenon; therefore, a number of governments worldwide have allocated substantial funds to transportation electrification projects. As a result of its significant positive environmental impact, the electrifica...",
+          "year": 2023,
+          "score": 0.4848
+        },
+        {
+          "paper_id": "https://openalex.org/W4402276918",
+          "title": "Quantifying concentration distributions in redox flow batteries with neutron radiography",
+          "abstract": "",
+          "year": 2024,
+          "score": 0.4701
+        },
+        {
+          "paper_id": "https://openalex.org/W4402652842",
+          "title": "Influence of deposition conditions on performance of Ni<sub>3</sub>S<sub>2</sub> as the bifunctional electrocatalyst in alkaline solutions by galvanostatic deposition",
+          "abstract": "The electrodeposition method is a popular synthesis method due to its low cost, simplicity, and short synthesis time. In addition, this synthesis route results in the preparation of a self-supporting electrocatalyst, which eliminates the use of binders and ultimately facilitates the durability as well as the activit...",
+          "year": 2024,
+          "score": 0.4488
+        },
+        {
+          "paper_id": "https://openalex.org/W4413104272",
+          "title": "Artificial Intelligence in Assessing Electricity and Water Demand in Oilseed Processing",
+          "abstract": "The aim of this study was to explore the use of neural networks as a decision-support tool for sustainable oilseed processing. The investigation focused on how different production profiles (crude vegetable oil, refined oil, hydrogenated oil and margarine) affect electricity and water use in selected Polish processi...",
+          "year": 2025,
+          "score": 0.4475
+        },
+        {
+          "paper_id": "https://openalex.org/W4410221804",
+          "title": "The Relative Importance of the SDG Pillars",
+          "abstract": "The seventeen United Nations’ Sustainable Development Goals (SDGs) comprise social, economic, and environmental aspects of sustainability, and as such, they can be grouped into five so-called pillars, i.e., People, Prosperity, Planet, Peace, and Partnership. The present study elucidates the relative importance of th...",
+          "year": 2024,
+          "score": 0.4301
+        },
+        {
+          "paper_id": "https://openalex.org/W1617152374",
+          "title": "Scaling in polymers: I. The ortho-fused spiral-benzenes",
+          "abstract": "Analogous to a model that predicts the linear scaling of the binding energy of a nucleus from the number of nucleons, a simple model was developed to account for the observed linear variation of the quantum-chemically computed total electronic energy of the fully-optimized structures of a homologous series of polyme...",
+          "year": 2009,
+          "score": 0.4254
+        },
+        {
+          "paper_id": "https://openalex.org/W4386074106",
+          "title": "Photocatalytic Semi-Hydrogenation of Alkynes: A Game of Kinetics, Selectivity and Critical Timing",
+          "abstract": "The semi-hydrogenation reaction of alkynes is important in the fine chemicals and pharmaceutical industries, and it is thus important to find catalytic processes that will drive the reaction efficiently and at a low cost. The real challenge is to drive the alkyne-to-alkene reaction while avoiding over-hydrogenation ...",
+          "year": 2023,
+          "score": 0.424
+        },
+        {
+          "paper_id": "https://openalex.org/W4415168222",
+          "title": "Rational Design of a Multifunctional MOFs for Alkane‐Selective Gas Separation",
+          "abstract": "Efficient separation of light hydrocarbons-including the removal of CH<sub>4</sub> from N<sub>2</sub> and the purification of olefins such as C<sub>2</sub>H<sub>4</sub> and C<sub>3</sub>H<sub>6</sub> from their corresponding alkanes (C<sub>2</sub>H<sub>6</sub> and C<sub>3</sub>H<sub>8</sub>)-is critical in natural g...",
+          "year": 2025,
+          "score": 0.4232
+        },
+        {
+          "paper_id": "https://openalex.org/W2421707041",
+          "title": "High-throughput computational screening of nanoporous adsorbents for CO<sub>2</sub> capture from natural gas",
+          "abstract": "Designing adsorbents for the separation of natural gas components requires an understanding of how molecular structure affects gas adsorption.",
+          "year": 2016,
+          "score": 0.422
+        },
+        {
+          "paper_id": "https://openalex.org/W6983343664",
+          "title": "MBTA assessment formula: an evaluation and recommendations",
+          "abstract": "The fundamental objectives of this study are to gauge the success of the formula in achieving its stated goals and to make recommendations to redress shortcomings made evident iDy the eval- uation.Specifically, we:1.Review the historical background of the formula and analyze its ohjectlves.2.Review the formula compo...",
+          "year": 1989,
+          "score": 0.4216
+        },
+        {
+          "paper_id": "https://openalex.org/W2739706740",
+          "title": "Vanadium Redox Flow Battery: Stability of Vanadium (V) Electrolyte Solutions",
+          "abstract": "Abstract not Available.",
+          "year": 2010,
+          "score": 0.4179
+        },
+        {
+          "paper_id": "https://openalex.org/W7042875561",
+          "title": "Rapid Report. Energy and industry. GAS PRICES\\n(HOUSEHOLD CONSUMERS)\\n1 January 1994. 1994.19",
+          "abstract": "These comments are based on prices expressed in purchasing power standard (PPS); tables and graphics also mention the prices in ECU, which allows a comparison in both units.A study of the variations in VAT excluded prices since 1 July 1993 reveals that:The highest rises were recorded in Italy: mainly in Turin for D^...",
+          "year": 1994,
+          "score": 0.4176
+        },
+        {
+          "paper_id": "https://openalex.org/W2330022246",
+          "title": "Present status and future prospects of discharge-pumped excimer lasers.",
+          "abstract": "The present technical status and an understanding of the discharge-pumped rare-gas halide excimers are reviewed. Much emphasis is placed on the energy scaling of the discharge-pumped XeCl lasers, long pulse excimer lasers and high efficiency operation of excimer lasers. The problems to be solved are presented along ...",
+          "year": 1988,
+          "score": 0.4138
+        },
+        {
+          "paper_id": "https://openalex.org/W4404088860",
+          "title": "Large Deviation Upper Bounds and Improved MSE Rates of Nonlinear SGD: Heavy-tailed Noise and Power of Symmetry",
+          "abstract": "We study large deviation upper bounds and mean-squared error (MSE) guarantees of a general framework of nonlinear stochastic gradient methods in the online setting, in the presence of heavy-tailed noise. Unlike existing works that rely on the closed form of a nonlinearity (typically clipping), our framework treats t...",
+          "year": 2024,
+          "score": 0.4065
+        },
+        {
+          "paper_id": "https://openalex.org/W4225262770",
+          "title": "Study on the Manufacture of High-purity Vanadium Pentoxide for VRFB Using Chelating Agents",
+          "abstract": "VRFB (EDTA)",
+          "year": 2022,
+          "score": 0.4038
+        },
+        {
+          "paper_id": "https://openalex.org/W7061822003",
+          "title": "Rising Houston Sales: Retail, Wholesale, and Business, 1963 and 1958 Comparison",
+          "abstract": "A comparative study of retail, wholesale, and service business performance in Houston for 1958 and 1963.",
+          "year": 1966,
+          "score": 0.4001
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "lithium-ion battery recycling and second-life use for sustainable grid storage",
+        "keywords": [
+          {
+            "text": "lithium ion",
+            "score": 10
+          },
+          {
+            "text": "ion battery",
+            "score": 9
+          },
+          {
+            "text": "battery recycling",
+            "score": 8
+          },
+          {
+            "text": "recycling second",
+            "score": 7
+          },
+          {
+            "text": "second life",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4322767937",
+          "title": "Sorting lithium-ion battery electrode materials using dielectrophoresis",
+          "abstract": "Lithium-ion batteries (LIBs) are common in everyday life\\nand the\\ndemand for their raw materials is increasing. Additionally, spent\\nLIBs should be recycled to achieve a circular economy and supply resources\\nfor new LIBs or other products. Especially the recycling of the active\\nmaterial of the electrodes is the f...",
+          "year": 2023,
+          "score": 0.487
+        },
+        {
+          "paper_id": "https://openalex.org/W2994639392",
+          "title": "Local mobility in electrochemically inactive sodium in hard carbon anodes after the first cycle",
+          "abstract": "Sodium ion batteries are a promising alternative to current lithium ion battery technology, providing relatively high capacity and good cycling stability at low cost.",
+          "year": 2019,
+          "score": 0.4697
+        },
+        {
+          "paper_id": "https://openalex.org/W4405424318",
+          "title": "Deep Eutectic Solvent (TOPO/D2EHPA/Menthol) for Extracting Metals from Synthetic Hydrochloric Acid Leachates of NMC-LTO Batteries",
+          "abstract": "The recycling of lithium-ion batteries is increasingly important for both resource recovery and environmental protection. However, the complex composition of cathode and anode materials in these batteries makes the efficient separation of metal mixtures challenging. Hydrometallurgical methods, particularly liquid ex...",
+          "year": 2024,
+          "score": 0.4696
+        },
+        {
+          "paper_id": "https://openalex.org/W3144055184",
+          "title": "Self-assembled multifunctional Fe3O4 hierarchical microspheres: high-efficiency lithium-ion battery materials and hydrogenation catalysts",
+          "abstract": "",
+          "year": 2020,
+          "score": 0.4563
+        },
+        {
+          "paper_id": "https://openalex.org/W4413958593",
+          "title": "Towards Inline Ultrasonic Characterisation of Battery Slurry Mixing: Opportunities, Challenges, and Perspectives",
+          "abstract": "Inefficiencies in the slurry mixing stage are a major factor in high scrap rates in battery manufacturing, thus hindering sustainable production. Current offline characterisation techniques for slurry microstructure and rheology are slow and inadequate for closed-loop quality control or process optimisation. This re...",
+          "year": 2025,
+          "score": 0.4558
+        },
+        {
+          "paper_id": "https://openalex.org/W4386410356",
+          "title": "Comparative techno-economic and life-cycle analysis of precious versus non-precious metal electrocatalysts: The case of PEM fuel cell cathodes",
+          "abstract": "Sluggish kinetics in the oxygen reduction reaction (ORR) require significant quantities of expensive Pt-based nanoparticles on carbon (Pt/C) at the cathode of proton exchange membrane fuel cells (PEMFCs). This catalyst requirement hinders their large-scale implementation. Single atom Fe in N-doped C (Fe-N-C) electro...",
+          "year": 2023,
+          "score": 0.4545
+        },
+        {
+          "paper_id": "https://openalex.org/W4406937948",
+          "title": "Microstructure-Dependent Sodium Storage Mechanisms in Hard Carbon Anodes",
+          "abstract": "Hard carbon (HC) is a leading anode material for sodium-ion batteries, but its complex microstructure complicates understanding of sodium storage mechanisms. Using X-ray total scattering and density functional theory calculations, this study clarifies how HC’s microstructural variations influence sodium storage acro...",
+          "year": 2025,
+          "score": 0.4532
+        },
+        {
+          "paper_id": "https://openalex.org/W2611150343",
+          "title": "Using soft x-ray absorption spectroscopy to characterize electrode/electrolyte interfaces in-situ and operando",
+          "abstract": "",
+          "year": 2017,
+          "score": 0.4504
+        },
+        {
+          "paper_id": "https://openalex.org/W4291916517",
+          "title": "Preparation of metal‐organic frameworks and their derivatives for supercapacitors",
+          "abstract": "Abstract To satisfy the requirements of social power development, it is urgently necessary to develop innovative and sustainable new energy storage devices. Supercapacitors have attracted considerable attention as a new type of energy storage device, owing to their high energy density, high power density, fast charg...",
+          "year": 2022,
+          "score": 0.4498
+        },
+        {
+          "paper_id": "https://openalex.org/W4413138924",
+          "title": "Lithium extraction by extractant confined in Pickering emulsion",
+          "abstract": "",
+          "year": 2025,
+          "score": 0.4475
+        },
+        {
+          "paper_id": "https://openalex.org/W4392649147",
+          "title": "Recycling of Spent FCC Catalysts: Conversion of Leached Residues to Zeolite ZSM‐5",
+          "abstract": "The commercial recycling of spent FCC catalyst typically focuses on recovering only 1-3 % of rare-earth elements, with the remaining residues often disposed of in landfills. Here, we present a novel method to close a recycling loop for spent FCC catalyst. The method involves a series of leaching steps: Firstly, the ...",
+          "year": 2024,
+          "score": 0.4437
+        },
+        {
+          "paper_id": "https://openalex.org/W4399963507",
+          "title": "Development of a new class of stable and adaptable free-standing fibre mats with high room-temperature hydroxide-ion conductivity",
+          "abstract": "",
+          "year": 2024,
+          "score": 0.4436
+        },
+        {
+          "paper_id": "https://openalex.org/W4407994996",
+          "title": "The Role of Ethanol in Lithium-Mediated Nitrogen Reduction",
+          "abstract": "Although the Haber-Bosch process for industrial ammonia production is hailed by many as one of the most influential breakthroughs of the 20th century, its decarbonisation and decentralisation remain a critical challenge. One of the most promising and fast improving approaches is electrochemical nitrogen reduction me...",
+          "year": 2025,
+          "score": 0.4429
+        },
+        {
+          "paper_id": "https://openalex.org/W4401575123",
+          "title": "Plastic Ink Formulation From The Elastomer of Recycled Tires",
+          "abstract": "Objective: The objective of this study is to investigate the reuse of the elastomer with the addition of some solvents and additives from discarded tires, with the aim of manufacturing an ink for common and diverse use applied to the ink industry. Theoretical Framework: In this topic, the main concepts and theories ...",
+          "year": 2024,
+          "score": 0.441
+        },
+        {
+          "paper_id": "https://openalex.org/W4362711700",
+          "title": "Structural transformation of metal–organic frameworks and identification of electrocatalytically active species during the oxygen evolution reaction under neutral conditions",
+          "abstract": "Electrocatalytically active species of crystalline MOFs in a neutral OER process were identified as a mononuclear coordination compound and its isomer via a crystal-to-crystal transformation.",
+          "year": 2023,
+          "score": 0.4399
+        },
+        {
+          "paper_id": "https://openalex.org/W3120643233",
+          "title": "“Highway” Toward Efficient Water Oxidation",
+          "abstract": "",
+          "year": 2021,
+          "score": 0.435
+        },
+        {
+          "paper_id": "https://openalex.org/W4408173377",
+          "title": "Highly Disordered Nanoporous Carbons for Enhanced Energy Storage in Supercapacitors",
+          "abstract": "There has been a lack of clear principles for designing nanoporous carbons with enhanced performance in supercapacitors due to their structural complexity. Our recent NMR and Raman spectroscopy studies of a series of commercial nanoporous carbons showed that carbons with smaller graphene-like domains have higher cap...",
+          "year": 2025,
+          "score": 0.4349
+        },
+        {
+          "paper_id": "https://openalex.org/W4400873750",
+          "title": "Electrodeposition in Deep Eutectic Solvents: The “Obvious”, the “Unexpected” and the “Wonders”",
+          "abstract": "Deep eutectic solvents (DESs) are attracting considerable attention as non-conventional media for electrodeposition processes. This opinion contribution discusses the debated nature and definition of these solvents as well as some practical considerations of relevance when performing electrodeposition studies in DES...",
+          "year": 2024,
+          "score": 0.4326
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "sodium-ion batteries for stationary grid energy storage scalability and cost",
+        "keywords": [
+          {
+            "text": "sodium ion",
+            "score": 10
+          },
+          {
+            "text": "ion batteries",
+            "score": 9
+          },
+          {
+            "text": "batteries stationary",
+            "score": 8
+          },
+          {
+            "text": "stationary grid",
+            "score": 7
+          },
+          {
+            "text": "grid energy",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W2994639392",
+          "title": "Local mobility in electrochemically inactive sodium in hard carbon anodes after the first cycle",
+          "abstract": "Sodium ion batteries are a promising alternative to current lithium ion battery technology, providing relatively high capacity and good cycling stability at low cost.",
+          "year": 2019,
+          "score": 0.5084
+        },
+        {
+          "paper_id": "https://openalex.org/W2323906701",
+          "title": "Crystal Structures and Electrode Performance of Alpha-NaFeO2 for Rechargeable Sodium Batteries",
+          "abstract": "Single phase, well-crystallized O3-type NaFeO2 (alpha NaFeO2) is prepared by a solid-state method. Electrode performance of O3-type NaFeO2 is examined as positive electrode materials for rechargeable sodium batteries. O3-type NaFeO2 can deliver 80–100 mAh g−1 of reversible capacity with a nearly flat voltage profile...",
+          "year": 2012,
+          "score": 0.4999
+        },
+        {
+          "paper_id": "https://openalex.org/W4408302424",
+          "title": "Deep Layer Pillaring Reinforced Electronic States and Structural Defects Toward High‐Performance Sodium Ion Battery (Adv. Energy Mater. 8/2025)",
+          "abstract": "Sodium Ion Batteries In article number 2404685, Xin Guo, Jun Liu, and co-workers demonstrate a new approach to modulating the electronic structure of vanadium-based oxide by incorporating Na+ cations into deep V─O layers, ensuring reconstructed low-energy barrier channels and maximized exposure of active sites. This...",
+          "year": 2025,
+          "score": 0.4994
+        },
+        {
+          "paper_id": "https://openalex.org/W3200194335",
+          "title": "Exploring Na_5M(PO_4)_2 F_2 (M=Cr,V) Frameworks as Superionic Cathode Materials for Sodium Ion Batteries Through A First Principles Approach",
+          "abstract": "The rising needs to develop high-performance energy storage systems fuelled us to rationally design a system of frameworks Na5M(PO4)2F2 (M=Cr, v), which can find use as Superionic cathode materials for Sodium Ion Batteries.The findings of the work provide a theoretical basis with respect to their thermodynamics as w...",
+          "year": 2020,
+          "score": 0.4993
+        },
+        {
+          "paper_id": "https://openalex.org/W3007310185",
+          "title": "PEO-NaPF<sub>6</sub> Blended Polymer Electrolyte for Solid State Sodium Battery",
+          "abstract": "Solid-state polymer electrolytes (SPEs) are proposed as promising candidates for application in sodium batteries to replace the organic liquid electrolytes for enhanced safety. In this study, we first verified the feasibility of PEO-NaPF 6 SPE in solid-state sodium batteries (SSBs). The explored PEO-NaPF 6 SPEs exhi...",
+          "year": 2020,
+          "score": 0.4967
+        },
+        {
+          "paper_id": "https://openalex.org/W4413711234",
+          "title": "A bidirectional interfacial engineering strategy for highly stable sodium metal batteries",
+          "abstract": "Sodium (Na) metal batteries (SMBs) are regarded as some of the most promising next-generation energy storage systems due to their high energy density. However, their practical application is severely hindered by interfacial instabilities at both the anode and cathode, which result in rapid capacity degradation durin...",
+          "year": 2025,
+          "score": 0.495
+        },
+        {
+          "paper_id": "https://openalex.org/W2968301378",
+          "title": "Binary‐Metal Selenides: General Approach to Produce Nanostructured Binary Transition Metal Selenides as High‐Performance Sodium Ion Battery Anodes (Small 33/2019)",
+          "abstract": "In article number 1901995, Yanglong Hou and co-workers demonstrate a simplistic, scalable and general synthesis strategy employing various combinations of binary transition metal selenides (B-TMSs) with high surface area and hierarchical nanosheet structures as promising anodes for sodium ion batteries (SIBs). Repre...",
+          "year": 2019,
+          "score": 0.4946
+        },
+        {
+          "paper_id": "https://openalex.org/W4319991511",
+          "title": "Metal Selenides Anode Materials for Sodium Ion Batteries: Synthesis, Modification, and Application (Small 4/2023)",
+          "abstract": "Sodium Ion Batteries Metal selenides (MSex) with high theoretical capacity and diverse species have aroused extensive interests. In article number 2206194, Yu Li, Ying Bai, Chuan Wu, and co-workers comprehensively review the synthesis methods, modification strategies, sodium storage mechanism and recent research pro...",
+          "year": 2023,
+          "score": 0.4936
+        },
+        {
+          "paper_id": "https://openalex.org/W4403485216",
+          "title": "A Novel Anion Receptor Additive for −40 °C Sodium Metal Batteries by Anion/Cation Solvation Engineering",
+          "abstract": "Sodium metal batteries, known for their high theoretical specific capacity, abundant reserves, and promising low-temperature performance, have garnered significant attention. However, the large ionic radius of Na<sup>+</sup> and sluggish transport kinetics across the interfacial structure hinder their practical appl...",
+          "year": 2024,
+          "score": 0.4924
+        },
+        {
+          "paper_id": "https://openalex.org/W3081437095",
+          "title": "Assessment on the Use of High Capacity “Sn<sub>4</sub>P<sub>3</sub>”/NHC Composite Electrodes for Sodium‐Ion Batteries with Ether and Carbonate Electrolytes",
+          "abstract": "Abstract This work reports the facile synthesis of a Sn–P composite combined with nitrogen doped hard carbon (NHC) obtained by ball‐milling and its use as electrode material for sodium ion batteries (SIBs). The “Sn 4 P 3 ”/NHC electrode (with nominal composition “Sn 4 P 3 ”:NHC = 75:25 wt%) when coupled with a digly...",
+          "year": 2020,
+          "score": 0.4916
+        },
+        {
+          "paper_id": "https://openalex.org/W4408382541",
+          "title": "High Entropy Boosts the Low Temperature Na<sup>+</sup>‐Storage Performance of Na<sub>4</sub>Fe<sub>3</sub>(PO<sub>4</sub>)<sub>2</sub>P<sub>2</sub>O<sub>7</sub>",
+          "abstract": "Abstract Na 4 Fe 3 (PO 4 ) 2 P 2 O 7 (NFPP) is considered a promising cathode material for sodium ion batteries (SIBs). However, the inferior electronic conductivity and inadequate Na + ions diffusion kinetics of NFPP at low temperatures hinder its practical applications. In this study, high entropy Na 4 Fe 2.95 (Mg...",
+          "year": 2025,
+          "score": 0.4913
+        },
+        {
+          "paper_id": "https://openalex.org/W4309790064",
+          "title": "Glass-Ceramic Sodium-Deficient Chlorides with High Sodium-ion Conductivity",
+          "abstract": "Solid-state batteries are a promising energy storage technology that can potentially offer both improved safety and energy density. The solid electrolyte is the defining feature and plays a significant role in the electrochemical performance of a solid-state cell, especially at room temperature. Herein, we report a ...",
+          "year": 2022,
+          "score": 0.4909
+        },
+        {
+          "paper_id": "https://openalex.org/W2766780709",
+          "title": "Sodium‐Ion Batteries: Twisted Perylene Diimides with Tunable Redox Properties for Organic Sodium‐Ion Batteries (Adv. Energy Mater. 20/2017)",
+          "abstract": "In article number 1701316, Mahesh Hariharan, Manikoth M. Shaijumon, and co-workers demonstrate an efficient approach to tune the redox properties of perylene diimides as electrodes for sodium ion batteries by tuning their dihedral angle through appropriate electrophilic substitution. An understanding of structure-vo...",
+          "year": 2017,
+          "score": 0.4907
+        },
+        {
+          "paper_id": "https://openalex.org/W4405326194",
+          "title": "60‐Second Preparation of High‐Entropy Selenides: Suppressing Polyselenides Shuttling for Long‐Cycle‐Life Sodium‐Ion Batteries",
+          "abstract": "Abstract Metal selenides with excellent electronic conductivity and high theoretical capacity present great superiority as alternative anodes in sodium ion batteries (SIBs). However, they face huge challenges such as severe sodium polyselenides shuttling and slow sodium ion diffusion kinetics. To address these issue...",
+          "year": 2024,
+          "score": 0.4904
+        },
+        {
+          "paper_id": "https://openalex.org/W4408909722",
+          "title": "Superior Sulfur-Doped Carbon Anodes for Sodium-Ion Batteries through Incorporation of Onion-Like Carbon",
+          "abstract": "Sodium ion batteries are important components of a future energy system. Therefore, high-performance electrode materials for these energy storage devices are in high demand. This study presents a novel sulfur-doped carbon (SdC) anode material for sodium-ion batteries, synthesized via the pyrolysis of polythiophene. ...",
+          "year": 2025,
+          "score": 0.49
+        },
+        {
+          "paper_id": "https://openalex.org/W4200319268",
+          "title": "Room-Temperature Assembled MXene-Based Aerogels for High Mass-Loading Sodium-Ion Storage",
+          "abstract": "",
+          "year": 2021,
+          "score": 0.4886
+        },
+        {
+          "paper_id": "https://openalex.org/W2365119357",
+          "title": "NaF-M (M = Fe, Cu) Nanocomposites as Conversion Cathode Materials for Sodium Ion Batteries",
+          "abstract": "The NaF-M (M = Fe, Cu) nanocomposites were prepared by high-energy ball milling using TiN grinding nanoparticles and investigated as cathode materials for sodium ion batteries. The experimental results demonstrated that NaF-Fe and NaF-Cu nanocomposites can go through electrochemical conversion reaction with Na+ upta...",
+          "year": 2012,
+          "score": 0.4875
+        },
+        {
+          "paper_id": "https://openalex.org/W2996774339",
+          "title": "Two-dimensional PS2: a promising anode material for sodium-ion batteries and a potential superconductor",
+          "abstract": "Two dimensional materials as electrodes have shown unique advantages such as the infinite planar lengths, broad electrochemical window, and much exposed active sites. In this work, by means of density functional theory computations, we demonstrate that two dimensional PS2 with the 1T-Type structure as many two dimen...",
+          "year": 2019,
+          "score": 0.4835
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Which emerging and established energy storage technologies offer the most scalable, cost-effective, and sustainable solutions for integrating variable renewable energy into power grids?",
+        "keywords": [
+          {
+            "text": "grid-scale energy storage",
+            "score": 10
+          },
+          {
+            "text": "lithium-ion batteries",
+            "score": 9
+          },
+          {
+            "text": "battery recycling",
+            "score": 8
+          },
+          {
+            "text": "sodium-ion batteries",
+            "score": 7
+          },
+          {
+            "text": "flow batteries",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W7052242003",
+          "title": "Public Transportation Electrification with the Support of Mobile Energy Storage",
+          "abstract": "In recent decades, fossil fuels and carbon emissions reduction have become an increasingly popular global phenomenon; therefore, a number of governments worldwide have allocated substantial funds to transportation electrification projects. As a result of its significant positive environmental impact, the electrifica...",
+          "year": 2023,
+          "score": 0.4844
+        },
+        {
+          "paper_id": "https://openalex.org/W2784775565",
+          "title": "Organic Redox-Flow Batteries Using Hair Dyes and Pharmaceuticals",
+          "abstract": "In the last few years the number of renewable energy sources (e.g. wind or solar energy) increased drastically. The availability of solar energy depends on the amount of daily sun light and the availability of electric power from wind turbines is linked to the available wind offered by nature. The increase of power ...",
+          "year": 2018,
+          "score": 0.483
+        },
+        {
+          "paper_id": "https://openalex.org/W4408799303",
+          "title": "Design and Performance Studies on Series of Tetrazole-Based Ultra-High-Energy Density High-Nitrogen Heterocyclic Power Systems",
+          "abstract": "The innovation of energy storage technology and its solutions for energetic materials is an important direction in the current energy technology field. Hence, series of tetrazole-based ultra-high-energy-density high-nitrogen heterocyclic power compounds were designed and their energy characteristics and safety perfo...",
+          "year": 2025,
+          "score": 0.4704
+        },
+        {
+          "paper_id": "https://openalex.org/W4412829514",
+          "title": "Revolutionizing carbon capture efficiency: A comprehensive review of AI-Driven Optimization Strategies for CO₂ Capture and Storage Processes",
+          "abstract": "The pressing need to achieve net-zero emissions by 2050 highlights the critical role of Carbon Capture, Utilization, and Storage (CCUS) in addressing climate change, yet high energy costs and scalability challenges limit its adoption. Artificial intelligence (AI) offers innovative solutions to enhance CCUS efficienc...",
+          "year": 2025,
+          "score": 0.4645
+        },
+        {
+          "paper_id": "https://openalex.org/W2921772475",
+          "title": "High Voltage Electrolyte Based on Fluorinated Compounds for High Energy Li-ion Chemistry",
+          "abstract": "\"Lithium ion batteries have dominated the portable electronics market and have the potential to dominate large-scale battery applications including hybrid and electric vehicles, as well as grid storage, because of their high energy and power densities1,2. It is well known that conventional electrolytes show poor ano...",
+          "year": 2016,
+          "score": 0.4579
+        },
+        {
+          "paper_id": "https://openalex.org/W3096373151",
+          "title": "Transition metal fluorides as lithium ion cathodes",
+          "abstract": "More energy dense lithium ion batteries are essential for the production of long-range electric vehicles and all-electric aircraft. These next generation batteries will require high capacity cath- ode materials that move beyond the lithium intercalation chemistry of current electrodes. On paper, transition metal flu...",
+          "year": 2020,
+          "score": 0.4565
+        },
+        {
+          "paper_id": "https://openalex.org/W2385209134",
+          "title": "Ionics and Electrochemical Reactions in 1D and 3D Crosslinked Porous Electrodes",
+          "abstract": "Lithium ion batteries are a critical component enabling many modern technologies, including portable electronics, hybrid electric vehicles and more. While interest in nanomaterials for lithium ion batteries has been growing in recent years, very few systematic studies have been carried out on controlled architecture...",
+          "year": 2015,
+          "score": 0.4556
+        },
+        {
+          "paper_id": "https://openalex.org/W4389676117",
+          "title": "Using Aquatic Plant-Derived Biochars as Carbon Materials for the Negative Electrodes of Li-Ion Batteries",
+          "abstract": "The current study focuses on the production of biochars derived from aquatic plants, specifically red seaweed Ahnfeltia and seagrass Zostera and Ruppia, found in brackish lagoons in the Sea of Okhotsk, Sakhalin Island. These biochars were obtained through a stepwise pyrolysis process conducted at temperatures of 500...",
+          "year": 2023,
+          "score": 0.4553
+        },
+        {
+          "paper_id": "https://openalex.org/W2851304407",
+          "title": "Understanding Fluoroethylene Carbonate and Vinylene Carbonate Based Electrolytes for Si Anodes in Lithium Ion Batteries with NMR Spectroscopy",
+          "abstract": "Fluoroethylene carbonate (FEC) and vinylene carbonate (VC) are widely used as electrolyte additives in lithium ion batteries. Here we analyze the solid electrolyte interphase (SEI) formed on binder-free silicon nanowire (SiNW) electrodes in pure FEC or VC electrolytes containing 1 M LiPF<sub>6</sub> by solid-state N...",
+          "year": 2018,
+          "score": 0.4511
+        },
+        {
+          "paper_id": "https://openalex.org/W3092822561",
+          "title": "Application of MOF-derived transition metal oxides and composites as anodes for lithium-ion batteries",
+          "abstract": "Research progress of MOF-derived metal oxides and composites in lithium ion batteries has been presented based on different organic linkers.",
+          "year": 2020,
+          "score": 0.4506
+        },
+        {
+          "paper_id": "https://openalex.org/W1610309810",
+          "title": "Development of high performance composite lithium ion battery cathode systems with carbon nanotubes functionalised with bimetallic inorganic nanocrystal alloys",
+          "abstract": "Lithium ion cathode systems based on composites of lithium iron phosphate (LiFePO 4 ), ironcobalt-derivatised carbon nanotubes (FeCo-CNT) and polyaniline (PA) nanomaterials were developed.The FeCo-functionalised CNTs were obtained through in-situ reductive precipitation of iron (II) sulfate heptahydrate (FeSO 4 .7H ...",
+          "year": 2011,
+          "score": 0.4499
+        },
+        {
+          "paper_id": "https://openalex.org/W2302499730",
+          "title": "RETRACTED: A universal cooperative assembly-directed method for coating of mesoporous TiO <sub>2</sub> nanoshells with enhanced lithium storage properties",
+          "abstract": "TiO2 is exceptionally useful, but it remains a great challenge to develop a universal method to coat TiO2 nanoshells on different functional materials. We report a one-pot, low-temperature, and facile method that can rapidly form mesoporous TiO2 shells on various inorganic, organic, and inorganic-organic composite m...",
+          "year": 2016,
+          "score": 0.4466
+        },
+        {
+          "paper_id": "https://openalex.org/W2799517688",
+          "title": "Carbon Xerogels: The Bespoke Nanoporous Carbons",
+          "abstract": "This chapter focuses on the main features of resorcinol-formaldehyde–based carbon xerogels. The first part of the chapter discusses ways of synthesizing these materials and the different variables involved. Then a review of the ways in which the meso- and macroporosity of organic xerogels can be controlled by adjust...",
+          "year": 2018,
+          "score": 0.4445
+        },
+        {
+          "paper_id": "https://openalex.org/W6922465762",
+          "title": "Controllable Fabrication\\nof Coordination Polymer Particles\\n(CPPs): A Bridge between Versatile Organic Building Blocks and Porous\\nCopper-Based Inorganic Materials",
+          "abstract": "Hierarchically micro-/nanostructured coordination polymer\\n[Cu­(2,5-PDC)­H&lt;sub&gt;2&lt;/sub&gt;O]&lt;sub&gt;&lt;i&gt;n&lt;/i&gt;&lt;/sub&gt; architectures\\nwith tunable\\nmorphologies have been successfully prepared by rationally adjusting\\nthe preparation parameters, such as the reactant concentration, solvent,\\n...",
+          "year": 2016,
+          "score": 0.4399
+        },
+        {
+          "paper_id": "https://openalex.org/W953985103",
+          "title": "Microwave-assisted synthesis of graphene nanocomposites: recent developments on lithium-ion batteries",
+          "abstract": "Abstract: Lithium ion battery (LIB) is a popular power source for various portable mobile devices and even electrical vehicles. Graphene-based composites are important electrodes for LIBs due to their high-capacity, long cycle life, and impressive high-rate capability. Microwave-assisted synthesis is a promising app...",
+          "year": 2015,
+          "score": 0.4371
+        },
+        {
+          "paper_id": "https://openalex.org/W2954642635",
+          "title": "Lithium Attachment to C60 and Nitrogen- and Boron-Doped C60: A Mechanistic Study",
+          "abstract": "Fullerene-based materials including C<sub>60</sub> and doped C<sub>60</sub> have previously been proposed as anodes for lithium ion batteries. It was also shown earlier that <i>n</i>- and <i>p</i>-doping of small molecules can substantially increase voltages and specific capacities. Here, we study ab initio the atta...",
+          "year": 2019,
+          "score": 0.4362
+        },
+        {
+          "paper_id": "https://openalex.org/W1977633269",
+          "title": "Ex-situ<sup>7</sup>Li MAS NMR Study of Olivine Structured Material for Cathode of Lithium Ion Battery",
+          "abstract": "<TEX>$^7Li$</TEX> nuclear magnetic resonance (NMR) spectra have been observed for <TEX>$LiMPO_4$</TEX> (M = Fe, Mn) samples, as a promising cathode material of lithium ion battery. Observed <TEX>$^7Li$</TEX> shifts of <TEX>$LiFe_{1-x}Mn_xPO_4$</TEX> (x = 0, 0.6, 0.8, and 1) synthesized with solid-state reaction are ...",
+          "year": 2014,
+          "score": 0.4349
+        },
+        {
+          "paper_id": "https://openalex.org/W4409034823",
+          "title": "Metal-organic frame structures and composites based on them: structural features, synthesis methods, electrochemical properties and prospects (review)",
+          "abstract": "This paper presents an overview of various types of organometallic frameworks (MOFs), their structural features, and classification. The main methods and approaches to the synthesis of both MOFs and composite materials based on them are also considered.The structure of MOFs is a regular three-dimensional lattice for...",
+          "year": 2024,
+          "score": 0.4328
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "pumped hydro storage expansion constraints and sustainability for grid integration",
+        "keywords": [
+          {
+            "text": "pumped hydro",
+            "score": 10
+          },
+          {
+            "text": "hydro storage",
+            "score": 9
+          },
+          {
+            "text": "storage expansion",
+            "score": 8
+          },
+          {
+            "text": "expansion constraints",
+            "score": 7
+          },
+          {
+            "text": "constraints sustainability",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W7052242003",
+          "title": "Public Transportation Electrification with the Support of Mobile Energy Storage",
+          "abstract": "In recent decades, fossil fuels and carbon emissions reduction have become an increasingly popular global phenomenon; therefore, a number of governments worldwide have allocated substantial funds to transportation electrification projects. As a result of its significant positive environmental impact, the electrifica...",
+          "year": 2023,
+          "score": 0.458
+        },
+        {
+          "paper_id": "https://openalex.org/W4234705137",
+          "title": "Electrochemical energy storage in formate ions",
+          "abstract": "Renewable energy sources are increasingly important in meeting society's energy demand. In particular, penetration of wind and photovoltaic power is growing rapidly. This development is essential for the wellbeing of future generations, but is accompanied by many challenges. One of the most important technical chall...",
+          "year": 2021,
+          "score": 0.4545
+        },
+        {
+          "paper_id": "https://openalex.org/W3212984053",
+          "title": "High Voltage Redox-Meditated Flow Batteries with Prussian Blue Solid Booster",
+          "abstract": "This work presents Prussian blue solid boosters for use in high voltage redox-mediated flow batteries (RMFB) based on non-aqueous electrolytes. The system consisted of sodium iodide as a redox mediator in an acetonitrile catholyte containing solid Prussian blue powder. The combination enabled the solid booster utili...",
+          "year": 2021,
+          "score": 0.4307
+        },
+        {
+          "paper_id": "https://openalex.org/W4408799303",
+          "title": "Design and Performance Studies on Series of Tetrazole-Based Ultra-High-Energy Density High-Nitrogen Heterocyclic Power Systems",
+          "abstract": "The innovation of energy storage technology and its solutions for energetic materials is an important direction in the current energy technology field. Hence, series of tetrazole-based ultra-high-energy-density high-nitrogen heterocyclic power compounds were designed and their energy characteristics and safety perfo...",
+          "year": 2025,
+          "score": 0.4182
+        },
+        {
+          "paper_id": "https://openalex.org/W2515868357",
+          "title": "Liquefied Recovery and DC Discharge Characteristics of Gas Mixtures Containing c-C&lt;sub&gt;4&lt;/sub&gt;F&lt;sub&gt;8&lt;/sub&gt;",
+          "abstract": "This paper describes two fundamental characteristics of gas mixtures with c-C4F8 (perfluorocyclobutane), which the authors have proposed as a possible candidate for substituting SF6 in gas insulation. One is concerning the release rate of an electro-negative gas from a gas mixture at liquefied recovery. Gas mixtures...",
+          "year": 2001,
+          "score": 0.4149
+        },
+        {
+          "paper_id": "https://openalex.org/W4400588723",
+          "title": "Knowledge Extraction via Machine Learning Guides a Topology‐Based Permeability Prediction Model",
+          "abstract": "Abstract The complexity and heterogeneity of pore structure present significant challenges in accurate permeability estimation. Commonly used empirical formulas neglect its microscopic and topological characteristics, thus lacking accuracy and adaptability. While machine learning (ML) and deep learning (DL) models d...",
+          "year": 2024,
+          "score": 0.4134
+        },
+        {
+          "paper_id": "https://openalex.org/W4413785323",
+          "title": "Uncertainties in CO<sub>2</sub> Impurity Measurements Using FTIR",
+          "abstract": "As carbon capture, utilization, and storage (CCUS) rapidly expands, reliable CO<sub xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">2</sub> impurity monitoring is essential for verifying compliance with purity specifications. Although these specifications define which impuri...",
+          "year": 2025,
+          "score": 0.4082
+        },
+        {
+          "paper_id": "https://openalex.org/W4307543028",
+          "title": "Sheet electrode for electrochemical systems",
+          "abstract": "An electrochemical cell construction features a novel co-extruded plastic electrode in an interleaved construction with a novel integral separator-spacer. Also featured is a leak and impact resistant construction for preventing the spill of corrosive materials in the event of rupture.",
+          "year": 2023,
+          "score": 0.4039
+        },
+        {
+          "paper_id": "https://openalex.org/W4299570689",
+          "title": "Silica powders for powder evacuated thermal insulating panel and method",
+          "abstract": "A powder evacuated thermal insulating panel using generally spherical and porous silica particles of a median size less than about 100 nanometers in diameter, a pour packing density of about 0.4 to 0.6 g/cm.sup.3 and an external surface area in the range of about 90 to 600 m.sup.2 /g is described. The silica powders...",
+          "year": 2023,
+          "score": 0.4018
+        },
+        {
+          "paper_id": "https://openalex.org/W4229075582",
+          "title": "Through‐Space Electrostatic Effects of Positively Charged Substituents on the Hydrogen Evolution Reaction",
+          "abstract": "Invited for this month's cover is the group of Rui Cao at Shaanxi Normal University. The image shows the effects of through-space electrostatic interactions on the hydrogen evolution reaction. The Research Article itself is available at 10.1002/cssc.202200086.",
+          "year": 2022,
+          "score": 0.4015
+        },
+        {
+          "paper_id": "https://openalex.org/W4389259416",
+          "title": "Population‐Based Algorithms",
+          "abstract": "Population-based algorithms are mainly metaheuristic algorithms that provide good performances in a wide range of domains. Two such significant population-based optimization algorithms are – evolutionary algorithms and swarm intelligence algorithms. One of the most popular evolutionary algorithms is the genetic algo...",
+          "year": 2023,
+          "score": 0.3993
+        },
+        {
+          "paper_id": "https://openalex.org/W4404377943",
+          "title": "Progress in MOFs and MOFs-Integrated MXenes as Electrode Modifiers for Energy Storage and Electrochemical Sensing Applications",
+          "abstract": "The global energy demand and environmental pollution are the two major challenges of the present scenario. Recently, researchers focused on the preparation and investigation of catalysts for their capacitive properties for energy storage devices. Thus, supercapacitors have received extensive interest from researcher...",
+          "year": 2024,
+          "score": 0.398
+        },
+        {
+          "paper_id": "https://openalex.org/W4285260610",
+          "title": "Thorough investigation on the high-temperature polymorphism of dipentyl-perylenediimide: thermal expansion <i>vs.</i> polymorphic transition",
+          "abstract": "An extensive study on polymorphs, crystal structures and thermal expansion of PDI-C 5",
+          "year": 2022,
+          "score": 0.3957
+        },
+        {
+          "paper_id": "https://openalex.org/W2910043098",
+          "title": "Converting Capsules to Sensors for Nondestructive Analysis: From Cargo-Responsive Self-Sensing to Functional Characterization",
+          "abstract": "A general concept of converting capsules into sensors is reported. Such simple conversion enables instantaneous nondestructive analysis for applications such as controlled release and energy storage among others. Converted capsule sensors are responsive in emission colors to varying core cargos via the incorporation...",
+          "year": 2019,
+          "score": 0.3956
+        },
+        {
+          "paper_id": "https://openalex.org/W2793920765",
+          "title": "Wettability of eutectic NaLiCO3 salt on magnesium oxide substrates at 778 K",
+          "abstract": "",
+          "year": 2018,
+          "score": 0.3938
+        },
+        {
+          "paper_id": "https://openalex.org/W4409045017",
+          "title": "One-Step Synthesis of Zirconium Sulfide Nanoparticles on Flexible Carbon Cloth for Supercapacitor Application",
+          "abstract": "Zirconium sulfide nanoparticles (ZrxSy) are prepared on a flexible substrate of carbon cloth (CC) via a one-step synthesis approach using the low-pressure chemical vapor deposition (LPCVD) technique. The scanning electron microscopy (SEM) image reveals that the particle sizes are in the range of ca. 3~23 nm with an ...",
+          "year": 2025,
+          "score": 0.3907
+        },
+        {
+          "paper_id": "https://openalex.org/W4236863557",
+          "title": "Self-Organizing Electrochemistry: Titania Nanotube- and Mesosponge Layers",
+          "abstract": "Abstract not Available.",
+          "year": 2011,
+          "score": 0.3882
+        },
+        {
+          "paper_id": "https://openalex.org/W3119249559",
+          "title": "Growing collaborations between Chinese and UK young scholars on chemical science and technology",
+          "abstract": "",
+          "year": 2021,
+          "score": 0.3875
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "redox flow batteries for long-duration renewable energy storage",
+        "keywords": [
+          {
+            "text": "redox flow",
+            "score": 10
+          },
+          {
+            "text": "flow batteries",
+            "score": 9
+          },
+          {
+            "text": "batteries long",
+            "score": 8
+          },
+          {
+            "text": "long duration",
+            "score": 7
+          },
+          {
+            "text": "duration renewable",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W3198056410",
+          "title": "The development of organic-based systems for use in redox flow batteries",
+          "abstract": "With the current drive towards environmental sustainability, electrochemical energy storage (EES) systems such as redox flow batteries (RFB) are a promising solution as they can potentially play an important role in balancing energy generation and consumption to ensure power network stability and reliability. Organi...",
+          "year": 2021,
+          "score": 0.5256
+        },
+        {
+          "paper_id": "https://openalex.org/W4411280227",
+          "title": "Development of a Physics-informed Modeling Framework for Redox-Mediated Flow Batteries",
+          "abstract": "Redox-mediated flow batteries (RMFBs) promise increased energy density through the incorporation of solid active materials into the external tanks, but the operation and design of these devices is challenged by kinetic, thermodynamic, and transport complexities introduced by the solid-mediator reactions. Here, we pr...",
+          "year": 2025,
+          "score": 0.5115
+        },
+        {
+          "paper_id": "https://openalex.org/W3182247126",
+          "title": "Strategies to Improve the Energy Density of Non-Aqueous Organic Redox Flow Batteries",
+          "abstract": "",
+          "year": 2021,
+          "score": 0.5042
+        },
+        {
+          "paper_id": "https://openalex.org/W2784775565",
+          "title": "Organic Redox-Flow Batteries Using Hair Dyes and Pharmaceuticals",
+          "abstract": "In the last few years the number of renewable energy sources (e.g. wind or solar energy) increased drastically. The availability of solar energy depends on the amount of daily sun light and the availability of electric power from wind turbines is linked to the available wind offered by nature. The increase of power ...",
+          "year": 2018,
+          "score": 0.5041
+        },
+        {
+          "paper_id": "https://openalex.org/W4200087385",
+          "title": "A Nonaqueous Redox-Matched Flow Battery with Charge Storage in Insoluble Polymer Beads",
+          "abstract": "We describe the nonaqueous redox-matched flow battery (RMFB), where charge is stored on redox-active moieties covalently tethered to non-circulating, insoluble polymer beads and charge is transferred between the electrodes and the beads via soluble mediators with redox potentials matched to the active moieties on th...",
+          "year": 2021,
+          "score": 0.502
+        },
+        {
+          "paper_id": "https://openalex.org/W3213368056",
+          "title": "Combining electrochemical and imaging analyses to understand the effect of electrode microstructure and electrolyte properties on redox flow batteries",
+          "abstract": "",
+          "year": 2021,
+          "score": 0.4999
+        },
+        {
+          "paper_id": "https://openalex.org/W3212984053",
+          "title": "High Voltage Redox-Meditated Flow Batteries with Prussian Blue Solid Booster",
+          "abstract": "This work presents Prussian blue solid boosters for use in high voltage redox-mediated flow batteries (RMFB) based on non-aqueous electrolytes. The system consisted of sodium iodide as a redox mediator in an acetonitrile catholyte containing solid Prussian blue powder. The combination enabled the solid booster utili...",
+          "year": 2021,
+          "score": 0.4927
+        },
+        {
+          "paper_id": "https://openalex.org/W4225859761",
+          "title": "Thermodynamically Rigorous Description of the Open Circuit Voltage of Redox Flow Batteries",
+          "abstract": "Redox flow batteries (RFBs) are considered an outstanding candidate for the integration of renewable energy sources into the existing power grids. A key property of RFBs is the open circuit voltage (OCV) corresponding to the currentless equilibrium state. In the literature, the Nernst equation describing this proper...",
+          "year": 2022,
+          "score": 0.4916
+        },
+        {
+          "paper_id": "https://openalex.org/W4287117725",
+          "title": "Physics-informed CoKriging model of a redox flow battery",
+          "abstract": "Redox flow batteries (RFBs) offer the capability to store large amounts of energy cheaply and efficiently, however, there is a need for fast and accurate models of the charge-discharge curve of a RFB to potentially improve the battery capacity and performance. We develop a multifidelity model for predicting the char...",
+          "year": 2021,
+          "score": 0.4903
+        },
+        {
+          "paper_id": "https://openalex.org/W4252498249",
+          "title": "Symmetric, Robust, and High-voltage Organic Redox Flow Battery Model Based on a Helical Carbenium Ion Electrolyte",
+          "abstract": "Redox flow batteries (RFBs) represent a promising technology for grid-scale integration of renewable energy. Redox-active molecular pairs with large potential windows have been identified as key components of these systems. However, cross-contamination problems encountered by the use of different catholyte and anoly...",
+          "year": 2020,
+          "score": 0.4894
+        },
+        {
+          "paper_id": "https://openalex.org/W4242739072",
+          "title": "Leveraging Neural Networks and Genetic Algorithms to Refine Electrode Properties in Redox Flow Batteries",
+          "abstract": "Redox flow batteries are a nascent, yet promising, energy storage technology for which widespread deployment is hampered by technical and economic challenges. A performance-determining component in the reactor, present-day electrodes are often borrowed from adjacent electrochemical technologies rather than specifica...",
+          "year": 2021,
+          "score": 0.4891
+        },
+        {
+          "paper_id": "https://openalex.org/W4200358050",
+          "title": "Blatter Radicals as Bipolar Materials for Symmetric Redox-Flow Batteries",
+          "abstract": "Redox-active organic molecules are promising charge-storage materials for redox-flow batteries (RFBs), but material crossover between posolyte/negolyte and chemical degradation are limiting factors in the performance of all-organic RFBs. We demonstrate that the bipolar electrochemistry of 1,2,4-benzotriazin-4-yl (Bl...",
+          "year": 2021,
+          "score": 0.4879
+        },
+        {
+          "paper_id": "https://openalex.org/W6963760995",
+          "title": "Riboflavin Derivatives for Sustainable Redox Flow Batteries",
+          "abstract": "Demand for renewable energy, electric vehicles, and sustainability is rapidly increasing, and this demand for more sustainable solutions is driven by the progressively increasing climate issues worldwide. Redox flow batteries (RFBs) are found within renewable energy sources such as wind farms, hydroelectric, and sol...",
+          "year": 2022,
+          "score": 0.4876
+        },
+        {
+          "paper_id": "https://openalex.org/W2795805998",
+          "title": "Solution Properties and Practical Limits of Concentrated Electrolytes for Nonaqueous Redox Flow Batteries",
+          "abstract": "Nonaqueous redox flow batteries (NRFBs) use energized organic fluids that contain redox active organic molecules (ROMs) and supporting electrolyte. Such all-organic electrolytes have wider electrochemical stability windows than the more familiar aqueous electrolytes, potentially allowing a higher energy density in t...",
+          "year": 2018,
+          "score": 0.4857
+        },
+        {
+          "paper_id": "https://openalex.org/W4402276918",
+          "title": "Quantifying concentration distributions in redox flow batteries with neutron radiography",
+          "abstract": "",
+          "year": 2024,
+          "score": 0.4855
+        },
+        {
+          "paper_id": "https://openalex.org/W6884408339",
+          "title": "Kinetic Control over Disproportionation StabilizesWurster’s Blue Catholyte for Nonaqueous Redox Flow Batteries",
+          "abstract": "Redoxmers are organic molecules that serve as charge carriers in redox flow batteries. While these materials are affordable and easy to source, insufficient stability of their charged states (radical ions) remains a challenge. A common reaction of these species is their disproportionation. This reversible reaction y...",
+          "year": 2024,
+          "score": 0.4848
+        },
+        {
+          "paper_id": "https://openalex.org/W4406327387",
+          "title": "2‐Amidophenolate and 2‐Iminosemiquinone Radical‐Coordinated Vanadyl Complex as Catholyte for Non‐Aqueous Redox‐Flow Batteries",
+          "abstract": "Fulfilment of energy demand by utilizing renewable energy sources that do not contribute to the production of greenhouse gases is a step forward in mitigating global warming. However, with the energy sources being intermittent in nature, renewable energy needs to be stored effectively on a grid scale. In this contex...",
+          "year": 2025,
+          "score": 0.4834
+        },
+        {
+          "paper_id": "https://openalex.org/W2910525013",
+          "title": "Catalyst-Inspired Charge Carriers for High Energy Density Redox Flow Batteries",
+          "abstract": "We introduce a theoretical design approach aiming at improving energy density of redox flow batteries (RFBs) via the utilization of redox noninnocent ligands capable of stabilizing a metal center in a wide range of oxidation states. Our findings suggest that this promotes the possibility of multiple redox events as ...",
+          "year": 2019,
+          "score": 0.4833
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "low-environmental-impact pumped hydro storage designs and retrofitting for grid balancing",
+        "keywords": [
+          {
+            "text": "low environmental",
+            "score": 10
+          },
+          {
+            "text": "environmental impact",
+            "score": 9
+          },
+          {
+            "text": "impact pumped",
+            "score": 8
+          },
+          {
+            "text": "pumped hydro",
+            "score": 7
+          },
+          {
+            "text": "hydro storage",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4234705137",
+          "title": "Electrochemical energy storage in formate ions",
+          "abstract": "Renewable energy sources are increasingly important in meeting society's energy demand. In particular, penetration of wind and photovoltaic power is growing rapidly. This development is essential for the wellbeing of future generations, but is accompanied by many challenges. One of the most important technical chall...",
+          "year": 2021,
+          "score": 0.4662
+        },
+        {
+          "paper_id": "https://openalex.org/W7052242003",
+          "title": "Public Transportation Electrification with the Support of Mobile Energy Storage",
+          "abstract": "In recent decades, fossil fuels and carbon emissions reduction have become an increasingly popular global phenomenon; therefore, a number of governments worldwide have allocated substantial funds to transportation electrification projects. As a result of its significant positive environmental impact, the electrifica...",
+          "year": 2023,
+          "score": 0.4578
+        },
+        {
+          "paper_id": "https://openalex.org/W2784775565",
+          "title": "Organic Redox-Flow Batteries Using Hair Dyes and Pharmaceuticals",
+          "abstract": "In the last few years the number of renewable energy sources (e.g. wind or solar energy) increased drastically. The availability of solar energy depends on the amount of daily sun light and the availability of electric power from wind turbines is linked to the available wind offered by nature. The increase of power ...",
+          "year": 2018,
+          "score": 0.4493
+        },
+        {
+          "paper_id": "https://openalex.org/W2586894546",
+          "title": "A review of the benefits and applications of the thorium fuel cycle",
+          "abstract": "This paper aims to inform the reader of the benefits that can be achieved by using thorium as a fuel for nuclear power. Stages of the thorium cycle are directly compared against the current uranium based nuclear fuel cycle. These include mining, milling, fuel fabrication, use of various reactor designs, reprocessing...",
+          "year": 2010,
+          "score": 0.4392
+        },
+        {
+          "paper_id": "https://openalex.org/W4214841094",
+          "title": "Summary of the engineering assessment of inactive uranium mill tailings: Phillips/United Nuclear site, Ambrosia Lake, New Mexico",
+          "abstract": "Ford, Bacon and Davis Utah, Inc., has reevaluated the Phillips/United Nuclear site in order to revise the December 1977 engineering assessment of the problems resulting from the existence of radioactive uranium mill tailings at Ambrosia Lake, New Mexico. This engineering assessment has included the preparation of to...",
+          "year": 1981,
+          "score": 0.4372
+        },
+        {
+          "paper_id": "https://openalex.org/W4245687928",
+          "title": "Summary of the engineering assessment of inactive uranium mill tailings: Monument Valley site, Monument Valley, Arizona",
+          "abstract": "Ford, Bacon and Davis Utah Inc. has reevaluated the Monument Valley site in order to revise the March 1977 engineering assessment of the problems resulting from the existence of radioactive uranium mill tailings at Monument Valley, Arizona. This engineering assessment has included the preparation of topographic maps...",
+          "year": 1981,
+          "score": 0.4339
+        },
+        {
+          "paper_id": "https://openalex.org/W4294142670",
+          "title": "A Critical Review of Radiolysis Issues in Water-Cooled Fission and Fusion Reactors: Part I, Assessment of Radiolysis Models",
+          "abstract": "A critical review is presented on modeling of the radiolysis of the coolant water in nuclear power reactors with emphasis on ITER. The review is presented in two parts: In Part I, we assess previous work in terms of compliance with important chemical principles and conclude that no model proposed to date is complete...",
+          "year": 2022,
+          "score": 0.4288
+        },
+        {
+          "paper_id": "https://openalex.org/W2008313326",
+          "title": "Challenges in Materials Research for Sustainable Nuclear Energy",
+          "abstract": "Abstract Global energy demand is expected to increase steeply, creating an urgent need to evolve a judicious global energy policy, exploiting the potential of all available energy resources, including nuclear energy. With increasing awareness of environmental issues, nuclear energy is expected to play an important r...",
+          "year": 2008,
+          "score": 0.4258
+        },
+        {
+          "paper_id": "https://openalex.org/W4402790500",
+          "title": "Opportunities and Threats for Supercapacitor Technology Based on Biochar—A Review",
+          "abstract": "This review analyzes in detail the topic of supercapacitors based on biochar technologies, including their advantages, disadvantages, and development potential. The main topic is the formation of precursors in the process of pyrolysis and activation, and the possibility of the application of biochar itself in variou...",
+          "year": 2024,
+          "score": 0.4244
+        },
+        {
+          "paper_id": "https://openalex.org/W4249392008",
+          "title": "EXPLORE application of Nuclear Power",
+          "abstract": "RETURN TO ISSUEPREVAdvertisementNEXTEXPLORE application of Nuclear PowerCite this: Chem. Eng. News 1961, 39, 37, 157Publication Date (Print):September 11, 1961Publication History Published online6 November 2010Published inissue 11 September 1961https://doi.org/10.1021/cen-v039n037.p157Copyright © 1961 AMERICAN CHEMI...",
+          "year": 1961,
+          "score": 0.4189
+        },
+        {
+          "paper_id": "https://openalex.org/W280632005",
+          "title": "Field procedures for the uranium hydrogeochemical and stream sediment reconnaissance as used by the Los Alamos Scientific Laboratory",
+          "abstract": "This manual of field procedures is prepared to aid personnel involved in the field sampling of natural waters and waterborne sediment for the Los Alamos Scientific Laboratory (LASL) as part of the US Department of Energy (DOE) Hydrogeochemical and Stream Sediment Reconnaissance (HSSR) of the National Uranium Resourc...",
+          "year": 1978,
+          "score": 0.4171
+        },
+        {
+          "paper_id": "https://openalex.org/W121682330",
+          "title": "Advanced oxidation technologies for chemical demilitarization",
+          "abstract": "This is the final report of a one-year, Laboratory-Directed Research and Development (LDRD) project at the Los Alamos National Laboratory. The main project objective was to establish a technical basis for future program development in the area of chemical warfare agent destruction using a Los Alamos-developed advanc...",
+          "year": 1996,
+          "score": 0.4157
+        },
+        {
+          "paper_id": "https://openalex.org/W1543077761",
+          "title": "Development of fast breeder reactor fuel reprocessing technology at the Power Reactor and Nuclear Fuel Development Corporation",
+          "abstract": "For the past two decades, a broad range of research development (R D) programs to establish fast breeder reactor (FBR) system and its associated fuel cycle technology have been pursued by the Power Reactor and Nuclear Fuel Development Corporation (PNC). Developmental activities for FBR fuel reprocessing technology h...",
+          "year": 1991,
+          "score": 0.4154
+        },
+        {
+          "paper_id": "https://openalex.org/W136853707",
+          "title": "Uranium resources: Issues and facts",
+          "abstract": "Although there are several secondary issues, the most important uranium resource issue is, ``will there be enough uranium available at a cost which will allow nuclear power to be competitive in the future?`` This paper will attempt to answer this question by discussing uranium supply, demand, and economics from the ...",
+          "year": 1993,
+          "score": 0.4153
+        },
+        {
+          "paper_id": "https://openalex.org/W4402119831",
+          "title": "Alkaline Earth Bismuth Fluorides as Fluoride-Ion Battery Electrolytes",
+          "abstract": "Fluoride-ion batteries have several potential advantages over lithium-ion batteries. Materials development is still needed, however, to realize electrolytes with sufficiently high anion conductivity and compatibility with anode and cathode layers. Fluoride compounds are difficult to synthesize directly as single cry...",
+          "year": 2024,
+          "score": 0.4152
+        },
+        {
+          "paper_id": "https://openalex.org/W4237486922",
+          "title": "Fundamental sources of unpredictability",
+          "abstract": "",
+          "year": 1997,
+          "score": 0.4143
+        },
+        {
+          "paper_id": "https://openalex.org/W2054778189",
+          "title": "Direct conversion of light hydrocarbon gases to liquid fuel",
+          "abstract": "The objective of this program is to investigate the direct conversion of light gaseous hydrocarbons to liquid transportation fuels via a partial oxidation process. The process will be tested in existing pilot plant to obtain credible mass balances. Specific objectives to be met include determination of optimal proce...",
+          "year": 1990,
+          "score": 0.4141
+        },
+        {
+          "paper_id": "https://openalex.org/W2910043098",
+          "title": "Converting Capsules to Sensors for Nondestructive Analysis: From Cargo-Responsive Self-Sensing to Functional Characterization",
+          "abstract": "A general concept of converting capsules into sensors is reported. Such simple conversion enables instantaneous nondestructive analysis for applications such as controlled release and energy storage among others. Converted capsule sensors are responsive in emission colors to varying core cargos via the incorporation...",
+          "year": 2019,
+          "score": 0.4122
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "techno-economic comparison of emerging grid-scale energy storage technologies for high renewable penetration",
+        "keywords": [
+          {
+            "text": "techno economic",
+            "score": 10
+          },
+          {
+            "text": "economic comparison",
+            "score": 9
+          },
+          {
+            "text": "comparison emerging",
+            "score": 8
+          },
+          {
+            "text": "emerging grid",
+            "score": 7
+          },
+          {
+            "text": "grid scale",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4367312071",
+          "title": "Aerogels, additive manufacturing, and energy storage",
+          "abstract": "",
+          "year": 2023,
+          "score": 0.4881
+        },
+        {
+          "paper_id": "https://openalex.org/W7052242003",
+          "title": "Public Transportation Electrification with the Support of Mobile Energy Storage",
+          "abstract": "In recent decades, fossil fuels and carbon emissions reduction have become an increasingly popular global phenomenon; therefore, a number of governments worldwide have allocated substantial funds to transportation electrification projects. As a result of its significant positive environmental impact, the electrifica...",
+          "year": 2023,
+          "score": 0.486
+        },
+        {
+          "paper_id": "https://openalex.org/W4210458448",
+          "title": "Flow Batteries",
+          "abstract": "Renewable energy sources including wind and solar require reliable electrical energy storage systems because of their intermittent nature. Electrochemical energy storage devices such as batteries, fuel cells and flow batteries, and electrochemical capacitors are among the leading energy storage systems because of th...",
+          "year": 2010,
+          "score": 0.4803
+        },
+        {
+          "paper_id": "https://openalex.org/W2784775565",
+          "title": "Organic Redox-Flow Batteries Using Hair Dyes and Pharmaceuticals",
+          "abstract": "In the last few years the number of renewable energy sources (e.g. wind or solar energy) increased drastically. The availability of solar energy depends on the amount of daily sun light and the availability of electric power from wind turbines is linked to the available wind offered by nature. The increase of power ...",
+          "year": 2018,
+          "score": 0.4747
+        },
+        {
+          "paper_id": "https://openalex.org/W4412810781",
+          "title": "Emerging MXene/metal selenides for energy solutions: A comprehensive review",
+          "abstract": "MXenes and transition metal selenides (TMSe) have emerged as prominent electrode materials for energy storage and conversion applications. The integration of diverse TMSe nanostructures with MXenes introduces promising research avenues for tailored designs ranging from zero-dimensional (0D) to three-dimensional (3D)...",
+          "year": 2025,
+          "score": 0.468
+        },
+        {
+          "paper_id": "https://openalex.org/W4413430778",
+          "title": "Synthesis of Nanostructured Manganese (Hydro)Oxides in Microreactor with Intensive Counter-Current Swirling Flows for High-Performance Pseudocapacitive Electrodes",
+          "abstract": "<title>Abstract</title> Efficient and scalable synthesis of nanostructured pseudocapacitive materials is essential for advancing high-performance energy storage systems. In this work, manganese (hydro)oxides were synthesized via a continuous-flow microreactor equipped with intensive counter-current swirling flows, p...",
+          "year": 2025,
+          "score": 0.4636
+        },
+        {
+          "paper_id": "https://openalex.org/W4410708640",
+          "title": "Synthesis of doped ZIF-8@ZIF-67 hybrid nanocomposites: a strategy for enhancing supercapacitor performance for energy storage device",
+          "abstract": "Abstract Developing advanced materials are vital to maximizing supercapacitor performance potential. This study examined Co-, Zn-, and Pb-doped ZIF-8@ZIF-67 nanocomposites for enhanced supercapacitor performance. The structural, morphological, optical, and electrochemical properties were analyzed using X-ray diffrac...",
+          "year": 2025,
+          "score": 0.4486
+        },
+        {
+          "paper_id": "https://openalex.org/W2279671604",
+          "title": "A high-precision approach to reconstruct distribution of relaxation times from electrochemical impedance spectroscopy",
+          "abstract": "",
+          "year": 2016,
+          "score": 0.441
+        },
+        {
+          "paper_id": "https://openalex.org/W4410221804",
+          "title": "The Relative Importance of the SDG Pillars",
+          "abstract": "The seventeen United Nations’ Sustainable Development Goals (SDGs) comprise social, economic, and environmental aspects of sustainability, and as such, they can be grouped into five so-called pillars, i.e., People, Prosperity, Planet, Peace, and Partnership. The present study elucidates the relative importance of th...",
+          "year": 2024,
+          "score": 0.4368
+        },
+        {
+          "paper_id": "https://openalex.org/W4386074106",
+          "title": "Photocatalytic Semi-Hydrogenation of Alkynes: A Game of Kinetics, Selectivity and Critical Timing",
+          "abstract": "The semi-hydrogenation reaction of alkynes is important in the fine chemicals and pharmaceutical industries, and it is thus important to find catalytic processes that will drive the reaction efficiently and at a low cost. The real challenge is to drive the alkyne-to-alkene reaction while avoiding over-hydrogenation ...",
+          "year": 2023,
+          "score": 0.4338
+        },
+        {
+          "paper_id": "https://openalex.org/W4394920446",
+          "title": "Diamondoid Ni(II) Coordination Polymer as an Electrocatalyst for Hydrogen and Oxygen Evolution Reactions and Overall Water Splitting",
+          "abstract": "We have successfully synthesized a new Ni(II)-based coordination polymer (CP) [Ni<sub>2</sub>(cis-1,4-chdc)<sub>2</sub>(4,4'-bpy)<sub>3</sub>(H<sub>2</sub>O)<sub>2</sub>] (1); (cis-1,4- H<sub>2</sub>chdc=cis-1,4-cyclohexanedicarboxylic acid and 4,4'-bpy=4,4'-bipyridine) employing slow diffusion method in a single po...",
+          "year": 2024,
+          "score": 0.4314
+        },
+        {
+          "paper_id": "https://openalex.org/W6983343664",
+          "title": "MBTA assessment formula: an evaluation and recommendations",
+          "abstract": "The fundamental objectives of this study are to gauge the success of the formula in achieving its stated goals and to make recommendations to redress shortcomings made evident iDy the eval- uation.Specifically, we:1.Review the historical background of the formula and analyze its ohjectlves.2.Review the formula compo...",
+          "year": 1989,
+          "score": 0.4218
+        },
+        {
+          "paper_id": "https://openalex.org/W2739706740",
+          "title": "Vanadium Redox Flow Battery: Stability of Vanadium (V) Electrolyte Solutions",
+          "abstract": "Abstract not Available.",
+          "year": 2010,
+          "score": 0.4183
+        },
+        {
+          "paper_id": "https://openalex.org/W2933988958",
+          "title": "<i>In operando</i>monitoring of reaction-diffusion streamlines and uncovering of electrochemo-structural interactions in electrodes",
+          "abstract": "The electrochemo-structural interactions in an electrode can be represented by a distribution of reaction-diffusion streamlines (DRDS).",
+          "year": 2019,
+          "score": 0.4171
+        },
+        {
+          "paper_id": "https://openalex.org/W7042875561",
+          "title": "Rapid Report. Energy and industry. GAS PRICES\\n(HOUSEHOLD CONSUMERS)\\n1 January 1994. 1994.19",
+          "abstract": "These comments are based on prices expressed in purchasing power standard (PPS); tables and graphics also mention the prices in ECU, which allows a comparison in both units.A study of the variations in VAT excluded prices since 1 July 1993 reveals that:The highest rises were recorded in Italy: mainly in Turin for D^...",
+          "year": 1994,
+          "score": 0.4139
+        },
+        {
+          "paper_id": "https://openalex.org/W2116287517",
+          "title": "Investigation of intracellular pH in<i>Escherichia coli</i>by 9-aminoacridine fluorescence measurements",
+          "abstract": "Les resultats obtenus par la methode fluorescente sont compares a ceux obtenus par resonance magnetique nucleaire",
+          "year": 1983,
+          "score": 0.4061
+        },
+        {
+          "paper_id": "https://openalex.org/W4389130829",
+          "title": "Beet red food colourant can be produced more sustainably with engineered Yarrowia lipolytica",
+          "abstract": "",
+          "year": 2023,
+          "score": 0.4053
+        },
+        {
+          "paper_id": "https://openalex.org/W4385262436",
+          "title": "Synthesis of <i>gem</i>‐Difluorinated Isoxazoles via Palladium‐Catalyzed Oxylallylation of Alkynone Oxime Ethers",
+          "abstract": "A novel and reliable palladium-catalyzed oxylallylation of alkynone oxime ethers with fluorine-containing alkenes was accomplished. Using the bulk industrial chemical 3-bromo-3,3-difluoroprop-1-ene as the coupling partner, this synthetic methodology offers the first example for the assembly of structurally diverse g...",
+          "year": 2023,
+          "score": 0.4042
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "sodium-ion battery electrode materials for low-cost scalable stationary energy storage",
+        "keywords": [
+          {
+            "text": "sodium ion",
+            "score": 10
+          },
+          {
+            "text": "ion battery",
+            "score": 9
+          },
+          {
+            "text": "battery electrode",
+            "score": 8
+          },
+          {
+            "text": "electrode materials",
+            "score": 7
+          },
+          {
+            "text": "materials low",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4414000841",
+          "title": "Optimizing Hard Carbon Anodes for Sodium‐Ion Batteries: Effects of Pre‐Treatment and Post‐Treatment Techniques",
+          "abstract": "ABSTRACT Hard carbon (HC), an amorphous carbon‐based material, is a promising anode for sodium‐ion batteries (SIBs) due to its sustainability and electrochemical performance. Direct carbonization offers a simple and energy‐efficient synthesis route with relatively high initial coulombic efficiency (ICE), though ofte...",
+          "year": 2025,
+          "score": 0.5542
+        },
+        {
+          "paper_id": "https://openalex.org/W4413377492",
+          "title": "Design of Sodium Chalcohalide Solid Electrolytes with Mixed Anions for All‐Solid‐State Sodium‐Ion Batteries",
+          "abstract": "Abstract Solid‐state sodium‐ion batteries (SSNIBs) have emerged as a promising alternative to lithium‐ion systems for grid‐scale energy storage, owing to sodium's abundance and the improved safety of solid‐state designs. Among various solid‐state electrolytes (SSEs), halide‐based Na + SSEs offer high electrochemical...",
+          "year": 2025,
+          "score": 0.5505
+        },
+        {
+          "paper_id": "https://openalex.org/W2593913504",
+          "title": "NaAlTi3O8, A Novel Anode Material for Sodium Ion Battery",
+          "abstract": "Sodium ion batteries are being considered as an alternative to lithium ion batteries in large-scale energy storage applications owing to the low cost. A novel titanate compound, NaAlTi<sub>3</sub>O<sub>8</sub>, was successfully synthesized and tested as a promising anode material for sodium ion batteries. Powder X-r...",
+          "year": 2017,
+          "score": 0.5465
+        },
+        {
+          "paper_id": "https://openalex.org/W4408407368",
+          "title": "Group IVA Alloy Anodes for Sodium‐Ion Rechargeable Batteries: Electrochemistry, Mechanics, and Kinetics",
+          "abstract": "Abstract Sodium‐ion batteries (SIBs) are perhaps the most promising technology currently to fulfill the requirements of large‐scale energy storage. Unlike lithium, sodium (Na) source is cost‐effective, abundant, and geographically evenly distributed. While hard carbon remains the benchmark anode material in SIBs, it...",
+          "year": 2025,
+          "score": 0.541
+        },
+        {
+          "paper_id": "https://openalex.org/W4280611222",
+          "title": "Atomic‐Scale Design of Anode Materials for Alkali Metal (Li/Na/K)‐Ion Batteries: Progress and Perspectives",
+          "abstract": "Abstract The development and optimization of high‐performance anode materials for alkali metal ion batteries is crucial for the green energy evolution. Atomic scale computational modeling such as density functional theory and molecular dynamics allows for efficient and adventurous materials design from the nanoscale...",
+          "year": 2022,
+          "score": 0.5293
+        },
+        {
+          "paper_id": "https://openalex.org/W4405489297",
+          "title": "Review—Research Progress on P2/O3-Composite Layer Metal Oxide Cathode Materials for Sodium-Ion Batteries",
+          "abstract": "The high cost and uneven distribution of lithium resources have prompted searches for alternatives to lithium-ion batteries. Among various alternatives, the sodium layered oxide cathode materials, have shown significant research potential due to their low cost. Layered oxide materials can be categorized into sodium-...",
+          "year": 2024,
+          "score": 0.528
+        },
+        {
+          "paper_id": "https://openalex.org/W4411490785",
+          "title": "Multicomponentization of a super-Na ionic conductor chloride NaTaCl <sub>6</sub> , enhancing ionic conductivity and electronic resistivity",
+          "abstract": "Multicomponentization of chloride NaTaCl 6 increases the ionic conductivity and electronic resistivity, opening the possibility for all-solid-state Na + batteries with rapid charge–discharge capabilities and enhanced energy-storage retention.",
+          "year": 2025,
+          "score": 0.5264
+        },
+        {
+          "paper_id": "https://openalex.org/W4324027017",
+          "title": "Li3TiCl6 as ionic conductive and compressible positive electrode active material for all-solid-state lithium-based batteries",
+          "abstract": "",
+          "year": 2023,
+          "score": 0.5239
+        },
+        {
+          "paper_id": "https://openalex.org/W3200194335",
+          "title": "Exploring Na_5M(PO_4)_2 F_2 (M=Cr,V) Frameworks as Superionic Cathode Materials for Sodium Ion Batteries Through A First Principles Approach",
+          "abstract": "The rising needs to develop high-performance energy storage systems fuelled us to rationally design a system of frameworks Na5M(PO4)2F2 (M=Cr, v), which can find use as Superionic cathode materials for Sodium Ion Batteries.The findings of the work provide a theoretical basis with respect to their thermodynamics as w...",
+          "year": 2020,
+          "score": 0.5233
+        },
+        {
+          "paper_id": "https://openalex.org/W4408302424",
+          "title": "Deep Layer Pillaring Reinforced Electronic States and Structural Defects Toward High‐Performance Sodium Ion Battery (Adv. Energy Mater. 8/2025)",
+          "abstract": "Sodium Ion Batteries In article number 2404685, Xin Guo, Jun Liu, and co-workers demonstrate a new approach to modulating the electronic structure of vanadium-based oxide by incorporating Na+ cations into deep V─O layers, ensuring reconstructed low-energy barrier channels and maximized exposure of active sites. This...",
+          "year": 2025,
+          "score": 0.5227
+        },
+        {
+          "paper_id": "https://openalex.org/W2745018436",
+          "title": "Structure and electrochemical performance of BaLi2−x Na x Ti6O14 (0≤x≤2) as anode materials for lithium-ion battery",
+          "abstract": "",
+          "year": 2017,
+          "score": 0.5212
+        },
+        {
+          "paper_id": "https://openalex.org/W4405338086",
+          "title": "Na<sub>2</sub>O Inorganic Solid Electrolyte Interface Mediated Through Electrode Structure Engineering Enabling Outstanding Sodium‐Storage Performance for Transition‐Metal Selenide Anodes",
+          "abstract": "Abstract Transition‐metal selenides hold great promise as advanced anode candidates for fast‐charging sodium‐ion batteries. However, an unstable solid electrolyte interphase (SEI) caused by their enormous volume expansion and strong catalytic action results in the continuous degradation of their sodium‐storage perfo...",
+          "year": 2024,
+          "score": 0.5185
+        },
+        {
+          "paper_id": "https://openalex.org/W2323906701",
+          "title": "Crystal Structures and Electrode Performance of Alpha-NaFeO2 for Rechargeable Sodium Batteries",
+          "abstract": "Single phase, well-crystallized O3-type NaFeO2 (alpha NaFeO2) is prepared by a solid-state method. Electrode performance of O3-type NaFeO2 is examined as positive electrode materials for rechargeable sodium batteries. O3-type NaFeO2 can deliver 80–100 mAh g−1 of reversible capacity with a nearly flat voltage profile...",
+          "year": 2012,
+          "score": 0.5181
+        },
+        {
+          "paper_id": "https://openalex.org/W4399782669",
+          "title": "Hollow Core‐Shelled Na<sub>4</sub>Fe<sub>2.4</sub>Ni<sub>0.6</sub>(PO<sub>4</sub>)<sub>2</sub>P<sub>2</sub>O<sub>7</sub> with Tiny‐Void Space Capable Fast‐Charge and Low‐Temperature Sodium Storage",
+          "abstract": "Abstract Iron‐based mixed polyanion phosphate Na 4 Fe 3 (PO 4 ) 2 P 2 O 7 (NFPP) is recognized as a promising cathode for Sodium‐ion Batteries (SIBs) due to its low cost and environmental friendliness. However, its inherent low conductivity and sluggish Na + diffusion limit fast charge and low‐temperature sodium sto...",
+          "year": 2024,
+          "score": 0.5169
+        },
+        {
+          "paper_id": "https://openalex.org/W4410507001",
+          "title": "Novel Sulfide‐Chloride Solid‐State Electrolytes with Tunable Anion Ratio for Highly Stable Solid‐State Sodium‐Ion Batteries",
+          "abstract": "Solid-state Na batteries (SSNBs) are among the most promising next-generation energy storage devices due to their high energy density, enhanced safety, and cost-efficiency. Achieving high-performance SSNBs depends on the development of solid-state electrolytes (SSEs) with excellent ionic conductivity, wide electroch...",
+          "year": 2025,
+          "score": 0.5165
+        },
+        {
+          "paper_id": "https://openalex.org/W2365119357",
+          "title": "NaF-M (M = Fe, Cu) Nanocomposites as Conversion Cathode Materials for Sodium Ion Batteries",
+          "abstract": "The NaF-M (M = Fe, Cu) nanocomposites were prepared by high-energy ball milling using TiN grinding nanoparticles and investigated as cathode materials for sodium ion batteries. The experimental results demonstrated that NaF-Fe and NaF-Cu nanocomposites can go through electrochemical conversion reaction with Na+ upta...",
+          "year": 2012,
+          "score": 0.5165
+        },
+        {
+          "paper_id": "https://openalex.org/W4408909722",
+          "title": "Superior Sulfur-Doped Carbon Anodes for Sodium-Ion Batteries through Incorporation of Onion-Like Carbon",
+          "abstract": "Sodium ion batteries are important components of a future energy system. Therefore, high-performance electrode materials for these energy storage devices are in high demand. This study presents a novel sulfur-doped carbon (SdC) anode material for sodium-ion batteries, synthesized via the pyrolysis of polythiophene. ...",
+          "year": 2025,
+          "score": 0.5156
+        },
+        {
+          "paper_id": "https://openalex.org/W2968301378",
+          "title": "Binary‐Metal Selenides: General Approach to Produce Nanostructured Binary Transition Metal Selenides as High‐Performance Sodium Ion Battery Anodes (Small 33/2019)",
+          "abstract": "In article number 1901995, Yanglong Hou and co-workers demonstrate a simplistic, scalable and general synthesis strategy employing various combinations of binary transition metal selenides (B-TMSs) with high surface area and hierarchical nanosheet structures as promising anodes for sodium ion batteries (SIBs). Repre...",
+          "year": 2019,
+          "score": 0.5152
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "sustainable cathode chemistries for lithium-ion batteries with reduced cobalt and nickel use",
+        "keywords": [
+          {
+            "text": "sustainable cathode",
+            "score": 10
+          },
+          {
+            "text": "cathode chemistries",
+            "score": 9
+          },
+          {
+            "text": "chemistries lithium",
+            "score": 8
+          },
+          {
+            "text": "lithium ion",
+            "score": 7
+          },
+          {
+            "text": "ion batteries",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4247105304",
+          "title": "From air conditioning to welding fluxes LITHIUM CHEMICALS SERVE INDUSTRY!",
+          "abstract": "RETURN TO ISSUEPREVAdvertisementNEXTFrom air conditioning to welding fluxes LITHIUM CHEMICALS SERVE INDUSTRY!Cite this: Chem. Eng. News 1955, 33, 24, 2543Publication Date (Print):June 13, 1955Publication History Published online5 November 2010Published inissue 13 June 1955https://doi.org/10.1021/cen-v033n024.p2543Co...",
+          "year": 1955,
+          "score": 0.5946
+        },
+        {
+          "paper_id": "https://openalex.org/W2035888719",
+          "title": "Organo-Cobalt Compounds",
+          "abstract": "",
+          "year": 1949,
+          "score": 0.5396
+        },
+        {
+          "paper_id": "https://openalex.org/W4231126957",
+          "title": "The Complexing of the Lithium Ion in Acetonitrile with Other Solvents. Investigation by the Use of a Cation-sensitive Glass Electrode",
+          "abstract": "Abstract The complexing of the lithium ion with other popular solvents has been studied in acetonitrile (AN) using a monovalent cation-sensitive glass electrode. A method similar to that developed to study the complexing of the sodium ion was employed. Mono- and di-solvated species were formed for methanol, pyridine...",
+          "year": 1975,
+          "score": 0.5311
+        },
+        {
+          "paper_id": "https://openalex.org/W3010490317",
+          "title": "Ultrahigh power and energy density in partially ordered lithium-ion cathode materials",
+          "abstract": "",
+          "year": 2020,
+          "score": 0.4972
+        },
+        {
+          "paper_id": "https://openalex.org/W4411100864",
+          "title": "Configurational entropy-tailored NASICON cathode redox chemistry for capacity-dense and ultralong cyclability",
+          "abstract": "High-entropy engineering is applied to NASICON-type cathodes to overcome long-standing trade-offs between structural stability and electrochemical performance, enabling high capacity, exceptional rate capability, and long-term cycling durability.",
+          "year": 2025,
+          "score": 0.4875
+        },
+        {
+          "paper_id": "https://openalex.org/W4381597978",
+          "title": "A fluorinated cation introduces new interphasial chemistries to enable high-voltage lithium metal batteries",
+          "abstract": "",
+          "year": 2023,
+          "score": 0.4833
+        },
+        {
+          "paper_id": "https://openalex.org/W4377023881",
+          "title": "Direct Monitoring of the Potassium Charge Carrier in Prussian Blue Cathodes using Potassium K-edge X-ray Absorption Spectroscopy",
+          "abstract": "Prussian Blue is widely utilized as a cathode material in batteries, due to its ability to intercalate alkaline metal ions, including potassium. However, the exact location of potassium or other cations within the complex structure, and how it changes as a function of cycling, is unclear. Herein, we report direct in...",
+          "year": 2023,
+          "score": 0.48
+        },
+        {
+          "paper_id": "https://openalex.org/W4281294645",
+          "title": "Exceptional Cycling Performance Enabled by Local Structural Rearrangements in Disordered Rocksalt Cathodes",
+          "abstract": "Abstract The capacity of lithium transition‐metal (TM) oxide cathodes is directly linked to the magnitude and accessibility of the redox reservoir associated with TM cations and/or oxygen anions, which traditionally decreases with cycling as a result of chemical, structural, or mechanical fatigue. Here, it is shown ...",
+          "year": 2022,
+          "score": 0.4799
+        },
+        {
+          "paper_id": "https://openalex.org/W3034580851",
+          "title": "High-performance, long lifetime chloride ion battery using a NiFe–Cl layered double hydroxide cathode",
+          "abstract": "NiFe–Cl layered double hydroxide (LDH) is proposed as a high-capacity and long lifetime cathode material for chloride ion batteries (CIBs), which delivers a maximum capacity of 350.6 mA h g<sup>−1</sup> and a long lifetime of 800 cycles.",
+          "year": 2020,
+          "score": 0.4796
+        },
+        {
+          "paper_id": "https://openalex.org/W4404039958",
+          "title": "Liquid–liquid and gas–liquid dispersions in electrochemistry: concepts, applications and perspectives",
+          "abstract": "Electrochemistry plays a pivotal role in a vast number of domains spanning from sensing and manufacturing to energy storage, environmental conservation, and healthcare. Electrochemical applications encompassing gaseous or organic substrates encounter shortcomings ascribed to high mass transfer/internal resistances a...",
+          "year": 2024,
+          "score": 0.4779
+        },
+        {
+          "paper_id": "https://openalex.org/W4405919604",
+          "title": "Sn–carbon nanocomposite anode for all-solid-state chloride-ion batteries operating at room temperature",
+          "abstract": "All-solid-state chloride-ion batteries promise high theoretical energy density and room-temperature operation. However, conventional Sn anodes suffer from low material utilization attributed to large particle size and volume expansion. Here, nano-sized Sn particles in an N-doped carbon framework are used as an anode...",
+          "year": 2024,
+          "score": 0.4775
+        },
+        {
+          "paper_id": "https://openalex.org/W4224321801",
+          "title": "High-energy and durable lithium metal batteries using garnet-type solid electrolytes with tailored lithium-metal compatibility",
+          "abstract": "Lithium metal batteries using solid electrolytes are considered to be the next-generation lithium batteries due to their enhanced energy density and safety. However, interfacial instabilities between Li-metal and solid electrolytes limit their implementation in practical batteries. Herein, Li-metal batteries using t...",
+          "year": 2022,
+          "score": 0.4751
+        },
+        {
+          "paper_id": "https://openalex.org/W4380624756",
+          "title": "Bromide-Mediated Silane Oxidation: A Convenient and Practical Counter-Elecrode Process for Undivided Electrochemical Reductions",
+          "abstract": "The counter-electrode process of an organic electrochemical reaction is integral for the success and sustainability of the process. Unlike for oxidation reactions, there is not a generally practical counter-electrode process for reduction reactions, especially for deep reductions that apply very negative potentials....",
+          "year": 2023,
+          "score": 0.4742
+        },
+        {
+          "paper_id": "https://openalex.org/W4398466034",
+          "title": "Recent Advances in Applied Electrochemistry: A Review",
+          "abstract": "Applied electrochemistry (AE) plays today an important role in a wide range of fields, including energy conversion and storage, processes, environment, (bio)analytical chemistry, and many others. Electrochemical synthesis is now proven as a promising pathway to avoid all disadvantages in terms of high energy consump...",
+          "year": 2024,
+          "score": 0.4672
+        },
+        {
+          "paper_id": "https://openalex.org/W2921772475",
+          "title": "High Voltage Electrolyte Based on Fluorinated Compounds for High Energy Li-ion Chemistry",
+          "abstract": "\"Lithium ion batteries have dominated the portable electronics market and have the potential to dominate large-scale battery applications including hybrid and electric vehicles, as well as grid storage, because of their high energy and power densities1,2. It is well known that conventional electrolytes show poor ano...",
+          "year": 2016,
+          "score": 0.467
+        },
+        {
+          "paper_id": "https://openalex.org/W2318482460",
+          "title": "Structure Stabilization by Mixed Anions in Oxyfluoride Cathodes for High-Energy Lithium Batteries",
+          "abstract": "Mixed-anion oxyfluorides (i.e., FeOxF2-x) are an appealing alternative to pure fluorides as high-capacity cathodes in lithium batteries, with enhanced cyclability via oxygen substitution. However, it is still unclear how the mixed anions impact the local phase transformation and structural stability of oxyfluorides ...",
+          "year": 2015,
+          "score": 0.4651
+        },
+        {
+          "paper_id": "https://openalex.org/W4408673294",
+          "title": "Achieving Fast Ion/Electron Transportation and Smooth Phase Transition in Polyanion Cathode by the High Entropy Strategy",
+          "abstract": "Abstract Polyanion compounds arouse significant interest as cathode materials for sodium‐ion batteries due to their large 3D lattice structures and stable frameworks. Nonetheless, it remains a great challenge for polyanion cathodes to achieve both considerable rate capability and long‐term cycling lifespan. Herein, ...",
+          "year": 2025,
+          "score": 0.4646
+        },
+        {
+          "paper_id": "https://openalex.org/W4285802204",
+          "title": "Understanding the Fluorination of Disordered Rocksalt Cathodes through Rational Exploration of Synthesis Pathways",
+          "abstract": "We have designed and tested several synthesis routes targeting a highly fluorinated disordered rocksalt (DRX) cathode, Li1.2Mn0.4Ti0.4O1.6F0.4, with each route rationalized by thermochemical analysis. Precursor combinations were screened to raise the F chemical potential and avoid the formation of LiF, which inhibit...",
+          "year": 2022,
+          "score": 0.4639
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "What emerging energy storage technologies and material strategies are most promising for scalable, low-cost, and sustainable storage of renewable energy?",
+        "keywords": [
+          {
+            "text": "grid-scale energy storage",
+            "score": 10
+          },
+          {
+            "text": "lithium-ion batteries",
+            "score": 9
+          },
+          {
+            "text": "battery recycling",
+            "score": 8
+          },
+          {
+            "text": "sodium-ion batteries",
+            "score": 7
+          },
+          {
+            "text": "flow batteries",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W3161908035",
+          "title": "Editorial: Emerging Technologies for Materials Design and Characterization in Energy Conversion and Storage",
+          "abstract": "EDITORIAL article Front. Energy Res., 10 May 2021Sec. Electrochemical Energy Conversion and Storage https://doi.org/10.3389/fenrg.2021.676876",
+          "year": 2021,
+          "score": 0.6965
+        },
+        {
+          "paper_id": "https://openalex.org/W2775410943",
+          "title": "Metal-organic frameworks and their derived materials for electrochemical energy storage and conversion: Promises and challenges",
+          "abstract": "In addition to their conventional uses, metal-organic frameworks (MOFs) have recently emerged as an interesting class of functional materials and precursors of inorganic materials for electrochemical energy storage and conversion technologies. This class of MOF-related materials can be broadly categorized into two g...",
+          "year": 2017,
+          "score": 0.5173
+        },
+        {
+          "paper_id": "https://openalex.org/W4328089012",
+          "title": "Metal-organic frameworks for fast electrochemical energy storage: Mechanisms and opportunities",
+          "abstract": "",
+          "year": 2023,
+          "score": 0.4996
+        },
+        {
+          "paper_id": "https://openalex.org/W2281011214",
+          "title": "Outlook and challenges for hydrogen storage in nanoporous materials",
+          "abstract": "Considerable progress has been made recently in the use of nanoporous materials for hydrogen storage. In this article, the current status of the field and future challenges are discussed, ranging from important open fundamental questions, such as the density and volume of the adsorbed phase and its relationship to o...",
+          "year": 2016,
+          "score": 0.4988
+        },
+        {
+          "paper_id": "https://openalex.org/W2385209134",
+          "title": "Ionics and Electrochemical Reactions in 1D and 3D Crosslinked Porous Electrodes",
+          "abstract": "Lithium ion batteries are a critical component enabling many modern technologies, including portable electronics, hybrid electric vehicles and more. While interest in nanomaterials for lithium ion batteries has been growing in recent years, very few systematic studies have been carried out on controlled architecture...",
+          "year": 2015,
+          "score": 0.4873
+        },
+        {
+          "paper_id": "https://openalex.org/W3092822561",
+          "title": "Application of MOF-derived transition metal oxides and composites as anodes for lithium-ion batteries",
+          "abstract": "Research progress of MOF-derived metal oxides and composites in lithium ion batteries has been presented based on different organic linkers.",
+          "year": 2020,
+          "score": 0.4844
+        },
+        {
+          "paper_id": "https://openalex.org/W2799517688",
+          "title": "Carbon Xerogels: The Bespoke Nanoporous Carbons",
+          "abstract": "This chapter focuses on the main features of resorcinol-formaldehyde–based carbon xerogels. The first part of the chapter discusses ways of synthesizing these materials and the different variables involved. Then a review of the ways in which the meso- and macroporosity of organic xerogels can be controlled by adjust...",
+          "year": 2018,
+          "score": 0.4844
+        },
+        {
+          "paper_id": "https://openalex.org/W2802202977",
+          "title": "Bi2Se3/C Nanocomposite as a New Sodium-Ion Battery Anode Material",
+          "abstract": "Bi<sub>2</sub>Se<sub>3</sub> was studied as a novel sodium-ion battery anode material because of its high theoretical capacity and high intrinsic conductivity. Integrated with carbon, Bi<sub>2</sub>Se<sub>3</sub>/C composite shows excellent cyclic performance and rate capability. For instance, the Bi<sub>2</sub>Se<s...",
+          "year": 2018,
+          "score": 0.4824
+        },
+        {
+          "paper_id": "https://openalex.org/W2302499730",
+          "title": "RETRACTED: A universal cooperative assembly-directed method for coating of mesoporous TiO <sub>2</sub> nanoshells with enhanced lithium storage properties",
+          "abstract": "TiO2 is exceptionally useful, but it remains a great challenge to develop a universal method to coat TiO2 nanoshells on different functional materials. We report a one-pot, low-temperature, and facile method that can rapidly form mesoporous TiO2 shells on various inorganic, organic, and inorganic-organic composite m...",
+          "year": 2016,
+          "score": 0.4817
+        },
+        {
+          "paper_id": "https://openalex.org/W4406473015",
+          "title": "Usage of Organic Compounds and Nanoparticles in Everyday Life",
+          "abstract": "Combining organic molecules and nanoparticles constitutes a pivotal study domain with substantial ramifications in the healthcare, energy, and environmental sustainability sectors. These materials are essential because of their distinctive qualities, such as the molecular adaptability of organic compounds and the na...",
+          "year": 2025,
+          "score": 0.4812
+        },
+        {
+          "paper_id": "https://openalex.org/W3096373151",
+          "title": "Transition metal fluorides as lithium ion cathodes",
+          "abstract": "More energy dense lithium ion batteries are essential for the production of long-range electric vehicles and all-electric aircraft. These next generation batteries will require high capacity cath- ode materials that move beyond the lithium intercalation chemistry of current electrodes. On paper, transition metal flu...",
+          "year": 2020,
+          "score": 0.481
+        },
+        {
+          "paper_id": "https://openalex.org/W3131213651",
+          "title": "Efficient overall water splitting in acid with anisotropic metal nanosheets",
+          "abstract": "Water is the only available fossil-free source of hydrogen. Splitting water electrochemically is among the most used techniques, however, it accounts for only 4% of global hydrogen production. One of the reasons is the high cost and low performance of catalysts promoting the oxygen evolution reaction (OER). Here, we...",
+          "year": 2021,
+          "score": 0.4786
+        },
+        {
+          "paper_id": "https://openalex.org/W4390401159",
+          "title": "Retracted: XRD Peak Profile Analysis of SiC Reinforced Al<sub>2</sub>O<sub>3</sub> Ceramic Composite Synthesized by Electrical Resistance Heating and Microwave Sintering: A Comparison",
+          "abstract": "",
+          "year": 2023,
+          "score": 0.4766
+        },
+        {
+          "paper_id": "https://openalex.org/W4389676117",
+          "title": "Using Aquatic Plant-Derived Biochars as Carbon Materials for the Negative Electrodes of Li-Ion Batteries",
+          "abstract": "The current study focuses on the production of biochars derived from aquatic plants, specifically red seaweed Ahnfeltia and seagrass Zostera and Ruppia, found in brackish lagoons in the Sea of Okhotsk, Sakhalin Island. These biochars were obtained through a stepwise pyrolysis process conducted at temperatures of 500...",
+          "year": 2023,
+          "score": 0.4766
+        },
+        {
+          "paper_id": "https://openalex.org/W6922465762",
+          "title": "Controllable Fabrication\\nof Coordination Polymer Particles\\n(CPPs): A Bridge between Versatile Organic Building Blocks and Porous\\nCopper-Based Inorganic Materials",
+          "abstract": "Hierarchically micro-/nanostructured coordination polymer\\n[Cu­(2,5-PDC)­H&lt;sub&gt;2&lt;/sub&gt;O]&lt;sub&gt;&lt;i&gt;n&lt;/i&gt;&lt;/sub&gt; architectures\\nwith tunable\\nmorphologies have been successfully prepared by rationally adjusting\\nthe preparation parameters, such as the reactant concentration, solvent,\\n...",
+          "year": 2016,
+          "score": 0.4756
+        },
+        {
+          "paper_id": "https://openalex.org/W2851304407",
+          "title": "Understanding Fluoroethylene Carbonate and Vinylene Carbonate Based Electrolytes for Si Anodes in Lithium Ion Batteries with NMR Spectroscopy",
+          "abstract": "Fluoroethylene carbonate (FEC) and vinylene carbonate (VC) are widely used as electrolyte additives in lithium ion batteries. Here we analyze the solid electrolyte interphase (SEI) formed on binder-free silicon nanowire (SiNW) electrodes in pure FEC or VC electrolytes containing 1 M LiPF<sub>6</sub> by solid-state N...",
+          "year": 2018,
+          "score": 0.4748
+        },
+        {
+          "paper_id": "https://openalex.org/W2962929839",
+          "title": "Covalent Organic Frameworks for the Capture, Fixation, or Reduction of CO2",
+          "abstract": "Covalent organic frameworks (COFs) are porous crystalline organic polymers which have been the subject of immense research interest in the past 10 years. COF materials are synthesized by the covalent linkage of organic molecules bonded in a repeating fashion to form a porous crystal that is ideal for gas adsorption ...",
+          "year": 2019,
+          "score": 0.4732
+        },
+        {
+          "paper_id": "https://openalex.org/W2789738299",
+          "title": "A Robust 3D Cage‐like Ultramicroporous Network Structure with High Gas‐Uptake Capacity",
+          "abstract": "A three-dimensional (3D) cage-like organic network (3D-CON) structure synthesized by the straightforward condensation of building blocks designed with gas adsorption properties is presented. The 3D-CON can be prepared using an easy but powerful route, which is essential for commercial scale-up. The resulting fused a...",
+          "year": 2018,
+          "score": 0.4726
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "earth-abundant redox flow batteries for long-duration renewable energy storage",
+        "keywords": [
+          {
+            "text": "earth abundant",
+            "score": 10
+          },
+          {
+            "text": "abundant redox",
+            "score": 9
+          },
+          {
+            "text": "redox flow",
+            "score": 8
+          },
+          {
+            "text": "flow batteries",
+            "score": 7
+          },
+          {
+            "text": "batteries long",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W3182247126",
+          "title": "Strategies to Improve the Energy Density of Non-Aqueous Organic Redox Flow Batteries",
+          "abstract": "",
+          "year": 2021,
+          "score": 0.541
+        },
+        {
+          "paper_id": "https://openalex.org/W4388210506",
+          "title": "Static theoretical investigations of organic redox active materials for redox flow batteries",
+          "abstract": "Abstract New efficient redox flow batteries (RFBs) are currently of great interest for large-scale storage of renewable energy. Further development requires the improvement of the redox active materials. Quantum chemical calculations allow the screening of large numbers of redox active molecules for required static ...",
+          "year": 2023,
+          "score": 0.5319
+        },
+        {
+          "paper_id": "https://openalex.org/W4200087385",
+          "title": "A Nonaqueous Redox-Matched Flow Battery with Charge Storage in Insoluble Polymer Beads",
+          "abstract": "We describe the nonaqueous redox-matched flow battery (RMFB), where charge is stored on redox-active moieties covalently tethered to non-circulating, insoluble polymer beads and charge is transferred between the electrodes and the beads via soluble mediators with redox potentials matched to the active moieties on th...",
+          "year": 2021,
+          "score": 0.5275
+        },
+        {
+          "paper_id": "https://openalex.org/W4411280227",
+          "title": "Development of a Physics-informed Modeling Framework for Redox-Mediated Flow Batteries",
+          "abstract": "Redox-mediated flow batteries (RMFBs) promise increased energy density through the incorporation of solid active materials into the external tanks, but the operation and design of these devices is challenged by kinetic, thermodynamic, and transport complexities introduced by the solid-mediator reactions. Here, we pr...",
+          "year": 2025,
+          "score": 0.5262
+        },
+        {
+          "paper_id": "https://openalex.org/W2955273417",
+          "title": "Harnessing Native Iron Ore as an Efficient Electrocatalyst for Overall Water Splitting",
+          "abstract": "Abstract Electrochemical water splitting is a widely accepted approach to generate hydrogen at a scale that is suitable for storing renewable energy. Therefore, the choice of catalyst for the hydrogen evolution reaction (HER) and oxygen evolution reaction (OER) are critical in terms of cost when scaling up this tech...",
+          "year": 2019,
+          "score": 0.5213
+        },
+        {
+          "paper_id": "https://openalex.org/W2910525013",
+          "title": "Catalyst-Inspired Charge Carriers for High Energy Density Redox Flow Batteries",
+          "abstract": "We introduce a theoretical design approach aiming at improving energy density of redox flow batteries (RFBs) via the utilization of redox noninnocent ligands capable of stabilizing a metal center in a wide range of oxidation states. Our findings suggest that this promotes the possibility of multiple redox events as ...",
+          "year": 2019,
+          "score": 0.521
+        },
+        {
+          "paper_id": "https://openalex.org/W4252498249",
+          "title": "Symmetric, Robust, and High-voltage Organic Redox Flow Battery Model Based on a Helical Carbenium Ion Electrolyte",
+          "abstract": "Redox flow batteries (RFBs) represent a promising technology for grid-scale integration of renewable energy. Redox-active molecular pairs with large potential windows have been identified as key components of these systems. However, cross-contamination problems encountered by the use of different catholyte and anoly...",
+          "year": 2020,
+          "score": 0.5206
+        },
+        {
+          "paper_id": "https://openalex.org/W4407927122",
+          "title": "Conductive Polymer Coatings Control Reaction Selectivity in All-Iron Redox Flow Batteries",
+          "abstract": "Aqueous all-iron redox flow batteries are an attractive and economic technology for grid-scale energy storage owing to their use of abundant and environmentally benign iron as redox active material and water as solvent. However, the battery operation is challenged by the plating/stripping reactions of iron and the c...",
+          "year": 2025,
+          "score": 0.5194
+        },
+        {
+          "paper_id": "https://openalex.org/W3212984053",
+          "title": "High Voltage Redox-Meditated Flow Batteries with Prussian Blue Solid Booster",
+          "abstract": "This work presents Prussian blue solid boosters for use in high voltage redox-mediated flow batteries (RMFB) based on non-aqueous electrolytes. The system consisted of sodium iodide as a redox mediator in an acetonitrile catholyte containing solid Prussian blue powder. The combination enabled the solid booster utili...",
+          "year": 2021,
+          "score": 0.5185
+        },
+        {
+          "paper_id": "https://openalex.org/W4200358050",
+          "title": "Blatter Radicals as Bipolar Materials for Symmetric Redox-Flow Batteries",
+          "abstract": "Redox-active organic molecules are promising charge-storage materials for redox-flow batteries (RFBs), but material crossover between posolyte/negolyte and chemical degradation are limiting factors in the performance of all-organic RFBs. We demonstrate that the bipolar electrochemistry of 1,2,4-benzotriazin-4-yl (Bl...",
+          "year": 2021,
+          "score": 0.5185
+        },
+        {
+          "paper_id": "https://openalex.org/W2782404947",
+          "title": "Polyoxovanadate-alkoxide clusters as multi-electron charge carriers for symmetric non-aqueous redox flow batteries",
+          "abstract": "Non-aqueous redox flow batteries have emerged as promising systems for large-capacity, reversible energy storage, capable of meeting the variable demands of the electrical grid. Here, we investigate the potential for a series of Lindqvist polyoxovanadate-alkoxide (POV-alkoxide) clusters, [V<sub>6</sub>O<sub>7</sub>(...",
+          "year": 2018,
+          "score": 0.5182
+        },
+        {
+          "paper_id": "https://openalex.org/W4389719333",
+          "title": "Elucidating the Iron‐Based Ionic Liquid [C<sub>4</sub>py][FeCl<sub>4</sub>]: Structural Insights and Potential for Nonaqueous Redox Flow Batteries",
+          "abstract": "Abstract In this study, a low‐melting organic‐inorganic crystalline ionic liquid compound, N ‐butyl pyridinium tetrachlorido ferrate (III) is described. The material can easily be synthesized using a one‐pot approach in an ionic liquid medium. Single‐crystal X‐ray diffraction confirms that the basic inorganic block ...",
+          "year": 2023,
+          "score": 0.5178
+        },
+        {
+          "paper_id": "https://openalex.org/W2784775565",
+          "title": "Organic Redox-Flow Batteries Using Hair Dyes and Pharmaceuticals",
+          "abstract": "In the last few years the number of renewable energy sources (e.g. wind or solar energy) increased drastically. The availability of solar energy depends on the amount of daily sun light and the availability of electric power from wind turbines is linked to the available wind offered by nature. The increase of power ...",
+          "year": 2018,
+          "score": 0.5177
+        },
+        {
+          "paper_id": "https://openalex.org/W2794032145",
+          "title": "Design of State-of-the-art Flow Cells for Energy Applications",
+          "abstract": "The worldwide energy demand is increasing every day and it necessitates rational and efficient usage of renewable energy. Undoubtedly, utilization of renewable energy can address various environmental challenges. However, all current renewable energy resources (wind, solar, and hydroelectric power) are intermittent ...",
+          "year": 2018,
+          "score": 0.5169
+        },
+        {
+          "paper_id": "https://openalex.org/W4242739072",
+          "title": "Leveraging Neural Networks and Genetic Algorithms to Refine Electrode Properties in Redox Flow Batteries",
+          "abstract": "Redox flow batteries are a nascent, yet promising, energy storage technology for which widespread deployment is hampered by technical and economic challenges. A performance-determining component in the reactor, present-day electrodes are often borrowed from adjacent electrochemical technologies rather than specifica...",
+          "year": 2021,
+          "score": 0.5163
+        },
+        {
+          "paper_id": "https://openalex.org/W4404146341",
+          "title": "Front Cover: High‐performance Porous Electrodes for Flow Batteries: Improvements of Specific Surface Areas and Reaction Kinetics (ChemElectroChem 21/2024)",
+          "abstract": "Redox flow batteries (RFBs) play a crucial role in large-scale energy storage, with electrode design being essential to their performance. Porous electrodes enhance macroscopic/mesoscopic flow, microscopic ion diffusion, and interfacial electrochemical reactions, leading to improved power density and energy efficien...",
+          "year": 2024,
+          "score": 0.5162
+        },
+        {
+          "paper_id": "https://openalex.org/W6884408339",
+          "title": "Kinetic Control over Disproportionation StabilizesWurster’s Blue Catholyte for Nonaqueous Redox Flow Batteries",
+          "abstract": "Redoxmers are organic molecules that serve as charge carriers in redox flow batteries. While these materials are affordable and easy to source, insufficient stability of their charged states (radical ions) remains a challenge. A common reaction of these species is their disproportionation. This reversible reaction y...",
+          "year": 2024,
+          "score": 0.5159
+        },
+        {
+          "paper_id": "https://openalex.org/W4404147394",
+          "title": "Modern organophotocatalysts: a new inspiration source for Symmetrical Organic Redox Flow Batteries",
+          "abstract": "Redox flow batteries (RFBs) have emerged as significant energy storage systems amid the growing adoption of renewable energy. However, the advancement of all-organic RFBs is hindered by material crossover, limited energy density, and the time-consuming selection of suitable electrolyte partners. To address these cha...",
+          "year": 2024,
+          "score": 0.5153
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "closed-loop recycling and critical material recovery from spent lithium-ion batteries",
+        "keywords": [
+          {
+            "text": "closed loop",
+            "score": 10
+          },
+          {
+            "text": "loop recycling",
+            "score": 9
+          },
+          {
+            "text": "recycling critical",
+            "score": 8
+          },
+          {
+            "text": "critical material",
+            "score": 7
+          },
+          {
+            "text": "material recovery",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4384282629",
+          "title": "Sorting Lithium-Ion Battery Electrode Materials Using Dielectrophoresis",
+          "abstract": "Lithium-ion batteries (LIBs) are common in everyday life and the demand for their raw materials is increasing. Additionally, spent LIBs should be recycled to achieve a circular economy and supply resources for new LIBs or other products. Especially the recycling of the active material of the electrodes is the focus ...",
+          "year": 2023,
+          "score": 0.5017
+        },
+        {
+          "paper_id": "https://openalex.org/W4405760652",
+          "title": "Extraction of valuable metals from waste Li‐ion batteries by deep eutectic solvent: Experimental and mechanism analysis",
+          "abstract": "Abstract A novel phospho‐based hydrophobic deep eutectic solvents (HDESs) is proposed to selectively extract valuable metals from waste lithium‐ion batteries (LIBs). Under the optimized extraction conditions, the single‐stage extraction efficiency of HDES [TOP][Lid] for Co 2+ and Ni 2+ were 98.5% and 83.9%, and HDES...",
+          "year": 2024,
+          "score": 0.4887
+        },
+        {
+          "paper_id": "https://openalex.org/W4316469329",
+          "title": "Spent Nuclear Fuel—Waste or Resource? The Potential of Strategic Materials Recovery during Recycle for Sustainability and Advanced Waste Management",
+          "abstract": "Nuclear fuel is both the densest form of energy in its virgin state and, once used, one of the most hazardous materials known to humankind. Though commonly viewed as a waste—with over 300,000 tons stored worldwide and an additional 7–11,000 tons accumulating annually—spent nuclear fuel (SNF) represents a significant...",
+          "year": 2023,
+          "score": 0.4748
+        },
+        {
+          "paper_id": "https://openalex.org/W4404441133",
+          "title": "Crystallization of Cathode Active Material Precursors from Tartaric Acid Solution",
+          "abstract": "In this study L-(+)-tartaric acid was used to extract metals from either pure cathode material (NMC111) or black mass from spent lithium-ion batteries. The leaching efficiencies of Li, Co, Ni, and Mn from NMC111 are >87 % at 70 °C, with an initial solid to liquid ratio of 17, and >72.4±1.0 % from black mass under co...",
+          "year": 2024,
+          "score": 0.4741
+        },
+        {
+          "paper_id": "https://openalex.org/W4402412052",
+          "title": "Recycling of Rare Earth Elements: From E‐Waste to Stereoselective Catalytic Reactions",
+          "abstract": "Raw mixtures of Rare Earths Elements, REE, recovered by E-waste, were used as catalysts to promote the (stereoselective) synthesis of highly valuable compounds. Y<sub>2</sub>O<sub>3</sub>, the major species that is recovered by the E-waste, can be easily converted into the catalytically active Y(OTf)<sub>3</sub> tha...",
+          "year": 2024,
+          "score": 0.474
+        },
+        {
+          "paper_id": "https://openalex.org/W3211104278",
+          "title": "Investigating the Recycling Potential of Glass Based Dye-Sensitized Solar Cells—Melting Experiment",
+          "abstract": "The effects of climate change are becoming increasingly clear, and the urgency of solving the energy and resource crisis has been recognized by politicians and society. One of the most important solutions is sustainable energy technologies. The problem with the state of the art, however, is that production is energy...",
+          "year": 2021,
+          "score": 0.4737
+        },
+        {
+          "paper_id": "https://openalex.org/W4410521256",
+          "title": "Determination of lithium concentration in black mass using laser-induced breakdown spectroscopy hand-held instrumentation",
+          "abstract": "Lithium has become one of the most strategic materials in the industry, given its wide use for the realization of efficient energy storage devices and for improving the chemical and physical characteristics of advanced ceramic and glass materials. Its widespread use in the last decades has also posed problems for it...",
+          "year": 2025,
+          "score": 0.4735
+        },
+        {
+          "paper_id": "https://openalex.org/W4313984405",
+          "title": "Selective Separation of Lithium, Magnesium and Calcium using 4‐Phosphoryl Pyrazolones as pH‐Regulated Receptors",
+          "abstract": "Ensuring continuous and sustainable lithium supply requires the development of highly efficient separation processes such as LLE (liquid-liquid extraction) for both primary sources and certain waste streams. In this work, 4-phosphoryl pyrazolones are used in an efficient pH-controlled stepwise separation of Li<sup>+...",
+          "year": 2023,
+          "score": 0.4718
+        },
+        {
+          "paper_id": "https://openalex.org/W4214807735",
+          "title": "Epilogue: Sorting, Depolymerizing, and Recycling Polymers: The Long Road to a Circular Plastics Economy",
+          "abstract": "Abstract After Hermann Staudinger laid the foundations of polymer science 100 years ago, an extraordinary scientific, technological, and industrial saga has been written by a long list of academic and industrial scientists. As a result, polymers are present in practically all sectors of human activity, transforming ...",
+          "year": 2022,
+          "score": 0.4659
+        },
+        {
+          "paper_id": "https://openalex.org/W3029010649",
+          "title": "Recovery of Diamond and Cobalt Powder from Polycrystalline Drawing Die Blanks via Ultrasound-Assisted Leaching Process—Part 1: Process Design and Efficiencies",
+          "abstract": "The treatment of industrial polycrystalline diamond (PCD) blanks in aqua regia at atmospheric pressure between 333 K and 353 K was performed via the ultrasound-assisted leaching process to investigate whether the influence of ultrasound is beneficial. Cobalt content in the solution and in the blanks was monitored as...",
+          "year": 2020,
+          "score": 0.4654
+        },
+        {
+          "paper_id": "https://openalex.org/W4407410658",
+          "title": "Waste‐Derived Activated Carbon for Supercapacitors: Current Trends and Future Prospects",
+          "abstract": "The primary challenge for supercapacitor technology lies in achieving battery‐level performance while reducing costs. Enhancing energy density involves strategic adjustments such as increasing capacitance, reliance on electrode–electrolyte interactions, or boosting cell voltage, dependent on electrolyte stability. T...",
+          "year": 2025,
+          "score": 0.4645
+        },
+        {
+          "paper_id": "https://openalex.org/W4313532404",
+          "title": "How to Decarbonize Our Energy Systems: Process‐Informed Design of New Materials for Carbon Capture",
+          "abstract": "Abstract Decarbonisation from a variety of industrial and power emission sectors highlights a marked need for capture technologies that can be optimized for different CO 2 sources and integrated into an equally diverse range of applications of captured CO 2 as a feedstock. Some capture technologies are already opera...",
+          "year": 2023,
+          "score": 0.4634
+        },
+        {
+          "paper_id": "https://openalex.org/W2040198008",
+          "title": "The credit analysis of recycling beryllium and uranium in BeO-UO<sub>2</sub>nuclear fuel",
+          "abstract": "This study quantifies the credits of beryllium and uranium which are used as the raw materials for BeO-UO2 nuclear fuel by analyzing the influence of their credits on the nuclear fuel cycle cost was analyzed, where the credit was defined as the value of raw materials recovered from spent fuel and the raw materials t...",
+          "year": 2012,
+          "score": 0.4617
+        },
+        {
+          "paper_id": "https://openalex.org/W4403602343",
+          "title": "High Configuration Entropy Promises Electrochemical Stability of Chloride Electrolytes for High‐Energy, Long‐Life All‐Solid‐State Batteries",
+          "abstract": "Abstract Solid‐state electrolytes (SSEs) with high ionic conductivity, stability, and interface compatibility are indispensable for high‐energy‐density and long‐life all‐solid‐state batteries (ASSBs), yet there are scarce SSEs with sufficient ionic conductivity and electrochemical stability. In this study, with a hi...",
+          "year": 2024,
+          "score": 0.4603
+        },
+        {
+          "paper_id": "https://openalex.org/W4317505599",
+          "title": "Zinc Electrode Cycling in Deep Eutectic Solvent Electrolytes: An Electrochemical Study",
+          "abstract": "Among post-lithium ion battery technologies, rechargeable chemistries with Zn anodes bear notable technological promise owing to their high theoretical energy density, lower manufacturing cost, availability of raw materials and inherent safety. However, Zn anodes, when employed in aqueous electrolytes, suffer from h...",
+          "year": 2023,
+          "score": 0.4599
+        },
+        {
+          "paper_id": "https://openalex.org/W2932056410",
+          "title": "Acidic Reaction of Waste Aluminum Foil for Alumina Production",
+          "abstract": "Batch experiments were performed in order to evaluate the most effective conditions of reaction between aluminum foil waste and hydrochloric acid using a statistical model based on 23 full factorial design. The three factors investigated were aluminum foil waste particle size, aluminum foil to acid solution ratio, a...",
+          "year": 2019,
+          "score": 0.4591
+        },
+        {
+          "paper_id": "https://openalex.org/W4389402777",
+          "title": "Novel chemical recycling process of REBCO materials showcased on TSMG-processed waste",
+          "abstract": "Due to the increasing production of rare-earth barium copper mixed oxide (REBCO) superconductors, a significant amount of REBCO waste is produced. The following recycling technique allows REBCO waste reprocessing into new precursor powder.",
+          "year": 2023,
+          "score": 0.4586
+        },
+        {
+          "paper_id": "https://openalex.org/W4399626900",
+          "title": "Overview of Functionalized Porous Materials for Rare-Earth Element Separation and Recovery",
+          "abstract": "The exceptional photoelectromagnetic characteristics of rare-earth elements contribute significantly to their indispensable position in the high-tech industry. The exponential expansion of the demand for high-purity rare earth and related compounds can be attributed to the swift advancement of contemporary technolog...",
+          "year": 2024,
+          "score": 0.4583
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "life cycle assessment and ethical supply chain analysis of battery storage materials",
+        "keywords": [
+          {
+            "text": "life cycle",
+            "score": 10
+          },
+          {
+            "text": "cycle assessment",
+            "score": 9
+          },
+          {
+            "text": "assessment ethical",
+            "score": 8
+          },
+          {
+            "text": "ethical supply",
+            "score": 7
+          },
+          {
+            "text": "supply chain",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W2983502548",
+          "title": "An original recycling method for Li-ion batteries through large scale production of Metal Organic Frameworks",
+          "abstract": "",
+          "year": 2019,
+          "score": 0.4502
+        },
+        {
+          "paper_id": "https://openalex.org/W4408294622",
+          "title": "Solid Wastes from Geothermal Energy Production and Implications for Direct Lithium Extraction",
+          "abstract": "Direct lithium extraction (DLE) of brines after geothermal power production offers opportunities to produce environmentally benign “green” lithium; however, some environmental impact is inevitable. We examined solid waste production at geothermal power plants in southern California that are also locations for planne...",
+          "year": 2025,
+          "score": 0.4385
+        },
+        {
+          "paper_id": "https://openalex.org/W3204164578",
+          "title": "Ultrasound-assisted extraction of metals from Lithium-ion batteries using natural organic acids",
+          "abstract": "Ultrasound-assisted extraction of metal ions from Lithium batteries with weak organic acids is reported. Leaching reached ≥98% Li and Co recovery due to improved residue layer diffusion and mass transfer, illustrated by the shrinking core model.",
+          "year": 2021,
+          "score": 0.4301
+        },
+        {
+          "paper_id": "https://openalex.org/W4384282629",
+          "title": "Sorting Lithium-Ion Battery Electrode Materials Using Dielectrophoresis",
+          "abstract": "Lithium-ion batteries (LIBs) are common in everyday life and the demand for their raw materials is increasing. Additionally, spent LIBs should be recycled to achieve a circular economy and supply resources for new LIBs or other products. Especially the recycling of the active material of the electrodes is the focus ...",
+          "year": 2023,
+          "score": 0.4273
+        },
+        {
+          "paper_id": "https://openalex.org/W4404441133",
+          "title": "Crystallization of Cathode Active Material Precursors from Tartaric Acid Solution",
+          "abstract": "In this study L-(+)-tartaric acid was used to extract metals from either pure cathode material (NMC111) or black mass from spent lithium-ion batteries. The leaching efficiencies of Li, Co, Ni, and Mn from NMC111 are >87 % at 70 °C, with an initial solid to liquid ratio of 17, and >72.4±1.0 % from black mass under co...",
+          "year": 2024,
+          "score": 0.4226
+        },
+        {
+          "paper_id": "https://openalex.org/W4395036960",
+          "title": "Investigating the Potential Use of Ni‐Mn‐Co (NMC) Battery Materials as Electrocatalysts for Electrochemical Water Splitting",
+          "abstract": "The imminent generation of significant amounts of Li ion battery waste is of concern due to potential detrimental environmental impacts. However, this also poses an opportunity to recycle valuable battery materials for later use. One underexplored area is using commonly employed cathode materials such as nickel, man...",
+          "year": 2024,
+          "score": 0.4153
+        },
+        {
+          "paper_id": "https://openalex.org/W4387865365",
+          "title": "Ultra‐Fast Recyclable and Value‐Added Desulfation Method for Spent Lead Paste via Dual Intensification Processes",
+          "abstract": "The new low-cost clean pre-desulfation technology is very important in pyrometallurgy and hydrometallurgy. However, traditional reactors have low space-time yield and desulfation rate, resulting in high energy consumption and SO<sub>2</sub> emissions in the industrial desulfation processes. Herein, dual rotating liq...",
+          "year": 2023,
+          "score": 0.4106
+        },
+        {
+          "paper_id": "https://openalex.org/W4410521256",
+          "title": "Determination of lithium concentration in black mass using laser-induced breakdown spectroscopy hand-held instrumentation",
+          "abstract": "Lithium has become one of the most strategic materials in the industry, given its wide use for the realization of efficient energy storage devices and for improving the chemical and physical characteristics of advanced ceramic and glass materials. Its widespread use in the last decades has also posed problems for it...",
+          "year": 2025,
+          "score": 0.4
+        },
+        {
+          "paper_id": "https://openalex.org/W4313984405",
+          "title": "Selective Separation of Lithium, Magnesium and Calcium using 4‐Phosphoryl Pyrazolones as pH‐Regulated Receptors",
+          "abstract": "Ensuring continuous and sustainable lithium supply requires the development of highly efficient separation processes such as LLE (liquid-liquid extraction) for both primary sources and certain waste streams. In this work, 4-phosphoryl pyrazolones are used in an efficient pH-controlled stepwise separation of Li<sup>+...",
+          "year": 2023,
+          "score": 0.4
+        },
+        {
+          "paper_id": "https://openalex.org/W4317505599",
+          "title": "Zinc Electrode Cycling in Deep Eutectic Solvent Electrolytes: An Electrochemical Study",
+          "abstract": "Among post-lithium ion battery technologies, rechargeable chemistries with Zn anodes bear notable technological promise owing to their high theoretical energy density, lower manufacturing cost, availability of raw materials and inherent safety. However, Zn anodes, when employed in aqueous electrolytes, suffer from h...",
+          "year": 2023,
+          "score": 0.3955
+        },
+        {
+          "paper_id": "https://openalex.org/W4406382487",
+          "title": "Flash Joule heating for synthesis, upcycling and remediation",
+          "abstract": "Electric heating methods are being developed and used to electrify industrial applications and lower their carbon emissions. Direct Joule resistive heating is an energy-efficient electric heating technique that has been widely tested at the bench scale and could replace some energy-intensive and carbon-intensive pro...",
+          "year": 2025,
+          "score": 0.3935
+        },
+        {
+          "paper_id": "https://openalex.org/W3020991463",
+          "title": "Membrane-Filtered Kraft Lignin–Silica Hybrids as Bio-Based Sorbents for Cobalt(II) Ion Recycling",
+          "abstract": "Efficient and sustainable recycling of cobalt(II) is of increasing importance to support technological development in energy storage and electric vehicle industries. A composite material based on membrane-filtered lignin deposited on nanoporous silica microparticles was found to be an effective and sustainable sorbe...",
+          "year": 2020,
+          "score": 0.3897
+        },
+        {
+          "paper_id": "https://openalex.org/W4392158366",
+          "title": "Ecotoxicological Characterization of Lithium as a “Timebomb” in Aquatic Systems: Tadpoles of the South American Toad Rhinella arenarum (Hensel, 1867) as Model Organisms",
+          "abstract": "The aim of this study was to evaluate the acute lethality and chronic sublethal effects of lithium (Li) on <i>Rhinella arenarum</i> tadpoles as model organisms. First a 96 h toxicity assay was performed by exposing tadpoles to Li concentrations from 44.08 to 412.5 mg L<sup>-1</sup> to estimate the mortality, and let...",
+          "year": 2024,
+          "score": 0.3886
+        },
+        {
+          "paper_id": "https://openalex.org/W2915127685",
+          "title": "Electrically switched cesium ion exchange. FY 1997 annual report",
+          "abstract": "This paper describes the Electrically Switched Ion Exchange (ESIX) separation technology being developed as an alternative to ion exchange for removing radionuclides from high-level waste. Progress in FY 1997 for specific applications of ESIX is also outlined. The ESIX technology, which combines ion exchange and ele...",
+          "year": 1997,
+          "score": 0.3878
+        },
+        {
+          "paper_id": "https://openalex.org/W4408370654",
+          "title": "Flexible PVDF‐HFP, Nickel MOF‐based Hybrid Membrane as an Efficient Electrolyte for Lithium‐Ion Batteries",
+          "abstract": "Abstract The present investigation demonstrates a highly stable composite polymer electrolyte (CPE) membrane (NiPF6), designed to enhance the performance of solid‐state lithium‐ion batteries. The new CPE membrane has been fabricated by the blending of Ni‐BDC metal‐organic framework (MOF) (BDC: 1,4‐benzenedicarboxyla...",
+          "year": 2025,
+          "score": 0.3876
+        },
+        {
+          "paper_id": "https://openalex.org/W2321005010",
+          "title": "Deep Eutectic Solvents (DESs) and Their Applications",
+          "abstract": "ADVERTISEMENT RETURN TO ISSUEPREVReviewNEXTDeep Eutectic Solvents (DESs) and Their ApplicationsEmma L. Smith*†‡, Andrew P. Abbott‡, and Karl S. Ryder‡View Author Information† Department of Chemistry, School of Science and Technology, Nottingham Trent University, Nottingham NG11 8NS, United Kingdom‡ Department of Che...",
+          "year": 2014,
+          "score": 0.3754
+        },
+        {
+          "paper_id": "https://openalex.org/W4396857141",
+          "title": "Technological Analysis of the Production of Nickel-Containing Composite Materials",
+          "abstract": "The article presents the results of obtaining a composite material by sintering nickel-containing raw materials mixed with carbon-containing materials, namely using coke and semi-coke. The sintering process was performed at a charge layer height of 240 mm and the temperature of the lower layer was T = 1200 °C. The r...",
+          "year": 2024,
+          "score": 0.3743
+        },
+        {
+          "paper_id": "https://openalex.org/W2997341368",
+          "title": "Synthesis and Dissolution of Metal Oxides in Ionic Liquids and Deep Eutectic Solvents",
+          "abstract": "Ionic liquids (ILs) and deep eutectic solvents (DESs) have proven to be suitable solvents and reactants for low-temperature reactions. To date, several attempts were made to apply this promising class of materials to metal oxide chemistry, which, conventionally, is performed at high temperatures. This review gives a...",
+          "year": 2019,
+          "score": 0.3733
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "step": "step6",
+      "command_name": "paper-search",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Existing storage approaches improve isolated elements—flow-battery electrode properties, alternative formate carriers, lithium-ion material sorting, or solid-state sodium electrolytes—but do not provide a coupled scientific method for simultaneously stabilizing ion and electron transport at interfaces while meeting energy efficiency, safety, resource abundance, recyclability, and scalable lifetime. The missing capability is co-design of materials, interfaces, degradation mechanisms, and lifecycle constraints.",
+        "field": "abstract",
+        "top_k": 2,
+        "after": null,
+        "before": null
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4200315733",
+          "title": "Understanding Battery Interfaces by Combined Characterization and Simulation Approaches: Challenges and Perspectives",
+          "abstract": "Abstract Driven by the continuous search for improving performances, understanding the phenomena at the electrode/electrolyte interfaces has become an overriding factor for the success of sustainable and efficient battery technologies for mobile and stationary applications. Toward this goal, rapid advances have been made regarding simulations/modeling techniques and characterization approaches, including high‐throughput electrochemical measurements coupled with spectroscopies. Focusing on Li‐ion batteries, current developments are analyzed in the field as well as future challenges in order to gain a full description of interfacial processes across multiple length/timescales; from charge transfer to migration/diffusion properties and interphases formation, up to and including their stability over the entire battery lifetime. For such complex and interrelated phenomena, developing a unified workflow intimately combining the ensemble of these techniques will be critical to unlocking their full investigative potential. For this paradigm shift in battery design to become reality, it necessitates the implementation of research standards and protocols, underlining the importance of a concerted approach across the community. With this in mind, major collaborative initiatives gathering complementary strengths and skills will be fundamental if societal and environmental imperatives in this domain are to be met.",
+          "year": 2021,
+          "score": 0.6867722272872925
+        },
+        {
+          "paper_id": "https://openalex.org/W4411215849",
+          "title": "Post-Lithium Battery Technologies Driving the Future of Eco-Conscious Electric Vehicles",
+          "abstract": "As electric vehicles (EVs) transition from niche adoption to mass-market reality, the underlying lithium-ion battery (LIB) architecture has begun to show limitations in cost, safety, and sustainability. This paper presents a comprehensive exploration of emerging post-lithium battery technologies—namely sodium-ion, potassium-ion, magnesium/calcium-ion, aluminum-ion, lithium-sulfur, lithium-air, and solid-state batteries—each promising to address one or more of LIB's systemic flaws. Drawing from recent breakthroughs in materials science and electrochemistry, we examine the technical maturity, environmental implications, commercial viability, and infrastructure requirements for each chemistry. We conclude by identifying critical challenges and strategic pathways for large-scale deployment of these battery systems in pursuit of resilient, low-carbon electric mobility.",
+          "year": 2025,
+          "score": 0.6820166707038879
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Apply multi-objective machine learning, active learning, and digital-twin optimization to co-design material compositions, interface structures, degradation models, and lifecycle outcomes under competing efficiency, safety, abundance, and recyclability constraints.",
+        "keywords": [
+          {
+            "text": "multi-objective optimization",
+            "score": 9
+          },
+          {
+            "text": "machine learning",
+            "score": 9
+          },
+          {
+            "text": "digital twin",
+            "score": 8
+          },
+          {
+            "text": "materials informatics",
+            "score": 8
+          },
+          {
+            "text": "closed-loop experimentation",
+            "score": 7
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W3104073206",
+          "title": "The Role of Machine Learning in the Understanding and Design of Materials",
+          "abstract": "Developing algorithmic approaches for the rational design and discovery of materials can enable us to systematically find novel materials, which can have huge technological and social impact. However, such rational design requires a holistic perspective over the full multistage design process, which involves explori...",
+          "year": 2020,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W4390214784",
+          "title": "Machine learning for structure-guided materials and process design",
+          "abstract": "In recent years, there has been a growing interest in accelerated materials innovation in the context of the process-structure-property chain. In this regard, it is essential to take into account manufacturing processes and tailor materials design approaches to support downstream process design approaches. As a majo...",
+          "year": 2023,
+          "score": 0.9709
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Use coupled transport phenomena, interfacial reaction engineering, and process systems analysis to coordinate ionic and electronic fluxes, control side reactions, and translate material behavior into safe, scalable, and durable device operation.",
+        "keywords": [
+          {
+            "text": "transport phenomena",
+            "score": 9
+          },
+          {
+            "text": "interfacial reaction engineering",
+            "score": 9
+          },
+          {
+            "text": "process scale-up",
+            "score": 8
+          },
+          {
+            "text": "process safety",
+            "score": 7
+          },
+          {
+            "text": "techno-economic analysis",
+            "score": 7
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4255680688",
+          "title": "Engineering meets chemistry",
+          "abstract": "",
+          "year": 1988,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W3011563721",
+          "title": "Material and Energy Balances: Flow Chemistry Case Study",
+          "abstract": "",
+          "year": 2019,
+          "score": 0.9521
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "step": "step6",
+      "command_name": "paper-search",
+      "cache_hit": true,
+      "payload": {
+        "query_text": "Existing storage approaches improve isolated elements—flow-battery electrode properties, alternative formate carriers, lithium-ion material sorting, or solid-state sodium electrolytes—but do not provide a coupled scientific method for simultaneously stabilizing ion and electron transport at interfaces while meeting energy efficiency, safety, resource abundance, recyclability, and scalable lifetime. The missing capability is co-design of materials, interfaces, degradation mechanisms, and lifecycle constraints.",
+        "field": "abstract",
+        "top_k": 2,
+        "after": null,
+        "before": null
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4200315733",
+          "title": "Understanding Battery Interfaces by Combined Characterization and Simulation Approaches: Challenges and Perspectives",
+          "abstract": "Abstract Driven by the continuous search for improving performances, understanding the phenomena at the electrode/electrolyte interfaces has become an overriding factor for the success of sustainable and efficient battery technologies for mobile and stationary applications. Toward this goal, rapid advances have been made regarding simulations/modeling techniques and characterization approaches, including high‐throughput electrochemical measurements coupled with spectroscopies. Focusing on Li‐ion batteries, current developments are analyzed in the field as well as future challenges in order to gain a full description of interfacial processes across multiple length/timescales; from charge transfer to migration/diffusion properties and interphases formation, up to and including their stability over the entire battery lifetime. For such complex and interrelated phenomena, developing a unified workflow intimately combining the ensemble of these techniques will be critical to unlocking their full investigative potential. For this paradigm shift in battery design to become reality, it necessitates the implementation of research standards and protocols, underlining the importance of a concerted approach across the community. With this in mind, major collaborative initiatives gathering complementary strengths and skills will be fundamental if societal and environmental imperatives in this domain are to be met.",
+          "year": 2021,
+          "score": 0.6867722272872925
+        },
+        {
+          "paper_id": "https://openalex.org/W4411215849",
+          "title": "Post-Lithium Battery Technologies Driving the Future of Eco-Conscious Electric Vehicles",
+          "abstract": "As electric vehicles (EVs) transition from niche adoption to mass-market reality, the underlying lithium-ion battery (LIB) architecture has begun to show limitations in cost, safety, and sustainability. This paper presents a comprehensive exploration of emerging post-lithium battery technologies—namely sodium-ion, potassium-ion, magnesium/calcium-ion, aluminum-ion, lithium-sulfur, lithium-air, and solid-state batteries—each promising to address one or more of LIB's systemic flaws. Drawing from recent breakthroughs in materials science and electrochemistry, we examine the technical maturity, environmental implications, commercial viability, and infrastructure requirements for each chemistry. We conclude by identifying critical challenges and strategic pathways for large-scale deployment of these battery systems in pursuit of resilient, low-carbon electric mobility.",
+          "year": 2025,
+          "score": 0.6820166707038879
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Apply process systems engineering and reaction-transport modeling to co-optimize interfacial charge transfer, species transport, degradation kinetics, and scalable lifecycle constraints in electrochemical storage devices.",
+        "keywords": [
+          {
+            "text": "process systems engineering",
+            "score": 9
+          },
+          {
+            "text": "reaction-transport modeling",
+            "score": 9
+          },
+          {
+            "text": "electrochemical interfaces",
+            "score": 8
+          },
+          {
+            "text": "degradation kinetics",
+            "score": 8
+          },
+          {
+            "text": "lifecycle assessment",
+            "score": 7
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4205252019",
+          "title": "Perspective—Electrochemistry in Understanding and Designing Electrochemical Energy Storage Systems",
+          "abstract": "The number of publications in electrochemical energy storage has increased exponentially in the past decades, focusing mostly on materials science. The electrochemical process controlling the observed overall performances is often not well discussed. This article highlights the importance of understanding rate-limit...",
+          "year": 2022,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W4398203391",
+          "title": "Elucidating the complex interplay between thermodynamics, kinetics, and electrochemistry in battery electrodes through phase-field modeling",
+          "abstract": "",
+          "year": 2024,
+          "score": 0.993
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Use multi-objective machine learning, active learning, and digital-twin workflows to discover and control material-interface configurations that balance ion and electron transport, safety, efficiency, resource use, recyclability, and lifetime.",
+        "keywords": [
+          {
+            "text": "machine learning",
+            "score": 9
+          },
+          {
+            "text": "multi-objective optimization",
+            "score": 9
+          },
+          {
+            "text": "active learning",
+            "score": 8
+          },
+          {
+            "text": "materials informatics",
+            "score": 8
+          },
+          {
+            "text": "digital twin",
+            "score": 7
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4297398775",
+          "title": "Benchmarking Active Learning Strategies for Materials Optimization and Discovery",
+          "abstract": "Autonomous physical science is revolutionizing materials science. In these systems, machine learning controls experiment design, execution, and analysis in a closed loop. Active learning, the machine learning field of optimal experiment design, selects each subsequent experiment to maximize knowledge toward the user...",
+          "year": 2022,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W3104073206",
+          "title": "The Role of Machine Learning in the Understanding and Design of Materials",
+          "abstract": "Developing algorithmic approaches for the rational design and discovery of materials can enable us to systematically find novel materials, which can have huge technological and social impact. However, such rational design requires a holistic perspective over the full multistage design process, which involves explori...",
+          "year": 2020,
+          "score": 0.972
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "step": "step6",
+      "command_name": "paper-search",
+      "cache_hit": true,
+      "payload": {
+        "query_text": "Existing storage approaches improve isolated elements—flow-battery electrode properties, alternative formate carriers, lithium-ion material sorting, or solid-state sodium electrolytes—but do not provide a coupled scientific method for simultaneously stabilizing ion and electron transport at interfaces while meeting energy efficiency, safety, resource abundance, recyclability, and scalable lifetime. The missing capability is co-design of materials, interfaces, degradation mechanisms, and lifecycle constraints.",
+        "field": "abstract",
+        "top_k": 2,
+        "after": null,
+        "before": null
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4200315733",
+          "title": "Understanding Battery Interfaces by Combined Characterization and Simulation Approaches: Challenges and Perspectives",
+          "abstract": "Abstract Driven by the continuous search for improving performances, understanding the phenomena at the electrode/electrolyte interfaces has become an overriding factor for the success of sustainable and efficient battery technologies for mobile and stationary applications. Toward this goal, rapid advances have been made regarding simulations/modeling techniques and characterization approaches, including high‐throughput electrochemical measurements coupled with spectroscopies. Focusing on Li‐ion batteries, current developments are analyzed in the field as well as future challenges in order to gain a full description of interfacial processes across multiple length/timescales; from charge transfer to migration/diffusion properties and interphases formation, up to and including their stability over the entire battery lifetime. For such complex and interrelated phenomena, developing a unified workflow intimately combining the ensemble of these techniques will be critical to unlocking their full investigative potential. For this paradigm shift in battery design to become reality, it necessitates the implementation of research standards and protocols, underlining the importance of a concerted approach across the community. With this in mind, major collaborative initiatives gathering complementary strengths and skills will be fundamental if societal and environmental imperatives in this domain are to be met.",
+          "year": 2021,
+          "score": 0.6867722272872925
+        },
+        {
+          "paper_id": "https://openalex.org/W4411215849",
+          "title": "Post-Lithium Battery Technologies Driving the Future of Eco-Conscious Electric Vehicles",
+          "abstract": "As electric vehicles (EVs) transition from niche adoption to mass-market reality, the underlying lithium-ion battery (LIB) architecture has begun to show limitations in cost, safety, and sustainability. This paper presents a comprehensive exploration of emerging post-lithium battery technologies—namely sodium-ion, potassium-ion, magnesium/calcium-ion, aluminum-ion, lithium-sulfur, lithium-air, and solid-state batteries—each promising to address one or more of LIB's systemic flaws. Drawing from recent breakthroughs in materials science and electrochemistry, we examine the technical maturity, environmental implications, commercial viability, and infrastructure requirements for each chemistry. We conclude by identifying critical challenges and strategic pathways for large-scale deployment of these battery systems in pursuit of resilient, low-carbon electric mobility.",
+          "year": 2025,
+          "score": 0.6820166707038879
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Use multiscale reaction-transport modeling and process systems engineering to co-optimize interfacial chemistry, device efficiency, safety, recyclability, and scalable manufacturing constraints in electrochemical energy systems.",
+        "keywords": [
+          {
+            "text": "multiphysics transport modeling",
+            "score": 9
+          },
+          {
+            "text": "electrochemical reactor design",
+            "score": 8
+          },
+          {
+            "text": "process systems engineering",
+            "score": 8
+          },
+          {
+            "text": "life cycle assessment",
+            "score": 7
+          },
+          {
+            "text": "scale-up and recyclability",
+            "score": 7
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W3164959115",
+          "title": "Multiscale Modeling of Electrochemical Reactions and Processes",
+          "abstract": "Multiscale Modeling of Electrochemical Reactions and Processes is a practical guide to multiscale computational methodologies. It offers a holistic understanding of the impact of reaction conditions on the overall performance of electrolyzers, fuel cells, and energy storage devices. This book covers reaction conditi...",
+          "year": 2021,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W4200367055",
+          "title": "Multiscale process systems engineering—analysis and design of chemical and energy systems from molecular design up to process optimization",
+          "abstract": "",
+          "year": 2021,
+          "score": 0.9563
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Apply machine-learning surrogate models, multi-objective optimization, and digital-twin workflows to discover and balance material interfaces, degradation behavior, resource constraints, and lifetime performance simultaneously.",
+        "keywords": [
+          {
+            "text": "machine learning for materials design",
+            "score": 9
+          },
+          {
+            "text": "multi-objective optimization",
+            "score": 9
+          },
+          {
+            "text": "digital twin simulation",
+            "score": 7
+          },
+          {
+            "text": "uncertainty quantification",
+            "score": 6
+          },
+          {
+            "text": "high-throughput screening",
+            "score": 7
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4417114361",
+          "title": "Recent Advances in Data-Driven Methods for Degradation Modeling Across Applications",
+          "abstract": "Understanding degradation is crucial for ensuring the longevity and performance of materials, systems, and organisms. To illustrate the similarities across applications, this article provides a review of data-based methods in materials science, engineering, and medicine. The methods analyzed in this paper include re...",
+          "year": 2025,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W4385617137",
+          "title": "Iterative Durability Design of Products via Degradation-Informed Bayesian Optimization",
+          "abstract": "Green manufacturing has become a pressing issue in recent years, driven by the acknowledgment of its long-term social and economic benefits, increasing demand for environmentally friendly products, and expanding regulations. One of the key approaches to attaining sustainability in green manufacturing is to design lo...",
+          "year": 2023,
+          "score": 0.9632
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "belief-a-heads": {
+    "has_2x": true,
+    "hash": "b03ddbd690ea51c9c637de71c8b1d48006f52926d5d78b8cf99c571c0cd88014",
+    "height": 337,
+    "width": 1280
+  },
+  "belief-b-formation": {
+    "has_2x": true,
+    "hash": "a1f67b811a5cea83279beab22e808f62b5d2efba7d0970a4c0014b1caf93cf21",
+    "height": 305,
+    "width": 1280
+  },
+  "belief-c-intervention": {
+    "has_2x": true,
+    "hash": "ac50dec7b26059332ad5de248b9e03dab998c50a3bef38a14fb52af2718b42d5",
+    "height": 317,
+    "width": 1280
+  },
+  "interp-database": {
+    "has_2x": true,
+    "hash": "9d0580e329e5e73260c331c1a2f3de227f2f43b2eae11e2a66601ca159ad4c98",
+    "height": 977,
+    "width": 1280
+  },
+  "overview-framework": {
+    "has_2x": true,
+    "hash": "6313d6ff6ad85ca530dc516e13338b146acc6a7b5eae1f133ba5d1d5e13f944d",
+    "height": 698,
+    "width": 1280
+  },
+  "science-a-pipeline": {
+    "has_2x": false,
+    "hash": "baa75172ed0070c9c0a68161b0663b11687bfa30f8783feb0a249b3dfd3bf599",
+    "height": 750,
+    "width": 1176
+  },
+  "science-b-helicity": {
+    "has_2x": false,
+    "hash": "70bc88445a239b90333063d07ffd37721677c23aad82ebd5271ecaff58df1edd",
+    "height": 787,
+    "width": 1156
+  },
+  "science-c-sweep": {
+    "has_2x": false,
+    "hash": "a4f1a87b17c95c20386ee0c99a1d3cc02e538f0e3dac16c4a23d338b4f5e0072",
+    "height": 799,
+    "width": 1054
+  },
+  "science-d-case1": {
+    "has_2x": false,
+    "hash": "99db5f6f057aea9ba7845bc41a2e0bacc519d60a14446101a162f4a732028a03",
+    "height": 312,
+    "width": 778
+  },
+  "science-d-structures": {
+    "has_2x": false,
+    "hash": "83cd3553e114ca7553aa4ae9edc3bc8d530fc4055fbde6fa2d382c6a15f332e6",
+    "height": 779,
+    "width": 1146
+  },
+  "scientist-comparison": {
+    "has_2x": true,
+    "hash": "97e6eb1402644e5b91786ce166d418489e3ac5d9757010023d75bb8064416026",
+    "height": 685,
+    "width": 1280
+  },
+  "subliminal-a-timeline": {
+    "has_2x": true,
+    "hash": "e76794ace642e4934ed0ba37616eac70fb65cc75609cd7105e8f2481ee3edfe7",
+    "height": 278,
+    "width": 1280
+  },
+  "subliminal-b-owl": {
+    "has_2x": false,
+    "hash": "4b3bb27374bf09c01adb2edbddd36ed17761d5176f561879c31f2ed30e14af5c",
+    "height": 831,
+    "width": 1135
+  },
+  "subliminal-c-fruit": {
+    "has_2x": false,
+    "hash": "39d6eaddf5ef97f82e5c74e13df08d9e6d06a687f4bc08e6c6ce6cc91fb29324",
+    "height": 1004,
+    "width": 997
+  },
+  "subliminal-c-lab": {
+    "has_2x": true,
+    "hash": "daf61c9af3d658af9d3bf3708ab2b3403a6ac6a9ae8d7d1f07fb19914ab84e37",
+    "height": 974,
+    "width": 1280
+  },
+  "subliminal-d-rates": {
+    "has_2x": false,
+    "hash": "8dd016191a1e1f7e57f10ea8e59b117a2522ab7e720cc0969ef98f6e9c6362b3",
+    "height": 821,
+    "width": 1052
+  }
+}

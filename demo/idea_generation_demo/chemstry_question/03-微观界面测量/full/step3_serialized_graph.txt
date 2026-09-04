@@ -1,0 +1,82 @@
+# SEED
+META
+topic: Research question: How can we measure interface phenomena on the microscopic level?
+Context: Interfacial chemistry is a fascinating field that seeks to expand and deepen our comprehension of behavior at the molecular interface of gases and liquids, liquids and solids, and solids and solids, among other systems. At these microscopic and nanoscale borders, an elemental dance occurs involving mass and heat transfer through evaporation, reaction, and micro- or even nanoscale explosions, but we still are unsure how these processes are choreographed by the chemicals themselves. In the case of gas–liquid or liquid–solid interfaces, optical interference methods can measure gas-film or liquid-film thicknesses up to nanoscale levels, but the information is too limited for sharpening our understanding of these complex physical and chemical phenomena. The study of microscopic interfaces is fueled by urgent research needs in fields such as materials synthesis, combustion, spray drying, and design of next-generation evaporative cooling nanodevices.
+seed_paper: Nanoscale Mapping of the Directional Flow Patterns at Liquid-Solid Interfaces
+
+# CITATION SUBGRAPH (3 refs, temporally ordered by year)
+
+## [1] Nanoscale Electron Transfer Variations at Electrocatalyst–Electrolyte Interfaces Resolved by <i>in Situ</i> Conductive Atomic Force Microscopy (2023, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 1
+cited_in_sections = []
+cite_count = 48
+section_weight = 0.0
+delta_year = unknown
+is_influential = False
+low_confidence = True
+cited_by_subgraph = 0
+
+[PREDECESSORS]
+- ref_idx=[] delta_yr=unknown edge_type=none
+
+[IDEA]
+Problem: Rational innovation of electrocatalysts requires detailed knowledge of spatial property variations across the solid-electrolyte interface. We introduce correlative atomic force microscopy (AFM) to simultaneously probe, <i>in situ</i> and at the nanoscale, electrical conductivity, chemical-frictional
+Existing Methods: Unavailable from local metadata.
+Motivation: Rational innovation of electrocatalysts requires detailed knowledge of spatial property variations across the solid-electrolyte interface. We introduce correlative atomic force microscopy (AFM) to simultaneously probe, <i>in situ</i> and at the nanoscale, electrical conductivity, chemical-frictional
+Proposed Method: Rational innovation of electrocatalysts requires detailed knowledge of spatial property variations across the solid-electrolyte interface. We introduce correlative atomic force microscopy (AFM) to simultaneously probe, <i>in situ</i> and at the nanoscale, electrical conductivity, chemical-frictional
+Experiment Plan: Unavailable from local metadata.
+
+[ABSTRACT] Rational innovation of electrocatalysts requires detailed knowledge of spatial property variations across the solid-electrolyte interface. We introduce correlative atomic force microscopy (AFM) to simultaneously probe, <i>in situ</i> and at the nanoscale, electrical conductivity, chemical-frictional, and morphologic...
+
+## [2] Interfacial wettability and mass transfer characterizations for gas–liquid–solid triple‐phase catalysis (2022, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 1
+cited_in_sections = []
+cite_count = 70
+section_weight = 0.0
+delta_year = unknown
+is_influential = False
+low_confidence = True
+cited_by_subgraph = 0
+
+[PREDECESSORS]
+- ref_idx=[] delta_yr=unknown edge_type=none
+
+[IDEA]
+Problem: Heterogeneous catalysis is inseparable from interfacial mass transfer and chemical reaction processes determined by the structure and microenvironment. Different from high-temperature thermochemical processes, photo- and electrocatalysis operated at mild conditions often involve both gas and liquid 
+Existing Methods: Unavailable from local metadata.
+Motivation: Heterogeneous catalysis is inseparable from interfacial mass transfer and chemical reaction processes determined by the structure and microenvironment. Different from high-temperature thermochemical processes, photo- and electrocatalysis operated at mild conditions often involve both gas and liquid 
+Proposed Method: Heterogeneous catalysis is inseparable from interfacial mass transfer and chemical reaction processes determined by the structure and microenvironment. Different from high-temperature thermochemical processes, photo- and electrocatalysis operated at mild conditions often involve both gas and liquid 
+Experiment Plan: Unavailable from local metadata.
+
+[ABSTRACT] Heterogeneous catalysis is inseparable from interfacial mass transfer and chemical reaction processes determined by the structure and microenvironment. Different from high-temperature thermochemical processes, photo- and electrocatalysis operated at mild conditions often involve both gas and liquid phases, making it...
+
+## [3] A mobile setup for simultaneous and <i>in situ</i> neutron reflectivity, infrared spectroscopy, and ellipsometry studies (2022, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 1
+cited_in_sections = []
+cite_count = 2
+section_weight = 0.0
+delta_year = unknown
+is_influential = False
+low_confidence = True
+cited_by_subgraph = 0
+
+[PREDECESSORS]
+- ref_idx=[] delta_yr=unknown edge_type=none
+
+[IDEA]
+Problem: Neutron reflectivity at the solid/liquid interface offers unique opportunities for resolving the structure-function relationships of interfacial layers in soft matter science. It is a non-destructive technique for detailed analysis of layered structures on molecular length scales, providing thicknes
+Existing Methods: Unavailable from local metadata.
+Motivation: Neutron reflectivity at the solid/liquid interface offers unique opportunities for resolving the structure-function relationships of interfacial layers in soft matter science. It is a non-destructive technique for detailed analysis of layered structures on molecular length scales, providing thicknes
+Proposed Method: Neutron reflectivity at the solid/liquid interface offers unique opportunities for resolving the structure-function relationships of interfacial layers in soft matter science. It is a non-destructive technique for detailed analysis of layered structures on molecular length scales, providing thicknes
+Experiment Plan: Unavailable from local metadata.
+
+[ABSTRACT] Neutron reflectivity at the solid/liquid interface offers unique opportunities for resolving the structure-function relationships of interfacial layers in soft matter science. It is a non-destructive technique for detailed analysis of layered structures on molecular length scales, providing thickness, density, rough...

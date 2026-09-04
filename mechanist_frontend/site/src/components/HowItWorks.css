@@ -1,0 +1,759 @@
+.foundation.section,
+.foundation-intro.section,
+.how.section {
+  padding: 0;
+  overflow: hidden;
+}
+
+.section.database-foundation {
+  --scene-bg: #e5ebe7;
+  background-color: var(--scene-bg);
+  background-image:
+    var(--sheet),
+    radial-gradient(
+      ellipse 44% 72% at 76% 44%,
+      rgb(255 255 255 / 52%) 0%,
+      transparent 72%
+    ),
+    linear-gradient(
+      155deg,
+      #edf1ee 0%,
+      #e7ede9 48%,
+      #e2e9e5 100%
+    );
+  background-size: var(--paper-tile) var(--paper-tile), 100% 100%, 100% 100%;
+  box-shadow:
+    inset 0 1px rgb(29 39 42 / 5%),
+    inset 0 -1px rgb(29 39 42 / 6%);
+}
+
+/* The mid stop is the map's own field colour after the tone pass in
+   scripts/build-skills-map.py, so the anti-aliased edge of every cut-out stroke
+   blends into the section instead of leaving a cool-grey fringe on warm paper.
+   Change one and rerun the other.
+
+   Three stops rather than one flat fill, on the grain: the map is a wide block
+   of light card, and a flat ground behind it reads as a second, larger card.
+   The gradient gives the sheet somewhere to go — lit at the top where the
+   heading sits, settling under the diagram. */
+.section.skills-foundation {
+  --scene-bg: #ebe5da;
+  background-color: var(--scene-bg);
+  background-image:
+    var(--sheet),
+    radial-gradient(
+      ellipse 46% 76% at 76% 46%,
+      rgb(255 255 255 / 48%) 0%,
+      transparent 74%
+    ),
+    linear-gradient(
+      155deg,
+      #f2eee5 0%,
+      #ede7dc 50%,
+      #e7dfd3 100%
+    );
+  background-size: var(--paper-tile) var(--paper-tile), 100% 100%, 100% 100%;
+  box-shadow:
+    inset 0 1px rgb(29 39 42 / 5%),
+    inset 0 -1px rgb(29 39 42 / 6%);
+}
+
+.section.how {
+  --scene-bg: #e0e5e0;
+  background-color: #e4e5e2;
+  background-image:
+    var(--sheet),
+    linear-gradient(
+      180deg,
+      #dce7e0 0%,
+      #e0e5e0 48%,
+      #e7e5e2 100%
+    );
+  background-size: var(--paper-tile) var(--paper-tile), 100% 100%;
+}
+
+.database-copy > p,
+.how__head > p {
+  margin-top: 18px;
+  color: var(--text-muted);
+  font-size: var(--type-lede-size);
+  line-height: 1.65;
+}
+
+.database-copy__points {
+  display: grid;
+  gap: 16px;
+  max-width: 470px;
+  margin-top: 20px;
+}
+
+.database-copy__point strong {
+  display: block;
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 1.7vw, 1.5rem);
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+}
+
+.database-copy__point p {
+  margin: 6px 0 0;
+  color: var(--text-muted);
+  font-size: var(--type-lede-size);
+  line-height: 1.55;
+}
+
+/* Knowledge Graphs, Mechanism Methods, and Work Pipeline share one display size. */
+.database-copy h2,
+.skills-copy__head h2,
+.how__head h2 {
+  margin-top: 0;
+  max-width: 100%;
+  font-size: clamp(2rem, 2.8vw, 3rem);
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+  white-space: nowrap;
+}
+
+.skills-copy__head > p {
+  max-width: 560px;
+  margin-top: 18px;
+  color: var(--text-muted);
+  font-size: var(--type-lede-size);
+  line-height: 1.65;
+}
+
+.skills-copy__head strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Neutral bridge above Knowledge Graphs and Mechanism Methods — belongs to
+   neither tinted plate. One why-claim at mid scale, then the two names as a
+   light handoff; the tinted plates below keep the display titles and detail. */
+.section.foundation-intro {
+  --scene-bg: var(--bg);
+  background-color: var(--scene-bg);
+  background-image:
+    var(--sheet),
+    linear-gradient(
+      180deg,
+      #f7f6f1 0%,
+      #f3f2ec 100%
+    );
+  background-size: var(--paper-tile) var(--paper-tile), 100% 100%;
+  box-shadow:
+    inset 0 1px rgb(29 39 42 / 4%),
+    inset 0 -1px rgb(29 39 42 / 5%);
+}
+
+.foundation-intro__inner {
+  padding-top: clamp(32px, 3.6vw, 48px);
+  padding-bottom: clamp(28px, 3.2vw, 40px);
+}
+
+.foundation-intro__head {
+  width: min(100%, 920px);
+}
+
+.foundation-intro__claim {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 2.4vw, 1.85rem);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.35;
+  color: var(--text);
+}
+
+.foundation-intro__claim strong {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.foundation-intro__names {
+  /* Kept in the markup for a later return; hide without deleting. */
+  display: none;
+  flex-wrap: wrap;
+  gap: 0.45em 0.7em;
+  align-items: baseline;
+  margin: 16px 0 0;
+  color: var(--text-muted);
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 1.4vw, 1.125rem);
+  letter-spacing: -0.015em;
+  line-height: 1.35;
+}
+
+.foundation-intro__names strong {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.foundation-intro__names span {
+  color: var(--text-subtle);
+}
+
+/* 02 and 03 are built the same way: the claim across the top, its counts beside
+   it, then one full-width block of evidence under a rule. What differs is what
+   the evidence is — a ranked table here, a drawn map there. */
+.database-foundation__inner {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-areas:
+    'copy ledger'
+    'domains domains';
+  column-gap: clamp(40px, 5vw, 72px);
+  align-items: start;
+  padding-top: clamp(40px, 4.5vw, 56px);
+  padding-bottom: clamp(48px, 5vw, 60px);
+}
+
+.database-copy {
+  position: relative;
+  width: min(100%, 560px);
+  grid-area: copy;
+}
+
+.database-copy__link {
+  margin-top: 22px;
+  font-size: 1.25rem;
+}
+
+/* Domain pie + ranked list live in DatabaseDomains.css. On the home foundation
+   block the figure sits in the `domains` grid area under the ledger. */
+.database-domains-slot {
+  width: 100%;
+  min-width: 0;
+  grid-area: domains;
+  margin: clamp(30px, 3.6vw, 46px) 0 0;
+}
+
+.database-ledger {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+  grid-area: ledger;
+  /* A touch below the h2 cap line so the first rule sits with the lede, not
+     flush with the title. */
+  margin: 28px 0 0;
+  padding: 0;
+}
+
+/* The gradient this row used to carry was there to fade it over an image that
+   bled underneath. Nothing bleeds now, so it is a flat row on the sheet. */
+.database-channel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 190px;
+  gap: 16px;
+  align-items: center;
+  padding: 18px 0;
+  border-top: 1px solid color-mix(in srgb, var(--text) 24%, transparent);
+}
+
+.database-channel:last-child {
+  border-bottom: 1px solid color-mix(in srgb, var(--text) 24%, transparent);
+}
+
+.database-channel__heading {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr);
+  gap: 12px;
+  align-items: baseline;
+}
+
+.database-channel__heading > span {
+  color: var(--accent-ink);
+  font-family: var(--font-mono);
+  font-size: var(--type-caption);
+}
+
+.database-channel dt {
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 1.8vw, 1.45rem);
+  line-height: 1.25;
+}
+
+.database-channel dd {
+  margin: 6px 0 0;
+  color: var(--text-subtle);
+  font-family: var(--font-mono);
+  font-size: var(--type-small);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.database-channel__metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  width: 200px;
+}
+
+.database-channel__metrics > div {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.database-channel__metrics strong,
+.database-channel__metrics strong .count-up {
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 1.45rem;
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.04em;
+}
+
+.database-channel__metrics > div > span {
+  color: var(--text-muted);
+  font-size: var(--type-small);
+  white-space: nowrap;
+}
+
+/* The copy and map form one compact spread: explanation and counts on the left,
+   the transparent tool map on the right. The left track keeps enough measure for
+   the display title; the map track can shrink so it never borrows that space. */
+.skills-foundation__inner {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(280px, 0.95fr) minmax(0, 1.05fr);
+  grid-template-rows: auto 1fr;
+  column-gap: clamp(40px, 5.5vw, 80px);
+  align-items: center;
+  padding-top: clamp(40px, 4.5vw, 56px);
+  padding-bottom: clamp(48px, 5vw, 60px);
+}
+
+.skills-copy__head {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: end;
+  min-width: 0;
+}
+
+/* The transparent map sits beside the copy rather than becoming a banner. */
+.skills-scene {
+  width: 100%;
+  min-width: 0;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  margin: 0;
+}
+
+.skills-scene img {
+  width: 100%;
+  height: auto;
+}
+
+/* The strip under the plate. One rule across the measure, the counts hung off
+   it — a caption to the map, in the register the rest of the page uses for
+   figures, rather than a panel of its own with a border to defend. */
+.skills-foot {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-column: 1;
+  grid-row: 2;
+  gap: 22px;
+  align-self: start;
+  align-items: start;
+  margin-top: clamp(28px, 3vw, 38px);
+  padding-top: clamp(18px, 2vw, 24px);
+  border-top: 1px solid color-mix(in srgb, var(--text) 22%, transparent);
+}
+
+.skills-ledger {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+  margin: 0;
+}
+
+.skills-ledger__stat {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  column-gap: 16px;
+  align-items: baseline;
+}
+
+/* The figure is set large enough to be read as a quantity, in the mono face the
+   Database ledger next door uses for the same job — the two support sections
+   count the same way. */
+.skills-ledger__stat dt {
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: clamp(1.75rem, 2.6vw, 2.25rem);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+.skills-ledger__stat dd {
+  margin: 0;
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: clamp(1.0625rem, 1.4vw, 1.1875rem);
+  line-height: 1.3;
+}
+
+.skills-foot__cue {
+  font-size: 1.25rem;
+}
+
+/* 04 uses the same treatment at a wider scale: the robot strip is cropped out
+   of its source plate and positioned under the four stage notes. */
+.how__inner {
+  position: relative;
+  padding-top: clamp(40px, 4.5vw, 56px);
+  padding-bottom: clamp(48px, 5vw, 60px);
+}
+
+.how__head {
+  position: relative;
+  z-index: 2;
+  width: min(100%, 700px);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.how__head > p {
+  max-width: 580px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.pipeline-scene {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 36px;
+}
+
+/* Robot strip styles retained for a later return; markup is commented out. */
+.pipeline-scene__image {
+  display: none;
+  position: absolute;
+  right: auto;
+  bottom: -110px;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+  margin: 0;
+  pointer-events: none;
+  -webkit-mask-image:
+    linear-gradient(90deg, transparent 0%, #000 7%, #000 93%, transparent 100%),
+    linear-gradient(180deg, transparent 0%, #000 8%, #000 94%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(90deg, transparent 0%, #000 7%, #000 93%, transparent 100%),
+    linear-gradient(180deg, transparent 0%, #000 8%, #000 94%, transparent 100%);
+  mask-composite: intersect;
+}
+
+.pipeline-scene__image::after {
+  display: none;
+}
+
+.pipeline-scene__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center bottom;
+}
+
+.pipeline-annotations {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(18px, 3vw, 38px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pipeline-note {
+  position: relative;
+  display: flex;
+  height: auto;
+  min-height: 0;
+  flex-direction: column;
+  padding: 14px 4px 0;
+  border-top: 2px solid color-mix(in srgb, var(--text) 76%, transparent);
+  background: transparent;
+}
+
+.pipeline-note__step {
+  color: var(--accent-ink);
+  font-family: var(--font-mono);
+  font-size: var(--type-caption);
+  letter-spacing: 0.08em;
+}
+
+.pipeline-note h3 {
+  /* Two-line lock with a little headroom — 2.5em alone equals the old 58px
+     and serif wraps still overflow it, so single-line columns drift up. */
+  min-height: calc(2.5em + 8px);
+  margin-top: 10px;
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 1.8vw, 1.45rem);
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.pipeline-note > p {
+  margin-top: 10px;
+  color: var(--text-muted);
+  font-size: var(--type-ui);
+  line-height: 1.5;
+}
+
+.pipeline-note__output {
+  display: flex;
+  gap: 7px;
+  align-items: baseline;
+  margin-top: 16px;
+  padding-top: 0;
+  color: var(--text-muted);
+  font-size: var(--type-small);
+}
+
+.pipeline-note__output > span {
+  color: var(--text-subtle);
+  font-family: var(--font-mono);
+  font-size: var(--type-caption);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1100px) {
+  .database-foundation__inner {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      'copy'
+      'ledger'
+      'domains';
+  }
+
+  .database-ledger {
+    width: min(100%, 620px);
+    margin-top: 26px;
+  }
+
+  .skills-foundation__inner {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto auto auto;
+  }
+
+  .skills-copy__head,
+  .skills-scene,
+  .skills-foot {
+    grid-column: 1;
+  }
+
+  .skills-copy__head {
+    grid-row: 1;
+  }
+
+  .skills-scene {
+    width: min(100%, 820px);
+    grid-row: 2;
+    margin: clamp(28px, 3.5vw, 40px) auto 0;
+  }
+
+  .skills-foot {
+    width: min(100%, 560px);
+    grid-row: 3;
+  }
+}
+
+@media (max-width: 900px) {
+  .database-ledger {
+    width: min(100%, 560px);
+  }
+
+  .skills-foot {
+    margin-top: clamp(20px, 3vw, 28px);
+  }
+
+  .pipeline-annotations {
+    gap: 14px;
+  }
+
+  .pipeline-note {
+    height: auto;
+  }
+
+  .pipeline-note > p {
+    font-size: var(--type-caption);
+  }
+
+  .pipeline-note__output {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .foundation-intro__inner {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+  .database-foundation__inner,
+  .skills-foundation__inner {
+    min-height: 0;
+    padding-top: 32px;
+    padding-bottom: 40px;
+  }
+
+  .pipeline-scene__image {
+    display: none;
+  }
+
+  .database-foundation__inner::before,
+  .skills-foundation__inner::before {
+    display: none;
+  }
+
+  .database-copy,
+  .skills-copy__head {
+    width: 100%;
+    max-width: 560px;
+  }
+
+  .skills-scene {
+    width: 100%;
+  }
+
+  .database-copy h2,
+  .skills-copy__head h2,
+  .how__head h2 {
+    font-size: clamp(2rem, 8vw, 2.75rem);
+    white-space: normal;
+  }
+
+  .database-ledger {
+    width: 100%;
+    margin-top: 18px;
+  }
+
+  .database-channel {
+    padding: 12px 0;
+  }
+
+  .database-channel dd {
+    margin-top: 3px;
+  }
+
+  /* The link drops to its own row here — kept on the end of the ledger row it
+     would leave the second count about 90px to wrap in. */
+  .skills-foot {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 22px;
+    align-items: start;
+    max-width: 560px;
+  }
+
+  .skills-ledger {
+    gap: 20px 32px;
+  }
+
+  .how__inner {
+    padding-top: 32px;
+    padding-bottom: 40px;
+  }
+
+  .how__head {
+    text-align: left;
+  }
+
+  .how__head > p {
+    margin-left: 0;
+  }
+
+  .pipeline-scene {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .pipeline-annotations {
+    position: relative;
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+    border-top: 1px solid color-mix(in srgb, var(--text) 24%, transparent);
+  }
+
+  .pipeline-note {
+    height: auto;
+    min-height: 0;
+    padding: 10px 0;
+    border-top: 0;
+    border-bottom: 1px solid color-mix(in srgb, var(--text) 24%, transparent);
+    background: none;
+  }
+
+  .pipeline-note h3 {
+    min-height: 0;
+    margin-top: 4px;
+  }
+
+  .pipeline-note > p {
+    margin-top: 4px;
+  }
+
+  .pipeline-note__output {
+    flex-direction: row;
+    gap: 7px;
+    margin-top: 8px;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  /* Side by side each count gets ~150px, so one label runs to two lines and the
+     other to three and the pair reads as ragged. One under the other, both set
+     against the same left edge, they read as a list of two. */
+  .skills-ledger {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .database-channel {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    padding: 10px 0;
+  }
+
+  .database-channel__metrics {
+    width: 100%;
+    max-width: 240px;
+    padding-left: 42px;
+    gap: 12px;
+  }
+
+  .database-channel__metrics > div {
+    min-width: 0;
+    gap: 2px;
+  }
+
+  .database-channel__metrics strong,
+  .database-channel__metrics strong .count-up {
+    font-size: 1.25rem;
+  }
+}

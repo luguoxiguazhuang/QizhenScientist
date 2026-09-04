@@ -1,0 +1,4 @@
+interface:
+  display_name: "SciAtlas Researcher Review"
+  short_description: "Zero-start researcher profile"
+  default_prompt: "Use $sciatlas-researcher-review to handle setup, run search-papers, read artifacts, and summarize Yoshua Bengio's research trajectory from retrieved evidence."

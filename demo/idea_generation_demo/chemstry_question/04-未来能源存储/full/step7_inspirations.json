@@ -1,0 +1,702 @@
+[
+  {
+    "domain": "same_field",
+    "paper_title": "Understanding Battery Interfaces by Combined Characterization and Simulation Approaches: Challenges and Perspectives",
+    "paper_abstract": "Abstract Driven by the continuous search for improving performances, understanding the phenomena at the electrode/electrolyte interfaces has become an overriding factor for the success of sustainable and efficient battery technologies for mobile and stationary applications. Toward this goal, rapid advances have been made regarding simulations/modeling techniques and characterization approaches, including high‐throughput electrochemical measurements coupled with spectroscopies. Focusing on Li‐ion batteries, current developments are analyzed in the field as well as future challenges in order to gain a full description of interfacial processes across multiple length/timescales; from charge transfer to migration/diffusion properties and interphases formation, up to and including their stability over the entire battery lifetime. For such complex and interrelated phenomena, developing a unified workflow intimately combining the ensemble of these techniques will be critical to unlocking their full investigative potential. For this paradigm shift in battery design to become reality, it necessitates the implementation of research standards and protocols, underlining the importance of a concerted approach across the community. With this in mind, major collaborative initiatives gathering complementary strengths and skills will be fundamental if societal and environmental imperatives in this domain are to be met.",
+    "radius": "R1",
+    "is_combination_plausible": true,
+    "combination_points": [
+      "Coupled characterization and simulation workflow for electrode/electrolyte interfaces",
+      "Multi-length- and multi-timescale modeling of charge transfer, ion migration/diffusion, interphase formation, and interfacial stability",
+      "High-throughput electrochemical measurements combined with spectroscopic diagnostics",
+      "Lifetime-oriented interface stability analysis and degradation tracking",
+      "Standardized, community-coordinated protocols for battery/interface research"
+    ],
+    "combination_plan": "Adapt the candidate’s unified characterization-simulation workflow into a co-design framework for storage systems by coupling operando interface diagnostics, multiscale ion/electron transport models, degradation mechanisms, and lifecycle constraints. This would allow simultaneous optimization of interfacial stability, energy efficiency, safety, resource use, recyclability, and scalable lifetime.",
+    "justification": "The candidate paper provides a transferable organizing principle: integrated, multiscale interface science combining experiment, simulation, standards, and lifetime stability analysis. This directly maps onto the original problem’s need for coupled co-design of materials, interfaces, degradation, and lifecycle constraints rather than isolated component improvements.",
+    "candidate_id": 1,
+    "source_paper": {
+      "paper_id": "https://openalex.org/W4200315733",
+      "title": "Understanding Battery Interfaces by Combined Characterization and Simulation Approaches: Challenges and Perspectives",
+      "abstract": "Abstract Driven by the continuous search for improving performances, understanding the phenomena at the electrode/electrolyte interfaces has become an overriding factor for the success of sustainable and efficient battery technologies for mobile and stationary applications. Toward this goal, rapid advances have been made regarding simulations/modeling techniques and characterization approaches, including high‐throughput electrochemical measurements coupled with spectroscopies. Focusing on Li‐ion batteries, current developments are analyzed in the field as well as future challenges in order to gain a full description of interfacial processes across multiple length/timescales; from charge transfer to migration/diffusion properties and interphases formation, up to and including their stability over the entire battery lifetime. For such complex and interrelated phenomena, developing a unified workflow intimately combining the ensemble of these techniques will be critical to unlocking their full investigative potential. For this paradigm shift in battery design to become reality, it necessitates the implementation of research standards and protocols, underlining the importance of a concerted approach across the community. With this in mind, major collaborative initiatives gathering complementary strengths and skills will be fundamental if societal and environmental imperatives in this domain are to be met.",
+      "year": 2021,
+      "keywords": [],
+      "references": [],
+      "citations": [],
+      "is_influential": false,
+      "score": 0.6867722272872925,
+      "idea_fields": {},
+      "raw": {
+        "paper_id": "https://openalex.org/W4200315733",
+        "title": "Understanding Battery Interfaces by Combined Characterization and Simulation Approaches: Challenges and Perspectives",
+        "abstract": "Abstract Driven by the continuous search for improving performances, understanding the phenomena at the electrode/electrolyte interfaces has become an overriding factor for the success of sustainable and efficient battery technologies for mobile and stationary applications. Toward this goal, rapid advances have been made regarding simulations/modeling techniques and characterization approaches, including high‐throughput electrochemical measurements coupled with spectroscopies. Focusing on Li‐ion batteries, current developments are analyzed in the field as well as future challenges in order to gain a full description of interfacial processes across multiple length/timescales; from charge transfer to migration/diffusion properties and interphases formation, up to and including their stability over the entire battery lifetime. For such complex and interrelated phenomena, developing a unified workflow intimately combining the ensemble of these techniques will be critical to unlocking their full investigative potential. For this paradigm shift in battery design to become reality, it necessitates the implementation of research standards and protocols, underlining the importance of a concerted approach across the community. With this in mind, major collaborative initiatives gathering complementary strengths and skills will be fundamental if societal and environmental imperatives in this domain are to be met.",
+        "publication_year": 2021,
+        "cited_by_count": 95,
+        "score": 0.6867722272872925,
+        "rank": 1,
+        "match_type": "vector_abstract",
+        "authors": [
+          {
+            "author_id": "https://openalex.org/A5024933631",
+            "name": "Elixabete Ayerbe",
+            "position": 1,
+            "is_corresponding": false,
+            "h_index": 17,
+            "works_count": 59,
+            "cited_by_count": 2184
+          },
+          {
+            "author_id": "https://openalex.org/A5039985056",
+            "name": "Anass Benayad",
+            "position": 2,
+            "is_corresponding": false,
+            "h_index": 38,
+            "works_count": 151,
+            "cited_by_count": 7066
+          },
+          {
+            "author_id": "https://openalex.org/A5015792303",
+            "name": "F. G. Capone",
+            "position": 3,
+            "is_corresponding": false,
+            "h_index": 5,
+            "works_count": 14,
+            "cited_by_count": 168
+          },
+          {
+            "author_id": "https://openalex.org/A5065228796",
+            "name": "E. Capria",
+            "position": 4,
+            "is_corresponding": false,
+            "h_index": 10,
+            "works_count": 49,
+            "cited_by_count": 653
+          },
+          {
+            "author_id": "https://openalex.org/A5047189415",
+            "name": "Ivano E. Castelli",
+            "position": 5,
+            "is_corresponding": false,
+            "h_index": 38,
+            "works_count": 218,
+            "cited_by_count": 15101
+          },
+          {
+            "author_id": "https://openalex.org/A5005117199",
+            "name": "Isidora Cekić-Lasković",
+            "position": 6,
+            "is_corresponding": false,
+            "h_index": 34,
+            "works_count": 148,
+            "cited_by_count": 4523
+          },
+          {
+            "author_id": "https://openalex.org/A5051818258",
+            "name": "Raul Ciria Aylagas",
+            "position": 7,
+            "is_corresponding": false,
+            "h_index": 2,
+            "works_count": 6,
+            "cited_by_count": 108
+          },
+          {
+            "author_id": "https://openalex.org/A5004140383",
+            "name": "L. Dudy",
+            "position": 8,
+            "is_corresponding": false,
+            "h_index": 17,
+            "works_count": 84,
+            "cited_by_count": 1080
+          },
+          {
+            "author_id": "https://openalex.org/A5110225060",
+            "name": "Kristina Edström",
+            "position": 9,
+            "is_corresponding": false,
+            "h_index": 80,
+            "works_count": 585,
+            "cited_by_count": 24478
+          },
+          {
+            "author_id": "https://openalex.org/A5111808768",
+            "name": "Mark R. Johnson",
+            "position": 10,
+            "is_corresponding": false,
+            "h_index": 45,
+            "works_count": 314,
+            "cited_by_count": 7117
+          },
+          {
+            "author_id": "https://openalex.org/A5014650479",
+            "name": "Hongjiao Li",
+            "position": 11,
+            "is_corresponding": false,
+            "h_index": 22,
+            "works_count": 86,
+            "cited_by_count": 2222
+          },
+          {
+            "author_id": "https://openalex.org/A5013853207",
+            "name": "J. M. García‐Lastra",
+            "position": 12,
+            "is_corresponding": false,
+            "h_index": 41,
+            "works_count": 243,
+            "cited_by_count": 7050
+          },
+          {
+            "author_id": "https://openalex.org/A5008619197",
+            "name": "Matheus Leal de Souza",
+            "position": 13,
+            "is_corresponding": false,
+            "h_index": 5,
+            "works_count": 14,
+            "cited_by_count": 167
+          },
+          {
+            "author_id": "https://openalex.org/A5003592511",
+            "name": "Valentin Meunier",
+            "position": 14,
+            "is_corresponding": false,
+            "h_index": 5,
+            "works_count": 11,
+            "cited_by_count": 248
+          },
+          {
+            "author_id": "https://openalex.org/A5005901354",
+            "name": "Mathieu Morcrette",
+            "position": 15,
+            "is_corresponding": false,
+            "h_index": 60,
+            "works_count": 251,
+            "cited_by_count": 15356
+          },
+          {
+            "author_id": "https://openalex.org/A5041281526",
+            "name": "H. Reichert",
+            "position": 16,
+            "is_corresponding": false,
+            "h_index": 33,
+            "works_count": 122,
+            "cited_by_count": 4361
+          },
+          {
+            "author_id": "https://openalex.org/A5016144644",
+            "name": "Patrice Simon",
+            "position": 17,
+            "is_corresponding": false,
+            "h_index": 112,
+            "works_count": 545,
+            "cited_by_count": 103662
+          },
+          {
+            "author_id": "https://openalex.org/A5038678934",
+            "name": "Jean‐Pascal Rueff",
+            "position": 18,
+            "is_corresponding": false,
+            "h_index": 43,
+            "works_count": 289,
+            "cited_by_count": 6650
+          },
+          {
+            "author_id": "https://openalex.org/A5052833547",
+            "name": "Jonas Sottmann",
+            "position": 19,
+            "is_corresponding": false,
+            "h_index": 17,
+            "works_count": 32,
+            "cited_by_count": 899
+          },
+          {
+            "author_id": "https://openalex.org/A5062498486",
+            "name": "Wolfgang Wenzel",
+            "position": 20,
+            "is_corresponding": true,
+            "h_index": 54,
+            "works_count": 854,
+            "cited_by_count": 12013
+          },
+          {
+            "author_id": "https://openalex.org/A5110288385",
+            "name": "Alexis Grimaud",
+            "position": 21,
+            "is_corresponding": true,
+            "h_index": 55,
+            "works_count": 217,
+            "cited_by_count": 22748
+          },
+          {
+            "author_id": "https://openalex.org/A5107138359",
+            "name": "Duncan Atkins",
+            "position": 9999,
+            "is_corresponding": false,
+            "h_index": 4,
+            "works_count": 7,
+            "cited_by_count": 290
+          }
+        ],
+        "author_names": [
+          "Elixabete Ayerbe",
+          "Anass Benayad",
+          "F. G. Capone",
+          "E. Capria",
+          "Ivano E. Castelli",
+          "Isidora Cekić-Lasković",
+          "Raul Ciria Aylagas",
+          "L. Dudy"
+        ]
+      }
+    }
+  },
+  {
+    "domain": "same_field",
+    "paper_title": "Post-Lithium Battery Technologies Driving the Future of Eco-Conscious Electric Vehicles",
+    "paper_abstract": "As electric vehicles (EVs) transition from niche adoption to mass-market reality, the underlying lithium-ion battery (LIB) architecture has begun to show limitations in cost, safety, and sustainability. This paper presents a comprehensive exploration of emerging post-lithium battery technologies—namely sodium-ion, potassium-ion, magnesium/calcium-ion, aluminum-ion, lithium-sulfur, lithium-air, and solid-state batteries—each promising to address one or more of LIB's systemic flaws. Drawing from recent breakthroughs in materials science and electrochemistry, we examine the technical maturity, environmental implications, commercial viability, and infrastructure requirements for each chemistry. We conclude by identifying critical challenges and strategic pathways for large-scale deployment of these battery systems in pursuit of resilient, low-carbon electric mobility.",
+    "radius": "R1",
+    "is_combination_plausible": true,
+    "combination_points": [
+      "multi-criteria evaluation of battery technologies across cost, safety, sustainability, technical maturity, and infrastructure readiness",
+      "trade-off mapping among alternative chemistries based on resource abundance, environmental impact, and commercial viability",
+      "strategic pathway framing for large-scale deployment under lifecycle and resilience constraints"
+    ],
+    "combination_plan": "Use the candidate’s multi-dimensional sustainability, safety, resource, and deployment-readiness framework as an outer co-design loop that constrains and ranks interface/material strategies according to ion/electron transport stability, energy efficiency, recyclability, and scalable lifetime.",
+    "justification": "Although the candidate is a survey rather than a direct interface-engineering method, it provides a transferable organizing structure for balancing performance, safety, resource, environmental, and scalability constraints, which maps directly onto the problem’s need for coupled materials-interface-degradation-lifecycle co-design.",
+    "candidate_id": 2,
+    "source_paper": {
+      "paper_id": "https://openalex.org/W4411215849",
+      "title": "Post-Lithium Battery Technologies Driving the Future of Eco-Conscious Electric Vehicles",
+      "abstract": "As electric vehicles (EVs) transition from niche adoption to mass-market reality, the underlying lithium-ion battery (LIB) architecture has begun to show limitations in cost, safety, and sustainability. This paper presents a comprehensive exploration of emerging post-lithium battery technologies—namely sodium-ion, potassium-ion, magnesium/calcium-ion, aluminum-ion, lithium-sulfur, lithium-air, and solid-state batteries—each promising to address one or more of LIB's systemic flaws. Drawing from recent breakthroughs in materials science and electrochemistry, we examine the technical maturity, environmental implications, commercial viability, and infrastructure requirements for each chemistry. We conclude by identifying critical challenges and strategic pathways for large-scale deployment of these battery systems in pursuit of resilient, low-carbon electric mobility.",
+      "year": 2025,
+      "keywords": [],
+      "references": [],
+      "citations": [],
+      "is_influential": false,
+      "score": 0.6820166707038879,
+      "idea_fields": {},
+      "raw": {
+        "paper_id": "https://openalex.org/W4411215849",
+        "title": "Post-Lithium Battery Technologies Driving the Future of Eco-Conscious Electric Vehicles",
+        "abstract": "As electric vehicles (EVs) transition from niche adoption to mass-market reality, the underlying lithium-ion battery (LIB) architecture has begun to show limitations in cost, safety, and sustainability. This paper presents a comprehensive exploration of emerging post-lithium battery technologies—namely sodium-ion, potassium-ion, magnesium/calcium-ion, aluminum-ion, lithium-sulfur, lithium-air, and solid-state batteries—each promising to address one or more of LIB's systemic flaws. Drawing from recent breakthroughs in materials science and electrochemistry, we examine the technical maturity, environmental implications, commercial viability, and infrastructure requirements for each chemistry. We conclude by identifying critical challenges and strategic pathways for large-scale deployment of these battery systems in pursuit of resilient, low-carbon electric mobility.",
+        "publication_year": 2025,
+        "cited_by_count": 0,
+        "score": 0.6820166707038879,
+        "rank": 2,
+        "match_type": "vector_abstract",
+        "authors": [
+          {
+            "author_id": "https://openalex.org/A5118185277",
+            "name": "Aaradhya Chaturvedi",
+            "position": 9999,
+            "is_corresponding": true,
+            "h_index": 0,
+            "works_count": 1,
+            "cited_by_count": 0
+          }
+        ],
+        "author_names": [
+          "Aaradhya Chaturvedi"
+        ]
+      }
+    }
+  },
+  {
+    "domain": "chemical_engineering",
+    "paper_title": "Multiscale Modeling of Electrochemical Reactions and Processes",
+    "paper_abstract": "Multiscale Modeling of Electrochemical Reactions and Processes is a practical guide to multiscale computational methodologies. It offers a holistic understanding of the impact of reaction conditions on the overall performance of electrolyzers, fuel cells, and energy storage devices. This book covers reaction conditi...",
+    "radius": "R2",
+    "is_combination_plausible": true,
+    "combination_points": [
+      "Multiscale modeling hierarchy linking atomistic/material properties, interface reactions, mesoscale transport, and device-level performance",
+      "Coupled treatment of electrochemical reaction conditions, ion/electron transport, and efficiency losses",
+      "Use of computational models to propagate degradation mechanisms across scales",
+      "Holistic performance evaluation under operational and lifecycle constraints"
+    ],
+    "combination_plan": "Adopt the candidate’s multiscale electrochemical modeling framework as a co-design scaffold, connecting material selection and interface stability models to cell-level transport, efficiency, safety, recyclability, and lifetime constraints. This would allow simultaneous optimization of ion/electron transport stability and lifecycle metrics rather than improving isolated components.",
+    "justification": "The candidate provides a transferable abstraction: a coupled multiscale modeling structure that relates local electrochemical reactions and interface processes to system-level performance. This maps directly onto the problem’s need for co-design of materials, interfaces, degradation, and lifecycle constraints.",
+    "candidate_id": 3,
+    "source_paper": {
+      "paper_id": "https://openalex.org/W3164959115",
+      "title": "Multiscale Modeling of Electrochemical Reactions and Processes",
+      "abstract": "Multiscale Modeling of Electrochemical Reactions and Processes is a practical guide to multiscale computational methodologies. It offers a holistic understanding of the impact of reaction conditions on the overall performance of electrolyzers, fuel cells, and energy storage devices. This book covers reaction conditi...",
+      "year": 2021,
+      "keywords": [],
+      "references": [],
+      "citations": [],
+      "is_influential": false,
+      "score": 1.0,
+      "idea_fields": {},
+      "raw": {
+        "paper_id": "https://openalex.org/W3164959115",
+        "title": "Multiscale Modeling of Electrochemical Reactions and Processes",
+        "abstract": "Multiscale Modeling of Electrochemical Reactions and Processes is a practical guide to multiscale computational methodologies. It offers a holistic understanding of the impact of reaction conditions on the overall performance of electrolyzers, fuel cells, and energy storage devices. This book covers reaction conditi...",
+        "publication_year": 2021,
+        "year": 2021,
+        "cited_by_count": 6,
+        "citation_count": 6,
+        "score": 1.0,
+        "kg_score": 1.0,
+        "rank": 1,
+        "source": "kg",
+        "match_type": "kg_graph",
+        "pdf_url": "https://pubs.aip.org/books/monograph/chapter-pdf/9012584/9780735422377_frontmatter.pdf",
+        "paper_url": "https://openalex.org/W3164959115",
+        "identifiers": [
+          "openalex:https://openalex.org/W3164959115"
+        ],
+        "paper": {
+          "is_retracted": false,
+          "pdf_is_oa": false,
+          "oa_status": "gold",
+          "is_open_access": true,
+          "language": "en",
+          "pdf_url": "https://pubs.aip.org/books/monograph/chapter-pdf/9012584/9780735422377_frontmatter.pdf",
+          "title": "Multiscale Modeling of Electrochemical Reactions and Processes",
+          "type": "book",
+          "pdf_version": "publishedVersion",
+          "venue_source_id": "https://openalex.org/S4306402548",
+          "has_abstract": true,
+          "publication_date": "2021-08-06",
+          "id": "https://openalex.org/W3164959115",
+          "venue_source_type": "repository",
+          "pdf_is_published": false,
+          "cited_by_count": 6,
+          "referenced_works_count": 0,
+          "venue_source_display_name": "Griffith Research Online (Griffith University, Queensland, Australia)",
+          "label": "Paper",
+          "abstract": "Multiscale Modeling of Electrochemical Reactions and Processes is a practical guide to multiscale computational methodologies. It offers a holistic understanding of the impact of reaction conditions on the overall performance of electrolyzers, fuel cells, and energy storage devices. This book covers reaction conditions such as electrolyte and applied bias potential and support type, as well as how these factors determine the overall performance of devices. These topics, for the first time, are covered in one book. This book presents:A comprehensive examination of the experiment-theory gap of electrochemical reactionsState-of-the-art multiscale methods for modeling the influence of reaction environment, including electrolyte, bias potential, and support type, on the energy conversion efficiency in electrochemical cells.A discussion of how to apply these multiscale modeling techniques to various applications in clean energy technology Multiscale Modeling of Electrochemical Reactions and Processes serves as a valuable resource for scientists, engineers, and students interested in electrochemistry, multiscale modeling, and clean energy applications. It is also a resource for the increasing number of available courses on materials modeling.",
+          "publication_year": 2021,
+          "created_date": "2021-06-07T00:00:00.000Z",
+          "updated_date": "2026-01-09T06:25:30.743Z",
+          "title_normalized": "multiscalemodelingofelectrochemicalreactionsandprocesses",
+          "doi": "https://doi.org/10.1063/9780735422377"
+        },
+        "hit_sources": [
+          "abstract_vector",
+          "title_vector"
+        ],
+        "evidence": {
+          "keywords": [],
+          "titles": [],
+          "graph_paths": []
+        },
+        "score_breakdown": {
+          "sim_title": 0.8315841784793683,
+          "sim_abstract": 0.8498193031318902,
+          "title_vector_rerank_score": null,
+          "abstract_vector_rerank_score": null,
+          "combined_vector_rerank_score": 0.7350146770477295,
+          "norm_emb_path": 1.0,
+          "norm_title_path": 0.0,
+          "title_pre_graph_bonus": 0.0,
+          "norm_pre_graph_score": 1.0,
+          "norm_graph_score": 1.0,
+          "graph_support_factor": 1.0,
+          "title_bonus": 0.0,
+          "final_score": 1.0
+        }
+      }
+    }
+  },
+  {
+    "domain": "chemical_engineering",
+    "paper_title": "Multiscale process systems engineering—analysis and design of chemical and energy systems from molecular design up to process optimization",
+    "paper_abstract": "",
+    "radius": "R2",
+    "is_combination_plausible": true,
+    "combination_points": [
+      "Multiscale process systems engineering framework linking molecular/material design to process-level performance",
+      "Hierarchical co-optimization across length and time scales: chemistry, interfaces, device operation, and lifecycle",
+      "Trade-off analysis among efficiency, safety, resource constraints, recyclability, and scalability",
+      "Integration of degradation and process reliability considerations into early-stage material/interface design"
+    ],
+    "combination_plan": "Adapt multiscale process systems engineering as a co-design architecture for storage materials, coupling atomistic/interface transport models with cell-level efficiency, degradation, safety, recycling, and process scalability objectives in a unified optimization loop.",
+    "justification": "The candidate paper’s core abstraction—systematic design from molecular scale to process optimization—directly maps onto the problem’s missing coupled method for simultaneously engineering ion/electron transport, interfaces, degradation, and lifecycle constraints.",
+    "candidate_id": 4,
+    "source_paper": {
+      "paper_id": "https://openalex.org/W4200367055",
+      "title": "Multiscale process systems engineering—analysis and design of chemical and energy systems from molecular design up to process optimization",
+      "abstract": "",
+      "year": 2021,
+      "keywords": [],
+      "references": [],
+      "citations": [],
+      "is_influential": false,
+      "score": 0.9563,
+      "idea_fields": {},
+      "raw": {
+        "paper_id": "https://openalex.org/W4200367055",
+        "title": "Multiscale process systems engineering—analysis and design of chemical and energy systems from molecular design up to process optimization",
+        "abstract": null,
+        "publication_year": 2021,
+        "year": 2021,
+        "cited_by_count": 2,
+        "citation_count": 2,
+        "score": 0.9563,
+        "kg_score": 0.9563,
+        "rank": 2,
+        "source": "kg",
+        "match_type": "kg_graph",
+        "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11705-021-2135-x.pdf",
+        "paper_url": "https://openalex.org/W4200367055",
+        "identifiers": [
+          "openalex:https://openalex.org/W4200367055"
+        ],
+        "paper": {
+          "is_retracted": false,
+          "pdf_is_oa": false,
+          "oa_status": "bronze",
+          "is_open_access": true,
+          "language": "en",
+          "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11705-021-2135-x.pdf",
+          "title": "Multiscale process systems engineering—analysis and design of chemical and energy systems from molecular design up to process optimization",
+          "type": "article",
+          "pdf_version": "publishedVersion",
+          "venue_source_id": "https://openalex.org/S4210176808",
+          "has_abstract": false,
+          "publication_date": "2021-12-14",
+          "id": "https://openalex.org/W4200367055",
+          "venue_source_type": "journal",
+          "pdf_is_published": false,
+          "cited_by_count": 2,
+          "pdf_source_type": "journal",
+          "pdf_source_id": "https://openalex.org/S4210176808",
+          "referenced_works_count": 17,
+          "venue_source_display_name": "Frontiers of Chemical Science and Engineering",
+          "label": "Paper",
+          "pdf_source_display_name": "Frontiers of Chemical Science and Engineering",
+          "venue_raw_source_name": "Frontiers of Chemical Science and Engineering",
+          "publication_year": 2021,
+          "created_date": "2025-10-10T00:00:00.000Z",
+          "updated_date": "2025-11-06T03:46:38.306Z",
+          "title_normalized": "multiscaleprocesssystemsengineeringanalysisanddesignofchemicalandenergysystemsfrommoleculardesignuptoprocessoptimization",
+          "doi": "https://doi.org/10.1007/s11705-021-2135-x"
+        },
+        "hit_sources": [
+          "title_vector"
+        ],
+        "evidence": {
+          "keywords": [],
+          "titles": [],
+          "graph_paths": []
+        },
+        "score_breakdown": {
+          "sim_title": 0.8293672024621321,
+          "sim_abstract": 0.0,
+          "title_vector_rerank_score": null,
+          "abstract_vector_rerank_score": null,
+          "combined_vector_rerank_score": 0.6684409976005554,
+          "norm_emb_path": 0.9454053522662061,
+          "norm_title_path": 0.0,
+          "title_pre_graph_bonus": 0.0,
+          "norm_pre_graph_score": 0.9454053522662061,
+          "norm_graph_score": 0.9454053522662061,
+          "graph_support_factor": 1.0,
+          "title_bonus": 0.0,
+          "final_score": 0.9563242818129649
+        }
+      }
+    }
+  },
+  {
+    "domain": "computer_science",
+    "paper_title": "Recent Advances in Data-Driven Methods for Degradation Modeling Across Applications",
+    "paper_abstract": "Understanding degradation is crucial for ensuring the longevity and performance of materials, systems, and organisms. To illustrate the similarities across applications, this article provides a review of data-based methods in materials science, engineering, and medicine. The methods analyzed in this paper include re...",
+    "radius": "R2",
+    "is_combination_plausible": true,
+    "combination_points": [
+      "Cross-domain degradation-state representation",
+      "Data-driven remaining-useful-life and health-indicator modeling",
+      "Multi-scale degradation modeling linking material-level changes to system-level lifetime",
+      "Physics-informed or hybrid data-driven degradation surrogates",
+      "Uncertainty quantification for lifetime and safety predictions",
+      "Lifecycle-aware prognostic feedback for design optimization"
+    ],
+    "combination_plan": "Adapt the candidate paper's degradation-modeling framework to energy-storage co-design by defining coupled ion/electron transport health indicators at interfaces, then using data-driven or physics-informed degradation models to predict how material choices, interface chemistry, and operating conditions affect efficiency, safety, recyclability, and lifetime. These prognostic models can be embedded in a multi-objective co-design loop that simultaneously optimizes transport stability, resource constraints, and end-of-life requirements.",
+    "justification": "Although the candidate is a cross-domain review rather than a storage-specific method, it provides a transferable abstraction: modeling degradation as a coupled, multi-scale, lifecycle-governed process. This maps directly onto the original problem's need to co-design materials, interfaces, degradation mechanisms, and lifecycle constraints.",
+    "candidate_id": 5,
+    "source_paper": {
+      "paper_id": "https://openalex.org/W4417114361",
+      "title": "Recent Advances in Data-Driven Methods for Degradation Modeling Across Applications",
+      "abstract": "Understanding degradation is crucial for ensuring the longevity and performance of materials, systems, and organisms. To illustrate the similarities across applications, this article provides a review of data-based methods in materials science, engineering, and medicine. The methods analyzed in this paper include re...",
+      "year": 2025,
+      "keywords": [],
+      "references": [],
+      "citations": [],
+      "is_influential": false,
+      "score": 1.0,
+      "idea_fields": {},
+      "raw": {
+        "paper_id": "https://openalex.org/W4417114361",
+        "title": "Recent Advances in Data-Driven Methods for Degradation Modeling Across Applications",
+        "abstract": "Understanding degradation is crucial for ensuring the longevity and performance of materials, systems, and organisms. To illustrate the similarities across applications, this article provides a review of data-based methods in materials science, engineering, and medicine. The methods analyzed in this paper include re...",
+        "publication_year": 2025,
+        "year": 2025,
+        "cited_by_count": 0,
+        "citation_count": 0,
+        "score": 1.0,
+        "kg_score": 1.0,
+        "rank": 1,
+        "source": "kg",
+        "match_type": "kg_graph",
+        "pdf_url": "https://www.mdpi.com/2227-9717/13/12/3962/pdf?version=1765189576",
+        "paper_url": "https://openalex.org/W4417114361",
+        "identifiers": [
+          "openalex:https://openalex.org/W4417114361"
+        ],
+        "paper": {
+          "is_retracted": false,
+          "pdf_is_oa": false,
+          "oa_status": "gold",
+          "is_open_access": true,
+          "language": "en",
+          "pdf_url": "https://www.mdpi.com/2227-9717/13/12/3962/pdf?version=1765189576",
+          "title": "Recent Advances in Data-Driven Methods for Degradation Modeling Across Applications",
+          "type": "article",
+          "pdf_version": "publishedVersion",
+          "venue_source_id": "https://openalex.org/S4210201879",
+          "has_abstract": true,
+          "publication_date": "2025-12-08",
+          "id": "https://openalex.org/W4417114361",
+          "venue_source_type": "journal",
+          "pdf_is_published": false,
+          "cited_by_count": 0,
+          "pdf_source_type": "journal",
+          "pdf_source_id": "https://openalex.org/S4210201879",
+          "referenced_works_count": 187,
+          "venue_source_display_name": "Processes",
+          "label": "Paper",
+          "abstract": "Understanding degradation is crucial for ensuring the longevity and performance of materials, systems, and organisms. To illustrate the similarities across applications, this article provides a review of data-based methods in materials science, engineering, and medicine. The methods analyzed in this paper include regression analysis, factor analysis, cluster analysis, Markov Chain Monte Carlo, Bayesian statistics, hidden Markov models, nonparametric Bayesian modeling of time series, supervised learning, and deep learning. The review provides an overview of degradation models, referencing books and methods, and includes detailed tables highlighting the applications and insights offered in medicine, power engineering, and material science. It also discusses the classification of methods, emphasizing statistical inference, dynamic prediction, machine learning, and hybrid modeling techniques. Overall, this review enhances understanding of degradation modeling across diverse domains.",
+          "pdf_source_display_name": "Processes",
+          "venue_raw_source_name": "Processes",
+          "publication_year": 2025,
+          "created_date": "2025-12-08T00:00:00.000Z",
+          "updated_date": "2025-12-10T02:45:41.426Z",
+          "title_normalized": "recentadvancesindatadrivenmethodsfordegradationmodelingacrossapplications",
+          "doi": "https://doi.org/10.3390/pr13123962"
+        },
+        "hit_sources": [
+          "abstract_vector",
+          "title_vector"
+        ],
+        "evidence": {
+          "keywords": [],
+          "titles": [],
+          "graph_paths": []
+        },
+        "score_breakdown": {
+          "sim_title": 0.8324260728909003,
+          "sim_abstract": 0.8193498806006811,
+          "title_vector_rerank_score": null,
+          "abstract_vector_rerank_score": null,
+          "combined_vector_rerank_score": 0.0634995847940445,
+          "norm_emb_path": 1.0,
+          "norm_title_path": 0.0,
+          "title_pre_graph_bonus": 0.0,
+          "norm_pre_graph_score": 1.0,
+          "norm_graph_score": 1.0,
+          "graph_support_factor": 1.0,
+          "title_bonus": 0.0,
+          "final_score": 1.0
+        }
+      }
+    }
+  },
+  {
+    "domain": "computer_science",
+    "paper_title": "Iterative Durability Design of Products via Degradation-Informed Bayesian Optimization",
+    "paper_abstract": "Green manufacturing has become a pressing issue in recent years, driven by the acknowledgment of its long-term social and economic benefits, increasing demand for environmentally friendly products, and expanding regulations. One of the key approaches to attaining sustainability in green manufacturing is to design lo...",
+    "radius": "R2",
+    "is_combination_plausible": true,
+    "combination_points": [
+      "Degradation-informed Bayesian optimization as a closed-loop design framework",
+      "Iterative durability/lifetime-oriented design under uncertainty",
+      "Surrogate modeling of degradation trajectories to guide experiments or simulations",
+      "Multi-objective trade-off handling among performance, durability, sustainability, and cost constraints"
+    ],
+    "combination_plan": "Adapt degradation-informed Bayesian optimization into a co-design loop for storage materials and interfaces, where candidate chemistries, interface structures, and processing parameters are iteratively selected to optimize coupled ion/electron transport stability, efficiency, safety, resource use, recyclability, and lifetime. Degradation models or accelerated aging data would serve as informative priors/surrogates to steer exploration toward durable, scalable, lifecycle-aware designs.",
+    "justification": "The candidate provides a transferable abstraction: using degradation-aware probabilistic optimization to iteratively design durable products under competing lifecycle constraints. This maps directly onto the original problem's need for coupled materials-interface-degradation-lifecycle co-design rather than isolated component improvement.",
+    "candidate_id": 6,
+    "source_paper": {
+      "paper_id": "https://openalex.org/W4385617137",
+      "title": "Iterative Durability Design of Products via Degradation-Informed Bayesian Optimization",
+      "abstract": "Green manufacturing has become a pressing issue in recent years, driven by the acknowledgment of its long-term social and economic benefits, increasing demand for environmentally friendly products, and expanding regulations. One of the key approaches to attaining sustainability in green manufacturing is to design lo...",
+      "year": 2023,
+      "keywords": [],
+      "references": [],
+      "citations": [],
+      "is_influential": false,
+      "score": 0.9632,
+      "idea_fields": {},
+      "raw": {
+        "paper_id": "https://openalex.org/W4385617137",
+        "title": "Iterative Durability Design of Products via Degradation-Informed Bayesian Optimization",
+        "abstract": "Green manufacturing has become a pressing issue in recent years, driven by the acknowledgment of its long-term social and economic benefits, increasing demand for environmentally friendly products, and expanding regulations. One of the key approaches to attaining sustainability in green manufacturing is to design lo...",
+        "publication_year": 2023,
+        "year": 2023,
+        "cited_by_count": 1,
+        "citation_count": 1,
+        "score": 0.9632,
+        "kg_score": 0.9632,
+        "rank": 2,
+        "source": "kg",
+        "match_type": "kg_graph",
+        "pdf_url": "https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.23819139.v2",
+        "paper_url": "https://openalex.org/W4385617137",
+        "identifiers": [
+          "openalex:https://openalex.org/W4385617137"
+        ],
+        "paper": {
+          "is_retracted": false,
+          "pdf_is_oa": true,
+          "oa_status": "gold",
+          "is_open_access": true,
+          "language": "en",
+          "pdf_url": "https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.23819139.v2",
+          "title": "Iterative Durability Design of Products via Degradation-Informed Bayesian Optimization",
+          "type": "preprint",
+          "pdf_version": "acceptedVersion",
+          "venue_source_id": "https://openalex.org/S4377196282",
+          "has_abstract": true,
+          "publication_date": "2023-08-07",
+          "id": "https://openalex.org/W4385617137",
+          "venue_source_type": "repository",
+          "pdf_is_published": false,
+          "cited_by_count": 1,
+          "referenced_works_count": 58,
+          "venue_source_display_name": "Figshare",
+          "label": "Paper",
+          "abstract": "Green manufacturing has become a pressing issue in recent years, driven by the acknowledgment of its long-term social and economic benefits, increasing demand for environmentally friendly products, and expanding regulations. One of the key approaches to attaining sustainability in green manufacturing is to design long-lasting products. Nevertheless, the traditional approaches have faced several unique challenges in designing a product with an extended lifetime, such as costly and time-consuming procedures, as well as the noisy, sparse, insufficient or incomplete data. This paper proposes a novel framework to tackle these issues from a data-driven perspective. Specifically, the proposed method employs Bayesian optimization with Monte-Carlo acquisition functions to take into account both product design factors and degradation signals and incorporate the inherent uncertainty in the modeling of underlying degradation processes and prediction of product lifetimes. A series of simulation studies are presented to assess the performance of the proposed method. A case study on the Lithium-ion battery dataset is further conducted, which demonstrates the advantages of the proposed method over existing benchmark approaches.",
+          "publication_year": 2023,
+          "created_date": "2025-10-10T00:00:00.000Z",
+          "updated_date": "2025-12-26T23:08:49.675Z",
+          "title_normalized": "iterativedurabilitydesignofproductsviadegradationinformedbayesianoptimization",
+          "doi": "https://doi.org/10.36227/techrxiv.23819139.v1"
+        },
+        "hit_sources": [
+          "abstract_vector",
+          "title_vector"
+        ],
+        "evidence": {
+          "keywords": [],
+          "titles": [],
+          "graph_paths": []
+        },
+        "score_breakdown": {
+          "sim_title": 0.8184019860774709,
+          "sim_abstract": 0.8095204126730505,
+          "title_vector_rerank_score": null,
+          "abstract_vector_rerank_score": null,
+          "combined_vector_rerank_score": 0.0067469095811247826,
+          "norm_emb_path": 0.9539897897560683,
+          "norm_title_path": 0.0,
+          "title_pre_graph_bonus": 0.0,
+          "norm_pre_graph_score": 0.9539897897560683,
+          "norm_graph_score": 0.9539897897560683,
+          "graph_support_factor": 1.0,
+          "title_bonus": 0.0,
+          "final_score": 0.9631918318048547
+        }
+      }
+    }
+  }
+]

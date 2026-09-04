@@ -1,0 +1,42 @@
+{
+  "name": "mechanist",
+  "version": "0.1.0",
+  "description": "Mechanist — AI Systems as Scientific Instruments for Understanding the Mechanisms of Intelligence.",
+  "author": { "name": "zjunlp", "url": "https://github.com/zjunlp" },
+  "homepage": "https://github.com/zjunlp/Mechanist",
+  "repository": "https://github.com/zjunlp/Mechanist",
+  "license": "MIT",
+  "keywords": ["research", "experiments", "literature-review", "auto-pipeline", "mcp", "science"],
+
+  "skills": ["./skills/"],
+
+  "mcpServers": {
+    "llm-chat": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--with-requirements",
+        "${QODER_PLUGIN_ROOT}/mcp-servers/llm-chat/requirements.txt",
+        "${QODER_PLUGIN_ROOT}/mcp-servers/llm-chat/server.py"
+      ],
+      "env": {
+        "LLM_API_KEY": "${LLM_API_KEY:-}",
+        "LLM_BASE_URL": "${LLM_BASE_URL:-https://dashscope.aliyuncs.com/compatible-mode/v1}",
+        "LLM_MODEL": "${LLM_MODEL:-qwen-plus}",
+        "LLM_FALLBACK_MODEL": "${LLM_FALLBACK_MODEL:-qwen-plus}"
+      }
+    },
+    "mechanic-db": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--with-requirements",
+        "${QODER_PLUGIN_ROOT}/mcp-servers/mechanic-db/requirements.txt",
+        "${QODER_PLUGIN_ROOT}/mcp-servers/mechanic-db/server.py"
+      ],
+      "env": {
+        "MECHANIC_DB_API_KEY": "${MECHANIC_DB_API_KEY:-}"
+      }
+    }
+  }
+}

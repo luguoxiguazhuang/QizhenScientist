@@ -1,0 +1,254 @@
+{
+  "ok": false,
+  "run_dir": "/REDACTED/tiaozhanbei/chemstry_question/03-微观界面测量/full",
+  "topic": "Research question: How can we measure interface phenomena on the microscopic level?\nContext: Interfacial chemistry is a fascinating field that seeks to expand and deepen our comprehension of behavior at the molecular interface of gases and liquids, liquids and solids, and solids and solids, among other systems. At these microscopic and nanoscale borders, an elemental dance occurs involving mass and heat transfer through evaporation, reaction, and micro- or even nanoscale explosions, but we still are unsure how these processes are choreographed by the chemicals themselves. In the case of gas–liquid or liquid–solid interfaces, optical interference methods can measure gas-film or liquid-film thicknesses up to nanoscale levels, but the information is too limited for sharpening our understanding of these complex physical and chemical phenomena. The study of microscopic interfaces is fueled by urgent research needs in fields such as materials synthesis, combustion, spray drying, and design of next-generation evaporative cooling nanodevices.",
+  "smoke_mode": false,
+  "steps": {
+    "step1": {
+      "status": "resumed",
+      "seed_paper_count": 4
+    },
+    "step2": {
+      "status": "resumed",
+      "graph_paper_count": 4
+    },
+    "step3": {
+      "status": "resumed",
+      "serialized_chars": 6550,
+      "trend_chars": 8466
+    },
+    "step4": {
+      "status": "resumed",
+      "rss_keys": [
+        "bottlenecks",
+        "core_gap",
+        "desired_solution_properties",
+        "inspiration_search_hints",
+        "objects",
+        "possible_mechanism_types",
+        "relations",
+        "target_domain",
+        "unresolved_tensions"
+      ]
+    },
+    "step5": {
+      "status": "resumed",
+      "preferred_radii": [
+        "R1",
+        "R2"
+      ]
+    },
+    "step6": {
+      "status": "completed",
+      "candidate_count": 6,
+      "round": 3
+    },
+    "step7": {
+      "status": "completed",
+      "inspiration_count": 6,
+      "round": 3
+    },
+    "step8": {
+      "status": "completed",
+      "selected_count": 3,
+      "round": 3
+    },
+    "step9": {
+      "status": "completed",
+      "idea_count": 1,
+      "round": 3
+    }
+  },
+  "input": {
+    "topic": "Research question: How can we measure interface phenomena on the microscopic level?\nContext: Interfacial chemistry is a fascinating field that seeks to expand and deepen our comprehension of behavior at the molecular interface of gases and liquids, liquids and solids, and solids and solids, among other systems. At these microscopic and nanoscale borders, an elemental dance occurs involving mass and heat transfer through evaporation, reaction, and micro- or even nanoscale explosions, but we still are unsure how these processes are choreographed by the chemicals themselves. In the case of gas–liquid or liquid–solid interfaces, optical interference methods can measure gas-film or liquid-film thicknesses up to nanoscale levels, but the information is too limited for sharpening our understanding of these complex physical and chemical phenomena. The study of microscopic interfaces is fueled by urgent research needs in fields such as materials synthesis, combustion, spray drying, and design of next-generation evaporative cooling nanodevices.",
+    "seed_keywords": null,
+    "domain": "Chemistry",
+    "pdf_paths": [],
+    "resume_from_run_dir": "/REDACTED/tiaozhanbei/chemstry_question/03-微观界面测量/full",
+    "workflow_mode": "full"
+  },
+  "workflow_mode": "full",
+  "workflow_path": "full",
+  "effective_config": {
+    "sciatlas": {
+      "base_url": "http://sciatlas.openkg.cn",
+      "api_key": "***REDACTED***",
+      "timeout": 900,
+      "max_retries": 4,
+      "retry_backoff": 5.0,
+      "use_cache": true,
+      "cache_dir": "runs/cache",
+      "official_cli_root": ".",
+      "use_local_kg": false,
+      "local_search_root": "references/search"
+    },
+    "llm": {
+      "base_url": "https://redacted.invalid/compatible-mode/v1",
+      "model": "qwen3.8-max",
+      "temperature": 0.7,
+      "max_retries": 4,
+      "request_timeout": 1200
+    },
+    "pipeline": {
+      "workflow_mode": "full",
+      "anchor_top_k": 5,
+      "keyword_min_papers": 2,
+      "k_step1": 4,
+      "seed_num_queries": 8,
+      "seed_per_query": 3,
+      "seed_request_multiplier": 6,
+      "seed_request_floor": 12,
+      "seed_recent_years": 7,
+      "seed_min_citations": 1000,
+      "graph_budget_ratio": 0.35,
+      "graph_budget_min": 12,
+      "graph_budget_max": 30,
+      "graph_max_predecessors_per_paper": 3,
+      "graph_min_forward_papers": 3,
+      "graph_candidate_fetch_limit": 40,
+      "num_candidate_step2": 3,
+      "num_expansion_step2": 1,
+      "innoeval_root": "/REDACTED/tiaozhanbei/SciAtlas/references/search/src/innoeval_search",
+      "grobid_base_url": "http://127.0.0.1:8070",
+      "num_cross_domains": 2,
+      "inspiration_top_k_same_field": 2,
+      "inspiration_top_k_per_domain": 2,
+      "max_novelty_feedback_rounds": 2,
+      "idea_count": 1,
+      "runs_dir": "runs"
+    }
+  },
+  "failed_step": "step9",
+  "post_step9_novelty": {
+    "status": "completed",
+    "round": 3,
+    "novelty_levels": [
+      "medium"
+    ]
+  },
+  "seed_paper_count": 4,
+  "graph_paper_count": 4,
+  "candidate_inspiration_count": 6,
+  "inspiration_count": 6,
+  "selected_inspiration_count": 3,
+  "idea_count": 1,
+  "ideas": [
+    {
+      "title": "Null-Flux Reciprocal Perturbation Microscopy for Measuring Nonlocal Interfacial Transport Kernels",
+      "motivation": "Microscopic interface phenomena are currently measured as disconnected observables: structural layering by simultaneous neutron reflectivity, infrared spectroscopy, and ellipsometry [Author et al., 2022](https://openalex.org/W4308711154); local electrical and chemical-frictional heterogeneity by in situ conductive atomic force microscopy [Author et al., 2023](https://openalex.org/W4321480595); functional wettability and mass transfer in gas-liquid-solid catalysis [Author et al., 2022](https://openalex.org/W4223928347); and directional liquid-solid flow patterns [Author et al., 2020](https://openalex.org/W3028689404). The unresolved bottleneck is not lack of individual observables but lack of a quantitative inverse measurement that converts them into absolute local flux-force coefficients, especially frequency-dependent and spatially nonlocal kernels, and then scales those local kernels to macroscopic evaporation, cooling, combustion, spray drying, or catalytic rates. The idea imports three cross-domain mechanisms: physics-based inverse modeling from computer-science sensor-data integration [Author et al., 2019](https://openalex.org/W2921417107), accelerated uncertainty updating from stochastic transport in heterogeneous materials [Author et al., 2012](https://openalex.org/W1982185356), and conservative scalar-flux footprint integration from earth-science surface flux measurement [Author et al., 1999](https://openalex.org/W2167962621). It addresses the prior novelty gap by replacing generic Onsager regularization with an interface-specific reciprocal null-flux assay: selected perturbation combinations force a chosen cross-flux to zero, so the ratio of coupled coefficients is obtained from the cancellation condition, and frequency-coded perturbations recover dynamic memory and nonlocality that passive imaging cannot access.",
+      "methods": "1. Correlative operando interfacial cell: Build a liquid-solid cell with a planar silica, gold, or catalytic film, compatible with directional flow mapping [Author et al., 2020](https://openalex.org/W3028689404), in situ conductive atomic force microscopy [Author et al., 2023](https://openalex.org/W4321480595), and simultaneous reflectivity, infrared, and ellipsometry structural profiling [Author et al., 2022](https://openalex.org/W4308711154). For gas-liquid-solid extensions, add a controlled gas channel and characterize wettability and mass transfer as in triple-phase catalysis [Author et al., 2022](https://openalex.org/W4223928347). The cell records local velocity, film thickness, density, roughness, local conductivity, electron transfer, and chemical-frictional contrast under the same operating conditions.\n2. Reciprocal null-flux perturbation engine: Apply small-amplitude electric, thermal, concentration, and pressure perturbations through transparent electrodes, microheaters, concentration gates, or pressure controllers. Perturbations are encoded as reciprocal pairs or tuples chosen so that a target cross-flux, such as electro-osmotic flow, thermo-osmotic flow, diffusio-osmotic flow, or streaming current, is driven to a measured null condition. The null condition converts an otherwise hidden cross-coefficient into a ratio of imposed forces, while reciprocal symmetry checks separate true interfacial coupling from bulk artifacts. This active design follows inverse-modeling principles in which experiments are chosen to make hidden states observable [Author et al., 2019](https://openalex.org/W2921417107), and uses flow and charge observables demonstrated at liquid-solid and electrocatalyst interfaces [Author et al., 2020](https://openalex.org/W3028689404) [Author et al., 2023](https://openalex.org/W4321480595).\n3. Interface-specific nonlocal Onsager identifiability model: Represent the interface as a thin boundary with fluxes J_i(q, omega) = sum_j L_ij(q, omega) X_j(q, omega), where q and omega capture spatial nonlocality and memory. Derive identifiability conditions for broken-symmetry interfaces, such as charged, wetting-patterned, or catalytically active surfaces, showing which reciprocal null combinations uniquely recover electro-osmotic, thermo-osmotic, diffusio-osmotic, and related charge-transfer kernels. The model enforces reciprocity and non-negative entropy production but uses the null assay to avoid treating these constraints as generic regularization. Structural descriptors from reflectivity, infrared spectroscopy, and ellipsometry [Author et al., 2022](https://openalex.org/W4308711154) enter as known boundary parameters, while local conductivity and chemical-frictional maps [Author et al., 2023](https://openalex.org/W4321480595) provide spatially varying coefficients.\n4. Physics-constrained inverse data assimilation with accelerated uncertainty updating: Fuse the multimodal observations with the nonlocal interfacial model using inverse modeling that integrates physics-based equations with sensor data [Author et al., 2019](https://openalex.org/W2921417107). Use accelerated Bayesian or ensemble uncertainty updating, adapted from transport in heterogeneous materials, to obtain posterior distributions of local kernels rather than point estimates [Author et al., 2012](https://openalex.org/W1982185356). The assimilation step also performs observability analysis, rejects perturbation sets that cannot separate coefficients, and propagates measurement noise into local flux uncertainty.\n5. Conservative flux-footprint upscaling and operando validation: Convert the inferred kernel maps and local driving forces into local mass, heat, charge, and momentum flux densities. Integrate these heterogeneous fluxes over the interface using a conservative footprint or spatial-weighting scheme adapted from natural integration of scalar fluxes over complex terrain [Author et al., 1999](https://openalex.org/W2167962621). Validate the upscaled rates against independent macroscopic measurements in evaporation, evaporative cooling, or triple-phase catalysis, using interfacial wettability and mass-transfer characterization to define the operating microenvironment [Author et al., 2022](https://openalex.org/W4223928347).\nAnalogy — borrows Physics-based inverse modeling and data assimilation for estimating hidden states from partial sensor data from Integrating physics-based models with sensor data: An inverse modeling approach; adapted as Used to formulate interfacial measurement as an inverse problem in which multimodal observables and thin-interface transport equations infer local flux-force kernels and hidden fluxes. [Author et al., 2019](https://openalex.org/W2921417107)\nAnalogy — borrows Accelerated uncertainty updating and probabilistic inference for transport in heterogeneous media from Acceleration of uncertainty updating in the description of transport processes in heterogeneous materials; adapted as Used to update posterior uncertainty of spatially heterogeneous interfacial transport kernels and propagate it to macroscopic flux predictions. [Author et al., 2012](https://openalex.org/W1982185356)\nAnalogy — borrows Conservative footprint or spatial-weighting integration of heterogeneous scalar fluxes over complex surfaces from Natural integration of scalar fluxes from complex terrain; adapted as Used to aggregate nanoscale interfacial flux maps into macroscopic evaporation, cooling, reaction, or drying rates while preserving conservation and uncertainty. [Author et al., 1999](https://openalex.org/W2167962621)\nExperiment plan: Phase 0: Prepare a fixed model liquid-solid interface using atomically flat silica or gold on silicon in aqueous electrolyte, with pre-measured roughness, contact angle, zeta potential, and film thickness. Keep temperature, pressure, electrolyte composition, laser power, atomic force microscopy setpoint, and measurement area fixed for the primary hypothesis test.; Phase 1 primary one-factor test: Vary only the perturbation protocol among six conditions: passive observation, electric-only perturbation, thermal-only perturbation, randomized multi-perturbation, reciprocal non-null multi-perturbation, and structured reciprocal null-flux perturbation. Equalize total perturbation energy, measurement time, and number of samples across conditions.; Primary endpoint: For each condition, invert the same nonlocal interfacial model and compare posterior credible intervals, condition numbers for coefficient identifiability, and held-out prediction error for an independently applied electric or thermal perturbation. The hypothesis is supported if structured reciprocal null-flux perturbation reduces uncertainty and prediction error relative to all controls.; Control for trivial data-volume effects: The randomized multi-perturbation and reciprocal non-null conditions use the same number and amplitude of perturbations as the null-flux condition, so any improvement is attributed to reciprocal cancellation structure rather than more data.; Confounder exclusion: Measure Joule heating and photothermal heating with temperature-sensitive probes or thermal microscopy, reverse field and gradient polarities, use four-electrode sensing, keep currents below Faradaic thresholds, and verify linear response by amplitude sweeps. Reject data if bulk temperature rise, bubble formation, or nonlinear harmonics exceed prespecified limits.; Probe perturbation artifact controls: Repeat key measurements with the atomic force microscopy tip retracted, with lasers shuttered, with electrodes disabled, and with a non-conducting no-flow reference surface to separate true interfacial flux from tip-induced flow, electrode artifacts, or optical heating.; Surface stability controls: Before and after each protocol, measure morphology, contact angle, and surface chemistry to rule out roughness change, adsorption, leaching, or surface reconstruction. If surface state changes, treat the run as invalid or include it as a separate factor in later phases.; Phase 2 mechanism validation: Change one symmetry-breaking factor at a time, such as surface charge density, wetting pattern period, or catalyst loading, and test whether the measured null-flux condition shifts according to the interface-specific reciprocity theorem. Keep the perturbation protocol and sensing fixed.; Phase 3 nonlocal dynamic test: Apply spatially patterned and frequency-coded perturbations using microelectrode or microheater arrays. Recover q-dependent and frequency-dependent kernels and test predictions on unseen frequencies or patterns. Compare against passive-only and single-perturbation inversions to show that memory and nonlocality are recovered only by the active reciprocal protocol.; Phase 4 scope extension: Move to a gas-liquid-solid evaporating or catalytic interface. Add wettability and mass-transfer characterization, use structural profiling for film thickness and density, and apply thermal or concentration null-flux perturbations to infer local evaporative or reactive flux kernels.; Phase 5 upscaling validation: Integrate local flux maps with the conservative footprint method and compare predicted macroscopic evaporation rate, cooling power, or electrochemical current with independent balance or reactor measurements. Propagate kernel uncertainty to the macroscopic prediction.; Falsification criterion: If the structured reciprocal null-flux protocol does not outperform randomized, single, and passive protocols on the primary endpoints after confounders are excluded, or if null conditions do not shift predictably with controlled symmetry breaking, the core hypothesis is rejected.",
+      "method_overview": "This method is intended to solve the inability of current microscopic interface measurements to recover coupled local fluxes and scale them to operating device rates; it can be divided into 5 parts: correlative operando sensing, reciprocal null-flux perturbation, interface-specific nonlocal Onsager identifiability, physics-constrained inverse assimilation, and conservative flux upscaling. The primary testable hypothesis is that a structured reciprocal null-flux perturbation protocol recovers interfacial cross-coefficients and nonlocal response kernels with lower uncertainty and better held-out flux prediction than passive, single-perturbation, or randomized multi-perturbation protocols when the sample, sensors, and inversion model are held fixed. The first phase tests this hypothesis by varying only the perturbation protocol and keeping interface chemistry, measurement modalities, perturbation energy, and analysis pipeline constant.",
+      "proposed_method": [
+        {
+          "name": "Correlative operando interfacial cell",
+          "description": "Build a liquid-solid cell with a planar silica, gold, or catalytic film, compatible with directional flow mapping [Author et al., 2020](https://openalex.org/W3028689404), in situ conductive atomic force microscopy [Author et al., 2023](https://openalex.org/W4321480595), and simultaneous reflectivity, infrared, and ellipsometry structural profiling [Author et al., 2022](https://openalex.org/W4308711154). For gas-liquid-solid extensions, add a controlled gas channel and characterize wettability and mass transfer as in triple-phase catalysis [Author et al., 2022](https://openalex.org/W4223928347). The cell records local velocity, film thickness, density, roughness, local conductivity, electron transfer, and chemical-frictional contrast under the same operating conditions."
+        },
+        {
+          "name": "Reciprocal null-flux perturbation engine",
+          "description": "Apply small-amplitude electric, thermal, concentration, and pressure perturbations through transparent electrodes, microheaters, concentration gates, or pressure controllers. Perturbations are encoded as reciprocal pairs or tuples chosen so that a target cross-flux, such as electro-osmotic flow, thermo-osmotic flow, diffusio-osmotic flow, or streaming current, is driven to a measured null condition. The null condition converts an otherwise hidden cross-coefficient into a ratio of imposed forces, while reciprocal symmetry checks separate true interfacial coupling from bulk artifacts. This active design follows inverse-modeling principles in which experiments are chosen to make hidden states observable [Author et al., 2019](https://openalex.org/W2921417107), and uses flow and charge observables demonstrated at liquid-solid and electrocatalyst interfaces [Author et al., 2020](https://openalex.org/W3028689404) [Author et al., 2023](https://openalex.org/W4321480595)."
+        },
+        {
+          "name": "Interface-specific nonlocal Onsager identifiability model",
+          "description": "Represent the interface as a thin boundary with fluxes J_i(q, omega) = sum_j L_ij(q, omega) X_j(q, omega), where q and omega capture spatial nonlocality and memory. Derive identifiability conditions for broken-symmetry interfaces, such as charged, wetting-patterned, or catalytically active surfaces, showing which reciprocal null combinations uniquely recover electro-osmotic, thermo-osmotic, diffusio-osmotic, and related charge-transfer kernels. The model enforces reciprocity and non-negative entropy production but uses the null assay to avoid treating these constraints as generic regularization. Structural descriptors from reflectivity, infrared spectroscopy, and ellipsometry [Author et al., 2022](https://openalex.org/W4308711154) enter as known boundary parameters, while local conductivity and chemical-frictional maps [Author et al., 2023](https://openalex.org/W4321480595) provide spatially varying coefficients."
+        },
+        {
+          "name": "Physics-constrained inverse data assimilation with accelerated uncertainty updating",
+          "description": "Fuse the multimodal observations with the nonlocal interfacial model using inverse modeling that integrates physics-based equations with sensor data [Author et al., 2019](https://openalex.org/W2921417107). Use accelerated Bayesian or ensemble uncertainty updating, adapted from transport in heterogeneous materials, to obtain posterior distributions of local kernels rather than point estimates [Author et al., 2012](https://openalex.org/W1982185356). The assimilation step also performs observability analysis, rejects perturbation sets that cannot separate coefficients, and propagates measurement noise into local flux uncertainty."
+        },
+        {
+          "name": "Conservative flux-footprint upscaling and operando validation",
+          "description": "Convert the inferred kernel maps and local driving forces into local mass, heat, charge, and momentum flux densities. Integrate these heterogeneous fluxes over the interface using a conservative footprint or spatial-weighting scheme adapted from natural integration of scalar fluxes over complex terrain [Author et al., 1999](https://openalex.org/W2167962621). Validate the upscaled rates against independent macroscopic measurements in evaporation, evaporative cooling, or triple-phase catalysis, using interfacial wettability and mass-transfer characterization to define the operating microenvironment [Author et al., 2022](https://openalex.org/W4223928347)."
+        }
+      ],
+      "analogy_mapping": [
+        {
+          "inspiration": "Integrating physics-based models with sensor data: An inverse modeling approach",
+          "concept": "Physics-based inverse modeling and data assimilation for estimating hidden states from partial sensor data",
+          "adaptation": "Used to formulate interfacial measurement as an inverse problem in which multimodal observables and thin-interface transport equations infer local flux-force kernels and hidden fluxes.",
+          "citation": "[Author et al., 2019](https://openalex.org/W2921417107)"
+        },
+        {
+          "inspiration": "Acceleration of uncertainty updating in the description of transport processes in heterogeneous materials",
+          "concept": "Accelerated uncertainty updating and probabilistic inference for transport in heterogeneous media",
+          "adaptation": "Used to update posterior uncertainty of spatially heterogeneous interfacial transport kernels and propagate it to macroscopic flux predictions.",
+          "citation": "[Author et al., 2012](https://openalex.org/W1982185356)"
+        },
+        {
+          "inspiration": "Natural integration of scalar fluxes from complex terrain",
+          "concept": "Conservative footprint or spatial-weighting integration of heterogeneous scalar fluxes over complex surfaces",
+          "adaptation": "Used to aggregate nanoscale interfacial flux maps into macroscopic evaporation, cooling, reaction, or drying rates while preserving conservation and uncertainty.",
+          "citation": "[Author et al., 1999](https://openalex.org/W2167962621)"
+        }
+      ],
+      "experiment_plan": [
+        "Phase 0: Prepare a fixed model liquid-solid interface using atomically flat silica or gold on silicon in aqueous electrolyte, with pre-measured roughness, contact angle, zeta potential, and film thickness. Keep temperature, pressure, electrolyte composition, laser power, atomic force microscopy setpoint, and measurement area fixed for the primary hypothesis test.",
+        "Phase 1 primary one-factor test: Vary only the perturbation protocol among six conditions: passive observation, electric-only perturbation, thermal-only perturbation, randomized multi-perturbation, reciprocal non-null multi-perturbation, and structured reciprocal null-flux perturbation. Equalize total perturbation energy, measurement time, and number of samples across conditions.",
+        "Primary endpoint: For each condition, invert the same nonlocal interfacial model and compare posterior credible intervals, condition numbers for coefficient identifiability, and held-out prediction error for an independently applied electric or thermal perturbation. The hypothesis is supported if structured reciprocal null-flux perturbation reduces uncertainty and prediction error relative to all controls.",
+        "Control for trivial data-volume effects: The randomized multi-perturbation and reciprocal non-null conditions use the same number and amplitude of perturbations as the null-flux condition, so any improvement is attributed to reciprocal cancellation structure rather than more data.",
+        "Confounder exclusion: Measure Joule heating and photothermal heating with temperature-sensitive probes or thermal microscopy, reverse field and gradient polarities, use four-electrode sensing, keep currents below Faradaic thresholds, and verify linear response by amplitude sweeps. Reject data if bulk temperature rise, bubble formation, or nonlinear harmonics exceed prespecified limits.",
+        "Probe perturbation artifact controls: Repeat key measurements with the atomic force microscopy tip retracted, with lasers shuttered, with electrodes disabled, and with a non-conducting no-flow reference surface to separate true interfacial flux from tip-induced flow, electrode artifacts, or optical heating.",
+        "Surface stability controls: Before and after each protocol, measure morphology, contact angle, and surface chemistry to rule out roughness change, adsorption, leaching, or surface reconstruction. If surface state changes, treat the run as invalid or include it as a separate factor in later phases.",
+        "Phase 2 mechanism validation: Change one symmetry-breaking factor at a time, such as surface charge density, wetting pattern period, or catalyst loading, and test whether the measured null-flux condition shifts according to the interface-specific reciprocity theorem. Keep the perturbation protocol and sensing fixed.",
+        "Phase 3 nonlocal dynamic test: Apply spatially patterned and frequency-coded perturbations using microelectrode or microheater arrays. Recover q-dependent and frequency-dependent kernels and test predictions on unseen frequencies or patterns. Compare against passive-only and single-perturbation inversions to show that memory and nonlocality are recovered only by the active reciprocal protocol.",
+        "Phase 4 scope extension: Move to a gas-liquid-solid evaporating or catalytic interface. Add wettability and mass-transfer characterization, use structural profiling for film thickness and density, and apply thermal or concentration null-flux perturbations to infer local evaporative or reactive flux kernels.",
+        "Phase 5 upscaling validation: Integrate local flux maps with the conservative footprint method and compare predicted macroscopic evaporation rate, cooling power, or electrochemical current with independent balance or reactor measurements. Propagate kernel uncertainty to the macroscopic prediction.",
+        "Falsification criterion: If the structured reciprocal null-flux protocol does not outperform randomized, single, and passive protocols on the primary endpoints after confounders are excluded, or if null conditions do not shift predictably with controlled symmetry breaking, the core hypothesis is rejected."
+      ],
+      "description": "Motivation:\nMicroscopic interface phenomena are currently measured as disconnected observables: structural layering by simultaneous neutron reflectivity, infrared spectroscopy, and ellipsometry [Author et al., 2022](https://openalex.org/W4308711154); local electrical and chemical-frictional heterogeneity by in situ conductive atomic force microscopy [Author et al., 2023](https://openalex.org/W4321480595); functional wettability and mass transfer in gas-liquid-solid catalysis [Author et al., 2022](https://openalex.org/W4223928347); and directional liquid-solid flow patterns [Author et al., 2020](https://openalex.org/W3028689404). The unresolved bottleneck is not lack of individual observables but lack of a quantitative inverse measurement that converts them into absolute local flux-force coefficients, especially frequency-dependent and spatially nonlocal kernels, and then scales those local kernels to macroscopic evaporation, cooling, combustion, spray drying, or catalytic rates. The idea imports three cross-domain mechanisms: physics-based inverse modeling from computer-science sensor-data integration [Author et al., 2019](https://openalex.org/W2921417107), accelerated uncertainty updating from stochastic transport in heterogeneous materials [Author et al., 2012](https://openalex.org/W1982185356), and conservative scalar-flux footprint integration from earth-science surface flux measurement [Author et al., 1999](https://openalex.org/W2167962621). It addresses the prior novelty gap by replacing generic Onsager regularization with an interface-specific reciprocal null-flux assay: selected perturbation combinations force a chosen cross-flux to zero, so the ratio of coupled coefficients is obtained from the cancellation condition, and frequency-coded perturbations recover dynamic memory and nonlocality that passive imaging cannot access.\n\nMethods:\n1. Correlative operando interfacial cell: Build a liquid-solid cell with a planar silica, gold, or catalytic film, compatible with directional flow mapping [Author et al., 2020](https://openalex.org/W3028689404), in situ conductive atomic force microscopy [Author et al., 2023](https://openalex.org/W4321480595), and simultaneous reflectivity, infrared, and ellipsometry structural profiling [Author et al., 2022](https://openalex.org/W4308711154). For gas-liquid-solid extensions, add a controlled gas channel and characterize wettability and mass transfer as in triple-phase catalysis [Author et al., 2022](https://openalex.org/W4223928347). The cell records local velocity, film thickness, density, roughness, local conductivity, electron transfer, and chemical-frictional contrast under the same operating conditions.\n2. Reciprocal null-flux perturbation engine: Apply small-amplitude electric, thermal, concentration, and pressure perturbations through transparent electrodes, microheaters, concentration gates, or pressure controllers. Perturbations are encoded as reciprocal pairs or tuples chosen so that a target cross-flux, such as electro-osmotic flow, thermo-osmotic flow, diffusio-osmotic flow, or streaming current, is driven to a measured null condition. The null condition converts an otherwise hidden cross-coefficient into a ratio of imposed forces, while reciprocal symmetry checks separate true interfacial coupling from bulk artifacts. This active design follows inverse-modeling principles in which experiments are chosen to make hidden states observable [Author et al., 2019](https://openalex.org/W2921417107), and uses flow and charge observables demonstrated at liquid-solid and electrocatalyst interfaces [Author et al., 2020](https://openalex.org/W3028689404) [Author et al., 2023](https://openalex.org/W4321480595).\n3. Interface-specific nonlocal Onsager identifiability model: Represent the interface as a thin boundary with fluxes J_i(q, omega) = sum_j L_ij(q, omega) X_j(q, omega), where q and omega capture spatial nonlocality and memory. Derive identifiability conditions for broken-symmetry interfaces, such as charged, wetting-patterned, or catalytically active surfaces, showing which reciprocal null combinations uniquely recover electro-osmotic, thermo-osmotic, diffusio-osmotic, and related charge-transfer kernels. The model enforces reciprocity and non-negative entropy production but uses the null assay to avoid treating these constraints as generic regularization. Structural descriptors from reflectivity, infrared spectroscopy, and ellipsometry [Author et al., 2022](https://openalex.org/W4308711154) enter as known boundary parameters, while local conductivity and chemical-frictional maps [Author et al., 2023](https://openalex.org/W4321480595) provide spatially varying coefficients.\n4. Physics-constrained inverse data assimilation with accelerated uncertainty updating: Fuse the multimodal observations with the nonlocal interfacial model using inverse modeling that integrates physics-based equations with sensor data [Author et al., 2019](https://openalex.org/W2921417107). Use accelerated Bayesian or ensemble uncertainty updating, adapted from transport in heterogeneous materials, to obtain posterior distributions of local kernels rather than point estimates [Author et al., 2012](https://openalex.org/W1982185356). The assimilation step also performs observability analysis, rejects perturbation sets that cannot separate coefficients, and propagates measurement noise into local flux uncertainty.\n5. Conservative flux-footprint upscaling and operando validation: Convert the inferred kernel maps and local driving forces into local mass, heat, charge, and momentum flux densities. Integrate these heterogeneous fluxes over the interface using a conservative footprint or spatial-weighting scheme adapted from natural integration of scalar fluxes over complex terrain [Author et al., 1999](https://openalex.org/W2167962621). Validate the upscaled rates against independent macroscopic measurements in evaporation, evaporative cooling, or triple-phase catalysis, using interfacial wettability and mass-transfer characterization to define the operating microenvironment [Author et al., 2022](https://openalex.org/W4223928347).\nAnalogy — borrows Physics-based inverse modeling and data assimilation for estimating hidden states from partial sensor data from Integrating physics-based models with sensor data: An inverse modeling approach; adapted as Used to formulate interfacial measurement as an inverse problem in which multimodal observables and thin-interface transport equations infer local flux-force kernels and hidden fluxes. [Author et al., 2019](https://openalex.org/W2921417107)\nAnalogy — borrows Accelerated uncertainty updating and probabilistic inference for transport in heterogeneous media from Acceleration of uncertainty updating in the description of transport processes in heterogeneous materials; adapted as Used to update posterior uncertainty of spatially heterogeneous interfacial transport kernels and propagate it to macroscopic flux predictions. [Author et al., 2012](https://openalex.org/W1982185356)\nAnalogy — borrows Conservative footprint or spatial-weighting integration of heterogeneous scalar fluxes over complex surfaces from Natural integration of scalar fluxes from complex terrain; adapted as Used to aggregate nanoscale interfacial flux maps into macroscopic evaporation, cooling, reaction, or drying rates while preserving conservation and uncertainty. [Author et al., 1999](https://openalex.org/W2167962621)\nExperiment plan: Phase 0: Prepare a fixed model liquid-solid interface using atomically flat silica or gold on silicon in aqueous electrolyte, with pre-measured roughness, contact angle, zeta potential, and film thickness. Keep temperature, pressure, electrolyte composition, laser power, atomic force microscopy setpoint, and measurement area fixed for the primary hypothesis test.; Phase 1 primary one-factor test: Vary only the perturbation protocol among six conditions: passive observation, electric-only perturbation, thermal-only perturbation, randomized multi-perturbation, reciprocal non-null multi-perturbation, and structured reciprocal null-flux perturbation. Equalize total perturbation energy, measurement time, and number of samples across conditions.; Primary endpoint: For each condition, invert the same nonlocal interfacial model and compare posterior credible intervals, condition numbers for coefficient identifiability, and held-out prediction error for an independently applied electric or thermal perturbation. The hypothesis is supported if structured reciprocal null-flux perturbation reduces uncertainty and prediction error relative to all controls.; Control for trivial data-volume effects: The randomized multi-perturbation and reciprocal non-null conditions use the same number and amplitude of perturbations as the null-flux condition, so any improvement is attributed to reciprocal cancellation structure rather than more data.; Confounder exclusion: Measure Joule heating and photothermal heating with temperature-sensitive probes or thermal microscopy, reverse field and gradient polarities, use four-electrode sensing, keep currents below Faradaic thresholds, and verify linear response by amplitude sweeps. Reject data if bulk temperature rise, bubble formation, or nonlinear harmonics exceed prespecified limits.; Probe perturbation artifact controls: Repeat key measurements with the atomic force microscopy tip retracted, with lasers shuttered, with electrodes disabled, and with a non-conducting no-flow reference surface to separate true interfacial flux from tip-induced flow, electrode artifacts, or optical heating.; Surface stability controls: Before and after each protocol, measure morphology, contact angle, and surface chemistry to rule out roughness change, adsorption, leaching, or surface reconstruction. If surface state changes, treat the run as invalid or include it as a separate factor in later phases.; Phase 2 mechanism validation: Change one symmetry-breaking factor at a time, such as surface charge density, wetting pattern period, or catalyst loading, and test whether the measured null-flux condition shifts according to the interface-specific reciprocity theorem. Keep the perturbation protocol and sensing fixed.; Phase 3 nonlocal dynamic test: Apply spatially patterned and frequency-coded perturbations using microelectrode or microheater arrays. Recover q-dependent and frequency-dependent kernels and test predictions on unseen frequencies or patterns. Compare against passive-only and single-perturbation inversions to show that memory and nonlocality are recovered only by the active reciprocal protocol.; Phase 4 scope extension: Move to a gas-liquid-solid evaporating or catalytic interface. Add wettability and mass-transfer characterization, use structural profiling for film thickness and density, and apply thermal or concentration null-flux perturbations to infer local evaporative or reactive flux kernels.; Phase 5 upscaling validation: Integrate local flux maps with the conservative footprint method and compare predicted macroscopic evaporation rate, cooling power, or electrochemical current with independent balance or reactor measurements. Propagate kernel uncertainty to the macroscopic prediction.; Falsification criterion: If the structured reciprocal null-flux protocol does not outperform randomized, single, and passive protocols on the primary endpoints after confounders are excluded, or if null conditions do not shift predictably with controlled symmetry breaking, the core hypothesis is rejected.",
+      "inspiration_sources": [
+        "Integrating physics-based models with sensor data: An inverse modeling approach",
+        "Acceleration of uncertainty updating in the description of transport processes in heterogeneous materials",
+        "Natural integration of scalar fluxes from complex terrain"
+      ],
+      "key_references": [
+        "Nanoscale Mapping of the Directional Flow Patterns at Liquid-Solid Interfaces",
+        "Nanoscale Electron Transfer Variations at Electrocatalyst–Electrolyte Interfaces Resolved by <i>in Situ</i> Conductive Atomic Force Microscopy",
+        "Interfacial wettability and mass transfer characterizations for gas–liquid–solid triple‐phase catalysis",
+        "A mobile setup for simultaneous and <i>in situ</i> neutron reflectivity, infrared spectroscopy, and ellipsometry studies"
+      ],
+      "references": [
+        {
+          "citation": "Author et al., 2022",
+          "url": "https://openalex.org/W4308711154",
+          "full": "A mobile setup for simultaneous and <i>in situ</i> neutron reflectivity, infrared spectroscopy, and ellipsometry studies. 2022. https://openalex.org/W4308711154"
+        },
+        {
+          "citation": "Author et al., 2023",
+          "url": "https://openalex.org/W4321480595",
+          "full": "Nanoscale Electron Transfer Variations at Electrocatalyst–Electrolyte Interfaces Resolved by <i>in Situ</i> Conductive Atomic Force Microscopy. 2023. https://openalex.org/W4321480595"
+        },
+        {
+          "citation": "Author et al., 2022",
+          "url": "https://openalex.org/W4223928347",
+          "full": "Interfacial wettability and mass transfer characterizations for gas–liquid–solid triple‐phase catalysis. 2022. https://openalex.org/W4223928347"
+        },
+        {
+          "citation": "Author et al., 2020",
+          "url": "https://openalex.org/W3028689404",
+          "full": "Nanoscale Mapping of the Directional Flow Patterns at Liquid-Solid Interfaces. 2020. https://openalex.org/W3028689404"
+        },
+        {
+          "citation": "Author et al., 2019",
+          "url": "https://openalex.org/W2921417107",
+          "full": "Integrating physics-based models with sensor data: An inverse modeling approach. 2019. https://openalex.org/W2921417107"
+        },
+        {
+          "citation": "Author et al., 2012",
+          "url": "https://openalex.org/W1982185356",
+          "full": "Acceleration of uncertainty updating in the description of transport processes in heterogeneous materials. 2012. https://openalex.org/W1982185356"
+        },
+        {
+          "citation": "Author et al., 1999",
+          "url": "https://openalex.org/W2167962621",
+          "full": "Natural integration of scalar fluxes from complex terrain. 1999. https://openalex.org/W2167962621"
+        }
+      ],
+      "novelty_level": "medium",
+      "novelty_justification": "The closest existing combination is the set of key references that together provide the proposed observables and operando context: directional liquid-solid flow mapping, in situ conductive AFM of local electrical/chemical heterogeneity, gas-liquid-solid wettability/mass-transfer characterization, and simultaneous structural profiling by neutron reflectivity, infrared spectroscopy, and ellipsometry. These references overlap with the proposal in problem domain, interfacial measurement modalities, and the motivation to connect microscopic observables to transport behavior. However, they do not disclose the central active measurement principle: using reciprocal perturbation tuples to drive a selected cross-flux to a null condition and thereby infer coupled interfacial transport coefficients as force ratios, nor do they provide q- and frequency-dependent Onsager kernel inversion, identifiability analysis, or uncertainty-propagated upscaling. The proposal therefore adds a distinct and testable conceptual mechanism beyond passive correlative observation. The novelty is capped at medium because the overall advance still relies heavily on assembling established measurement methods, inverse modeling, Bayesian updating, and flux-footprint integration, and the null/reciprocity concept is conceptually close to general reciprocal transport measurement strategies rather than a wholly new physical principle.",
+      "improvement_suggestions": [
+        "Sharpen the core mechanistic claim into a formal 'reciprocal null-manifold identifiability' theorem: specify which nonlocal, frequency-dependent interfacial kernels are uniquely recoverable from particular null-flux conditions under defined symmetry-breaking constraints, and prove that randomized or single-perturbation protocols cannot recover the same kernels.",
+        "Introduce a unique method-specific observable, such as phase-resolved null-cancellation surfaces or reciprocal null-flux quadrature signatures, that directly separates interfacial memory/nonlocality from bulk artifacts and provides a falsifiable prediction unavailable to passive or conventional active measurements."
+      ]
+    }
+  ]
+}

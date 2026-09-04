@@ -1,0 +1,91 @@
+{
+  "target_domain": "Origin-of-life biochemistry and prebiotic chemistry concerned with why biological systems require homochirality, including chiral symmetry breaking, molecular recognition, peptide/protein assembly function, and electron transfer.",
+  "core_gap": "Existing work explains chiral amplification in specialized reactions, network-level symmetry breaking, and partial prebiotic stability of homochiral peptides, but it does not provide a general quantitative mechanism linking homochirality to life-required functions such as electron transfer, molecular recognition, catalytic specificity, replication fidelity, and cross-polymer coordination, nor does it establish whether chirality is universally necessary or contingent under alternative definitions of life.",
+  "objects": [
+    "molecular handedness",
+    "enantiomers",
+    "homochirality",
+    "racemic or near-racemic mixtures",
+    "chiral symmetry breaking",
+    "asymmetric autocatalysis",
+    "Soai reaction",
+    "Frank-type nonequilibrium network models",
+    "large molecular systems",
+    "homochiral peptides",
+    "protein assemblies",
+    "DNA and RNA handedness",
+    "amino acids",
+    "sugars",
+    "nucleic acids",
+    "lipids",
+    "aqueous prebiological environments",
+    "Earth crust and hydrothermal settings",
+    "molecular recognition",
+    "molecular lock-key compatibility",
+    "electron transfer",
+    "catalytic specificity",
+    "replication fidelity",
+    "protocellular life",
+    "alternative definitions of life"
+  ],
+  "relations": [
+    "small enantiomeric imbalances can be amplified by asymmetric autocatalysis",
+    "nonequilibrium chemical networks can produce chiral symmetry breaking",
+    "large molecular systems constrain the robustness of chiral symmetry breaking",
+    "aqueous crustal and hydrothermal conditions affect the formation and stability of homochiral peptides",
+    "homochirality constrains molecular recognition through handedness-specific compatibility",
+    "homochirality may influence electron transfer efficiency in protein assemblies",
+    "chiral amplification must be connected to life-relevant molecular functions",
+    "separate chiral selections in different molecular classes must become coordinated for coherent biochemistry",
+    "the necessity of chirality may depend on how life is defined"
+  ],
+  "bottlenecks": [
+    "transition from racemic or weakly biased mixtures to decisive homochirality remains difficult without special assumptions",
+    "models often assume controlled nonequilibrium conditions that are not fully compatible with flow, dilution, racemization, mineral surfaces, temperature gradients, and competing reactions",
+    "the Soai reaction demonstrates asymmetric amplification but is chemically specialized and not clearly generalizable to biology",
+    "peptide-focused prebiotic scenarios do not yet explain coordinated homochirality across amino acids, sugars, nucleic acids, and lipids",
+    "the functional advantage of homochirality is not quantitatively established for electron transfer, catalysis, error suppression, or information fidelity",
+    "there is no general metric for deciding whether chirality is a universal requirement for life or a contingent feature of terrestrial biochemistry",
+    "the route from chiral amplification to protocellular organization, heredity, and evolution remains incomplete"
+  ],
+  "unresolved_tensions": [
+    "homochirality as universal life requirement versus frozen accident of terrestrial biology",
+    "chemical emergence of chirality versus biological functional necessity of chirality",
+    "idealized symmetry-breaking models versus messy prebiotic environmental realism",
+    "specialized autocatalytic reactions versus coordinated multi-polymer biochemistry",
+    "racemic or mixed-handed alternative life possibilities versus obligate homochirality in known life",
+    "prebiotic selection for chirality versus neutral or contingent fixation before Darwinian evolution"
+  ],
+  "desired_solution_properties": [
+    "provide a physical-chemical mechanism linking homochirality to life-relevant functions",
+    "quantify advantages of homochirality for electron transfer, molecular recognition, catalysis, stability, replication fidelity, or error suppression",
+    "operate from racemic or weakly biased initial conditions without implausible special assumptions",
+    "remain robust under prebiotically plausible conditions such as flow, dilution, racemization, competing reactions, and environmental gradients",
+    "generalize beyond a single reaction or single molecular class",
+    "explain coordination among chiral biomolecular classes such as amino acids, sugars, nucleic acids, and lipids",
+    "connect chiral emergence to protocellular organization, metabolism, heredity, or evolution",
+    "provide criteria for assessing whether chirality is necessary, advantageous, or contingent under different definitions of life"
+  ],
+  "possible_mechanism_types": [
+    "nonequilibrium symmetry-breaking feedback",
+    "autocatalytic asymmetric amplification",
+    "environmental selection through gradients, confinement, flow, or mineral surfaces",
+    "chiral molecular recognition or lock-key filtering",
+    "stability selection of homochiral polymers or assemblies",
+    "electron-transfer optimization through chiral structural order",
+    "cross-catalytic coupling between different chiral molecular classes",
+    "compartmentalized amplification and selection",
+    "error suppression or information-fidelity selection"
+  ],
+  "inspiration_search_hints": [
+    "Frank-type nonequilibrium reaction network models",
+    "asymmetric autocatalysis and chiral amplification chemistry",
+    "prebiotic geochemistry in aqueous crustal and hydrothermal environments",
+    "peptide and protein assembly electron transfer",
+    "handedness-dependent molecular recognition and lock-key binding",
+    "polymer stability and self-assembly under racemic or mixed-chirality conditions",
+    "protocell compartmentalization and selection before Darwinian evolution",
+    "thermodynamic and kinetic theories of prebiotic selection",
+    "alternative life definitions and non-terrestrial or synthetic biochemical contexts"
+  ]
+}

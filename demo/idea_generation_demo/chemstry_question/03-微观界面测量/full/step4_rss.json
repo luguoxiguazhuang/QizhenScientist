@@ -1,0 +1,89 @@
+{
+  "target_domain": "Microscopic and nanoscale interfacial chemistry and physics of gas-liquid, liquid-solid, gas-liquid-solid, and solid-solid interfaces, with emphasis on measuring coupled structure, transport, reaction, and thermal phenomena under operating conditions.",
+  "core_gap": "Existing interfacial measurement approaches provide only partial, modality-specific observables and cannot simultaneously resolve coupled nanoscale structure, chemical state, charge transfer, flow, temperature, and mass/heat flux at operating multiphase interfaces, nor quantitatively connect this local heterogeneity to macroscopic evaporation, reaction, combustion, spray-drying, or cooling rates.",
+  "objects": [
+    "gas-liquid interface",
+    "liquid-solid interface",
+    "gas-liquid-solid triple-phase interface",
+    "solid-solid interface",
+    "nanoscale interfacial film",
+    "film thickness",
+    "density and roughness of interfacial layers",
+    "molecular layering",
+    "wettability",
+    "mass transfer",
+    "heat transfer",
+    "evaporation",
+    "interfacial reaction",
+    "electron transfer",
+    "local conductivity",
+    "chemical-frictional response",
+    "interfacial morphology",
+    "directional flow patterns",
+    "local concentration gradients",
+    "transient interfacial events",
+    "film rupture",
+    "bubble nucleation",
+    "local evaporation bursts",
+    "microscale or nanoscale explosions",
+    "operando interfacial conditions",
+    "macroscopic device performance"
+  ],
+  "relations": [
+    "Interfacial structure and chemistry determine wettability, mass transfer, heat transfer, and reaction pathways.",
+    "Local nanoscale heterogeneity controls electron transfer, reactive hot spots, and chemical-frictional behavior.",
+    "Triple-phase contact and interfacial microenvironment govern reactant access and catalytic performance.",
+    "Film thickness, density, roughness, and molecular layering modulate transport across interfaces.",
+    "Directional flow and local concentration gradients couple to evaporation, heat removal, combustion, spray drying, and materials synthesis.",
+    "Multimodal interfacial observables must be integrated to infer absolute local fluxes and reaction rates.",
+    "Nanoscale interfacial events aggregate into macroscopic transport, reaction, and device performance."
+  ],
+  "bottlenecks": [
+    "Single measurement techniques provide partial observables rather than a complete coupled interfacial state.",
+    "Reflectivity and ellipsometry can resolve structural layering but do not directly capture local electron-transfer heterogeneity.",
+    "Atomic force microscopy can map local electrical, chemical-frictional, and morphological properties but may miss bulk liquid structure, buried interfaces, and long-range transport fields.",
+    "Triple-phase wettability and mass-transfer characterization captures functional transport context but may lack nanoscale mechanistic resolution.",
+    "Buried, optically complex, geometrically confined, or chemically reactive interfaces are difficult to access without perturbing the phenomena.",
+    "Transient events such as film rupture, bubble nucleation, local evaporation bursts, and rapid reactions are difficult to observe with sufficient spatiotemporal resolution and chemical specificity.",
+    "There is no robust framework for converting multimodal interfacial signals into absolute local fluxes, reaction rates, or transport coefficients.",
+    "Directional interfacial flow and local concentration gradients near microscopic interfaces remain difficult to measure directly.",
+    "Local nanoscale measurements are not yet reliably scalable to reactor-, coating-, catalyst-, or device-level performance predictions."
+  ],
+  "unresolved_tensions": [
+    "Spatial resolution versus temporal resolution versus chemical specificity.",
+    "Surface sensitivity versus non-destructive access to buried interfaces.",
+    "Operando realism versus measurement perturbation.",
+    "Local nanoscale mapping versus large-area transport-field observation.",
+    "Multimodal completeness versus signal interpretability and quantitative integration.",
+    "Ensemble-averaged structural descriptors versus heterogeneous local mechanisms.",
+    "Direct local measurement versus inference of macroscopic rates and performance."
+  ],
+  "desired_solution_properties": [
+    "Simultaneous or tightly correlative measurement of interfacial structure, chemistry, charge transfer, flow, temperature, and mass/heat transfer.",
+    "Nanoscale spatial resolution with sufficient temporal resolution to capture transient interfacial events.",
+    "Operando, non-destructive access to gas-liquid, liquid-solid, gas-liquid-solid, and buried solid-solid interfaces.",
+    "Quantitative inversion from multimodal signals to absolute local fluxes, reaction rates, and transport coefficients.",
+    "Multiscale correlation from molecular or nanoscale observations to device-scale performance.",
+    "Robust operation under realistic pressure, temperature, electrochemical, catalytic, evaporative, or multiphase conditions.",
+    "Minimal perturbation of the interface being measured.",
+    "Ability to connect local heterogeneity to evaporation, combustion, spray drying, materials synthesis, or evaporative cooling behavior."
+  ],
+  "possible_mechanism_types": [
+    "Correlative multimodal in situ or operando sensing combining structural, spectroscopic, electrical, thermal, and mechanical contrast.",
+    "Physics-informed inversion and data fusion to convert heterogeneous interfacial observables into local fluxes and reaction rates.",
+    "Multiscale transport-reaction modeling linking nanoscale heterogeneity to macroscopic performance.",
+    "Contrast- or tracer-based mechanisms for measuring mass flow, heat flow, and concentration fields near interfaces.",
+    "Scanning-probe mechanisms for local conductivity, chemical-frictional response, and morphology under working conditions.",
+    "Integrated reflectivity, spectroscopy, and ellipsometry mechanisms for molecular-length-scale structural profiling.",
+    "Multiphase microenvironment measurement and control mechanisms for triple-phase catalysis, evaporation, and reactive transport.",
+    "Digital-twin or statistical upscaling frameworks that reconcile local nanoscale measurements with device-scale behavior."
+  ],
+  "inspiration_search_hints": [
+    "Operando electrochemical and catalytic microscopy for local charge transfer and chemical heterogeneity.",
+    "Multiphase microfluidics and evaporative cooling devices for local flow, heat, and mass transfer measurement.",
+    "Neutron, X-ray, reflectivity, scattering, and spectroscopic methods for buried soft-matter and liquid interfaces.",
+    "Scanning thermal microscopy, quantitative phase imaging, and tracer velocimetry for temperature, film morphology, and directional flow.",
+    "Combustion, spray drying, and materials synthesis diagnostics for transient interfacial events.",
+    "Physics-informed inverse transport models and digital twins for scaling local interfacial measurements to device performance."
+  ]
+}

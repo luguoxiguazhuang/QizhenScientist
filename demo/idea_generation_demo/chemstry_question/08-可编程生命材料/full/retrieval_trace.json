@@ -1,0 +1,1803 @@
+{
+  "version": 1,
+  "events": [
+    {
+      "index": 1,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "biohybrid materials combining living cells with synthetic scaffolds",
+        "keywords": [
+          {
+            "text": "biohybrid materials",
+            "score": 10
+          },
+          {
+            "text": "materials combining",
+            "score": 9
+          },
+          {
+            "text": "combining living",
+            "score": 8
+          },
+          {
+            "text": "living cells",
+            "score": 7
+          },
+          {
+            "text": "cells synthetic",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4388851737",
+          "title": "Synthetic Cells Revisited: Artificial Cell Construction Using Polymeric Building Blocks",
+          "abstract": "The exponential growth of research on artificial cells and organelles underscores their potential as tools to advance the understanding of fundamental biological processes. The bottom-up construction from a variety of building blocks at the micro- and nanoscale, in combination with biomolecules is key to developing ...",
+          "year": 2023,
+          "score": 0.7691
+        },
+        {
+          "paper_id": "https://openalex.org/W4220814513",
+          "title": "Preparation of Hybrid Sol-Gel Materials Based on Living Cells of Microorganisms and Their Application in Nanotechnology",
+          "abstract": "Microorganism-cell-based biohybrid materials have attracted considerable attention over the last several decades. They are applied in a broad spectrum of areas, such as nanotechnologies, environmental biotechnology, biomedicine, synthetic chemistry, and bioelectronics. Sol-gel technology allows us to obtain a wide r...",
+          "year": 2022,
+          "score": 0.5398
+        },
+        {
+          "paper_id": "https://openalex.org/W2801385339",
+          "title": "Integration of a Copper-Containing Biohybrid (CuHARS) with Cellulose for Subsequent Degradation and Biomedical Control",
+          "abstract": "We previously described the novel synthesis of a copper high-aspect ratio structure (CuHARS) biohybrid material using cystine. While extremely stable in water, CuHARS is completely (but slowly) degradable in cellular media. Here, integration of the CuHARS into cellulose matrices was carried out to provide added cont...",
+          "year": 2018,
+          "score": 0.5388
+        },
+        {
+          "paper_id": "https://openalex.org/W4390144541",
+          "title": "PenTag, a Versatile Platform for Synthesizing Protein‐Polymer Biohybrid Materials",
+          "abstract": "Abstract The site‐specific and covalent conjugation of proteins on solid supports and in hydrogels is the basis for the synthesis of biohybrid materials offering broad applications. Current methods for conjugating proteins to desired targets are often challenging due to unspecific binding, unstable (noncovalent) cou...",
+          "year": 2023,
+          "score": 0.5348
+        },
+        {
+          "paper_id": "https://openalex.org/W4210475581",
+          "title": "Multicompartment Hydrogels",
+          "abstract": "Hydrogels belong to the most promising materials in polymer and materials science at the moment. As they feature soft and tissue-like character as well as high water-content, a broad range of applications are addressed with hydrogels, e.g., tissue engineering and wound dressings but also soft robotics, drug delivery...",
+          "year": 2022,
+          "score": 0.5209
+        },
+        {
+          "paper_id": "https://openalex.org/W4401949674",
+          "title": "Advancing Artificial Cells with Functional Compartmentalized Polymeric Systems - In Honor of Wolfgang Meier",
+          "abstract": "The fundamental building block of living organisms is the cell, which is the universal biological base of all living entities. This micrometric mass of cytoplasm and the membrane border have fascinated scientists due to the highly complex and multicompartmentalized structure. This specific organization enables numer...",
+          "year": 2024,
+          "score": 0.5196
+        },
+        {
+          "paper_id": "https://openalex.org/W4360599793",
+          "title": "Trends in the Synthesis of Polymer Nano‐ and Microscale Materials for Bio‐Related Applications",
+          "abstract": "Polymeric nano- and microscale materials bear significant potential in manifold applications related to biomedicine. This is owed not only to the large chemical diversity of the constituent polymers, but also to the various morphologies these materials can achieve, ranging from simple particles to intricate self-ass...",
+          "year": 2023,
+          "score": 0.5179
+        },
+        {
+          "paper_id": "https://openalex.org/W2030528877",
+          "title": "Click Chemistry: A Powerful Tool to Create Polymer‐Based Macromolecular Chimeras",
+          "abstract": "Abstract The combination of polymeric with biological materials, to create biohybrid macromolecules that merge the properties of both the natural and synthetic components, is a flourishing area in both life sciences and biotechnology. The click chemistry philosophy has recently provided a powerful tool in this direc...",
+          "year": 2008,
+          "score": 0.5175
+        },
+        {
+          "paper_id": "https://openalex.org/W4280616665",
+          "title": "Current Perspectives on Synthetic Compartments for Biomedical Applications",
+          "abstract": "Nano- and micrometer-sized compartments composed of synthetic polymers are designed to mimic spatial and temporal divisions found in nature. Self-assembly of polymers into compartments such as polymersomes, giant unilamellar vesicles (GUVs), layer-by-layer (LbL) capsules, capsosomes, or polyion complex vesicles (PIC...",
+          "year": 2022,
+          "score": 0.5124
+        },
+        {
+          "paper_id": "https://openalex.org/W3130498905",
+          "title": "Semiflexible polymer scaffolds: an overview of conjugation strategies",
+          "abstract": "Semiflexible polymers are excellent scaffolds for the presentation of a wide variety of (bio)molecules. This manuscript reviews advantages and challenges of the most common conjugation strategies for the major classes of semiflexible polymers.",
+          "year": 2021,
+          "score": 0.5122
+        },
+        {
+          "paper_id": "https://openalex.org/W7128678465",
+          "title": "Light-Controlled Membrane Fusion in Synthetic Cells",
+          "abstract": "Light-induced membrane fusion has become a pivotal technique for constructing and functionalizing synthetic cells by enabling precise control over membrane merging events. Traditional fusion approaches that rely on chemical, physical, and mechanical stimuli frequently lack both specificity and reversibility, limitin...",
+          "year": 2026,
+          "score": 0.5121
+        },
+        {
+          "paper_id": "https://openalex.org/W3119759446",
+          "title": "Artificial Organelles: Towards Adding or Restoring Intracellular Activity",
+          "abstract": "Compartmentalization is one of the main characteristics that define living systems. Creating a physically separated microenvironment allows nature a better control over biological processes, as is clearly specified by the role of organelles in living cells. Inspired by this phenomenon, researchers have developed a r...",
+          "year": 2021,
+          "score": 0.512
+        },
+        {
+          "paper_id": "https://openalex.org/W7139131361",
+          "title": "Engineering synthetic cells with intramembrane domains possessing distinct bilayer asymmetries",
+          "abstract": "Our understanding of how membrane asymmetry governs biological function is limited by the lack of techniques to produce model membranes which can reliably and accurately mimic cellular membrane asymmetry. Not only in terms of asymmetric lipid distribution, but also how that asymmetry can be confined to specific late...",
+          "year": 2026,
+          "score": 0.51
+        },
+        {
+          "paper_id": "https://openalex.org/W2999677419",
+          "title": "Bioinspired Molecular Factories with Architecture and In Vivo Functionalities as Cell Mimics",
+          "abstract": "Despite huge need in the medical domain and significant development efforts, artificial cells to date have limited composition and functionality. Although some artificial cells have proven successful for producing therapeutics or performing in vitro specific reactions, they have not been investigated in vivo to dete...",
+          "year": 2020,
+          "score": 0.51
+        },
+        {
+          "paper_id": "https://openalex.org/W2176832002",
+          "title": "Bioinspired polymer vesicles and membranes for biological and medical applications",
+          "abstract": "Biological membranes play an essential role in living organisms by providing stable and functional compartments, preserving cell architecture, whilst supporting signalling and selective transport that are mediated by a variety of proteins embedded in the membrane. However, mimicking cell membranes - to be applied in...",
+          "year": 2015,
+          "score": 0.5094
+        },
+        {
+          "paper_id": "https://openalex.org/W3083091521",
+          "title": "DNA‐Based Assembly of Multi‐Compartment Polymersome Networks",
+          "abstract": "Abstract Polymersomes exhibit increased stability and reduced permeability compared to conventional lipid‐based compartments—making them an increasingly popular choice for the bottom‐up construction of synthetic cells. Here, the contraction and expansion of functionalized polymersome networks controlled by cholester...",
+          "year": 2020,
+          "score": 0.5089
+        },
+        {
+          "paper_id": "https://openalex.org/W4220988042",
+          "title": "Fusion‐Induced Growth of Biomimetic Polymersomes: Behavior of Poly(dimethylsiloxane)‐Poly(ethylene oxide) Vesicles in Saline Solutions Under High Agitation",
+          "abstract": "Giant unilamellar vesicles serve as membrane models and primitive mockups of natural cells. With respect to the latter use, amphiphilic polymers can be used to replace phospholipids in order to introduce certain favorable properties, ultimately allowing for the creation of truly synthetic cells. These new properties...",
+          "year": 2022,
+          "score": 0.5088
+        },
+        {
+          "paper_id": "https://openalex.org/W4224300257",
+          "title": "Ionic Combisomes: A New Class of Biomimetic Vesicles to Fuse with Life",
+          "abstract": "The construction of biomembranes that faithfully capture the properties and dynamic functions of cell membranes remains a challenge in the development of synthetic cells and their application. Here a new concept for synthetic cell membranes based on the self-assembly of amphiphilic comb polymers into vesicles, terme...",
+          "year": 2022,
+          "score": 0.5087
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "What synthetic biology and materials engineering methods enable matter and cells to be programmed into functional living materials?",
+        "keywords": [
+          {
+            "text": "engineered living materials",
+            "score": 10
+          },
+          {
+            "text": "synthetic biology",
+            "score": 9
+          },
+          {
+            "text": "cell programming",
+            "score": 8
+          },
+          {
+            "text": "biohybrid materials",
+            "score": 7
+          },
+          {
+            "text": "self-assembly",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W2922010405",
+          "title": "Synthetic biology for fibers, adhesives, and active camouflage materials in protection and aerospace",
+          "abstract": "",
+          "year": 2019,
+          "score": 0.5102
+        },
+        {
+          "paper_id": "https://openalex.org/W2809822834",
+          "title": "Toward Light‐Regulated Living Biomaterials",
+          "abstract": "Living materials are an emergent material class, infused with the productive, adaptive, and regenerative properties of living organisms. Property regulation in living materials requires encoding responsive units in the living components to allow external manipulation of their function. Here, an optoregulated <i>Esch...",
+          "year": 2018,
+          "score": 0.5063
+        },
+        {
+          "paper_id": "https://openalex.org/W4401949674",
+          "title": "Advancing Artificial Cells with Functional Compartmentalized Polymeric Systems - In Honor of Wolfgang Meier",
+          "abstract": "The fundamental building block of living organisms is the cell, which is the universal biological base of all living entities. This micrometric mass of cytoplasm and the membrane border have fascinated scientists due to the highly complex and multicompartmentalized structure. This specific organization enables numer...",
+          "year": 2024,
+          "score": 0.5037
+        },
+        {
+          "paper_id": "https://openalex.org/W4402617058",
+          "title": "Metabolite-responsive Control of Transcription by Phase Separation-based Synthetic Organelles",
+          "abstract": "Abstract Living natural materials have remarkable sensing abilities that translate external cues into functional changes of the material. The reconstruction of such sensing materials in bottom-up synthetic biology provides the opportunity to develop synthetic materials with life-like sensing and adaptation ability. ...",
+          "year": 2024,
+          "score": 0.4948
+        },
+        {
+          "paper_id": "https://openalex.org/W7008703777",
+          "title": "Cellular mimics within lipid vesicles and in thermal out-of-equilibrium chambers",
+          "abstract": "The absence of clear criteria to recognize life and evaluate attempts at building a cell from component parts has slowed progress towards the construction of cellular mimics that fully display the properties of natural living cells. In the first part of this PhD thesis, a method to objectively quantify progress is p...",
+          "year": 2018,
+          "score": 0.4938
+        },
+        {
+          "paper_id": "https://openalex.org/W4377098401",
+          "title": "PenTag, a Versatile Platform for Synthesizing Protein-Polymer Biohybrid Materials",
+          "abstract": "Abstract The site-specific and covalent conjugation of proteins on solid supports and in hydrogels is the basis for the synthesis of biohybrid materials offering broad applications. Current methods for conjugating proteins to desired targets are often challenging due to unspecific binding, unstable (non-covalent) co...",
+          "year": 2023,
+          "score": 0.4839
+        },
+        {
+          "paper_id": "https://openalex.org/W2807453159",
+          "title": "Living functional hydrogels generated by bioorthogonal cross-linking reactions of azide-modified cells with alkyne-modified polymers",
+          "abstract": "",
+          "year": 2018,
+          "score": 0.4831
+        },
+        {
+          "paper_id": "https://openalex.org/W4386615003",
+          "title": "Applications of Serine Integrases in Synthetic Biology over the Past Decade",
+          "abstract": "Serine integrases are emerging as one of the most powerful biological tools for biotechnology. Over the past decade, many research papers have been published on the use of serine integrases in synthetic biology. In this review, we aim to systematically summarize the various studies ranging from structure and the cat...",
+          "year": 2023,
+          "score": 0.4779
+        },
+        {
+          "paper_id": "https://openalex.org/W2963086271",
+          "title": "Programmable dynamic steady states in ATP-driven nonequilibrium DNA systems",
+          "abstract": "Inspired by the dynamics of the dissipative self-assembly of microtubules, chemically fueled synthetic systems with transient lifetimes are emerging for nonequilibrium materials design. However, realizing programmable or even adaptive structural dynamics has proven challenging because it requires synchronization of ...",
+          "year": 2019,
+          "score": 0.4776
+        },
+        {
+          "paper_id": "https://openalex.org/W7128431062",
+          "title": "Nature-Inspired Enzymatic Cascades: Emerging Strategies for Sustainable Chemistry",
+          "abstract": "Enzymatic cascades, defined here as multi-enzymatic sequences operating on a shared reaction pathway and inspired by the spatial and temporal organization of metabolism, have emerged as powerful and versatile tools for sustainable organic synthesis. They minimize intermediate isolation, enhance atom economy and ensu...",
+          "year": 2026,
+          "score": 0.4768
+        },
+        {
+          "paper_id": "https://openalex.org/W2975567343",
+          "title": "Chemical toolbox for ‘live’ biochemistry to understand enzymatic functions in living systems",
+          "abstract": "In this review, we present an overview of the recent advances in chemical toolboxes that are used to provide insights into 'live' protein functions in living systems. Protein functions are mediated by various factors inside of cells, such as protein-protein interactions, posttranslational modifications, and they are...",
+          "year": 2019,
+          "score": 0.4742
+        },
+        {
+          "paper_id": "https://openalex.org/W4385295920",
+          "title": "Inter‐Vesicle Signal Transduction Using a Photo‐Responsive Zinc Ionophore",
+          "abstract": "Transmission of chemical information between cells and across lipid bilayer membranes is of profound significance in many biological processes. The design of synthetic signalling systems is a critical step towards preparing artificial cells with collective behaviour. Here, we report the first example of a synthetic ...",
+          "year": 2023,
+          "score": 0.4712
+        },
+        {
+          "paper_id": "https://openalex.org/W4386518663",
+          "title": "Chemical Reactions in Living Systems",
+          "abstract": "The term \"in vivo (\"in the living\") chemistry\" refers to chemical reactions that take place in a complex living system such as cells, tissue, body liquids, or even in an entire organism. In contrast, reactions that occur generally outside living organisms in an artificial environment (e.g., in a test tube) are refer...",
+          "year": 2023,
+          "score": 0.4689
+        },
+        {
+          "paper_id": "https://openalex.org/W2044196404",
+          "title": "Remodeling bacterial polysaccharides by metabolic pathway engineering",
+          "abstract": "Introducing structural modifications into biomolecules represents a powerful approach to dissect their functions and roles in biological processes. Bacterial polysaccharides, despite their rich structural information and essential roles in bacterium-host interactions and bacterial virulence, have largely been unexpl...",
+          "year": 2009,
+          "score": 0.4682
+        },
+        {
+          "paper_id": "https://openalex.org/W7133093041",
+          "title": "Interfacing Biology with Electrochemistry for Multiplexed Biosensors",
+          "abstract": "Diagnostic testing is a broad field with applications in health and disease diagnosis, monitoring, and treatment. As the field evolves and new technologies are developed, the era of personalized health is becoming a reality. The interface between biology and electrochemistry has been a frontier in piloting novel bio...",
+          "year": 2022,
+          "score": 0.4654
+        },
+        {
+          "paper_id": "https://openalex.org/W4286844856",
+          "title": "Oxygen-responsive bacterial gene switch",
+          "abstract": "The invention provided herein relates to sequence determinants that elicit certain levels of gene expression and methods for obtaining engineered ligand-responsive gene switches comprising these sequence determinants. More particularly, the invention provided herein relates to molecular building blocks (i.e., discre...",
+          "year": 2023,
+          "score": 0.4641
+        },
+        {
+          "paper_id": "https://openalex.org/W2503742352",
+          "title": "Inside Cover: Synthesis of Cholesterol‐Substituted Glycopeptides for Tailor‐Made Glycocalyxification of Artificial Membrane Systems (ChemBioChem 15/2016)",
+          "abstract": "The inside cover picture shows different types of membranes wrapped around a chemistry balloon. At the top, the membrane starts with a biological double layer of lipids with all its natural complexity (transmembrane proteins, glycocalyx, …). Then, there is a transition corresponding to a chemical effort to recreate ...",
+          "year": 2016,
+          "score": 0.4641
+        },
+        {
+          "paper_id": "https://openalex.org/W2298277248",
+          "title": "Integrated (Meta) Genomic and Synthetic Biology Approaches to Develop New Biocatalysts",
+          "abstract": "In recent years, the marine environment has been the subject of increasing attention from biotechnological and pharmaceutical industries as a valuable and promising source of novel bioactive compounds. Marine biodiscovery programmes have begun to reveal the extent of novel compounds encoded within the enormous bacte...",
+          "year": 2016,
+          "score": 0.4615
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "synthetic genetic circuit design for engineered living materials",
+        "keywords": [
+          {
+            "text": "synthetic genetic",
+            "score": 10
+          },
+          {
+            "text": "genetic circuit",
+            "score": 9
+          },
+          {
+            "text": "circuit design",
+            "score": 8
+          },
+          {
+            "text": "design engineered",
+            "score": 7
+          },
+          {
+            "text": "engineered living",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W2974882224",
+          "title": "Genetic Circuits To Detect Nanomaterial Triggered Toxicity through Engineered Heat Shock Response Mechanism",
+          "abstract": "Biocompatibility assessment of nanomaterials has been of great interest due to their potential toxicity. However, conventional biocompatibility tests fall short of providing a fast toxicity report. We developed a whole cell based biosensor to track biocompatibility of nanomaterials with the aim of providing fast fee...",
+          "year": 2019,
+          "score": 0.5036
+        },
+        {
+          "paper_id": "https://openalex.org/W4411925073",
+          "title": "Design, Integration, and Application of Smart Living Materials",
+          "abstract": "Smart living materials (SLMs) represent a nascent research field that integrates materials science and synthetic biology, where engineered biological systems are integrated with abiotic components to confer living functionalities —including self-repair, environmental responsiveness, and adaptive behavior. Central to...",
+          "year": 2025,
+          "score": 0.4997
+        },
+        {
+          "paper_id": "https://openalex.org/W1872500150",
+          "title": "Synthetic scaffolds for pathway enhancement",
+          "abstract": "",
+          "year": 2015,
+          "score": 0.4926
+        },
+        {
+          "paper_id": "https://openalex.org/W1994691541",
+          "title": "Organic synthesis: the art and science of replicating the molecules of living nature and creating others like them in the laboratory",
+          "abstract": "Synthetic organic chemists have the power to replicate some of the most intriguing molecules of living nature in the laboratory and apply their developed synthetic strategies and technologies to construct variations of them. Such molecules facilitate biology and medicine, as they often find uses as biological tools ...",
+          "year": 2014,
+          "score": 0.4852
+        },
+        {
+          "paper_id": "https://openalex.org/W4406538904",
+          "title": "Engineering Whole Cell-Based Biosensors for Heavy Metal Detection Using Metalloregulatory Transcriptional Repressors of the SmtB/ArsR Family",
+          "abstract": "This study focuses on engineering whole cell-based biosensors for heavy metal detection. Through the exploitation of metalloregulatory proteins, fabrication of metal ion-responsive biosensors is achieved. Metalloregulatory proteins of the SmtB/ArsR family including arsenite-responsive ArsR, cadmium-responsive CadC, ...",
+          "year": 2022,
+          "score": 0.4818
+        },
+        {
+          "paper_id": "https://openalex.org/W4240312061",
+          "title": "Faculty Opinions recommendation of Role of network-mediated stochasticity in mammalian drug resistance.",
+          "abstract": "A major challenge in biology is that genetically identical cells in the same environment can display gene expression stochasticity (noise), which contributes to bet-hedging, drug tolerance, and cell-fate switching. The magnitude and timescales of stochastic fluctuations can depend on the gene regulatory network. Cur...",
+          "year": 2020,
+          "score": 0.4802
+        },
+        {
+          "paper_id": "https://openalex.org/W2600236415",
+          "title": "Fulfilling the promise of the materials genome initiative with high-throughput experimental methodologies",
+          "abstract": "The Materials Genome Initiative, a national effort to introduce new materials into the market faster and at lower cost, has made significant progress in computational simulation and modeling of materials. To build on this progress, a large amount of experimental data for validating these models, and informing more s...",
+          "year": 2017,
+          "score": 0.4786
+        },
+        {
+          "paper_id": "https://openalex.org/W4390144541",
+          "title": "PenTag, a Versatile Platform for Synthesizing Protein‐Polymer Biohybrid Materials",
+          "abstract": "Abstract The site‐specific and covalent conjugation of proteins on solid supports and in hydrogels is the basis for the synthesis of biohybrid materials offering broad applications. Current methods for conjugating proteins to desired targets are often challenging due to unspecific binding, unstable (noncovalent) cou...",
+          "year": 2023,
+          "score": 0.4756
+        },
+        {
+          "paper_id": "https://openalex.org/W2298277248",
+          "title": "Integrated (Meta) Genomic and Synthetic Biology Approaches to Develop New Biocatalysts",
+          "abstract": "In recent years, the marine environment has been the subject of increasing attention from biotechnological and pharmaceutical industries as a valuable and promising source of novel bioactive compounds. Marine biodiscovery programmes have begun to reveal the extent of novel compounds encoded within the enormous bacte...",
+          "year": 2016,
+          "score": 0.4743
+        },
+        {
+          "paper_id": "https://openalex.org/W4312123473",
+          "title": "A Mini-Review on Reflectins, from Biochemical Properties to Bio-Inspired Applications",
+          "abstract": "Some cephalopods (squids, octopuses, and cuttlefishes) produce dynamic structural colors, for camouflage or communication. The key to this remarkable capability is one group of specialized cells called iridocytes, which contain aligned membrane-enclosed platelets of high-reflective reflectins and work as intracellul...",
+          "year": 2022,
+          "score": 0.4696
+        },
+        {
+          "paper_id": "https://openalex.org/W4413929537",
+          "title": "Photodegradable Hydrogel Matrices for Spatiotemporal Control of Bacteria Transport and Delivery",
+          "abstract": "Stimuli-responsive hydrogels that provide controlled degradation can be used as bacteria delivery systems for advanced therapeutic applications. Here, we report the first use of photodegradable hydrogels as materials that can direct bacterial movement, tune mean bacteria speed, and control bacteria delivery through ...",
+          "year": 2025,
+          "score": 0.4688
+        },
+        {
+          "paper_id": "https://openalex.org/W3174272574",
+          "title": "Equilibrium thermodynamics and the genesis of protein–protein complexes in cells",
+          "abstract": "Abstract It is often thought that the structural complexity of living organisms places Life outside the laws of Physics. According to the Second Law of Thermodynamics, inanimate matter tends towards ever-increasing randomness. Most thermodynamic studies on the living system are course-grained in the sense that it is...",
+          "year": 2021,
+          "score": 0.4649
+        },
+        {
+          "paper_id": "https://openalex.org/W1967146963",
+          "title": "Mass fluctuation kinetics: Capturing stochastic effects in systems of chemical reactions through coupled mean-variance computations",
+          "abstract": "The intrinsic stochastic effects in chemical reactions, and particularly in biochemical networks, may result in behaviors significantly different from those predicted by deterministic mass action kinetics (MAK). Analyzing stochastic effects, however, is often computationally taxing and complex. The authors describe ...",
+          "year": 2007,
+          "score": 0.4571
+        },
+        {
+          "paper_id": "https://openalex.org/W1950998267",
+          "title": "Systems biology definition of the core proteome of metabolism and expression is consistent with high-throughput data",
+          "abstract": "Finding the minimal set of gene functions needed to sustain life is of both fundamental and practical importance. Minimal gene lists have been proposed by using comparative genomics-based core proteome definitions. A definition of a core proteome that is supported by empirical data, is understood at the systems-leve...",
+          "year": 2015,
+          "score": 0.4536
+        },
+        {
+          "paper_id": "https://openalex.org/W4414460087",
+          "title": "ToxiEval-ZKP: A Structure-Private Verification Framework for Molecular Toxicity Repair Tasks",
+          "abstract": "In recent years, generative artificial intelligence (GenAI) has demonstrated remarkable capabilities in high-stakes domains such as molecular science. However, challenges related to the verifiability and structural privacy of its outputs remain largely unresolved. This paper focuses on the task of molecular toxicity...",
+          "year": 2025,
+          "score": 0.4512
+        },
+        {
+          "paper_id": "https://openalex.org/W2058320059",
+          "title": "Relative entropy differences in bacterial chromosomes, plasmids, phages and genomic islands",
+          "abstract": "We argue that relative entropy differences reflect how plasmids, phages and GIs interact with microbial host chromosomes and that all these biological entities are, or have been, subjected to different selective pressures. The rate at which amelioration of horizontally acquired DNA occurs within the chromosome is li...",
+          "year": 2012,
+          "score": 0.4495
+        },
+        {
+          "paper_id": "https://openalex.org/W2888673938",
+          "title": "Genome mining, isolation, chemical synthesis and biological evaluation of a novel lanthipeptide, tikitericin, from the extremophilic microorganism <i>Thermogemmatispora</i> strain T81",
+          "abstract": "Genome mining of the New Zealand extremophilic microorganism <i>Thermogemmatispora</i> strain T81 indicated the presence of biosynthetic machinery to produce several different peptidic natural products. Solid-phase culture of T81 led to the isolation of tikitericin <b>1</b>, a new lanthipeptide characterised by four...",
+          "year": 2018,
+          "score": 0.4466
+        },
+        {
+          "paper_id": "https://openalex.org/W2800927632",
+          "title": "Tunneling explains efficient electron transport via protein junctions",
+          "abstract": "Metalloproteins, proteins containing a transition metal ion cofactor, are electron transfer agents that perform key functions in cells. Inspired by this fact, electron transport across these proteins has been widely studied in solid-state settings, triggering the interest in examining potential use of proteins as bu...",
+          "year": 2018,
+          "score": 0.4433
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "cell-free synthetic biology for programming nonliving matter",
+        "keywords": [
+          {
+            "text": "cell free",
+            "score": 10
+          },
+          {
+            "text": "free synthetic",
+            "score": 9
+          },
+          {
+            "text": "synthetic biology",
+            "score": 8
+          },
+          {
+            "text": "biology programming",
+            "score": 7
+          },
+          {
+            "text": "programming nonliving",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4392240839",
+          "title": "Engineering pH‐Responsive, Self‐Healing Vesicle‐Type Artificial Tissues with Higher‐Order Cooperative Functionalities",
+          "abstract": "Multicellular organisms demonstrate a hierarchical organization where multiple cells collectively form tissues, thereby enabling higher-order cooperative functionalities beyond the capabilities of individual cells. Drawing inspiration from this biological organization, assemblies of multiple protocells are developed...",
+          "year": 2024,
+          "score": 0.5136
+        },
+        {
+          "paper_id": "https://openalex.org/W2922010405",
+          "title": "Synthetic biology for fibers, adhesives, and active camouflage materials in protection and aerospace",
+          "abstract": "",
+          "year": 2019,
+          "score": 0.4991
+        },
+        {
+          "paper_id": "https://openalex.org/W2989326857",
+          "title": "Artificial Multienzyme Scaffolds: Pursuing <i>in Vitro</i> Substrate Channeling with an Overview of Current Progress",
+          "abstract": "Artificial multienzyme scaffolds are being developed for in vitro cascaded biocatalytic activity and, in particular, accessing substrate channeling. This review covers progress in this field over the last 5 years with a specific focus on the scaffold materials themselves and the benefits they can provide for assembl...",
+          "year": 2019,
+          "score": 0.4982
+        },
+        {
+          "paper_id": "https://openalex.org/W2264824672",
+          "title": "Transient signal generation in a self-assembled nanosystem fueled by ATP",
+          "abstract": "A fundamental difference exists in the way signal generation is dealt with in natural and synthetic systems. While nature uses the transient activation of signalling pathways to regulate all cellular functions, chemists rely on sensory devices that convert the presence of an analyte into a steady output signal. The ...",
+          "year": 2015,
+          "score": 0.4947
+        },
+        {
+          "paper_id": "https://openalex.org/W4380881725",
+          "title": "Regulated N-Terminal Modification of Proteins Synthesized Using a Reconstituted Cell-Free Protein Synthesis System",
+          "abstract": "The N-terminal modification of nascent proteins, such as acetylation and myristoylation, is one of the most abundant post-translational modifications. To analyze the function of the modification, it is important to compare the modified and unmodified proteins under defined conditions. However, it is technically diff...",
+          "year": 2023,
+          "score": 0.4898
+        },
+        {
+          "paper_id": "https://openalex.org/W4280617724",
+          "title": "Translational Detection of Indole by Complementary Cell-free Protein Synthesis Assay",
+          "abstract": "The information encoded in a single copy of DNA is processed into a plethora of protein molecules via the cascade of transcription and translation. Thus, the molecular process of gene expression can be considered an efficient biological amplifier from the viewpoint of synthetic biology. Cell-free protein synthesis (...",
+          "year": 2022,
+          "score": 0.4897
+        },
+        {
+          "paper_id": "https://openalex.org/W1914495864",
+          "title": "Cell-Free Amino Acid-Incorporating System from <i>Pseudomonas indigofera</i>",
+          "abstract": "Shiio, Tsuru (Washington State University, Pullman), and Bruce A. McFadden. Cell-free amino acid-incorporating system from Pseudomonas indigofera. J. Bacteriol. 90:978-983. 1965.-A cell-free preparation from Pseudomonas indigofera incorporated C(14)-phenylalanine and C(14)-leucine into a product which was insoluble ...",
+          "year": 1965,
+          "score": 0.486
+        },
+        {
+          "paper_id": "https://openalex.org/W1994691541",
+          "title": "Organic synthesis: the art and science of replicating the molecules of living nature and creating others like them in the laboratory",
+          "abstract": "Synthetic organic chemists have the power to replicate some of the most intriguing molecules of living nature in the laboratory and apply their developed synthetic strategies and technologies to construct variations of them. Such molecules facilitate biology and medicine, as they often find uses as biological tools ...",
+          "year": 2014,
+          "score": 0.485
+        },
+        {
+          "paper_id": "https://openalex.org/W1872500150",
+          "title": "Synthetic scaffolds for pathway enhancement",
+          "abstract": "",
+          "year": 2015,
+          "score": 0.4847
+        },
+        {
+          "paper_id": "https://openalex.org/W4411668731",
+          "title": "Membraneless protocell confined by a heat flow",
+          "abstract": "",
+          "year": 2025,
+          "score": 0.4822
+        },
+        {
+          "paper_id": "https://openalex.org/W4386518663",
+          "title": "Chemical Reactions in Living Systems",
+          "abstract": "The term \"in vivo (\"in the living\") chemistry\" refers to chemical reactions that take place in a complex living system such as cells, tissue, body liquids, or even in an entire organism. In contrast, reactions that occur generally outside living organisms in an artificial environment (e.g., in a test tube) are refer...",
+          "year": 2023,
+          "score": 0.4812
+        },
+        {
+          "paper_id": "https://openalex.org/W2947903884",
+          "title": "Non-canonical amino acid labeling in proteomics and biotechnology",
+          "abstract": "",
+          "year": 2019,
+          "score": 0.4743
+        },
+        {
+          "paper_id": "https://openalex.org/W4384070598",
+          "title": "Distinct phases of cellular signaling revealed by time-resolved protein synthesis",
+          "abstract": "The post-translational regulation of protein function is involved in most cellular processes. As such, synthetic biology tools that operate at this level provide opportunities for manipulating cellular states. Here, we deploy a proximity-triggered protein trans-splicing technology to enable the time-resolved synthes...",
+          "year": 2023,
+          "score": 0.4738
+        },
+        {
+          "paper_id": "https://openalex.org/W181897503",
+          "title": "The Development of New Tools for the Investigation of Protein Function Using Photo-Reactive Unnatural Amino Acids",
+          "abstract": "Reported here is the direct synthesis and application of unnatural amino acids for the development of exploratory tools for protein studies. This work takes advantage of an expanded genetic code to extract a more precise chemical understanding of protein function with novel additions to the unnatural amino acid cata...",
+          "year": 2010,
+          "score": 0.472
+        },
+        {
+          "paper_id": "https://openalex.org/W2943620846",
+          "title": "Utilization of Unnatural Amino Acids in the Development of Novel Functions and Probing Applications",
+          "abstract": "The utilization of unnatural amino acids opens the door for thousands of ways to expand the chemical diversity of proteins, providing functional groups for chemical manipulation that would otherwise be impossible. The ability to site-specifically incorporate unnatural amino acids confers a degree of control and spec...",
+          "year": 2019,
+          "score": 0.4706
+        },
+        {
+          "paper_id": "https://openalex.org/W4286844856",
+          "title": "Oxygen-responsive bacterial gene switch",
+          "abstract": "The invention provided herein relates to sequence determinants that elicit certain levels of gene expression and methods for obtaining engineered ligand-responsive gene switches comprising these sequence determinants. More particularly, the invention provided herein relates to molecular building blocks (i.e., discre...",
+          "year": 2023,
+          "score": 0.4691
+        },
+        {
+          "paper_id": "https://openalex.org/W4396918753",
+          "title": "Computation-guided transcription factor biosensor specificity engineering for adipic acid detection",
+          "abstract": "Transcription factor (TF)-based biosensors that connect small-molecule sensing with readouts such as fluorescence have proven to be useful synthetic biology tools for applications in biotechnology. However, the development of specific TF-based biosensors is hindered by the limited repertoire of TFs specific for mole...",
+          "year": 2024,
+          "score": 0.4667
+        },
+        {
+          "paper_id": "https://openalex.org/W2087688290",
+          "title": "POLYSOMES OF THE SEA URCHIN EMBRYO: NATURE OF SO-CALLED \"CYCLIC AMINO ACID INCORPORATION\" AND CONDITIONS TO PREPARE CELL-FREE SYSTEMS FOR PROTEIN SYNTHESIS",
+          "abstract": "Cyclic formation of active polysomes in a cell-free system, as reported previously, could not be demonstrated under the conditions reported. However, cyclic fluctuation was observed in incorporation of amino acids into the hot TCA-insoluble fraction. Failure to demonstrate polysome formation seemed to be due to the ...",
+          "year": 1976,
+          "score": 0.4666
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "biofilm engineering and extracellular matrix modification for living materials",
+        "keywords": [
+          {
+            "text": "biofilm engineering",
+            "score": 10
+          },
+          {
+            "text": "engineering extracellular",
+            "score": 9
+          },
+          {
+            "text": "extracellular matrix",
+            "score": 8
+          },
+          {
+            "text": "matrix modification",
+            "score": 7
+          },
+          {
+            "text": "modification living",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W2942236363",
+          "title": "Inhibition of Pseudomonas aeruginosa Biofilm Formation with Surface Modified Polymeric Nanoparticles",
+          "abstract": "The gram-negative bacterial pathogen <i>Pseudomonas aeruginosa</i> represents a prominent clinical concern. Due to the observed high levels of antibiotic resistance, copious biofilm formation, and wide array of virulence factors produced by these bacteria, new treatment technologies are required. Here, we present th...",
+          "year": 2019,
+          "score": 0.5083
+        },
+        {
+          "paper_id": "https://openalex.org/W4378906073",
+          "title": "Contribution to Understanding the Mechanisms Involved in Biofilm Formation, Tolerance and Control",
+          "abstract": "Biofilms constitute a protected mode of growth that allows the colonizing microbial cells to survive in hostile environments, even when an antimicrobial agent is present. The scientific community has come to understand many things about the growth dynamics and behavior of microbial biofilms. It is now accepted that ...",
+          "year": 2023,
+          "score": 0.4999
+        },
+        {
+          "paper_id": "https://openalex.org/W2806955500",
+          "title": "Characterizing Electron Transport through Living Biofilms",
+          "abstract": "Here we demonstrate the method of electrochemical gating used to characterize electrical conductivity of electrode-grown microbial biofilms under physiologically relevant conditions.<sup>1</sup> These measurements are performed on living biofilms in aqueous medium using source and drain electrodes patterned on a gla...",
+          "year": 2018,
+          "score": 0.4985
+        },
+        {
+          "paper_id": "https://openalex.org/W4406143310",
+          "title": "Ultrasensitive Characterization of Native Bacterial Biofilms via Dynamic Nuclear Polarization‐Enhanced Solid‐State NMR",
+          "abstract": "Abstract Bacterial biofilms are major contributors to persistent infections and antimicrobial resistance, posing significant challenges to treatment. However, obtaining high‐resolution structural information on native bacterial biofilms has remained elusive due to the methodological limitations associated with analy...",
+          "year": 2025,
+          "score": 0.4953
+        },
+        {
+          "paper_id": "https://openalex.org/W4289545193",
+          "title": "Productive biofilms: from prokaryotic to eukaryotic systems",
+          "abstract": "Abstract Biofilms have great potential for producing valuable products more efficiently than suspended cultivations when it comes to yield and productivity. In addition, biofilms have the advantage of cell protection and increased resistance to environmental influences. Therefore, productive biofilms are used in bio...",
+          "year": 2022,
+          "score": 0.4936
+        },
+        {
+          "paper_id": "https://openalex.org/W3127966372",
+          "title": "Biofilm control by ionic liquids",
+          "abstract": "Ionic liquids (ILs) are remarkable chemical compounds with applications in many areas of modern science. They are increasingly recognized as promising compounds to fight microorganisms in both planktonic and biofilm states, contributing to reinvent the antimicrobial pipeline. Biofilm-related infections are particula...",
+          "year": 2021,
+          "score": 0.4923
+        },
+        {
+          "paper_id": "https://openalex.org/W4412683495",
+          "title": "Bacterial exploration of solid/liquid interfaces: developing platforms to control the physico-chemical microenvironment",
+          "abstract": "Abstract Bacterial long-term contamination of surfaces is a promiscuous phenomenon often linked to harmful processes. Early bacterial exploration of interfaces, governed by adhesion and individual motility, is a known determinant of the subsequent development and persistence of bacterial colonies. However, the mecha...",
+          "year": 2025,
+          "score": 0.4921
+        },
+        {
+          "paper_id": "https://openalex.org/W7117481689",
+          "title": "Nanomedicine Strategies Against Biofilm‐Associated Infections: Advances, Challenges, and Translational Barriers",
+          "abstract": "Antimicrobial resistance continues to rise globally, with biofilm-associated infections intensifying the clinical burden through persistent tolerance to antibiotics and evasion of immune responses. Biofilms, structured microbial communities embedded in a protective extracellular matrix, underlie many chronic and rec...",
+          "year": 2025,
+          "score": 0.492
+        },
+        {
+          "paper_id": "https://openalex.org/W3035770832",
+          "title": "The Role of Biofilms in the Development and Dissemination of Microbial Resistance within the Food Industry",
+          "abstract": "Biofilms are multicellular sessile microbial communities embedded in hydrated extracellular polymeric matrices. Their formation is common in microbial life in most environments, while those formed on food-processing surfaces are of considerable interest in the context of food hygiene. Biofilm cells express propertie...",
+          "year": 2020,
+          "score": 0.4896
+        },
+        {
+          "paper_id": "https://openalex.org/W2112886497",
+          "title": "Species association increases biofilm resistance to chemical and mechanical treatments",
+          "abstract": "",
+          "year": 2008,
+          "score": 0.4872
+        },
+        {
+          "paper_id": "https://openalex.org/W4313891011",
+          "title": "Therapeutic Strategies against Biofilm Infections",
+          "abstract": "A biofilm is an aggregation of surface-associated microbial cells that is confined in an extracellular polymeric substance (EPS) matrix. Infections caused by microbes that form biofilms are linked to a variety of animals, including insects and humans. Antibiotics and other antimicrobials can be used to remove or era...",
+          "year": 2023,
+          "score": 0.4872
+        },
+        {
+          "paper_id": "https://openalex.org/W4379095594",
+          "title": "Biofilms as protective cocoons against biocides: from bacterial adaptation to One Health issues",
+          "abstract": "Bacteria in the food chain mostly live in communities associated with surfaces known as biofilms, which confer specific survival and adaptive abilities. In such communities, the bacteria mostly exhibit higher tolerance to external stress, and their recurrent exposure along the food chain to biocides used during clea...",
+          "year": 2023,
+          "score": 0.4855
+        },
+        {
+          "paper_id": "https://openalex.org/W4391169705",
+          "title": "An Overview of Biofilm-Associated Infections and the Role of Phytochemicals and Nanomaterials in Their Control and Prevention",
+          "abstract": "Biofilm formation is considered one of the primary virulence mechanisms in Gram-positive and Gram-negative pathogenic species, particularly those responsible for chronic infections and promoting bacterial survival within the host. In recent years, there has been a growing interest in discovering new compounds capabl...",
+          "year": 2024,
+          "score": 0.4852
+        },
+        {
+          "paper_id": "https://openalex.org/W7089292078",
+          "title": "Biofilms: structure, resistance mechanism, emerging control strategies, and applications",
+          "abstract": "Biofilms are biological barriers produced by a variety of organisms either for defense or because of physiological processes.",
+          "year": 2025,
+          "score": 0.4849
+        },
+        {
+          "paper_id": "https://openalex.org/W4390661382",
+          "title": "Novel chemical-based approaches for biofilm cleaning and disinfection",
+          "abstract": "Biofilm formation plays a critical concern in the food processing industry due to potential environmental, economic, and food spoilage impacts. To maintain microbial safe levels, a sanitation process, comprising cleaning and disinfection steps, needs to be periodically performed. Biocide treatment for surface disinf...",
+          "year": 2024,
+          "score": 0.4839
+        },
+        {
+          "paper_id": "https://openalex.org/W3195737959",
+          "title": "Mechanisms and Impact of Biofilms and Targeting of Biofilms Using Bioactive Compounds—A Review",
+          "abstract": "Biofilms comprising aggregates of microorganisms or multicellular communities have been a major issue as they cause resistance against antimicrobial agents and biofouling. To date, numerous biofilm-forming microorganisms have been identified, which have been shown to result in major effects including biofouling and ...",
+          "year": 2021,
+          "score": 0.4825
+        },
+        {
+          "paper_id": "https://openalex.org/W3112925877",
+          "title": "Copper Surfaces in Biofilm Control",
+          "abstract": "Biofilms are structures comprising microorganisms associated to surfaces and enclosed by an extracellular polymeric matrix produced by the colonizer cells. These structures protect microorganisms from adverse environmental conditions. Biofilms are typically associated with several negative impacts for health and ind...",
+          "year": 2020,
+          "score": 0.4823
+        },
+        {
+          "paper_id": "https://openalex.org/W4324368200",
+          "title": "Antimicrobial and antibiofilm potentiation by a triple combination of dual biocides and a phytochemical with complementary activity",
+          "abstract": "",
+          "year": 2023,
+          "score": 0.4788
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "self-assembly of programmed cells into living materials",
+        "keywords": [
+          {
+            "text": "self assembly",
+            "score": 10
+          },
+          {
+            "text": "assembly programmed",
+            "score": 9
+          },
+          {
+            "text": "programmed cells",
+            "score": 8
+          },
+          {
+            "text": "cells living",
+            "score": 7
+          },
+          {
+            "text": "living materials",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W2620864375",
+          "title": "Chemically coded time-programmed self-assembly",
+          "abstract": "Coupling of a pH clock reaction (activation) with lactone hydrolysis (deactivation) can control and drive the self-assembly of pH-responsive building blocks.",
+          "year": 2017,
+          "score": 0.6097
+        },
+        {
+          "paper_id": "https://openalex.org/W4243496564",
+          "title": "Self-Assembly",
+          "abstract": "In the past, aggregation and self-assembly have been associated principally with micellar and colloidal systems of molecules; however, with the advent of supramolecular chemistry, molecular self-assembly has been opened to a much wider understanding that has facilitated access to a variety of different shapes and si...",
+          "year": 2016,
+          "score": 0.6
+        },
+        {
+          "paper_id": "https://openalex.org/W6921819383",
+          "title": "A Case of Adaptive Self-Assembly",
+          "abstract": "We report in this paper direct observation of redox-induced uptake of a charged species in micelles with a complex coacervate core, using a system consisting of negatively charged iron-coordination polymers and positively charged-&lt;i&gt;b&lt;/i&gt;-neutral block co-polyelectrolytes. Neutral, charge-balanced micell...",
+          "year": 2016,
+          "score": 0.5668
+        },
+        {
+          "paper_id": "https://openalex.org/W3016775993",
+          "title": "Metallo‐Supramolecular Self‐Assembly with Reduced‐Symmetry Ligands",
+          "abstract": "Metallo-supramolecular self-assembly tends to be performed with single metal ions and single, highly symmetrical, ligands. This simplifies the self-assembly process as without sufficient bias within the system a mixture of products may be formed. However, with various applications of metallo-supramolecular species h...",
+          "year": 2020,
+          "score": 0.5555
+        },
+        {
+          "paper_id": "https://openalex.org/W2965497785",
+          "title": "Emerging Trends in Polymerization-Induced Self-Assembly",
+          "abstract": "In this Perspective, we summarize recent progress in polymerization-induced self-assembly (PISA) for the rational synthesis of block copolymer nanoparticles with various morphologies. Much of the PISA literature has been based on thermally initiated reversible addition-fragmentation chain transfer (RAFT) polymerizat...",
+          "year": 2019,
+          "score": 0.5525
+        },
+        {
+          "paper_id": "https://openalex.org/W4250653212",
+          "title": "Kinetic Versus Thermodynamic Metalation Enables Synthesis of Isostructural Homo- and Heterometallic Trinuclear Clusters",
+          "abstract": "Temperature-dependent metalation of the new hexadentate ligand (tris(5-(pyridin-2-yl)-1&lt;i&gt;H&lt;/i&gt;-pyrrol-2-yl)methane; H&lt;sub&gt;3&lt;/sub&gt;TPM) enables the selective synthesis of both mononuclear (&lt;i&gt;i.e. &lt;/i&gt;Na(THF)&lt;sub&gt;4&lt;/sub&gt;[Fe(TPM)], kinetic product) and trinuclear (&lt;i&...",
+          "year": 2020,
+          "score": 0.5521
+        },
+        {
+          "paper_id": "https://openalex.org/W99832955",
+          "title": "Controlling and Understanding Self-Assembly",
+          "abstract": "",
+          "year": 2012,
+          "score": 0.5502
+        },
+        {
+          "paper_id": "https://openalex.org/W4401949674",
+          "title": "Advancing Artificial Cells with Functional Compartmentalized Polymeric Systems - In Honor of Wolfgang Meier",
+          "abstract": "The fundamental building block of living organisms is the cell, which is the universal biological base of all living entities. This micrometric mass of cytoplasm and the membrane border have fascinated scientists due to the highly complex and multicompartmentalized structure. This specific organization enables numer...",
+          "year": 2024,
+          "score": 0.5375
+        },
+        {
+          "paper_id": "https://openalex.org/W3119759446",
+          "title": "Artificial Organelles: Towards Adding or Restoring Intracellular Activity",
+          "abstract": "Compartmentalization is one of the main characteristics that define living systems. Creating a physically separated microenvironment allows nature a better control over biological processes, as is clearly specified by the role of organelles in living cells. Inspired by this phenomenon, researchers have developed a r...",
+          "year": 2021,
+          "score": 0.5332
+        },
+        {
+          "paper_id": "https://openalex.org/W2042316476",
+          "title": "Vesicle-based artificial cells as chemical microreactors with spatially segregated reaction pathways",
+          "abstract": "In the discipline of bottom-up synthetic biology, vesicles define the boundaries of artificial cells and are increasingly being used as biochemical microreactors operating in physiological environments. As the field matures, there is a need to compartmentalize processes in different spatial localities within vesicle...",
+          "year": 2014,
+          "score": 0.533
+        },
+        {
+          "paper_id": "https://openalex.org/W4298088269",
+          "title": "Polymer Chemistry in Living Cells",
+          "abstract": "The polymerization of biomolecules is a central operation in biology that connects molecular signals with proliferative and information-rich events in cells. As molecules arrange precisely across 3-D space, they create new functional capabilities such as catalysis and transport highways and exhibit new phase separat...",
+          "year": 2022,
+          "score": 0.5308
+        },
+        {
+          "paper_id": "https://openalex.org/W4400912668",
+          "title": "Self-Assembly of Polymers and Their Applications in the Fields of Biomedicine and Materials",
+          "abstract": "Polymer self-assembly can prepare various shapes and sizes of pores, making it widely used. The complexity and diversity of biomolecules make them a unique class of building blocks for precise assembly. They are particularly suitable for the new generation of biomaterials integrated with life systems as they possess...",
+          "year": 2024,
+          "score": 0.53
+        },
+        {
+          "paper_id": "https://openalex.org/W7131246150",
+          "title": "Selective Covalent Assembly of Gram-negative Bacteria and Synthetic Polymers into Functional Living Materials",
+          "abstract": "Here, we report selective covalent assembly of gram-negative bacteria and synthetic polymers into functional living materials. We discovered that telechelic polymers decorated with vinyl sulfone (VS), a motif that forms a stable covalent bond with cysteine residues on surface proteins, yielded stable covalent assemb...",
+          "year": 2026,
+          "score": 0.5277
+        },
+        {
+          "paper_id": "https://openalex.org/W7128678465",
+          "title": "Light-Controlled Membrane Fusion in Synthetic Cells",
+          "abstract": "Light-induced membrane fusion has become a pivotal technique for constructing and functionalizing synthetic cells by enabling precise control over membrane merging events. Traditional fusion approaches that rely on chemical, physical, and mechanical stimuli frequently lack both specificity and reversibility, limitin...",
+          "year": 2026,
+          "score": 0.5235
+        },
+        {
+          "paper_id": "https://openalex.org/W4389253718",
+          "title": "Self-decorating cells <i>via</i> surface-initiated enzymatic controlled radical polymerization",
+          "abstract": "Through the innovative use of surface-displayed horseradish peroxidase, this work explores the enzymatic catalysis of both bioRAFT polymerization and bioATRP to prompt polymer synthesis on the surface of <i>Saccharomyces cerevisiae</i> cells, with bioATRP outperforming bioRAFT polymerization. The resulting surface m...",
+          "year": 2023,
+          "score": 0.5227
+        },
+        {
+          "paper_id": "https://openalex.org/W4225705965",
+          "title": "RAFT-mediated polymerization-induced self-assembly (RAFT-PISA): current status and future directions",
+          "abstract": "Polymerization-induced self-assembly (PISA) combines polymerization and self-assembly in a single step with distinct efficiency that has set it apart from the conventional solution self-assembly processes. PISA holds great promise for large-scale production, not only because of its efficient process for producing na...",
+          "year": 2022,
+          "score": 0.5222
+        },
+        {
+          "paper_id": "https://openalex.org/W2977328892",
+          "title": "RAFT‐Mediated Polymerization‐Induced Self‐Assembly",
+          "abstract": "After a brief history that positions polymerization-induced self-assembly (PISA) in the field of polymer chemistry, this Review will cover the fundamentals of the PISA mechanism. Furthermore, this Review will also give an overview of some of the features and limitations of RAFT-mediated PISA in terms of the choice o...",
+          "year": 2019,
+          "score": 0.5196
+        },
+        {
+          "paper_id": "https://openalex.org/W4392367637",
+          "title": "From small to large—The application of in situ polymerization within tumor cells",
+          "abstract": "Abstract The “laboratory” of cells has the capacity to polymerize monosaccharides, amino acids, and nucleotides. Tumor cells, characterized by the overexpression of multiple enzymes and existing in a slightly acidic and highly redox‐potent environment, have attracted the attention of chemists aiming to transfer chem...",
+          "year": 2024,
+          "score": 0.5195
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "quorum sensing and synthetic microbial consortia in living materials",
+        "keywords": [
+          {
+            "text": "quorum sensing",
+            "score": 10
+          },
+          {
+            "text": "sensing synthetic",
+            "score": 9
+          },
+          {
+            "text": "synthetic microbial",
+            "score": 8
+          },
+          {
+            "text": "microbial consortia",
+            "score": 7
+          },
+          {
+            "text": "consortia living",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W3129105113",
+          "title": "Use of Quorum Sensing Inhibition Strategies to Control Microfouling",
+          "abstract": "Interfering with the quorum sensing bacterial communication systems has been proposed as a promising strategy to control bacterial biofilm formation, a key process in biofouling development. Appropriate in vitro biofilm-forming bacteria models are needed to establish screening methods for innovative anti-biofilm and...",
+          "year": 2021,
+          "score": 0.5176
+        },
+        {
+          "paper_id": "https://openalex.org/W3119759446",
+          "title": "Artificial Organelles: Towards Adding or Restoring Intracellular Activity",
+          "abstract": "Compartmentalization is one of the main characteristics that define living systems. Creating a physically separated microenvironment allows nature a better control over biological processes, as is clearly specified by the role of organelles in living cells. Inspired by this phenomenon, researchers have developed a r...",
+          "year": 2021,
+          "score": 0.5154
+        },
+        {
+          "paper_id": "https://openalex.org/W4231592698",
+          "title": "Construction and analysis of luxCDABE-based plasmid sensors for investigating N-acyl homoserine lactone-mediated quorum sensing",
+          "abstract": "Plasmid reporter vectors have been constructed which respond to activation of LuxR and its homologues LasR and RhlR (VsmR) by N-acyl homoserine lactones (AHLs). The expression of luxCDABE from transcriptional fusions to PluxI, PlasI and PrhlI respectively, occurs in the presence of activating AHLs. A profile of stru...",
+          "year": 1998,
+          "score": 0.5068
+        },
+        {
+          "paper_id": "https://openalex.org/W4385364241",
+          "title": "Electroactive microbe communication: A crucial aspect for energy generation in bio-electrochemical systems",
+          "abstract": "The rising environmental issues have intensified research in developing microbial fuel cells (MFCs) as a green and sustainable source of energy generation. The discovery of electroactive bacteria (EABs) in the 1980 s and their application in MFCs greatly improved energy generation as they aid in transferring electro...",
+          "year": 2023,
+          "score": 0.5042
+        },
+        {
+          "paper_id": "https://openalex.org/W4389304725",
+          "title": "Artificial cell synthesis using biocatalytic polymerization-induced self-assembly",
+          "abstract": "",
+          "year": 2023,
+          "score": 0.5024
+        },
+        {
+          "paper_id": "https://openalex.org/W2017044836",
+          "title": "Functional Amyloids Keep Quorum-sensing Molecules in Check",
+          "abstract": "The mechanism by which extracellular metabolites, including redox mediators and quorum-sensing signaling molecules, traffic through the extracellular matrix of biofilms is poorly explored. We hypothesize that functional amyloids, abundant in natural biofilms and possessing hydrophobic domains, retain these metabolit...",
+          "year": 2015,
+          "score": 0.5012
+        },
+        {
+          "paper_id": "https://openalex.org/W7117882492",
+          "title": "A comprehensive review on communication method in bacteria",
+          "abstract": "Quorum Sensing (QS) represents a pivotal mechanism by which bacteria regulate gene expression in response to population density via the production and detection of small signaling molecules known as autoinducers. Numerous bacterial characteristics that are essential to their survival and pathogenicity, such as biolu...",
+          "year": 2026,
+          "score": 0.4998
+        },
+        {
+          "paper_id": "https://openalex.org/W4312983167",
+          "title": "The Role of Material Technologies Targeting P. Aeruginosa and S. Aureus Quorum Sensing in Biofilm Formation",
+          "abstract": "Periprosthetic joint infections are a major complication after total joint arthroplasty. Pseudomonas aeruginosa and Staphylococcus aureus are of great clinical concern, due to high antibiotic resistance, which is even increased when they form a biofilm on the implant surface. In this qualitative systematic review ba...",
+          "year": 2022,
+          "score": 0.4987
+        },
+        {
+          "paper_id": "https://openalex.org/W4220789309",
+          "title": "Design of a self-stable and population-controllable co-culture system in E. coli and its applications",
+          "abstract": "",
+          "year": 2022,
+          "score": 0.4973
+        },
+        {
+          "paper_id": "https://openalex.org/W6959115352",
+          "title": "A Multivalent Probe for AI-2 Quorum-Sensing Receptors",
+          "abstract": "Multivalency is a common principle in the recognition of cellular receptors, and multivalent agonists and antagonists have played a major role in understanding mammalian cell receptor biology. The study of bacterial cell receptors using similar approaches, however, has lagged behind. Herein we describe our efforts t...",
+          "year": 2016,
+          "score": 0.497
+        },
+        {
+          "paper_id": "https://openalex.org/W4388851737",
+          "title": "Synthetic Cells Revisited: Artificial Cell Construction Using Polymeric Building Blocks",
+          "abstract": "The exponential growth of research on artificial cells and organelles underscores their potential as tools to advance the understanding of fundamental biological processes. The bottom-up construction from a variety of building blocks at the micro- and nanoscale, in combination with biomolecules is key to developing ...",
+          "year": 2023,
+          "score": 0.4969
+        },
+        {
+          "paper_id": "https://openalex.org/W3148352910",
+          "title": "Interactive Materials for Bidirectional Redox‐Based Communication",
+          "abstract": "Emerging research indicates that biology routinely uses diffusible redox-active molecules to mediate communication that can span biological systems (e.g., nervous and immune) and even kingdoms (e.g., a microbiome and its plant/animal host). This redox modality also provides new opportunities to create interactive ma...",
+          "year": 2021,
+          "score": 0.4938
+        },
+        {
+          "paper_id": "https://openalex.org/W4394874119",
+          "title": "Programmable Enzymatic Reaction Network in Artificial Cell‐Like Polymersomes",
+          "abstract": "The ability to precisely control in vitro enzymatic reactions in synthetic cells plays a crucial role in the bottom-up design of artificial cell models that can recapitulate the key cellular features and functions such as metabolism. However, integration of enzymatic reactions has been limited to bulk or microfluidi...",
+          "year": 2024,
+          "score": 0.4916
+        },
+        {
+          "paper_id": "https://openalex.org/W4399135131",
+          "title": "Glucose and HODEs regulate Aspergillus ochraceus quorum sensing through the GprC-AcyA pathway",
+          "abstract": "Aspergillus ochraceus is the traditional ochratoxin A (OTA)-producing fungus with density-dependent behaviors, which is known as quorum sensing (QS) that is mediated by signaling molecules. Individual cells trend to adapt environmental changes in a \"whole\" flora through communications, allowing fungus to occupy an i...",
+          "year": 2024,
+          "score": 0.4871
+        },
+        {
+          "paper_id": "https://openalex.org/W2097478029",
+          "title": "Effects of quorum-sensing deficiency on Pseudomonas aeruginosa biofilm formation and antibiotic resistance",
+          "abstract": "Variations in biofilm formation by, and antibiotic resistance of, Pseudomonas aeruginosa PAO1 (wild type) and the quorum-sensing-deficient mutants PDO100 (Delta rhlI), JP1 (Delta lasI) and JP2 (Delta lasI Delta rhlI) were studied. For PAO1, the maximum-accumulation phase of biofilm formation began immediately and a ...",
+          "year": 2002,
+          "score": 0.485
+        },
+        {
+          "paper_id": "https://openalex.org/W4411706697",
+          "title": "Differential Compartmentalization of Enzymatic Reactions for Lactate Signaling Across Protocells",
+          "abstract": "Abstract Protocells, by breaking down the intricate complexity of eukaryotic cells, are innovative tools for mimicking and understanding cellular phenomena. Protocells based on giant unilamellar vesicles (GUVs) supplemented with active species facilitate in situ biologically relevant enzymatic reactions. However, re...",
+          "year": 2025,
+          "score": 0.4836
+        },
+        {
+          "paper_id": "https://openalex.org/W6921822811",
+          "title": "Plant Responses to Bacterial &lt;i&gt;N&lt;/i&gt;‑Acyl l‑Homoserine Lactones are Dependent on Enzymatic Degradation\\nto l‑Homoserine",
+          "abstract": "Many\\nbacteria use quorum sensing (QS) to regulate phenotypes that\\nultimately benefit the bacterial population at high cell densities.\\nThese QS-dependent phenotypes are diverse and can have significant\\nimpacts on the bacterial host, including virulence factor production,\\nmotility, biofilm formation, bioluminesce...",
+          "year": 2015,
+          "score": 0.4795
+        },
+        {
+          "paper_id": "https://openalex.org/W4304690554",
+          "title": "Electron transfer of extremophiles in bioelectrochemical systems",
+          "abstract": "The interaction of bacteria and archaea with electrodes is a relatively new research field which spans from fundamental to applied research and influences interdisciplinary research in the fields of microbiology, biochemistry, biotechnology as well as process engineering. Although a substantial understanding of elec...",
+          "year": 2022,
+          "score": 0.4788
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "hydrogel and polymer matrix engineering for living materials",
+        "keywords": [
+          {
+            "text": "hydrogel polymer",
+            "score": 10
+          },
+          {
+            "text": "polymer matrix",
+            "score": 9
+          },
+          {
+            "text": "matrix engineering",
+            "score": 8
+          },
+          {
+            "text": "engineering living",
+            "score": 7
+          },
+          {
+            "text": "living materials",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W2157220384",
+          "title": "Physicochemical Foundations and Structural Design of Hydrogels in Medicine and Biology",
+          "abstract": "Hydrogels are cross-linked hydrophilic polymers that can imbibe water or biological fluids. Their biomedical and pharmaceutical applications include a very wide range of systems and processes that utilize several molecular design characteristics. This review discusses the molecular structure, dynamic behavior, and s...",
+          "year": 2000,
+          "score": 0.7463
+        },
+        {
+          "paper_id": "https://openalex.org/W34397343",
+          "title": "Design and synthesis of novel hydrogels for biological applications",
+          "abstract": "The aims of this project were:1) the synthesis of a range of new polyether-based vinylic monomers and their incorporation into poly(2-hydroxyethyl methacrylate) (poly(HEMA)) based hydrogel networks, of interest to the contact lens industry.2) the synthesis of a range of alkyltartronic acids, and their derivatives. T...",
+          "year": 1994,
+          "score": 0.564
+        },
+        {
+          "paper_id": "https://openalex.org/W2807453159",
+          "title": "Living functional hydrogels generated by bioorthogonal cross-linking reactions of azide-modified cells with alkyne-modified polymers",
+          "abstract": "",
+          "year": 2018,
+          "score": 0.5382
+        },
+        {
+          "paper_id": "https://openalex.org/W2326635139",
+          "title": "Advances in interpenetrating polymer network hydrogels and their applications",
+          "abstract": "Abstract Interpenetrating polymer network (IPN) hydrogels brought distinct benefits compared to single network hydrogels like more widely controllable physical properties, and (frequently) more efficient drug loading/release. However, IPN strategy is not sufficient to design hydrogels with enhanced mechanical proper...",
+          "year": 2014,
+          "score": 0.527
+        },
+        {
+          "paper_id": "https://openalex.org/W2809822834",
+          "title": "Toward Light‐Regulated Living Biomaterials",
+          "abstract": "Living materials are an emergent material class, infused with the productive, adaptive, and regenerative properties of living organisms. Property regulation in living materials requires encoding responsive units in the living components to allow external manipulation of their function. Here, an optoregulated <i>Esch...",
+          "year": 2018,
+          "score": 0.524
+        },
+        {
+          "paper_id": "https://openalex.org/W7070448713",
+          "title": "Polymer Engineering Methods to Improve the Interface Between Materials Science and Biology",
+          "abstract": "Polymers are a group of materials that consist of large molecules (macromolecules) arranged in a pattern of repeating small subunits. They can be classified into natural polymers and synthetic polymers, degradable and non-degradable polymers. A variety of processing techniques are available to process the polymers, ...",
+          "year": 2023,
+          "score": 0.5165
+        },
+        {
+          "paper_id": "https://openalex.org/W3087041232",
+          "title": "COPOLYMER HYDROGELS AS FULLY IMPLANTABLE OPTICAL BIOSENSORS: INVESTIGATING DESIGN PARADIGMS TO ACHIEVE LONG-TERM PRECLINICAL FUNCTION",
+          "abstract": "Many diagnostic tests for disease management and overall health monitoring provide only an instantaneous measurement of the patient’s state of health, leaving intermediate fluctuations in biochemistry levels undisclosed. Often, fluid samples are collected periodically and analyzed using ex vivo assays. Diabetes is a...",
+          "year": 2017,
+          "score": 0.5132
+        },
+        {
+          "paper_id": "https://openalex.org/W2804132091",
+          "title": "Core–shell patterning of synthetic hydrogels <i>via</i> interfacial bioorthogonal chemistry for spatial control of stem cell behavior",
+          "abstract": "A new technique is described for the patterning of cell-guidance cues in synthetic extracellular matrices (ECM) for tissue engineering applications. Using <i>s</i>-tetrazine modified hyaluronic acid (HA), bis-<i>trans</i>-cyclooctene (TCO) crosslinkers and monofunctional TCO conjugates, interfacial bioorthogonal cro...",
+          "year": 2018,
+          "score": 0.506
+        },
+        {
+          "paper_id": "https://openalex.org/W4321497848",
+          "title": "Advances in Peptide-Based Hydrogel for Tissue Engineering",
+          "abstract": "The development of peptide-based materials has emerged as one of the most challenging aspects of biomaterials in recent years. It has been widely acknowledged that peptide-based materials can be used in a broad range of biomedical applications, particularly in tissue engineering. Among them, hydrogels have been attr...",
+          "year": 2023,
+          "score": 0.5041
+        },
+        {
+          "paper_id": "https://openalex.org/W2914864658",
+          "title": "Gelatin-Based Hydrogels through Homobifunctional Triazolinediones Targeting Tyrosine Residues",
+          "abstract": "Gelatin is a biopolymer with interesting properties that can be useful for biomaterial design for different applications such as drug delivery systems, or 3D scaffolds for tissue engineering. However, gelatin suffers from poor mechanical stability at physiological temperature, hence methods for improving its propert...",
+          "year": 2019,
+          "score": 0.5035
+        },
+        {
+          "paper_id": "https://openalex.org/W2249238011",
+          "title": "Phototunable Click-based Hydrogels for 3D Cell Culture: Dynamic Biochemical and Biomechanical Tailorability of the Cell Niche",
+          "abstract": "To better understand how cells receive and respond to signals presented by their external surroundings, polymer-based hydrogels have emerged as highly tailorable constructs for assaying cell function in well-defined microenvironments where the effects of user-dictated functionalities can be individually probed. This...",
+          "year": 2011,
+          "score": 0.5024
+        },
+        {
+          "paper_id": "https://openalex.org/W7131246150",
+          "title": "Selective Covalent Assembly of Gram-negative Bacteria and Synthetic Polymers into Functional Living Materials",
+          "abstract": "Here, we report selective covalent assembly of gram-negative bacteria and synthetic polymers into functional living materials. We discovered that telechelic polymers decorated with vinyl sulfone (VS), a motif that forms a stable covalent bond with cysteine residues on surface proteins, yielded stable covalent assemb...",
+          "year": 2026,
+          "score": 0.4987
+        },
+        {
+          "paper_id": "https://openalex.org/W2053625593",
+          "title": "Synthetically Tractable Click Hydrogels for Three-Dimensional Cell Culture Formed Using Tetrazine–Norbornene Chemistry",
+          "abstract": "The implementation of bio-orthogonal click chemistries is a topic of growing importance in the field of biomaterials, as it is enabling the development of increasingly complex hydrogel materials capable of providing dynamic, cell-instructive microenvironments. Here, we introduce the tetrazine-norbornene inverse elec...",
+          "year": 2013,
+          "score": 0.4962
+        },
+        {
+          "paper_id": "https://openalex.org/W2886661380",
+          "title": "Click Chemistry-Based Injectable Hydrogels and Bioprinting Inks for Tissue Engineering Applications",
+          "abstract": "",
+          "year": 2018,
+          "score": 0.4949
+        },
+        {
+          "paper_id": "https://openalex.org/W2019217569",
+          "title": "Peptide-Functionalized Click Hydrogels with Independently Tunable Mechanics and Chemical Functionality for 3D Cell Culture",
+          "abstract": "Multifunctionalized macromers react via a copper-free click chemistry to form an idealized 3D hydrogel. Subsequently, thiol-containing biomolecules are spatially patterned within the material with precise control over the amount and location of functionalization. Both the network formation and subsequent patterning ...",
+          "year": 2010,
+          "score": 0.4921
+        },
+        {
+          "paper_id": "https://openalex.org/W4313145917",
+          "title": "Modeling of supramolecular biopolymers: Leading the <i>in silico</i> revolution of tissue engineering and nanomedicine",
+          "abstract": "Abstract The field of tissue engineering is poised to be positively influenced by the advent of supramolecular biopolymers, because of their promising tailorability coming from the bottom-up approach used for their development, absence of toxic byproducts from their gelation reaction and intrinsic better mimicry of ...",
+          "year": 2022,
+          "score": 0.49
+        },
+        {
+          "paper_id": "https://openalex.org/W2047198957",
+          "title": "Semiconductor nanoparticle-based hydrogels prepared via self-initiated polymerization under sunlight, even visible light",
+          "abstract": "Since ancient times, people have used photosynthesized wood, bamboo, and cotton as building and clothing materials. The advantages of photo polymerization include the mild and easy process. However, the direct use of available sunlight for the preparation of materials is still a challenge due to its rather dilute in...",
+          "year": 2013,
+          "score": 0.4894
+        },
+        {
+          "paper_id": "https://openalex.org/W2900251804",
+          "title": "Bioorthogonal hydrogels by thiol–halide click crosslinking with fast gelation time and tunable stability in aqueous media",
+          "abstract": "Thiol-halide click reaction is utilized in polymer crosslinking to form hydrogels with a tailored rate of disintegration suitable. The crosslinking process is bioorthogonal, which allows for encapsulation of living cells for three-dimensional cell culture study. Please note: The publisher is not responsible for the ...",
+          "year": 2018,
+          "score": 0.4881
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "step": "step6",
+      "command_name": "paper-search",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Current methods separately achieve protein-material conjugation, intracellular metabolite-responsive regulation, and light-controlled cell transport, but they do not provide a unified, predictive, closed-loop programming framework that coordinates molecular interfacing, cellular sensing, genetic regulation, and extracellular matrix remodeling into a single living material system while preserving viability, orthogonality, and spatiotemporal control.",
+        "field": "abstract",
+        "top_k": 2,
+        "after": null,
+        "before": null
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4248634975",
+          "title": "Faculty Opinions recommendation of Spatiotemporal control of cell signalling using a light-switchable protein interaction.",
+          "abstract": "Genetically-encodable optical reporters, such as Green Fluorescent Protein, have revolutionized the observation and measurement of cellular states. However, the inverse challenge of using light to precisely control cellular behavior has only recently begun to be addressed; semi-synthetic chromophore-tethered receptors 1 and naturally-occurring channel rhodopsins have been used to directly perturb neuronal networks 2 , 3 . The difficulty of engineering light sensitive proteins remains a significant impediment to the optical control to most cell-biological processes. Here we demonstrate the use of a new genetically-encoded light-control system based on an optimized reversible protein-protein interaction from the phytochrome signaling network of Arabidopsis thaliana. Because protein-protein interactions are one of the most general currencies of cellular information, this system can in principal be generically used to control diverse functions. Here we show that this system can be used to precisely and reversibly translocate target proteins to the membrane with micrometer spatial resolution and second time resolution. We show that lightgated translocation of the upstream activators of rho-family GTPases, which control the actin cytoskeleton, can be used to precisely reshape and direct the cell morphology of mammalian cells. The light-gated protein-protein interaction that has been optimized in this work should be useful Users may view, print, copy, and download text and data-mine the content in such documents, for the purposes of academic research,",
+          "year": 2009,
+          "score": 0.6169757843017578
+        },
+        {
+          "paper_id": "https://openalex.org/W7128513494",
+          "title": "Editorial: Insights in nanobiotechnology 2024/2025: novel developments, current challenges, and future perspectives",
+          "abstract": "Nanobiotechnology is progressing rapidly, and the last few years have brought a noticeable shift in what the community expects as proof. Advances in nanomaterial design, characterization, and experimental models now make it possible to ask more demanding questions: not only whether a nano-enabled intervention works, but why it works, when it fails, and how its performance depends on context. In practice, the field is moving from demonstrations in simplified settings to nanosystems the behaviour of which can be explained mechanistically, reproduced across laboratories, and steered in realistic biological or environmental conditions. This Research Topic contributes to that broader goal by bringing together forwardlooking pieces that highlight both progress and bottlenecks across the nano-bio interface. This edition gathers four articles spanning immunomodulatory nanomaterials (Ceccarelli et al., 10.3389/fbioe.2025.1672520), photocatalytic nanocomposites for environmental remediation (Ram et al., 10.3389/fbioe.2025.1458965), computational design frameworks for organ-on-chip systems (Taleban et al., 10.3389/fbioe.2025.1716813), and quantitative perspectives on biological timing and synchrony (Al-Omari et al., 10.3389/fmolb.2025.1697003).Despite Al-Omari et al. is not centred on nanomaterials, the contribution underscores a point that carries directly to nanobiotechnology: time and heterogeneity are not nuisance variables. While the topics range from immune modulation to microphysiology and microbial rhythms, they converge on a common theme: understanding and controlling nano-bio behaviour requires attention to mechanism, microenvironment, and time. In other words, there is no single nano-bio interface. Depending on the question, it might be an immune cell deciding which phenotype to adopt, a microfluidic device setting gradients and forces that shape cell fate, a catalytic surface driving chemical transformation in water, or a population of single cells synchronizing their behaviour over time.Across these four papers, several challenges emerge that are common to much of nanobiotechnology. Reproducibility and comparability still hinge on variables that are easy to underreport, such as dispersion state in biological media, batch-to-batch variation, and dose definitions that go beyond nominal mass concentration (particle number, surface area, or delivered dose).Equally, biological relevance is increasingly an engineering constraint. If gradients, mechanics and exposure time are not designed and validated, experimental outcomes can be systematically biased. Translation adds further layers, whether in photocatalysis (energy input, robustness, and by-products under realistic matrices) or in immunomodulation (immune ecosystem effects, safety, and manufacturability). These constraints are not administrative afterthoughts, they are design parameters that can and should be considered early.Looking forward, three priorities stand out. First, mechanism-first nanobiotechnology: linking physicochemical features to causal biological or chemical pathways, supported by time-resolved, multi-parameter phenotyping and perturbations that discriminate between alternative explanations. Second, predictive design loops: integrating simulation, controlled microenvironments, and data to generate and prioritise hypotheses, and then stress-testing those hypotheses experimentally with explicit uncertainty and sensitivity analyses; modelling is most valuable when it guides which experiments to do next, how to interpret discordant readouts, and how to define the boundary conditions under which an effect is expected to hold. Third, responsible innovation by design: sustainability, lifecycle considerations, and safety-by-design treated alongside performance, together with regulatory-ready documentation of composition, stability, and quality attributes; the aim is not to slow discovery, but to avoid predictable failure modes and accelerate credible translation.Taken together, these papers reinforce a practical direction for the field: design choices that can be defended mechanistically, experimental models treated as controllable systems, and earlier engagement with translation constraints so that promising concepts are not lost for avoidable reasons. As with any collection, the four articles are not meant to be exhaustive. Instead, they illustrate how the nano-bio interface can be approached as a set of measurable, testable relationships that span materials, models, and time. We hope this research topic will stimulate discussion, inspire collaborations, and help sharpen the evidence standards that move nanobiotechnology from demonstration to dependable application.Prof. Ciofani is a shareholder of Kidaria Bioscience SRL, but declares no competing interests related to the article collection.",
+          "year": 2026,
+          "score": 0.6161435842514038
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Model predictive control and robust feedback strategies for coordinating multiple interacting biological and material processes under constraints on viability, timing, and spatial localization.",
+        "keywords": [
+          {
+            "text": "model predictive control",
+            "score": 9
+          },
+          {
+            "text": "feedback control",
+            "score": 9
+          },
+          {
+            "text": "spatiotemporal control",
+            "score": 8
+          },
+          {
+            "text": "multi-input multi-output systems",
+            "score": 7
+          },
+          {
+            "text": "robustness",
+            "score": 7
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W3214605415",
+          "title": "Systems and control theoretic approaches to engineer robust biological systems",
+          "abstract": "",
+          "year": 2020,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W7049026970",
+          "title": "Modelling, simulation and robust control of distributed processes: application to chemical and biological systems",
+          "abstract": "",
+          "year": 2008,
+          "score": 0.997
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Formal programming and verification methods for composing concurrent, event-driven cyber-physical systems with modular interfaces, predictable timing, and orthogonal control logic.",
+        "keywords": [
+          {
+            "text": "formal verification",
+            "score": 9
+          },
+          {
+            "text": "cyber-physical systems",
+            "score": 9
+          },
+          {
+            "text": "event-driven orchestration",
+            "score": 8
+          },
+          {
+            "text": "compositional programming",
+            "score": 8
+          },
+          {
+            "text": "model checking",
+            "score": 7
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W2885089758",
+          "title": "Formal Modeling of Cyber-Physical Systems: Lessons Learn from Refinement and Proof Based Methods",
+          "abstract": "",
+          "year": 2018,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W2793961239",
+          "title": "Towards the Modular Specification and Validation of Cyber-Physical Systems",
+          "abstract": "",
+          "year": 2018,
+          "score": 0.9843
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "step": "step6",
+      "command_name": "paper-search",
+      "cache_hit": true,
+      "payload": {
+        "query_text": "Current methods separately achieve protein-material conjugation, intracellular metabolite-responsive regulation, and light-controlled cell transport, but they do not provide a unified, predictive, closed-loop programming framework that coordinates molecular interfacing, cellular sensing, genetic regulation, and extracellular matrix remodeling into a single living material system while preserving viability, orthogonality, and spatiotemporal control.",
+        "field": "abstract",
+        "top_k": 2,
+        "after": null,
+        "before": null
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4248634975",
+          "title": "Faculty Opinions recommendation of Spatiotemporal control of cell signalling using a light-switchable protein interaction.",
+          "abstract": "Genetically-encodable optical reporters, such as Green Fluorescent Protein, have revolutionized the observation and measurement of cellular states. However, the inverse challenge of using light to precisely control cellular behavior has only recently begun to be addressed; semi-synthetic chromophore-tethered receptors 1 and naturally-occurring channel rhodopsins have been used to directly perturb neuronal networks 2 , 3 . The difficulty of engineering light sensitive proteins remains a significant impediment to the optical control to most cell-biological processes. Here we demonstrate the use of a new genetically-encoded light-control system based on an optimized reversible protein-protein interaction from the phytochrome signaling network of Arabidopsis thaliana. Because protein-protein interactions are one of the most general currencies of cellular information, this system can in principal be generically used to control diverse functions. Here we show that this system can be used to precisely and reversibly translocate target proteins to the membrane with micrometer spatial resolution and second time resolution. We show that lightgated translocation of the upstream activators of rho-family GTPases, which control the actin cytoskeleton, can be used to precisely reshape and direct the cell morphology of mammalian cells. The light-gated protein-protein interaction that has been optimized in this work should be useful Users may view, print, copy, and download text and data-mine the content in such documents, for the purposes of academic research,",
+          "year": 2009,
+          "score": 0.6169757843017578
+        },
+        {
+          "paper_id": "https://openalex.org/W7128513494",
+          "title": "Editorial: Insights in nanobiotechnology 2024/2025: novel developments, current challenges, and future perspectives",
+          "abstract": "Nanobiotechnology is progressing rapidly, and the last few years have brought a noticeable shift in what the community expects as proof. Advances in nanomaterial design, characterization, and experimental models now make it possible to ask more demanding questions: not only whether a nano-enabled intervention works, but why it works, when it fails, and how its performance depends on context. In practice, the field is moving from demonstrations in simplified settings to nanosystems the behaviour of which can be explained mechanistically, reproduced across laboratories, and steered in realistic biological or environmental conditions. This Research Topic contributes to that broader goal by bringing together forwardlooking pieces that highlight both progress and bottlenecks across the nano-bio interface. This edition gathers four articles spanning immunomodulatory nanomaterials (Ceccarelli et al., 10.3389/fbioe.2025.1672520), photocatalytic nanocomposites for environmental remediation (Ram et al., 10.3389/fbioe.2025.1458965), computational design frameworks for organ-on-chip systems (Taleban et al., 10.3389/fbioe.2025.1716813), and quantitative perspectives on biological timing and synchrony (Al-Omari et al., 10.3389/fmolb.2025.1697003).Despite Al-Omari et al. is not centred on nanomaterials, the contribution underscores a point that carries directly to nanobiotechnology: time and heterogeneity are not nuisance variables. While the topics range from immune modulation to microphysiology and microbial rhythms, they converge on a common theme: understanding and controlling nano-bio behaviour requires attention to mechanism, microenvironment, and time. In other words, there is no single nano-bio interface. Depending on the question, it might be an immune cell deciding which phenotype to adopt, a microfluidic device setting gradients and forces that shape cell fate, a catalytic surface driving chemical transformation in water, or a population of single cells synchronizing their behaviour over time.Across these four papers, several challenges emerge that are common to much of nanobiotechnology. Reproducibility and comparability still hinge on variables that are easy to underreport, such as dispersion state in biological media, batch-to-batch variation, and dose definitions that go beyond nominal mass concentration (particle number, surface area, or delivered dose).Equally, biological relevance is increasingly an engineering constraint. If gradients, mechanics and exposure time are not designed and validated, experimental outcomes can be systematically biased. Translation adds further layers, whether in photocatalysis (energy input, robustness, and by-products under realistic matrices) or in immunomodulation (immune ecosystem effects, safety, and manufacturability). These constraints are not administrative afterthoughts, they are design parameters that can and should be considered early.Looking forward, three priorities stand out. First, mechanism-first nanobiotechnology: linking physicochemical features to causal biological or chemical pathways, supported by time-resolved, multi-parameter phenotyping and perturbations that discriminate between alternative explanations. Second, predictive design loops: integrating simulation, controlled microenvironments, and data to generate and prioritise hypotheses, and then stress-testing those hypotheses experimentally with explicit uncertainty and sensitivity analyses; modelling is most valuable when it guides which experiments to do next, how to interpret discordant readouts, and how to define the boundary conditions under which an effect is expected to hold. Third, responsible innovation by design: sustainability, lifecycle considerations, and safety-by-design treated alongside performance, together with regulatory-ready documentation of composition, stability, and quality attributes; the aim is not to slow discovery, but to avoid predictable failure modes and accelerate credible translation.Taken together, these papers reinforce a practical direction for the field: design choices that can be defended mechanistically, experimental models treated as controllable systems, and earlier engagement with translation constraints so that promising concepts are not lost for avoidable reasons. As with any collection, the four articles are not meant to be exhaustive. Instead, they illustrate how the nano-bio interface can be approached as a set of measurable, testable relationships that span materials, models, and time. We hope this research topic will stimulate discussion, inspire collaborations, and help sharpen the evidence standards that move nanobiotechnology from demonstration to dependable application.Prof. Ciofani is a shareholder of Kidaria Bioscience SRL, but declares no competing interests related to the article collection.",
+          "year": 2026,
+          "score": 0.6161435842514038
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Model-predictive and robust feedback control strategies for multi-input multi-output processes that can coordinate heterogeneous actuators under constraints, uncertainty, and spatiotemporal targets.",
+        "keywords": [
+          {
+            "text": "model predictive control",
+            "score": 9
+          },
+          {
+            "text": "feedback control",
+            "score": 9
+          },
+          {
+            "text": "state estimation",
+            "score": 8
+          },
+          {
+            "text": "spatiotemporal control",
+            "score": 8
+          },
+          {
+            "text": "multi-input multi-output systems",
+            "score": 7
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W3092255269",
+          "title": "Constrained control: computations, performance and robustness",
+          "abstract": "",
+          "year": 2008,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W4315926887",
+          "title": "Call for Papers: Robust Cooperative Control for Heterogeneous Nonlinear Multi-Agent Systems",
+          "abstract": "",
+          "year": 2023,
+          "score": 0.989
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Cyber-physical system design patterns, digital-twin simulation, and runtime verification methods for closed-loop orchestration of distributed, heterogeneous components with event-triggered actuation.",
+        "keywords": [
+          {
+            "text": "cyber-physical systems",
+            "score": 9
+          },
+          {
+            "text": "digital twin",
+            "score": 8
+          },
+          {
+            "text": "runtime verification",
+            "score": 8
+          },
+          {
+            "text": "event-driven orchestration",
+            "score": 7
+          },
+          {
+            "text": "formal specification",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4412308662",
+          "title": "Integrated Tool Chain for Model-Based Design of Cyber-Physical Systems",
+          "abstract": "",
+          "year": 2016,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W2808897733",
+          "title": "An Efficient Platform and Communication Architecture for Event-triggered Cyber-physical Systems",
+          "abstract": "",
+          "year": 2018,
+          "score": 0.9885
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "step": "step6",
+      "command_name": "paper-search",
+      "cache_hit": true,
+      "payload": {
+        "query_text": "Current methods separately achieve protein-material conjugation, intracellular metabolite-responsive regulation, and light-controlled cell transport, but they do not provide a unified, predictive, closed-loop programming framework that coordinates molecular interfacing, cellular sensing, genetic regulation, and extracellular matrix remodeling into a single living material system while preserving viability, orthogonality, and spatiotemporal control.",
+        "field": "abstract",
+        "top_k": 2,
+        "after": null,
+        "before": null
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4248634975",
+          "title": "Faculty Opinions recommendation of Spatiotemporal control of cell signalling using a light-switchable protein interaction.",
+          "abstract": "Genetically-encodable optical reporters, such as Green Fluorescent Protein, have revolutionized the observation and measurement of cellular states. However, the inverse challenge of using light to precisely control cellular behavior has only recently begun to be addressed; semi-synthetic chromophore-tethered receptors 1 and naturally-occurring channel rhodopsins have been used to directly perturb neuronal networks 2 , 3 . The difficulty of engineering light sensitive proteins remains a significant impediment to the optical control to most cell-biological processes. Here we demonstrate the use of a new genetically-encoded light-control system based on an optimized reversible protein-protein interaction from the phytochrome signaling network of Arabidopsis thaliana. Because protein-protein interactions are one of the most general currencies of cellular information, this system can in principal be generically used to control diverse functions. Here we show that this system can be used to precisely and reversibly translocate target proteins to the membrane with micrometer spatial resolution and second time resolution. We show that lightgated translocation of the upstream activators of rho-family GTPases, which control the actin cytoskeleton, can be used to precisely reshape and direct the cell morphology of mammalian cells. The light-gated protein-protein interaction that has been optimized in this work should be useful Users may view, print, copy, and download text and data-mine the content in such documents, for the purposes of academic research,",
+          "year": 2009,
+          "score": 0.6169757843017578
+        },
+        {
+          "paper_id": "https://openalex.org/W7128513494",
+          "title": "Editorial: Insights in nanobiotechnology 2024/2025: novel developments, current challenges, and future perspectives",
+          "abstract": "Nanobiotechnology is progressing rapidly, and the last few years have brought a noticeable shift in what the community expects as proof. Advances in nanomaterial design, characterization, and experimental models now make it possible to ask more demanding questions: not only whether a nano-enabled intervention works, but why it works, when it fails, and how its performance depends on context. In practice, the field is moving from demonstrations in simplified settings to nanosystems the behaviour of which can be explained mechanistically, reproduced across laboratories, and steered in realistic biological or environmental conditions. This Research Topic contributes to that broader goal by bringing together forwardlooking pieces that highlight both progress and bottlenecks across the nano-bio interface. This edition gathers four articles spanning immunomodulatory nanomaterials (Ceccarelli et al., 10.3389/fbioe.2025.1672520), photocatalytic nanocomposites for environmental remediation (Ram et al., 10.3389/fbioe.2025.1458965), computational design frameworks for organ-on-chip systems (Taleban et al., 10.3389/fbioe.2025.1716813), and quantitative perspectives on biological timing and synchrony (Al-Omari et al., 10.3389/fmolb.2025.1697003).Despite Al-Omari et al. is not centred on nanomaterials, the contribution underscores a point that carries directly to nanobiotechnology: time and heterogeneity are not nuisance variables. While the topics range from immune modulation to microphysiology and microbial rhythms, they converge on a common theme: understanding and controlling nano-bio behaviour requires attention to mechanism, microenvironment, and time. In other words, there is no single nano-bio interface. Depending on the question, it might be an immune cell deciding which phenotype to adopt, a microfluidic device setting gradients and forces that shape cell fate, a catalytic surface driving chemical transformation in water, or a population of single cells synchronizing their behaviour over time.Across these four papers, several challenges emerge that are common to much of nanobiotechnology. Reproducibility and comparability still hinge on variables that are easy to underreport, such as dispersion state in biological media, batch-to-batch variation, and dose definitions that go beyond nominal mass concentration (particle number, surface area, or delivered dose).Equally, biological relevance is increasingly an engineering constraint. If gradients, mechanics and exposure time are not designed and validated, experimental outcomes can be systematically biased. Translation adds further layers, whether in photocatalysis (energy input, robustness, and by-products under realistic matrices) or in immunomodulation (immune ecosystem effects, safety, and manufacturability). These constraints are not administrative afterthoughts, they are design parameters that can and should be considered early.Looking forward, three priorities stand out. First, mechanism-first nanobiotechnology: linking physicochemical features to causal biological or chemical pathways, supported by time-resolved, multi-parameter phenotyping and perturbations that discriminate between alternative explanations. Second, predictive design loops: integrating simulation, controlled microenvironments, and data to generate and prioritise hypotheses, and then stress-testing those hypotheses experimentally with explicit uncertainty and sensitivity analyses; modelling is most valuable when it guides which experiments to do next, how to interpret discordant readouts, and how to define the boundary conditions under which an effect is expected to hold. Third, responsible innovation by design: sustainability, lifecycle considerations, and safety-by-design treated alongside performance, together with regulatory-ready documentation of composition, stability, and quality attributes; the aim is not to slow discovery, but to avoid predictable failure modes and accelerate credible translation.Taken together, these papers reinforce a practical direction for the field: design choices that can be defended mechanistically, experimental models treated as controllable systems, and earlier engagement with translation constraints so that promising concepts are not lost for avoidable reasons. As with any collection, the four articles are not meant to be exhaustive. Instead, they illustrate how the nano-bio interface can be approached as a set of measurable, testable relationships that span materials, models, and time. We hope this research topic will stimulate discussion, inspire collaborations, and help sharpen the evidence standards that move nanobiotechnology from demonstration to dependable application.Prof. Ciofani is a shareholder of Kidaria Bioscience SRL, but declares no competing interests related to the article collection.",
+          "year": 2026,
+          "score": 0.6161435842514038
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Transfer formal programming abstractions, event-driven orchestration, and runtime verification methods from concurrent and cyber-physical software to coordinate heterogeneous biological components with composability, orthogonality, and timed spatial constraints.",
+        "keywords": [
+          {
+            "text": "formal verification",
+            "score": 8
+          },
+          {
+            "text": "event-driven architecture",
+            "score": 7
+          },
+          {
+            "text": "runtime monitoring",
+            "score": 8
+          },
+          {
+            "text": "compositional programming",
+            "score": 7
+          },
+          {
+            "text": "cyber-physical systems",
+            "score": 9
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W2102793056",
+          "title": "Towards Big Biology:: high-performance verification of large concurrent systems",
+          "abstract": "",
+          "year": 2012,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W3123219945",
+          "title": "Formal Verification for Natural and Engineered Biological Systems",
+          "abstract": "Computational modeling is now used effectively to complement experimental work in biology, allowing to identify gaps in our understanding of the biological systems studied, and to predict system behavior based on a mechanistic model.We provide an overview of several areas in biology for which formal verification has...",
+          "year": 2020,
+          "score": 0.9637
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Apply model predictive control, distributed feedback, and robust adaptive control strategies to regulate coupled biological sensing, genetic regulation, and matrix remodeling under uncertainty while preserving viability and spatiotemporal precision.",
+        "keywords": [
+          {
+            "text": "model predictive control",
+            "score": 9
+          },
+          {
+            "text": "closed-loop feedback",
+            "score": 9
+          },
+          {
+            "text": "robust adaptive control",
+            "score": 8
+          },
+          {
+            "text": "distributed control systems",
+            "score": 7
+          },
+          {
+            "text": "spatiotemporal regulation",
+            "score": 8
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W3214605415",
+          "title": "Systems and control theoretic approaches to engineer robust biological systems",
+          "abstract": "",
+          "year": 2020,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W4403706347",
+          "title": "A computational framework for optimal and Model Predictive Control of stochastic gene regulatory networks",
+          "abstract": "Engineering biology requires precise control of biomolecular circuits, and Cybergenetics is the field dedicated to achieving this goal. A significant challenge in developing controllers for cellular functions is designing systems that can effectively manage molecular noise. To address this, there has been increasing...",
+          "year": 2024,
+          "score": 0.9319
+        }
+      ]
+    }
+  ]
+}

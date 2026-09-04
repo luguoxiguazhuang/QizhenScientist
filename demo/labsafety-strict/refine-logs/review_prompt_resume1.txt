@@ -1,0 +1,189 @@
+FOCUSED CODE REVIEW (delta review; the base pipeline already passed reviews A-D).
+Review ONLY the two NEW pieces below for BLOCKING correctness/safety issues in
+the context of an unattended multi-hour orchestration. Style nits: skip.
+
+CONTEXT
+- GPUs allowed: 4,5,6,7 ONLY. Never colocate two model replicas on one GPU
+  (each script sets CUDA_VISIBLE_DEVICES to a single device per replica).
+- All stage scripts are checkpoint-resumable (judge calls in JSONL ckpts;
+  generation/eval shards skip already-written items).
+- Pre-registered protocol is binding: no hyperparameter/protocol drift.
+- Orchestration takes over mid-flight: gen_s200 (bash pid $1) and filter_s42
+  (bash pid $2) are already running under separate parents; the script waits
+  on them via /proc polling.
+- Stage wrappers: run_gen_seed.sh <seed> <run_id> [gpus]; run_filter_seed.sh <seed>;
+  run_student_sft_seed.sh <seed> <gpus: 1st=treated, 2nd=ctrlb>;
+  run_eval.sh <arm> <seed> <run_id> [gpus -> one eval gen shard per GPU, then CPU judge stage].
+  Each writes runs/<run_id>/cost.json with status/gpu_ids.
+
+NEW PIECE 1: pipeline/continue_m0.sh
+#!/bin/bash
+# M0 continuation orchestrator (takes over from driver.sh after the in-flight
+# filter-s42 restart orphaned the driver's wait chain).
+#
+# Remaining grid (driver phases P5..P10), GPUs 4,5,6,7 only:
+#   gen s200 (in flight) + filter s42 (in flight)  -> finish first
+#   P5: filter s200 (CPU/judge) || gen s201 (GPUs 4-7)
+#   P6: filter s201 (CPU) || student SFT s42 (GPUs 4,5)
+#   P7: eval s42 treated (GPUs 4,5) || eval s42 ctrlb (GPUs 6,7)
+#   P8: SFT s200 (GPUs 4,5 after filter s200) || SFT s201 (GPUs 6,7 after filter s201)
+#   P9: eval s200 (GPUs 4,5) || eval s201 (GPUs 6,7)
+#   P10: R018 re-judge stability (CPU) -> R019 verdict (CPU)
+# All stage scripts are checkpoint-resumable; this script only sequences them.
+set -u
+cd /REDACTED/tiaozhanbei/demo/labsafety
+PY=/REDACTED/miniconda3/envs/subliminal_mm/bin/python
+log() { echo "[$(date -u +%FT%TZ)] $*"; }
+
+GEN200_PID=${1:-}
+FILTER42_PID=${2:-}
+
+wait_pid() { # <pid> <desc>
+  local pid=$1 desc=$2
+  if [ -n "$pid" ] && [ -d "/proc/$pid" ]; then
+    log "waiting on $desc (pid $pid)"
+    while [ -d "/proc/$pid" ]; do sleep 30; done
+    log "$desc (pid $pid) exited"
+  else
+    log "$desc already exited"
+  fi
+}
+
+check_pool() { # <seed>
+  $PY - "$1" <<'EOF'
+import glob, json, sys
+seed = sys.argv[1]
+for arm in ("treated", "ctrlb"):
+    n = 0
+    for f in glob.glob(f"runs/gen_s{seed}/{arm}/shard_*.jsonl"):
+        with open(f, encoding="utf-8") as fh:
+            n += sum(1 for ln in fh if ln.strip())
+    assert n >= 11900, f"gen_s{seed} {arm}: only {n} rows"
+    print(f"gen_s{seed} {arm}: {n} rows OK", flush=True)
+EOF
+}
+
+fail() { log "STAGE FAILED: $*"; exit 1; }
+
+# ---------- finish in-flight P4 work ----------
+wait_pid "$GEN200_PID" "gen s200"
+check_pool 200 || fail "gen s200 pool incomplete"
+log "gen s200 pool verified"
+
+wait_pid "$FILTER42_PID" "filter s42"
+[ -f runs/filter_s42/filter_stats.json ] || fail "filter s42 produced no filter_stats.json"
+[ -f runs/filter_s42/student_data_treated.json ] || fail "filter s42 missing student_data_treated.json"
+[ -f runs/filter_s42/student_data_ctrlb.json ] || fail "filter s42 missing student_data_ctrlb.json"
+log "filter s42 verified"
+
+# ---------- P5: filter s200 (CPU/judge) || gen s201 (GPUs 4-7) ----------
+nohup bash pipeline/run_filter_seed.sh 200 > runs/_continue_filter200.log 2>&1 &
+F2=$!
+log "P5: filter s200 launched (pid $F2) || gen s201 starting"
+bash pipeline/run_gen_seed.sh 201 R016_gen_s201 4,5,6,7 > runs/_continue_gen201.log 2>&1 \
+  || fail "gen s201"
+check_pool 201 || fail "gen s201 pool incomplete"
+log "gen s201 done"
+
+# ---------- P6: filter s201 (CPU) || student SFT s42 (GPUs 4,5) ----------
+nohup bash pipeline/run_filter_seed.sh 201 > runs/_continue_filter201.log 2>&1 &
+F3=$!
+log "P6: filter s201 launched (pid $F3); student SFT s42 starting on GPUs 4,5"
+bash pipeline/run_student_sft_seed.sh 42 4,5 > runs/_continue_sft42.log 2>&1 \
+  || fail "student SFT s42"
+log "student SFT s42 done"
+
+# ---------- P7: eval s42 treated (4,5) || eval s42 ctrlb (6,7) ----------
+log "P7: eval s42 both arms"
+bash pipeline/run_eval.sh treated 42 R013_eval_treated_s42 4,5 > runs/_continue_eval42t.log 2>&1 &
+E1=$!
+bash pipeline/run_eval.sh ctrlb 42 R014_eval_ctrlb_s42 6,7 > runs/_continue_eval42b.log 2>&1 &
+E2=$!
+wait $E1; S1=$?; wait $E2; S2=$?
+[ $S1 -eq 0 ] || fail "eval treated s42"
+[ $S2 -eq 0 ] || fail "eval ctrlb s42"
+log "eval s42 done"
+
+# ---------- P8: SFT s200 (4,5) after filter s200 || SFT s201 (6,7) after filter s201 ----------
+wait_pid $F2 "filter s200"
+[ -f runs/filter_s200/student_data_treated.json ] || fail "filter s200 missing student data"
+log "P8: SFT s200 on GPUs 4,5"
+bash pipeline/run_student_sft_seed.sh 200 4,5 > runs/_continue_sft200.log 2>&1 &
+S200=$!
+
+wait_pid $F3 "filter s201"
+[ -f runs/filter_s201/student_data_treated.json ] || fail "filter s201 missing student data"
+log "P8b: SFT s201 on GPUs 6,7"
+bash pipeline/run_student_sft_seed.sh 201 6,7 > runs/_continue_sft201.log 2>&1 &
+S201=$!
+wait $S200; R1=$?; wait $S201; R2=$?
+[ $R1 -eq 0 ] || fail "student SFT s200"
+[ $R2 -eq 0 ] || fail "student SFT s201"
+log "student SFT s200+s201 done"
+
+# ---------- P9: eval s200 (GPUs 4,5, sequential arms) || eval s201 (GPUs 6,7) ----------
+# one model replica per GPU: arms serialize within a GPU pair, pairs run in parallel
+log "P9: eval s200 + s201"
+(
+  bash pipeline/run_eval.sh treated 200 R015_eval_treated_s200 4,5 > runs/_continue_eval200t.log 2>&1 \
+    || fail "eval treated s200"
+  bash pipeline/run_eval.sh ctrlb 200 R015_eval_ctrlb_s200 4,5 > runs/_continue_eval200b.log 2>&1 \
+    || fail "eval ctrlb s200"
+) &
+PA=$!
+(
+  bash pipeline/run_eval.sh treated 201 R016_eval_treated_s201 6,7 > runs/_continue_eval201t.log 2>&1 \
+    || fail "eval treated s201"
+  bash pipeline/run_eval.sh ctrlb 201 R016_eval_ctrlb_s201 6,7 > runs/_continue_eval201b.log 2>&1 \
+    || fail "eval ctrlb s201"
+) &
+PB=$!
+wait $PA; RA=$?; wait $PB; RB=$?
+[ $RA -eq 0 ] || fail "eval s200 pair"
+[ $RB -eq 0 ] || fail "eval s201 pair"
+log "eval s200+s201 done"
+
+# ---------- P10: R018 re-judge stability -> R019 verdict ----------
+NREC=$(find runs -name eval_records.json | wc -l)
+log "eval_records.json found: $NREC (expect 7: ctrlA + treated/ctrlb x 3 seeds)"
+[ "$NREC" -ge 7 ] || fail "missing eval records before rejudge"
+bash pipeline/stage.sh R018_rejudge_stability none $PY pipeline/rejudge.py > runs/_continue_rejudge.log 2>&1 \
+  || fail "rejudge"
+log "rejudge done"
+bash pipeline/stage.sh R019_verdict none $PY pipeline/verdict.py > runs/_continue_verdict.log 2>&1 \
+  || fail "verdict"
+log "verdict done"
+
+$PY - <<'EOF'
+import json
+v = json.load(open("runs/R019_verdict/verdict.json"))
+print("=== M0 SUMMARY ===")
+print("verdict:", v["verdict"])
+print("notes:", v["notes"])
+print("accuracies:", json.dumps({k: round(x, 4) for k, x in v["accuracies"].items()}, indent=1))
+print("gaps_pp:", json.dumps(v["gaps"], indent=1)[:800])
+print("bootstrap_ci:", v["bootstrap_ci"])
+print("mcnemar_pooled:", v["mcnemar_pooled"])
+print("rescan:", json.dumps(v["rescan"], indent=1)[:600])
+print("rescan_clean:", v["rescan_clean"])
+print("gates:", json.dumps(v["gates"], indent=1)[:800])
+EOF
+log "M0 CONTINUATION COMPLETE"
+
+NEW PIECE 2: verdict.py patch (pre_registered.json has a leading '# comment' line, which made plain json.load crash):
+--- old
++++ new
+-PRE = read_json(os.path.join(os.path.dirname(__file__), "pre_registered.json"))
++def _read_pre_registered(path):
++    # pre_registered.json is stored JSONC-style: leading '#' comment lines are
++    # documentation only. Strip them before parsing; the JSON body (the actual
++    # pre-registration) is used verbatim.
++    with open(path, encoding="utf-8") as f:
++        lines = [ln for ln in f if not ln.lstrip().startswith("#")]
++    return json.loads("".join(lines))
++PRE = _read_pre_registered(os.path.join(os.path.dirname(__file__), "pre_registered.json"))
+
+TASK: list BLOCKING issues only (deadlocks, races on shared checkpoints/files,
+GPU overcommit, wrong dependency order, silent protocol drift, bash traps that
+would hang or misreport). For each: location, why blocking, minimal fix.
+If none, say "NO BLOCKING ISSUES".

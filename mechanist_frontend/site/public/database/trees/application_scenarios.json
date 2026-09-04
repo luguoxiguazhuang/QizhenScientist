@@ -1,0 +1,2411 @@
+{
+  "id": "application_scenarios",
+  "label": "Application / Scenarios",
+  "helper_label": "TaskScenario",
+  "description": "Downstream tasks and use cases where the interpretability work is grounded.",
+  "paper_cap_target": 100,
+  "big_nodes": [
+    {
+      "id": "fact_knowledge",
+      "label": "Fact Knowledge",
+      "total_papers_in_db": 1960,
+      "leaf_paper_count": 30,
+      "paper_ids": [
+        "W2898365215",
+        "W2962816513",
+        "W3166986030",
+        "W4281657280",
+        "W4362655426",
+        "W2938224028",
+        "W3035102548",
+        "W3152884768",
+        "W2797270586",
+        "W2897507397",
+        "W2964031179",
+        "W2783905278",
+        "W1579683266",
+        "W4389520370",
+        "W4375958700",
+        "W4285147034",
+        "W3170037207",
+        "W4387355345",
+        "W4287649558",
+        "W2970886003",
+        "W3196813608",
+        "W4306313145",
+        "W4225844297",
+        "W4310926773",
+        "W3015770160",
+        "W4301194718",
+        "W3107969673",
+        "W2972312591",
+        "W4378508644",
+        "W4387356388"
+      ],
+      "papers": [
+        {
+          "id": "W2898365215",
+          "openalex_id": "https://openalex.org/W2898365215",
+          "title": "A mathematical theory of semantic development in deep neural networks",
+          "year": 2019,
+          "cited": 239,
+          "type": "article",
+          "venue": "Proceedings of the National Academy of Sciences",
+          "venue_type": "journal"
+        },
+        {
+          "id": "W2962816513",
+          "openalex_id": "https://openalex.org/W2962816513",
+          "title": "Pathologies of Neural Models Make Interpretations Difficult",
+          "year": 2018,
+          "cited": 236,
+          "type": "preprint",
+          "venue": "EMNLP",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W3166986030",
+          "openalex_id": "https://openalex.org/W3166986030",
+          "title": "Factual Probing Is [MASK]: Learning vs. Learning to Recall",
+          "year": 2021,
+          "cited": 235,
+          "type": "article",
+          "venue": "NAACL",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W4281657280",
+          "openalex_id": "https://openalex.org/W4281657280",
+          "title": "Locating and Editing Factual Associations in GPT",
+          "year": 2022,
+          "cited": 175,
+          "type": "preprint",
+          "venue": "NeurIPS",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W4362655426",
+          "openalex_id": "https://openalex.org/W4362655426",
+          "title": "A Note on Normalized Emergence Timing (in Pythia Language Model Evaluations)",
+          "year": 2023,
+          "cited": 163,
+          "type": "preprint",
+          "venue": "ICML",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W2938224028",
+          "openalex_id": "https://openalex.org/W2938224028",
+          "title": "Understanding the Behaviors of BERT in Ranking",
+          "year": 2019,
+          "cited": 146,
+          "type": "preprint",
+          "venue": "arXiv",
+          "venue_type": "preprint_repository"
+        },
+        {
+          "id": "W3035102548",
+          "openalex_id": "https://openalex.org/W3035102548",
+          "title": "Interpreting Pretrained Contextualized Representations via Reductions to Static Embeddings",
+          "year": 2020,
+          "cited": 135,
+          "type": "article",
+          "venue": "ACL",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W3152884768",
+          "openalex_id": "https://openalex.org/W3152884768",
+          "title": "Knowledge Neurons in Pretrained Transformers",
+          "year": 2022,
+          "cited": 125,
+          "type": "article",
+          "venue": "ACL",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W2797270586",
+          "openalex_id": "https://openalex.org/W2797270586",
+          "title": "Integrated deep visual and semantic attractor neural networks predict fMRI pattern-information along the ventral object processing pathway",
+          "year": 2018,
+          "cited": 116,
+          "type": "article",
+          "venue": "Scientific Reports",
+          "venue_type": "journal"
+        },
+        {
+          "id": "W2897507397",
+          "openalex_id": "https://openalex.org/W2897507397",
+          "title": "An Analysis of Attention Mechanisms: The Case of Word Sense Disambiguation in Neural Machine Translation",
+          "year": 2018,
+          "cited": 107,
+          "type": "article",
+          "venue": "Zurich Open Repository and Archive (University of Zurich)",
+          "venue_type": "repository"
+        },
+        {
+          "id": "W2964031179",
+          "openalex_id": "https://openalex.org/W2964031179",
+          "title": "Examining CNN Representations With Respect to Dataset Bias",
+          "year": 2018,
+          "cited": 98,
+          "type": "article",
+          "venue": "AAAI",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W2783905278",
+          "openalex_id": "https://openalex.org/W2783905278",
+          "title": "An Interpretable Reasoning Network for Multi-Relation Question Answering",
+          "year": 2018,
+          "cited": 82,
+          "type": "preprint",
+          "venue": "COLING",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W1579683266",
+          "openalex_id": "https://openalex.org/W1579683266",
+          "title": "Biologically Plausible, Human‐Scale Knowledge Representation",
+          "year": 2015,
+          "cited": 82,
+          "type": "article",
+          "venue": "Cognitive Science",
+          "venue_type": "journal"
+        },
+        {
+          "id": "W4389520370",
+          "openalex_id": "https://openalex.org/W4389520370",
+          "title": "Editing Large Language Models: Problems, Methods, and Opportunities",
+          "year": 2023,
+          "cited": 78,
+          "type": "article",
+          "venue": "EMNLP",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W4375958700",
+          "openalex_id": "https://openalex.org/W4375958700",
+          "title": "Language Models Don't Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting",
+          "year": 2023,
+          "cited": 75,
+          "type": "preprint",
+          "venue": "NeurIPS",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W4285147034",
+          "openalex_id": "https://openalex.org/W4285147034",
+          "title": "KQA Pro: A Dataset with Explicit Compositional Programs for Complex Question Answering over Knowledge Base",
+          "year": 2022,
+          "cited": 73,
+          "type": "article",
+          "venue": "ACL",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W3170037207",
+          "openalex_id": "https://openalex.org/W3170037207",
+          "title": "Towards Interpreting and Mitigating Shortcut Learning Behavior of NLU models",
+          "year": 2021,
+          "cited": 63,
+          "type": "article",
+          "venue": "NAACL",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W4387355345",
+          "openalex_id": "https://openalex.org/W4387355345",
+          "title": "Its Alive: AI Independence Without Human Prompting",
+          "year": 2023,
+          "cited": 59,
+          "type": "preprint",
+          "venue": "arXiv",
+          "venue_type": "preprint_repository"
+        },
+        {
+          "id": "W4287649558",
+          "openalex_id": "https://openalex.org/W4287649558",
+          "title": "Interpreting Graph Neural Networks for NLP With Differentiable Edge\\n Masking",
+          "year": 2020,
+          "cited": 59,
+          "type": "preprint",
+          "venue": "ICLR",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W2970886003",
+          "openalex_id": "https://openalex.org/W2970886003",
+          "title": "Self-Assembling Modular Networks for Interpretable Multi-Hop Reasoning",
+          "year": 2019,
+          "cited": 57,
+          "type": "article",
+          "venue": "EMNLP",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W3196813608",
+          "openalex_id": "https://openalex.org/W3196813608",
+          "title": "All Bark and No Bite: Rogue Dimensions in Transformer Language Models Obscure Representational Quality",
+          "year": 2021,
+          "cited": 56,
+          "type": "article",
+          "venue": "EMNLP",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W4306313145",
+          "openalex_id": "https://openalex.org/W4306313145",
+          "title": "Mass-Editing Memory in a Transformer",
+          "year": 2022,
+          "cited": 53,
+          "type": "preprint",
+          "venue": "ICLR",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W4225844297",
+          "openalex_id": "https://openalex.org/W4225844297",
+          "title": "Vision-Language Transformer for Interpretable Pathology Visual Question Answering",
+          "year": 2022,
+          "cited": 48,
+          "type": "article",
+          "venue": "IEEE Journal of Biomedical and Health Informatics",
+          "venue_type": "journal"
+        },
+        {
+          "id": "W4310926773",
+          "openalex_id": "https://openalex.org/W4310926773",
+          "title": "Discovering Latent Knowledge in Language Models Without Supervision",
+          "year": 2022,
+          "cited": 45,
+          "type": "preprint",
+          "venue": "ICLR",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W3015770160",
+          "openalex_id": "https://openalex.org/W3015770160",
+          "title": "Explaining Question Answering Models through Text Generation",
+          "year": 2020,
+          "cited": 44,
+          "type": "preprint",
+          "venue": "arXiv",
+          "venue_type": "preprint_repository"
+        },
+        {
+          "id": "W4301194718",
+          "openalex_id": "https://openalex.org/W4301194718",
+          "title": "Knowledge Neurons in Pretrained Transformers",
+          "year": 2021,
+          "cited": 42,
+          "type": "preprint",
+          "venue": "ACL",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W3107969673",
+          "openalex_id": "https://openalex.org/W3107969673",
+          "title": "Modifying Memories in Transformer Models",
+          "year": 2020,
+          "cited": 42,
+          "type": "preprint",
+          "venue": "arXiv",
+          "venue_type": "preprint_repository"
+        },
+        {
+          "id": "W2972312591",
+          "openalex_id": "https://openalex.org/W2972312591",
+          "title": "How Does BERT Answer Questions? A Layer-Wise Analysis of Transformer Representations",
+          "year": 2019,
+          "cited": 42,
+          "type": "preprint",
+          "venue": "International Conference on Information and Knowledge Management",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W4378508644",
+          "openalex_id": "https://openalex.org/W4378508644",
+          "title": "Large Language Models as Commonsense Knowledge for Large-Scale Task Planning",
+          "year": 2023,
+          "cited": 41,
+          "type": "preprint",
+          "venue": "NeurIPS",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W4387356388",
+          "openalex_id": "https://openalex.org/W4387356388",
+          "title": "Language Models Represent Space and Time",
+          "year": 2023,
+          "cited": 40,
+          "type": "preprint",
+          "venue": "ICLR",
+          "venue_type": "conference"
+        }
+      ]
+    },
+    {
+      "id": "math",
+      "label": "Math",
+      "total_papers_in_db": 1222,
+      "leaf_paper_count": 19,
+      "paper_ids": [
+        "W2078176013",
+        "W2786209943",
+        "W3134307371",
+        "W4311726128",
+        "W4310509152",
+        "W2557270725",
+        "W4226434736",
+        "W4378942694",
+        "W2124151298",
+        "W4414485088",
+        "W4320516905",
+        "W4287649558",
+        "W4316135772",
+        "W4281748205",
+        "W3197009789",
+        "W4378508644",
+        "W2132547887",
+        "W4311408938",
+        "W2574741565"
+      ],
+      "papers": [
+        {
+          "id": "W2078176013",
+          "openalex_id": "https://openalex.org/W2078176013",
+          "title": "Learning at the Knowledge Level",
+          "year": 1986,
+          "cited": 202,
+          "type": "article",
+          "venue": "Machine Learning",
+          "venue_type": "journal"
+        },
+        {
+          "id": "W2786209943",
+          "openalex_id": "https://openalex.org/W2786209943",
+          "title": "Compositional Attention Networks for Machine Reasoning",
+          "year": 2018,
+          "cited": 132,
+          "type": "preprint",
+          "venue": "ICML",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W3134307371",
+          "openalex_id": "https://openalex.org/W3134307371",
+          "title": "Pretrained Transformers as Universal Computation Engines",
+          "year": 2021,
+          "cited": 99,
+          "type": "preprint",
+          "venue": "arXiv",
+          "venue_type": "preprint_repository"
+        },
+        {
+          "id": "W4311726128",
+          "openalex_id": "https://openalex.org/W4311726128",
+          "title": "Transformers learn in-context by gradient descent",
+          "year": 2022,
+          "cited": 89,
+          "type": "preprint",
+          "venue": "ICML",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W4310509152",
+          "openalex_id": "https://openalex.org/W4310509152",
+          "title": "What learning algorithm is in-context learning? Investigations with linear models",
+          "year": 2022,
+          "cited": 85,
+          "type": "preprint",
+          "venue": "ICLR",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W2557270725",
+          "openalex_id": "https://openalex.org/W2557270725",
+          "title": "Capacity and Trainability in Recurrent Neural Networks",
+          "year": 2016,
+          "cited": 82,
+          "type": "article",
+          "venue": "ICML",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W4226434736",
+          "openalex_id": "https://openalex.org/W4226434736",
+          "title": "Grokking: Generalization Beyond Overfitting on Small Algorithmic Datasets",
+          "year": 2022,
+          "cited": 76,
+          "type": "preprint",
+          "venue": "arXiv",
+          "venue_type": "preprint_repository"
+        },
+        {
+          "id": "W4378942694",
+          "openalex_id": "https://openalex.org/W4378942694",
+          "title": "Faith and Fate: Limits of Transformers on Compositionality",
+          "year": 2023,
+          "cited": 71,
+          "type": "preprint",
+          "venue": "NeurIPS",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W2124151298",
+          "openalex_id": "https://openalex.org/W2124151298",
+          "title": "Modeling language and cognition with deep unsupervised learning: a tutorial overview",
+          "year": 2013,
+          "cited": 67,
+          "type": "article",
+          "venue": "Frontiers in Psychology",
+          "venue_type": "journal"
+        },
+        {
+          "id": "W4414485088",
+          "openalex_id": "https://openalex.org/W4414485088",
+          "title": "The Illusion of Thinking",
+          "year": 2025,
+          "cited": 66,
+          "type": "article",
+          "venue": "SuperIntelligence - Robotics - Safety & Alignment",
+          "venue_type": "journal"
+        },
+        {
+          "id": "W4320516905",
+          "openalex_id": "https://openalex.org/W4320516905",
+          "title": "What Can Transformers Learn In-Context? A Case Study of Simple Function Classes",
+          "year": 2022,
+          "cited": 59,
+          "type": "preprint",
+          "venue": "NeurIPS",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W4287649558",
+          "openalex_id": "https://openalex.org/W4287649558",
+          "title": "Interpreting Graph Neural Networks for NLP With Differentiable Edge\\n Masking",
+          "year": 2020,
+          "cited": 59,
+          "type": "preprint",
+          "venue": "ICLR",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W4316135772",
+          "openalex_id": "https://openalex.org/W4316135772",
+          "title": "Progress measures for grokking via mechanistic interpretability",
+          "year": 2023,
+          "cited": 54,
+          "type": "preprint",
+          "venue": "ICLR",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W4281748205",
+          "openalex_id": "https://openalex.org/W4281748205",
+          "title": "Teaching Models to Express Their Uncertainty in Words",
+          "year": 2022,
+          "cited": 54,
+          "type": "preprint",
+          "venue": "TMLR",
+          "venue_type": "journal"
+        },
+        {
+          "id": "W3197009789",
+          "openalex_id": "https://openalex.org/W3197009789",
+          "title": "The Devil is in the Detail: Simple Tricks Improve Systematic Generalization of Transformers",
+          "year": 2021,
+          "cited": 54,
+          "type": "article",
+          "venue": "EMNLP",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W4378508644",
+          "openalex_id": "https://openalex.org/W4378508644",
+          "title": "Large Language Models as Commonsense Knowledge for Large-Scale Task Planning",
+          "year": 2023,
+          "cited": 41,
+          "type": "preprint",
+          "venue": "NeurIPS",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W2132547887",
+          "openalex_id": "https://openalex.org/W2132547887",
+          "title": "Tree-structured composition in neural networks without tree-structured architectures",
+          "year": 2015,
+          "cited": 40,
+          "type": "preprint",
+          "venue": "NeurIPS",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W4311408938",
+          "openalex_id": "https://openalex.org/W4311408938",
+          "title": "Thinking Fast and Slow in Large Language Models",
+          "year": 2022,
+          "cited": 38,
+          "type": "preprint",
+          "venue": "PubMed",
+          "venue_type": "repository"
+        },
+        {
+          "id": "W2574741565",
+          "openalex_id": "https://openalex.org/W2574741565",
+          "title": "Diagnostic Classifiers: Revealing how Neural Networks Process Hierarchical Structure",
+          "year": 2016,
+          "cited": 38,
+          "type": "article",
+          "venue": "ICLR",
+          "venue_type": "conference"
+        }
+      ]
+    },
+    {
+      "id": "code",
+      "label": "Code",
+      "total_papers_in_db": 395,
+      "leaf_paper_count": 6,
+      "paper_ids": [
+        "W1951216520",
+        "W4295728955",
+        "W3034190530",
+        "W2607964821",
+        "W3197009789",
+        "W2909239562"
+      ],
+      "papers": [
+        {
+          "id": "W1951216520",
+          "openalex_id": "https://openalex.org/W1951216520",
+          "title": "Visualizing and Understanding Recurrent Networks",
+          "year": 2015,
+          "cited": 888,
+          "type": "preprint",
+          "venue": "arXiv",
+          "venue_type": "preprint_repository"
+        },
+        {
+          "id": "W4295728955",
+          "openalex_id": "https://openalex.org/W4295728955",
+          "title": "On the Bottleneck of Graph Neural Networks and its Practical\\n Implications",
+          "year": 2020,
+          "cited": 147,
+          "type": "preprint",
+          "venue": "ICLR",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W3034190530",
+          "openalex_id": "https://openalex.org/W3034190530",
+          "title": "On the Bottleneck of Graph Neural Networks and its Practical Implications",
+          "year": 2020,
+          "cited": 90,
+          "type": "preprint",
+          "venue": "ICLR",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W2607964821",
+          "openalex_id": "https://openalex.org/W2607964821",
+          "title": "Making Neural Programming Architectures Generalize via Recursion",
+          "year": 2017,
+          "cited": 80,
+          "type": "preprint",
+          "venue": "ICLR",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W3197009789",
+          "openalex_id": "https://openalex.org/W3197009789",
+          "title": "The Devil is in the Detail: Simple Tricks Improve Systematic Generalization of Transformers",
+          "year": 2021,
+          "cited": 54,
+          "type": "article",
+          "venue": "EMNLP",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W2909239562",
+          "openalex_id": "https://openalex.org/W2909239562",
+          "title": "RNNbow: Visualizing Learning Via Backpropagation Gradients in RNNs",
+          "year": 2018,
+          "cited": 38,
+          "type": "article",
+          "venue": "IEEE Computer Graphics and Applications",
+          "venue_type": "journal"
+        }
+      ]
+    },
+    {
+      "id": "science",
+      "label": "Science",
+      "total_papers_in_db": 927,
+      "leaf_paper_count": 14,
+      "paper_ids": [
+        "W2766856748",
+        "W2963483561",
+        "W3022298391",
+        "W3199772305",
+        "W3208302614",
+        "W3036548566",
+        "W2750673150",
+        "W2078176013",
+        "W2989692526",
+        "W2950535698",
+        "W4295728955",
+        "W2995175313",
+        "W2946617578",
+        "W3134307371"
+      ],
+      "papers": [
+        {
+          "id": "W2766856748",
+          "openalex_id": "https://openalex.org/W2766856748",
+          "title": "Crystal Graph Convolutional Neural Networks for an Accurate and Interpretable Prediction of Material Properties",
+          "year": 2018,
+          "cited": 2432,
+          "type": "article",
+          "venue": "Physical Review Letters",
+          "venue_type": "journal"
+        },
+        {
+          "id": "W2963483561",
+          "openalex_id": "https://openalex.org/W2963483561",
+          "title": "Interpretability Beyond Feature Attribution: Quantitative Testing with\\n Concept Activation Vectors (TCAV)",
+          "year": 2017,
+          "cited": 732,
+          "type": "preprint",
+          "venue": "ICML",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W3022298391",
+          "openalex_id": "https://openalex.org/W3022298391",
+          "title": "Interpretation of machine learning models using shapley values: application to compound potency and multi-target activity predictions",
+          "year": 2020,
+          "cited": 639,
+          "type": "article",
+          "venue": "Journal of Computer-Aided Molecular Design",
+          "venue_type": "journal"
+        },
+        {
+          "id": "W3199772305",
+          "openalex_id": "https://openalex.org/W3199772305",
+          "title": "Biologically informed deep neural network for prostate cancer discovery",
+          "year": 2021,
+          "cited": 398,
+          "type": "article",
+          "venue": "Nature",
+          "venue_type": "journal"
+        },
+        {
+          "id": "W3208302614",
+          "openalex_id": "https://openalex.org/W3208302614",
+          "title": "Interpretable and Explainable Machine Learning for Materials Science and Chemistry",
+          "year": 2022,
+          "cited": 271,
+          "type": "article",
+          "venue": "Accounts of Materials Research",
+          "venue_type": "journal"
+        },
+        {
+          "id": "W3036548566",
+          "openalex_id": "https://openalex.org/W3036548566",
+          "title": "Discovering Symbolic Models from Deep Learning with Inductive Biases",
+          "year": 2020,
+          "cited": 269,
+          "type": "preprint",
+          "venue": "NeurIPS",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W2750673150",
+          "openalex_id": "https://openalex.org/W2750673150",
+          "title": "Machine Learning Topological Invariants with Neural Networks",
+          "year": 2018,
+          "cited": 263,
+          "type": "article",
+          "venue": "Physical Review Letters",
+          "venue_type": "journal"
+        },
+        {
+          "id": "W2078176013",
+          "openalex_id": "https://openalex.org/W2078176013",
+          "title": "Learning at the Knowledge Level",
+          "year": 1986,
+          "cited": 202,
+          "type": "article",
+          "venue": "Machine Learning",
+          "venue_type": "journal"
+        },
+        {
+          "id": "W2989692526",
+          "openalex_id": "https://openalex.org/W2989692526",
+          "title": "Uncertainty and interpretability in convolutional neural networks for semantic segmentation of colorectal polyps",
+          "year": 2019,
+          "cited": 176,
+          "type": "article",
+          "venue": "Medical Image Analysis",
+          "venue_type": "journal"
+        },
+        {
+          "id": "W2950535698",
+          "openalex_id": "https://openalex.org/W2950535698",
+          "title": "Deep Learning Models of the Retinal Response to Natural Scenes",
+          "year": 2017,
+          "cited": 164,
+          "type": "preprint",
+          "venue": "NeurIPS",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W4295728955",
+          "openalex_id": "https://openalex.org/W4295728955",
+          "title": "On the Bottleneck of Graph Neural Networks and its Practical\\n Implications",
+          "year": 2020,
+          "cited": 147,
+          "type": "preprint",
+          "venue": "ICLR",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W2995175313",
+          "openalex_id": "https://openalex.org/W2995175313",
+          "title": "Representation learning of genomic sequence motifs with convolutional neural networks",
+          "year": 2019,
+          "cited": 126,
+          "type": "article",
+          "venue": "PLoS Computational Biology",
+          "venue_type": "journal"
+        },
+        {
+          "id": "W2946617578",
+          "openalex_id": "https://openalex.org/W2946617578",
+          "title": "Using attribution to decode binding mechanism in neural network models for chemistry",
+          "year": 2019,
+          "cited": 112,
+          "type": "article",
+          "venue": "Proceedings of the National Academy of Sciences",
+          "venue_type": "journal"
+        },
+        {
+          "id": "W3134307371",
+          "openalex_id": "https://openalex.org/W3134307371",
+          "title": "Pretrained Transformers as Universal Computation Engines",
+          "year": 2021,
+          "cited": 99,
+          "type": "preprint",
+          "venue": "arXiv",
+          "venue_type": "preprint_repository"
+        }
+      ]
+    },
+    {
+      "id": "persona",
+      "label": "Persona",
+      "total_papers_in_db": 136,
+      "leaf_paper_count": 2,
+      "paper_ids": [
+        "W4387355345",
+        "W4385681731"
+      ],
+      "papers": [
+        {
+          "id": "W4387355345",
+          "openalex_id": "https://openalex.org/W4387355345",
+          "title": "Its Alive: AI Independence Without Human Prompting",
+          "year": 2023,
+          "cited": 59,
+          "type": "preprint",
+          "venue": "arXiv",
+          "venue_type": "preprint_repository"
+        },
+        {
+          "id": "W4385681731",
+          "openalex_id": "https://openalex.org/W4385681731",
+          "title": "Kronfluence: Influence Functions with Eigenvalue-corrected Kronecker-Factored Approximate Curvature",
+          "year": 2023,
+          "cited": 23,
+          "type": "preprint",
+          "venue": "arXiv",
+          "venue_type": "preprint_repository"
+        }
+      ]
+    },
+    {
+      "id": "safety",
+      "label": "Safety",
+      "total_papers_in_db": 1080,
+      "leaf_paper_count": 17,
+      "paper_ids": [
+        "W2942630857",
+        "W2963249138",
+        "W4288083725",
+        "W2887906331",
+        "W2944701285",
+        "W2991526369",
+        "W2951576127",
+        "W2998600476",
+        "W4385572928",
+        "W2913039310",
+        "W4381989074",
+        "W2988471847",
+        "W3007233875",
+        "W4387355345",
+        "W2891797654",
+        "W4280510162",
+        "W2962864294"
+      ],
+      "papers": [
+        {
+          "id": "W2942630857",
+          "openalex_id": "https://openalex.org/W2942630857",
+          "title": "Adversarial Examples Are Not Bugs, They Are Features",
+          "year": 2019,
+          "cited": 395,
+          "type": "preprint",
+          "venue": "ICLR",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W2963249138",
+          "openalex_id": "https://openalex.org/W2963249138",
+          "title": "Improving the Adversarial Robustness and Interpretability of Deep Neural Networks by Regularizing their Input Gradients",
+          "year": 2017,
+          "cited": 280,
+          "type": "article",
+          "venue": "AAAI",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W4288083725",
+          "openalex_id": "https://openalex.org/W4288083725",
+          "title": "One Explanation Does Not Fit All",
+          "year": 2020,
+          "cited": 144,
+          "type": "article",
+          "venue": "KI - Künstliche Intelligenz",
+          "venue_type": "journal"
+        },
+        {
+          "id": "W2887906331",
+          "openalex_id": "https://openalex.org/W2887906331",
+          "title": "Structured Adversarial Attack: Towards General Implementation and Better Interpretability",
+          "year": 2018,
+          "cited": 103,
+          "type": "preprint",
+          "venue": "ICLR",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W2944701285",
+          "openalex_id": "https://openalex.org/W2944701285",
+          "title": "Shallow-Deep Networks: Understanding and Mitigating Network Overthinking",
+          "year": 2018,
+          "cited": 101,
+          "type": "preprint",
+          "venue": "arXiv",
+          "venue_type": "preprint_repository"
+        },
+        {
+          "id": "W2991526369",
+          "openalex_id": "https://openalex.org/W2991526369",
+          "title": "Interpreting and Improving Adversarial Robustness of Deep Neural Networks With Neuron Sensitivity",
+          "year": 2020,
+          "cited": 96,
+          "type": "article",
+          "venue": "IEEE Transactions on Image Processing",
+          "venue_type": "journal"
+        },
+        {
+          "id": "W2951576127",
+          "openalex_id": "https://openalex.org/W2951576127",
+          "title": "Incorporating Priors with Feature Attribution on Text Classification",
+          "year": 2019,
+          "cited": 90,
+          "type": "preprint",
+          "venue": "ACL",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W2998600476",
+          "openalex_id": "https://openalex.org/W2998600476",
+          "title": "ML-LOO: Detecting Adversarial Examples with Feature Attribution",
+          "year": 2020,
+          "cited": 88,
+          "type": "article",
+          "venue": "AAAI",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W4385572928",
+          "openalex_id": "https://openalex.org/W4385572928",
+          "title": "Transformer Feed-Forward Layers Build Predictions by Promoting Concepts in the Vocabulary Space",
+          "year": 2022,
+          "cited": 82,
+          "type": "article",
+          "venue": "EMNLP",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W2913039310",
+          "openalex_id": "https://openalex.org/W2913039310",
+          "title": "Fooling Neural Network Interpretations via Adversarial Model Manipulation",
+          "year": 2019,
+          "cited": 73,
+          "type": "preprint",
+          "venue": "NeurIPS",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W4381989074",
+          "openalex_id": "https://openalex.org/W4381989074",
+          "title": "Food fraud detection using explainable artificial intelligence",
+          "year": 2023,
+          "cited": 67,
+          "type": "article",
+          "venue": "Expert Systems",
+          "venue_type": "journal"
+        },
+        {
+          "id": "W2988471847",
+          "openalex_id": "https://openalex.org/W2988471847",
+          "title": "NeuronInspect: Detecting Backdoors in Neural Networks via Output Explanations",
+          "year": 2019,
+          "cited": 65,
+          "type": "preprint",
+          "venue": "arXiv",
+          "venue_type": "preprint_repository"
+        },
+        {
+          "id": "W3007233875",
+          "openalex_id": "https://openalex.org/W3007233875",
+          "title": "Neuron Shapley: Discovering the Responsible Neurons",
+          "year": 2020,
+          "cited": 61,
+          "type": "preprint",
+          "venue": "NeurIPS",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W4387355345",
+          "openalex_id": "https://openalex.org/W4387355345",
+          "title": "Its Alive: AI Independence Without Human Prompting",
+          "year": 2023,
+          "cited": 59,
+          "type": "preprint",
+          "venue": "arXiv",
+          "venue_type": "preprint_repository"
+        },
+        {
+          "id": "W2891797654",
+          "openalex_id": "https://openalex.org/W2891797654",
+          "title": "Attacks Meet Interpretability: Attribute-steered Detection of Adversarial Samples",
+          "year": 2018,
+          "cited": 52,
+          "type": "preprint",
+          "venue": "View",
+          "venue_type": "journal"
+        },
+        {
+          "id": "W4280510162",
+          "openalex_id": "https://openalex.org/W4280510162",
+          "title": "A Study of the Attention Abnormality in Trojaned BERTs",
+          "year": 2022,
+          "cited": 45,
+          "type": "article",
+          "venue": "NAACL",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W2962864294",
+          "openalex_id": "https://openalex.org/W2962864294",
+          "title": "RecurJac: An Efficient Recursive Algorithm for Bounding Jacobian Matrix of Neural Networks and Its Applications",
+          "year": 2019,
+          "cited": 44,
+          "type": "article",
+          "venue": "AAAI",
+          "venue_type": "conference"
+        }
+      ]
+    },
+    {
+      "id": "bias",
+      "label": "Bias",
+      "total_papers_in_db": 585,
+      "leaf_paper_count": 9,
+      "paper_ids": [
+        "W2616247523",
+        "W2963483561",
+        "W4362655426",
+        "W3038035611",
+        "W4288083725",
+        "W3035102548",
+        "W3101662419",
+        "W2964031179",
+        "W2951576127"
+      ],
+      "papers": [
+        {
+          "id": "W2616247523",
+          "openalex_id": "https://openalex.org/W2616247523",
+          "title": "Grad-CAM: Visual Explanations from Deep Networks via Gradient-Based Localization",
+          "year": 2019,
+          "cited": 5081,
+          "type": "article",
+          "venue": "International Journal of Computer Vision",
+          "venue_type": "journal"
+        },
+        {
+          "id": "W2963483561",
+          "openalex_id": "https://openalex.org/W2963483561",
+          "title": "Interpretability Beyond Feature Attribution: Quantitative Testing with\\n Concept Activation Vectors (TCAV)",
+          "year": 2017,
+          "cited": 732,
+          "type": "preprint",
+          "venue": "ICML",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W4362655426",
+          "openalex_id": "https://openalex.org/W4362655426",
+          "title": "A Note on Normalized Emergence Timing (in Pythia Language Model Evaluations)",
+          "year": 2023,
+          "cited": 163,
+          "type": "preprint",
+          "venue": "ICML",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W3038035611",
+          "openalex_id": "https://openalex.org/W3038035611",
+          "title": "exBERT: A Visual Analysis Tool to Explore Learned Representations in Transformer Models",
+          "year": 2020,
+          "cited": 148,
+          "type": "article",
+          "venue": "ACL",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W4288083725",
+          "openalex_id": "https://openalex.org/W4288083725",
+          "title": "One Explanation Does Not Fit All",
+          "year": 2020,
+          "cited": 144,
+          "type": "article",
+          "venue": "KI - Künstliche Intelligenz",
+          "venue_type": "journal"
+        },
+        {
+          "id": "W3035102548",
+          "openalex_id": "https://openalex.org/W3035102548",
+          "title": "Interpreting Pretrained Contextualized Representations via Reductions to Static Embeddings",
+          "year": 2020,
+          "cited": 135,
+          "type": "article",
+          "venue": "ACL",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W3101662419",
+          "openalex_id": "https://openalex.org/W3101662419",
+          "title": "The Language Interpretability Tool: Extensible, Interactive Visualizations and Analysis for NLP Models",
+          "year": 2020,
+          "cited": 128,
+          "type": "article",
+          "venue": "EMNLP",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W2964031179",
+          "openalex_id": "https://openalex.org/W2964031179",
+          "title": "Examining CNN Representations With Respect to Dataset Bias",
+          "year": 2018,
+          "cited": 98,
+          "type": "article",
+          "venue": "AAAI",
+          "venue_type": "conference"
+        },
+        {
+          "id": "W2951576127",
+          "openalex_id": "https://openalex.org/W2951576127",
+          "title": "Incorporating Priors with Feature Attribution on Text Classification",
+          "year": 2019,
+          "cited": 90,
+          "type": "preprint",
+          "venue": "ACL",
+          "venue_type": "conference"
+        }
+      ]
+    },
+    {
+      "id": "sycophancy",
+      "label": "Sycophancy",
+      "total_papers_in_db": 74,
+      "leaf_paper_count": 1,
+      "paper_ids": [
+        "W4402671231"
+      ],
+      "papers": [
+        {
+          "id": "W4402671231",
+          "openalex_id": "https://openalex.org/W4402671231",
+          "title": "Steering Llama 2 via Contrastive Activation Addition",
+          "year": 2024,
+          "cited": 15,
+          "type": "article",
+          "venue": "ACL",
+          "venue_type": "conference"
+        }
+      ]
+    },
+    {
+      "id": "social_computation_and_communication",
+      "label": "Social Computation & Communication",
+      "total_papers_in_db": 143,
+      "leaf_paper_count": 2,
+      "paper_ids": [
+        "W3095521706",
+        "W2604444020"
+      ],
+      "papers": [
+        {
+          "id": "W3095521706",
+          "openalex_id": "https://openalex.org/W3095521706",
+          "title": "Graphs, Convolutions, and Neural Networks: From Graph Filters to Graph Neural Networks",
+          "year": 2020,
+          "cited": 165,
+          "type": "article",
+          "venue": "IEEE Signal Processing Magazine",
+          "venue_type": "journal"
+        },
+        {
+          "id": "W2604444020",
+          "openalex_id": "https://openalex.org/W2604444020",
+          "title": "Mechanism-Aware Neural Machine for Dialogue Response Generation",
+          "year": 2017,
+          "cited": 90,
+          "type": "article",
+          "venue": "AAAI",
+          "venue_type": "conference"
+        }
+      ]
+    }
+  ],
+  "papers": [
+    {
+      "id": "W2898365215",
+      "openalex_id": "https://openalex.org/W2898365215",
+      "title": "A mathematical theory of semantic development in deep neural networks",
+      "year": 2019,
+      "cited": 239,
+      "type": "article",
+      "venue": "Proceedings of the National Academy of Sciences",
+      "venue_type": "journal",
+      "belongs_to": [
+        "fact_knowledge"
+      ]
+    },
+    {
+      "id": "W2962816513",
+      "openalex_id": "https://openalex.org/W2962816513",
+      "title": "Pathologies of Neural Models Make Interpretations Difficult",
+      "year": 2018,
+      "cited": 236,
+      "type": "preprint",
+      "venue": "EMNLP",
+      "venue_type": "conference",
+      "belongs_to": [
+        "fact_knowledge"
+      ]
+    },
+    {
+      "id": "W3166986030",
+      "openalex_id": "https://openalex.org/W3166986030",
+      "title": "Factual Probing Is [MASK]: Learning vs. Learning to Recall",
+      "year": 2021,
+      "cited": 235,
+      "type": "article",
+      "venue": "NAACL",
+      "venue_type": "conference",
+      "belongs_to": [
+        "fact_knowledge"
+      ]
+    },
+    {
+      "id": "W4281657280",
+      "openalex_id": "https://openalex.org/W4281657280",
+      "title": "Locating and Editing Factual Associations in GPT",
+      "year": 2022,
+      "cited": 175,
+      "type": "preprint",
+      "venue": "NeurIPS",
+      "venue_type": "conference",
+      "belongs_to": [
+        "fact_knowledge"
+      ]
+    },
+    {
+      "id": "W4362655426",
+      "openalex_id": "https://openalex.org/W4362655426",
+      "title": "A Note on Normalized Emergence Timing (in Pythia Language Model Evaluations)",
+      "year": 2023,
+      "cited": 163,
+      "type": "preprint",
+      "venue": "ICML",
+      "venue_type": "conference",
+      "belongs_to": [
+        "fact_knowledge",
+        "bias"
+      ]
+    },
+    {
+      "id": "W2938224028",
+      "openalex_id": "https://openalex.org/W2938224028",
+      "title": "Understanding the Behaviors of BERT in Ranking",
+      "year": 2019,
+      "cited": 146,
+      "type": "preprint",
+      "venue": "arXiv",
+      "venue_type": "preprint_repository",
+      "belongs_to": [
+        "fact_knowledge"
+      ]
+    },
+    {
+      "id": "W3035102548",
+      "openalex_id": "https://openalex.org/W3035102548",
+      "title": "Interpreting Pretrained Contextualized Representations via Reductions to Static Embeddings",
+      "year": 2020,
+      "cited": 135,
+      "type": "article",
+      "venue": "ACL",
+      "venue_type": "conference",
+      "belongs_to": [
+        "fact_knowledge",
+        "bias"
+      ]
+    },
+    {
+      "id": "W3152884768",
+      "openalex_id": "https://openalex.org/W3152884768",
+      "title": "Knowledge Neurons in Pretrained Transformers",
+      "year": 2022,
+      "cited": 125,
+      "type": "article",
+      "venue": "ACL",
+      "venue_type": "conference",
+      "belongs_to": [
+        "fact_knowledge"
+      ]
+    },
+    {
+      "id": "W2797270586",
+      "openalex_id": "https://openalex.org/W2797270586",
+      "title": "Integrated deep visual and semantic attractor neural networks predict fMRI pattern-information along the ventral object processing pathway",
+      "year": 2018,
+      "cited": 116,
+      "type": "article",
+      "venue": "Scientific Reports",
+      "venue_type": "journal",
+      "belongs_to": [
+        "fact_knowledge"
+      ]
+    },
+    {
+      "id": "W2897507397",
+      "openalex_id": "https://openalex.org/W2897507397",
+      "title": "An Analysis of Attention Mechanisms: The Case of Word Sense Disambiguation in Neural Machine Translation",
+      "year": 2018,
+      "cited": 107,
+      "type": "article",
+      "venue": "Zurich Open Repository and Archive (University of Zurich)",
+      "venue_type": "repository",
+      "belongs_to": [
+        "fact_knowledge"
+      ]
+    },
+    {
+      "id": "W2964031179",
+      "openalex_id": "https://openalex.org/W2964031179",
+      "title": "Examining CNN Representations With Respect to Dataset Bias",
+      "year": 2018,
+      "cited": 98,
+      "type": "article",
+      "venue": "AAAI",
+      "venue_type": "conference",
+      "belongs_to": [
+        "fact_knowledge",
+        "bias"
+      ]
+    },
+    {
+      "id": "W2783905278",
+      "openalex_id": "https://openalex.org/W2783905278",
+      "title": "An Interpretable Reasoning Network for Multi-Relation Question Answering",
+      "year": 2018,
+      "cited": 82,
+      "type": "preprint",
+      "venue": "COLING",
+      "venue_type": "conference",
+      "belongs_to": [
+        "fact_knowledge"
+      ]
+    },
+    {
+      "id": "W1579683266",
+      "openalex_id": "https://openalex.org/W1579683266",
+      "title": "Biologically Plausible, Human‐Scale Knowledge Representation",
+      "year": 2015,
+      "cited": 82,
+      "type": "article",
+      "venue": "Cognitive Science",
+      "venue_type": "journal",
+      "belongs_to": [
+        "fact_knowledge"
+      ]
+    },
+    {
+      "id": "W4389520370",
+      "openalex_id": "https://openalex.org/W4389520370",
+      "title": "Editing Large Language Models: Problems, Methods, and Opportunities",
+      "year": 2023,
+      "cited": 78,
+      "type": "article",
+      "venue": "EMNLP",
+      "venue_type": "conference",
+      "belongs_to": [
+        "fact_knowledge"
+      ]
+    },
+    {
+      "id": "W4375958700",
+      "openalex_id": "https://openalex.org/W4375958700",
+      "title": "Language Models Don't Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting",
+      "year": 2023,
+      "cited": 75,
+      "type": "preprint",
+      "venue": "NeurIPS",
+      "venue_type": "conference",
+      "belongs_to": [
+        "fact_knowledge"
+      ]
+    },
+    {
+      "id": "W4285147034",
+      "openalex_id": "https://openalex.org/W4285147034",
+      "title": "KQA Pro: A Dataset with Explicit Compositional Programs for Complex Question Answering over Knowledge Base",
+      "year": 2022,
+      "cited": 73,
+      "type": "article",
+      "venue": "ACL",
+      "venue_type": "conference",
+      "belongs_to": [
+        "fact_knowledge"
+      ]
+    },
+    {
+      "id": "W3170037207",
+      "openalex_id": "https://openalex.org/W3170037207",
+      "title": "Towards Interpreting and Mitigating Shortcut Learning Behavior of NLU models",
+      "year": 2021,
+      "cited": 63,
+      "type": "article",
+      "venue": "NAACL",
+      "venue_type": "conference",
+      "belongs_to": [
+        "fact_knowledge"
+      ]
+    },
+    {
+      "id": "W4387355345",
+      "openalex_id": "https://openalex.org/W4387355345",
+      "title": "Its Alive: AI Independence Without Human Prompting",
+      "year": 2023,
+      "cited": 59,
+      "type": "preprint",
+      "venue": "arXiv",
+      "venue_type": "preprint_repository",
+      "belongs_to": [
+        "fact_knowledge",
+        "persona",
+        "safety"
+      ]
+    },
+    {
+      "id": "W4287649558",
+      "openalex_id": "https://openalex.org/W4287649558",
+      "title": "Interpreting Graph Neural Networks for NLP With Differentiable Edge\\n Masking",
+      "year": 2020,
+      "cited": 59,
+      "type": "preprint",
+      "venue": "ICLR",
+      "venue_type": "conference",
+      "belongs_to": [
+        "fact_knowledge",
+        "math"
+      ]
+    },
+    {
+      "id": "W2970886003",
+      "openalex_id": "https://openalex.org/W2970886003",
+      "title": "Self-Assembling Modular Networks for Interpretable Multi-Hop Reasoning",
+      "year": 2019,
+      "cited": 57,
+      "type": "article",
+      "venue": "EMNLP",
+      "venue_type": "conference",
+      "belongs_to": [
+        "fact_knowledge"
+      ]
+    },
+    {
+      "id": "W3196813608",
+      "openalex_id": "https://openalex.org/W3196813608",
+      "title": "All Bark and No Bite: Rogue Dimensions in Transformer Language Models Obscure Representational Quality",
+      "year": 2021,
+      "cited": 56,
+      "type": "article",
+      "venue": "EMNLP",
+      "venue_type": "conference",
+      "belongs_to": [
+        "fact_knowledge"
+      ]
+    },
+    {
+      "id": "W4306313145",
+      "openalex_id": "https://openalex.org/W4306313145",
+      "title": "Mass-Editing Memory in a Transformer",
+      "year": 2022,
+      "cited": 53,
+      "type": "preprint",
+      "venue": "ICLR",
+      "venue_type": "conference",
+      "belongs_to": [
+        "fact_knowledge"
+      ]
+    },
+    {
+      "id": "W4225844297",
+      "openalex_id": "https://openalex.org/W4225844297",
+      "title": "Vision-Language Transformer for Interpretable Pathology Visual Question Answering",
+      "year": 2022,
+      "cited": 48,
+      "type": "article",
+      "venue": "IEEE Journal of Biomedical and Health Informatics",
+      "venue_type": "journal",
+      "belongs_to": [
+        "fact_knowledge"
+      ]
+    },
+    {
+      "id": "W4310926773",
+      "openalex_id": "https://openalex.org/W4310926773",
+      "title": "Discovering Latent Knowledge in Language Models Without Supervision",
+      "year": 2022,
+      "cited": 45,
+      "type": "preprint",
+      "venue": "ICLR",
+      "venue_type": "conference",
+      "belongs_to": [
+        "fact_knowledge"
+      ]
+    },
+    {
+      "id": "W3015770160",
+      "openalex_id": "https://openalex.org/W3015770160",
+      "title": "Explaining Question Answering Models through Text Generation",
+      "year": 2020,
+      "cited": 44,
+      "type": "preprint",
+      "venue": "arXiv",
+      "venue_type": "preprint_repository",
+      "belongs_to": [
+        "fact_knowledge"
+      ]
+    },
+    {
+      "id": "W4301194718",
+      "openalex_id": "https://openalex.org/W4301194718",
+      "title": "Knowledge Neurons in Pretrained Transformers",
+      "year": 2021,
+      "cited": 42,
+      "type": "preprint",
+      "venue": "ACL",
+      "venue_type": "conference",
+      "belongs_to": [
+        "fact_knowledge"
+      ]
+    },
+    {
+      "id": "W3107969673",
+      "openalex_id": "https://openalex.org/W3107969673",
+      "title": "Modifying Memories in Transformer Models",
+      "year": 2020,
+      "cited": 42,
+      "type": "preprint",
+      "venue": "arXiv",
+      "venue_type": "preprint_repository",
+      "belongs_to": [
+        "fact_knowledge"
+      ]
+    },
+    {
+      "id": "W2972312591",
+      "openalex_id": "https://openalex.org/W2972312591",
+      "title": "How Does BERT Answer Questions? A Layer-Wise Analysis of Transformer Representations",
+      "year": 2019,
+      "cited": 42,
+      "type": "preprint",
+      "venue": "International Conference on Information and Knowledge Management",
+      "venue_type": "conference",
+      "belongs_to": [
+        "fact_knowledge"
+      ]
+    },
+    {
+      "id": "W4378508644",
+      "openalex_id": "https://openalex.org/W4378508644",
+      "title": "Large Language Models as Commonsense Knowledge for Large-Scale Task Planning",
+      "year": 2023,
+      "cited": 41,
+      "type": "preprint",
+      "venue": "NeurIPS",
+      "venue_type": "conference",
+      "belongs_to": [
+        "fact_knowledge",
+        "math"
+      ]
+    },
+    {
+      "id": "W4387356388",
+      "openalex_id": "https://openalex.org/W4387356388",
+      "title": "Language Models Represent Space and Time",
+      "year": 2023,
+      "cited": 40,
+      "type": "preprint",
+      "venue": "ICLR",
+      "venue_type": "conference",
+      "belongs_to": [
+        "fact_knowledge"
+      ]
+    },
+    {
+      "id": "W2078176013",
+      "openalex_id": "https://openalex.org/W2078176013",
+      "title": "Learning at the Knowledge Level",
+      "year": 1986,
+      "cited": 202,
+      "type": "article",
+      "venue": "Machine Learning",
+      "venue_type": "journal",
+      "belongs_to": [
+        "math",
+        "science"
+      ]
+    },
+    {
+      "id": "W2786209943",
+      "openalex_id": "https://openalex.org/W2786209943",
+      "title": "Compositional Attention Networks for Machine Reasoning",
+      "year": 2018,
+      "cited": 132,
+      "type": "preprint",
+      "venue": "ICML",
+      "venue_type": "conference",
+      "belongs_to": [
+        "math"
+      ]
+    },
+    {
+      "id": "W3134307371",
+      "openalex_id": "https://openalex.org/W3134307371",
+      "title": "Pretrained Transformers as Universal Computation Engines",
+      "year": 2021,
+      "cited": 99,
+      "type": "preprint",
+      "venue": "arXiv",
+      "venue_type": "preprint_repository",
+      "belongs_to": [
+        "math",
+        "science"
+      ]
+    },
+    {
+      "id": "W4311726128",
+      "openalex_id": "https://openalex.org/W4311726128",
+      "title": "Transformers learn in-context by gradient descent",
+      "year": 2022,
+      "cited": 89,
+      "type": "preprint",
+      "venue": "ICML",
+      "venue_type": "conference",
+      "belongs_to": [
+        "math"
+      ]
+    },
+    {
+      "id": "W4310509152",
+      "openalex_id": "https://openalex.org/W4310509152",
+      "title": "What learning algorithm is in-context learning? Investigations with linear models",
+      "year": 2022,
+      "cited": 85,
+      "type": "preprint",
+      "venue": "ICLR",
+      "venue_type": "conference",
+      "belongs_to": [
+        "math"
+      ]
+    },
+    {
+      "id": "W2557270725",
+      "openalex_id": "https://openalex.org/W2557270725",
+      "title": "Capacity and Trainability in Recurrent Neural Networks",
+      "year": 2016,
+      "cited": 82,
+      "type": "article",
+      "venue": "ICML",
+      "venue_type": "conference",
+      "belongs_to": [
+        "math"
+      ]
+    },
+    {
+      "id": "W4226434736",
+      "openalex_id": "https://openalex.org/W4226434736",
+      "title": "Grokking: Generalization Beyond Overfitting on Small Algorithmic Datasets",
+      "year": 2022,
+      "cited": 76,
+      "type": "preprint",
+      "venue": "arXiv",
+      "venue_type": "preprint_repository",
+      "belongs_to": [
+        "math"
+      ]
+    },
+    {
+      "id": "W4378942694",
+      "openalex_id": "https://openalex.org/W4378942694",
+      "title": "Faith and Fate: Limits of Transformers on Compositionality",
+      "year": 2023,
+      "cited": 71,
+      "type": "preprint",
+      "venue": "NeurIPS",
+      "venue_type": "conference",
+      "belongs_to": [
+        "math"
+      ]
+    },
+    {
+      "id": "W2124151298",
+      "openalex_id": "https://openalex.org/W2124151298",
+      "title": "Modeling language and cognition with deep unsupervised learning: a tutorial overview",
+      "year": 2013,
+      "cited": 67,
+      "type": "article",
+      "venue": "Frontiers in Psychology",
+      "venue_type": "journal",
+      "belongs_to": [
+        "math"
+      ]
+    },
+    {
+      "id": "W4414485088",
+      "openalex_id": "https://openalex.org/W4414485088",
+      "title": "The Illusion of Thinking",
+      "year": 2025,
+      "cited": 66,
+      "type": "article",
+      "venue": "SuperIntelligence - Robotics - Safety & Alignment",
+      "venue_type": "journal",
+      "belongs_to": [
+        "math"
+      ]
+    },
+    {
+      "id": "W4320516905",
+      "openalex_id": "https://openalex.org/W4320516905",
+      "title": "What Can Transformers Learn In-Context? A Case Study of Simple Function Classes",
+      "year": 2022,
+      "cited": 59,
+      "type": "preprint",
+      "venue": "NeurIPS",
+      "venue_type": "conference",
+      "belongs_to": [
+        "math"
+      ]
+    },
+    {
+      "id": "W4316135772",
+      "openalex_id": "https://openalex.org/W4316135772",
+      "title": "Progress measures for grokking via mechanistic interpretability",
+      "year": 2023,
+      "cited": 54,
+      "type": "preprint",
+      "venue": "ICLR",
+      "venue_type": "conference",
+      "belongs_to": [
+        "math"
+      ]
+    },
+    {
+      "id": "W4281748205",
+      "openalex_id": "https://openalex.org/W4281748205",
+      "title": "Teaching Models to Express Their Uncertainty in Words",
+      "year": 2022,
+      "cited": 54,
+      "type": "preprint",
+      "venue": "TMLR",
+      "venue_type": "journal",
+      "belongs_to": [
+        "math"
+      ]
+    },
+    {
+      "id": "W3197009789",
+      "openalex_id": "https://openalex.org/W3197009789",
+      "title": "The Devil is in the Detail: Simple Tricks Improve Systematic Generalization of Transformers",
+      "year": 2021,
+      "cited": 54,
+      "type": "article",
+      "venue": "EMNLP",
+      "venue_type": "conference",
+      "belongs_to": [
+        "math",
+        "code"
+      ]
+    },
+    {
+      "id": "W2132547887",
+      "openalex_id": "https://openalex.org/W2132547887",
+      "title": "Tree-structured composition in neural networks without tree-structured architectures",
+      "year": 2015,
+      "cited": 40,
+      "type": "preprint",
+      "venue": "NeurIPS",
+      "venue_type": "conference",
+      "belongs_to": [
+        "math"
+      ]
+    },
+    {
+      "id": "W4311408938",
+      "openalex_id": "https://openalex.org/W4311408938",
+      "title": "Thinking Fast and Slow in Large Language Models",
+      "year": 2022,
+      "cited": 38,
+      "type": "preprint",
+      "venue": "PubMed",
+      "venue_type": "repository",
+      "belongs_to": [
+        "math"
+      ]
+    },
+    {
+      "id": "W2574741565",
+      "openalex_id": "https://openalex.org/W2574741565",
+      "title": "Diagnostic Classifiers: Revealing how Neural Networks Process Hierarchical Structure",
+      "year": 2016,
+      "cited": 38,
+      "type": "article",
+      "venue": "ICLR",
+      "venue_type": "conference",
+      "belongs_to": [
+        "math"
+      ]
+    },
+    {
+      "id": "W1951216520",
+      "openalex_id": "https://openalex.org/W1951216520",
+      "title": "Visualizing and Understanding Recurrent Networks",
+      "year": 2015,
+      "cited": 888,
+      "type": "preprint",
+      "venue": "arXiv",
+      "venue_type": "preprint_repository",
+      "belongs_to": [
+        "code"
+      ]
+    },
+    {
+      "id": "W4295728955",
+      "openalex_id": "https://openalex.org/W4295728955",
+      "title": "On the Bottleneck of Graph Neural Networks and its Practical\\n Implications",
+      "year": 2020,
+      "cited": 147,
+      "type": "preprint",
+      "venue": "ICLR",
+      "venue_type": "conference",
+      "belongs_to": [
+        "code",
+        "science"
+      ]
+    },
+    {
+      "id": "W3034190530",
+      "openalex_id": "https://openalex.org/W3034190530",
+      "title": "On the Bottleneck of Graph Neural Networks and its Practical Implications",
+      "year": 2020,
+      "cited": 90,
+      "type": "preprint",
+      "venue": "ICLR",
+      "venue_type": "conference",
+      "belongs_to": [
+        "code"
+      ]
+    },
+    {
+      "id": "W2607964821",
+      "openalex_id": "https://openalex.org/W2607964821",
+      "title": "Making Neural Programming Architectures Generalize via Recursion",
+      "year": 2017,
+      "cited": 80,
+      "type": "preprint",
+      "venue": "ICLR",
+      "venue_type": "conference",
+      "belongs_to": [
+        "code"
+      ]
+    },
+    {
+      "id": "W2909239562",
+      "openalex_id": "https://openalex.org/W2909239562",
+      "title": "RNNbow: Visualizing Learning Via Backpropagation Gradients in RNNs",
+      "year": 2018,
+      "cited": 38,
+      "type": "article",
+      "venue": "IEEE Computer Graphics and Applications",
+      "venue_type": "journal",
+      "belongs_to": [
+        "code"
+      ]
+    },
+    {
+      "id": "W2766856748",
+      "openalex_id": "https://openalex.org/W2766856748",
+      "title": "Crystal Graph Convolutional Neural Networks for an Accurate and Interpretable Prediction of Material Properties",
+      "year": 2018,
+      "cited": 2432,
+      "type": "article",
+      "venue": "Physical Review Letters",
+      "venue_type": "journal",
+      "belongs_to": [
+        "science"
+      ]
+    },
+    {
+      "id": "W2963483561",
+      "openalex_id": "https://openalex.org/W2963483561",
+      "title": "Interpretability Beyond Feature Attribution: Quantitative Testing with\\n Concept Activation Vectors (TCAV)",
+      "year": 2017,
+      "cited": 732,
+      "type": "preprint",
+      "venue": "ICML",
+      "venue_type": "conference",
+      "belongs_to": [
+        "science",
+        "bias"
+      ]
+    },
+    {
+      "id": "W3022298391",
+      "openalex_id": "https://openalex.org/W3022298391",
+      "title": "Interpretation of machine learning models using shapley values: application to compound potency and multi-target activity predictions",
+      "year": 2020,
+      "cited": 639,
+      "type": "article",
+      "venue": "Journal of Computer-Aided Molecular Design",
+      "venue_type": "journal",
+      "belongs_to": [
+        "science"
+      ]
+    },
+    {
+      "id": "W3199772305",
+      "openalex_id": "https://openalex.org/W3199772305",
+      "title": "Biologically informed deep neural network for prostate cancer discovery",
+      "year": 2021,
+      "cited": 398,
+      "type": "article",
+      "venue": "Nature",
+      "venue_type": "journal",
+      "belongs_to": [
+        "science"
+      ]
+    },
+    {
+      "id": "W3208302614",
+      "openalex_id": "https://openalex.org/W3208302614",
+      "title": "Interpretable and Explainable Machine Learning for Materials Science and Chemistry",
+      "year": 2022,
+      "cited": 271,
+      "type": "article",
+      "venue": "Accounts of Materials Research",
+      "venue_type": "journal",
+      "belongs_to": [
+        "science"
+      ]
+    },
+    {
+      "id": "W3036548566",
+      "openalex_id": "https://openalex.org/W3036548566",
+      "title": "Discovering Symbolic Models from Deep Learning with Inductive Biases",
+      "year": 2020,
+      "cited": 269,
+      "type": "preprint",
+      "venue": "NeurIPS",
+      "venue_type": "conference",
+      "belongs_to": [
+        "science"
+      ]
+    },
+    {
+      "id": "W2750673150",
+      "openalex_id": "https://openalex.org/W2750673150",
+      "title": "Machine Learning Topological Invariants with Neural Networks",
+      "year": 2018,
+      "cited": 263,
+      "type": "article",
+      "venue": "Physical Review Letters",
+      "venue_type": "journal",
+      "belongs_to": [
+        "science"
+      ]
+    },
+    {
+      "id": "W2989692526",
+      "openalex_id": "https://openalex.org/W2989692526",
+      "title": "Uncertainty and interpretability in convolutional neural networks for semantic segmentation of colorectal polyps",
+      "year": 2019,
+      "cited": 176,
+      "type": "article",
+      "venue": "Medical Image Analysis",
+      "venue_type": "journal",
+      "belongs_to": [
+        "science"
+      ]
+    },
+    {
+      "id": "W2950535698",
+      "openalex_id": "https://openalex.org/W2950535698",
+      "title": "Deep Learning Models of the Retinal Response to Natural Scenes",
+      "year": 2017,
+      "cited": 164,
+      "type": "preprint",
+      "venue": "NeurIPS",
+      "venue_type": "conference",
+      "belongs_to": [
+        "science"
+      ]
+    },
+    {
+      "id": "W2995175313",
+      "openalex_id": "https://openalex.org/W2995175313",
+      "title": "Representation learning of genomic sequence motifs with convolutional neural networks",
+      "year": 2019,
+      "cited": 126,
+      "type": "article",
+      "venue": "PLoS Computational Biology",
+      "venue_type": "journal",
+      "belongs_to": [
+        "science"
+      ]
+    },
+    {
+      "id": "W2946617578",
+      "openalex_id": "https://openalex.org/W2946617578",
+      "title": "Using attribution to decode binding mechanism in neural network models for chemistry",
+      "year": 2019,
+      "cited": 112,
+      "type": "article",
+      "venue": "Proceedings of the National Academy of Sciences",
+      "venue_type": "journal",
+      "belongs_to": [
+        "science"
+      ]
+    },
+    {
+      "id": "W4385681731",
+      "openalex_id": "https://openalex.org/W4385681731",
+      "title": "Kronfluence: Influence Functions with Eigenvalue-corrected Kronecker-Factored Approximate Curvature",
+      "year": 2023,
+      "cited": 23,
+      "type": "preprint",
+      "venue": "arXiv",
+      "venue_type": "preprint_repository",
+      "belongs_to": [
+        "persona"
+      ]
+    },
+    {
+      "id": "W2942630857",
+      "openalex_id": "https://openalex.org/W2942630857",
+      "title": "Adversarial Examples Are Not Bugs, They Are Features",
+      "year": 2019,
+      "cited": 395,
+      "type": "preprint",
+      "venue": "ICLR",
+      "venue_type": "conference",
+      "belongs_to": [
+        "safety"
+      ]
+    },
+    {
+      "id": "W2963249138",
+      "openalex_id": "https://openalex.org/W2963249138",
+      "title": "Improving the Adversarial Robustness and Interpretability of Deep Neural Networks by Regularizing their Input Gradients",
+      "year": 2017,
+      "cited": 280,
+      "type": "article",
+      "venue": "AAAI",
+      "venue_type": "conference",
+      "belongs_to": [
+        "safety"
+      ]
+    },
+    {
+      "id": "W4288083725",
+      "openalex_id": "https://openalex.org/W4288083725",
+      "title": "One Explanation Does Not Fit All",
+      "year": 2020,
+      "cited": 144,
+      "type": "article",
+      "venue": "KI - Künstliche Intelligenz",
+      "venue_type": "journal",
+      "belongs_to": [
+        "safety",
+        "bias"
+      ]
+    },
+    {
+      "id": "W2887906331",
+      "openalex_id": "https://openalex.org/W2887906331",
+      "title": "Structured Adversarial Attack: Towards General Implementation and Better Interpretability",
+      "year": 2018,
+      "cited": 103,
+      "type": "preprint",
+      "venue": "ICLR",
+      "venue_type": "conference",
+      "belongs_to": [
+        "safety"
+      ]
+    },
+    {
+      "id": "W2944701285",
+      "openalex_id": "https://openalex.org/W2944701285",
+      "title": "Shallow-Deep Networks: Understanding and Mitigating Network Overthinking",
+      "year": 2018,
+      "cited": 101,
+      "type": "preprint",
+      "venue": "arXiv",
+      "venue_type": "preprint_repository",
+      "belongs_to": [
+        "safety"
+      ]
+    },
+    {
+      "id": "W2991526369",
+      "openalex_id": "https://openalex.org/W2991526369",
+      "title": "Interpreting and Improving Adversarial Robustness of Deep Neural Networks With Neuron Sensitivity",
+      "year": 2020,
+      "cited": 96,
+      "type": "article",
+      "venue": "IEEE Transactions on Image Processing",
+      "venue_type": "journal",
+      "belongs_to": [
+        "safety"
+      ]
+    },
+    {
+      "id": "W2951576127",
+      "openalex_id": "https://openalex.org/W2951576127",
+      "title": "Incorporating Priors with Feature Attribution on Text Classification",
+      "year": 2019,
+      "cited": 90,
+      "type": "preprint",
+      "venue": "ACL",
+      "venue_type": "conference",
+      "belongs_to": [
+        "safety",
+        "bias"
+      ]
+    },
+    {
+      "id": "W2998600476",
+      "openalex_id": "https://openalex.org/W2998600476",
+      "title": "ML-LOO: Detecting Adversarial Examples with Feature Attribution",
+      "year": 2020,
+      "cited": 88,
+      "type": "article",
+      "venue": "AAAI",
+      "venue_type": "conference",
+      "belongs_to": [
+        "safety"
+      ]
+    },
+    {
+      "id": "W4385572928",
+      "openalex_id": "https://openalex.org/W4385572928",
+      "title": "Transformer Feed-Forward Layers Build Predictions by Promoting Concepts in the Vocabulary Space",
+      "year": 2022,
+      "cited": 82,
+      "type": "article",
+      "venue": "EMNLP",
+      "venue_type": "conference",
+      "belongs_to": [
+        "safety"
+      ]
+    },
+    {
+      "id": "W2913039310",
+      "openalex_id": "https://openalex.org/W2913039310",
+      "title": "Fooling Neural Network Interpretations via Adversarial Model Manipulation",
+      "year": 2019,
+      "cited": 73,
+      "type": "preprint",
+      "venue": "NeurIPS",
+      "venue_type": "conference",
+      "belongs_to": [
+        "safety"
+      ]
+    },
+    {
+      "id": "W4381989074",
+      "openalex_id": "https://openalex.org/W4381989074",
+      "title": "Food fraud detection using explainable artificial intelligence",
+      "year": 2023,
+      "cited": 67,
+      "type": "article",
+      "venue": "Expert Systems",
+      "venue_type": "journal",
+      "belongs_to": [
+        "safety"
+      ]
+    },
+    {
+      "id": "W2988471847",
+      "openalex_id": "https://openalex.org/W2988471847",
+      "title": "NeuronInspect: Detecting Backdoors in Neural Networks via Output Explanations",
+      "year": 2019,
+      "cited": 65,
+      "type": "preprint",
+      "venue": "arXiv",
+      "venue_type": "preprint_repository",
+      "belongs_to": [
+        "safety"
+      ]
+    },
+    {
+      "id": "W3007233875",
+      "openalex_id": "https://openalex.org/W3007233875",
+      "title": "Neuron Shapley: Discovering the Responsible Neurons",
+      "year": 2020,
+      "cited": 61,
+      "type": "preprint",
+      "venue": "NeurIPS",
+      "venue_type": "conference",
+      "belongs_to": [
+        "safety"
+      ]
+    },
+    {
+      "id": "W2891797654",
+      "openalex_id": "https://openalex.org/W2891797654",
+      "title": "Attacks Meet Interpretability: Attribute-steered Detection of Adversarial Samples",
+      "year": 2018,
+      "cited": 52,
+      "type": "preprint",
+      "venue": "View",
+      "venue_type": "journal",
+      "belongs_to": [
+        "safety"
+      ]
+    },
+    {
+      "id": "W4280510162",
+      "openalex_id": "https://openalex.org/W4280510162",
+      "title": "A Study of the Attention Abnormality in Trojaned BERTs",
+      "year": 2022,
+      "cited": 45,
+      "type": "article",
+      "venue": "NAACL",
+      "venue_type": "conference",
+      "belongs_to": [
+        "safety"
+      ]
+    },
+    {
+      "id": "W2962864294",
+      "openalex_id": "https://openalex.org/W2962864294",
+      "title": "RecurJac: An Efficient Recursive Algorithm for Bounding Jacobian Matrix of Neural Networks and Its Applications",
+      "year": 2019,
+      "cited": 44,
+      "type": "article",
+      "venue": "AAAI",
+      "venue_type": "conference",
+      "belongs_to": [
+        "safety"
+      ]
+    },
+    {
+      "id": "W2616247523",
+      "openalex_id": "https://openalex.org/W2616247523",
+      "title": "Grad-CAM: Visual Explanations from Deep Networks via Gradient-Based Localization",
+      "year": 2019,
+      "cited": 5081,
+      "type": "article",
+      "venue": "International Journal of Computer Vision",
+      "venue_type": "journal",
+      "belongs_to": [
+        "bias"
+      ]
+    },
+    {
+      "id": "W3038035611",
+      "openalex_id": "https://openalex.org/W3038035611",
+      "title": "exBERT: A Visual Analysis Tool to Explore Learned Representations in Transformer Models",
+      "year": 2020,
+      "cited": 148,
+      "type": "article",
+      "venue": "ACL",
+      "venue_type": "conference",
+      "belongs_to": [
+        "bias"
+      ]
+    },
+    {
+      "id": "W3101662419",
+      "openalex_id": "https://openalex.org/W3101662419",
+      "title": "The Language Interpretability Tool: Extensible, Interactive Visualizations and Analysis for NLP Models",
+      "year": 2020,
+      "cited": 128,
+      "type": "article",
+      "venue": "EMNLP",
+      "venue_type": "conference",
+      "belongs_to": [
+        "bias"
+      ]
+    },
+    {
+      "id": "W4402671231",
+      "openalex_id": "https://openalex.org/W4402671231",
+      "title": "Steering Llama 2 via Contrastive Activation Addition",
+      "year": 2024,
+      "cited": 15,
+      "type": "article",
+      "venue": "ACL",
+      "venue_type": "conference",
+      "belongs_to": [
+        "sycophancy"
+      ]
+    },
+    {
+      "id": "W3095521706",
+      "openalex_id": "https://openalex.org/W3095521706",
+      "title": "Graphs, Convolutions, and Neural Networks: From Graph Filters to Graph Neural Networks",
+      "year": 2020,
+      "cited": 165,
+      "type": "article",
+      "venue": "IEEE Signal Processing Magazine",
+      "venue_type": "journal",
+      "belongs_to": [
+        "social_computation_and_communication"
+      ]
+    },
+    {
+      "id": "W2604444020",
+      "openalex_id": "https://openalex.org/W2604444020",
+      "title": "Mechanism-Aware Neural Machine for Dialogue Response Generation",
+      "year": 2017,
+      "cited": 90,
+      "type": "article",
+      "venue": "AAAI",
+      "venue_type": "conference",
+      "belongs_to": [
+        "social_computation_and_communication"
+      ]
+    }
+  ],
+  "paper_edges": [
+    {
+      "src": "W2951576127",
+      "dst": "W2962816513",
+      "type": "CITES"
+    },
+    {
+      "src": "W3101662419",
+      "dst": "W3038035611",
+      "type": "CITES"
+    },
+    {
+      "src": "W4389520370",
+      "dst": "W4306313145",
+      "type": "CITES"
+    },
+    {
+      "src": "W4389520370",
+      "dst": "W4281657280",
+      "type": "CITES"
+    },
+    {
+      "src": "W4389520370",
+      "dst": "W3152884768",
+      "type": "CITES"
+    },
+    {
+      "src": "W4389520370",
+      "dst": "W4385572928",
+      "type": "CITES"
+    },
+    {
+      "src": "W4389520370",
+      "dst": "W3107969673",
+      "type": "CITES"
+    },
+    {
+      "src": "W2132547887",
+      "dst": "W1951216520",
+      "type": "CITES"
+    },
+    {
+      "src": "W4225844297",
+      "dst": "W2616247523",
+      "type": "CITES"
+    },
+    {
+      "src": "W4311408938",
+      "dst": "W4311408938",
+      "type": "CITES"
+    },
+    {
+      "src": "W3196813608",
+      "dst": "W3035102548",
+      "type": "CITES"
+    },
+    {
+      "src": "W2972312591",
+      "dst": "W2938224028",
+      "type": "CITES"
+    },
+    {
+      "src": "W1951216520",
+      "dst": "W2557270725",
+      "type": "RELATED_TO"
+    },
+    {
+      "src": "W3034190530",
+      "dst": "W4295728955",
+      "type": "RELATED_TO"
+    }
+  ],
+  "big_node_count": 9,
+  "total_leaf_papers": 86,
+  "paper_edge_counts": {
+    "CITES": 12,
+    "RELATED_TO": 2
+  }
+}

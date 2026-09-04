@@ -1,0 +1,392 @@
+[
+  {
+    "domain": "statistics",
+    "paper_title": "Uncertainty quantified discovery of chemical reaction systems via Bayesian scientific machine learning",
+    "paper_abstract": "The recently proposed Chemical Reaction Neural Network (CRNN) discovers chemical reaction pathways from time resolved species concentration data in a deterministic manner. Since the weights and biases of a CRNN are physically interpretable, the CRNN acts as a digital twin of a classical chemical reaction network. In...",
+    "radius": "R2",
+    "is_combination_plausible": true,
+    "combination_points": [
+      "Bayesian uncertainty quantification over discovered reaction pathways",
+      "Physically interpretable neural representation of a reaction network",
+      "Digital-twin modeling of coupled reaction/transport kinetics",
+      "Inference from sparse, time-resolved species/event data"
+    ],
+    "combination_plan": "Adapt the Bayesian CRNN idea to a unified superheavy-element 'reaction network digital twin' whose nodes and edges represent fusion/evaporation, quasifission, decay chains, chemical capture, and transport steps, with Bayesian posteriors over rates, cross sections, survival probabilities, and chemical-processing times. This would provide uncertainty-quantified predictions of whether a single atom can be produced, survive, be captured, and meet discovery criteria.",
+    "justification": "The candidate paper’s core abstraction is uncertainty-quantified, interpretable discovery of reaction-network dynamics from time-resolved data. That maps structurally onto the superheavy-element problem, which is also a coupled network of production, survival, decay, and chemical-transport processes requiring probabilistic, time-critical single-event inference.",
+    "candidate_id": 5,
+    "source_paper": {
+      "paper_id": "https://openalex.org/W4392592391",
+      "title": "Uncertainty quantified discovery of chemical reaction systems via Bayesian scientific machine learning",
+      "abstract": "The recently proposed Chemical Reaction Neural Network (CRNN) discovers chemical reaction pathways from time resolved species concentration data in a deterministic manner. Since the weights and biases of a CRNN are physically interpretable, the CRNN acts as a digital twin of a classical chemical reaction network. In...",
+      "year": 2024,
+      "keywords": [],
+      "references": [],
+      "citations": [],
+      "is_influential": false,
+      "score": 1.0,
+      "idea_fields": {},
+      "raw": {
+        "paper_id": "https://openalex.org/W4392592391",
+        "title": "Uncertainty quantified discovery of chemical reaction systems via Bayesian scientific machine learning",
+        "abstract": "The recently proposed Chemical Reaction Neural Network (CRNN) discovers chemical reaction pathways from time resolved species concentration data in a deterministic manner. Since the weights and biases of a CRNN are physically interpretable, the CRNN acts as a digital twin of a classical chemical reaction network. In...",
+        "publication_year": 2024,
+        "year": 2024,
+        "cited_by_count": 4,
+        "citation_count": 4,
+        "score": 1.0,
+        "kg_score": 1.0,
+        "rank": 1,
+        "source": "kg",
+        "match_type": "kg_graph",
+        "pdf_url": "https://www.frontiersin.org/articles/10.3389/fsysb.2024.1338518/pdf?isPublishedV2=False",
+        "paper_url": "https://openalex.org/W4392592391",
+        "identifiers": [
+          "openalex:https://openalex.org/W4392592391"
+        ],
+        "paper": {
+          "is_retracted": false,
+          "pdf_is_oa": false,
+          "oa_status": "diamond",
+          "is_open_access": true,
+          "language": "en",
+          "pdf_url": "https://www.frontiersin.org/articles/10.3389/fsysb.2024.1338518/pdf?isPublishedV2=False",
+          "title": "Uncertainty quantified discovery of chemical reaction systems via Bayesian scientific machine learning",
+          "type": "article",
+          "pdf_version": "publishedVersion",
+          "venue_source_id": "https://openalex.org/S4386621871",
+          "has_abstract": true,
+          "publication_date": "2024-03-08",
+          "id": "https://openalex.org/W4392592391",
+          "venue_source_type": "journal",
+          "pdf_is_published": false,
+          "cited_by_count": 4,
+          "pdf_source_type": "journal",
+          "pdf_source_id": "https://openalex.org/S4386621871",
+          "referenced_works_count": 28,
+          "venue_source_display_name": "Frontiers in Systems Biology",
+          "label": "Paper",
+          "abstract": "The recently proposed Chemical Reaction Neural Network (CRNN) discovers chemical reaction pathways from time resolved species concentration data in a deterministic manner. Since the weights and biases of a CRNN are physically interpretable, the CRNN acts as a digital twin of a classical chemical reaction network. In this study, we employ a Bayesian inference analysis coupled with neural ordinary differential equations (ODEs) on this digital twin to discover chemical reaction pathways in a probabilistic manner. This allows for estimation of the uncertainty surrounding the learned reaction network. To achieve this, we propose an algorithm which combines neural ODEs with a preconditioned stochastic gradient langevin descent (pSGLD) Bayesian framework, and ultimately performs posterior sampling on the neural network weights. We demonstrate the successful implementation of this algorithm on several reaction systems by not only recovering the chemical reaction pathways but also estimating the uncertainty in our predictions. We compare the results of the pSGLD with that of the standard SGLD and show that this optimizer more efficiently and accurately estimates the posterior of the reaction network parameters. Additionally, we demonstrate how the embedding of scientific knowledge improves extrapolation accuracy by comparing results to purely data-driven machine learning methods. Together, this provides a new framework for robust, autonomous Bayesian inference on unknown or complex chemical and biological reaction systems.",
+          "pdf_source_display_name": "Frontiers in Systems Biology",
+          "venue_raw_source_name": "Frontiers in Systems Biology",
+          "publication_year": 2024,
+          "created_date": "2025-10-10T00:00:00.000Z",
+          "updated_date": "2026-01-13T01:12:25.745Z",
+          "title_normalized": "uncertaintyquantifieddiscoveryofchemicalreactionsystemsviabayesianscientificmachinelearning",
+          "doi": "https://doi.org/10.3389/fsysb.2024.1338518"
+        },
+        "hit_sources": [
+          "abstract_vector",
+          "title_vector"
+        ],
+        "evidence": {
+          "keywords": [],
+          "titles": [],
+          "graph_paths": []
+        },
+        "score_breakdown": {
+          "sim_title": 0.8570646665121098,
+          "sim_abstract": 0.7920594722106706,
+          "title_vector_rerank_score": null,
+          "abstract_vector_rerank_score": null,
+          "combined_vector_rerank_score": 0.25640594959259033,
+          "norm_emb_path": 1.0,
+          "norm_title_path": 0.0,
+          "title_pre_graph_bonus": 0.0,
+          "norm_pre_graph_score": 1.0,
+          "norm_graph_score": 1.0,
+          "graph_support_factor": 1.0,
+          "title_bonus": 0.0,
+          "final_score": 1.0
+        }
+      }
+    }
+  },
+  {
+    "domain": "chemical_engineering",
+    "paper_title": "Transforming Separation Science with Single-Molecule Methods",
+    "paper_abstract": "Empirical optimization of the multiscale parameters underlying chromatographic and membrane separations leads to enormous resource waste and production costs. A bottom-up approach to understand the physical phenomena underlying challenges in separations is possible with single-molecule observations of solute-station...",
+    "radius": "R2",
+    "is_combination_plausible": true,
+    "combination_points": [
+      "single-entity trajectory analysis",
+      "stochastic transport and residence-time modeling",
+      "bottom-up multiscale mechanistic modeling of separation",
+      "rare-event detection and statistical inference from sparse single-molecule/single-atom observations",
+      "mapping microscopic interaction dynamics to macroscopic capture/separation efficiency"
+    ],
+    "combination_plan": "Adapt the candidate paper's single-molecule separation framework to superheavy-element chemistry by modeling chemical capture, transport, and identification as a stochastic single-atom process with adsorption/desorption, diffusion, decay competition, and event-by-event inference. This could provide a unified probabilistic link between reaction products, nuclear survival, rapid chemical handling, and atomic-number assignment criteria.",
+    "justification": "The candidate paper's core abstraction—using single-entity observations to replace empirical optimization with mechanistic, multiscale models of separation—maps directly onto the superheavy-element bottleneck of time-critical single-atom capture and chemical identification.",
+    "candidate_id": 3,
+    "source_paper": {
+      "paper_id": "https://openalex.org/W3087606226",
+      "title": "Transforming Separation Science with Single-Molecule Methods",
+      "abstract": "Empirical optimization of the multiscale parameters underlying chromatographic and membrane separations leads to enormous resource waste and production costs. A bottom-up approach to understand the physical phenomena underlying challenges in separations is possible with single-molecule observations of solute-station...",
+      "year": 2020,
+      "keywords": [],
+      "references": [],
+      "citations": [],
+      "is_influential": false,
+      "score": 1.0,
+      "idea_fields": {},
+      "raw": {
+        "paper_id": "https://openalex.org/W3087606226",
+        "title": "Transforming Separation Science with Single-Molecule Methods",
+        "abstract": "Empirical optimization of the multiscale parameters underlying chromatographic and membrane separations leads to enormous resource waste and production costs. A bottom-up approach to understand the physical phenomena underlying challenges in separations is possible with single-molecule observations of solute-station...",
+        "publication_year": 2020,
+        "year": 2020,
+        "cited_by_count": 18,
+        "citation_count": 18,
+        "score": 1.0,
+        "kg_score": 1.0,
+        "rank": 1,
+        "source": "kg",
+        "match_type": "kg_graph",
+        "pdf_url": "https://pubs.acs.org/doi/pdf/10.1021/acs.analchem.0c02572",
+        "paper_url": "https://openalex.org/W3087606226",
+        "identifiers": [
+          "openalex:https://openalex.org/W3087606226"
+        ],
+        "paper": {
+          "is_retracted": false,
+          "pdf_is_oa": false,
+          "oa_status": "bronze",
+          "is_open_access": true,
+          "language": "en",
+          "pdf_url": "https://pubs.acs.org/doi/pdf/10.1021/acs.analchem.0c02572",
+          "title": "Transforming Separation Science with Single-Molecule Methods",
+          "type": "article",
+          "pdf_version": "publishedVersion",
+          "venue_source_id": "https://openalex.org/S191963794",
+          "has_abstract": true,
+          "publication_date": "2020-09-16",
+          "id": "https://openalex.org/W3087606226",
+          "venue_source_type": "journal",
+          "pdf_is_published": false,
+          "cited_by_count": 18,
+          "pdf_source_type": "journal",
+          "pdf_source_id": "https://openalex.org/S191963794",
+          "referenced_works_count": 79,
+          "venue_source_display_name": "Analytical Chemistry",
+          "label": "Paper",
+          "abstract": "Empirical optimization of the multiscale parameters underlying chromatographic and membrane separations leads to enormous resource waste and production costs. A bottom-up approach to understand the physical phenomena underlying challenges in separations is possible with single-molecule observations of solute-stationary phase interactions. We outline single-molecule fluorescence techniques that can identify key interactions under ambient conditions. Next, we describe how studying increasingly complex samples heightens the relevance of single-molecule results to industrial applications. Finally, we illustrate how separation methods that have not been studied at the single-molecule scale can be advanced, using chiral chromatography as an example case. We hope new research directions based on a molecular approach to separations will emerge based on the ideas, technologies, and open scientific questions presented in this Perspective.",
+          "pdf_source_display_name": "Analytical Chemistry",
+          "venue_raw_source_name": "Analytical Chemistry",
+          "publication_year": 2020,
+          "created_date": "2025-10-10T00:00:00.000Z",
+          "updated_date": "2025-11-06T03:46:38.306Z",
+          "title_normalized": "transformingseparationsciencewithsinglemoleculemethods",
+          "doi": "https://doi.org/10.1021/acs.analchem.0c02572"
+        },
+        "hit_sources": [
+          "abstract_vector",
+          "title_vector"
+        ],
+        "evidence": {
+          "keywords": [],
+          "titles": [],
+          "graph_paths": []
+        },
+        "score_breakdown": {
+          "sim_title": 0.7902670273325286,
+          "sim_abstract": 0.7783867491645703,
+          "title_vector_rerank_score": null,
+          "abstract_vector_rerank_score": null,
+          "combined_vector_rerank_score": 0.020381655544042587,
+          "norm_emb_path": 1.0,
+          "norm_title_path": 0.0,
+          "title_pre_graph_bonus": 0.0,
+          "norm_pre_graph_score": 1.0,
+          "norm_graph_score": 1.0,
+          "graph_support_factor": 1.0,
+          "title_bonus": 0.0,
+          "final_score": 1.0
+        }
+      }
+    }
+  },
+  {
+    "domain": "same_field",
+    "paper_title": "Colliding heavy nuclei take multiple identities on the path to fusion",
+    "paper_abstract": "The properties of superheavy elements probe extremes of physics and chemistry. They are synthesised at accelerator laboratories using nuclear fusion, where two atomic nuclei collide, stick together (capture), then with low probability evolve to a compact superheavy nucleus. The fundamental microscopic mechanisms controlling fusion are not fully understood, limiting predictive capability. Even capture, considered to be the simplest stage of fusion, is not matched by models. Here we show that collisions of <sup>40</sup>Ca with <sup>208</sup>Pb, experience an 'explosion' of mass and charge transfers between the nuclei before capture, with unexpectedly high probability and complexity. Ninety different partitions of the protons and neutrons between the projectile-like and target-like nuclei are observed. Since each is expected to have a different probability of fusion, the early stages of collisions may be crucial in superheavy element synthesis. Our interpretation challenges the current view of fusion, explains both the successes and failures of current capture models, and provides a framework for improved models.",
+    "radius": "R1",
+    "is_combination_plausible": true,
+    "combination_points": [
+      "Pre-capture mass and charge transfer as a branching multi-identity process",
+      "Ensemble of projectile-target partitions rather than a single entrance channel",
+      "Partition-dependent fusion probabilities linking early collision dynamics to final compound-nucleus formation",
+      "Framework for calibrating capture/fusion models against observed transfer-partition complexity"
+    ],
+    "combination_plan": "Integrate a stochastic pre-fusion transfer network into the superheavy-element discovery framework, where heavy-ion collisions generate multiple evolving nuclear identities with partition-dependent capture, fusion, survival, and decay probabilities. These branching outcomes can then be coupled to single-atom chemical transport and atomic-number assignment to evaluate which reaction pathways plausibly satisfy discovery criteria.",
+    "justification": "The candidate paper provides a mechanistic abstraction for the original problem’s reaction-choice and quasifission bottleneck: instead of treating fusion as a single deterministic pathway, it models early collision dynamics as a complex branching process with many possible nuclear identities. This structure can be transferred to a unified predictive framework that connects reaction selection, compound-nucleus formation probability, survival, decay observables, and rapid chemical identification.",
+    "candidate_id": 1,
+    "source_paper": {
+      "paper_id": "https://openalex.org/W4389267633",
+      "title": "Colliding heavy nuclei take multiple identities on the path to fusion",
+      "abstract": "The properties of superheavy elements probe extremes of physics and chemistry. They are synthesised at accelerator laboratories using nuclear fusion, where two atomic nuclei collide, stick together (capture), then with low probability evolve to a compact superheavy nucleus. The fundamental microscopic mechanisms controlling fusion are not fully understood, limiting predictive capability. Even capture, considered to be the simplest stage of fusion, is not matched by models. Here we show that collisions of <sup>40</sup>Ca with <sup>208</sup>Pb, experience an 'explosion' of mass and charge transfers between the nuclei before capture, with unexpectedly high probability and complexity. Ninety different partitions of the protons and neutrons between the projectile-like and target-like nuclei are observed. Since each is expected to have a different probability of fusion, the early stages of collisions may be crucial in superheavy element synthesis. Our interpretation challenges the current view of fusion, explains both the successes and failures of current capture models, and provides a framework for improved models.",
+      "year": 2023,
+      "keywords": [],
+      "references": [],
+      "citations": [],
+      "is_influential": false,
+      "score": 0.6799921989440918,
+      "idea_fields": {},
+      "raw": {
+        "paper_id": "https://openalex.org/W4389267633",
+        "title": "Colliding heavy nuclei take multiple identities on the path to fusion",
+        "abstract": "The properties of superheavy elements probe extremes of physics and chemistry. They are synthesised at accelerator laboratories using nuclear fusion, where two atomic nuclei collide, stick together (capture), then with low probability evolve to a compact superheavy nucleus. The fundamental microscopic mechanisms controlling fusion are not fully understood, limiting predictive capability. Even capture, considered to be the simplest stage of fusion, is not matched by models. Here we show that collisions of <sup>40</sup>Ca with <sup>208</sup>Pb, experience an 'explosion' of mass and charge transfers between the nuclei before capture, with unexpectedly high probability and complexity. Ninety different partitions of the protons and neutrons between the projectile-like and target-like nuclei are observed. Since each is expected to have a different probability of fusion, the early stages of collisions may be crucial in superheavy element synthesis. Our interpretation challenges the current view of fusion, explains both the successes and failures of current capture models, and provides a framework for improved models.",
+        "publication_year": 2023,
+        "cited_by_count": 19,
+        "score": 0.6799921989440918,
+        "rank": 1,
+        "match_type": "vector_abstract",
+        "authors": [
+          {
+            "author_id": "https://openalex.org/A5083910385",
+            "name": "D. C. Rafferty",
+            "position": 1,
+            "is_corresponding": false,
+            "h_index": 14,
+            "works_count": 45,
+            "cited_by_count": 609
+          },
+          {
+            "author_id": "https://openalex.org/A5014713859",
+            "name": "D. J. Hinde",
+            "position": 2,
+            "is_corresponding": false,
+            "h_index": 61,
+            "works_count": 312,
+            "cited_by_count": 12308
+          },
+          {
+            "author_id": "https://openalex.org/A5055643169",
+            "name": "Edward C. Simpson",
+            "position": 3,
+            "is_corresponding": false,
+            "h_index": 1,
+            "works_count": 3,
+            "cited_by_count": 19
+          },
+          {
+            "author_id": "https://openalex.org/A5010173539",
+            "name": "M. Dasgupta",
+            "position": 4,
+            "is_corresponding": false,
+            "h_index": 56,
+            "works_count": 366,
+            "cited_by_count": 10930
+          },
+          {
+            "author_id": "https://openalex.org/A5004666785",
+            "name": "L. Corradi",
+            "position": 5,
+            "is_corresponding": false,
+            "h_index": 34,
+            "works_count": 274,
+            "cited_by_count": 4290
+          },
+          {
+            "author_id": "https://openalex.org/A5037397736",
+            "name": "M. Evers",
+            "position": 6,
+            "is_corresponding": false,
+            "h_index": 26,
+            "works_count": 82,
+            "cited_by_count": 2865
+          },
+          {
+            "author_id": "https://openalex.org/A5059972498",
+            "name": "E. Fioretto",
+            "position": 7,
+            "is_corresponding": false,
+            "h_index": 44,
+            "works_count": 424,
+            "cited_by_count": 6346
+          },
+          {
+            "author_id": "https://openalex.org/A5067484621",
+            "name": "D. Y. Jeung",
+            "position": 8,
+            "is_corresponding": false,
+            "h_index": 16,
+            "works_count": 47,
+            "cited_by_count": 675
+          },
+          {
+            "author_id": "https://openalex.org/A5013049322",
+            "name": "Nikolai R. Lobanov",
+            "position": 9,
+            "is_corresponding": false,
+            "h_index": 10,
+            "works_count": 62,
+            "cited_by_count": 369
+          },
+          {
+            "author_id": "https://openalex.org/A5079423945",
+            "name": "D. H. Luong",
+            "position": 10,
+            "is_corresponding": false,
+            "h_index": 22,
+            "works_count": 83,
+            "cited_by_count": 1693
+          },
+          {
+            "author_id": "https://openalex.org/A5073876602",
+            "name": "T. Mijatović",
+            "position": 11,
+            "is_corresponding": false,
+            "h_index": 25,
+            "works_count": 171,
+            "cited_by_count": 1750
+          },
+          {
+            "author_id": "https://openalex.org/A5091484771",
+            "name": "G. Montagnoli",
+            "position": 12,
+            "is_corresponding": false,
+            "h_index": 50,
+            "works_count": 367,
+            "cited_by_count": 7230
+          },
+          {
+            "author_id": "https://openalex.org/A5090122453",
+            "name": "A. M. Stefanini",
+            "position": 13,
+            "is_corresponding": false,
+            "h_index": 41,
+            "works_count": 290,
+            "cited_by_count": 5256
+          },
+          {
+            "author_id": "https://openalex.org/A5045178583",
+            "name": "S. Szilner",
+            "position": 14,
+            "is_corresponding": false,
+            "h_index": 40,
+            "works_count": 350,
+            "cited_by_count": 4823
+          },
+          {
+            "author_id": "https://openalex.org/A5055838542",
+            "name": "K. J. Cook",
+            "position": 9999,
+            "is_corresponding": true,
+            "h_index": 19,
+            "works_count": 101,
+            "cited_by_count": 991
+          }
+        ],
+        "author_names": [
+          "D. C. Rafferty",
+          "D. J. Hinde",
+          "Edward C. Simpson",
+          "M. Dasgupta",
+          "L. Corradi",
+          "M. Evers",
+          "E. Fioretto",
+          "D. Y. Jeung"
+        ]
+      }
+    }
+  }
+]

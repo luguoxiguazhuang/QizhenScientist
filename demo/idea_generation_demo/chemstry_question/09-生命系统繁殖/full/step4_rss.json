@@ -1,0 +1,78 @@
+{
+  "target_domain": "Evolutionary ecology and quantitative life-history genetics of reproduction, focusing on how genetic variation, reproductive timing, mate acquisition, sex-specific selection, and survival trade-offs drive reproductive success in changing environments.",
+  "core_gap": "Existing approaches isolate major drivers of reproduction, such as genetic variance in reproductive timing, mate acquisition or sexual selection, and reproduction-survival trade-offs, so the field lacks a predictive, sex-aware, environmentally contingent framework that explains how genetic architecture, mating ecology, and life-history allocation jointly determine when reproductive strategies increase fitness and evolvability versus when they create constraints.",
+  "objects": [
+    "reproductive timing or flowering time",
+    "genetic variance and polygenic architecture",
+    "assortative mating or nonrandom mating",
+    "mate acquisition and mating success",
+    "sexual selection and Bateman-style fitness gradients",
+    "fertility traits such as flower number, gamete production, and offspring production",
+    "attractive or competitive reproductive traits such as corolla width and flowering duration",
+    "individual reproductive success or fitness",
+    "sex-specific selection",
+    "reproduction-survival trade-offs",
+    "longevity and ageing",
+    "ecological context such as climate change, pollinators, and density-dependent mortality",
+    "mating system structure such as monogamy, dioecy, and assortative mating",
+    "phenological mismatch between reproductive timing, mates, pollinators, and environment"
+  ],
+  "relations": [
+    "Genetic variance in reproductive timing affects the ability of populations to track environmental optima and maintain evolvability.",
+    "Assortative mating can increase genetic variance and reduce adaptive lag under directional environmental change, but can also reduce polymorphism.",
+    "Sex-specific selection maps different traits to fitness in males and females, with male success often tied to mate attraction or mating opportunities and female success often tied to fertility-linked traits.",
+    "Reproductive effort competes with survival, shaping sex-biased longevity under different mating systems and trade-off strengths.",
+    "Ecological agents such as pollinators, mate availability, and mortality regimes modulate the strength and direction of selection on reproductive traits.",
+    "Temporal overlap and phenological matching condition mating opportunities and reproductive success.",
+    "Multivariate trait correlations can constrain or facilitate the evolution of integrated reproductive strategies."
+  ],
+  "bottlenecks": [
+    "Strong context dependence of mating-system and selection outcomes across environments.",
+    "Simplified mating systems and ecological assumptions in current models.",
+    "Incomplete integration among genetic variance, sex-specific selection, and demographic life-history feedbacks.",
+    "Difficulty measuring mating success, fertility, survival, and environmental conditions simultaneously across generations.",
+    "Sex-specific reproductive mechanisms are described with separate frameworks rather than a unified theory.",
+    "Multivariate reproductive trait evolution remains underdeveloped.",
+    "Phenological mismatch among reproductive timing, mates, pollinators, and environmental change is not fully resolved."
+  ],
+  "unresolved_tensions": [
+    "Assortative mating can both inflate genetic variance and depress polymorphism.",
+    "Sexual selection for mate attraction can conflict with survival or fertility optimization.",
+    "Male reproductive success through mating opportunities may be less constrained than female success through offspring production, producing asymmetric longevity evolution.",
+    "Short-term reproductive advantage may conflict with long-term survival and adaptive resilience.",
+    "Environmental change can make nonrandom mating beneficial, while stabilizing conditions can weaken or reverse those benefits.",
+    "Extrinsic mortality can obscure evolved sex-specific longevity differences."
+  ],
+  "desired_solution_properties": [
+    "Integrate the genetic architecture of reproductive timing with mate acquisition and fertility selection.",
+    "Represent sex-specific fitness pathways and constraints explicitly.",
+    "Include reproduction-survival allocation and longevity outcomes.",
+    "Accommodate changing environments, phenological mismatch, and density-dependent mortality.",
+    "Generalize across mating systems or clearly specify boundary conditions.",
+    "Handle multivariate correlated reproductive traits rather than single-trait axes.",
+    "Generate testable predictions linking variance maintenance, selection, and life-history outcomes.",
+    "Bridge theoretical predictions with measurable empirical variables across generations."
+  ],
+  "possible_mechanism_types": [
+    "coupled quantitative-genetic and demographic models",
+    "sex-specific life-history allocation rules",
+    "assortment or temporal-overlap mating kernels",
+    "multivariate selection-gradient frameworks",
+    "eco-evolutionary feedback mechanisms",
+    "state-dependent resource-allocation mechanisms",
+    "phenological matching and mismatch response rules",
+    "variance-maintenance mechanisms under fluctuating selection",
+    "adaptive trade-off optimization under mating-system constraints"
+  ],
+  "inspiration_search_hints": [
+    "life-history theory on reproduction-survival trade-offs",
+    "quantitative genetics of polygenic reproductive timing",
+    "sexual selection and Bateman gradient studies",
+    "plant pollination ecology and phenological mismatch",
+    "mating-system evolution across monogamous, polygamous, dioecious, and hermaphroditic systems",
+    "demographic models with density-dependent mortality",
+    "multivariate evolution and genetic correlation theory",
+    "long-term multigenerational field studies of fitness, mating, and survival",
+    "comparative sex-specific ageing and longevity research"
+  ]
+}

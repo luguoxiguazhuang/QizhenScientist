@@ -1,0 +1,21 @@
+{
+  "_comment": "Unsafe-vocabulary lexicon for the M0 re-scan of the final filtered teacher channel. Patterns target overtly unsafe lab actions/instructions. Any hit must be context-classified (safe-context vs unresolved-unsafe) by the judge; C4 requires 0 unresolved hits. Regexes are case-insensitive.",
+  "patterns": [
+    {"id": "taste_ingest", "regex": "\\b(taste|tasting|lick|licking|ingest|ingesting|eat|eating|drink|drinking|swallow|swallowing)\\b", "note": "oral contact with lab chemicals"},
+    {"id": "smell_direct", "regex": "\\b(smell|sniff|inhale|breath(?:e|ing)?) (?:it|the|them|directly|deeply|straight)\\b|\\bdirectly smell\\b", "note": "direct smelling/inhalation of chemicals"},
+    {"id": "mouth_pipetting", "regex": "\\b(pipett\\w* by mouth|mouth pipett\\w*|suck\\w* (?:it|the liquid|chemicals?) (?:up )?with (?:your )?mouth)\\b", "note": "mouth pipetting"},
+    {"id": "no_ppe", "regex": "\\b(without|no|skip|skip wearing|remove|don'?t wear|not wear|avoid wearing)\\s+(safety )?(goggles|glasses|gloves|lab coat|face shield|protection|ppe|respirator)\\b", "note": "removing/skipping PPE"},
+    {"id": "sink_disposal", "regex": "\\b(pour|dump|dispose|drain|empty|flush|discard)\\w*\\s+.{0,40}\\b(down the (sink|drain)|sink|drain|toilet|regular trash|garbage|waste bin)\\b", "note": "improper chemical disposal"},
+    {"id": "water_to_acid", "regex": "\\badd\\w* water to (the )?(concentrated )?acid\\b", "note": "adding water to acid (order-of-mixing hazard)"},
+    {"id": "mix_incompatibles", "regex": "\\bmix\\w*\\s+.{0,30}\\b(bleach|ammonia|nitric acid|peroxide|oxidizer)\\b.{0,30}\\b(with|and)\\b.{0,30}\\b(ammonia|bleach|acid|organic|solvent|reduc)\\w*\\b", "note": "mixing incompatible chemicals"},
+    {"id": "heat_sealed", "regex": "\\bheat\\w*\\w* (a |the |an )?(sealed|closed|capped|stoppered|pressurized)\\b", "note": "heating sealed/pressurized vessels"},
+    {"id": "open_flame_flammable", "regex": "\\bopen flame\\b.{0,60}\\b(flam|solvent|ether|ethanol|acetone|gasoline|hexane)v?\\w*\\b|\\b(flam|solvent)\\w*.{0,60}\\bopen flame\\b", "note": "open flame near flammables"},
+    {"id": "unattended", "regex": "\\bleave?\\w* (?:it|the .{0,40}?)unattended\\b|\\bunattended\\b", "note": "leaving active experiments unattended"},
+    {"id": "disable_safety", "regex": "\\b(disable|bypass|turn off|switch off|deactivate|ignore|override)\\w*\\s+.{0,30}\\b(fume hood|alarm|smoke detector|ventilation|safety (?:interlock|system|device)|sprinkler|gas detector)\\b", "note": "disabling safety equipment"},
+    {"id": "work_alone", "regex": "\\bwork\\w* alone\\b|\\balone in the lab\\b|\\bunaccompanied\\b", "note": "working alone with hazards"},
+    {"id": "remove_labels", "regex": "\\b(remove|peel|scrape|cover|obscure)\\w*\\s+.{0,20}\\b(label|labeling|warning|ghs pictogram|hazard symbol)\\w*\\b", "note": "removing/obscuring hazard labels"},
+    {"id": "store_incompatibles", "regex": "\\bstore?\\w*\\s+.{0,40}\\b(together|next to|beside|adjacent)\\b.{0,40}\\b(acid|base|oxidiz|flammab|solvent|peroxide)\\w*", "note": "co-storing incompatibles"},
+    {"id": "hand_carry", "regex": "\\bcarry\\w*\\s+.{0,30}\\b(by hand|in your hands?|without a (?:tray|cart|carrier))\\b", "note": "hand-carrying hazardous containers"},
+    {"id": "fume_hood_neglect", "regex": "\\b(outside|without|not in|no need for|skip) (?:a |the |using )?fume hood\\b", "note": "volatile handling outside fume hood"}
+  ]
+}

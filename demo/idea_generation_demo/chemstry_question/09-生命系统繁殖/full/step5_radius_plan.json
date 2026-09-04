@@ -1,0 +1,12 @@
+{
+  "use_same_field": true,
+  "use_cross_domain": true,
+  "preferred_radii": [
+    "R1",
+    "R2"
+  ],
+  "same_field_top_k": 2,
+  "num_cross_domains": 2,
+  "cross_domain_top_k_per_domain": 2,
+  "rationale": "Same-field retrieval is needed to remain grounded in evolutionary ecology, quantitative genetics, sexual selection, and life-history theory. Cross-domain retrieval is justified because the RSS highlights unresolved integration across genetic architecture, sex-specific selection, mating ecology, survival trade-offs, and environmental mismatch, suggesting that mechanism transfer from external modeling frameworks may help build a unified predictive structure."
+}

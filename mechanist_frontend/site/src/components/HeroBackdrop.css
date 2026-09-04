@@ -1,0 +1,66 @@
+/* Ruling, a clearing for the title, and a fade at every edge. See
+   HeroBackdrop.jsx for what this replaced and why. */
+.backdrop {
+  /* Faint enough that it registers as paper rather than as a grid you are
+     meant to count. Any darker and the lines start crossing the lede. */
+  --hero-rule: rgba(29, 39, 42, 0.07);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: clamp(400px, 44vw, 600px);
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(to right, var(--hero-rule) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--hero-rule) 1px, transparent 1px);
+  /* Anchored to the centre so the ruling is symmetrical about the title
+     regardless of viewport width; an origin at the left edge would put a line
+     through the middle of the page at some widths and not at others. */
+  background-position: 50% 0;
+  background-size: 64px 64px;
+  -webkit-mask-image: radial-gradient(
+    ellipse 66% 74% at 50% 32%,
+    #000 0%,
+    rgba(0, 0, 0, 0.34) 56%,
+    transparent 86%
+  );
+  mask-image: radial-gradient(
+    ellipse 66% 74% at 50% 32%,
+    #000 0%,
+    rgba(0, 0, 0, 0.34) 56%,
+    transparent 86%
+  );
+}
+
+/* Painted over the ruling, in the page's own colour, so the lines thin out
+   under the display type instead of running through it. It is invisible as a
+   shape — its only job is what it erases. */
+.backdrop::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 42% 44% at 50% 30%,
+    var(--section-base) 0%,
+    color-mix(in srgb, var(--section-base) 82%, transparent) 46%,
+    transparent 74%
+  );
+}
+
+@media (max-width: 960px) {
+  .backdrop {
+    height: 420px;
+    background-size: 52px 52px;
+  }
+}
+
+@media (max-width: 640px) {
+  .backdrop {
+    --hero-rule: rgba(29, 39, 42, 0.04);
+
+    height: 340px;
+    background-size: 44px 44px;
+  }
+}

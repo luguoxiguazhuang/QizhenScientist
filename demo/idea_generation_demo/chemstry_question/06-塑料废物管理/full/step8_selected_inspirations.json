@@ -1,0 +1,291 @@
+[
+  {
+    "domain": "remote_sensing",
+    "paper_title": "Remote sensing for waste characterization",
+    "paper_abstract": "",
+    "radius": "R2",
+    "is_combination_plausible": true,
+    "combination_points": [
+      "remote-sensing-style spectral unmixing for mixed, contaminated, and layered materials",
+      "uncertainty-aware retrieval/inversion from noisy indirect measurements",
+      "multi-resolution sensing and aggregation from item/pixel-level observations to system-level waste streams",
+      "sensor fusion and calibration transfer across heterogeneous, real-world conditions"
+    ],
+    "combination_plan": "Adapt remote-sensing unmixing and retrieval frameworks to plastic-sorting spectroscopy by treating dirty, aged, pigmented, multilayer plastics as mixed spectral scenes, estimating material-state probabilities and uncertainties rather than hard labels. Then aggregate item-level posterior estimates into material-flow models to predict recycling yield and circular-economy outcomes.",
+    "justification": "Even with only the title, remote sensing for waste characterization suggests a transferable abstraction: robust inference about heterogeneous, contaminated material mixtures from indirect spectral measurements, with uncertainty and scaling from local observations to aggregate flows. These map directly onto the bottlenecks in industrial plastic spectroscopy, classification, and circular-economy decision support.",
+    "candidate_id": 3,
+    "source_paper": {
+      "paper_id": "https://openalex.org/W2265885259",
+      "title": "Remote sensing for waste characterization",
+      "abstract": "",
+      "year": 2012,
+      "keywords": [],
+      "references": [],
+      "citations": [],
+      "is_influential": false,
+      "score": 1.0,
+      "idea_fields": {},
+      "raw": {
+        "paper_id": "https://openalex.org/W2265885259",
+        "title": "Remote sensing for waste characterization",
+        "abstract": null,
+        "publication_year": 2012,
+        "year": 2012,
+        "cited_by_count": 0,
+        "citation_count": 0,
+        "score": 1.0,
+        "kg_score": 1.0,
+        "rank": 1,
+        "source": "kg",
+        "match_type": "kg_graph",
+        "pdf_url": "http://hdl.handle.net/10400.9/1775",
+        "paper_url": "https://openalex.org/W2265885259",
+        "identifiers": [
+          "openalex:https://openalex.org/W2265885259"
+        ],
+        "paper": {
+          "is_retracted": false,
+          "pdf_is_oa": false,
+          "oa_status": "green",
+          "is_open_access": true,
+          "language": "en",
+          "pdf_url": "http://hdl.handle.net/10400.9/1775",
+          "title": "Remote sensing for waste characterization",
+          "type": "article",
+          "pdf_version": "submittedVersion",
+          "venue_source_id": "https://openalex.org/S4377196556",
+          "has_abstract": false,
+          "publication_date": "2012-07-01",
+          "id": "https://openalex.org/W2265885259",
+          "venue_source_type": "repository",
+          "pdf_is_published": false,
+          "cited_by_count": 0,
+          "pdf_source_type": "repository",
+          "pdf_source_id": "https://openalex.org/S4377196556",
+          "referenced_works_count": 0,
+          "venue_source_display_name": "LNEG repository (National Laboratory of Energy and Geology)",
+          "label": "Paper",
+          "pdf_source_display_name": "LNEG repository (National Laboratory of Energy and Geology)",
+          "publication_year": 2012,
+          "created_date": "2025-10-10T00:00:00.000Z",
+          "updated_date": "2025-11-06T04:12:42.849Z",
+          "title_normalized": "remotesensingforwastecharacterization"
+        },
+        "hit_sources": [
+          "title_vector"
+        ],
+        "evidence": {
+          "keywords": [],
+          "titles": [],
+          "graph_paths": []
+        },
+        "score_breakdown": {
+          "sim_title": 0.862935513545014,
+          "sim_abstract": 0.0,
+          "title_vector_rerank_score": null,
+          "abstract_vector_rerank_score": null,
+          "combined_vector_rerank_score": 0.9528781771659851,
+          "norm_emb_path": 1.0,
+          "norm_title_path": 0.0,
+          "title_pre_graph_bonus": 0.0,
+          "norm_pre_graph_score": 1.0,
+          "norm_graph_score": 1.0,
+          "graph_support_factor": 1.0,
+          "title_bonus": 0.0,
+          "final_score": 1.0
+        }
+      }
+    }
+  },
+  {
+    "domain": "industrial_engineering",
+    "paper_title": "<i>Quo vadis</i> MFA? Integrated material flow analysis to support material efficiency",
+    "paper_abstract": "",
+    "radius": "R2",
+    "is_combination_plausible": true,
+    "combination_points": [
+      "Integrated material flow analysis (MFA) as a system-level organizing framework",
+      "Mass-balance and flow-accounting structures linking item-level material states to aggregate material streams",
+      "Material-efficiency and circular-economy decision support through flow-based scenario evaluation"
+    ],
+    "combination_plan": "Use integrated MFA as the backbone for translating item-level spectroscopic/sensor classifications and uncertainty estimates into material-flow models, recycling-yield predictions, and circular-economy decision metrics. The MFA structure can constrain and aggregate uncertain plastic-sorting outputs into mass-balanced flows for #3–#7, dirty, aged, contaminated, pigmented, and multilayer plastics.",
+    "justification": "The candidate paper’s focus on integrated material flow analysis maps directly onto the problem’s bottleneck of connecting item-level material-state recognition with material-flow analysis, recycling yield, and circular-economy decisions.",
+    "candidate_id": 6,
+    "source_paper": {
+      "paper_id": "https://openalex.org/W4286698685",
+      "title": "<i>Quo vadis</i> MFA? Integrated material flow analysis to support material efficiency",
+      "abstract": "",
+      "year": 2022,
+      "keywords": [],
+      "references": [],
+      "citations": [],
+      "is_influential": false,
+      "score": 0.9749,
+      "idea_fields": {},
+      "raw": {
+        "paper_id": "https://openalex.org/W4286698685",
+        "title": "<i>Quo vadis</i> MFA? Integrated material flow analysis to support material efficiency",
+        "abstract": null,
+        "publication_year": 2022,
+        "year": 2022,
+        "cited_by_count": 30,
+        "citation_count": 30,
+        "score": 0.9749,
+        "kg_score": 0.9749,
+        "rank": 2,
+        "source": "kg",
+        "match_type": "kg_graph",
+        "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/jiec.13288",
+        "paper_url": "https://openalex.org/W4286698685",
+        "identifiers": [
+          "openalex:https://openalex.org/W4286698685"
+        ],
+        "paper": {
+          "is_retracted": false,
+          "pdf_is_oa": false,
+          "oa_status": "hybrid",
+          "is_open_access": true,
+          "language": "en",
+          "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/jiec.13288",
+          "title": "<i>Quo vadis</i> MFA? Integrated material flow analysis to support material efficiency",
+          "type": "article",
+          "pdf_version": "publishedVersion",
+          "venue_source_id": "https://openalex.org/S203731762",
+          "has_abstract": false,
+          "publication_date": "2022-07-22",
+          "id": "https://openalex.org/W4286698685",
+          "venue_source_type": "journal",
+          "pdf_is_published": false,
+          "cited_by_count": 30,
+          "pdf_source_type": "journal",
+          "pdf_source_id": "https://openalex.org/S203731762",
+          "referenced_works_count": 159,
+          "venue_source_display_name": "Journal of Industrial Ecology",
+          "label": "Paper",
+          "pdf_source_display_name": "Journal of Industrial Ecology",
+          "venue_raw_source_name": "Journal of Industrial Ecology",
+          "publication_year": 2022,
+          "created_date": "2025-10-10T00:00:00.000Z",
+          "updated_date": "2026-01-17T23:10:49.606Z",
+          "title_normalized": "iquovadisimfaintegratedmaterialflowanalysistosupportmaterialefficiency",
+          "doi": "https://doi.org/10.1111/jiec.13288"
+        },
+        "hit_sources": [
+          "title_vector"
+        ],
+        "evidence": {
+          "keywords": [],
+          "titles": [],
+          "graph_paths": []
+        },
+        "score_breakdown": {
+          "sim_title": 0.8147345413656414,
+          "sim_abstract": 0.0,
+          "title_vector_rerank_score": null,
+          "abstract_vector_rerank_score": null,
+          "combined_vector_rerank_score": 0.09854346513748169,
+          "norm_emb_path": 0.9686715658555186,
+          "norm_title_path": 0.0,
+          "title_pre_graph_bonus": 0.0,
+          "norm_pre_graph_score": 0.9686715658555186,
+          "norm_graph_score": 0.9686715658555186,
+          "graph_support_factor": 1.0,
+          "title_bonus": 0.0,
+          "final_score": 0.9749372526844149
+        }
+      }
+    }
+  },
+  {
+    "domain": "same_field",
+    "paper_title": "An Innovative Route to Circular Rigid Plastics",
+    "paper_abstract": "An innovative route for plastics recycling is proposed, based on a combination of a logarithmic sorting process and colour plus high-resolution near-infrared (NIR) sensors. Although counterintuitive, it is shown that such a technology could sort clean flakes from rigid packaging waste into a very large number of different plastic grades with modest sorter capacity, provided that the chosen sensor is able to differentiate correctly between any two grades of plastics in the waste. Tests with high-resolution NIR on single pixels of transparent flakes from different types and brands of packaging show that this is indeed the case for a selection of 20 different packaging items bought from shops. Moreover, the results seem to indicate, in line with previous research, that high-resolution NIR data can be linked to important physical plastic properties like the melt flow viscosity and tensile strength. The attraction of deep sorting of waste plastics with relatively cheap sensors and modest sorter capacity is that the present industrial practice of tuning plastic grades to specific applications could coexist with commercial high-grade recycling at high levels of circularity and low carbon footprint. Therefore, advanced recycling technology is likely to be a societal alternative to phasing out plastics for rigid applications.",
+    "radius": "R1",
+    "is_combination_plausible": true,
+    "combination_points": [
+      "Logarithmic or hierarchical pairwise sorting to achieve many-class discrimination with modest separation capacity",
+      "Sensor fusion using color plus high-resolution NIR for grade-level plastic differentiation",
+      "Mapping spectral signatures to downstream physical material properties such as melt flow viscosity and tensile strength",
+      "Deep sorting as an organizing principle for linking item-level recognition to high-grade recycling and circular-economy outcomes"
+    ],
+    "combination_plan": "Adapt the logarithmic sorting idea into an uncertainty-aware hierarchical routing/classification system for dirty, aged, pigmented, multilayer, and #3–#7 plastics, where cheap sensor fusion (color, NIR/MIR, and other available modalities) makes pairwise material-state distinctions and escalates uncertain items to more expensive sensing or rejection. Couple the resulting grade/state probabilities with material-flow and yield models so item-level recognition directly informs recycling yield and circular-economy decisions.",
+    "justification": "Although the candidate focuses on cleaner rigid flakes, its core abstraction—economically scalable deep sorting through pairwise differentiability, hierarchical decision routing, and spectral-to-property mapping—maps directly onto the problem’s need for robust, uncertainty-aware, industrial plastic characterization and circular-economy linkage.",
+    "candidate_id": 1,
+    "source_paper": {
+      "paper_id": "https://openalex.org/W2988016874",
+      "title": "An Innovative Route to Circular Rigid Plastics",
+      "abstract": "An innovative route for plastics recycling is proposed, based on a combination of a logarithmic sorting process and colour plus high-resolution near-infrared (NIR) sensors. Although counterintuitive, it is shown that such a technology could sort clean flakes from rigid packaging waste into a very large number of different plastic grades with modest sorter capacity, provided that the chosen sensor is able to differentiate correctly between any two grades of plastics in the waste. Tests with high-resolution NIR on single pixels of transparent flakes from different types and brands of packaging show that this is indeed the case for a selection of 20 different packaging items bought from shops. Moreover, the results seem to indicate, in line with previous research, that high-resolution NIR data can be linked to important physical plastic properties like the melt flow viscosity and tensile strength. The attraction of deep sorting of waste plastics with relatively cheap sensors and modest sorter capacity is that the present industrial practice of tuning plastic grades to specific applications could coexist with commercial high-grade recycling at high levels of circularity and low carbon footprint. Therefore, advanced recycling technology is likely to be a societal alternative to phasing out plastics for rigid applications.",
+      "year": 2019,
+      "keywords": [],
+      "references": [],
+      "citations": [],
+      "is_influential": false,
+      "score": 0.6916525959968567,
+      "idea_fields": {},
+      "raw": {
+        "paper_id": "https://openalex.org/W2988016874",
+        "title": "An Innovative Route to Circular Rigid Plastics",
+        "abstract": "An innovative route for plastics recycling is proposed, based on a combination of a logarithmic sorting process and colour plus high-resolution near-infrared (NIR) sensors. Although counterintuitive, it is shown that such a technology could sort clean flakes from rigid packaging waste into a very large number of different plastic grades with modest sorter capacity, provided that the chosen sensor is able to differentiate correctly between any two grades of plastics in the waste. Tests with high-resolution NIR on single pixels of transparent flakes from different types and brands of packaging show that this is indeed the case for a selection of 20 different packaging items bought from shops. Moreover, the results seem to indicate, in line with previous research, that high-resolution NIR data can be linked to important physical plastic properties like the melt flow viscosity and tensile strength. The attraction of deep sorting of waste plastics with relatively cheap sensors and modest sorter capacity is that the present industrial practice of tuning plastic grades to specific applications could coexist with commercial high-grade recycling at high levels of circularity and low carbon footprint. Therefore, advanced recycling technology is likely to be a societal alternative to phasing out plastics for rigid applications.",
+        "publication_year": 2019,
+        "cited_by_count": 19,
+        "score": 0.6916525959968567,
+        "rank": 1,
+        "match_type": "vector_abstract",
+        "authors": [
+          {
+            "author_id": "https://openalex.org/A5046286094",
+            "name": "Pingping Wen",
+            "position": 1,
+            "is_corresponding": false,
+            "h_index": 6,
+            "works_count": 11,
+            "cited_by_count": 99
+          },
+          {
+            "author_id": "https://openalex.org/A5076836487",
+            "name": "M.C.M. Bakker",
+            "position": 2,
+            "is_corresponding": false,
+            "h_index": 13,
+            "works_count": 78,
+            "cited_by_count": 708
+          },
+          {
+            "author_id": "https://openalex.org/A5057273625",
+            "name": "Ruud Balkenende",
+            "position": 3,
+            "is_corresponding": false,
+            "h_index": 35,
+            "works_count": 138,
+            "cited_by_count": 4889
+          },
+          {
+            "author_id": "https://openalex.org/A5004747806",
+            "name": "Peter Rem",
+            "position": 4,
+            "is_corresponding": true,
+            "h_index": 25,
+            "works_count": 106,
+            "cited_by_count": 2413
+          },
+          {
+            "author_id": "https://openalex.org/A5084311815",
+            "name": "Yuri van Engelshoven",
+            "position": 9999,
+            "is_corresponding": false,
+            "h_index": 1,
+            "works_count": 1,
+            "cited_by_count": 19
+          }
+        ],
+        "author_names": [
+          "Pingping Wen",
+          "M.C.M. Bakker",
+          "Ruud Balkenende",
+          "Peter Rem",
+          "Yuri van Engelshoven"
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,87 @@
+{
+  "target_domain": "Inorganic color pigment discovery and materials chemistry, especially the search for new practical pigments through composition-structure-optical-property and human-color-perception modeling.",
+  "core_gap": "Current pigment discovery remains largely empirical and serendipitous because there is no robust predictive and inverse design framework that jointly links chemical composition, crystal structure, electronic structure, defect chemistry, particle morphology, synthesis feasibility, stability, toxicity, and perceived color to identify practically useful new pigments.",
+  "objects": [
+    "chemical composition",
+    "crystal structure",
+    "electronic band structure",
+    "defect chemistry",
+    "particle morphology",
+    "spectral reflectance",
+    "optical absorption",
+    "perceived color",
+    "hue",
+    "saturation",
+    "brightness",
+    "color gamut",
+    "metastable phase",
+    "synthesis pathway",
+    "thermal stability",
+    "chemical stability",
+    "lightfastness",
+    "toxicity",
+    "earth abundance",
+    "scalability",
+    "known pigment families",
+    "high-throughput screening",
+    "inverse design loop"
+  ],
+  "relations": [
+    "chemical composition constrains accessible crystal structures and defect states",
+    "crystal structure and defects determine electronic structure and optical absorption",
+    "optical absorption and particle morphology shape spectral reflectance",
+    "spectral reflectance maps to perceived color through human visual response",
+    "synthesis conditions determine whether a phase can be obtained and retained",
+    "stability, toxicity, and manufacturability filter candidate pigments",
+    "inverse design maps desired color and property targets to candidate compositions",
+    "autonomous discovery cycles connect prediction, synthesis, characterization, and validation"
+  ],
+  "bottlenecks": [
+    "predicting perceived color directly from composition and structure is unreliable",
+    "the viable pigment subset is narrow within vast inorganic chemical space",
+    "metastable phases are difficult to predict, synthesize, and retain",
+    "simultaneous optimization of color strength, safety, durability, and cost is hard",
+    "spectral novelty may not translate into perceptually meaningful new color",
+    "closed-loop pigment discovery remains insufficiently mature",
+    "exploration is concentrated in familiar oxide, sulfide, and silicate families"
+  ],
+  "unresolved_tensions": [
+    "novel spectral response versus limited human color categories",
+    "vivid color versus chemical and thermal stability",
+    "new composition exploration versus safety and environmental constraints",
+    "serendipitous discovery versus systematic predictive design",
+    "metastable functionality versus practical synthesizability",
+    "additional functions such as infrared reflectance versus visual color performance"
+  ],
+  "desired_solution_properties": [
+    "predictive composition-to-color capability",
+    "inverse design from desired perceptual and property targets",
+    "multi-objective optimization of color, stability, safety, abundance, and scalability",
+    "ability to evaluate metastability and synthesis feasibility",
+    "integration of human color perception and spectral novelty metrics",
+    "support for high-throughput or autonomous experimental validation",
+    "capacity to explore beyond established pigment families while retaining practicality"
+  ],
+  "possible_mechanism_types": [
+    "physics-informed predictive modeling",
+    "generative inverse design",
+    "surrogate modeling of electronic and optical properties",
+    "human-vision-aware color mapping",
+    "multi-objective optimization",
+    "active learning and closed-loop autonomous experimentation",
+    "metastability and synthesis-feasibility prediction",
+    "defect and crystal-structure engineering",
+    "spectral novelty and gamut analysis"
+  ],
+  "inspiration_search_hints": [
+    "computational materials discovery workflows for inorganic compounds",
+    "electronic-structure and band-gap prediction methods",
+    "color science models of human perception and gamut",
+    "autonomous laboratory loops used for materials synthesis",
+    "high-throughput screening of stable and metastable phases",
+    "defect-engineering approaches in optical materials",
+    "multi-objective optimization in safe and durable materials design",
+    "exploration of oxide, sulfide, silicate, and related inorganic families for unusual optical responses",
+    "functional color materials with coupled thermal or environmental behavior"
+  ]
+}

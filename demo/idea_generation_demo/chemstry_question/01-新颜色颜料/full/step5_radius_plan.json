@@ -1,0 +1,12 @@
+{
+  "use_same_field": true,
+  "use_cross_domain": true,
+  "preferred_radii": [
+    "R1",
+    "R2"
+  ],
+  "same_field_top_k": 2,
+  "num_cross_domains": 2,
+  "cross_domain_top_k_per_domain": 2,
+  "rationale": "Same-field retrieval is needed because the RSS and trend analysis show strong pigment-specific lineages around Mn/Cr oxide color centers, solid-solution tuning, clay-hosted hybrid pigments, and NIR-reflective cool pigments. However, the core gaps are structural and predictive rather than incremental: linking local coordination and electronic transitions to powder color, decoupling visible color from NIR absorption, stabilizing responsive organic chromophores, programming thermochromism, and handling waste-derived feedstock variability. These bottlenecks suggest that mechanism transfer from adjacent domains such as computational materials screening, phosphor/ligand-field design, cool-coating spectral engineering, nanoconfinement, and inverse multi-objective design is valuable."
+}

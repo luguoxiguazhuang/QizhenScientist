@@ -1,0 +1,25 @@
+# Local working files and generated scratch output
+tmp/
+
+# Credentials and local caches
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.runtime/.venv/
+idea_generation_scripts/.runtime/
+node_modules/
+
+# Regenerable experiment checkpoints and raw run data
+demo/labsafety-loose/ckpt/
+demo/labsafety-loose/data/
+demo/labsafety-loose/runs/
+demo/labsafety-strict/runs/
+
+# Large model artifacts
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.bin

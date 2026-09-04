@@ -1,0 +1,4 @@
+interface:
+  display_name: "SciAtlas Idea Grounding"
+  short_description: "Zero-start prior-art grounding"
+  default_prompt: "Use $sciatlas-idea-grounding to handle setup, run search-papers, read artifacts, and position this research idea against prior work."

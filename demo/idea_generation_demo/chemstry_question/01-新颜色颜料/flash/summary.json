@@ -1,0 +1,220 @@
+{
+  "ok": true,
+  "run_dir": "/REDACTED/tiaozhanbei/chemstry_question/01-新颜色颜料/flash",
+  "topic": "Research question: Are there more color pigments to discover?\nContext: It is possible to create new pigments, but not new colors. The first synthetic pigment was made in the early 1700s. In 2009, chemist Mas Subramanian accidently created a new blue pigment called “YInMn Blue.”",
+  "smoke_mode": false,
+  "steps": {
+    "step1": {
+      "status": "resumed",
+      "seed_paper_count": 1
+    },
+    "step2": {
+      "status": "resumed",
+      "graph_paper_count": 1
+    },
+    "step3": {
+      "status": "completed",
+      "serialized_chars": 424,
+      "trend_chars": 5975
+    },
+    "step4": {
+      "status": "completed",
+      "rss_keys": [
+        "bottlenecks",
+        "core_gap",
+        "desired_solution_properties",
+        "inspiration_search_hints",
+        "objects",
+        "possible_mechanism_types",
+        "relations",
+        "target_domain",
+        "unresolved_tensions"
+      ]
+    },
+    "step5": {
+      "status": "compressed",
+      "preferred_radii": [
+        "R1",
+        "R2"
+      ],
+      "compression": "deterministic flash radius plan; skipped LLM gate"
+    },
+    "step6": {
+      "status": "completed",
+      "candidate_count": 2,
+      "round": 1
+    },
+    "step7": {
+      "status": "completed",
+      "inspiration_count": 2,
+      "round": 1
+    },
+    "step8": {
+      "status": "compressed",
+      "selected_count": 2,
+      "round": 1,
+      "compression": "deterministic flash selection; skipped LLM inspiration selector"
+    },
+    "step9": {
+      "status": "completed",
+      "idea_count": 1,
+      "round": 1
+    }
+  },
+  "input": {
+    "topic": "Research question: Are there more color pigments to discover?\nContext: It is possible to create new pigments, but not new colors. The first synthetic pigment was made in the early 1700s. In 2009, chemist Mas Subramanian accidently created a new blue pigment called “YInMn Blue.”",
+    "seed_keywords": null,
+    "domain": "Chemistry",
+    "pdf_paths": [],
+    "resume_from_run_dir": null,
+    "workflow_mode": "flash"
+  },
+  "workflow_mode": "flash",
+  "workflow_path": "flash",
+  "effective_config": {
+    "sciatlas": {
+      "base_url": "http://sciatlas.openkg.cn",
+      "api_key": "***REDACTED***",
+      "timeout": 900,
+      "max_retries": 4,
+      "retry_backoff": 5.0,
+      "use_cache": true,
+      "cache_dir": "runs/cache",
+      "official_cli_root": ".",
+      "use_local_kg": false,
+      "local_search_root": "references/search"
+    },
+    "llm": {
+      "base_url": "https://redacted.invalid/compatible-mode/v1",
+      "model": "qwen3.8-max",
+      "temperature": 0.7,
+      "max_retries": 4,
+      "request_timeout": 1200
+    },
+    "pipeline": {
+      "workflow_mode": "flash",
+      "anchor_top_k": 3,
+      "keyword_min_papers": 2,
+      "k_step1": 1,
+      "seed_num_queries": 1,
+      "seed_per_query": 1,
+      "seed_request_multiplier": 3,
+      "seed_request_floor": 3,
+      "seed_recent_years": 7,
+      "seed_min_citations": 1000,
+      "graph_budget_ratio": 1.0,
+      "graph_budget_min": 5,
+      "graph_budget_max": 5,
+      "graph_max_predecessors_per_paper": 1,
+      "graph_min_forward_papers": 1,
+      "graph_candidate_fetch_limit": 10,
+      "num_candidate_step2": 1,
+      "num_expansion_step2": 1,
+      "innoeval_root": "/REDACTED/tiaozhanbei/SciAtlas/references/search/src/innoeval_search",
+      "grobid_base_url": "http://127.0.0.1:8070",
+      "num_cross_domains": 1,
+      "inspiration_top_k_same_field": 1,
+      "inspiration_top_k_per_domain": 1,
+      "max_novelty_feedback_rounds": 0,
+      "idea_count": 1,
+      "runs_dir": "runs"
+    }
+  },
+  "post_step9_novelty": {
+    "status": "completed",
+    "round": 1,
+    "novelty_levels": [
+      "medium"
+    ]
+  },
+  "seed_paper_count": 1,
+  "graph_paper_count": 1,
+  "candidate_inspiration_count": 2,
+  "inspiration_count": 2,
+  "selected_inspiration_count": 2,
+  "idea_count": 1,
+  "ideas": [
+    {
+      "title": "Perceptual-boundary-constrained generative inverse design with structured serendipity capture for discovering new inorganic color pigments",
+      "motivation": "The original query asks whether more color pigments can be discovered. The historical record suggests yes, because accidental inorganic phases such as YInMn Blue remain possible, but the deeper bottleneck is not a shortage of hypothetical compounds; it is the absence of a controlled route from desired perceived color and practical constraints to synthesizable candidate materials. This can be framed by problematizing the assumption that pigment discovery is exhausted and by redirecting attention to the discovery pathway itself [Alvesson et al., 2011](https://doi.org/10.5465/amr.2011.59330882). Current pigment discovery remains empirical because composition, crystal structure, defects, optical absorption, perceived color, stability, toxicity, and manufacturability are not jointly optimized. A constrained generative search over historical formulation spaces provides a transferable mechanism for proposing candidates under multiple practical constraints [Meda et al., 2025](https://doi.org/10.63665/aajed.v01i01.02). At the same time, pigment chemistry still produces unexpected colors and phases, so a structured way to capture anomalies and failed routes can convert serendipity into evidence rather than discarded noise [Hauser et al., 2020](https://doi.org/10.2533/chimia.2020.247). The proposed idea therefore targets new pigment materials, not new human color categories, by making pigment search inverse, perception-aware, and anomaly-sensitive.",
+      "methods": "1. Feasible-pigment latent space from historical and computed materials data: Build a latent generative model over inorganic pigment compositions and structure prototypes using known pigments, stable inorganic phases, and failed synthesis records. The model learns feasible regions of composition-structure space through historical clustering and constraint-aware latent representations, analogous to generative exploration of constrained formulation spaces in paint innovation [Meda et al., 2025](https://doi.org/10.63665/aajed.v01i01.02). Input features include oxidation-state balance, ionic-radius compatibility, electronegativity, predicted formation energy, toxicity flags, and earth-abundance indicators. The output is a proposal distribution, not a final answer, so that downstream constraints can shape candidate selection.\n2. Human-vision-aware color and novelty evaluator: Convert predicted or measured spectral reflectance into perceptual color coordinates and compute novelty relative to the known pigment gamut. A surrogate optical model estimates reflectance from composition, structure, defect, and particle-morphology features when direct measurement is unavailable. This operationalizes the problematized distinction between physical spectral novelty and perceived color relevance [Alvesson et al., 2011](https://doi.org/10.5465/amr.2011.59330882). The evaluator estimates hue, saturation, brightness, color strength, metamerism risk, and distance from the convex hull of known pigments under multiple standard illuminants. Candidates are scored not merely by unusual spectra but by whether the spectrum yields a practically distinguishable, stable, and useful visual color.\n3. Constraint-aware inverse posterior sampler: Use Markov Chain Monte Carlo or related posterior sampling in the latent pigment space to propose candidates conditioned on target perceptual novelty, phase stability or metastability, non-toxicity, synthesis feasibility, and scalability. This adapts constraint-aware generative search from paint formula innovation to inorganic pigment inverse design [Meda et al., 2025](https://doi.org/10.63665/aajed.v01i01.02). The sampler can be conditioned on a desired region near the boundary of the known perceptual gamut, thereby seeking pigments that expand usable color performance without requiring impossible new color categories.\n4. Structured serendipity capture ledger: Record unexpected colors, phases, morphologies, stability behaviors, and failed reactions in a structured ledger that assigns each anomaly a follow-up priority. This borrows the principle that unexpected outcomes can be organized into a productive discovery loop rather than treated as waste, as demonstrated in serendipitous odorant discovery [Hauser et al., 2020](https://doi.org/10.2533/chimia.2020.247). The ledger links each anomaly to synthesis conditions, characterization evidence, predicted parent composition, and a decision rule for retesting, model updating, or discard.\n5. Closed-loop validation and model updating: Iterate prediction, synthesis, characterization, and validation, updating the latent model with both intended candidates and anomaly-ledger entries. The loop uses constraint-aware proposal generation to focus the search and structured anomaly capture to preserve unexpected leads [Meda et al., 2025](https://doi.org/10.63665/aajed.v01i01.02); [Hauser et al., 2020](https://doi.org/10.2533/chimia.2020.247). Success is defined by phase-pure or retained metastable material, acceptable safety, durable color, and perceptual novelty, not merely by a new composition.\nAnalogy — borrows latent-space generative exploration and posterior sampling under practical constraints from Enhancing Paint Formula Innovation Using Generative AI and Historical Data Analytics; adapted as The formulation-space sampler is reinterpreted as an inorganic pigment composition-structure sampler conditioned on stability, toxicity, synthesis feasibility, and human-perceived color targets. [Meda et al., 2025](https://doi.org/10.63665/aajed.v01i01.02)\nAnalogy — borrows structured recognition of unexpected experimental outcomes and failure-driven discovery from The Serendipitous Discovery of a Rose Odorant; adapted as Unexpected pigment colors, phases, or failed syntheses are captured in an anomaly ledger and routed into characterization and model updating, turning accidental observations into candidate leads. [Hauser et al., 2020](https://doi.org/10.2533/chimia.2020.247)\nExperiment plan: Step 1, freeze the discovery setting and state the primary hypothesis: within a fixed test family of earth-abundant oxides, oxynitrides, and oxyfluorides with known structure prototypes, structured joint conditioning on stability and perceptual-gamut-boundary novelty yields more confirmed new usable pigments per fixed synthesis budget than unstructured or single-constraint sampling. Freeze the training data, generative model, property predictors, candidate count, synthesis platform, characterization panel, and acceptance criteria before generating candidates.; Step 2, Phase 1 one-factor test: vary only the sampling-constraint structure while holding all other factors fixed. Create five arms with equal candidate numbers, for example 120 candidates per arm: A random prior sampling, B stability-only posterior, C perceptual-novelty-only posterior, D unstructured mixture of candidates from B and C pooled before final filtering, and E structured joint posterior. All arms use the same latent model, same number of synthesis attempts, same target particle-size range, same binders or application media, and same blinded evaluation.; Step 3, controls for attribution: compare E with D to test whether structured joint conditioning, not mere presence of both constraints or post-hoc filtering, improves yield; compare E with B and C to test the contribution of each constraint; compare E with A to test unstructured exploration. The same latent model and training data are used across arms, holding model capacity and historical-data bias constant. Randomize synthesis order and blind analysts to arm identity so that differences are not caused by operator preference or unequal effort.; Step 4, confounder exclusion: use X-ray diffraction, electron diffraction, or Rietveld refinement to confirm phase identity and rule out mixed-phase color effects; use scanning electron microscopy and laser diffraction to rule out particle-size or morphology artifacts; use energy-dispersive spectroscopy or X-ray photoelectron spectroscopy to rule out impurity, dopant, or leaching-based color; repeat diffraction and reflectance after heat, light, humidity, and aging tests to rule out transient metastability or phase transformation; measure color under multiple illuminants and geometries to rule out metamerism or measurement-angle artifacts; track synthesis success rate and precursor cost to rule out easier synthesis or cost artifacts.; Step 5, primary endpoint and decision rule: a confirmed new usable pigment must be phase-pure or retain a defined metastable phase, meet pre-registered safety or leaching limits, remain stable under application-relevant conditions, and lie outside the known-pigment perceptual hull by a pre-registered threshold, such as a just-noticeable-difference margin under at least two standard illuminants, without requiring a new color category. The primary hypothesis is supported only if arm E produces a higher confirmed yield than arm D and than the best single-constraint arm under equal budget.; Step 6, Phase 2 secondary test of anomaly capture: after Phase 1, hold the winning sampler fixed and test the anomaly ledger as a single factor. Compare standard target-directed workflow with target-directed workflow plus structured anomaly routing, using equal total characterization effort, blinded anomaly review, and a fixed retesting quota to exclude extra-effort confounders. The endpoint is additional confirmed pigment leads from unexpected colors, phases, or failed reactions [Hauser et al., 2020](https://doi.org/10.2533/chimia.2020.247).; Step 7, Phase 3 scope and mechanism refinement: only if the core mechanisms are confirmed, vary one secondary factor at a time, such as chemical family, metastability threshold, defect chemistry, synthesis temperature, or scalable route, to determine whether the approach generalizes and which material mechanisms produce durable perceptual novelty.",
+      "method_overview": "This method is intended to solve the lack of a falsifiable, perception-aware inverse route to new practical inorganic pigments; it can be divided into five parts: a latent generative model of feasible pigment compositions and structure prototypes, a human-vision-aware color and novelty evaluator, a constrained posterior sampler that proposes candidates conditioned on stability and perceptual-boundary targets, an anomaly-capture ledger that converts unexpected synthesis outcomes into labeled training cases, and a closed-loop experimental validation and model-update protocol.",
+      "proposed_method": [
+        {
+          "name": "Feasible-pigment latent space from historical and computed materials data",
+          "description": "Build a latent generative model over inorganic pigment compositions and structure prototypes using known pigments, stable inorganic phases, and failed synthesis records. The model learns feasible regions of composition-structure space through historical clustering and constraint-aware latent representations, analogous to generative exploration of constrained formulation spaces in paint innovation [Meda et al., 2025](https://doi.org/10.63665/aajed.v01i01.02). Input features include oxidation-state balance, ionic-radius compatibility, electronegativity, predicted formation energy, toxicity flags, and earth-abundance indicators. The output is a proposal distribution, not a final answer, so that downstream constraints can shape candidate selection."
+        },
+        {
+          "name": "Human-vision-aware color and novelty evaluator",
+          "description": "Convert predicted or measured spectral reflectance into perceptual color coordinates and compute novelty relative to the known pigment gamut. A surrogate optical model estimates reflectance from composition, structure, defect, and particle-morphology features when direct measurement is unavailable. This operationalizes the problematized distinction between physical spectral novelty and perceived color relevance [Alvesson et al., 2011](https://doi.org/10.5465/amr.2011.59330882). The evaluator estimates hue, saturation, brightness, color strength, metamerism risk, and distance from the convex hull of known pigments under multiple standard illuminants. Candidates are scored not merely by unusual spectra but by whether the spectrum yields a practically distinguishable, stable, and useful visual color."
+        },
+        {
+          "name": "Constraint-aware inverse posterior sampler",
+          "description": "Use Markov Chain Monte Carlo or related posterior sampling in the latent pigment space to propose candidates conditioned on target perceptual novelty, phase stability or metastability, non-toxicity, synthesis feasibility, and scalability. This adapts constraint-aware generative search from paint formula innovation to inorganic pigment inverse design [Meda et al., 2025](https://doi.org/10.63665/aajed.v01i01.02). The sampler can be conditioned on a desired region near the boundary of the known perceptual gamut, thereby seeking pigments that expand usable color performance without requiring impossible new color categories."
+        },
+        {
+          "name": "Structured serendipity capture ledger",
+          "description": "Record unexpected colors, phases, morphologies, stability behaviors, and failed reactions in a structured ledger that assigns each anomaly a follow-up priority. This borrows the principle that unexpected outcomes can be organized into a productive discovery loop rather than treated as waste, as demonstrated in serendipitous odorant discovery [Hauser et al., 2020](https://doi.org/10.2533/chimia.2020.247). The ledger links each anomaly to synthesis conditions, characterization evidence, predicted parent composition, and a decision rule for retesting, model updating, or discard."
+        },
+        {
+          "name": "Closed-loop validation and model updating",
+          "description": "Iterate prediction, synthesis, characterization, and validation, updating the latent model with both intended candidates and anomaly-ledger entries. The loop uses constraint-aware proposal generation to focus the search and structured anomaly capture to preserve unexpected leads [Meda et al., 2025](https://doi.org/10.63665/aajed.v01i01.02); [Hauser et al., 2020](https://doi.org/10.2533/chimia.2020.247). Success is defined by phase-pure or retained metastable material, acceptable safety, durable color, and perceptual novelty, not merely by a new composition."
+        }
+      ],
+      "analogy_mapping": [
+        {
+          "inspiration": "Enhancing Paint Formula Innovation Using Generative AI and Historical Data Analytics",
+          "concept": "latent-space generative exploration and posterior sampling under practical constraints",
+          "adaptation": "The formulation-space sampler is reinterpreted as an inorganic pigment composition-structure sampler conditioned on stability, toxicity, synthesis feasibility, and human-perceived color targets.",
+          "citation": "[Meda et al., 2025](https://doi.org/10.63665/aajed.v01i01.02)"
+        },
+        {
+          "inspiration": "The Serendipitous Discovery of a Rose Odorant",
+          "concept": "structured recognition of unexpected experimental outcomes and failure-driven discovery",
+          "adaptation": "Unexpected pigment colors, phases, or failed syntheses are captured in an anomaly ledger and routed into characterization and model updating, turning accidental observations into candidate leads.",
+          "citation": "[Hauser et al., 2020](https://doi.org/10.2533/chimia.2020.247)"
+        }
+      ],
+      "experiment_plan": [
+        "Step 1, freeze the discovery setting and state the primary hypothesis: within a fixed test family of earth-abundant oxides, oxynitrides, and oxyfluorides with known structure prototypes, structured joint conditioning on stability and perceptual-gamut-boundary novelty yields more confirmed new usable pigments per fixed synthesis budget than unstructured or single-constraint sampling. Freeze the training data, generative model, property predictors, candidate count, synthesis platform, characterization panel, and acceptance criteria before generating candidates.",
+        "Step 2, Phase 1 one-factor test: vary only the sampling-constraint structure while holding all other factors fixed. Create five arms with equal candidate numbers, for example 120 candidates per arm: A random prior sampling, B stability-only posterior, C perceptual-novelty-only posterior, D unstructured mixture of candidates from B and C pooled before final filtering, and E structured joint posterior. All arms use the same latent model, same number of synthesis attempts, same target particle-size range, same binders or application media, and same blinded evaluation.",
+        "Step 3, controls for attribution: compare E with D to test whether structured joint conditioning, not mere presence of both constraints or post-hoc filtering, improves yield; compare E with B and C to test the contribution of each constraint; compare E with A to test unstructured exploration. The same latent model and training data are used across arms, holding model capacity and historical-data bias constant. Randomize synthesis order and blind analysts to arm identity so that differences are not caused by operator preference or unequal effort.",
+        "Step 4, confounder exclusion: use X-ray diffraction, electron diffraction, or Rietveld refinement to confirm phase identity and rule out mixed-phase color effects; use scanning electron microscopy and laser diffraction to rule out particle-size or morphology artifacts; use energy-dispersive spectroscopy or X-ray photoelectron spectroscopy to rule out impurity, dopant, or leaching-based color; repeat diffraction and reflectance after heat, light, humidity, and aging tests to rule out transient metastability or phase transformation; measure color under multiple illuminants and geometries to rule out metamerism or measurement-angle artifacts; track synthesis success rate and precursor cost to rule out easier synthesis or cost artifacts.",
+        "Step 5, primary endpoint and decision rule: a confirmed new usable pigment must be phase-pure or retain a defined metastable phase, meet pre-registered safety or leaching limits, remain stable under application-relevant conditions, and lie outside the known-pigment perceptual hull by a pre-registered threshold, such as a just-noticeable-difference margin under at least two standard illuminants, without requiring a new color category. The primary hypothesis is supported only if arm E produces a higher confirmed yield than arm D and than the best single-constraint arm under equal budget.",
+        "Step 6, Phase 2 secondary test of anomaly capture: after Phase 1, hold the winning sampler fixed and test the anomaly ledger as a single factor. Compare standard target-directed workflow with target-directed workflow plus structured anomaly routing, using equal total characterization effort, blinded anomaly review, and a fixed retesting quota to exclude extra-effort confounders. The endpoint is additional confirmed pigment leads from unexpected colors, phases, or failed reactions [Hauser et al., 2020](https://doi.org/10.2533/chimia.2020.247).",
+        "Step 7, Phase 3 scope and mechanism refinement: only if the core mechanisms are confirmed, vary one secondary factor at a time, such as chemical family, metastability threshold, defect chemistry, synthesis temperature, or scalable route, to determine whether the approach generalizes and which material mechanisms produce durable perceptual novelty."
+      ],
+      "description": "Motivation:\nThe original query asks whether more color pigments can be discovered. The historical record suggests yes, because accidental inorganic phases such as YInMn Blue remain possible, but the deeper bottleneck is not a shortage of hypothetical compounds; it is the absence of a controlled route from desired perceived color and practical constraints to synthesizable candidate materials. This can be framed by problematizing the assumption that pigment discovery is exhausted and by redirecting attention to the discovery pathway itself [Alvesson et al., 2011](https://doi.org/10.5465/amr.2011.59330882). Current pigment discovery remains empirical because composition, crystal structure, defects, optical absorption, perceived color, stability, toxicity, and manufacturability are not jointly optimized. A constrained generative search over historical formulation spaces provides a transferable mechanism for proposing candidates under multiple practical constraints [Meda et al., 2025](https://doi.org/10.63665/aajed.v01i01.02). At the same time, pigment chemistry still produces unexpected colors and phases, so a structured way to capture anomalies and failed routes can convert serendipity into evidence rather than discarded noise [Hauser et al., 2020](https://doi.org/10.2533/chimia.2020.247). The proposed idea therefore targets new pigment materials, not new human color categories, by making pigment search inverse, perception-aware, and anomaly-sensitive.\n\nMethods:\n1. Feasible-pigment latent space from historical and computed materials data: Build a latent generative model over inorganic pigment compositions and structure prototypes using known pigments, stable inorganic phases, and failed synthesis records. The model learns feasible regions of composition-structure space through historical clustering and constraint-aware latent representations, analogous to generative exploration of constrained formulation spaces in paint innovation [Meda et al., 2025](https://doi.org/10.63665/aajed.v01i01.02). Input features include oxidation-state balance, ionic-radius compatibility, electronegativity, predicted formation energy, toxicity flags, and earth-abundance indicators. The output is a proposal distribution, not a final answer, so that downstream constraints can shape candidate selection.\n2. Human-vision-aware color and novelty evaluator: Convert predicted or measured spectral reflectance into perceptual color coordinates and compute novelty relative to the known pigment gamut. A surrogate optical model estimates reflectance from composition, structure, defect, and particle-morphology features when direct measurement is unavailable. This operationalizes the problematized distinction between physical spectral novelty and perceived color relevance [Alvesson et al., 2011](https://doi.org/10.5465/amr.2011.59330882). The evaluator estimates hue, saturation, brightness, color strength, metamerism risk, and distance from the convex hull of known pigments under multiple standard illuminants. Candidates are scored not merely by unusual spectra but by whether the spectrum yields a practically distinguishable, stable, and useful visual color.\n3. Constraint-aware inverse posterior sampler: Use Markov Chain Monte Carlo or related posterior sampling in the latent pigment space to propose candidates conditioned on target perceptual novelty, phase stability or metastability, non-toxicity, synthesis feasibility, and scalability. This adapts constraint-aware generative search from paint formula innovation to inorganic pigment inverse design [Meda et al., 2025](https://doi.org/10.63665/aajed.v01i01.02). The sampler can be conditioned on a desired region near the boundary of the known perceptual gamut, thereby seeking pigments that expand usable color performance without requiring impossible new color categories.\n4. Structured serendipity capture ledger: Record unexpected colors, phases, morphologies, stability behaviors, and failed reactions in a structured ledger that assigns each anomaly a follow-up priority. This borrows the principle that unexpected outcomes can be organized into a productive discovery loop rather than treated as waste, as demonstrated in serendipitous odorant discovery [Hauser et al., 2020](https://doi.org/10.2533/chimia.2020.247). The ledger links each anomaly to synthesis conditions, characterization evidence, predicted parent composition, and a decision rule for retesting, model updating, or discard.\n5. Closed-loop validation and model updating: Iterate prediction, synthesis, characterization, and validation, updating the latent model with both intended candidates and anomaly-ledger entries. The loop uses constraint-aware proposal generation to focus the search and structured anomaly capture to preserve unexpected leads [Meda et al., 2025](https://doi.org/10.63665/aajed.v01i01.02); [Hauser et al., 2020](https://doi.org/10.2533/chimia.2020.247). Success is defined by phase-pure or retained metastable material, acceptable safety, durable color, and perceptual novelty, not merely by a new composition.\nAnalogy — borrows latent-space generative exploration and posterior sampling under practical constraints from Enhancing Paint Formula Innovation Using Generative AI and Historical Data Analytics; adapted as The formulation-space sampler is reinterpreted as an inorganic pigment composition-structure sampler conditioned on stability, toxicity, synthesis feasibility, and human-perceived color targets. [Meda et al., 2025](https://doi.org/10.63665/aajed.v01i01.02)\nAnalogy — borrows structured recognition of unexpected experimental outcomes and failure-driven discovery from The Serendipitous Discovery of a Rose Odorant; adapted as Unexpected pigment colors, phases, or failed syntheses are captured in an anomaly ledger and routed into characterization and model updating, turning accidental observations into candidate leads. [Hauser et al., 2020](https://doi.org/10.2533/chimia.2020.247)\nExperiment plan: Step 1, freeze the discovery setting and state the primary hypothesis: within a fixed test family of earth-abundant oxides, oxynitrides, and oxyfluorides with known structure prototypes, structured joint conditioning on stability and perceptual-gamut-boundary novelty yields more confirmed new usable pigments per fixed synthesis budget than unstructured or single-constraint sampling. Freeze the training data, generative model, property predictors, candidate count, synthesis platform, characterization panel, and acceptance criteria before generating candidates.; Step 2, Phase 1 one-factor test: vary only the sampling-constraint structure while holding all other factors fixed. Create five arms with equal candidate numbers, for example 120 candidates per arm: A random prior sampling, B stability-only posterior, C perceptual-novelty-only posterior, D unstructured mixture of candidates from B and C pooled before final filtering, and E structured joint posterior. All arms use the same latent model, same number of synthesis attempts, same target particle-size range, same binders or application media, and same blinded evaluation.; Step 3, controls for attribution: compare E with D to test whether structured joint conditioning, not mere presence of both constraints or post-hoc filtering, improves yield; compare E with B and C to test the contribution of each constraint; compare E with A to test unstructured exploration. The same latent model and training data are used across arms, holding model capacity and historical-data bias constant. Randomize synthesis order and blind analysts to arm identity so that differences are not caused by operator preference or unequal effort.; Step 4, confounder exclusion: use X-ray diffraction, electron diffraction, or Rietveld refinement to confirm phase identity and rule out mixed-phase color effects; use scanning electron microscopy and laser diffraction to rule out particle-size or morphology artifacts; use energy-dispersive spectroscopy or X-ray photoelectron spectroscopy to rule out impurity, dopant, or leaching-based color; repeat diffraction and reflectance after heat, light, humidity, and aging tests to rule out transient metastability or phase transformation; measure color under multiple illuminants and geometries to rule out metamerism or measurement-angle artifacts; track synthesis success rate and precursor cost to rule out easier synthesis or cost artifacts.; Step 5, primary endpoint and decision rule: a confirmed new usable pigment must be phase-pure or retain a defined metastable phase, meet pre-registered safety or leaching limits, remain stable under application-relevant conditions, and lie outside the known-pigment perceptual hull by a pre-registered threshold, such as a just-noticeable-difference margin under at least two standard illuminants, without requiring a new color category. The primary hypothesis is supported only if arm E produces a higher confirmed yield than arm D and than the best single-constraint arm under equal budget.; Step 6, Phase 2 secondary test of anomaly capture: after Phase 1, hold the winning sampler fixed and test the anomaly ledger as a single factor. Compare standard target-directed workflow with target-directed workflow plus structured anomaly routing, using equal total characterization effort, blinded anomaly review, and a fixed retesting quota to exclude extra-effort confounders. The endpoint is additional confirmed pigment leads from unexpected colors, phases, or failed reactions [Hauser et al., 2020](https://doi.org/10.2533/chimia.2020.247).; Step 7, Phase 3 scope and mechanism refinement: only if the core mechanisms are confirmed, vary one secondary factor at a time, such as chemical family, metastability threshold, defect chemistry, synthesis temperature, or scalable route, to determine whether the approach generalizes and which material mechanisms produce durable perceptual novelty.",
+      "inspiration_sources": [
+        "Enhancing Paint Formula Innovation Using Generative AI and Historical Data Analytics",
+        "The Serendipitous Discovery of a Rose Odorant"
+      ],
+      "key_references": [
+        "GENERATING RESEARCH QUESTIONS THROUGH PROBLEMATIZATION."
+      ],
+      "references": [
+        {
+          "citation": "Alvesson et al., 2011",
+          "url": "https://doi.org/10.5465/amr.2011.59330882",
+          "full": "Matas Alvesson, J. Sandberg. GENERATING RESEARCH QUESTIONS THROUGH PROBLEMATIZATION. 2011. Academy of Management Review. https://doi.org/10.5465/amr.2011.59330882"
+        },
+        {
+          "citation": "Meda et al., 2025",
+          "url": "https://doi.org/10.63665/aajed.v01i01.02",
+          "full": "Raviteja Meda. Enhancing Paint Formula Innovation Using Generative AI and Historical Data Analytics. 2025. American Advanced Journal for Emerging Disciplinaries. https://doi.org/10.63665/aajed.v01i01.02"
+        },
+        {
+          "citation": "Hauser et al., 2020",
+          "url": "https://doi.org/10.2533/chimia.2020.247",
+          "full": "Nicole Hauser, P. Kraft, E. M. Carreira. The Serendipitous Discovery of a Rose Odorant. 2020. CHIMIA International Journal for Chemistry. https://doi.org/10.2533/chimia.2020.247"
+        }
+      ],
+      "novelty_level": "medium",
+      "novelty_justification": "Relative to the supplied key reference on problematization, the idea is not anticipated: that reference supplies a questioning frame, not a materials-discovery method. The closest disclosed combination in the proposal is the pairing of Meda-style constrained generative formulation search with Hauser-style structured serendipity capture, plus Alvesson-style reframing. Those components already provide the broad problem, ingredients, and mechanism: generative search under practical constraints and systematic use of unexpected outcomes. The proposal adds an inorganic pigment composition-structure latent space, a human-vision-aware perceptual-gamut-boundary objective, and a controlled one-factor comparison of joint versus separate constraints. These additions are meaningful but mainly integrative and domain-adaptive; the claim rests heavily on assembling known generative inverse design, colorimetry, and anomaly logging rather than introducing a fundamentally new mechanism. Therefore novelty is capped at medium, despite the testable experimental design.",
+      "improvement_suggestions": [
+        "Make the perceptual-boundary claim mechanistically distinct by learning the known-pigment gamut as a differentiable frontier and sampling latent trajectories that explicitly cross that frontier while remaining on a stability or metastability manifold, then testing whether frontier-crossing trajectories, not merely constrained posterior samples, yield more durable new pigments.",
+        "Convert the serendipity ledger from a logging workflow into an abductive causal-update mechanism: infer latent causes of anomalies such as defect states, phase impurities, or synthesis path dependence, update the generative prior with surprise-weighted likelihoods, and test whether this surprise-driven prior update outperforms simple anomaly retesting."
+      ]
+    }
+  ]
+}

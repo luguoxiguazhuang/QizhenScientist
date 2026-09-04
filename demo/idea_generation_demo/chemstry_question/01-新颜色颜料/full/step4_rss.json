@@ -1,0 +1,88 @@
+{
+  "target_domain": "Pigment materials science, especially discovery and design of inorganic transition-metal oxide pigments, organic/inorganic hybrid pigments, NIR-reflective cool pigments, and responsive thermochromic color materials.",
+  "core_gap": "Existing pigment research can explain individual color cases after synthesis, but it lacks a general predictive structure-property framework that connects local coordination environment, dopant oxidation state, lattice distortion, electronic transitions, powder scattering, stability, toxicity, and NIR reflectance. Because of this missing predictive mechanism, the discovery of new pigment materials remains largely empirical, accidental, or substitution-driven, and existing methods cannot reliably determine whether a new host-dopant or hybrid architecture will produce an intense, stable, non-toxic, and functionally useful color material.",
+  "objects": [
+    "transition-metal color centers such as Mn3+, Mn4+, and Cr3+",
+    "local coordination polyhedra such as trigonal bipyramidal Mn3+ and distorted MnO6 octahedra",
+    "oxide host lattices such as YInO3-type, Li2MnO3-type, Li3AlMnO5-type, La3LiMnO7-type, and LaAlO3-type structures",
+    "solid-solution substitution and doping strategies",
+    "d-d electronic transitions and selection-rule relaxation",
+    "visible color metrics such as hue, redness, yellowness, brightness, and CIELAB parameters",
+    "near-infrared reflectance and solar-thermal behavior",
+    "clay and layered hosts such as palygorskite, montmorillonite, halloysite, sepiolite, kaolinite, bentonite, and hydrotalcite",
+    "organic chromophores such as anthocyanins and flavylium cations",
+    "host-guest confinement and organic/inorganic hybrid pigment architectures",
+    "thermochromic phase transitions and metastable high-pressure phases",
+    "particle morphology, scattering, and powder reflectance",
+    "stability factors including photostability, thermal stability, pH response, and chemical durability",
+    "non-toxicity and sustainable or waste-derived feedstocks"
+  ],
+  "relations": [
+    "local coordination symmetry controls the allowedness and intensity of transition-metal optical transitions",
+    "lattice distortion modifies d-d transition energies and therefore shifts observed hue and color purity",
+    "solid-solution substitution tunes composition, local structure, and optical absorption simultaneously",
+    "host lattice geometry determines which dopant coordination environments can be stabilized",
+    "organic chromophore stability depends on confinement, adsorption, and interaction with inorganic clay hosts",
+    "nanochannel or interlayer confinement can preserve responsive color change while improving environmental stability",
+    "macroscopic pigment color depends on both intrinsic electronic absorption and extrinsic powder scattering",
+    "metastable structural phases can produce irreversible color change when heating transforms the local transition-metal environment",
+    "NIR reflectance must be decoupled from visible absorption to produce cool pigments",
+    "sustainability constraints introduce feedstock variability that affects phase purity, morphology, and color reproducibility"
+  ],
+  "bottlenecks": [
+    "pigment discovery remains empirical because local structure, electronic transitions, and final powder color are not jointly predicted",
+    "many intense transition-metal colors rely on weak or forbidden d-d transitions that require special low-symmetry environments",
+    "strong visible color often conflicts with high NIR reflectance, especially for red and orange pigments",
+    "natural organic chromophores remain vulnerable to pH, light, oxygen, and heat even after clay stabilization",
+    "host-guest pigment design is not generalizable because dye structure and clay topology must be specifically matched",
+    "thermochromic materials lack unified control over transition temperature, reversibility, cycling durability, and color contrast",
+    "waste-derived pigment synthesis struggles with impurity control, phase reproducibility, and consistent optical properties",
+    "improving one property such as hue purity does not guarantee stability, non-toxicity, NIR performance, or scalable synthesis"
+  ],
+  "unresolved_tensions": [
+    "intense visible color versus high near-infrared reflectance",
+    "responsive color switching versus long-term chemical and photostability",
+    "environmentally friendly composition versus high pigment performance",
+    "metastable phase-enabled thermochromism versus practical durability and synthesis scalability",
+    "empirical substitution screening versus rational predictive design",
+    "local electronic color generation versus macroscopic powder scattering and morphology effects",
+    "natural dye sustainability versus limited intrinsic stability",
+    "bright color purity versus multifunctional requirements such as thermal stability, non-toxicity, and cool-coating performance"
+  ],
+  "desired_solution_properties": [
+    "predict pigment hue and intensity from composition, host lattice, dopant state, and local coordination",
+    "identify new pigment candidates without relying solely on accidental discovery",
+    "achieve strong visible color purity and brightness",
+    "maintain high NIR reflectance for energy-efficient cool coatings",
+    "provide thermal, photochemical, and environmental stability",
+    "use non-toxic, earth-abundant, or sustainable constituents",
+    "support tunable or reversible color change when dynamic functionality is required",
+    "accommodate realistic powder morphology and scattering effects",
+    "enable scalable synthesis with reproducible phase and color",
+    "integrate multiple performance objectives without collapsing one property to improve another"
+  ],
+  "possible_mechanism_types": [
+    "coordination-environment engineering to stabilize unusual color-producing polyhedra",
+    "local-distortion engineering to relax optical selection rules and intensify d-d transitions",
+    "solid-solution tuning of crystal field, bond distance, and transition energy",
+    "host-guest confinement mechanisms for stabilizing fragile organic chromophores",
+    "spectral decoupling mechanisms that separate visible absorption from NIR absorption",
+    "metastable-phase transition mechanisms for programmable irreversible or reversible thermochromism",
+    "effective-medium optical modeling that links microscopic absorption to macroscopic diffuse reflectance",
+    "many-body electronic-structure prediction of transition-metal multiplet transitions",
+    "inverse design of pigment compositions under multi-objective constraints",
+    "impurity-tolerant synthesis control for waste-derived or sustainable pigment feedstocks"
+  ],
+  "inspiration_search_hints": [
+    "crystal-field and ligand-field design rules from transition-metal oxide and phosphor chemistry",
+    "computational screening of dopant-host combinations using DFT, multiplet theory, or dynamical mean-field approaches",
+    "cool-roof and solar-reflective pigment design strategies that manage visible versus NIR spectral absorption",
+    "Maya Blue-like host-guest confinement principles from clay mineralogy and dye stabilization",
+    "thermochromic phase-change and metastable materials design from solid-state chemistry",
+    "inverse materials design and multi-objective optimization from materials informatics",
+    "scattering-aware optical modeling from pigment, paint, and powder technology",
+    "encapsulation and nanoconfinement strategies from hybrid organic-inorganic materials",
+    "waste-to-materials processing principles for impurity-tolerant pigment synthesis",
+    "non-toxic rare-earth and transition-metal oxide design from environmentally friendly coating materials"
+  ]
+}

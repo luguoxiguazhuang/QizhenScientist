@@ -1,0 +1,108 @@
+Trends:
+
+I treat the seed paper, “Development of High NIR-Reflective Red Li₂MnO₃ Pigments,” as Paper 0, and the 17 temporally ordered references as Papers 1–17. The subgraph is branched rather than strictly linear, so the most informative transitions are both chronological and lineage-based.
+
+Paper 0 to Paper 1: The seed’s focus on high-NIR-reflective red Li₂MnO₃ pigments is only weakly connected to Paper 1, “Effect of hydrothermal treatment on the acidity distribution of γ-Al₂O₃ support,” in terms of explicit pigment science. However, Paper 1 contributes a general materials-chemistry idea that recurs throughout the later pigment work: controlled synthesis and post-treatment can redistribute local surface/structural environments, thereby changing functional properties. In the pigment context, this logic later appears as tuning host lattices, coordination environments, and particle surfaces to control color and stability.
+
+Paper 1 to Paper 2: The field shifts from generic oxide processing to explicit chromophore discovery and mechanism. Paper 2, “Mn³⁺ in Trigonal Bipyramidal Coordination: A New Blue Chromophore,” is one of the foundational papers in the graph. It shows that dilute Mn³⁺ in trigonal bipyramidal coordination produces an intense blue color, explaining the origin of YInMn-type blue through optical spectroscopy and first-principles electronic-structure analysis. This is a major conceptual advance: color is not treated merely as a compositional outcome, but as a consequence of local coordination symmetry and allowed electronic transitions.
+
+Paper 2 to Paper 3: The research expands from Mn³⁺ blue chemistry to Mn⁴⁺ red chemistry. Paper 3, “Li₂MnO₃: a rare red-coloured manganese(IV) oxide exhibiting tunable red–yellow–green emission,” identifies Li₂MnO₃ as an unusual red Mn⁴⁺ oxide and attributes its color and emission to honeycomb-ordered LiMn₆ units in a layered rock-salt-related structure. This paper becomes the central foundation for the red Mn-oxide lineage, including the seed paper’s Li₂MnO₃ pigment work.
+
+Paper 3 to Paper 7: This is an explicit predecessor chain. Paper 7, “Systematic color variation across the solid solution members, Li₂Mn₁₋ₓTiₓO₃,” builds directly on Paper 3 by moving from a single red Li₂MnO₃ phase to a full compositional solid-solution series. The advance is systematic tunability: Mn/Ti substitution is used to vary color while tracking structural and optical changes. This marks a shift from discovering a colored phase to engineering a color family.
+
+Paper 7 to Paper 8: Another explicit predecessor chain. Paper 8, “Effect of [MnO₆] Octahedra to the Coloring Mechanism of (Li₁₋ₓNaₓ)₂MnO₃,” deepens the compositional study into a local-structure mechanism. It shows that Na⁺ substitution enlarges and distorts [MnO₆] octahedra, altering spin-allowed and spin-forbidden Mn⁴⁺ d–d transitions and increasing red color purity. This is a key transition because it converts observed color variation into a structure–property design rule.
+
+Paper 8 to Paper 0: The seed paper can be read as the applied convergence of this Li₂MnO₃/Mn⁴⁺ red lineage. It takes the red-color chemistry and structural tuning developed in Papers 3, 7, and 8 and pushes it toward a functional requirement: high near-infrared reflectance. The research question therefore moves from “Can Mn⁴⁺ oxides be red pigments?” to “Can Mn⁴⁺ oxide pigments be both strongly red and useful as cool, NIR-reflective coatings?”
+
+Paper 0 to Paper 10: The seed’s NIR-reflective red-pigment agenda is extended in Paper 10, “New red pigments based on Li₃AlMnO₅ for NIR reflective cool coatings.” Here the Mn-red oxide concept is transferred from Li₂MnO₃-type structures to Li₃AlMnO₅-based pigments. The key advance is not simply a new hue, but a new functional target: red color combined with high NIR reflectance for energy-saving coatings.
+
+Paper 10 to Paper 17: This lineage continues in Paper 17, “Cr³⁺-doped LaAlO₃ red pigments with enhanced near-infrared reflectance for energy-efficient coatings.” The field moves from Mn-based red oxides to Cr³⁺-doped perovskite hosts, but the scientific objective remains the same: produce a visually strong red pigment that reflects NIR radiation. This shows a broader trend in which pigment research is no longer only about visible color; it is increasingly about managing the full solar spectrum.
+
+Paper 8 to Paper 11: Paper 11, “Novel Orange Color Pigments Based on La₃LiMnO₇,” extends the Mn/Li oxide design strategy from red toward orange. It uses La₃LiMn₁₋ₓTiₓO₇ solid solutions and identifies La₃LiMn₀.₉₇Ti₀.₀₃O₇ as a bright, non-toxic orange pigment. The transition matters because it shows that the same structural-design logic—Mn-based color centers, solid-solution tuning, and non-toxic oxide hosts—can be expanded across adjacent hues.
+
+Paper 2 to Paper 12: This is a major mechanistic deepening of the YInMn blue discovery. Paper 12, “Relation between crystal structure and optical properties in the correlated blue pigment YIn₁₋ₓMnₓO₃,” combines many-body electronic-structure treatment with an effective-medium optical model to connect local Mn coordination to diffuse reflectance. It confirms that a distorted two-pyramid Mn environment is responsible for the blue color and shows how distortion helps activate d–d transitions. This shifts the field from empirical discovery toward more predictive pigment design.
+
+Paper 2 to Paper 15: Paper 15, “High-Pressure Route to Irreversible Thermochromic Materials,” reuses the Mn-doped rare-earth oxide/perovskite chemistry associated with YInMn-type systems but redirects it toward dynamic color change. Instead of asking only how to make a stable blue pigment, it asks how to use Mn-centered optical transitions in metastable structures to produce irreversible thermochromism. The high-pressure synthesis route creates metastable phases that transform upon heating, changing the local transition-metal environment and therefore the color.
+
+Paper 13 as a functional extension: Paper 13, “Thermochromic properties of some colored oxide materials,” is less tightly integrated into the explicit predecessor chains, but it is important because it quantifies temperature-dependent color change in commercial and non-toxic oxides, including YInMn Blue. It represents the movement from static pigment color to measurable, reversible, temperature-dependent color behavior. Its dataset on CIELAB parameters and color contrast ΔE provides a bridge between pigment chemistry and functional thermochromic performance.
+
+Paper 4 to Paper 6: In the organic/inorganic hybrid branch, Paper 4, “Organic/inorganic hybrid pigments from flavylium cations and palygorskite,” establishes a Maya Blue-inspired strategy: protect organic chromophores by adsorbing them into clay hosts. Paper 6, “Acid/base reversible allochroic anthocyanin/palygorskite hybrid pigments,” builds on this by using anthocyanins and palygorskite to create reversible acid/base color-changing pigments. The transition moves from simple stabilization to responsive color switching.
+
+Paper 5 parallel to Paper 6: Papers 5 and 6 represent parallel, same-period approaches to anthocyanin–clay hybrid pigments. Paper 5, “A Comparative Study on Color Stability of Anthocyanin Hybrid Pigments Derived from 1D and 2D Clay Minerals,” compares halloysite, sepiolite, kaolinite, and montmorillonite, showing that host geometry and nanochannel confinement strongly affect stability and gas-sensitive color change. Paper 6 focuses more narrowly on palygorskite-based acid/base reversibility. Neither direction fully displaces the other; instead, the field later combines both insights: host topology matters, and responsive color change is valuable.
+
+Paper 5/6 to Paper 9: Paper 9, “Anthocyanin Hybrid Nanopigments from Pomegranate Waste,” explicitly extends the anthocyanin–clay hybrid concept toward sustainability and application. It uses pomegranate-derived dye, nanoclays such as montmorillonite and hydrotalcite, biomordants, and polyester bionanocomposites, and it adds life-cycle assessment. The key transition is from making stable hybrid pigments to making them from waste streams and integrating them into polymer materials.
+
+Paper 6 to Paper 14: Paper 14, “Organic–Inorganic Hybrid Pigments Based on Bentonite: Strategies to Stabilize the Quinoidal Base Form of Anthocyanin,” refines the hybrid-pigment strategy by targeting the fragile quinoidal base form of anthocyanin, which is responsible for desirable purple/blue hues but is highly unstable. Using organobentonite and pH-controlled incorporation, it improves photostability. This represents a shift from general dye stabilization to molecular-form-specific stabilization.
+
+Paper 0 to Paper 16: Paper 16, “Studies of the Morphology of Hematite Synthesized from Waste Iron Sulfate,” connects to the seed’s broader concern with red inorganic pigments, but from a sustainability angle. It converts waste iron sulfate into hematite red pigments and emphasizes reaction conditions, oxidation pathways, and particle morphology. This shows another route to “new” pigments: not new color categories, but new sustainable sources and processing routes for established hues.
+
+Key Turning Points:
+
+1. From empirical pigment discovery to coordination-environment design.  
+   Paper 2 is the clearest turning point. The intense blue of Mn³⁺ in trigonal bipyramidal coordination shows that a new pigment can arise not from a wholly new element or color class, but from placing a known ion in an unusual local coordination environment. This reframes pigment discovery as a problem of local structure, symmetry, and electronic transitions. It also provides the scientific basis for understanding YInMn Blue, the 2009 accidental blue pigment mentioned in the topic context.
+
+2. From single-color oxides to compositionally tunable Mn⁴⁺ red systems.  
+   Paper 3 establishes Li₂MnO₃ as a rare red Mn⁴⁺ oxide. Paper 7 then introduces systematic Ti substitution, and Paper 8 converts that compositional tuning into a mechanistic model based on [MnO₆] octahedral distortion and Mn⁴⁺ d–d transitions. This sequence is crucial because it turns red Mn-oxide pigments from isolated observations into a design platform.
+
+3. From visible color alone to functional NIR-reflective “cool” pigments.  
+   The seed paper, together with Papers 10 and 17, marks a shift from chromatic performance to energy-related performance. The central question becomes not only “Is the pigment red?” but “Does it reflect NIR well enough to reduce heat buildup?” This is a major redirection because it couples aesthetic color with building-energy, coating, and sustainability requirements.
+
+4. From natural dye instability to clay-hosted hybrid pigment engineering.  
+   Papers 4, 5, 6, 9, and 14 show a second major turning point: natural organic colorants such as flavylium and anthocyanin molecules are not treated as standalone pigments but as guests inside inorganic hosts. The field moves from simply observing dye color to engineering host–guest interactions, pH response, photostability, thermal stability, and nanochannel confinement.
+
+5. From static pigments to responsive and thermochromic materials.  
+   Papers 6, 13, and 15 mark the transition from fixed color to dynamic color. Paper 6 introduces acid/base reversible allochroism in anthocyanin/palygorskite hybrids. Paper 13 quantifies reversible thermochromism in oxide pigments. Paper 15 introduces high-pressure metastable phases that produce irreversible high-temperature thermochromism. Together, they show that pigment research is expanding into color-changing, sensing, and temperature-history functions.
+
+6. From qualitative structure–color relations to predictive modeling.  
+   Paper 12 is a turning point for the blue oxide branch because it combines many-body electronic-structure methods with an effective-medium optical model. This is important because pigment color in real powders depends not only on electronic transitions but also on scattering, particle morphology, and local structural disorder. The move toward quantitative prediction is essential if the field is to discover pigments by design rather than accident.
+
+7. From virgin or hazardous pigment chemistries to waste-derived and non-toxic alternatives.  
+   Papers 9, 11, and 16 show a sustainability turn. Paper 9 uses pomegranate waste and biobased hybrid pigments. Paper 11 emphasizes non-toxic orange oxides. Paper 16 converts waste iron sulfate into hematite pigments. This turning point is not only environmental; it changes the scientific problem because waste-derived feedstocks introduce variability, impurity control, and morphology-control challenges.
+
+Recurring Limitations:
+
+1. Organic and natural pigment stability remains incompletely solved.  
+   Papers 4, 5, 6, 9, and 14 all improve the stability of flavylium or anthocyanin-based pigments by using clay hosts, nanochannels, organoclays, or biomordants. However, the underlying vulnerability of natural chromophores to pH, light, oxygen, and heat persists. The papers reduce degradation but do not eliminate it, especially for the fragile quinoidal base form of anthocyanins.
+
+2. Trade-offs among color intensity, stability, toxicity, and sustainability.  
+   Several papers seek non-toxic or environmentally friendly pigments, but performance trade-offs remain. Paper 8 seeks environmentally friendly Mn⁴⁺ red pigments, Paper 11 seeks non-toxic orange pigments, and Paper 16 seeks waste-derived iron oxide pigments. Yet the field still struggles to simultaneously achieve high color purity, high stability, low toxicity, low cost, and sustainable sourcing.
+
+3. Red pigments with high NIR reflectance remain scientifically challenging.  
+   Papers 10 and 17 address the need for red pigments that reflect NIR radiation, but the broader problem is not fully resolved. Strong visible red color often requires absorption bands that can overlap with or approach NIR regions, and many conventional red pigments heat up under solar exposure. The graph shows promising Mn- and Cr-based oxide systems, but a general design rule for high-NIR-reflective red pigments is still lacking.
+
+4. Pigment discovery is still partly empirical.  
+   Although Paper 12 advances predictive modeling, much of the subgraph still relies on solid-state synthesis, compositional substitution, and experimental screening. Papers 7, 8, 10, 11, and 17 all use substitution strategies, but the choice of host, dopant, and synthesis route is often guided by chemical intuition rather than a universal predictive framework.
+
+5. Thermochromic systems face durability and controllability problems.  
+   Paper 13 shows that many oxides change color reversibly with temperature, but exceptions such as incomplete recovery in WO₃ indicate unresolved durability issues. Paper 15 offers a route to irreversible high-temperature thermochromism, but the approach depends on metastable high-pressure phases and raises questions about practical synthesis, cyclability, and transition-temperature control.
+
+6. Host–guest specificity limits hybrid pigment generality.  
+   In Papers 4, 5, 6, and 14, the performance of organic/inorganic hybrid pigments depends strongly on the match between dye molecular structure and clay host geometry. For example, Paper 4 shows that a 4-methyl substituent can hinder inclusion into palygorskite channels. Paper 5 shows that 1D and 2D clay minerals produce different loading and stability behavior. These results demonstrate that hybrid pigment design is not yet generalizable across dyes and hosts.
+
+7. Color purity and brightness are improved, but long-term functional robustness is not always demonstrated.  
+   Paper 8 improves red color purity through Na⁺-induced octahedral distortion, and Paper 11 reports brighter orange pigments than commercial products. However, the graph repeatedly shows that improving one optical metric does not automatically solve thermal stability, chemical durability, NIR reflectance, or scalable synthesis.
+
+Structural Gaps:
+
+1. No general predictive theory links local coordination to final pigment hue in real powders.  
+   The field can explain individual cases—Mn³⁺ trigonal bipyramidal blue, Mn⁴⁺ red in Li₂MnO₃, Cr³⁺ red in perovskites—but it lacks a unified model that predicts CIELAB color from host lattice, dopant, oxidation state, local distortion, multiplet transitions, charge-transfer effects, particle size, and scattering. This is a core scientific gap for answering whether more pigments can be discovered rationally.
+
+2. Selection-rule engineering for intense d–d colors remains underdeveloped.  
+   Many transition-metal pigments rely on d–d transitions that are formally weak or forbidden. Papers 2 and 12 show that low-symmetry coordination and distortion can intensify color, but the field does not yet have general rules for deliberately engineering local distortions to produce intense, saturated hues without introducing instability, unwanted NIR absorption, or toxic elements.
+
+3. The simultaneous optimization of visible color purity and NIR reflectance is unsolved.  
+   Cool pigments require strong visible absorption but minimal NIR absorption. The graph shows progress in Mn-based and Cr-based red pigments, but the electronic-structure principles for decoupling visible color from NIR absorption are not fully established. This is especially important for red and orange pigments, where heat buildup is a major practical problem.
+
+4. Stable yet responsive organic/inorganic hybrid pigments remain a scientific challenge.  
+   Anthocyanin and flavylium hybrids can be stabilized, but their responsiveness to pH, gas, light, and heat also makes them vulnerable. The unresolved problem is how to confine and protect organic chromophores strongly enough to prevent degradation while preserving reversible color switching. This requires a deeper molecular understanding of proton transfer, excited-state decay, host–guest electronic coupling, and confinement effects.
+
+5. Programmable thermochromism lacks a unified mechanistic framework.  
+   The field has reversible thermochromic oxides and irreversible high-pressure metastable thermochromic materials, but it does not yet have a general way to program transition temperature, reversibility, cycling lifetime, and color contrast. The relationship between rare-earth size, transition-metal local environment, phase stability, diffusion kinetics, and optical response is still only partially understood.
+
+6. Waste-derived pigment synthesis lacks robust structure–property control.  
+   Papers 9 and 16 show that waste streams can become pigment sources, but waste feedstocks introduce chemical variability. The open scientific problem is how to control phase purity, particle morphology, impurity incorporation, and color reproducibility when the starting material is not chemically uniform. This is not merely an engineering issue; it requires understanding how impurities affect nucleation, oxidation state, crystal field, and optical absorption.
+
+7. Multifunctional pigment design remains largely unachieved.  
+   The graph shows separate advances: bright color, NIR reflectance, acid/base responsiveness, thermochromism, non-toxicity, and sustainability. However, no single design strategy yet integrates all of these. A major open problem is whether one material can be intensely colored, highly NIR reflective, thermally and chemically stable, environmentally safe, and derived from sustainable feedstocks without performance collapse in one of these dimensions.
+
+Overall, the historical progression supports the view that new pigment materials are still discoverable, but they are not “new colors” in the perceptual sense. The field is discovering new chemical hosts, coordination environments, solid solutions, hybrid architectures, and functional variants of existing hues. The unresolved scientific frontier is not the existence of new color categories, but the rational design of pigment materials with better stability, sustainability, NIR performance, and dynamic functionality.

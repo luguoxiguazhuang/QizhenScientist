@@ -1,0 +1,82 @@
+# SEED
+META
+topic: Research question: How can matter be programmed into living materials?
+Context: Synthetic biology is an interdisciplinary field at the nexus of biochemistry, materials science and engineering, biology, chemistry, and other disciplines. Synthetic biologists aim to redesign or synthesize cells, life science systems, and even whole organisms to address grand challenges across sectors such as medicine and manufacturing. To engineer a new biological component, researchers combine DNA synthesis and genomics to assemble novel genomes. Self-assembly of nonliving and living components is another route being investigated, through both bottom-up and top-down processes. Wil Srubar, a materials scientist and architectural engineer, has been researching ways to embed cells with new abilities, “demonstrating the power and potential of engineered living materials at many scales, including electrically conductive biofilms, single-cell living catalysts for polymerization reactions, and living photovoltaics,” he writes.
+seed_paper: Preparation of Hybrid Sol-Gel Materials Based on Living Cells of Microorganisms and Their Application in Nanotechnology
+
+# CITATION SUBGRAPH (3 refs, temporally ordered by year)
+
+## [1] Photodegradable Hydrogel Matrices for Spatiotemporal Control of Bacteria Transport and Delivery (2025, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 1
+cited_in_sections = []
+cite_count = 1
+section_weight = 0.0
+delta_year = unknown
+is_influential = False
+low_confidence = True
+cited_by_subgraph = 0
+
+[PREDECESSORS]
+- ref_idx=[] delta_yr=unknown edge_type=none
+
+[IDEA]
+Problem: Stimuli-responsive hydrogels that provide controlled degradation can be used as bacteria delivery systems for advanced therapeutic applications. Here, we report the first use of photodegradable hydrogels as materials that can direct bacterial movement, tune mean bacteria speed, and control bacteria 
+Existing Methods: Unavailable from local metadata.
+Motivation: Stimuli-responsive hydrogels that provide controlled degradation can be used as bacteria delivery systems for advanced therapeutic applications. Here, we report the first use of photodegradable hydrogels as materials that can direct bacterial movement, tune mean bacteria speed, and control bacteria 
+Proposed Method: Stimuli-responsive hydrogels that provide controlled degradation can be used as bacteria delivery systems for advanced therapeutic applications. Here, we report the first use of photodegradable hydrogels as materials that can direct bacterial movement, tune mean bacteria speed, and control bacteria 
+Experiment Plan: Unavailable from local metadata.
+
+[ABSTRACT] Stimuli-responsive hydrogels that provide controlled degradation can be used as bacteria delivery systems for advanced therapeutic applications. Here, we report the first use of photodegradable hydrogels as materials that can direct bacterial movement, tune mean bacteria speed, and control bacteria delivery through ...
+
+## [2] Metabolite-responsive Control of Transcription by Phase Separation-based Synthetic Organelles (2024, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 1
+cited_in_sections = []
+cite_count = 0
+section_weight = 0.0
+delta_year = unknown
+is_influential = False
+low_confidence = True
+cited_by_subgraph = 0
+
+[PREDECESSORS]
+- ref_idx=[] delta_yr=unknown edge_type=none
+
+[IDEA]
+Problem: Abstract Living natural materials have remarkable sensing abilities that translate external cues into functional changes of the material. The reconstruction of such sensing materials in bottom-up synthetic biology provides the opportunity to develop synthetic materials with life-like sensing and ada
+Existing Methods: Unavailable from local metadata.
+Motivation: Abstract Living natural materials have remarkable sensing abilities that translate external cues into functional changes of the material. The reconstruction of such sensing materials in bottom-up synthetic biology provides the opportunity to develop synthetic materials with life-like sensing and ada
+Proposed Method: Abstract Living natural materials have remarkable sensing abilities that translate external cues into functional changes of the material. The reconstruction of such sensing materials in bottom-up synthetic biology provides the opportunity to develop synthetic materials with life-like sensing and ada
+Experiment Plan: Unavailable from local metadata.
+
+[ABSTRACT] Abstract Living natural materials have remarkable sensing abilities that translate external cues into functional changes of the material. The reconstruction of such sensing materials in bottom-up synthetic biology provides the opportunity to develop synthetic materials with life-like sensing and adaptation ability. ...
+
+## [3] PenTag, a Versatile Platform for Synthesizing Protein-Polymer Biohybrid Materials (2023, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 1
+cited_in_sections = []
+cite_count = 1
+section_weight = 0.0
+delta_year = unknown
+is_influential = False
+low_confidence = True
+cited_by_subgraph = 0
+
+[PREDECESSORS]
+- ref_idx=[] delta_yr=unknown edge_type=none
+
+[IDEA]
+Problem: Abstract The site-specific and covalent conjugation of proteins on solid supports and in hydrogels is the basis for the synthesis of biohybrid materials offering broad applications. Current methods for conjugating proteins to desired targets are often challenging due to unspecific binding, unstable 
+Existing Methods: Unavailable from local metadata.
+Motivation: Abstract The site-specific and covalent conjugation of proteins on solid supports and in hydrogels is the basis for the synthesis of biohybrid materials offering broad applications. Current methods for conjugating proteins to desired targets are often challenging due to unspecific binding, unstable 
+Proposed Method: Abstract The site-specific and covalent conjugation of proteins on solid supports and in hydrogels is the basis for the synthesis of biohybrid materials offering broad applications. Current methods for conjugating proteins to desired targets are often challenging due to unspecific binding, unstable 
+Experiment Plan: Unavailable from local metadata.
+
+[ABSTRACT] Abstract The site-specific and covalent conjugation of proteins on solid supports and in hydrogels is the basis for the synthesis of biohybrid materials offering broad applications. Current methods for conjugating proteins to desired targets are often challenging due to unspecific binding, unstable (non-covalent) co...

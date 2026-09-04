@@ -1,0 +1,16 @@
+/* Shared styles for the motion primitives. Deliberately tiny — these
+   components exist to move things, not to style them. */
+
+/* Tabular figures while counting. Proportional digits change width as they
+   tick (a 1 is narrower than an 8), which makes the number jitter and shoves
+   whatever sits beside it back and forth for the whole second. */
+.count-up {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum' 1;
+}
+
+/* A count-up inside a stat block should not be able to reflow its row while
+   it runs. */
+.count-up > span {
+  display: inline-block;
+}

@@ -1,0 +1,467 @@
+{
+  "version": 1,
+  "events": [
+    {
+      "index": 1,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": true,
+      "payload": {
+        "query_text": "Research question: Are there more color pigments to discover? Context: It is possible to create new pigments, but not new colors. The first synthetic pigment was made in the early 1700s. In 2009, chemist Mas Subramanian accidently created a new blue pigment called “YInMn Blue.”",
+        "keywords": [
+          {
+            "text": "research question",
+            "score": 10
+          },
+          {
+            "text": "question there",
+            "score": 9
+          },
+          {
+            "text": "there more",
+            "score": 8
+          },
+          {
+            "text": "more color",
+            "score": 7
+          },
+          {
+            "text": "color pigments",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 3,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 3,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W875652028",
+          "title": "An Experiment With Mineral Pigments in a Prepared Frit",
+          "abstract": "It was the purpose of the writer to conduct a series of line blend experiments with mineral pigments in a prepared fritted glaze with the intention of finding: (1) the effects of the different mineral pigments, and (2) the desired quantities of these coloring agents in a given glaze. It was expected that the experim...",
+          "year": 1951,
+          "score": 0.8187
+        },
+        {
+          "paper_id": "https://openalex.org/W4285393820",
+          "title": "The Modernity of Ancient Pigments: A Historical Approach",
+          "abstract": "Naturally occurring and synthetic ancient pigments have a history of use spanning thousands of years. Curiously, some of their newly discovered properties make them excellent candidates for semiconductors, anticounterfeiting agents and so much more. In this paper, we will review their ancient roots in art and modern...",
+          "year": 2022,
+          "score": 0.6363
+        },
+        {
+          "paper_id": "https://openalex.org/W3161428057",
+          "title": "The New White Pigment",
+          "abstract": "RETURN TO ISSUEPREVAdvertisementNEXTThe New White PigmentCite this: Chem. Eng. News 2006, 84, 42, 5Publication Date (Print):October 16, 2006Publication History Published online14 November 2010Published inissue 16 October 2006https://doi.org/10.1021/cen-v084n042.p005Copyright © 2006 AMERICAN CHEMICAL SOCIETYArticle V...",
+          "year": 2006,
+          "score": 0.6088
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "step": "step1",
+      "command_name": "openalex",
+      "cache_hit": false,
+      "payload": {
+        "source": "openalex",
+        "query": "Research question: Are there more color pigments to discover? Context: It is possible to create new pigments, but not new colors. The first synthetic pigment was made in the early 1700s. In 2009, chemist Mas Subramanian accidently created a new blue pigment called “YInMn Blue.”"
+      },
+      "paper_count": 20,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W1994682895",
+          "title": "The PICO strategy for the research question construction and evidence search",
+          "abstract": "Evidence based practice is the use of the best scientific evidence to support the clinical decision making. The identification of the best evidence requires the construction of an appropriate research question and review of the literature. This article describes the use of the PICO strategy for the construction of the research question and bibliographical search.",
+          "year": 2007,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W1484864026",
+          "title": "Using multivariate statistics",
+          "abstract": "In this Section: 1. Brief Table of Contents 2. Full Table of Contents 1. BRIEF TABLE OF CONTENTS Chapter 1 Introduction Chapter 2 A Guide to Statistical Techniques: Using the Book Chapter 3 Review of Univariate and Bivariate Statistics Chapter 4 Cleaning Up Your Act: Screening Data Prior to Analysis Chapter 5 Multiple Regression Chapter 6 Analysis of Covariance Chapter 7 Multivariate Analysis of Variance and Covariance Chapter 8 Profile Analysis: The Multivariate Approach to Repeated Measures Chapter 9 Discriminant Analysis Chapter 10 Logistic Regression Chapter 11 Survival/Failure Analysis Chapter 12 Canonical Correlation Chapter 13 Principal Components and Factor Analysis Chapter 14 Structural Equation Modeling Chapter 15 Multilevel Linear Modeling Chapter 16 Multiway Frequency Analysis 2. FULL TABLE OF CONTENTS Chapter 1: Introduction Multivariate Statistics: Why? Some Useful Definitions Linear Combinations of Variables Number and Nature of Variables to Include Statistical Power Data Appropriate for Multivariate Statistics Organization of the Book Chapter 2: A Guide to Statistical Techniques: Using the Book Research Questions and Associated Techniques Some Further Comparisons A Decision Tree Technique Chapters Preliminary Check of the Data Chapter 3: Review of Univariate and Bivariate Statistics Hypothesis Testing Analysis of Variance Parameter Estimation Effect Size Bivariate Statistics: Correlation and Regression. Chi-Square Analysis Chapter 4: Cleaning Up Your Act: Screening Data Prior to Analysis Important Issues in Data Screening Complete Examples of Data Screening Chapter 5: Multiple Regression General Purpose and Description Kinds of Research Questions Limitations to Regression Analyses Fundamental Equations for Multiple Regression Major Types of Multiple Regression Some Important Issues. Complete Examples of Regression Analysis Comparison of Programs Chapter 6: Analysis of Covariance General Purpose and Description Kinds of Research Questions Limitations to Analysis of Covariance Fundamental Equations for Analysis of Covariance Some Important Issues Complete Example of Analysis of Covariance Comparison of Programs Chapter 7: Multivariate Analysis of Variance and Covariance General Purpose and Description Kinds of Research Questions Limitations to Multivariate Analysis of Variance and Covariance Fundamental Equations for Multivariate Analysis of Variance and Covariance Some Important Issues Complete Examples of Multivariate Analysis of Variance and Covariance Comparison of Programs Chapter 8: Profile Analysis: The Multivariate Approach to Repeated Measures General Purpose and Description Kinds of Research Questions Limitations to Profile Analysis Fundamental Equations for Profile Analysis Some Important Issues Complete Examples of Profile Analysis Comparison of Programs Chapter 9: Discriminant Analysis General Purpose and Description Kinds of Research Questions Limitations to Discriminant Analysis Fundamental Equations for Discriminant Analysis Types of Discriminant Analysis Some Important Issues Comparison of Programs Chapter 10: Logistic Regression General Purpose and Description Kinds of Research Questions Limitations to Logistic Regression Analysis Fundamental Equations for Logistic Regression Types of Logistic Regression Some Important Issues Complete Examples of Logistic Regression Comparison of Programs Chapter 11: Survival/Failure Analysis General Purpose and Description Kinds of Research Questions Limitations to Survival Analysis Fundamental Equations for Survival Analysis Types of Survival Analysis Some Important Issues Complete Example of Survival Analysis Comparison of Programs Chapter 12: Canonical Correlation General Purpose and Description Kinds of Research Questions Limitations Fundamental Equations for Canonical Correlation Some Important Issues Complete Example of Canonical Correlation Comparison of Programs Chapter 13: Principal Components and Factor Analysis General Purpose and Description Kinds of Research Questions Limitations Fundamental Equations for Factor Analysis Major Types of Factor Analysis Some Important Issues Complete Example of FA Comparison of Programs Chapter 14: Structural Equation Modeling General Purpose and Description Kinds of Research Questions Limitations to Structural Equation Modeling Fundamental Equations for Structural Equations Modeling Some Important Issues Complete Examples of Structural Equation Modeling Analysis. Comparison of Programs Chapter 15: Multilevel Linear Modeling General Purpose and Description Kinds of Research Questions Limitations to Multilevel Linear Modeling Fundamental Equations Types of MLM Some Important Issues Complete Example of MLM Comparison of Programs Chapter 16: Multiway Frequency Analysis General Purpose and Description Kinds of Research Questions Limitations to Multiway Frequency Analysis Fundamental Equations for Multiway Frequency Analysis Some Important Issues Complete Example of Multiway Frequency Analysis Comparison of Programs",
+          "year": 1983,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W2099043095",
+          "title": "GENERATING RESEARCH QUESTIONS THROUGH PROBLEMATIZATION.",
+          "abstract": "It is increasingly recognized that what makes a theory interesting and influential is that it challenges our assumptions in some significant way. However, established ways for arriving at research questions mean spotting or constructing gaps in existing theories rather than challenging their assumptions. We propose problematization as a methodology for identifying and challenging assumptions underlying existing literature and, based on that, formulating research questions that are likely to lead to more influential theories.",
+          "year": 2011,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W2007254456",
+          "title": "Developing qualitative research questions: a reflective process",
+          "abstract": "The reflective and interrogative processes required for developing effective qualitative research questions can give shape and direction to a study in ways that are often underestimated. Good research questions do not necessarily produce good research, but poorly conceived or constructed questions will likely create problems that affect all subsequent stages of a study. In qualitative studies, the ongoing process of questioning is an integral part of understanding the unfolding lives and perspectives of others. This article addresses both the development of initial research questions and how the processes of generating and refining questions are critical to the shaping of a qualitative study.",
+          "year": 2009,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W3146083582",
+          "title": "Situated Knowledges: The Science Question in Feminism and the Privilege of Partial Perspective",
+          "abstract": "",
+          "year": 1988,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W2963748441",
+          "title": "SQuAD: 100,000+ Questions for Machine Comprehension of Text",
+          "abstract": "We present the Stanford Question Answering Dataset (SQuAD), a new reading comprehension dataset consisting of 100,000+ questions posed by crowdworkers on a set of Wikipedia articles, where the answer to each question is a segment of text from the corresponding reading passage. We analyze the dataset to understand the types of reasoning required to answer the questions, leaning heavily on dependency and constituency trees. We build a strong logistic regression model, which achieves an F1 score of 51.0%, a significant improvement over a simple baseline (20%). However, human performance (86.8%) is much higher, indicating that the dataset presents a good challenge problem for future research. The dataset is freely available at https://stanford-qa.com",
+          "year": 2016,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W1500693574",
+          "title": "CRITICAL QUESTIONS FOR BIG DATA",
+          "abstract": "The era of Big Data has begun. Computer scientists, physicists, economists, mathematicians, political scientists, bio-informaticists, sociologists, and other scholars are clamoring for access to the massive quantities of information produced by and about people, things, and their interactions. Diverse groups argue about the potential benefits and costs of analyzing genetic sequences, social media interactions, health records, phone logs, government records, and other digital traces left by people. Significant questions emerge. Will large-scale search data help us create better tools, services, and public goods? Or will it usher in a new wave of privacy incursions and invasive marketing? Will data analytics help us understand online communities and political movements? Or will it be used to track protesters and suppress speech? Will it transform how we study human communication and culture, or narrow the palette of research options and alter what ‘research’ means? Given the rise of Big Data as a socio-technical phenomenon, we argue that it is necessary to critically interrogate its assumptions and biases. In this article, we offer six provocations to spark conversations about the issues of Big Data: a cultural, technological, and scholarly phenomenon that rests on the interplay of technology, analysis, and mythology that provokes extensive utopian and dystopian rhetoric.",
+          "year": 2012,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W1933349210",
+          "title": "VQA: Visual Question Answering",
+          "abstract": "We propose the task of free-form and open-ended Visual Question Answering (VQA). Given an image and a natural language question about the image, the task is to provide an accurate natural language answer. Mirroring real-world scenarios, such as helping the visually impaired, both the questions and answers are open-ended. Visual questions selectively target different areas of an image, including background details and underlying context. As a result, a system that succeeds at VQA typically needs a more detailed understanding of the image and complex reasoning than a system producing generic image captions. Moreover, VQA is amenable to automatic evaluation, since many open-ended answers contain only a few words or a closed set of answers that can be provided in a multiple-choice format. We provide a dataset containing ~0.25M images, ~0.76M questions, and ~10M answers (www.visualqa.org), and discuss the information it provides. Numerous baselines for VQA are provided and compared with human performance.",
+          "year": 2015,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W1969042907",
+          "title": "jModelTest 2: more models, new heuristics and parallel computing",
+          "abstract": "",
+          "year": 2012,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W2328176404",
+          "title": "Comparing the Areas under Two or More Correlated Receiver Operating Characteristic Curves: A Nonparametric Approach",
+          "abstract": "Methods of evaluating and comparing the performance of diagnostic tests are of increasing importance as new tests are developed and marketed. When a test is based on an observed variable that lies on a continuous or graded scale, an assessment of the overall value of the test can be made through the use of a receiver operating characteristic (ROC) curve. The curve is constructed by varying the cutpoint used to determine which values of the observed variable will be considered abnormal and then plotting the resulting sensitivities against the corresponding false positive rates. When two or more empirical curves are constructed based on tests performed on the same individuals, statistical analysis on differences between curves must take into account the correlated nature of the data. This paper presents a nonparametric approach to the analysis of areas under correlated ROC curves, by using the theory on generalized U-statistics to generate an estimated covariance matrix.",
+          "year": 1988,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W2055864845",
+          "title": "A More Accurate Method To Estimate Glomerular Filtration Rate from Serum Creatinine: A New Prediction Equation",
+          "abstract": "BACKGROUND: Serum creatinine concentration is widely used as an index of renal function, but this concentration is affected by factors other than glomerular filtration rate (GFR). OBJECTIVE: To develop an equation to predict GFR from serum creatinine concentration and other factors. DESIGN: Cross-sectional study of GFR, creatinine clearance, serum creatinine concentration, and demographic and clinical characteristics in patients with chronic renal disease. PATIENTS: 1628 patients enrolled in the baseline period of the Modification of Diet in Renal Disease (MDRD) Study, of whom 1070 were randomly selected as the training sample; the remaining 558 patients constituted the validation sample. METHODS: The prediction equation was developed by stepwise regression applied to the training sample. The equation was then tested and compared with other prediction equations in the validation sample. RESULTS: To simplify prediction of GFR, the equation included only demographic and serum variables. Independent factors associated with a lower GFR included a higher serum creatinine concentration, older age, female sex, nonblack ethnicity, higher serum urea nitrogen levels, and lower serum albumin levels (P < 0.001 for all factors). The multiple regression model explained 90.3% of the variance in the logarithm of GFR in the validation sample. Measured creatinine clearance overestimated GFR by 19%, and creatinine clearance predicted by the Cockcroft-Gault formula overestimated GFR by 16%. After adjustment for this overestimation, the percentage of variance of the logarithm of GFR predicted by measured creatinine clearance or the Cockcroft-Gault formula was 86.6% and 84.2%, respectively. CONCLUSION: The equation developed from the MDRD Study provided a more accurate estimate of GFR in our study group than measured creatinine clearance or other commonly used equations.",
+          "year": 1999,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W2174661749",
+          "title": "Radiomics: Images Are More than Pictures, They Are Data",
+          "abstract": "In the past decade, the field of medical image analysis has grown exponentially, with an increased number of pattern recognition tools and an increase in data set sizes. These advances have facilitated the development of processes for high-throughput extraction of quantitative features that result in the conversion of images into mineable data and the subsequent analysis of these data for decision support; this practice is termed radiomics. This is in contrast to the traditional practice of treating medical images as pictures intended solely for visual interpretation. Radiomic data contain first-, second-, and higher-order statistics. These data are combined with other patient data and are mined with sophisticated bioinformatics tools to develop models that may potentially improve diagnostic, prognostic, and predictive accuracy. Because radiomics analyses are intended to be conducted with standard of care images, it is conceivable that conversion of digital images to mineable data will eventually become routine practice. This report describes the process of radiomics, its challenges, and its potential power to facilitate better clinical decision making, particularly in the care of patients with cancer.",
+          "year": 2015,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W2337002970",
+          "title": "Mapping the Margins: Intersectionality, Identity Politics, and Violence against Women of Color",
+          "abstract": "Over the last two decades, women have organized against the almost routine violence that shapes their lives. Drawing from the strength of shared experience, women have recognized that the political demands of millions speak more powerfully than the pleas of a few isolated voices. This politicization in turn has transformed the way we understand violence against women. For example, battering and rape, once seen as private (family matters) and aberrational (errant sexual aggression), are now largely recognized as part of a broad-scale system of domination that affects women as a class. This process of recognizing as social and systemic what was formerly perceived as isolated and individual has also characterized the identity politics of people of and gays and lesbians, among others. For all these groups, identity-based politics has been a source of strength, community, and intellectual development. The embrace of identity politics, however, has been in tension with dominant conceptions of social justice. Race, gender, and other identity categories are most often treated in mainstream liberal discourse as vestiges of bias or domination-that is, as intrinsically negative frameworks in which social power works to exclude or marginalize those who are different. According to this understanding, our liberatory objective should be to empty such categories of any social significance. Yet implicit in certain strands of feminist and racial liberation movements, for example, is the view that the social power in delineating difference need not be the power of domination; it can instead be the source of political empowerment and social reconstruction. The problem with identity politics is not that it fails to transcend difference, as some critics charge, but rather the opposite- that it frequently conflates or ignores intra group differences. In the context of violence against women, this elision of difference is problematic, fundamentally because the violence that many women experience is often shaped by other dimensions of their identities, such as race and class. Moreover, ignoring differences within groups frequently contributes to tension among groups, another problem of identity politics that frustrates efforts to politicize violence against women. Feminist efforts to politicize experiences of women and antiracist efforts to politicize experiences of people of color' have frequently proceeded as though the issues and experiences they each detail occur on mutually exclusive terrains. Al-though racism and sexism readily intersect in the lives of real people, they seldom do in feminist and antiracist practices. And so, when the practices expound identity as woman or person of color as an either/or proposition, they relegate the identity of women of to a location that resists telling. My objective here is to advance the telling of that location by exploring the race and gender dimensions of violence against women of color. Contemporary feminist and antiracist discourses have failed to consider the intersections of racism and patriarchy. Focusing on two dimensions of male violence against women-battering and rape-I consider how the experiences of women of are frequently the product of intersecting patterns of racism and sexism, and how these experiences tend not to be represented within the discourse of either feminism or antiracism... Language: en",
+          "year": 1991,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W2114004260",
+          "title": "Colorimetry of Total Phenolics with Phosphomolybdic-Phosphotungstic Acid Reagents",
+          "abstract": "Several details of the assay of total phenolic substances have been investigated and an improved procedure developed. The improvements include the use of Folin-Ciocalteu reagent rather than the Folin-Denis reagent, gallic acid as a reference standard, and a more reproducible time-temperature color development period. The values obtained are less subject to variation and interference from several nonphenols, yet are directly comparable to the \"tannin\" values obtained by the previously standard method.",
+          "year": 1965,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W2969460254",
+          "title": "Invisible No More: Police Violence Against Black Women and Women of Color",
+          "abstract": "",
+          "year": 2017,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W2229187148",
+          "title": "Disidentifications: Queers Of Color And The Performance Of Politics",
+          "abstract": "There is more to identity than identifying with one's culture or standing solidly against it. Jos Esteban Mu oz looks at how those outside the racial and sexual mainstream negotiate majority culture--not by aligning themselves with or against exclusionary works but rather by transforming these works for their own cultural purposes. Mu oz calls this process disidentification, and through a study of its workings, he develops a new perspective on minority performance, survival, and activism.Disidentifications is also something of a performance in its own right, an attempt to fashion a queer world by working on, with, and against dominant ideology. By examining the process of identification in the work of filmmakers, performance artists, ethnographers, Cuban choteo, forms of gay male mass culture (such as pornography), museums, art photography, camp and drag, and television, Mu oz persistently points to the intersecting and short-circuiting of identities and desires that result from misalignments with the cultural and ideological mainstream in contemporary urban America.Mu oz calls attention to the world-making properties found in performances by queers of color--in Carmelita Tropicana's Camp/Choteo style politics, Marga Gomez's performances of queer childhood, Vaginal Creme Davis's Terrorist Drag, Isaac Julien's critical melancholia, Jean-Michel Basquiat's disidentification with Andy Warhol and pop art, Felix Gonzalez-Torres's performances of disidentity, and the political performance of Pedro Zamora, a person with AIDS, within the otherwise artificial environment of the MTV serialThe Real World.",
+          "year": 1999,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W2108193798",
+          "title": "Carotenoids and Their Isomers: Color Pigments in Fruits and Vegetables",
+          "abstract": "Fruits and vegetables are colorful pigment-containing food sources. Owing to their nutritional benefits and phytochemicals, they are considered as 'functional food ingredients'. Carotenoids are some of the most vital colored phytochemicals, occurring as all-trans and cis-isomers, and accounting for the brilliant colors of a variety of fruits and vegetables. Carotenoids extensively studied in this regard include β-carotene, lycopene, lutein and zeaxanthin. Coloration of fruits and vegetables depends on their growth maturity, concentration of carotenoid isomers, and food processing methods. This article focuses more on several carotenoids and their isomers present in different fruits and vegetables along with their concentrations. Carotenoids and their geometric isomers also play an important role in protecting cells from oxidation and cellular damages.",
+          "year": 2011,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W2066552936",
+          "title": "Color‐pigment correlation in virgin olive oil",
+          "abstract": "The chlorophyll and carotenoid content of virgin olive oils from five varieties harvested at varying degrees of ripeness were determined. Colors were evaluated from the chromatic ordinates L*, a*, b* of the absorption spectrum. Oil color changes for different varieties or stages of ripeness are directly related to pigment content and a* and b* values. The statistical study made on both series of parameters proves that there is a good correlation between them. The carotenoid content and b* have one of the best correlation coefficients (r) and is easily measured. This methodology evaluates chlorophyll and carotenoid content, an additional attribute for evaluation of virgin olive oil quality.",
+          "year": 1991,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W2330731452",
+          "title": "Organic Semiconductors based on Dyes and Color Pigments",
+          "abstract": "Organic dyes and pigments constitute a large class of industrial products. The utilization of these compounds in the field of organic electronics is reviewed with particular emphasis on organic field-effect transistors. It is shown that for most major classes of industrial dyes and pigments, i.e., phthalocyanines, perylene and naphthalene diimides, diketopyrrolopyrroles, indigos and isoindigos, squaraines, and merocyanines, charge-carrier mobilities exceeding 1 cm(2) V(-1) s(-1) have been achieved. The most widely investigated molecules due to their n-channel operation are perylene and naphthalene diimides, for which even values close to 10 cm(2) V(-1) s(-1) have been demonstrated. The fact that all of these π-conjugated colorants contain polar substituents leading to strongly quadrupolar or even dipolar molecules suggests that indeed a much larger structural space shows promise for the design of organic semiconductor molecules than was considered in this field traditionally. In particular, because many of these dye and pigment chromophores demonstrate excellent thermal and (photo-)chemical stability in their original applications in dyeing and printing, and are accessible by straightforward synthetic protocols, they bear a particularly high potential for commercial applications in the area of organic electronics.",
+          "year": 2016,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W2075533246",
+          "title": "Color chemistry syntheses properties and applications of organic dyes and pigments",
+          "abstract": "Introduction Color of Organic Compounds Polyene and Polymethine Dyes Di- and Triarylmethine Dyes and their Aza Analogues Aza[18]annulenes Nitro and Nitroso Dyes Azo Dyes and Pigments Carbonyl Dyes and Pigments Sulfur Dyes Fluorescent Brighteners Application of Dyes Application of Organic Pigments Photo-, Thermo- and Electrochemical Reactions of Colorants Colorants for Imaging and Data Recording Systems Dyes in Biochemistry, Biology, Medicine, and Analytical Chemistry Ecology and Toxicology of Colorants.",
+          "year": 1987,
+          "score": null
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "step": "step2",
+      "command_name": "openalex",
+      "cache_hit": false,
+      "payload": {
+        "source": "openalex",
+        "query": "GENERATING RESEARCH QUESTIONS THROUGH PROBLEMATIZATION.",
+        "direction": "backward",
+        "node_id": "https://openalex.org/W2099043095"
+      },
+      "paper_count": 10,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W1967541354",
+          "title": "Archaeology of Knowledge",
+          "abstract": "In France, a country that awards its intellectuals the status other countries give their rock stars, Michel Foucault was part of a glittering generation of thinkers, one which also included Sartre, de Beauvoir and Deleuze. One of the great intellectual heroes of the twentieth century, Foucault was a man whose passion and reason were at the service of nearly every progressive cause of his time. From law and order, to mental health, to power and knowledge, he spearheaded public awareness of the dynamics that hold us all in thrall to a few powerful ideologies and interests. Arguably his finest work, Archaeology of Knowledge is a challenging but fantastically rewarding introduction to his ideas.",
+          "year": 1970,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W1973893364",
+          "title": "Outline of a Theory of Practice",
+          "abstract": "Outline of a Theory of Practice is recognized as a major theoretical text on the foundations of anthropology and sociology. Pierre Bourdieu, a distinguished French anthropologist, develops a theory of practice which is simultaneously a critique of the methods and postures of social science and a general account of how human action should be understood. With his central concept of the habitus, the principle which negotiates between objective structures and practices, Bourdieu is able to transcend the dichotomies which have shaped theoretical thinking about the social world. The author draws on his fieldwork in Kabylia (Algeria) to illustrate his theoretical propositions. With detailed study of matrimonial strategies and the role of rite and myth, he analyses the dialectical process of the 'incorporation of structures' and the objectification of habitus, whereby social formations tend to reproduce themselves. A rigorous consistent materialist approach lays the foundations for a theory of symbolic capital and, through analysis of the different modes of domination, a theory of symbolic power.",
+          "year": 2007,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W1488749369",
+          "title": "Feminist practice and poststructuralist theory",
+          "abstract": "Acknowledgements. Preface to the Second Edition. 1. Feminism and Theory. 2. Principles of Poststructuralism. 3. Feminist Poststructuralism and Psychoanalysis. 4. Language and Subjectivity. 5. Discourse, Power and Resistance. 6. Feminist Critical Practice. 7. Feminism and Postmodernism. Notes. Bibliography. Index.",
+          "year": 1988,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W1980956348",
+          "title": "Ambiguity and Choice in Organizations.",
+          "abstract": "",
+          "year": 1977,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W367214795",
+          "title": "Engaged Scholarship: A Guide for Organizational and Social Research",
+          "abstract": "1. Engaged Scholarship in a Professional School 2. Philosophy of Science Underlying Engaged Scholarship 3. Formulating the Research Problem 4. Building a Theory 5. Process and Variance Models 6. Designing Variance Studies 7. Designing Process Studies 8. Communicating and Using Research Knowledge 9. Practicing Engaged Scholarship",
+          "year": 2007,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W1489342300",
+          "title": "Science of Science and Reflexivity",
+          "abstract": "Over the last four decades, the French sociologist Pierre Bourdieu produced one of the most imaginative and subtle bodies of social theory of the postwar era. When he died in 2002, he was considered to be a thinker on a par with Foucault, Barthes, and Lacan a public intellectual as influential to his generation as Sartre was to his. of Science and Reflexivity will be welcomed as a companion volume to Bourdieu's now seminal An Invitation to Reflexive Sociology. In this posthumous work, Bourdieu declares that science is in danger of becoming a handmaiden to biotechnology, medicine, genetic engineering, and military research that it risks falling under the control of industrial corporations that seek to exploit it for monopolies and profit. Science thus endangered can become detrimental to mankind. The line between pure and applied science, therefore, must be subjected to intense theoretical scrutiny. Bourdieu's goals in of Science and Reflexivity are to identify the social conditions in which science develops in order to reclaim its objectivity and to rescue it from relativism and the forces that might exploit it. In the grand tradition of scientific reflections on science, Bourdieu provides a sociological analysis of the discipline as something capable of producing transhistorical truths; he presents an incisive critique of the main currents in the study of science throughout the past half century; and he offers a spirited defense of science against encroaching political and economic forces. A masterful summation of the principles underlying Bourdieu's oeuvre and a memoir of his own scientific journey, of Science and Reflexivity is a capstone to one of the most important and prodigious careers in the field of sociology.",
+          "year": 2004,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W1648397693",
+          "title": "Occupational Communities: Culture and Control in Organizations",
+          "abstract": "Abstract : The organization is but one frame of reference for understanding work behavior. Equally powerful but largely unexplored social forces in the workplace are groups sired by the perception of common task. After developing the concept of an occupational community as a framework for analyzing the phenomenological boundaries of work worlds, the authors show how research on occupational communities can broaden our knowledge of careers, control, conflict, and innovation, topics traditionally approached from an organizational perspective.",
+          "year": 1982,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W1965676447",
+          "title": "Explaining Organizational Behavior.",
+          "abstract": "",
+          "year": 1983,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W182778910",
+          "title": "Tricks of the Trade: How to Think about Your Research While You're Doing It",
+          "abstract": "Tricks of the Trade will help students think about research projects. Assisted by Becker's sound advice, students will be able to make better sense of their research and simultaneously generate fresh ideas on where to look next for new data. Becker's tricks cover four broad areas of social science: The creation of the \"imagery\" to guide research; methods of \"sampling\" to generate maximum variety in the data, the development of \"concepts\" to organize findings, and the use of \"logical\" methods to explore systematically the implications of what is found. Becker's advice ranges from simple suggestions such as changing an interview question from \"Why?\" to \"How?\" (as a way of getting people to talk without asking for justification) to more technical advice such as how to manipulate truth tables.",
+          "year": 1998,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W1588449593",
+          "title": "The use of pleasure",
+          "abstract": "Part 1 Introduction: modifications forms of problematization morality and practice of the self. Part 2 The moral problematization of pleasures: Aphrodisia Chresis Enkrateia freedom and truth. Part 3 Dietetics: regimen in general the diet of pleasures risks and dangers act, expenditure, death. Part 4 Economics: the wisdom of marriage Ischomachus' household three policies of moderation. Part 5 Erotics: a problematic relation a boy's honour the object of pleasure. Part 6 True love.",
+          "year": 1990,
+          "score": null
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "step": "step2",
+      "command_name": "openalex",
+      "cache_hit": false,
+      "payload": {
+        "source": "openalex",
+        "query": "GENERATING RESEARCH QUESTIONS THROUGH PROBLEMATIZATION.",
+        "direction": "forward",
+        "node_id": "https://openalex.org/W2099043095"
+      },
+      "paper_count": 10,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W3012440800",
+          "title": "Designing conceptual articles: four approaches",
+          "abstract": "Abstract As a powerful means of theory building, conceptual articles are increasingly called for in marketing academia. However, researchers struggle to design and write non-empirical articles because of the lack of commonly accepted templates to guide their development. The aim of this paper is to highlight methodological considerations for conceptual papers: it is argued that such papers must be grounded in a clear research design, and that the choice of theories and their role in the analysis must be explicated and justified. The paper discusses four potential templates for conceptual papers – Theory Synthesis, Theory Adaptation, Typology, and Model – and their respective aims, approach for using theories, and contribution potential. Supported by illustrative examples, these templates codify some of the tacit knowledge that underpins the design of non-empirical papers and will be of use to anyone undertaking, supervising, or reviewing conceptual research.",
+          "year": 2020,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W2061813197",
+          "title": "“Systematic combining”—A decade later",
+          "abstract": "",
+          "year": 2013,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W175588260",
+          "title": "A Hermeneutic Approach for Conducting Literature Reviews and Literature Searches",
+          "abstract": "The quality and success of scholarly work depends in large measure on the quality of the literature review process. This paper advances conceptual understanding of the literature review process and extends earlier guidelines on literature reviews. It proposes a hermeneutic framework that integrates the analysis and interpretation of literature and the search for literature. This hermeneutic framework describes the literature review process as fundamentally a process of developing understanding that is iterative in nature. Using the hermeneutic circle it describes the literature review process as being constituted by literature searching, classifying and mapping, critical assessment, and argument development. The hermeneutic approach emphasizes continuous engagement with and gradual development of a body of literature during which increased understanding and insights are developed. The paper contributes to better understanding of the literature review process and provides guidelines to assist researchers in conducting high quality reviews. Approaches for efficient searching are included in an Appendix.",
+          "year": 2014,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W2758571161",
+          "title": "Unlocking the circular economy through new business models based on large-scale data: An integrative framework and research agenda",
+          "abstract": "",
+          "year": 2017,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W3185283549",
+          "title": "Artificial intelligence for supply chain resilience: learning from Covid-19",
+          "abstract": "Purpose Many supply chains have faced disruption during Covid-19. Artificial intelligence (AI) is one mechanism that can be used to improve supply chain resilience by developing business continuity capabilities. This study examines how firms employ AI and consider the opportunities for AI to enhance supply chain resilience by developing visibility, risk, sourcing and distribution capabilities. Design/methodology/approach The authors have gathered rich data by conducting semistructured interviews with 35 experts from the e-commerce supply chain. The authors have adopted a systematic approach of coding using open, axial and selective methods to map and identify the themes that represent the critical elements of AI-enabled supply chain resilience. Findings The results of the study highlight the emergence of five critical areas where AI can contribute to enhanced supply chain resilience; (1) transparency, (2) ensuring last-mile delivery, (3) offering personalized solutions to both upstream and downstream supply chain stakeholders, (4) minimizing the impact of disruption and (5) facilitating an agile procurement strategy. Research limitations/implications The study offers interesting implications for bridging the theory–practice gap by drawing on contemporary empirical data to demonstrate how enhancing dynamic capabilities via AI technologies further strengthens supply chain resilience. The study also offers suggestions for utilizing the findings and proposes a framework to strengthen supply chain resilience through AI. Originality/value The study presents the dynamic capabilities for supply chain resilience through the employment of AI. AI can contribute to readying supply chains to reduce their risk of disruption through enhanced resilience.",
+          "year": 2021,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W2035736504",
+          "title": "What literature review is not: diversity, boundaries and recommendations",
+          "abstract": "In Orlando the EJIS Board decided to implement a policy change that I had proposed in my last editorial addressing the IS community (Rowe, 2012), asking authors (starting January 2013) to explicitl...",
+          "year": 2014,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W1922304770",
+          "title": "A Stupidity‐Based Theory of Organizations",
+          "abstract": "abstract In this paper we question the one‐sided thesis that contemporary organizations rely on the mobilization of cognitive capacities. We suggest that severe restrictions on these capacities in the form of what we call functional stupidity are an equally important if under‐recognized part of organizational life. Functional stupidity refers to an absence of reflexivity, a refusal to use intellectual capacities in other than myopic ways, and avoidance of justifications.We argue that functional stupidity is prevalent in contexts dominated by economy in persuasion which emphasizes image and symbolic manipulation. This gives rise to forms of stupidity management that repress or marginalize doubt and block communicative action. In turn, this structures individuals' internal conversations in ways that emphasize positive and coherent narratives and marginalize more negative or ambiguous ones. This can have productive outcomes such as providing a degree of certainty for individuals and organizations. But it can have corrosive consequences such as creating a sense of dissonance among individuals and the organization as a whole. The positive consequences can give rise to self‐reinforcing stupidity. The negative consequences can spark dialogue, which may undermine functional stupidity.",
+          "year": 2012,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W1709750395",
+          "title": "Has Management Studies Lost Its Way? Ideas for More Imaginative and Innovative Research",
+          "abstract": "abstract Despite the huge increase in the number of management articles published during the three last decades, there is a serious shortage of high‐impact research in management studies. We contend that a primary reason behind this paradoxical shortage is the near total dominance of incremental gap‐spotting research in management. This domination is even more paradoxical as it is well known that gap‐spotting rarely leads to influential theories. We identify three broad and interacting key drivers behind this double paradox: institutional conditions, professional norms, and researchers' identity constructions. We discuss how specific changes in these drivers can reduce the shortage of influential management theories. We also point to two methodologies that may encourage and facilitate more innovative and imaginative research and revisions of academic norms and identities.",
+          "year": 2012,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W2612096568",
+          "title": "Supply chain agility, adaptability and alignment",
+          "abstract": "Purpose The purpose of this paper is to examine when and how organizations create agility, adaptability, and alignment as distinct supply chain properties to gain sustainable competitive advantage. Design/methodology/approach The current study utilizes the resource-based view (RBV) under the moderating effect of top management commitment (TMC). To test the research hypotheses, the authors gathered 351 usable responses using a pre-tested questionnaire. Findings The statistical analyses suggest that information sharing and supply chain connectivity resources influence supply chain visibility capability, which, under the moderating effect of TMC, enhance supply chain agility, adaptability, and alignment (SCAAA). Originality/value The contribution lies in: providing a holistic study of the antecedents of agility, adaptability, and alignment; investigating the moderating role of TMC on SCAAA; following the RBV and addressing calls for investigating the role of resources in supply chain management, and for empirical studies with implications for supply chain design.",
+          "year": 2017,
+          "score": null
+        },
+        {
+          "paper_id": "https://openalex.org/W2115606824",
+          "title": "Critical leadership studies: The case for critical performativity",
+          "abstract": "Existing accounts of leadership are underpinned by two dominant approaches: functionalist studies, which have tried to identify correlations between variables associated with leadership; and interpretive studies, which have tried to trace out the meaning-making process associated with leadership. Eschewing these approaches, we turn to an emerging strand of literature that develops a critical approach to leadership. This literature draws our attention to the dialectics of control and resistance and the ideological aspect of leadership. However, it largely posits a negative critique of leadership. We think this is legitimate and important, but extend this agenda. We posit a performative critique of leadership that emphasizes tactics of circumspect care, progressive pragmatism and searching for present potentialities. We use these tactics to sketch out a practice of deliberated leadership that involves collective reflection on when, what kind and if leadership is appropriate.",
+          "year": 2012,
+          "score": null
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "step": "step6",
+      "command_name": "paper-search",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Current pigment discovery remains largely empirical and serendipitous because there is no robust predictive and inverse design framework that jointly links chemical composition, crystal structure, electronic structure, defect chemistry, particle morphology, synthesis feasibility, stability, toxicity, and perceived color to identify practically useful new pigments.",
+        "field": "abstract",
+        "top_k": 1,
+        "after": null,
+        "before": null
+      },
+      "paper_count": 1,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W3020419325",
+          "title": "The Serendipitous Discovery of a Rose Odorant",
+          "abstract": "Serendipity has played a role in many groundbreaking scientific discoveries. Key to their identification and exploitation is the ability to recognize the unexpected and invest time trying to understand it. Like any other field of scientific research, total synthesis requires determination and perseverance. When the first-generation route towards a target compound fails, new approaches are developed based on insights gained in the initial studies. Careful analysis of data obtained in a 'failed' approach, <i>e.g.</i> when a reaction did not yield the desired or any expected outcome, can lead to spectacularly improved routes and discoveries that have impact beyond the synthesis of the selected target compound. Serendipity has further led to the identification of intriguing properties that materials or single molecules have, as exemplified by the discovery of electrically conductive polymers. During our total synthesis endeavors towards a complex natural product, we identified a small molecule with interesting olfactory properties, which we decided to investigate further.",
+          "year": 2020,
+          "score": 0.5475938320159912
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Apply generative inverse design and multi-objective optimization methods, such as graph neural networks, Bayesian optimization, and active learning, to propose candidate pigment compositions that satisfy target color, stability, toxicity, and synthesis constraints.",
+        "keywords": [
+          {
+            "text": "generative inverse design",
+            "score": 9
+          },
+          {
+            "text": "multi-objective optimization",
+            "score": 8
+          },
+          {
+            "text": "graph neural networks",
+            "score": 8
+          },
+          {
+            "text": "active learning",
+            "score": 7
+          },
+          {
+            "text": "Bayesian optimization",
+            "score": 7
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 1,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 1,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4410311508",
+          "title": "Enhancing Paint Formula Innovation Using Generative AI and Historical Data Analytics",
+          "abstract": "This work implements a generative artificial intelligence approach and a search algorithm to recreate and innovate paint formulas on a hardware-near level. We use clustering techniques to explore data latent space and then implement Markov Chain Monte Carlo techniques to sample from the posterior distribution. The a...",
+          "year": 2025,
+          "score": 1.0
+        }
+      ]
+    }
+  ]
+}

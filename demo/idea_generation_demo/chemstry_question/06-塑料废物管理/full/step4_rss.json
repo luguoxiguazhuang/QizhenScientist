@@ -1,0 +1,76 @@
+{
+  "target_domain": "Data-driven plastic waste management, especially online characterization, sorting, and material-flow decision support for mixed, post-consumer plastic streams.",
+  "core_gap": "Existing NIR/MIR spectroscopy, machine-learning classification, and early sensor-fusion sorting systems cannot yet provide robust, generalizable, uncertainty-aware, economically deployable characterization of dirty, aged, contaminated, pigmented, multilayer, and #3–#7 plastic waste under industrial conditions, nor reliably connect item-level material-state recognition to material-flow analysis, recycling yield, and circular-economy decisions.",
+  "objects": [
+    "mixed post-consumer plastic waste streams",
+    "plastic packaging waste",
+    "polymer types and resin categories",
+    "aged or degraded polymer states",
+    "contaminants, residues, labels, inks, additives, and pigments",
+    "multilayer and mixed-polymer structures",
+    "NIR and MIR spectroscopy",
+    "hyperspectral imaging",
+    "machine-learning classification models",
+    "sensor-fusion sorting systems",
+    "material flow analysis",
+    "recycling facilities and sorting lines",
+    "economic feasibility and environmental impact metrics",
+    "policy interventions such as bottle recycling, bag bans, and waste-to-fuel use"
+  ],
+  "relations": [
+    "spectral signatures are used to infer polymer identity, contamination, and material condition",
+    "contamination, aging, additives, and surface degradation reduce sorting confidence and recyclability",
+    "sensor fusion combines complementary modalities to improve discrimination of hard-to-sort plastics",
+    "material-state classification drives sorting, recovery, downcycling, or diversion decisions",
+    "item-level characterization should aggregate into reliable material-flow data",
+    "material flow analysis informs economically feasible and environmentally advantageous waste-management interventions",
+    "throughput, cost, and facility constraints limit the deployment of sensing and AI models"
+  ],
+  "bottlenecks": [
+    "spectral signal distortion caused by contamination, aging, pigments, moisture, labels, inks, fillers, and multilayer structures",
+    "poor generalization of trained models across waste streams, facilities, instruments, and geographic contexts",
+    "limited calibration transfer, domain adaptation, and uncertainty quantification in sorting systems",
+    "difficulty of identifying and separating low-value, heterogeneous #3–#7 plastics and multilayer packaging",
+    "need for high-throughput, low-cost, low-maintenance operation in real recycling facilities",
+    "disconnect between sensor-level classification and broader material-flow, economic, and policy decision-making"
+  ],
+  "unresolved_tensions": [
+    "high classification accuracy versus high-speed, low-cost industrial operation",
+    "rich multimodal sensing versus hardware affordability and maintenance burden",
+    "polymer identification versus assessment of material condition and recyclability",
+    "local waste-stream specificity versus globally transferable models",
+    "environmental benefit versus economic feasibility",
+    "detailed material characterization versus actionable material-flow aggregation"
+  ],
+  "desired_solution_properties": [
+    "robust to dirty, aged, contaminated, pigmented, multilayer, and additive-laden plastics",
+    "operable online or inline with minimal sample preparation",
+    "capable of uncertainty estimation and confidence-aware sorting decisions",
+    "generalizable across instruments, facilities, waste streams, and geographic contexts",
+    "economically viable for high-throughput recycling operations",
+    "able to handle difficult #3–#7 plastics, mixed polymers, and low-value streams",
+    "able to connect material-state recognition with material flow analysis, recycling yield, and circular-economy decisions",
+    "supportive of policy and operational interventions such as bottle recycling, bag reduction, and waste-to-fuel pathways"
+  ],
+  "possible_mechanism_types": [
+    "multimodal sensor fusion with confidence-aware decision making",
+    "domain adaptation and calibration transfer for spectral models",
+    "physics-informed or chemically informed spectral interpretation",
+    "hierarchical cascade detection and sorting",
+    "probabilistic material-state estimation",
+    "representation learning for noisy, contaminated, or degraded plastic signals",
+    "decision-theoretic routing under cost, speed, and hardware constraints",
+    "integration of sensor telemetry with material-flow accounting",
+    "techno-economic and environmental optimization loops"
+  ],
+  "inspiration_search_hints": [
+    "hyperspectral remote sensing and spectral unmixing for mixed materials",
+    "pharmaceutical process analytical technology and chemometrics",
+    "food-quality inspection under contamination and natural variability",
+    "mineral and ore sorting using sensor fusion",
+    "industrial process control with calibration transfer and drift correction",
+    "medical multimodal triage under uncertainty",
+    "circular-economy industrial symbiosis and waste-to-energy optimization",
+    "autonomous perception under sensor noise, domain shift, and deployment constraints"
+  ]
+}

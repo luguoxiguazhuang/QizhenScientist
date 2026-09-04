@@ -1,0 +1,12 @@
+{
+  "use_same_field": true,
+  "use_cross_domain": true,
+  "preferred_radii": [
+    "R1",
+    "R2"
+  ],
+  "same_field_top_k": 2,
+  "num_cross_domains": 2,
+  "cross_domain_top_k_per_domain": 2,
+  "rationale": "Same-field retrieval is needed to remain grounded in chiral symmetry breaking, asymmetric autocatalysis, prebiotic peptide chemistry, and origin-of-life network models. Cross-domain retrieval is also justified because the central bottlenecks require mechanism transfer: quantitative links from homochirality to electron transfer, molecular recognition, catalytic specificity, replication fidelity, cross-polymer coordination, and life-definition criteria are not resolved within the existing subgraph."
+}

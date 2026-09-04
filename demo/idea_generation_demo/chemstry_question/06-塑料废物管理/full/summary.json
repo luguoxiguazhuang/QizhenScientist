@@ -1,0 +1,246 @@
+{
+  "ok": true,
+  "run_dir": "/REDACTED/tiaozhanbei/chemstry_question/06-塑料废物管理/full",
+  "topic": "Research question: How can we better manage the world’s plastic waste?\nContext: One of the challenges of managing plastic waste is a lack of reliable data: The complicated global streams that produce and distribute waste from petroleum-based products are not always clear. Recently, experts in management and sustainability collaborated to address this issue by focusing on material flow analysis in Trinidad and Tobago, an island nation of 1.2 million people. Correlating publicly available data, researchers investigated the origins of waste and surmised that recycling plastic bottles and banning plastic bags would be economically feasible and environmentally advantageous, and also that plastics could be used as fuel in cement plants. They concluded that material flow analysis is useful for such efforts.",
+  "smoke_mode": false,
+  "steps": {
+    "step1": {
+      "status": "completed",
+      "seed_paper_count": 4
+    },
+    "step2": {
+      "status": "completed",
+      "graph_paper_count": 4,
+      "edge_count": 0
+    },
+    "step3": {
+      "status": "completed",
+      "serialized_chars": 6307,
+      "trend_chars": 7737
+    },
+    "step4": {
+      "status": "completed",
+      "rss_keys": [
+        "bottlenecks",
+        "core_gap",
+        "desired_solution_properties",
+        "inspiration_search_hints",
+        "objects",
+        "possible_mechanism_types",
+        "relations",
+        "target_domain",
+        "unresolved_tensions"
+      ]
+    },
+    "step5": {
+      "status": "completed",
+      "preferred_radii": [
+        "R1",
+        "R2"
+      ]
+    },
+    "step6": {
+      "status": "completed",
+      "candidate_count": 6,
+      "round": 3
+    },
+    "step7": {
+      "status": "completed",
+      "inspiration_count": 6,
+      "round": 3
+    },
+    "step8": {
+      "status": "completed",
+      "selected_count": 3,
+      "round": 3
+    },
+    "step9": {
+      "status": "completed",
+      "idea_count": 1,
+      "round": 3
+    }
+  },
+  "input": {
+    "topic": "Research question: How can we better manage the world’s plastic waste?\nContext: One of the challenges of managing plastic waste is a lack of reliable data: The complicated global streams that produce and distribute waste from petroleum-based products are not always clear. Recently, experts in management and sustainability collaborated to address this issue by focusing on material flow analysis in Trinidad and Tobago, an island nation of 1.2 million people. Correlating publicly available data, researchers investigated the origins of waste and surmised that recycling plastic bottles and banning plastic bags would be economically feasible and environmentally advantageous, and also that plastics could be used as fuel in cement plants. They concluded that material flow analysis is useful for such efforts.",
+    "seed_keywords": null,
+    "domain": "Chemistry",
+    "pdf_paths": [],
+    "resume_from_run_dir": null,
+    "workflow_mode": "full"
+  },
+  "workflow_mode": "full",
+  "workflow_path": "full",
+  "effective_config": {
+    "sciatlas": {
+      "base_url": "http://sciatlas.openkg.cn",
+      "api_key": "***REDACTED***",
+      "timeout": 900,
+      "max_retries": 4,
+      "retry_backoff": 5.0,
+      "use_cache": true,
+      "cache_dir": "runs/cache",
+      "official_cli_root": ".",
+      "use_local_kg": false,
+      "local_search_root": "references/search"
+    },
+    "llm": {
+      "base_url": "https://redacted.invalid/compatible-mode/v1",
+      "model": "qwen3.8-max",
+      "temperature": 0.7,
+      "max_retries": 4,
+      "request_timeout": 1200
+    },
+    "pipeline": {
+      "workflow_mode": "full",
+      "anchor_top_k": 5,
+      "keyword_min_papers": 2,
+      "k_step1": 4,
+      "seed_num_queries": 8,
+      "seed_per_query": 3,
+      "seed_request_multiplier": 6,
+      "seed_request_floor": 12,
+      "seed_recent_years": 7,
+      "seed_min_citations": 1000,
+      "graph_budget_ratio": 0.35,
+      "graph_budget_min": 12,
+      "graph_budget_max": 30,
+      "graph_max_predecessors_per_paper": 3,
+      "graph_min_forward_papers": 3,
+      "graph_candidate_fetch_limit": 40,
+      "num_candidate_step2": 3,
+      "num_expansion_step2": 1,
+      "innoeval_root": "/REDACTED/tiaozhanbei/SciAtlas/references/search/src/innoeval_search",
+      "grobid_base_url": "http://127.0.0.1:8070",
+      "num_cross_domains": 2,
+      "inspiration_top_k_same_field": 2,
+      "inspiration_top_k_per_domain": 2,
+      "max_novelty_feedback_rounds": 2,
+      "idea_count": 1,
+      "runs_dir": "runs"
+    }
+  },
+  "post_step9_novelty": {
+    "status": "completed",
+    "round": 3,
+    "novelty_levels": [
+      "medium"
+    ]
+  },
+  "seed_paper_count": 4,
+  "graph_paper_count": 4,
+  "candidate_inspiration_count": 6,
+  "inspiration_count": 6,
+  "selected_inspiration_count": 3,
+  "idea_count": 1,
+  "ideas": [
+    {
+      "title": "Presentation-Controlled Differentiable Mass-Balance Inference for Plastic Waste Sorting and Material-Flow Accounting",
+      "motivation": "Better plastic-waste management requires reliable stream-level data and sorting decisions that remain valid for dirty, aged, contaminated, pigmented, multilayer, and #3-#7 plastics. Spectroscopic machine learning can characterize mixed plastic waste [Author et al., 2022](https://openalex.org/W4309475252), NIR hyperspectral cascade detection can identify contaminants in post-consumer packaging [Author et al., 2021](https://openalex.org/W3176826653), NIR machine learning can recognize aged polypropylene [Author et al., 2025](https://openalex.org/W4408188181), and AI-enabled sensor-fusion sorting targets economically viable handling of complex streams [Author et al., 2025](https://openalex.org/W7128697218). However, these approaches still mostly infer local labels or categories, while industrial streams contain overlapping, occluded, and presentation-dependent observations that must be converted into mass-balanced flow data for circular-economy decisions. Integrated material flow analysis provides the accounting structure needed to support material efficiency [Author et al., 2022](https://openalex.org/W4286698685), remote sensing provides spectral unmixing and uncertainty-aware inversion for mixed scenes [Author et al., 2012](https://openalex.org/W2265885259), and hierarchical deep sorting shows how pairwise discrimination can be organized into circular plastic upgrading [Author et al., 2019](https://openalex.org/W2988016874). The unresolved bottleneck is not another classifier but a controlled inference system that treats physical presentation as an active variable, conserves mass across unit operations, and quantifies identifiability limits.",
+      "methods": "1. Presentation-conditioned spectral unmixing: The observation model treats each conveyor view as a mixed scene rather than a clean isolated item, adapting remote-sensing unmixing and uncertainty-aware retrieval to plastic waste [Author et al., 2012](https://openalex.org/W2265885259). It ingests NIR, MIR, RGB, or false-color band ratios and explicitly conditions the likelihood on presentation variables such as singulation, overlap, layer thickness, belt speed, orientation, and view geometry. This extends prior spectroscopic plastic characterization [Author et al., 2022](https://openalex.org/W4309475252), contaminant detection [Author et al., 2021](https://openalex.org/W3176826653), aged-polymer recognition [Author et al., 2025](https://openalex.org/W4408188181), and sensor-fusion sorting [Author et al., 2025](https://openalex.org/W7128697218) by outputting posterior probabilities and calibrated uncertainties for polymer grade, contamination, aging, and recyclability states instead of only hard labels.\n2. Differentiable mass-balance filter: A differentiable filter maintains nonnegative mass states for polymer grade, contamination level, aging state, and process stream, using integrated material-flow accounting as the physical backbone [Author et al., 2022](https://openalex.org/W4286698685). The state transition equation couples unit operations such as singulation, washing, shredding, blending, rejection, and fuel diversion through learned but constrained transition kernels. Because the observation model is presentation-dependent, the filter jointly learns observation biases and transition kernels while enforcing mass conservation, nonnegativity, and known item-mass distributions. This separation allows the system to distinguish measurement error from true contaminant carryover or aging degradation.\n3. Identifiability-driven active presentation controller: The controller makes presentation an actively controlled inference variable rather than a passive stratification label. It derives identifiability conditions and error bounds for recovering bulk mass composition from occluded bulk presentations using item-mass distributions, false-color channels, and presentation actions. At run time it selects the action that maximizes expected reduction in posterior mass-balance uncertainty per unit cost, such as slowing the belt, increasing singulation, reducing layer thickness, flipping or rescanning uncertain items, or diverting a small sample for higher-cost MIR analysis. The hierarchical escalation follows the deep-sorting logic of pairwise discrimination and selective re-inspection [Author et al., 2019](https://openalex.org/W2988016874), while the uncertainty-based inversion follows remote-sensing retrieval practice [Author et al., 2012](https://openalex.org/W2265885259). Economic and throughput constraints are included as explicit costs, reflecting the need for viable industrial sorting [Author et al., 2025](https://openalex.org/W7128697218).\n4. Material-flow translation and decision support: The posterior mass states are aggregated into material-flow accounts for input, recovered recyclate, reject, downcycled material, and waste-to-fuel streams. This layer converts item-level state probabilities into mass-balanced estimates of recycling yield, contamination risk, and circular-economy performance, following integrated MFA principles [Author et al., 2022](https://openalex.org/W4286698685). It can support operational routing and policy-relevant scenarios such as bottle recovery, bag reduction, and plastics-to-fuel diversion, while preserving uncertainty rather than collapsing the stream into brittle point estimates.\nAnalogy — borrows spectral unmixing and uncertainty-aware retrieval from mixed, noisy, indirect observations from Remote sensing for waste characterization; adapted as Occluded and dirty plastic waste views are treated as mixed spectral scenes, with presentation-conditioned likelihoods and posterior uncertainty used to guide active rescanning and presentation changes rather than producing only hard labels. [Author et al., 2012](https://openalex.org/W2265885259)\nAnalogy — borrows mass-balance accounting and flow-based scenario evaluation for material efficiency from <i>Quo vadis</i> MFA? Integrated material flow analysis to support material efficiency; adapted as A differentiable mass-balance filter enforces conservation across sorting, washing, shredding, blending, rejection, and fuel-diversion operations, turning uncertain sensor classifications into stream-level material-flow estimates. [Author et al., 2022](https://openalex.org/W4286698685)\nAnalogy — borrows hierarchical pairwise deep sorting and spectral-to-property mapping for circular plastic upgrading from An Innovative Route to Circular Rigid Plastics; adapted as Uncertain items are escalated through hierarchical pairwise presentation actions, such as rescan, singulation, or targeted MIR inspection, so that selective additional effort is spent where it most reduces mass-balance non-identifiability. [Author et al., 2019](https://openalex.org/W2988016874)\nExperiment plan: Phase 0 setup: Build a controlled conveyor testbed with known ground-truth batches containing clean, aged, contaminated, pigmented, multilayer, and #3-#7 plastic items. Fix the sensor suite, illumination, calibration protocol, belt geometry, item-mass priors, observation-model architecture, filter hyperparameters, and evaluation metrics. Record item mass, size, occlusion statistics, moisture or residue state, and spectral library for each batch.; Phase 1 primary hypothesis test: Vary only the presentation policy among three conditions: fixed presentation, throughput-matched random presentation, and uncertainty-directed active presentation. Keep sensors, total scan budget, actuation budget, compute budget, batch composition, and mass-balance filter identical. Primary outcomes are bulk composition RMSE, posterior variance, sorting purity, recycling yield, and misallocated mass.; Mechanism controls: Run each active component alone and in unstructured combinations: observation-only posterior averaging without mass-balance conservation, mass-balance filtering with fixed presentation, active presentation with unstructured averaging, random presentation with the full action repertoire, and the full structured active mass-balance system. This distinguishes the claimed mechanism from extra scans, generic filtering, or simple ensemble averaging.; Confounder exclusion: Match scan count, belt time, energy, and compute across policies; use ground-truth labels only for evaluation; log occlusion and exposed surface area; calibrate sensors before and after each block; test dry versus moist or residue-laden items; compare physically cleaned versus contaminated items to separate contaminant carryover from measurement error; verify that item-mass and size distributions are fixed in Phase 1.; Identifiability-bound validation: With the active controller disabled or fixed, vary one factor at a time, such as occlusion or layer thickness, item-mass uncertainty, false-color channel subset, sensor noise, or aging contamination level, and compare observed bulk-composition error with the theoretically predicted identifiability bound. Do not change the filter structure or policy during each sweep.; Secondary scope after core validation: Test real dirty post-consumer streams, different instruments, facilities, and geographic waste compositions. Evaluate domain adaptation and calibration transfer while keeping the primary architecture fixed, and report whether active presentation still reduces error under domain shift.; Decision impact: Use the posterior mass-flow estimates to simulate or operate routing decisions for recycling, rejection, downcycling, and fuel diversion. Compare the full method against unstructured label aggregation and fixed-presentation sorting on recycling yield, contamination exceedance, and economic feasibility, including scenarios relevant to bottle recovery, bag reduction, and waste-to-fuel pathways.",
+      "method_overview": "This method is intended to solve robust stream-level characterization and material-flow accounting for mixed, occluded, contaminated, aged plastics; it can be divided into 4 parts: (1) a presentation-conditioned spectral unmixing observation model, (2) a differentiable mass-balance filter with conservation constraints and unit-operation transition kernels, (3) an identifiability-driven active presentation controller, and (4) a material-flow translation layer for recycling-yield and circular-economy decisions. The primary testable hypothesis is that uncertainty-directed active presentation reduces bulk-composition estimation error and sorting misallocation relative to fixed or random presentation under equal sensing, actuation, and throughput budgets.",
+      "proposed_method": [
+        {
+          "name": "Presentation-conditioned spectral unmixing",
+          "description": "The observation model treats each conveyor view as a mixed scene rather than a clean isolated item, adapting remote-sensing unmixing and uncertainty-aware retrieval to plastic waste [Author et al., 2012](https://openalex.org/W2265885259). It ingests NIR, MIR, RGB, or false-color band ratios and explicitly conditions the likelihood on presentation variables such as singulation, overlap, layer thickness, belt speed, orientation, and view geometry. This extends prior spectroscopic plastic characterization [Author et al., 2022](https://openalex.org/W4309475252), contaminant detection [Author et al., 2021](https://openalex.org/W3176826653), aged-polymer recognition [Author et al., 2025](https://openalex.org/W4408188181), and sensor-fusion sorting [Author et al., 2025](https://openalex.org/W7128697218) by outputting posterior probabilities and calibrated uncertainties for polymer grade, contamination, aging, and recyclability states instead of only hard labels."
+        },
+        {
+          "name": "Differentiable mass-balance filter",
+          "description": "A differentiable filter maintains nonnegative mass states for polymer grade, contamination level, aging state, and process stream, using integrated material-flow accounting as the physical backbone [Author et al., 2022](https://openalex.org/W4286698685). The state transition equation couples unit operations such as singulation, washing, shredding, blending, rejection, and fuel diversion through learned but constrained transition kernels. Because the observation model is presentation-dependent, the filter jointly learns observation biases and transition kernels while enforcing mass conservation, nonnegativity, and known item-mass distributions. This separation allows the system to distinguish measurement error from true contaminant carryover or aging degradation."
+        },
+        {
+          "name": "Identifiability-driven active presentation controller",
+          "description": "The controller makes presentation an actively controlled inference variable rather than a passive stratification label. It derives identifiability conditions and error bounds for recovering bulk mass composition from occluded bulk presentations using item-mass distributions, false-color channels, and presentation actions. At run time it selects the action that maximizes expected reduction in posterior mass-balance uncertainty per unit cost, such as slowing the belt, increasing singulation, reducing layer thickness, flipping or rescanning uncertain items, or diverting a small sample for higher-cost MIR analysis. The hierarchical escalation follows the deep-sorting logic of pairwise discrimination and selective re-inspection [Author et al., 2019](https://openalex.org/W2988016874), while the uncertainty-based inversion follows remote-sensing retrieval practice [Author et al., 2012](https://openalex.org/W2265885259). Economic and throughput constraints are included as explicit costs, reflecting the need for viable industrial sorting [Author et al., 2025](https://openalex.org/W7128697218)."
+        },
+        {
+          "name": "Material-flow translation and decision support",
+          "description": "The posterior mass states are aggregated into material-flow accounts for input, recovered recyclate, reject, downcycled material, and waste-to-fuel streams. This layer converts item-level state probabilities into mass-balanced estimates of recycling yield, contamination risk, and circular-economy performance, following integrated MFA principles [Author et al., 2022](https://openalex.org/W4286698685). It can support operational routing and policy-relevant scenarios such as bottle recovery, bag reduction, and plastics-to-fuel diversion, while preserving uncertainty rather than collapsing the stream into brittle point estimates."
+        }
+      ],
+      "analogy_mapping": [
+        {
+          "inspiration": "Remote sensing for waste characterization",
+          "concept": "spectral unmixing and uncertainty-aware retrieval from mixed, noisy, indirect observations",
+          "adaptation": "Occluded and dirty plastic waste views are treated as mixed spectral scenes, with presentation-conditioned likelihoods and posterior uncertainty used to guide active rescanning and presentation changes rather than producing only hard labels.",
+          "citation": "[Author et al., 2012](https://openalex.org/W2265885259)"
+        },
+        {
+          "inspiration": "<i>Quo vadis</i> MFA? Integrated material flow analysis to support material efficiency",
+          "concept": "mass-balance accounting and flow-based scenario evaluation for material efficiency",
+          "adaptation": "A differentiable mass-balance filter enforces conservation across sorting, washing, shredding, blending, rejection, and fuel-diversion operations, turning uncertain sensor classifications into stream-level material-flow estimates.",
+          "citation": "[Author et al., 2022](https://openalex.org/W4286698685)"
+        },
+        {
+          "inspiration": "An Innovative Route to Circular Rigid Plastics",
+          "concept": "hierarchical pairwise deep sorting and spectral-to-property mapping for circular plastic upgrading",
+          "adaptation": "Uncertain items are escalated through hierarchical pairwise presentation actions, such as rescan, singulation, or targeted MIR inspection, so that selective additional effort is spent where it most reduces mass-balance non-identifiability.",
+          "citation": "[Author et al., 2019](https://openalex.org/W2988016874)"
+        }
+      ],
+      "experiment_plan": [
+        "Phase 0 setup: Build a controlled conveyor testbed with known ground-truth batches containing clean, aged, contaminated, pigmented, multilayer, and #3-#7 plastic items. Fix the sensor suite, illumination, calibration protocol, belt geometry, item-mass priors, observation-model architecture, filter hyperparameters, and evaluation metrics. Record item mass, size, occlusion statistics, moisture or residue state, and spectral library for each batch.",
+        "Phase 1 primary hypothesis test: Vary only the presentation policy among three conditions: fixed presentation, throughput-matched random presentation, and uncertainty-directed active presentation. Keep sensors, total scan budget, actuation budget, compute budget, batch composition, and mass-balance filter identical. Primary outcomes are bulk composition RMSE, posterior variance, sorting purity, recycling yield, and misallocated mass.",
+        "Mechanism controls: Run each active component alone and in unstructured combinations: observation-only posterior averaging without mass-balance conservation, mass-balance filtering with fixed presentation, active presentation with unstructured averaging, random presentation with the full action repertoire, and the full structured active mass-balance system. This distinguishes the claimed mechanism from extra scans, generic filtering, or simple ensemble averaging.",
+        "Confounder exclusion: Match scan count, belt time, energy, and compute across policies; use ground-truth labels only for evaluation; log occlusion and exposed surface area; calibrate sensors before and after each block; test dry versus moist or residue-laden items; compare physically cleaned versus contaminated items to separate contaminant carryover from measurement error; verify that item-mass and size distributions are fixed in Phase 1.",
+        "Identifiability-bound validation: With the active controller disabled or fixed, vary one factor at a time, such as occlusion or layer thickness, item-mass uncertainty, false-color channel subset, sensor noise, or aging contamination level, and compare observed bulk-composition error with the theoretically predicted identifiability bound. Do not change the filter structure or policy during each sweep.",
+        "Secondary scope after core validation: Test real dirty post-consumer streams, different instruments, facilities, and geographic waste compositions. Evaluate domain adaptation and calibration transfer while keeping the primary architecture fixed, and report whether active presentation still reduces error under domain shift.",
+        "Decision impact: Use the posterior mass-flow estimates to simulate or operate routing decisions for recycling, rejection, downcycling, and fuel diversion. Compare the full method against unstructured label aggregation and fixed-presentation sorting on recycling yield, contamination exceedance, and economic feasibility, including scenarios relevant to bottle recovery, bag reduction, and waste-to-fuel pathways."
+      ],
+      "description": "Motivation:\nBetter plastic-waste management requires reliable stream-level data and sorting decisions that remain valid for dirty, aged, contaminated, pigmented, multilayer, and #3-#7 plastics. Spectroscopic machine learning can characterize mixed plastic waste [Author et al., 2022](https://openalex.org/W4309475252), NIR hyperspectral cascade detection can identify contaminants in post-consumer packaging [Author et al., 2021](https://openalex.org/W3176826653), NIR machine learning can recognize aged polypropylene [Author et al., 2025](https://openalex.org/W4408188181), and AI-enabled sensor-fusion sorting targets economically viable handling of complex streams [Author et al., 2025](https://openalex.org/W7128697218). However, these approaches still mostly infer local labels or categories, while industrial streams contain overlapping, occluded, and presentation-dependent observations that must be converted into mass-balanced flow data for circular-economy decisions. Integrated material flow analysis provides the accounting structure needed to support material efficiency [Author et al., 2022](https://openalex.org/W4286698685), remote sensing provides spectral unmixing and uncertainty-aware inversion for mixed scenes [Author et al., 2012](https://openalex.org/W2265885259), and hierarchical deep sorting shows how pairwise discrimination can be organized into circular plastic upgrading [Author et al., 2019](https://openalex.org/W2988016874). The unresolved bottleneck is not another classifier but a controlled inference system that treats physical presentation as an active variable, conserves mass across unit operations, and quantifies identifiability limits.\n\nMethods:\n1. Presentation-conditioned spectral unmixing: The observation model treats each conveyor view as a mixed scene rather than a clean isolated item, adapting remote-sensing unmixing and uncertainty-aware retrieval to plastic waste [Author et al., 2012](https://openalex.org/W2265885259). It ingests NIR, MIR, RGB, or false-color band ratios and explicitly conditions the likelihood on presentation variables such as singulation, overlap, layer thickness, belt speed, orientation, and view geometry. This extends prior spectroscopic plastic characterization [Author et al., 2022](https://openalex.org/W4309475252), contaminant detection [Author et al., 2021](https://openalex.org/W3176826653), aged-polymer recognition [Author et al., 2025](https://openalex.org/W4408188181), and sensor-fusion sorting [Author et al., 2025](https://openalex.org/W7128697218) by outputting posterior probabilities and calibrated uncertainties for polymer grade, contamination, aging, and recyclability states instead of only hard labels.\n2. Differentiable mass-balance filter: A differentiable filter maintains nonnegative mass states for polymer grade, contamination level, aging state, and process stream, using integrated material-flow accounting as the physical backbone [Author et al., 2022](https://openalex.org/W4286698685). The state transition equation couples unit operations such as singulation, washing, shredding, blending, rejection, and fuel diversion through learned but constrained transition kernels. Because the observation model is presentation-dependent, the filter jointly learns observation biases and transition kernels while enforcing mass conservation, nonnegativity, and known item-mass distributions. This separation allows the system to distinguish measurement error from true contaminant carryover or aging degradation.\n3. Identifiability-driven active presentation controller: The controller makes presentation an actively controlled inference variable rather than a passive stratification label. It derives identifiability conditions and error bounds for recovering bulk mass composition from occluded bulk presentations using item-mass distributions, false-color channels, and presentation actions. At run time it selects the action that maximizes expected reduction in posterior mass-balance uncertainty per unit cost, such as slowing the belt, increasing singulation, reducing layer thickness, flipping or rescanning uncertain items, or diverting a small sample for higher-cost MIR analysis. The hierarchical escalation follows the deep-sorting logic of pairwise discrimination and selective re-inspection [Author et al., 2019](https://openalex.org/W2988016874), while the uncertainty-based inversion follows remote-sensing retrieval practice [Author et al., 2012](https://openalex.org/W2265885259). Economic and throughput constraints are included as explicit costs, reflecting the need for viable industrial sorting [Author et al., 2025](https://openalex.org/W7128697218).\n4. Material-flow translation and decision support: The posterior mass states are aggregated into material-flow accounts for input, recovered recyclate, reject, downcycled material, and waste-to-fuel streams. This layer converts item-level state probabilities into mass-balanced estimates of recycling yield, contamination risk, and circular-economy performance, following integrated MFA principles [Author et al., 2022](https://openalex.org/W4286698685). It can support operational routing and policy-relevant scenarios such as bottle recovery, bag reduction, and plastics-to-fuel diversion, while preserving uncertainty rather than collapsing the stream into brittle point estimates.\nAnalogy — borrows spectral unmixing and uncertainty-aware retrieval from mixed, noisy, indirect observations from Remote sensing for waste characterization; adapted as Occluded and dirty plastic waste views are treated as mixed spectral scenes, with presentation-conditioned likelihoods and posterior uncertainty used to guide active rescanning and presentation changes rather than producing only hard labels. [Author et al., 2012](https://openalex.org/W2265885259)\nAnalogy — borrows mass-balance accounting and flow-based scenario evaluation for material efficiency from <i>Quo vadis</i> MFA? Integrated material flow analysis to support material efficiency; adapted as A differentiable mass-balance filter enforces conservation across sorting, washing, shredding, blending, rejection, and fuel-diversion operations, turning uncertain sensor classifications into stream-level material-flow estimates. [Author et al., 2022](https://openalex.org/W4286698685)\nAnalogy — borrows hierarchical pairwise deep sorting and spectral-to-property mapping for circular plastic upgrading from An Innovative Route to Circular Rigid Plastics; adapted as Uncertain items are escalated through hierarchical pairwise presentation actions, such as rescan, singulation, or targeted MIR inspection, so that selective additional effort is spent where it most reduces mass-balance non-identifiability. [Author et al., 2019](https://openalex.org/W2988016874)\nExperiment plan: Phase 0 setup: Build a controlled conveyor testbed with known ground-truth batches containing clean, aged, contaminated, pigmented, multilayer, and #3-#7 plastic items. Fix the sensor suite, illumination, calibration protocol, belt geometry, item-mass priors, observation-model architecture, filter hyperparameters, and evaluation metrics. Record item mass, size, occlusion statistics, moisture or residue state, and spectral library for each batch.; Phase 1 primary hypothesis test: Vary only the presentation policy among three conditions: fixed presentation, throughput-matched random presentation, and uncertainty-directed active presentation. Keep sensors, total scan budget, actuation budget, compute budget, batch composition, and mass-balance filter identical. Primary outcomes are bulk composition RMSE, posterior variance, sorting purity, recycling yield, and misallocated mass.; Mechanism controls: Run each active component alone and in unstructured combinations: observation-only posterior averaging without mass-balance conservation, mass-balance filtering with fixed presentation, active presentation with unstructured averaging, random presentation with the full action repertoire, and the full structured active mass-balance system. This distinguishes the claimed mechanism from extra scans, generic filtering, or simple ensemble averaging.; Confounder exclusion: Match scan count, belt time, energy, and compute across policies; use ground-truth labels only for evaluation; log occlusion and exposed surface area; calibrate sensors before and after each block; test dry versus moist or residue-laden items; compare physically cleaned versus contaminated items to separate contaminant carryover from measurement error; verify that item-mass and size distributions are fixed in Phase 1.; Identifiability-bound validation: With the active controller disabled or fixed, vary one factor at a time, such as occlusion or layer thickness, item-mass uncertainty, false-color channel subset, sensor noise, or aging contamination level, and compare observed bulk-composition error with the theoretically predicted identifiability bound. Do not change the filter structure or policy during each sweep.; Secondary scope after core validation: Test real dirty post-consumer streams, different instruments, facilities, and geographic waste compositions. Evaluate domain adaptation and calibration transfer while keeping the primary architecture fixed, and report whether active presentation still reduces error under domain shift.; Decision impact: Use the posterior mass-flow estimates to simulate or operate routing decisions for recycling, rejection, downcycling, and fuel diversion. Compare the full method against unstructured label aggregation and fixed-presentation sorting on recycling yield, contamination exceedance, and economic feasibility, including scenarios relevant to bottle recovery, bag reduction, and waste-to-fuel pathways.",
+      "inspiration_sources": [
+        "Remote sensing for waste characterization",
+        "<i>Quo vadis</i> MFA? Integrated material flow analysis to support material efficiency",
+        "An Innovative Route to Circular Rigid Plastics"
+      ],
+      "key_references": [
+        "Online Characterization of Mixed Plastic Waste Using Machine Learning and Mid-Infrared Spectroscopy",
+        "DETECTING CONTAMINANTS IN POST-CONSUMER PLASTIC PACKAGING WASTE BY A NIR HYPERSPECTRAL IMAGING-BASED CASCADE DETECTION APPROACH",
+        "Identification of Aged Polypropylene with Machine Learning and Near–Infrared Spectroscopy for Improved Recycling",
+        "Development of an Economically Viable AI-Enabled Sorting Technology for Complex Plastic Waste Streams"
+      ],
+      "references": [
+        {
+          "citation": "Author et al., 2022",
+          "url": "https://openalex.org/W4309475252",
+          "full": "Online Characterization of Mixed Plastic Waste Using Machine Learning and Mid-Infrared Spectroscopy. 2022. https://openalex.org/W4309475252"
+        },
+        {
+          "citation": "Author et al., 2021",
+          "url": "https://openalex.org/W3176826653",
+          "full": "DETECTING CONTAMINANTS IN POST-CONSUMER PLASTIC PACKAGING WASTE BY A NIR HYPERSPECTRAL IMAGING-BASED CASCADE DETECTION APPROACH. 2021. https://openalex.org/W3176826653"
+        },
+        {
+          "citation": "Author et al., 2025",
+          "url": "https://openalex.org/W4408188181",
+          "full": "Identification of Aged Polypropylene with Machine Learning and Near–Infrared Spectroscopy for Improved Recycling. 2025. https://openalex.org/W4408188181"
+        },
+        {
+          "citation": "Author et al., 2025",
+          "url": "https://openalex.org/W7128697218",
+          "full": "Development of an Economically Viable AI-Enabled Sorting Technology for Complex Plastic Waste Streams. 2025. https://openalex.org/W7128697218"
+        },
+        {
+          "citation": "Author et al., 2022",
+          "url": "https://openalex.org/W4286698685",
+          "full": "<i>Quo vadis</i> MFA? Integrated material flow analysis to support material efficiency. 2022. https://openalex.org/W4286698685"
+        },
+        {
+          "citation": "Author et al., 2012",
+          "url": "https://openalex.org/W2265885259",
+          "full": "Remote sensing for waste characterization. 2012. https://openalex.org/W2265885259"
+        },
+        {
+          "citation": "Author et al., 2019",
+          "url": "https://openalex.org/W2988016874",
+          "full": "An Innovative Route to Circular Rigid Plastics. 2019. https://openalex.org/W2988016874"
+        }
+      ],
+      "novelty_level": "medium",
+      "novelty_justification": "Relative to the provided references, the closest existing combination is the pairing of AI-enabled sorting for complex plastic waste streams with online mixed-plastic spectroscopic characterization and NIR hyperspectral contaminant detection. Those works overlap the proposed idea in problem setting, sensing modality, dirty or contaminated plastic streams, and industrial sorting relevance. However, they largely stop at classification, contaminant detection, or local material identification. The proposed idea adds a presentation-conditioned observation model, a differentiable mass-balance filter, and an identifiability-driven active presentation controller that converts uncertain spectral observations into conserved stream-level mass-flow estimates. This is a meaningful conceptual and mechanistic extension beyond the key references. The novelty is not high because the proposal relies heavily on assembling known ingredients: spectral unmixing, uncertainty-aware inversion, material-flow accounting, hierarchical escalation, and active sensing. Its advance is primarily a structured integration of these components into a controlled sorting and accounting system, rather than a wholly new physical sensing principle or algorithmic primitive. Thus the novelty is medium: more than a simple application of the cited works, but still partly combination-based.",
+      "improvement_suggestions": [
+        "Derive formal identifiability or observability bounds for bulk mass composition as an explicit function of occlusion, layer thickness, item-mass priors, sensor noise, and available spectral channels, then show that the active presentation controller provably reduces those bounds under cost or throughput constraints.",
+        "Introduce a distinct mass-conserving inference primitive, such as constrained optimal transport, a differentiable conservation layer, or mass-balanced probabilistic assignment, that resolves ambiguous overlapping observations into stream mass rather than applying material-flow accounting only after classification.",
+        "Formulate presentation actions as interventions in a causal or counterfactual model that separates measurement error from true contaminant carryover, aging degradation, or process loss, giving a testable estimand beyond improved classification accuracy."
+      ]
+    }
+  ]
+}

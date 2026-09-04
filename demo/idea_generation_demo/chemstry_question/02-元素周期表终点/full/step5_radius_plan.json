@@ -1,0 +1,12 @@
+{
+  "use_same_field": true,
+  "use_cross_domain": true,
+  "preferred_radii": [
+    "R1",
+    "R2"
+  ],
+  "same_field_top_k": 2,
+  "num_cross_domains": 2,
+  "cross_domain_top_k_per_domain": 2,
+  "rationale": "Same-field retrieval is needed because the core problem remains anchored in superheavy-element synthesis, nuclear stability, recoil handling, and discovery criteria. Cross-domain retrieval is also justified because key bottlenecks—few-atom evidence, rapid single-atom transport, uncertainty-quantified extrapolation, and robust atomic-number assignment—may benefit from mechanism transfer from rare-event detection, trace analysis, Bayesian experimental design, or rapid micro-scale chemical handling."
+}

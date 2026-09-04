@@ -1,0 +1,301 @@
+<p align="center">
+  <img src="mechanist-logo.png" alt="Mechanist Logo" width="413" height="100">
+</p>
+
+<p align="center">
+  <strong>LLM 机理可解释性自主研究智能体</strong>
+</p>
+
+<p align="center">
+  <a href="http://mechanist.openkg.cn">项目网站</a> ·
+  <a href="../README.md">English</a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/zjunlp/Mechanist/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT">
+  </a>
+  <a href="https://qoder.com">
+    <img src="https://img.shields.io/badge/Qoder-Plugin-orange" alt="Qoder Plugin">
+  </a>
+  <a href="https://www.python.org/downloads/">
+    <img src="https://img.shields.io/badge/python-3.11+-blue?logo=python" alt="Python 3.11+">
+  </a>
+  <a href="https://github.com/zjunlp/Mechanist">
+    <img src="https://img.shields.io/badge/status-active-brightgreen" alt="Status: Active">
+  </a>
+</p>
+
+---
+
+## 📖 目录
+
+- [📖 概述](#-概述)
+- [🔄 工作流程](#-工作流程)
+- [🔧 安装](#-安装)
+  - [1. 安装 Qoder 与 uv](#1-安装-qoder-与-uv)
+  - [2. 为 Qoder 安装 Mechanist 插件](#2-为-qoder-安装-mechanist-插件)
+  - [3. 配置外部评审模型](#3-配置外部评审模型)
+  - [4. 准备跑实验用的 Python 环境](#4-准备跑实验用的-python-环境可选)
+- [🚀 快速开始](#-快速开始)
+  - [1. 创建工作目录](#1-创建工作目录)
+  - [2. 启动 Qoder](#2-启动-qoder)
+  - [3. 把你想做的事告诉 `/mguide`](#3-把你想做的事告诉-mguide)
+  - [4. 跟踪运行，然后阅读结果](#4-跟踪运行然后阅读结果)
+- [📖 进一步阅读](#-进一步阅读)
+- [🙏 致谢](#-致谢)
+- [📄 引用](#-引用)
+
+---
+
+## 📖 概述
+
+**Mechanist** 将关于大语言模型内部机理的研究问题转化为**有证据支持的科学发现**。它全流程自动协调：文献检索 → 假设提出 → 实验实现与执行 → 鲁棒性验证 → 迭代精炼。
+
+**Mechanist 以 Qoder CLI 插件形式分发。**几分钟内完成安装，交给它一个研究问题，它会在你自己的机器和 GPU 上跑实验，并交回一份可核验的研究报告。
+
+### 核心能力
+
+| 阶段 | 描述 |
+|:---|:---|
+| **文献综述** | 检索 14k 篇可解释性论文语料库、157M 节点跨学科引用网络及网络资源。 |
+| **假设提出** | 生成经过新颖性检验的断言，或从用户提供的材料中抽取断言。 |
+| **实验执行** | 生成实验代码，运行评估，按机理感知计划记录结果。 |
+| **验证** | 在替代模型、数据集和方法下评估断言的鲁棒性。 |
+| **迭代** | 审视失败或薄弱的结果，更新计划并重跑相关阶段。 |
+
+---
+
+## 🔄 工作流程
+
+```
+ 研究问题 ──▶ 提出断言 ──▶ 实验执行 ──▶ 鲁棒验证 ──▶ 审稿迭代 ──▶ 科学发现
+            (假设)      (执行)      (验证)      (精炼)
+```
+
+研究流水线由一个**编排器（orchestrator）**和四个串行阶段组成，每个阶段运行在独立的子智能体中：
+
+1. **Claim（断言提出）**——检索文献，生成或捕获假设，评估新颖性与影响力，产出详细实验计划。
+2. **Experiment（实验执行）**——路由选择合适的机理方法，生成实验代码，运行健全性检查，部署实验并收集结果。
+3. **Verify（鲁棒验证）**——沿方法、数据集、模型三个维度做 swap 变体，运行完整性审计。
+4. **Iteration（迭代精炼）**——外部 LLM 审稿 + 结构化修复路由（最多 6 轮），将断言收敛至可发表水平。
+
+所有结果记录在 **Claim Ledger**（`CLAIMS_LEDGER.md`）中，逐条跟踪每个断言的完整旅程。
+
+---
+
+## 🔧 安装
+
+### 1. 安装 Qoder 与 uv
+
+Mechanist 运行在 Qoder 之内——请从 [qoder.com](https://qoder.com) 安装 Qoder CLI，然后验证：
+
+```bash
+qoder --version
+```
+
+Mechanist 的 MCP 服务使用 uv 管理 Python 环境——接着安装 uv。
+
+```bash
+# Mechanist 的 MCP 服务用 uv 启动临时 Python 环境
+curl -LsSf https://astral.sh/uv/install.sh | sh
+uv --version
+```
+
+### 2. 为 Qoder 安装 Mechanist 插件
+
+克隆仓库并以本地 Qoder 插件方式安装：
+
+```bash
+git clone https://github.com/zjunlp/Mechanist.git
+qoder plugins install ./Mechanist
+qoder plugins list
+```
+
+重启 Qoder（或在会话中执行 `/plugins reload`），然后验证 MCP 服务：
+
+```text
+/mcp              # llm-chat 与 mechanic-db 均应为 "connected"
+```
+
+之后，Mechanist 的技能（`mguide`、`auto`、`msearch`、`mhistory` 等）与各阶段 agent 即可在 Qoder 中使用。
+
+> [!NOTE]
+> Qoder 通过 `${QODER_PLUGIN_ROOT}` 解析插件内路径；随仓库提供的 `.qoder-plugin/plugin.json` 已处理好这一点，无需手工配置 MCP。
+
+### 3. 配置外部评审模型
+
+Mechanist 在每一阶段都会使用 Qwen 外部评审模型交叉验证自己的 idea、实验设计与结论。请使用兼容 Qwen 的 API 端点，避免同模型自评。
+
+| 环境变量 | 是否必填 | 默认 / 示例 | 用途 |
+|:---|:---|:---|:---|
+| `LLM_API_KEY` | **必填** | `sk-…` | 外部评审模型 API key（交叉验证）。 |
+| `LLM_MODEL` | 可选 | `qwen-plus` | Qwen 外部评审模型名称。 |
+| `LLM_BASE_URL` | 可选 | `https://dashscope.aliyuncs.com/compatible-mode/v1` | 通义千问 DashScope 兼容端点。 |
+
+要设置上述变量，请将以下内容写入 `~/.bashrc`（或 `~/.zshrc`）：
+
+```bash
+# --- Mechanist（写入 ~/.bashrc 或 ~/.zshrc）---
+export LLM_API_KEY="sk-..."                       # 必填：外部评审模型 key
+export LLM_MODEL="qwen-plus"                     # 可选，默认：qwen-plus
+export LLM_BASE_URL="https://dashscope.aliyuncs.com/compatible-mode/v1"  # 可选
+```
+
+加载新变量并确认 key 已生效：
+
+```bash
+source ~/.bashrc            # 或新开一个终端
+echo "$LLM_API_KEY"         # 应打印你的 key，而不是空行
+```
+
+> [!NOTE]
+> **环境变量只在 Qoder 启动时读取。** 在已运行的会话里 `export` 不会生效。请编辑 `~/.bashrc` → `source`（或新开终端）→ 再重启 Qoder。
+
+### 4. 准备跑实验用的 Python 环境（可选）
+
+Mechanist 在启动 Qoder 会话时所在的 Python 环境中跑实验。若尚未安装实验常用包（PyTorch、NumPy、scikit-learn 等），可用下面的命令创建 conda 环境。我们提供的 `scientist` 环境覆盖了 Mechanist 跑实验时可能用到的常用工具。
+
+```bash
+# 示例：名为 scientist 的专用 conda 环境
+conda create -n scientist python=3.11 -y
+conda activate scientist
+pip install -r <(curl -sSL https://raw.githubusercontent.com/zjunlp/Mechanist/main/requirements.txt)
+```
+
+完成以上步骤后，继续阅读[快速开始](#-快速开始)。
+
+---
+
+## 🚀 快速开始
+
+创建一个文件夹作为工作目录，在其中启动 Qoder，然后用自然语言把你想做的事告诉 `/mguide`。它会与你一起厘清研究需求，并替你写出 `task.md`——下游一切工作都以这份任务说明书为基础——待你确认后启动自主流水线。以下是具体步骤：
+
+```
+ /mguide "你想做的事"
+     │   它与你一起厘清你的研究需求
+     ▼
+ task.md
+     │   它替你写好的任务说明书，你确认后开跑
+     ▼
+ claim ──▶ experiment ──▶ verify ──▶ iteration
+     │   自主流水线：提出断言 → 跑实验 → 鲁棒验证 → 审稿迭代
+     ▼
+ CLAIMS_LEDGER.md + AUTO_PIPELINE_REPORT.md
+     (研究发现)
+```
+
+### 1. 创建工作目录
+
+为本次研究任务新建一个空文件夹。Mechanist 会在此目录内工作，并将所有产出写入其中。
+
+```bash
+mkdir my-experiment && cd my-experiment   # 每个研究问题对应一个目录
+```
+
+### 2. 启动 Qoder
+
+> [!NOTE]
+> **请使用能力较强的 Qwen 模型。** 推荐 `qwen-plus`（或你的 DashScope 账户已开通的其他 Qwen 模型）以获得良好表现。
+
+在项目根目录（即第 1 步创建的文件夹）中启动 Qoder：
+
+```bash
+qoder
+```
+
+### 3. 把你想做的事告诉 `/mguide`
+
+`/mguide` 是 Mechanist 的入口。在 Qoder 提示符下输入它，并用自然语言描述你的任务——剩下的它会与你一起厘清。
+
+你可以让它做这些事：
+
+#### 研究运行 *（运行完整研究流水线）*
+
+- **探索机理**  
+  已知模型行为——找出哪个内部组件导致了它。
+
+- **复现论文**  
+  发现与方法均已知——按既定规模忠实复现。
+
+  ```text
+  /mguide Reproduce this paper: LLMs encode harmfulness and refusal separately
+  ```
+
+- **验证可疑现象**  
+  已有具体假设，但尚无论文（或先前实验）确认。
+
+- **开放式发现**  
+  只有研究方向——让 Mechanist 先挖出新现象，再深入调查。
+
+#### 文献 *（仅返回答案，不启动流水线）*
+
+- **检索文献**  
+  在 14k 篇可解释性论文语料库、157M 节点引用网络及网络资源中搜索。
+
+  ```text
+  /mguide find me papers on sparse autoencoder feature absorption in large language models
+  ```
+
+- **了解一个领域的发展**  
+  关键论文、转折点、主要争论与开放问题的时间线。
+
+  ```text
+  /mguide I'd like to know how circuit-level interpretability got to where it is today
+  ```
+
+### 4. 跟踪运行，然后阅读结果
+
+如果 Mechanist 接下的是一次**研究运行**，就会进入下面的完整科研流水线；文献类请求直接返回答案，不会走到这一步。
+
+Mechanist 按顺序执行四个阶段：**claim → experiment → verify → iteration**，并在进入下一阶段前将本阶段相关文档写入磁盘。阅读这些文档可以让你跟踪已完成的工作、下一步的计划以及已有的发现：
+
+| 阶段 | 产物 | 内容 |
+|:---|:---|:---|
+| **claim** | `idea-stage/IDEA_REPORT.md` | 候选 idea 排序，或从你的 task.md 中捕获的行为与断言。 |
+| | `refine-logs/FINAL_PROPOSAL.md` | 精炼后的方法提案——这些断言将如何被检验。 |
+| | `refine-logs/EXPERIMENT_PLAN.md` | 各断言里程碑：模型、数据、样本量与成功标准。 |
+| **experiment** | `refine-logs/MECHANISM_ROUTING.md` | 选用了哪种可解释性方法、考虑过哪些候选，以及为什么。 |
+| | `refine-logs/EXPERIMENT_RESULTS.md` | 各断言结果、一句话结论与基线判决（支持 / 不支持）。 |
+| | `runs/` | 各次实验任务的代码、日志与 GPU 开销记录。 |
+| **verify** | `verify/VERIFY_REPORT.md` | 各断言鲁棒性判决与跨断言摘要。 |
+| | `verify/INTEGRITY_AUDIT.md` | 诚实性审计在原始结果与各 swap 跑上的发现。 |
+| **iteration** | `review-stage/AUTO_REVIEW.md` | 逐轮审稿记录：评分、被标记的问题，以及采取的修复。 |
+| | `review-stage/AUTO_ITERATION_FINAL_REPORT.md` | 修复循环中各断言的变化，以及末尾仍未解决的事项。 |
+
+结束后，优先阅读项目根目录下的这两个文件：
+
+| 文件 | 内容 |
+|:---|:---|
+| `CLAIMS_LEDGER.md` | 各断言记分板：最终判决、鲁棒性与注意事项。 |
+| `AUTO_PIPELINE_REPORT.md` | 本轮旅程、全部产物索引，以及仍需你处理的 Open Items。 |
+
+---
+
+## 📖 进一步阅读
+
+**想更深入了解 Mechanist？** 阅读 Mechanist 文档，了解：如何归档本轮结果并开启下一轮、Mechanist 的进阶用法、如何写好 `task.md`，以及流水线是如何设计的。
+
+**[阅读 Mechanist 文档 →](http://mechanist.openkg.cn/docs/index.html)**
+
+---
+
+## 🙏 致谢
+
+我们谨对ARIS为本项目所做的贡献表示衷心感谢，因为我们在项目中使用了其部分源代码。
+同时，衷心感谢社区所有同仁提交问题并提供技术支持。
+
+---
+
+## 📄 引用
+
+如果您使用了 Mechanist，请引用：
+
+```bibtex
+@article{wang2026mechanist,
+  title={Mechanist: AI as a Scientific Instrument for Discovering the Mechanisms of Intelligence},
+  author={Wang, Mengru and Fang, Junfeng and Qiao, Shuofei and Xu, Zhenqian and Xu, Haoming and Wang, Haoxiong and Deng, Shumin and Yang, Linyi and Cui, Zhixiang and Xu, Xin and others},
+  journal={arXiv preprint arXiv:2608.12036},
+  year={2026}
+}
+```

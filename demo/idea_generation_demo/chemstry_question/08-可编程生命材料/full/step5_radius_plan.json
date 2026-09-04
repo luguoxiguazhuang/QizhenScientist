@@ -1,0 +1,12 @@
+{
+  "use_same_field": true,
+  "use_cross_domain": true,
+  "preferred_radii": [
+    "R1",
+    "R2"
+  ],
+  "same_field_top_k": 2,
+  "num_cross_domains": 2,
+  "cross_domain_top_k_per_domain": 2,
+  "rationale": "The problem requires same-field retrieval to ground solutions in engineered living materials, bioconjugation, synthetic biology, hydrogels, and photodegradable matrices. Cross-domain retrieval is also needed because key bottlenecks—closed-loop control, orthogonal multi-input regulation, spatiotemporal patterning, containment-release balance, and multiscale design rules—suggest transfer of mechanisms from developmental biology, control theory, soft matter, biofilm ecology, photopharmacology, or microfabrication."
+}

@@ -1,0 +1,234 @@
+{
+  "ok": true,
+  "run_dir": "/REDACTED/tiaozhanbei/chemstry_question/08-可编程生命材料/full",
+  "topic": "Research question: How can matter be programmed into living materials?\nContext: Synthetic biology is an interdisciplinary field at the nexus of biochemistry, materials science and engineering, biology, chemistry, and other disciplines. Synthetic biologists aim to redesign or synthesize cells, life science systems, and even whole organisms to address grand challenges across sectors such as medicine and manufacturing. To engineer a new biological component, researchers combine DNA synthesis and genomics to assemble novel genomes. Self-assembly of nonliving and living components is another route being investigated, through both bottom-up and top-down processes. Wil Srubar, a materials scientist and architectural engineer, has been researching ways to embed cells with new abilities, “demonstrating the power and potential of engineered living materials at many scales, including electrically conductive biofilms, single-cell living catalysts for polymerization reactions, and living photovoltaics,” he writes.",
+  "smoke_mode": false,
+  "steps": {
+    "step1": {
+      "status": "completed",
+      "seed_paper_count": 4
+    },
+    "step2": {
+      "status": "completed",
+      "graph_paper_count": 4,
+      "edge_count": 0
+    },
+    "step3": {
+      "status": "completed",
+      "serialized_chars": 6460,
+      "trend_chars": 10568
+    },
+    "step4": {
+      "status": "completed",
+      "rss_keys": [
+        "bottlenecks",
+        "core_gap",
+        "desired_solution_properties",
+        "inspiration_search_hints",
+        "objects",
+        "possible_mechanism_types",
+        "relations",
+        "target_domain",
+        "unresolved_tensions"
+      ]
+    },
+    "step5": {
+      "status": "completed",
+      "preferred_radii": [
+        "R1",
+        "R2"
+      ]
+    },
+    "step6": {
+      "status": "completed",
+      "candidate_count": 6,
+      "round": 3
+    },
+    "step7": {
+      "status": "completed",
+      "inspiration_count": 6,
+      "round": 3
+    },
+    "step8": {
+      "status": "completed",
+      "selected_count": 3,
+      "round": 3
+    },
+    "step9": {
+      "status": "completed",
+      "idea_count": 1,
+      "round": 3
+    }
+  },
+  "input": {
+    "topic": "Research question: How can matter be programmed into living materials?\nContext: Synthetic biology is an interdisciplinary field at the nexus of biochemistry, materials science and engineering, biology, chemistry, and other disciplines. Synthetic biologists aim to redesign or synthesize cells, life science systems, and even whole organisms to address grand challenges across sectors such as medicine and manufacturing. To engineer a new biological component, researchers combine DNA synthesis and genomics to assemble novel genomes. Self-assembly of nonliving and living components is another route being investigated, through both bottom-up and top-down processes. Wil Srubar, a materials scientist and architectural engineer, has been researching ways to embed cells with new abilities, “demonstrating the power and potential of engineered living materials at many scales, including electrically conductive biofilms, single-cell living catalysts for polymerization reactions, and living photovoltaics,” he writes.",
+    "seed_keywords": null,
+    "domain": "Chemistry",
+    "pdf_paths": [],
+    "resume_from_run_dir": null,
+    "workflow_mode": "full"
+  },
+  "workflow_mode": "full",
+  "workflow_path": "full",
+  "effective_config": {
+    "sciatlas": {
+      "base_url": "http://sciatlas.openkg.cn",
+      "api_key": "***REDACTED***",
+      "timeout": 900,
+      "max_retries": 4,
+      "retry_backoff": 5.0,
+      "use_cache": true,
+      "cache_dir": "runs/cache",
+      "official_cli_root": ".",
+      "use_local_kg": false,
+      "local_search_root": "references/search"
+    },
+    "llm": {
+      "base_url": "https://redacted.invalid/compatible-mode/v1",
+      "model": "qwen3.8-max",
+      "temperature": 0.7,
+      "max_retries": 4,
+      "request_timeout": 1200
+    },
+    "pipeline": {
+      "workflow_mode": "full",
+      "anchor_top_k": 5,
+      "keyword_min_papers": 2,
+      "k_step1": 4,
+      "seed_num_queries": 8,
+      "seed_per_query": 3,
+      "seed_request_multiplier": 6,
+      "seed_request_floor": 12,
+      "seed_recent_years": 7,
+      "seed_min_citations": 1000,
+      "graph_budget_ratio": 0.35,
+      "graph_budget_min": 12,
+      "graph_budget_max": 30,
+      "graph_max_predecessors_per_paper": 3,
+      "graph_min_forward_papers": 3,
+      "graph_candidate_fetch_limit": 40,
+      "num_candidate_step2": 3,
+      "num_expansion_step2": 1,
+      "innoeval_root": "/REDACTED/tiaozhanbei/SciAtlas/references/search/src/innoeval_search",
+      "grobid_base_url": "http://127.0.0.1:8070",
+      "num_cross_domains": 2,
+      "inspiration_top_k_same_field": 2,
+      "inspiration_top_k_per_domain": 2,
+      "max_novelty_feedback_rounds": 2,
+      "idea_count": 1,
+      "runs_dir": "runs"
+    }
+  },
+  "post_step9_novelty": {
+    "status": "completed",
+    "round": 3,
+    "novelty_levels": [
+      "medium"
+    ]
+  },
+  "seed_paper_count": 4,
+  "graph_paper_count": 4,
+  "candidate_inspiration_count": 6,
+  "inspiration_count": 6,
+  "selected_inspiration_count": 3,
+  "idea_count": 1,
+  "ideas": [
+    {
+      "title": "Cleavage-Nucleated Condensate Controllers for Set-Point Programming of Living Hydrogel Materials",
+      "motivation": "Programming nonliving matter into living materials requires more than immobilizing cells; it requires a controller that senses local material state, computes a response, and resets without continuous human intervention. Hybrid sol-gel materials can host living microorganisms and connect them to inorganic/organic matrices [Author et al., 2022](https://openalex.org/W4220814513). PenTag provides site-specific covalent protein-polymer conjugation, addressing unstable noncovalent interfacing [Author et al., 2023](https://openalex.org/W4377098401). Phase-separated synthetic organelles demonstrate that biomolecular condensates can organize sensing and regulation in living systems [Author et al., 2024](https://openalex.org/W4402617058). Photodegradable hydrogels show that light can impose spatiotemporal control on bacterial transport and delivery [Author et al., 2025](https://openalex.org/W4413929537). The remaining bottleneck is not a single part but a closed-loop programming layer that couples matrix damage to localized biological actuation while preserving viability and avoiding diffusible crosstalk. Control engineering supplies the missing organizing principle: robust closed-loop feedback can maintain a controlled variable despite disturbances [Author et al., 2020](https://openalex.org/W3214605415), and stochastic model predictive control shows how noisy biological states can be regulated under constraints [Author et al., 2024](https://openalex.org/W4403706347). The proposed idea transfers this principle into the material itself: photocleavage of engineered PenTag anchors creates a local error signal, and the released multivalent fragment directly nucleates a phase-separated condensate that acts as a local controller, recruits repair effectors, and is consumed during repair.",
+      "methods": "1. Covalent photocleavable PenTag damage-to-signal anchor: A PenTag-compatible anchor protein is covalently attached to a living-cell hydrogel or sol-gel matrix [Author et al., 2022](https://openalex.org/W4220814513) [Author et al., 2023](https://openalex.org/W4377098401). The anchor contains, in order, a matrix-binding domain, a photocleavable peptide linker, a multivalent condensate-nucleating domain, and an effector-recognition motif. The design is inspired by photodegradable matrices that translate light into controlled degradation [Author et al., 2025](https://openalex.org/W4413929537), but here cleavage is not only a release event; it creates a defined biochemical controller fragment. In intact material the nucleator is immobilized and below the effective saturation threshold; after local damage it is released in the wounded voxel.\n2. Cleavage-nucleated condensate controller: The released multivalent fragment directly nucleates a phase-separated condensate at the damaged site, using the same physical principle as synthetic organelles but with material cleavage, not a diffusible metabolite, as the initiating cue [Author et al., 2024](https://openalex.org/W4402617058). Reversible weak interactions with residual matrix or cell-surface anchors keep the condensate local, making phase separation itself the spatial damage detector. In control-theoretic terms, the condensate volume fraction is the controller state and the cleaved-anchor concentration is the error signal [Author et al., 2020](https://openalex.org/W3214605415).\n3. Repair effector and autonomous reset: Condensates recruit a repair effector, such as a covalent crosslinking enzyme or PenTag-compatible ligase, through a client-binding motif [Author et al., 2023](https://openalex.org/W4377098401). The condensate also recruits a reset protease or adapter that consumes the nucleator fragment after repair. This creates negative feedback: as crosslink density or local stiffness recovers, the controller fragment is degraded or sequestered, condensate volume decreases, and actuation stops. This implements an embodied anti-windup/reset law rather than a one-shot induction, following robust biological feedback design [Author et al., 2020](https://openalex.org/W3214605415).\n4. Predictive light programmer for secondary spatiotemporal targets: After the local controller is validated, an external stochastic model-predictive controller selects light dose patterns from time-lapse measurements of cleavage fluorescence, condensate size, stiffness surrogate, and viability. The MPC treats light as the actuator and imposes constraints on maximum condensate saturation, cell viability, and allowed degradation, adapting the receding-horizon control concept used for stochastic gene regulatory networks [Author et al., 2024](https://openalex.org/W4403706347). This component is secondary and is used only after the primary local mechanism is established.\nAnalogy — borrows Closed-loop feedback control with robustness constraints from Systems and control theoretic approaches to engineer robust biological systems; adapted as The living material is engineered so that local matrix cleavage creates an error signal, cleavage-nucleated condensates act as the controller state, recruited repair enzymes act as actuators, and consumption of the nucleator fragment provides reset/negative feedback to maintain a stiffness or cleaved-anchor set point. [Author et al., 2020](https://openalex.org/W3214605415)\nAnalogy — borrows Constraint-aware stochastic model predictive control over receding horizons from A computational framework for optimal and Model Predictive Control of stochastic gene regulatory networks; adapted as After the local condensate controller is validated, a digital MPC layer uses noisy measurements of damage, condensate size, and viability to choose future light inputs that achieve target stiffness or bacterial delivery while respecting viability and saturation constraints. [Author et al., 2024](https://openalex.org/W4403706347)\nExperiment plan: Phase 0 baseline fabrication and confounder screening: fabricate matched hydrogels or sol-gels with living cells or acellular controls containing uniform anchor density; verify PenTag conjugation specificity, photocleavage efficiency, initial stiffness, swelling, and viability. Hold light dose, anchor density, effector concentration, and cell density fixed. Exclude trivial light effects with no-light, noncleavable-anchor, and dead-cell controls; monitor temperature, reactive oxygen species, and bulk stiffness changes during illumination.; Phase 1 primary one-factor test: vary only the phase-separation competence of the cleavage-released fragment by comparing a condensate-forming nucleator with an isogenic phase-dead mutant containing minimal sticker mutations while preserving cleavage site, length, charge balance, and effector motif. Apply identical localized laser wounds. Measure condensate formation by confocal fluorescence and FRAP, local repair by AFM or micro-rheology, and spatial confinement by radial fluorescence profiles. The predicted causal effect is that only phase-separation-competent cleavage fragments produce localized repair above baseline.; Strict mechanism controls: test each component alone, including anchor without nucleator, nucleator without photocleavage, effector without recruitment motif, and inactive reset protease. Include a physical mixture of soluble nucleator plus effector without anchored cleavage, and compare randomized spatial damage with structured damage. These controls separate anchored cleavage-nucleated control from bulk enzyme activity, nonspecific adsorption, and simple light patterning.; Confounder exclusion assays: measure fragment diffusion by photoactivatable or fluorescent tracking; quantify effector adsorption to matrix without nucleator; collect supernatant to test leaching; compare acellular and living-cell materials to separate biological metabolism from passive chemistry; assess viability with live/dead staining, CFU counts, and metabolic assays; verify that condensate disruption is not caused by changed mesh size, swelling, or cell death.; Phase 2 reset and set-point test: with the primary mechanism confirmed, vary only reset activity by comparing an active reset protease or consumption module with a catalytically inactive reset while keeping damage pattern and effector constant. Apply repeated damage cycles and measure adaptation, hysteresis, and return of local stiffness or cleaved-anchor fraction to a target range. Define the control invariant as the condensate sequestration threshold that maintains local stiffness or cleaved-anchor fraction within a preset range across a gradient of light doses.; Phase 3 living-material scope: embed engineered microorganisms in the validated material [Author et al., 2022](https://openalex.org/W4220814513) and test whether cell viability, containment, and programmable release remain acceptable under repeated local repair. Compare bacterial transport or delivery in materials with local condensate control versus photodegradable-only matrices [Author et al., 2025](https://openalex.org/W4413929537), keeping light patterns fixed before introducing MPC.; Phase 4 secondary MPC evaluation: only after Phases 1 to 3 succeed, implement the stochastic MPC light scheduler and compare it with open-loop light patterns and simple threshold feedback. The evaluation metric is target stiffness or bacteria-delivery tracking error and viability-constraint violations, not merely final repair amount.",
+      "method_overview": "This method is intended to solve the lack of a localized, closed-loop programming layer for living materials; it can be divided into 4 parts: (1) a covalent photocleavable PenTag anchor that converts matrix damage into a local multivalent fragment, (2) a cleavage-nucleated phase-separated condensate that serves as the local damage detector/controller, (3) a repair-and-reset module that restores crosslinks and consumes the damage signal, and (4) an optional external model-predictive light scheduler for spatiotemporal target tracking. The primary hypothesis is that cleavage-generated multivalent fragments, by directly nucleating local condensates, cause spatially confined repair and stiffness set-point maintenance, and that this effect is not explained by soluble ligand diffusion, nonspecific enzyme adsorption, or light-induced matrix changes.",
+      "proposed_method": [
+        {
+          "name": "Covalent photocleavable PenTag damage-to-signal anchor",
+          "description": "A PenTag-compatible anchor protein is covalently attached to a living-cell hydrogel or sol-gel matrix [Author et al., 2022](https://openalex.org/W4220814513) [Author et al., 2023](https://openalex.org/W4377098401). The anchor contains, in order, a matrix-binding domain, a photocleavable peptide linker, a multivalent condensate-nucleating domain, and an effector-recognition motif. The design is inspired by photodegradable matrices that translate light into controlled degradation [Author et al., 2025](https://openalex.org/W4413929537), but here cleavage is not only a release event; it creates a defined biochemical controller fragment. In intact material the nucleator is immobilized and below the effective saturation threshold; after local damage it is released in the wounded voxel."
+        },
+        {
+          "name": "Cleavage-nucleated condensate controller",
+          "description": "The released multivalent fragment directly nucleates a phase-separated condensate at the damaged site, using the same physical principle as synthetic organelles but with material cleavage, not a diffusible metabolite, as the initiating cue [Author et al., 2024](https://openalex.org/W4402617058). Reversible weak interactions with residual matrix or cell-surface anchors keep the condensate local, making phase separation itself the spatial damage detector. In control-theoretic terms, the condensate volume fraction is the controller state and the cleaved-anchor concentration is the error signal [Author et al., 2020](https://openalex.org/W3214605415)."
+        },
+        {
+          "name": "Repair effector and autonomous reset",
+          "description": "Condensates recruit a repair effector, such as a covalent crosslinking enzyme or PenTag-compatible ligase, through a client-binding motif [Author et al., 2023](https://openalex.org/W4377098401). The condensate also recruits a reset protease or adapter that consumes the nucleator fragment after repair. This creates negative feedback: as crosslink density or local stiffness recovers, the controller fragment is degraded or sequestered, condensate volume decreases, and actuation stops. This implements an embodied anti-windup/reset law rather than a one-shot induction, following robust biological feedback design [Author et al., 2020](https://openalex.org/W3214605415)."
+        },
+        {
+          "name": "Predictive light programmer for secondary spatiotemporal targets",
+          "description": "After the local controller is validated, an external stochastic model-predictive controller selects light dose patterns from time-lapse measurements of cleavage fluorescence, condensate size, stiffness surrogate, and viability. The MPC treats light as the actuator and imposes constraints on maximum condensate saturation, cell viability, and allowed degradation, adapting the receding-horizon control concept used for stochastic gene regulatory networks [Author et al., 2024](https://openalex.org/W4403706347). This component is secondary and is used only after the primary local mechanism is established."
+        }
+      ],
+      "analogy_mapping": [
+        {
+          "inspiration": "Systems and control theoretic approaches to engineer robust biological systems",
+          "concept": "Closed-loop feedback control with robustness constraints",
+          "adaptation": "The living material is engineered so that local matrix cleavage creates an error signal, cleavage-nucleated condensates act as the controller state, recruited repair enzymes act as actuators, and consumption of the nucleator fragment provides reset/negative feedback to maintain a stiffness or cleaved-anchor set point.",
+          "citation": "[Author et al., 2020](https://openalex.org/W3214605415)"
+        },
+        {
+          "inspiration": "A computational framework for optimal and Model Predictive Control of stochastic gene regulatory networks",
+          "concept": "Constraint-aware stochastic model predictive control over receding horizons",
+          "adaptation": "After the local condensate controller is validated, a digital MPC layer uses noisy measurements of damage, condensate size, and viability to choose future light inputs that achieve target stiffness or bacterial delivery while respecting viability and saturation constraints.",
+          "citation": "[Author et al., 2024](https://openalex.org/W4403706347)"
+        }
+      ],
+      "experiment_plan": [
+        "Phase 0 baseline fabrication and confounder screening: fabricate matched hydrogels or sol-gels with living cells or acellular controls containing uniform anchor density; verify PenTag conjugation specificity, photocleavage efficiency, initial stiffness, swelling, and viability. Hold light dose, anchor density, effector concentration, and cell density fixed. Exclude trivial light effects with no-light, noncleavable-anchor, and dead-cell controls; monitor temperature, reactive oxygen species, and bulk stiffness changes during illumination.",
+        "Phase 1 primary one-factor test: vary only the phase-separation competence of the cleavage-released fragment by comparing a condensate-forming nucleator with an isogenic phase-dead mutant containing minimal sticker mutations while preserving cleavage site, length, charge balance, and effector motif. Apply identical localized laser wounds. Measure condensate formation by confocal fluorescence and FRAP, local repair by AFM or micro-rheology, and spatial confinement by radial fluorescence profiles. The predicted causal effect is that only phase-separation-competent cleavage fragments produce localized repair above baseline.",
+        "Strict mechanism controls: test each component alone, including anchor without nucleator, nucleator without photocleavage, effector without recruitment motif, and inactive reset protease. Include a physical mixture of soluble nucleator plus effector without anchored cleavage, and compare randomized spatial damage with structured damage. These controls separate anchored cleavage-nucleated control from bulk enzyme activity, nonspecific adsorption, and simple light patterning.",
+        "Confounder exclusion assays: measure fragment diffusion by photoactivatable or fluorescent tracking; quantify effector adsorption to matrix without nucleator; collect supernatant to test leaching; compare acellular and living-cell materials to separate biological metabolism from passive chemistry; assess viability with live/dead staining, CFU counts, and metabolic assays; verify that condensate disruption is not caused by changed mesh size, swelling, or cell death.",
+        "Phase 2 reset and set-point test: with the primary mechanism confirmed, vary only reset activity by comparing an active reset protease or consumption module with a catalytically inactive reset while keeping damage pattern and effector constant. Apply repeated damage cycles and measure adaptation, hysteresis, and return of local stiffness or cleaved-anchor fraction to a target range. Define the control invariant as the condensate sequestration threshold that maintains local stiffness or cleaved-anchor fraction within a preset range across a gradient of light doses.",
+        "Phase 3 living-material scope: embed engineered microorganisms in the validated material [Author et al., 2022](https://openalex.org/W4220814513) and test whether cell viability, containment, and programmable release remain acceptable under repeated local repair. Compare bacterial transport or delivery in materials with local condensate control versus photodegradable-only matrices [Author et al., 2025](https://openalex.org/W4413929537), keeping light patterns fixed before introducing MPC.",
+        "Phase 4 secondary MPC evaluation: only after Phases 1 to 3 succeed, implement the stochastic MPC light scheduler and compare it with open-loop light patterns and simple threshold feedback. The evaluation metric is target stiffness or bacteria-delivery tracking error and viability-constraint violations, not merely final repair amount."
+      ],
+      "description": "Motivation:\nProgramming nonliving matter into living materials requires more than immobilizing cells; it requires a controller that senses local material state, computes a response, and resets without continuous human intervention. Hybrid sol-gel materials can host living microorganisms and connect them to inorganic/organic matrices [Author et al., 2022](https://openalex.org/W4220814513). PenTag provides site-specific covalent protein-polymer conjugation, addressing unstable noncovalent interfacing [Author et al., 2023](https://openalex.org/W4377098401). Phase-separated synthetic organelles demonstrate that biomolecular condensates can organize sensing and regulation in living systems [Author et al., 2024](https://openalex.org/W4402617058). Photodegradable hydrogels show that light can impose spatiotemporal control on bacterial transport and delivery [Author et al., 2025](https://openalex.org/W4413929537). The remaining bottleneck is not a single part but a closed-loop programming layer that couples matrix damage to localized biological actuation while preserving viability and avoiding diffusible crosstalk. Control engineering supplies the missing organizing principle: robust closed-loop feedback can maintain a controlled variable despite disturbances [Author et al., 2020](https://openalex.org/W3214605415), and stochastic model predictive control shows how noisy biological states can be regulated under constraints [Author et al., 2024](https://openalex.org/W4403706347). The proposed idea transfers this principle into the material itself: photocleavage of engineered PenTag anchors creates a local error signal, and the released multivalent fragment directly nucleates a phase-separated condensate that acts as a local controller, recruits repair effectors, and is consumed during repair.\n\nMethods:\n1. Covalent photocleavable PenTag damage-to-signal anchor: A PenTag-compatible anchor protein is covalently attached to a living-cell hydrogel or sol-gel matrix [Author et al., 2022](https://openalex.org/W4220814513) [Author et al., 2023](https://openalex.org/W4377098401). The anchor contains, in order, a matrix-binding domain, a photocleavable peptide linker, a multivalent condensate-nucleating domain, and an effector-recognition motif. The design is inspired by photodegradable matrices that translate light into controlled degradation [Author et al., 2025](https://openalex.org/W4413929537), but here cleavage is not only a release event; it creates a defined biochemical controller fragment. In intact material the nucleator is immobilized and below the effective saturation threshold; after local damage it is released in the wounded voxel.\n2. Cleavage-nucleated condensate controller: The released multivalent fragment directly nucleates a phase-separated condensate at the damaged site, using the same physical principle as synthetic organelles but with material cleavage, not a diffusible metabolite, as the initiating cue [Author et al., 2024](https://openalex.org/W4402617058). Reversible weak interactions with residual matrix or cell-surface anchors keep the condensate local, making phase separation itself the spatial damage detector. In control-theoretic terms, the condensate volume fraction is the controller state and the cleaved-anchor concentration is the error signal [Author et al., 2020](https://openalex.org/W3214605415).\n3. Repair effector and autonomous reset: Condensates recruit a repair effector, such as a covalent crosslinking enzyme or PenTag-compatible ligase, through a client-binding motif [Author et al., 2023](https://openalex.org/W4377098401). The condensate also recruits a reset protease or adapter that consumes the nucleator fragment after repair. This creates negative feedback: as crosslink density or local stiffness recovers, the controller fragment is degraded or sequestered, condensate volume decreases, and actuation stops. This implements an embodied anti-windup/reset law rather than a one-shot induction, following robust biological feedback design [Author et al., 2020](https://openalex.org/W3214605415).\n4. Predictive light programmer for secondary spatiotemporal targets: After the local controller is validated, an external stochastic model-predictive controller selects light dose patterns from time-lapse measurements of cleavage fluorescence, condensate size, stiffness surrogate, and viability. The MPC treats light as the actuator and imposes constraints on maximum condensate saturation, cell viability, and allowed degradation, adapting the receding-horizon control concept used for stochastic gene regulatory networks [Author et al., 2024](https://openalex.org/W4403706347). This component is secondary and is used only after the primary local mechanism is established.\nAnalogy — borrows Closed-loop feedback control with robustness constraints from Systems and control theoretic approaches to engineer robust biological systems; adapted as The living material is engineered so that local matrix cleavage creates an error signal, cleavage-nucleated condensates act as the controller state, recruited repair enzymes act as actuators, and consumption of the nucleator fragment provides reset/negative feedback to maintain a stiffness or cleaved-anchor set point. [Author et al., 2020](https://openalex.org/W3214605415)\nAnalogy — borrows Constraint-aware stochastic model predictive control over receding horizons from A computational framework for optimal and Model Predictive Control of stochastic gene regulatory networks; adapted as After the local condensate controller is validated, a digital MPC layer uses noisy measurements of damage, condensate size, and viability to choose future light inputs that achieve target stiffness or bacterial delivery while respecting viability and saturation constraints. [Author et al., 2024](https://openalex.org/W4403706347)\nExperiment plan: Phase 0 baseline fabrication and confounder screening: fabricate matched hydrogels or sol-gels with living cells or acellular controls containing uniform anchor density; verify PenTag conjugation specificity, photocleavage efficiency, initial stiffness, swelling, and viability. Hold light dose, anchor density, effector concentration, and cell density fixed. Exclude trivial light effects with no-light, noncleavable-anchor, and dead-cell controls; monitor temperature, reactive oxygen species, and bulk stiffness changes during illumination.; Phase 1 primary one-factor test: vary only the phase-separation competence of the cleavage-released fragment by comparing a condensate-forming nucleator with an isogenic phase-dead mutant containing minimal sticker mutations while preserving cleavage site, length, charge balance, and effector motif. Apply identical localized laser wounds. Measure condensate formation by confocal fluorescence and FRAP, local repair by AFM or micro-rheology, and spatial confinement by radial fluorescence profiles. The predicted causal effect is that only phase-separation-competent cleavage fragments produce localized repair above baseline.; Strict mechanism controls: test each component alone, including anchor without nucleator, nucleator without photocleavage, effector without recruitment motif, and inactive reset protease. Include a physical mixture of soluble nucleator plus effector without anchored cleavage, and compare randomized spatial damage with structured damage. These controls separate anchored cleavage-nucleated control from bulk enzyme activity, nonspecific adsorption, and simple light patterning.; Confounder exclusion assays: measure fragment diffusion by photoactivatable or fluorescent tracking; quantify effector adsorption to matrix without nucleator; collect supernatant to test leaching; compare acellular and living-cell materials to separate biological metabolism from passive chemistry; assess viability with live/dead staining, CFU counts, and metabolic assays; verify that condensate disruption is not caused by changed mesh size, swelling, or cell death.; Phase 2 reset and set-point test: with the primary mechanism confirmed, vary only reset activity by comparing an active reset protease or consumption module with a catalytically inactive reset while keeping damage pattern and effector constant. Apply repeated damage cycles and measure adaptation, hysteresis, and return of local stiffness or cleaved-anchor fraction to a target range. Define the control invariant as the condensate sequestration threshold that maintains local stiffness or cleaved-anchor fraction within a preset range across a gradient of light doses.; Phase 3 living-material scope: embed engineered microorganisms in the validated material [Author et al., 2022](https://openalex.org/W4220814513) and test whether cell viability, containment, and programmable release remain acceptable under repeated local repair. Compare bacterial transport or delivery in materials with local condensate control versus photodegradable-only matrices [Author et al., 2025](https://openalex.org/W4413929537), keeping light patterns fixed before introducing MPC.; Phase 4 secondary MPC evaluation: only after Phases 1 to 3 succeed, implement the stochastic MPC light scheduler and compare it with open-loop light patterns and simple threshold feedback. The evaluation metric is target stiffness or bacteria-delivery tracking error and viability-constraint violations, not merely final repair amount.",
+      "inspiration_sources": [
+        "Systems and control theoretic approaches to engineer robust biological systems",
+        "A computational framework for optimal and Model Predictive Control of stochastic gene regulatory networks"
+      ],
+      "key_references": [
+        "Preparation of Hybrid Sol-Gel Materials Based on Living Cells of Microorganisms and Their Application in Nanotechnology",
+        "Photodegradable Hydrogel Matrices for Spatiotemporal Control of Bacteria Transport and Delivery",
+        "PenTag, a Versatile Platform for Synthesizing Protein-Polymer Biohybrid Materials",
+        "Metabolite-responsive Control of Transcription by Phase Separation-based Synthetic Organelles"
+      ],
+      "references": [
+        {
+          "citation": "Author et al., 2022",
+          "url": "https://openalex.org/W4220814513",
+          "full": "Preparation of Hybrid Sol-Gel Materials Based on Living Cells of Microorganisms and Their Application in Nanotechnology. 2022. https://openalex.org/W4220814513"
+        },
+        {
+          "citation": "Author et al., 2023",
+          "url": "https://openalex.org/W4377098401",
+          "full": "PenTag, a Versatile Platform for Synthesizing Protein-Polymer Biohybrid Materials. 2023. https://openalex.org/W4377098401"
+        },
+        {
+          "citation": "Author et al., 2024",
+          "url": "https://openalex.org/W4402617058",
+          "full": "Metabolite-responsive Control of Transcription by Phase Separation-based Synthetic Organelles. 2024. https://openalex.org/W4402617058"
+        },
+        {
+          "citation": "Author et al., 2025",
+          "url": "https://openalex.org/W4413929537",
+          "full": "Photodegradable Hydrogel Matrices for Spatiotemporal Control of Bacteria Transport and Delivery. 2025. https://openalex.org/W4413929537"
+        },
+        {
+          "citation": "Author et al., 2020",
+          "url": "https://openalex.org/W3214605415",
+          "full": "Systems and control theoretic approaches to engineer robust biological systems. 2020. https://openalex.org/W3214605415"
+        },
+        {
+          "citation": "Author et al., 2024",
+          "url": "https://openalex.org/W4403706347",
+          "full": "A computational framework for optimal and Model Predictive Control of stochastic gene regulatory networks. 2024. https://openalex.org/W4403706347"
+        }
+      ],
+      "novelty_level": "medium",
+      "novelty_justification": "The idea is not directly anticipated by the provided references. The closest existing combination is the union of photodegradable hydrogel matrices, PenTag covalent protein-polymer conjugation, and phase-separated synthetic organelles. The photodegradable hydrogel reference supplies light-triggered matrix cleavage and spatiotemporal control of bacterial transport; PenTag supplies stable covalent anchoring of protein components; and the synthetic-organelle reference supplies phase separation as a means of organizing biological regulation. The proposed work adds a distinct control-oriented mechanism: photocleavage of an immobilized anchor releases a multivalent fragment that locally nucleates a condensate, the condensate recruits repair effectors, and a reset/consumption module provides negative feedback so that repair stops as the local material state returns toward a set point. This cleavage-nucleated condensate controller is a meaningful conceptual advance over simple photodegradation, passive release, or metabolite-induced phase separation. However, the novelty is still partly combination-based because the individual ingredients—photocleavable linkers, protein-polymer conjugation, condensate formation, effector recruitment, and feedback control—are known concepts, and the proposal does not yet specify a fundamentally new phase-transition rule, feedback law, or material-state invariant that could not be viewed as an engineering assembly of existing mechanisms. Therefore the novelty is medium rather than high.",
+      "improvement_suggestions": [
+        "Sharpen the mechanistic claim by making the reset step intrinsically dependent on the repaired material state rather than on a separate protease: for example, engineer the nucleator fragment with a stiffness- or crosslink-density-sensitive degron, tension-exposed cleavage site, or mesh-size-limited sequestration mechanism so that condensate dissolution is a direct physical readout of restored matrix integrity.",
+        "Define a quantitative phase-diagram control law in which the critical concentration for condensate nucleation is predictably shifted by local anchor cleavage, residual anchor density, and crosslinking state. Demonstrating that condensate volume fraction is a controllable invariant across damage doses would convert the system from a component combination into a distinct embodied controller.",
+        "Introduce a coincidence-detection mechanism requiring two distinct cleavage products or two damage-dependent valency changes to nucleate the condensate. This would provide a sharper conceptual distinction from simple light-induced release and would make the controller selective for true damage severity rather than local concentration fluctuations."
+      ]
+    }
+  ]
+}

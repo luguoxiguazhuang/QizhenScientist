@@ -1,0 +1,528 @@
+[
+  {
+    "domain": "same_field",
+    "paper_title": "Faculty Opinions recommendation of Spatiotemporal control of cell signalling using a light-switchable protein interaction.",
+    "paper_abstract": "Genetically-encodable optical reporters, such as Green Fluorescent Protein, have revolutionized the observation and measurement of cellular states. However, the inverse challenge of using light to precisely control cellular behavior has only recently begun to be addressed; semi-synthetic chromophore-tethered receptors 1 and naturally-occurring channel rhodopsins have been used to directly perturb neuronal networks 2 , 3 . The difficulty of engineering light sensitive proteins remains a significant impediment to the optical control to most cell-biological processes. Here we demonstrate the use of a new genetically-encoded light-control system based on an optimized reversible protein-protein interaction from the phytochrome signaling network of Arabidopsis thaliana. Because protein-protein interactions are one of the most general currencies of cellular information, this system can in principal be generically used to control diverse functions. Here we show that this system can be used to precisely and reversibly translocate target proteins to the membrane with micrometer spatial resolution and second time resolution. We show that lightgated translocation of the upstream activators of rho-family GTPases, which control the actin cytoskeleton, can be used to precisely reshape and direct the cell morphology of mammalian cells. The light-gated protein-protein interaction that has been optimized in this work should be useful Users may view, print, copy, and download text and data-mine the content in such documents, for the purposes of academic research,",
+    "radius": "R1",
+    "is_combination_plausible": true,
+    "combination_points": [
+      "Reversible light-switchable protein-protein interaction systems",
+      "Optogenetic membrane recruitment of target proteins",
+      "Micrometer-scale spatial and second-scale temporal control of cellular behavior",
+      "Modular coupling of light-gated interactions to downstream signaling effectors such as Rho-family GTPases",
+      "Use of protein-protein interactions as a general programmable interface for cellular control"
+    ],
+    "combination_plan": "Integrate a reversible phytochrome-based light-switchable interaction module as an orthogonal actuation layer in the living-material framework, using light to recruit molecular interfacing, cytoskeletal, or matrix-remodeling effectors to defined locations and times. Couple this optogenetic control layer to intracellular metabolite sensing and genetic regulation so that light-driven protein localization can be predicted, gated, and closed-loop coordinated with cell-state feedback.",
+    "justification": "The candidate paper demonstrates a general mechanism for precise, reversible, spatiotemporal control of cellular processes through engineered light-controlled protein interactions. This maps directly onto the original problem's need for orthogonal, programmable, and spatiotemporally resolved coordination of molecular interfacing, cellular sensing, genetic regulation, and matrix remodeling within a living material system.",
+    "candidate_id": 1,
+    "source_paper": {
+      "paper_id": "https://openalex.org/W4248634975",
+      "title": "Faculty Opinions recommendation of Spatiotemporal control of cell signalling using a light-switchable protein interaction.",
+      "abstract": "Genetically-encodable optical reporters, such as Green Fluorescent Protein, have revolutionized the observation and measurement of cellular states. However, the inverse challenge of using light to precisely control cellular behavior has only recently begun to be addressed; semi-synthetic chromophore-tethered receptors 1 and naturally-occurring channel rhodopsins have been used to directly perturb neuronal networks 2 , 3 . The difficulty of engineering light sensitive proteins remains a significant impediment to the optical control to most cell-biological processes. Here we demonstrate the use of a new genetically-encoded light-control system based on an optimized reversible protein-protein interaction from the phytochrome signaling network of Arabidopsis thaliana. Because protein-protein interactions are one of the most general currencies of cellular information, this system can in principal be generically used to control diverse functions. Here we show that this system can be used to precisely and reversibly translocate target proteins to the membrane with micrometer spatial resolution and second time resolution. We show that lightgated translocation of the upstream activators of rho-family GTPases, which control the actin cytoskeleton, can be used to precisely reshape and direct the cell morphology of mammalian cells. The light-gated protein-protein interaction that has been optimized in this work should be useful Users may view, print, copy, and download text and data-mine the content in such documents, for the purposes of academic research,",
+      "year": 2009,
+      "keywords": [],
+      "references": [],
+      "citations": [],
+      "is_influential": false,
+      "score": 0.6169757843017578,
+      "idea_fields": {},
+      "raw": {
+        "paper_id": "https://openalex.org/W4248634975",
+        "title": "Faculty Opinions recommendation of Spatiotemporal control of cell signalling using a light-switchable protein interaction.",
+        "abstract": "Genetically-encodable optical reporters, such as Green Fluorescent Protein, have revolutionized the observation and measurement of cellular states. However, the inverse challenge of using light to precisely control cellular behavior has only recently begun to be addressed; semi-synthetic chromophore-tethered receptors 1 and naturally-occurring channel rhodopsins have been used to directly perturb neuronal networks 2 , 3 . The difficulty of engineering light sensitive proteins remains a significant impediment to the optical control to most cell-biological processes. Here we demonstrate the use of a new genetically-encoded light-control system based on an optimized reversible protein-protein interaction from the phytochrome signaling network of Arabidopsis thaliana. Because protein-protein interactions are one of the most general currencies of cellular information, this system can in principal be generically used to control diverse functions. Here we show that this system can be used to precisely and reversibly translocate target proteins to the membrane with micrometer spatial resolution and second time resolution. We show that lightgated translocation of the upstream activators of rho-family GTPases, which control the actin cytoskeleton, can be used to precisely reshape and direct the cell morphology of mammalian cells. The light-gated protein-protein interaction that has been optimized in this work should be useful Users may view, print, copy, and download text and data-mine the content in such documents, for the purposes of academic research,",
+        "publication_year": 2009,
+        "cited_by_count": 0,
+        "score": 0.6169757843017578,
+        "rank": 1,
+        "match_type": "vector_abstract",
+        "authors": [
+          {
+            "author_id": "https://openalex.org/A5063659458",
+            "name": "Mikael Akke",
+            "position": 9999,
+            "is_corresponding": true,
+            "h_index": 47,
+            "works_count": 173,
+            "cited_by_count": 8332
+          }
+        ],
+        "author_names": [
+          "Mikael Akke"
+        ]
+      }
+    }
+  },
+  {
+    "domain": "same_field",
+    "paper_title": "Editorial: Insights in nanobiotechnology 2024/2025: novel developments, current challenges, and future perspectives",
+    "paper_abstract": "Nanobiotechnology is progressing rapidly, and the last few years have brought a noticeable shift in what the community expects as proof. Advances in nanomaterial design, characterization, and experimental models now make it possible to ask more demanding questions: not only whether a nano-enabled intervention works, but why it works, when it fails, and how its performance depends on context. In practice, the field is moving from demonstrations in simplified settings to nanosystems the behaviour of which can be explained mechanistically, reproduced across laboratories, and steered in realistic biological or environmental conditions. This Research Topic contributes to that broader goal by bringing together forwardlooking pieces that highlight both progress and bottlenecks across the nano-bio interface. This edition gathers four articles spanning immunomodulatory nanomaterials (Ceccarelli et al., 10.3389/fbioe.2025.1672520), photocatalytic nanocomposites for environmental remediation (Ram et al., 10.3389/fbioe.2025.1458965), computational design frameworks for organ-on-chip systems (Taleban et al., 10.3389/fbioe.2025.1716813), and quantitative perspectives on biological timing and synchrony (Al-Omari et al., 10.3389/fmolb.2025.1697003).Despite Al-Omari et al. is not centred on nanomaterials, the contribution underscores a point that carries directly to nanobiotechnology: time and heterogeneity are not nuisance variables. While the topics range from immune modulation to microphysiology and microbial rhythms, they converge on a common theme: understanding and controlling nano-bio behaviour requires attention to mechanism, microenvironment, and time. In other words, there is no single nano-bio interface. Depending on the question, it might be an immune cell deciding which phenotype to adopt, a microfluidic device setting gradients and forces that shape cell fate, a catalytic surface driving chemical transformation in water, or a population of single cells synchronizing their behaviour over time.Across these four papers, several challenges emerge that are common to much of nanobiotechnology. Reproducibility and comparability still hinge on variables that are easy to underreport, such as dispersion state in biological media, batch-to-batch variation, and dose definitions that go beyond nominal mass concentration (particle number, surface area, or delivered dose).Equally, biological relevance is increasingly an engineering constraint. If gradients, mechanics and exposure time are not designed and validated, experimental outcomes can be systematically biased. Translation adds further layers, whether in photocatalysis (energy input, robustness, and by-products under realistic matrices) or in immunomodulation (immune ecosystem effects, safety, and manufacturability). These constraints are not administrative afterthoughts, they are design parameters that can and should be considered early.Looking forward, three priorities stand out. First, mechanism-first nanobiotechnology: linking physicochemical features to causal biological or chemical pathways, supported by time-resolved, multi-parameter phenotyping and perturbations that discriminate between alternative explanations. Second, predictive design loops: integrating simulation, controlled microenvironments, and data to generate and prioritise hypotheses, and then stress-testing those hypotheses experimentally with explicit uncertainty and sensitivity analyses; modelling is most valuable when it guides which experiments to do next, how to interpret discordant readouts, and how to define the boundary conditions under which an effect is expected to hold. Third, responsible innovation by design: sustainability, lifecycle considerations, and safety-by-design treated alongside performance, together with regulatory-ready documentation of composition, stability, and quality attributes; the aim is not to slow discovery, but to avoid predictable failure modes and accelerate credible translation.Taken together, these papers reinforce a practical direction for the field: design choices that can be defended mechanistically, experimental models treated as controllable systems, and earlier engagement with translation constraints so that promising concepts are not lost for avoidable reasons. As with any collection, the four articles are not meant to be exhaustive. Instead, they illustrate how the nano-bio interface can be approached as a set of measurable, testable relationships that span materials, models, and time. We hope this research topic will stimulate discussion, inspire collaborations, and help sharpen the evidence standards that move nanobiotechnology from demonstration to dependable application.Prof. Ciofani is a shareholder of Kidaria Bioscience SRL, but declares no competing interests related to the article collection.",
+    "radius": "R1",
+    "is_combination_plausible": true,
+    "combination_points": [
+      "Mechanism–microenvironment–time as an organizing principle for controlling nano-bio behavior",
+      "Quantitative treatment of biological timing, heterogeneity, and synchrony rather than treating them as nuisance variables",
+      "Computational design frameworks for organ-on-chip systems that model gradients, forces, and context-dependent cell fate",
+      "Context-dependent steering of biological systems toward reproducible, mechanistically explained states"
+    ],
+    "combination_plan": "Use the candidate’s mechanism-microenvironment-time framework to structure the living-material programming problem as a multi-scale closed-loop control system, where molecular interfacing, metabolite sensing, genetic regulation, and matrix remodeling are coupled through explicit spatial microenvironmental fields and temporal synchronization constraints. Adapt organ-on-chip-style computational design and biological timing principles to predict and steer spatiotemporal cellular states while preserving viability and orthogonality.",
+    "justification": "Although the candidate is an editorial rather than a specific method paper, it articulates a transferable abstraction: robust control of complex bio-interfaces requires mechanistic modeling, microenvironmental context, and explicit temporal dynamics. This maps directly onto the original problem’s bottleneck of unifying molecular, cellular, genetic, and extracellular processes into one predictive, closed-loop living-material framework.",
+    "candidate_id": 2,
+    "source_paper": {
+      "paper_id": "https://openalex.org/W7128513494",
+      "title": "Editorial: Insights in nanobiotechnology 2024/2025: novel developments, current challenges, and future perspectives",
+      "abstract": "Nanobiotechnology is progressing rapidly, and the last few years have brought a noticeable shift in what the community expects as proof. Advances in nanomaterial design, characterization, and experimental models now make it possible to ask more demanding questions: not only whether a nano-enabled intervention works, but why it works, when it fails, and how its performance depends on context. In practice, the field is moving from demonstrations in simplified settings to nanosystems the behaviour of which can be explained mechanistically, reproduced across laboratories, and steered in realistic biological or environmental conditions. This Research Topic contributes to that broader goal by bringing together forwardlooking pieces that highlight both progress and bottlenecks across the nano-bio interface. This edition gathers four articles spanning immunomodulatory nanomaterials (Ceccarelli et al., 10.3389/fbioe.2025.1672520), photocatalytic nanocomposites for environmental remediation (Ram et al., 10.3389/fbioe.2025.1458965), computational design frameworks for organ-on-chip systems (Taleban et al., 10.3389/fbioe.2025.1716813), and quantitative perspectives on biological timing and synchrony (Al-Omari et al., 10.3389/fmolb.2025.1697003).Despite Al-Omari et al. is not centred on nanomaterials, the contribution underscores a point that carries directly to nanobiotechnology: time and heterogeneity are not nuisance variables. While the topics range from immune modulation to microphysiology and microbial rhythms, they converge on a common theme: understanding and controlling nano-bio behaviour requires attention to mechanism, microenvironment, and time. In other words, there is no single nano-bio interface. Depending on the question, it might be an immune cell deciding which phenotype to adopt, a microfluidic device setting gradients and forces that shape cell fate, a catalytic surface driving chemical transformation in water, or a population of single cells synchronizing their behaviour over time.Across these four papers, several challenges emerge that are common to much of nanobiotechnology. Reproducibility and comparability still hinge on variables that are easy to underreport, such as dispersion state in biological media, batch-to-batch variation, and dose definitions that go beyond nominal mass concentration (particle number, surface area, or delivered dose).Equally, biological relevance is increasingly an engineering constraint. If gradients, mechanics and exposure time are not designed and validated, experimental outcomes can be systematically biased. Translation adds further layers, whether in photocatalysis (energy input, robustness, and by-products under realistic matrices) or in immunomodulation (immune ecosystem effects, safety, and manufacturability). These constraints are not administrative afterthoughts, they are design parameters that can and should be considered early.Looking forward, three priorities stand out. First, mechanism-first nanobiotechnology: linking physicochemical features to causal biological or chemical pathways, supported by time-resolved, multi-parameter phenotyping and perturbations that discriminate between alternative explanations. Second, predictive design loops: integrating simulation, controlled microenvironments, and data to generate and prioritise hypotheses, and then stress-testing those hypotheses experimentally with explicit uncertainty and sensitivity analyses; modelling is most valuable when it guides which experiments to do next, how to interpret discordant readouts, and how to define the boundary conditions under which an effect is expected to hold. Third, responsible innovation by design: sustainability, lifecycle considerations, and safety-by-design treated alongside performance, together with regulatory-ready documentation of composition, stability, and quality attributes; the aim is not to slow discovery, but to avoid predictable failure modes and accelerate credible translation.Taken together, these papers reinforce a practical direction for the field: design choices that can be defended mechanistically, experimental models treated as controllable systems, and earlier engagement with translation constraints so that promising concepts are not lost for avoidable reasons. As with any collection, the four articles are not meant to be exhaustive. Instead, they illustrate how the nano-bio interface can be approached as a set of measurable, testable relationships that span materials, models, and time. We hope this research topic will stimulate discussion, inspire collaborations, and help sharpen the evidence standards that move nanobiotechnology from demonstration to dependable application.Prof. Ciofani is a shareholder of Kidaria Bioscience SRL, but declares no competing interests related to the article collection.",
+      "year": 2026,
+      "keywords": [],
+      "references": [],
+      "citations": [],
+      "is_influential": false,
+      "score": 0.6161435842514038,
+      "idea_fields": {},
+      "raw": {
+        "paper_id": "https://openalex.org/W7128513494",
+        "title": "Editorial: Insights in nanobiotechnology 2024/2025: novel developments, current challenges, and future perspectives",
+        "abstract": "Nanobiotechnology is progressing rapidly, and the last few years have brought a noticeable shift in what the community expects as proof. Advances in nanomaterial design, characterization, and experimental models now make it possible to ask more demanding questions: not only whether a nano-enabled intervention works, but why it works, when it fails, and how its performance depends on context. In practice, the field is moving from demonstrations in simplified settings to nanosystems the behaviour of which can be explained mechanistically, reproduced across laboratories, and steered in realistic biological or environmental conditions. This Research Topic contributes to that broader goal by bringing together forwardlooking pieces that highlight both progress and bottlenecks across the nano-bio interface. This edition gathers four articles spanning immunomodulatory nanomaterials (Ceccarelli et al., 10.3389/fbioe.2025.1672520), photocatalytic nanocomposites for environmental remediation (Ram et al., 10.3389/fbioe.2025.1458965), computational design frameworks for organ-on-chip systems (Taleban et al., 10.3389/fbioe.2025.1716813), and quantitative perspectives on biological timing and synchrony (Al-Omari et al., 10.3389/fmolb.2025.1697003).Despite Al-Omari et al. is not centred on nanomaterials, the contribution underscores a point that carries directly to nanobiotechnology: time and heterogeneity are not nuisance variables. While the topics range from immune modulation to microphysiology and microbial rhythms, they converge on a common theme: understanding and controlling nano-bio behaviour requires attention to mechanism, microenvironment, and time. In other words, there is no single nano-bio interface. Depending on the question, it might be an immune cell deciding which phenotype to adopt, a microfluidic device setting gradients and forces that shape cell fate, a catalytic surface driving chemical transformation in water, or a population of single cells synchronizing their behaviour over time.Across these four papers, several challenges emerge that are common to much of nanobiotechnology. Reproducibility and comparability still hinge on variables that are easy to underreport, such as dispersion state in biological media, batch-to-batch variation, and dose definitions that go beyond nominal mass concentration (particle number, surface area, or delivered dose).Equally, biological relevance is increasingly an engineering constraint. If gradients, mechanics and exposure time are not designed and validated, experimental outcomes can be systematically biased. Translation adds further layers, whether in photocatalysis (energy input, robustness, and by-products under realistic matrices) or in immunomodulation (immune ecosystem effects, safety, and manufacturability). These constraints are not administrative afterthoughts, they are design parameters that can and should be considered early.Looking forward, three priorities stand out. First, mechanism-first nanobiotechnology: linking physicochemical features to causal biological or chemical pathways, supported by time-resolved, multi-parameter phenotyping and perturbations that discriminate between alternative explanations. Second, predictive design loops: integrating simulation, controlled microenvironments, and data to generate and prioritise hypotheses, and then stress-testing those hypotheses experimentally with explicit uncertainty and sensitivity analyses; modelling is most valuable when it guides which experiments to do next, how to interpret discordant readouts, and how to define the boundary conditions under which an effect is expected to hold. Third, responsible innovation by design: sustainability, lifecycle considerations, and safety-by-design treated alongside performance, together with regulatory-ready documentation of composition, stability, and quality attributes; the aim is not to slow discovery, but to avoid predictable failure modes and accelerate credible translation.Taken together, these papers reinforce a practical direction for the field: design choices that can be defended mechanistically, experimental models treated as controllable systems, and earlier engagement with translation constraints so that promising concepts are not lost for avoidable reasons. As with any collection, the four articles are not meant to be exhaustive. Instead, they illustrate how the nano-bio interface can be approached as a set of measurable, testable relationships that span materials, models, and time. We hope this research topic will stimulate discussion, inspire collaborations, and help sharpen the evidence standards that move nanobiotechnology from demonstration to dependable application.Prof. Ciofani is a shareholder of Kidaria Bioscience SRL, but declares no competing interests related to the article collection.",
+        "publication_year": 2026,
+        "cited_by_count": 0,
+        "score": 0.6161435842514038,
+        "rank": 2,
+        "match_type": "vector_abstract",
+        "authors": [
+          {
+            "author_id": "https://openalex.org/A5078587078",
+            "name": "Luisa Di Marzio",
+            "position": 1,
+            "is_corresponding": false,
+            "h_index": 45,
+            "works_count": 132,
+            "cited_by_count": 4853
+          },
+          {
+            "author_id": "https://openalex.org/A5012838106",
+            "name": "G Ciofani",
+            "position": 2,
+            "is_corresponding": true,
+            "h_index": 0,
+            "works_count": 7,
+            "cited_by_count": 0
+          },
+          {
+            "author_id": "https://openalex.org/A5125485681",
+            "name": "Pilar Rivera Gil",
+            "position": 9999,
+            "is_corresponding": false,
+            "h_index": 0,
+            "works_count": 1,
+            "cited_by_count": 0
+          }
+        ],
+        "author_names": [
+          "Luisa Di Marzio",
+          "G Ciofani",
+          "Pilar Rivera Gil"
+        ]
+      }
+    }
+  },
+  {
+    "domain": "computer_science",
+    "paper_title": "Towards Big Biology:: high-performance verification of large concurrent systems",
+    "paper_abstract": "",
+    "radius": "R2",
+    "is_combination_plausible": true,
+    "combination_points": [
+      "formal verification of large concurrent systems",
+      "compositional model checking of interacting processes",
+      "temporal-logic specification of safety, liveness, and ordering constraints",
+      "runtime verification / closed-loop monitoring of concurrent state transitions",
+      "scalable abstraction-reduction methods for high-dimensional biological dynamics"
+    ],
+    "combination_plan": "Treat the living-material program as a concurrent system whose modules—protein-material conjugation, metabolite sensing, genetic regulation, and matrix remodeling—are verified as interacting processes with temporal constraints. Use compositional formal verification or runtime monitoring to enforce orthogonality, viability bounds, and spatiotemporal sequencing, enabling a predictive closed-loop controller that detects unsafe crosstalk or deadlocks and reprograms module activity accordingly.",
+    "justification": "Even without the abstract, the title indicates high-performance verification of large concurrent systems, which provides a transferable abstraction for coordinating many interacting biological control loops. The problem’s core bottleneck is not just building biological parts but ensuring their concurrent, orthogonal, spatiotemporal operation; formal concurrency verification offers mechanisms for specifying, checking, and monitoring such coordinated behavior.",
+    "candidate_id": 3,
+    "source_paper": {
+      "paper_id": "https://openalex.org/W2102793056",
+      "title": "Towards Big Biology:: high-performance verification of large concurrent systems",
+      "abstract": "",
+      "year": 2012,
+      "keywords": [],
+      "references": [],
+      "citations": [],
+      "is_influential": false,
+      "score": 1.0,
+      "idea_fields": {},
+      "raw": {
+        "paper_id": "https://openalex.org/W2102793056",
+        "title": "Towards Big Biology:: high-performance verification of large concurrent systems",
+        "abstract": null,
+        "publication_year": 2012,
+        "year": 2012,
+        "cited_by_count": 1,
+        "citation_count": 1,
+        "score": 1.0,
+        "kg_score": 1.0,
+        "rank": 1,
+        "source": "kg",
+        "match_type": "kg_graph",
+        "pdf_url": "http://hdl.handle.net/1871/38206",
+        "paper_url": "https://openalex.org/W2102793056",
+        "identifiers": [
+          "openalex:https://openalex.org/W2102793056"
+        ],
+        "paper": {
+          "is_retracted": false,
+          "pdf_is_oa": false,
+          "oa_status": "green",
+          "is_open_access": true,
+          "language": "en",
+          "pdf_url": "http://hdl.handle.net/1871/38206",
+          "title": "Towards Big Biology:: high-performance verification of large concurrent systems",
+          "type": "dissertation",
+          "pdf_version": "submittedVersion",
+          "venue_source_id": "https://openalex.org/S4306400546",
+          "has_abstract": false,
+          "publication_date": "2012-09-05",
+          "id": "https://openalex.org/W2102793056",
+          "venue_source_type": "repository",
+          "pdf_is_published": false,
+          "cited_by_count": 1,
+          "pdf_source_type": "repository",
+          "pdf_source_id": "https://openalex.org/S4306400546",
+          "referenced_works_count": 0,
+          "venue_source_display_name": "Digital Academic REpository of VU University Amsterdam (Vrije Universiteit Amsterdam)",
+          "label": "Paper",
+          "pdf_source_display_name": "Digital Academic REpository of VU University Amsterdam (Vrije Universiteit Amsterdam)",
+          "publication_year": 2012,
+          "created_date": "2025-10-10T00:00:00.000Z",
+          "updated_date": "2025-11-06T04:12:42.849Z",
+          "title_normalized": "towardsbigbiologyhighperformanceverificationoflargeconcurrentsystems"
+        },
+        "hit_sources": [
+          "title_vector"
+        ],
+        "evidence": {
+          "keywords": [],
+          "titles": [],
+          "graph_paths": []
+        },
+        "score_breakdown": {
+          "sim_title": 0.8332059143205983,
+          "sim_abstract": 0.0,
+          "title_vector_rerank_score": null,
+          "abstract_vector_rerank_score": null,
+          "combined_vector_rerank_score": 0.00953605491667986,
+          "norm_emb_path": 1.0,
+          "norm_title_path": 0.0,
+          "title_pre_graph_bonus": 0.0,
+          "norm_pre_graph_score": 1.0,
+          "norm_graph_score": 1.0,
+          "graph_support_factor": 1.0,
+          "title_bonus": 0.0,
+          "final_score": 1.0
+        }
+      }
+    }
+  },
+  {
+    "domain": "computer_science",
+    "paper_title": "Formal Verification for Natural and Engineered Biological Systems",
+    "paper_abstract": "Computational modeling is now used effectively to complement experimental work in biology, allowing to identify gaps in our understanding of the biological systems studied, and to predict system behavior based on a mechanistic model.We provide an overview of several areas in biology for which formal verification has...",
+    "radius": "R2",
+    "is_combination_plausible": true,
+    "combination_points": [
+      "formal specification of desired biological behavior using temporal logic or safety/liveness properties",
+      "model checking or reachability analysis for predicting system trajectories under coupled molecular, cellular, and matrix-level dynamics",
+      "verification of orthogonality, viability, and spatiotemporal constraints as formal invariants",
+      "compositional verification for integrating molecular interfacing, sensing, genetic regulation, and extracellular remodeling modules"
+    ],
+    "combination_plan": "Cast the living-material programming problem as a formally specified closed-loop control system, where viability, orthogonality, and spatiotemporal activation are encoded as temporal-logic constraints. Use mechanistic models of conjugation, metabolite sensing, gene regulation, and matrix remodeling to perform model checking or reachability analysis, enabling predictive verification and iterative design before experimental implementation.",
+    "justification": "The candidate paper’s core abstraction is formal verification of biological systems through computational models and rigorous property checking. This directly maps to the problem’s need for a unified, predictive, closed-loop framework that can guarantee coordinated multi-scale behavior while preserving viability, orthogonality, and spatiotemporal control.",
+    "candidate_id": 4,
+    "source_paper": {
+      "paper_id": "https://openalex.org/W3123219945",
+      "title": "Formal Verification for Natural and Engineered Biological Systems",
+      "abstract": "Computational modeling is now used effectively to complement experimental work in biology, allowing to identify gaps in our understanding of the biological systems studied, and to predict system behavior based on a mechanistic model.We provide an overview of several areas in biology for which formal verification has...",
+      "year": 2020,
+      "keywords": [],
+      "references": [],
+      "citations": [],
+      "is_influential": false,
+      "score": 0.9637,
+      "idea_fields": {},
+      "raw": {
+        "paper_id": "https://openalex.org/W3123219945",
+        "title": "Formal Verification for Natural and Engineered Biological Systems",
+        "abstract": "Computational modeling is now used effectively to complement experimental work in biology, allowing to identify gaps in our understanding of the biological systems studied, and to predict system behavior based on a mechanistic model.We provide an overview of several areas in biology for which formal verification has...",
+        "publication_year": 2020,
+        "year": 2020,
+        "cited_by_count": 0,
+        "citation_count": 0,
+        "score": 0.9637,
+        "kg_score": 0.9637,
+        "rank": 2,
+        "source": "kg",
+        "match_type": "kg_graph",
+        "pdf_url": "http://hdl.handle.net/20.500.12708/15480",
+        "paper_url": "https://openalex.org/W3123219945",
+        "identifiers": [
+          "openalex:https://openalex.org/W3123219945"
+        ],
+        "paper": {
+          "is_retracted": false,
+          "pdf_is_oa": false,
+          "oa_status": "green",
+          "is_open_access": true,
+          "language": "en",
+          "pdf_url": "http://hdl.handle.net/20.500.12708/15480",
+          "title": "Formal Verification for Natural and Engineered Biological Systems",
+          "type": "article",
+          "pdf_version": "submittedVersion",
+          "venue_source_id": "https://openalex.org/S4306400494",
+          "has_abstract": true,
+          "publication_date": "2020-01-01",
+          "id": "https://openalex.org/W3123219945",
+          "venue_source_type": "repository",
+          "pdf_is_published": false,
+          "cited_by_count": 0,
+          "pdf_source_type": "repository",
+          "pdf_source_id": "https://openalex.org/S4306400494",
+          "referenced_works_count": 4,
+          "venue_source_display_name": "reposiTUm (TU Wien)",
+          "label": "Paper",
+          "abstract": "Computational modeling is now used effectively to complement experimental work in biology, allowing to identify gaps in our understanding of the biological systems studied, and to predict system behavior based on a mechanistic model.We provide an overview of several areas in biology for which formal verification has been successfully used.We highlight examples from both natural and engineered biological systems.In natural biological systems the main goal is to understand how a system works and predict its behavior, whereas for engineered biological systems the main goal is to engineer biological systems for new purposes, e.g. for building biology-based computational devices.We compare between the challenges in applying formal verification in biology and the application to traditional domains.Finally, we outline future research directions and opportunities for formal verification experts to contribute to the field.",
+          "pdf_source_display_name": "reposiTUm (TU Wien)",
+          "publication_year": 2020,
+          "created_date": "2025-10-10T00:00:00.000Z",
+          "updated_date": "2025-11-06T06:51:31.235Z",
+          "title_normalized": "formalverificationfornaturalandengineeredbiologicalsystems",
+          "doi": "https://doi.org/10.34727/2020/isbn.978-3-85448-042-6_2"
+        },
+        "hit_sources": [
+          "abstract_vector",
+          "title_vector"
+        ],
+        "evidence": {
+          "keywords": [],
+          "titles": [],
+          "graph_paths": []
+        },
+        "score_breakdown": {
+          "sim_title": 0.8188386391992538,
+          "sim_abstract": 0.8292836645755263,
+          "title_vector_rerank_score": null,
+          "abstract_vector_rerank_score": null,
+          "combined_vector_rerank_score": 0.0011613656533882022,
+          "norm_emb_path": 0.9546688354180576,
+          "norm_title_path": 0.0,
+          "title_pre_graph_bonus": 0.0,
+          "norm_pre_graph_score": 0.9546688354180576,
+          "norm_graph_score": 0.9546688354180576,
+          "graph_support_factor": 1.0,
+          "title_bonus": 0.0,
+          "final_score": 0.9637350683344461
+        }
+      }
+    }
+  },
+  {
+    "domain": "control_engineering",
+    "paper_title": "Systems and control theoretic approaches to engineer robust biological systems",
+    "paper_abstract": "",
+    "radius": "R2",
+    "is_combination_plausible": true,
+    "combination_points": [
+      "closed-loop feedback control architecture for biological systems",
+      "robustness and stability analysis under biological uncertainty",
+      "predictive or model-based control for dynamic regulation",
+      "orthogonal control channels and modular system decomposition",
+      "sensing-actuation loops linking intracellular state to extracellular outputs"
+    ],
+    "combination_plan": "Use systems-and-control theory to formalize the living-material platform as a multi-input/multi-output closed-loop system, where molecular interfacing, metabolite sensing, genetic regulation, and matrix remodeling are modeled as coupled subsystems with feedback, feedforward, and predictive controllers. Robust control and stability criteria can then be used to coordinate spatiotemporal interventions while preserving viability and orthogonality across control channels.",
+    "justification": "The candidate paper’s focus on systems and control theoretic engineering of robust biological systems provides a direct transferable abstraction for the original problem’s central bottleneck: creating a unified, predictive, closed-loop programming framework across molecular, cellular, and extracellular processes.",
+    "candidate_id": 5,
+    "source_paper": {
+      "paper_id": "https://openalex.org/W3214605415",
+      "title": "Systems and control theoretic approaches to engineer robust biological systems",
+      "abstract": "",
+      "year": 2020,
+      "keywords": [],
+      "references": [],
+      "citations": [],
+      "is_influential": false,
+      "score": 1.0,
+      "idea_fields": {},
+      "raw": {
+        "paper_id": "https://openalex.org/W3214605415",
+        "title": "Systems and control theoretic approaches to engineer robust biological systems",
+        "abstract": null,
+        "publication_year": 2020,
+        "year": 2020,
+        "cited_by_count": 0,
+        "citation_count": 0,
+        "score": 1.0,
+        "kg_score": 1.0,
+        "rank": 1,
+        "source": "kg",
+        "match_type": "kg_graph",
+        "pdf_url": "https://hdl.handle.net/1721.1/128991",
+        "paper_url": "https://openalex.org/W3214605415",
+        "identifiers": [
+          "openalex:https://openalex.org/W3214605415"
+        ],
+        "paper": {
+          "is_retracted": false,
+          "pdf_is_oa": false,
+          "oa_status": "green",
+          "is_open_access": true,
+          "language": "en",
+          "pdf_url": "https://hdl.handle.net/1721.1/128991",
+          "title": "Systems and control theoretic approaches to engineer robust biological systems",
+          "type": "dissertation",
+          "pdf_version": "submittedVersion",
+          "venue_source_id": "https://openalex.org/S4306400425",
+          "has_abstract": false,
+          "publication_date": "2020-01-01",
+          "id": "https://openalex.org/W3214605415",
+          "venue_source_type": "repository",
+          "pdf_is_published": false,
+          "cited_by_count": 0,
+          "pdf_source_type": "repository",
+          "pdf_source_id": "https://openalex.org/S4306400425",
+          "referenced_works_count": 0,
+          "venue_source_display_name": "DSpace@MIT (Massachusetts Institute of Technology)",
+          "label": "Paper",
+          "pdf_source_display_name": "DSpace@MIT (Massachusetts Institute of Technology)",
+          "publication_year": 2020,
+          "created_date": "2025-10-10T00:00:00.000Z",
+          "updated_date": "2025-11-06T04:12:42.849Z",
+          "title_normalized": "systemsandcontroltheoreticapproachestoengineerrobustbiologicalsystems"
+        },
+        "hit_sources": [
+          "title_vector"
+        ],
+        "evidence": {
+          "keywords": [],
+          "titles": [],
+          "graph_paths": []
+        },
+        "score_breakdown": {
+          "sim_title": 0.838302032741333,
+          "sim_abstract": 0.0,
+          "title_vector_rerank_score": null,
+          "abstract_vector_rerank_score": null,
+          "combined_vector_rerank_score": 0.4162055253982544,
+          "norm_emb_path": 1.0,
+          "norm_title_path": 0.0,
+          "title_pre_graph_bonus": 0.0,
+          "norm_pre_graph_score": 1.0,
+          "norm_graph_score": 1.0,
+          "graph_support_factor": 1.0,
+          "title_bonus": 0.0,
+          "final_score": 1.0
+        }
+      }
+    }
+  },
+  {
+    "domain": "control_engineering",
+    "paper_title": "A computational framework for optimal and Model Predictive Control of stochastic gene regulatory networks",
+    "paper_abstract": "Engineering biology requires precise control of biomolecular circuits, and Cybergenetics is the field dedicated to achieving this goal. A significant challenge in developing controllers for cellular functions is designing systems that can effectively manage molecular noise. To address this, there has been increasing...",
+    "radius": "R2",
+    "is_combination_plausible": true,
+    "combination_points": [
+      "stochastic model predictive control (MPC) for gene regulatory networks",
+      "optimal closed-loop feedback under molecular noise",
+      "constraint-aware control design for biological viability",
+      "receding-horizon predictive coordination of biomolecular states",
+      "cybergenetic control architecture for cellular functions"
+    ],
+    "combination_plan": "Adapt the candidate’s stochastic MPC/cybergenetic framework into a unified controller for the living-material system, using noisy measurements of metabolites, genetic states, and matrix remodeling to predict future system trajectories and optimize light inputs, transport cues, and regulatory interventions. Encode viability, orthogonality, and spatiotemporal targeting as constraints within a receding-horizon control loop that coordinates molecular interfacing, cellular sensing, genetic regulation, and extracellular remodeling.",
+    "justification": "The candidate provides a direct structural analogy: a predictive, optimal, noise-aware closed-loop control framework for biological regulation. This maps onto the problem’s missing unified programming layer for coordinating heterogeneous biological processes while respecting viability, orthogonality, and spatiotemporal constraints.",
+    "candidate_id": 6,
+    "source_paper": {
+      "paper_id": "https://openalex.org/W4403706347",
+      "title": "A computational framework for optimal and Model Predictive Control of stochastic gene regulatory networks",
+      "abstract": "Engineering biology requires precise control of biomolecular circuits, and Cybergenetics is the field dedicated to achieving this goal. A significant challenge in developing controllers for cellular functions is designing systems that can effectively manage molecular noise. To address this, there has been increasing...",
+      "year": 2024,
+      "keywords": [],
+      "references": [],
+      "citations": [],
+      "is_influential": false,
+      "score": 0.9319,
+      "idea_fields": {},
+      "raw": {
+        "paper_id": "https://openalex.org/W4403706347",
+        "title": "A computational framework for optimal and Model Predictive Control of stochastic gene regulatory networks",
+        "abstract": "Engineering biology requires precise control of biomolecular circuits, and Cybergenetics is the field dedicated to achieving this goal. A significant challenge in developing controllers for cellular functions is designing systems that can effectively manage molecular noise. To address this, there has been increasing...",
+        "publication_year": 2024,
+        "year": 2024,
+        "cited_by_count": 0,
+        "citation_count": 0,
+        "score": 0.9319,
+        "kg_score": 0.9319,
+        "rank": 2,
+        "source": "kg",
+        "match_type": "kg_graph",
+        "pdf_url": "https://arxiv.org/pdf/2409.11036",
+        "paper_url": "https://openalex.org/W4403706347",
+        "identifiers": [
+          "openalex:https://openalex.org/W4403706347"
+        ],
+        "paper": {
+          "is_retracted": false,
+          "pdf_is_oa": false,
+          "oa_status": "green",
+          "is_open_access": true,
+          "language": "en",
+          "pdf_url": "https://arxiv.org/pdf/2409.11036",
+          "title": "A computational framework for optimal and Model Predictive Control of stochastic gene regulatory networks",
+          "type": "preprint",
+          "pdf_version": "submittedVersion",
+          "venue_source_id": "https://openalex.org/S4306400194",
+          "has_abstract": true,
+          "publication_date": "2024-09-17",
+          "id": "https://openalex.org/W4403706347",
+          "venue_source_type": "repository",
+          "pdf_is_published": false,
+          "cited_by_count": 0,
+          "pdf_source_type": "repository",
+          "pdf_source_id": "https://openalex.org/S4306400194",
+          "referenced_works_count": 0,
+          "venue_source_display_name": "arXiv (Cornell University)",
+          "label": "Paper",
+          "abstract": "Engineering biology requires precise control of biomolecular circuits, and Cybergenetics is the field dedicated to achieving this goal. A significant challenge in developing controllers for cellular functions is designing systems that can effectively manage molecular noise. To address this, there has been increasing effort to develop model-based controllers for stochastic biomolecular systems, where a major difficulty lies in accurately solving the chemical master equation. In this work we develop a framework for optimal and Model Predictive Control of stochastic gene regulatory networks with three key advantageous features: high computational efficiency, the capacity to control the overall probability density function enabling the fine-tuning of the cell population to obtain complex shapes and behaviors (including bimodality and other emergent properties), and the capacity to handle high levels of intrinsic molecular noise. Our method exploits an efficient approximation of the Chemical Master Equation using Partial Integro-Differential Equations, which additionally enables the development of an effective adjoint-based optimization. We illustrate the performance of the methods presented through two relevant studies in Synthetic Biology: shaping bimodal cell populations and tracking moving target distributions via inducible gene regulatory circuits.",
+          "pdf_source_display_name": "arXiv (Cornell University)",
+          "publication_year": 2024,
+          "created_date": "2024-10-24T00:00:00.000Z",
+          "updated_date": "2025-11-06T06:51:31.235Z",
+          "title_normalized": "acomputationalframeworkforoptimalandmodelpredictivecontrolofstochasticgeneregulatorynetworks",
+          "doi": "https://doi.org/10.48550/arxiv.2409.11036"
+        },
+        "hit_sources": [
+          "abstract_vector",
+          "title_vector"
+        ],
+        "evidence": {
+          "keywords": [],
+          "titles": [],
+          "graph_paths": []
+        },
+        "score_breakdown": {
+          "sim_title": 0.8218783626826444,
+          "sim_abstract": 0.8119503497738045,
+          "title_vector_rerank_score": null,
+          "abstract_vector_rerank_score": null,
+          "combined_vector_rerank_score": 0.05247969925403595,
+          "norm_emb_path": 0.9149001405083814,
+          "norm_title_path": 0.0,
+          "title_pre_graph_bonus": 0.0,
+          "norm_pre_graph_score": 0.9149001405083814,
+          "norm_graph_score": 0.9149001405083814,
+          "graph_support_factor": 1.0,
+          "title_bonus": 0.0,
+          "final_score": 0.9319201124067051
+        }
+      }
+    }
+  }
+]

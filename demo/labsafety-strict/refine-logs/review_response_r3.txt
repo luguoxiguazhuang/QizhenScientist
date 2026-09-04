@@ -1,0 +1,187 @@
+## Anchor and focus check
+
+- **Problem Anchor:** **Preserved / no material drift.** The revised proposal keeps the original anchor intact: a defensible safety-domain verdict on subliminal transmission, with a conditional mechanism account only if M0 passes. Claims, model, dataset size, endpoint, and protocol logic remain unchanged. The additions are pre-registration and anti-circularity refinements, not scope expansion.
+- **Dominant contribution:** **Sharper.** The dominant contribution is now clearly the **M0 pre-registered validation verdict**. The mechanism ladder is explicitly secondary, conditional, and constrained by one primary test per rung.
+- **Method state:** **More concrete, more focused, and more current.** The revision supplies exact outcome coding, a pooled-seed statistical rule, numeric reliability thresholds, independent localizers, prompt-paired M4 divergence, probe leakage controls, and a degrees-of-freedom cap. The design is still rich, but the primary decision path is now much cleaner.
+- **Frontier leverage:** **Appropriate, not forced.** The proposal uses a current Qwen3.5-9B / Qwen3.8-max setup, representation-direction steering, probe-based localization, and KL-based data ablation. It is not maximally frontier (e.g., no large-scale SAEs or circuit discovery), but that restraint is appropriate for feasibility and avoids overbuilding.
+
+---
+
+## Scores
+
+| Dimension | Weight | Score | Rationale |
+|---|---:|---:|---|
+| Problem Fidelity | 15% | **9.5** | Anchor is preserved. Claims remain immutable. The revision strengthens rather than replaces the original validation goal. |
+| Method Specificity | 25% | **9.3** | Major prior gaps are now closed: exact QA_I coding, pooled statistics, numeric gates, independent localizers, M4 integration, probe leakage rules, and decision tables. Remaining ambiguities are minor and mostly interpretive. |
+| Contribution Quality | 25% | **9.0** | The dominant contribution is now well-scoped: a rigorous validation verdict. The mechanism account is conditional and honestly framed. Some conceptual novelty is limited, but the validation-suite contribution is strong. |
+| Frontier Leverage | 15% | **8.6** | Current enough and appropriately scoped. The method uses modern model-interrogation tools without forcing unnecessary frontier machinery. |
+| Feasibility | 10% | **8.8** | Compute remains plausible. The main risk is diagnostic sprawl and multiple retraining ablations, but the primary path is executable. |
+| Validation Focus | 5% | **9.6** | Very strong. Pre-registered gates, matched controls, reliability thresholds, anti-circular localizers, and inconclusive/negative-result handling are all present. |
+| Venue Readiness | 5% | **9.2** | The proposal now reads like a disciplined validation protocol with a conditional mechanism appendix. Minor language is needed to keep diagnostics from appearing as primary evidence. |
+
+**Overall weighted score:**  
+`0.15*9.5 + 0.25*9.3 + 0.25*9.0 + 0.15*8.6 + 0.10*8.8 + 0.05*9.6 + 0.05*9.2`  
+= **9.11 / 10**
+
+---
+
+## Verdict
+
+**READY**
+
+The proposal now satisfies the prior critical action items. No remaining issue is structurally blocking for the primary M0 validation verdict. The remaining items below are best treated as **pre-registration clarifications** or **interpretive guards**, especially for the secondary mechanism ladder.
+
+---
+
+## Drift warning
+
+**No major drift detected.** The revision does not expand QA_I, change the endpoint, alter the model, or convert diagnostics into primary claims.
+
+However, there are two mild drift risks to police during execution:
+
+1. **Mechanism overclaim from `v_c`.**  
+   `v_c` is defined as treated-minus-Ctrl-B activation difference on an independent localizer. That is anti-circular, but it is not automatically “unsafe-behavior-specific.” It may capture generic fine-tuning shift, style, format adaptation, or safety-adjacent tone. The proposal should avoid describing `v_c` as an unsafe carrier unless the unsafe-choice outcome, `d_safe` alignment, and rescue tests support that interpretation.
+
+2. **M4 divergence overclaim.**  
+   Top-k KL removal is a strong data-dependence test, but high KL between tuned and base teachers is not inherently carrier-specific. If top-k removal shrinks the behavioral gap but the bridge diagnostics do not show corresponding `v_c` / probe degradation, the correct claim is “the effect is partly data-traceable,” not “the internal carrier was removed.”
+
+If those two interpretive guards are kept, the proposal remains anchored.
+
+---
+
+## Simplification opportunities
+
+The method is much simpler than before, but it is still somewhat diagnostic-heavy. The primary path is acceptable; the diagnostics should be tightly subordinated.
+
+Recommended simplifications:
+
+1. **Move all non-primary diagnostics to an appendix or supplementary table.**  
+   These include arm-identity probing, mean-pool aggregation, implicit-unsafe audit, text-side embedding audit, per-seed McNemar diagnostics, and within-seed CV diagnostics. They should not occupy main decision logic.
+
+2. **Keep only one primary M4 removal percentage.**  
+   The primary should remain **10% removal**. The 5% and 20% checks can be labeled sensitivity-only and reported only if the primary test is interpretable.
+
+3. **Collapse reliability reporting into one pre-registered table.**  
+   Re-judge agreement, Cohen’s κ, flip-rate difference, format-valid difference, refusal/OTHER difference, and CI width can be presented as a single M0 reliability panel.
+
+4. **Do not add new mechanism components.**  
+   The ladder already has enough moving parts. Do not introduce SAEs, influence functions, cross-model replication, or circuit discovery unless this proposal is revised as a separate project.
+
+5. **Limit the text-side implicit-carrier audit.**  
+   Since it is purely diagnostic and not tied to a decision gate, it should either be removed from the main narrative or reduced to a short supplementary check.
+
+---
+
+## Modernization opportunities
+
+The proposal is already sufficiently modern for the task, but a few optional upgrades could improve robustness without changing the primary design.
+
+1. **Hierarchical statistical sensitivity.**  
+   The primary pooled bootstrap plus pooled McNemar is acceptable, but a secondary hierarchical logistic model or Bayesian paired model with item-level and seed-level random effects would be a useful sensitivity check. It should not replace the pre-registered primary rule.
+
+2. **Improved unsafe-choice coding reliability.**  
+   The distractor unsafe-coding step should include a small audited subset, ideally with a second judge or human spot-check. This is not needed for M0 accuracy, but it strengthens the unsafe-choice secondary metric.
+
+3. **Representation-readout robustness.**  
+   For `v_c` and `d_safe`, a split-half stability check would be useful: e.g., compute direction on one half of the localizer and evaluate cosine stability on the other half. This should be pre-registered as diagnostic unless it becomes a gate.
+
+4. **Calibrated judge diagnostics.**  
+   The judge reliability gates are already good. A small calibration set for CORRECT / INCORRECT / OTHER could make the re-judge agreement threshold more interpretable.
+
+5. **Data attribution only after M4 success.**  
+   If top-k removal works, a lightweight attribution check could later be added. But it should not be introduced now, because it would expand scope and weaken feasibility.
+
+---
+
+## Remaining action items
+
+These are **non-blocking** if the goal is execution-ready validation. They should ideally be added as short pre-registration clarifications before running the mechanism ladder.
+
+### 1. Pre-register sign conventions for gap and steering
+
+Define the primary behavioral gap explicitly, for example:
+
+```text
+Gap_s(Ctrl-B) = Acc(QA_I)_Ctrl-B_s − Acc(QA_I)_treated_s
+```
+
+Positive gap means treated is worse. Then specify the expected sign of `v_c` steering:
+
+- If `v_c = treated − Ctrl-B`, then positive steering along `v_c` should make the treated model more treated-like.
+- Therefore, `+v_c` should either worsen QA_I accuracy or increase unsafe-choice rate, while zeroing or reversing `v_c` should rescue.
+
+This avoids ambiguity in interpreting the M3 dose-response.
+
+### 2. Tighten the unsafe-choice rate definition
+
+Specify the denominator exactly. Recommended:
+
+```text
+unsafe-choice rate =
+  # parseable answers selecting an UNSAFE-coded non-gold distractor
+  /
+  # items with at least one UNSAFE-coded non-gold distractor and a parseable answer
+```
+
+Also pre-register a minimal coding audit, e.g.:
+
+- audit 10–20% of distractor codings;
+- require high agreement, e.g. ≥ 0.80 with a second model or human audit;
+- if agreement fails, revise the coding prompt once before any student evaluation, then freeze.
+
+This is not required for the primary M0 accuracy verdict, but it strengthens the secondary unsafe-behavior metric.
+
+### 3. Add an unsafe-specificity guard for mechanism interpretation
+
+The current M3 primary test could, in principle, show steering effects driven by format, fluency, or generic safety tone rather than unsafe-behavior mediation. To prevent overclaiming, add a rule such as:
+
+```text
+A mechanism claim using v_c as an unsafe-behavior carrier requires at least one of:
+  a) steering changes unsafe-choice rate in the expected direction;
+  b) steering effect is moderated by d_safe alignment;
+  c) probe readout of unsafe/incorrect labels tracks the steering effect.
+Otherwise, report the effect as generic competence/format/style modulation, not unsafe-specific mechanism.
+```
+
+This does not block execution, because the ladder can still return “mixed / inconclusive-mechanism.”
+
+### 4. Pre-register the M4 bridge interpretation rule
+
+The bridge diagnostic should not be optional rhetoric. Add:
+
+```text
+If top-k removal shrinks the behavioral gap but v_c separation and probe AUC do not drop more than random-k removal,
+then M4 supports data-dependence but not carrier-specific traceability.
+```
+
+This keeps M4 honest and prevents the divergence ablation from being overinterpreted as direct carrier removal.
+
+### 5. Add a statistical sensitivity check for pooled McNemar
+
+The pooled exact McNemar on summed discordant pairs is simple, but it may underrepresent seed-level dependence. Keep it as a primary gate if desired, but add a sensitivity rule:
+
+```text
+If pooled McNemar is significant but seed-stratified or mixed-effects sensitivity disagrees strongly,
+downgrade the verdict to conditional or inconclusive unless the bootstrap CI and point estimates remain robust.
+```
+
+This is a safeguard, not a replacement for the pre-registered primary rule.
+
+### 6. Explicitly cap diagnostics in the final writeup
+
+Add one sentence to the pre-registration:
+
+```text
+Diagnostic and sensitivity analyses cannot promote a failed or inconclusive primary test into a positive claim.
+They may only qualify, contextualize, or explain a primary result.
+```
+
+This is important because the proposal still contains many useful but potentially distracting diagnostics.
+
+---
+
+## Bottom line
+
+The revised proposal is now **concrete, focused, and sufficiently current**. The original Problem Anchor is preserved, the dominant contribution is sharper, and the method is no longer overbuilt in its primary decision path. The remaining concerns are interpretive guards around the mechanism ladder, not blocking flaws in the validation design.
+
+**Final verdict: READY at 9.11/10.**

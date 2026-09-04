@@ -1,0 +1,571 @@
+/* The same client as AgentDemo.css, one size down: same frame, same chrome,
+   same composer, same rail node, same tool rows, same file chips. Anything that
+   differs here differs because the panel is half the width, not because it is a
+   different thing.
+ *
+ * The rule that keeps the page still: every step lives in one grid cell, so the
+ * slot is as tall as the tallest step from the first frame, and the parts that
+ * appear as a step settles are faded in rather than laid out. Nothing in this
+ * file changes the height of anything. */
+
+.mhist {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin: 0;
+  width: 100%;
+}
+
+.mhist__window {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  background: var(--surface);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+/* ── chrome ─────────────────────────────────────────────────────────────── */
+
+.mhist__chrome {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: none;
+  padding: 9px var(--space-4);
+  border-bottom: 1px solid var(--border);
+  background: var(--surface-muted);
+}
+
+.mhist__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--border-strong);
+}
+
+.mhist__app {
+  margin-left: 8px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: var(--type-micro);
+}
+
+.mhist__state {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--text-subtle);
+  font-family: var(--font-mono);
+  font-size: var(--type-micro);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.mhist__state::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent-ink);
+}
+
+.mhist__state[data-done='true'] {
+  color: var(--primary);
+}
+
+.mhist__state[data-done='true']::before {
+  background: var(--primary);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .mhist__state[data-done='false']::before {
+    animation: mhist-pulse 1.3s ease-in-out infinite;
+  }
+}
+
+@keyframes mhist-pulse {
+  50% {
+    opacity: 0.25;
+  }
+}
+
+/* ── the transcript ─────────────────────────────────────────────────────── */
+
+.mhist__thread {
+  padding: var(--space-4);
+}
+
+.mhist__command {
+  display: flex;
+  gap: 8px;
+  margin: 0;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: var(--type-micro);
+  line-height: 1.6;
+}
+
+.mhist__prompt {
+  flex: none;
+  color: var(--accent-ink);
+}
+
+.mhist__composer {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  margin: 8px 0 var(--space-4);
+  padding: 10px 10px 10px 12px;
+  border: 1px solid var(--primary);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  box-shadow: 0 0 0 3px var(--primary-soft);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.mhist__composer[data-sent='true'] {
+  border-color: var(--border);
+  background: var(--bg-soft);
+  box-shadow: none;
+}
+
+.mhist__ask {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  color: var(--text);
+  font-size: var(--type-caption);
+  line-height: 1.6;
+}
+
+/* Reserves the final height on the first frame. */
+.mhist__ghost {
+  visibility: hidden;
+}
+
+.mhist__typed {
+  position: absolute;
+  inset: 0;
+}
+
+.mhist__submit {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: var(--radius-sm);
+  background: var(--primary);
+  color: var(--on-primary);
+  font-family: var(--font-sans);
+  font-size: var(--type-micro);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.mhist__composer[data-sent='true'] .mhist__submit {
+  background: transparent;
+  color: var(--text-subtle);
+}
+
+.mhist__caret {
+  display: inline-block;
+  width: 5px;
+  height: 1em;
+  margin-left: 2px;
+  background: var(--primary);
+  vertical-align: text-bottom;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .mhist__caret {
+    animation: mhist-blink 1s steps(2, jump-none) infinite;
+  }
+}
+
+@keyframes mhist-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* ── the slot ───────────────────────────────────────────────────────────── */
+
+/* One cell. Every step and the report are stacked into it, all laid out at
+   full height, so the slot is as tall as the tallest of them before the run
+   starts and stays that way through it. */
+.mhist__slot {
+  display: grid;
+}
+
+.mhist__step,
+.mhist__result {
+  grid-area: 1 / 1;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.34s ease, transform 0.34s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.mhist__step[data-shown='true'],
+.mhist__result[data-shown='true'] {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .mhist__step,
+  .mhist__result {
+    transform: translateY(6px);
+  }
+
+  .mhist__step[data-shown='true'],
+  .mhist__result[data-shown='true'] {
+    transform: none;
+  }
+}
+
+/* ── a step ─────────────────────────────────────────────────────────────── */
+
+.mhist__step {
+  display: grid;
+  grid-template-columns: 26px minmax(0, 1fr);
+  gap: var(--space-3);
+  align-content: start;
+}
+
+.mhist__node {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--accent-ink);
+  font-family: var(--font-mono);
+  font-size: var(--type-micro);
+  font-variant-numeric: tabular-nums;
+  border-color: var(--accent-ink);
+  transition: border-color 0.35s ease, background 0.35s ease, color 0.35s ease;
+}
+
+.mhist__step[data-state='done'] .mhist__node {
+  border-color: var(--primary);
+  background: var(--primary);
+  color: var(--on-primary);
+}
+
+.mhist__step-body {
+  display: grid;
+  gap: 8px;
+  padding-top: 3px;
+}
+
+.mhist__step-head {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+}
+
+.mhist__step-head b {
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: var(--type-caption);
+  font-weight: 500;
+}
+
+/* ── tool calls ─────────────────────────────────────────────────────────── */
+
+.mhist__tools {
+  display: grid;
+  gap: 5px;
+  margin: 0;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg-soft);
+  list-style: none;
+}
+
+/* Name on the first line, then the arguments, then what came back — stacked
+   rather than across, because a real WebSearch query is far too long to sit
+   beside its own tool name at this width. */
+.mhist__tools li {
+  display: grid;
+  grid-template-columns: 10px minmax(0, 1fr);
+  align-items: center;
+  gap: 3px 8px;
+}
+
+.mhist__tools code {
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: var(--type-micro);
+}
+
+.mhist__tool-args,
+.mhist__tool-out {
+  grid-column: 2 / -1;
+  min-width: 0;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: var(--type-micro);
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.mhist__tool-out {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.mhist__step[data-state='done'] .mhist__tool-out {
+  opacity: 1;
+}
+
+.mhist__tool-out::before {
+  content: '→';
+  margin-right: 5px;
+  color: var(--text-subtle);
+}
+
+.mhist__spinner {
+  width: 9px;
+  height: 9px;
+  border: 1.5px solid var(--border-strong);
+  border-top-color: var(--accent-ink);
+  border-radius: 50%;
+}
+
+/* Gated on data-shown as well as data-state: the four steps waiting their turn
+   are invisible but still laid out, and spinning four hidden spinners is work
+   nobody can see. */
+@media (prefers-reduced-motion: no-preference) {
+  .mhist__step[data-shown='true'][data-state='running'] .mhist__spinner {
+    animation: mhist-spin 0.7s linear infinite;
+  }
+}
+
+@keyframes mhist-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.mhist__step[data-state='done'] .mhist__spinner {
+  border-color: var(--primary);
+  background: var(--primary);
+}
+
+/* ── what the step found ────────────────────────────────────────────────── */
+
+/* Faded in, never laid out on arrival: the height is committed from the first
+   frame whether or not anything is showing in it. */
+.mhist__reveal {
+  display: grid;
+  gap: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.mhist__step[data-state='done'] .mhist__reveal {
+  opacity: 1;
+}
+
+.mhist__say {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: var(--type-caption);
+  line-height: 1.6;
+  text-wrap: pretty;
+}
+
+.mhist__out {
+  margin: 0;
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: var(--type-micro);
+  word-break: break-word;
+}
+
+.mhist__files {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+}
+
+.mhist__file {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 9px;
+  border: 1px solid color-mix(in srgb, var(--primary) 30%, transparent);
+  border-radius: var(--radius-sm);
+  background: var(--primary-soft);
+  color: var(--primary-hover);
+  font-family: var(--font-mono);
+  font-size: var(--type-micro);
+}
+
+/* ── the era strip ──────────────────────────────────────────────────────── */
+
+.mhist__bars {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 5px;
+  align-items: end;
+}
+
+.mhist__band {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+/* Fixed height, scaled into. Animating the transform rather than the height
+   keeps the row the same size whatever the bars are doing. */
+.mhist__bar {
+  height: 34px;
+  border-radius: 2px;
+  background: var(--accent-ink);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition-delay: var(--bar-delay, 0ms);
+}
+
+.mhist__step[data-state='done'] .mhist__bar {
+  transform: scaleY(var(--bar, 1));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mhist__bar {
+    transform: scaleY(var(--bar, 1));
+    transition: none;
+  }
+}
+
+.mhist__era {
+  color: var(--text-subtle);
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+/* ── the report ─────────────────────────────────────────────────────────── */
+
+.mhist__result {
+  display: grid;
+  gap: var(--space-3);
+  align-content: start;
+  padding: var(--space-4);
+  border: 1px solid color-mix(in srgb, var(--primary) 34%, transparent);
+  border-radius: var(--radius-md);
+  background: var(--primary-soft);
+}
+
+.mhist__result-head {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  color: var(--primary-hover);
+  font-family: var(--font-mono);
+  font-size: var(--type-micro);
+}
+
+.mhist__facts {
+  display: grid;
+  gap: 5px;
+  margin: 0;
+}
+
+.mhist__facts > div {
+  display: grid;
+  grid-template-columns: 78px minmax(0, 1fr);
+  gap: var(--space-3);
+  align-items: baseline;
+}
+
+.mhist__facts dt {
+  color: var(--text-subtle);
+  font-family: var(--font-mono);
+  font-size: var(--type-micro);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.mhist__facts dd {
+  margin: 0;
+  color: var(--text);
+  font-size: var(--type-caption);
+  line-height: 1.5;
+}
+
+.mhist__headline {
+  margin: 0;
+  padding-top: var(--space-3);
+  border-top: 1px solid color-mix(in srgb, var(--primary) 22%, transparent);
+  color: var(--text);
+  font-size: var(--type-caption);
+  line-height: 1.6;
+  text-wrap: pretty;
+}
+
+/* ── replay ─────────────────────────────────────────────────────────────── */
+
+/* Reserved whether or not the button is showing. */
+.mhist__foot {
+  display: flex;
+  justify-content: flex-end;
+  min-height: 28px;
+}
+
+.mhist__replay {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 11px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  background: var(--surface);
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: var(--type-micro);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.mhist__replay:hover {
+  border-color: var(--text-muted);
+  background: var(--bg-soft);
+  color: var(--text);
+}
+
+@media (max-width: 560px) {
+  .mhist__step {
+    grid-template-columns: 22px minmax(0, 1fr);
+  }
+
+  .mhist__node {
+    width: 22px;
+    height: 22px;
+  }
+
+  .mhist__facts > div {
+    grid-template-columns: 1fr;
+    gap: 1px;
+  }
+}

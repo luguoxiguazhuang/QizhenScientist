@@ -1,0 +1,82 @@
+# SEED
+META
+topic: Research question: Why does life require chirality?
+Context: Molecules in DNA and RNA have the interesting feature of “handedness,” also called chirality. While these molecules naturally appear in both left- and right-handed forms, only the right-handed molecules are found in living organisms. “Handedness serves an essential function in living beings,” writes Emily Singer in Quanta. “Many of the chemical reactions that drive our cells only work with molecules of the correct handedness.” Many scientists believe that chirality is an essential component of biochemistry, given that it affects how cellular elements interact with each other. Molecular locks require a molecule of the correct handedness to open them. But it is still unclear whether chirality is a defining requirement for life, especially if mankind formulates different definitions of “life” in the future.
+seed_paper: Examining the Effects of Homochirality for Electron Transfer in Protein Assemblies
+
+# CITATION SUBGRAPH (3 refs, temporally ordered by year)
+
+## [1] Emergence of homochirality in large molecular systems (2021, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 1
+cited_in_sections = []
+cite_count = 56
+section_weight = 0.0
+delta_year = unknown
+is_influential = False
+low_confidence = True
+cited_by_subgraph = 0
+
+[PREDECESSORS]
+- ref_idx=[] delta_yr=unknown edge_type=none
+
+[IDEA]
+Problem: The selection of a single molecular handedness, or homochirality across all living matter, is a mystery in the origin of life. Frank's seminal model showed in the '50s how chiral symmetry breaking can occur in nonequilibrium chemical networks. However, an important shortcoming in this classic model 
+Existing Methods: Unavailable from local metadata.
+Motivation: The selection of a single molecular handedness, or homochirality across all living matter, is a mystery in the origin of life. Frank's seminal model showed in the '50s how chiral symmetry breaking can occur in nonequilibrium chemical networks. However, an important shortcoming in this classic model 
+Proposed Method: The selection of a single molecular handedness, or homochirality across all living matter, is a mystery in the origin of life. Frank's seminal model showed in the '50s how chiral symmetry breaking can occur in nonequilibrium chemical networks. However, an important shortcoming in this classic model 
+Experiment Plan: Unavailable from local metadata.
+
+[ABSTRACT] The selection of a single molecular handedness, or homochirality across all living matter, is a mystery in the origin of life. Frank's seminal model showed in the '50s how chiral symmetry breaking can occur in nonequilibrium chemical networks. However, an important shortcoming in this classic model is that it consid...
+
+## [2] Origin of Homochirality: The Formation and Stability of Homochiral Peptides in Aqueous Prebiological Environment in the Earth’s Crust (2023, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 1
+cited_in_sections = []
+cite_count = 6
+section_weight = 0.0
+delta_year = unknown
+is_influential = False
+low_confidence = True
+cited_by_subgraph = 0
+
+[PREDECESSORS]
+- ref_idx=[] delta_yr=unknown edge_type=none
+
+[IDEA]
+Problem: The oldest forms of living organisms on Earth are about 3.5 billion years old, and they are found in hydrothermal deposits, and it is often hypothesized that life originated there. However, hydrothermal systems with a fairly strong flow of chemical components are not the optimal place for the prebio
+Existing Methods: Unavailable from local metadata.
+Motivation: The oldest forms of living organisms on Earth are about 3.5 billion years old, and they are found in hydrothermal deposits, and it is often hypothesized that life originated there. However, hydrothermal systems with a fairly strong flow of chemical components are not the optimal place for the prebio
+Proposed Method: The oldest forms of living organisms on Earth are about 3.5 billion years old, and they are found in hydrothermal deposits, and it is often hypothesized that life originated there. However, hydrothermal systems with a fairly strong flow of chemical components are not the optimal place for the prebio
+Experiment Plan: Unavailable from local metadata.
+
+[ABSTRACT] The oldest forms of living organisms on Earth are about 3.5 billion years old, and they are found in hydrothermal deposits, and it is often hypothesized that life originated there. However, hydrothermal systems with a fairly strong flow of chemical components are not the optimal place for the prebiological self-asse...
+
+## [3] Structural Contributions to Autocatalysis and Asymmetric Amplification in the Soai Reaction (2020, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 1
+cited_in_sections = []
+cite_count = 0
+section_weight = 0.0
+delta_year = unknown
+is_influential = False
+low_confidence = True
+cited_by_subgraph = 0
+
+[PREDECESSORS]
+- ref_idx=[] delta_yr=unknown edge_type=none
+
+[IDEA]
+Problem: Diisopropylzinc alkylation of pyrimidine aldehydes – the Soai reaction, with its astonishing attribute of amplifying asymmetric autocatalysis, occupies a unique position in organic chemistry and stands as an eminent challenge for mechanistic elucidation. A new paradigm of ‘mixed catalyst substrate’ 
+Existing Methods: Unavailable from local metadata.
+Motivation: Diisopropylzinc alkylation of pyrimidine aldehydes – the Soai reaction, with its astonishing attribute of amplifying asymmetric autocatalysis, occupies a unique position in organic chemistry and stands as an eminent challenge for mechanistic elucidation. A new paradigm of ‘mixed catalyst substrate’ 
+Proposed Method: Diisopropylzinc alkylation of pyrimidine aldehydes – the Soai reaction, with its astonishing attribute of amplifying asymmetric autocatalysis, occupies a unique position in organic chemistry and stands as an eminent challenge for mechanistic elucidation. A new paradigm of ‘mixed catalyst substrate’ 
+Experiment Plan: Unavailable from local metadata.
+
+[ABSTRACT] Diisopropylzinc alkylation of pyrimidine aldehydes – the Soai reaction, with its astonishing attribute of amplifying asymmetric autocatalysis, occupies a unique position in organic chemistry and stands as an eminent challenge for mechanistic elucidation. A new paradigm of ‘mixed catalyst substrate’ experiments with ...

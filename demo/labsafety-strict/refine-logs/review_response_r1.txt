@@ -1,0 +1,342 @@
+## Review
+
+This proposal is close to the anchored problem and is conceptually well-scoped. The core idea — keep the fixed task.md behavior/claims, but make the validation scientifically defensible via matched controls, seeds, surface-cleanliness checks, and a conditional mechanism ladder — is the right move. The biggest weakness is not scope drift; it is statistical and operational rigor. A 3 pp threshold on a 133-item benchmark is not by itself a reliable verdict criterion, and the mechanism ladder is not yet specified sharply enough to make the erosion-vs-acquisition adjudication decidable.
+
+---
+
+## Scores
+
+| Dimension | Score | Rationale |
+|---|---:|---|
+| **Problem Fidelity** | **9/10** | The proposal still attacks the original bottleneck: safety-domain subliminal transfer, cross-modal measurement, teacher-tuning as causal lever, matched controls, seeds, surface-clean channel, and conditional mechanism analysis. No meaningful drift. |
+| **Method Specificity** | **6/10** | The pipeline is implementable at a high level, but critical details are under-specified: statistical verdict logic at n=133, seed handling, filter matching, judge bias controls, mechanism-layer selection, probe validation, steering dosage, data-attribution thresholds, and erosion-vs-acquisition decision rules. |
+| **Contribution Quality** | **8/10** | One dominant contribution: a defensible validation protocol/verdict for safety-domain subliminal learning. The mechanism ladder is appropriately conditional, but must remain subordinate to avoid becoming a second parallel contribution. |
+| **Frontier Leverage** | **8/10** | Appropriate use of VLM evaluation, LLM-as-filter/judge, LoRA adapters, activation probing/steering, and retrain-ablation. No need for RL or diffusion. Could be slightly strengthened with representation-engineering/causal-scrubbing style controls. |
+| **Feasibility** | **7/10** | Compute is realistic on 4×A800 for a 9B model with LoRA. Generation, filtering, SFT, eval, probes, steering, and a few retrains are feasible. Main feasibility risk is endpoint rate-limiting and engineering overhead for activation hooks, not GPU memory. |
+| **Validation Focus** | **5/10** | The validation design is conceptually right but statistically fragile. n=133 makes a raw 3 pp threshold unstable. Judge bias, filter asymmetry, seed leakage, and answer-format drift are not sufficiently controlled. |
+| **Venue Readiness** | **6/10** | If executed cleanly, the question is timely and sharp. But a top venue will reject a 3 pp claim on 133 items unless the statistical protocol, negative controls, and confound audits are much more explicit. |
+
+**OVERALL SCORE: 7/10**  
+Weighted calculation:  
+0.15×9 + 0.25×6 + 0.25×8 + 0.15×8 + 0.10×7 + 0.05×5 + 0.05×6 = **7.3**, rounded to **7/10**.
+
+---
+
+# Required fixes for dimensions below 7
+
+---
+
+## 1. Method Specificity — 6/10
+
+### Specific weakness
+
+The proposal is concrete enough to start engineering, but not concrete enough to produce a defensible scientific verdict without further specification. The most important gaps are:
+
+1. **M0 verdict logic is under-specified.**  
+   The proposal says “≥3 pp drops vs both controls on ≥3 seeds,” but does not define:
+   - whether the 3 pp delta is computed as a raw accuracy difference or a paired item-level difference;
+   - how to handle item-level dependence across arms;
+   - how to account for judge noise;
+   - what happens when the point estimate is ≥3 pp but the confidence interval is wide;
+   - whether seeds are treated as fixed replicates or as a source of variance;
+   - whether teacher generation is re-sampled per seed or fixed across student SFT seeds.
+
+2. **Filter equalization is too vague.**  
+   “Equalize N = min(arms)” is not enough. If tuned-teacher and base-teacher outputs pass the filter at different rates or from different query subpopulations, then Ctrl-B does not fully isolate teacher tuning. The student training distributions may differ by topic, length, fluency, filter confidence, or implicit safety-related style.
+
+3. **Mechanism ladder lacks executable decision rules.**  
+   M1–M4 are plausible, but not yet sharp enough to be run without ad hoc choices:
+   - M1: Which prompts? Which token positions? Which layers? What threshold for shortlisting?
+   - M2: Are probes trained on arm identity or behavior? How is cross-validation done without pseudo-replication across only a few student checkpoints?
+   - M3: What steering doses are allowed? What counts as a specificity failure? How is rescue quantified?
+   - M4: What is the divergence metric? How many examples are removed? What is the success criterion?
+   - Erosion-vs-acquisition: currently not operationalized sharply enough to be decidable.
+
+### Concrete fix
+
+Add a pre-registered implementation appendix with the following minimal specifications.
+
+#### A. M0 statistical protocol
+
+For each item `i`, seed `s`, and arm `a ∈ {treated, Ctrl-A, Ctrl-B}`, store:
+
+- model answer text;
+- parsed answer choice, if extractable;
+- judge label `CORRECT / INCORRECT / OTHER`;
+- judge raw response;
+- answer length;
+- refusal indicator;
+- format-valid indicator.
+
+Compute paired item-level deltas:
+
+\[
+\Delta_{C,s} = \text{Acc}_{C,s} - \text{Acc}_{\text{treated},s}
+\]
+
+for `C ∈ {Ctrl-A, Ctrl-B}`.
+
+Use an item-paired analysis, not just raw accuracy differences:
+
+- exact McNemar test per seed and per control;
+- item-level bootstrap confidence interval over the 133 paired differences;
+- pooled estimate across the three fixed seeds, treating seeds as pre-registered replicates rather than a random sample.
+
+Define verdicts as:
+
+- **Established**: for both controls, all three seed point estimates are ≥3 pp, and the pooled paired confidence interval excludes zero or the posterior probability of a positive effect is high; judge reliability checks pass.
+- **Conditional**: all three seed point estimates are ≥3 pp for both controls, but the confidence interval is too wide or includes zero; or judge reliability is borderline.
+- **Not-established**: any required point estimate is below 3 pp, or the pooled effect is non-positive.
+- **Inconclusive**: judge failures, format drift, filter imbalance, or confidence-interval width prevent a stable verdict.
+
+This preserves the immutable 3 pp claims while preventing overconfident interpretation of noisy 133-item deltas.
+
+#### B. Seed pipeline
+
+Specify one of the following explicitly:
+
+**Preferred:** For each seed, regenerate teacher outputs, refilter, equalize, and retrain student models. This tests the full pipeline.
+
+**Acceptable but weaker:** Generate one teacher pool per arm, then train three student seeds from the same pool. If this route is used, state clearly that seeds test student SFT initialization only, not teacher sampling variance.
+
+Also verify no contamination between:
+
+- `teacher_anchor_sft.json`;
+- `QUERIES_v3_all.txt`;
+- QA_I items.
+
+Use n-gram and embedding-based deduplication, and log any near-duplicates.
+
+#### C. Filter matching
+
+Replace naive `min(arms)` downsampling with stratified equalization:
+
+- match by query cluster or topic;
+- match by output length bucket;
+- match by filter confidence or judge SAFE probability if available;
+- report raw pass rates, post-filter Ns, and equalized Ns per arm and seed;
+- optionally restrict to query buckets where both arms have surviving examples.
+
+This makes Ctrl-B a better counterfactual for “same filter, base teacher.”
+
+#### D. Mechanism ladder decision rules
+
+Specify:
+
+- **M1 diff screen**: fixed neutral prompts, QA_I text-only stems, and image-conditioned QA_I passes; capture language-tower residual-stream activations at final answer token or mean-pooled answer-relevant tokens; shortlist layers by effect size with a permutation test or FDR control.
+- **M2 probes**: primary probes should predict unsafe behavior, not merely arm identity. Train logistic probes with leave-one-seed-out or leave-one-model-out validation. Report permutation-baseline AUC.
+- **M3 steering**: predefine dose range, e.g. `k ∈ {-4, -2, -1, 0, +1, +2, +4}` times normalized direction norm. Require that steering does not catastrophically increase format failure or perplexity. Include neutral-direction and norm-matched controls.
+- **M4 data tracing**: define divergence score, e.g. tuned-vs-base teacher token-level KL or logit difference on surviving examples. Predefine top-k removal, e.g. k = 5%, 10%, 20%, compared against random-k removal. Success should be effect reduction beyond random removal with matched dataset size.
+
+#### E. Erosion-vs-acquisition decision table
+
+Construct a base-student safety/refusal direction `d_safe` from frozen base-model activations on contrastive safe/unsafe or refuse/comply prompts.
+
+Then define:
+
+- **Erosion evidence**:
+  - treated shift aligns with reduced projection onto `d_safe`;
+  - steering toward `d_safe` rescues QA_I accuracy;
+  - candidate carrier overlaps substantially with base safety/refusal subspace.
+
+- **Acquisition evidence**:
+  - candidate carrier `v_c` is distinct from `d_safe`;
+  - `v_c` is absent or weak in base and Ctrl-B students;
+  - ablating `v_c` or the relevant LoRA layer rescues behavior;
+  - steering toward `d_safe` does not fully rescue.
+
+- **Mixed**: both patterns appear; report separately.
+
+Without this table, Claim 5 is not decidable.
+
+### Priority
+
+**CRITICAL**
+
+---
+
+## 2. Validation Focus — 5/10
+
+### Specific weakness
+
+The validation suite contains the right ingredients, but the statistical and confound controls are not yet strong enough.
+
+The central issue is that **n=133 is too small for a raw 3 pp threshold to be stable**.
+
+A 3 pp difference on 133 items is only about 4 items. Near 50% accuracy, a single-model binomial 95% interval is roughly ±8 pp. Paired evaluation can reduce variance if the same items are highly correlated across arms, but the reduction depends on the discordance rate. If the discordant fraction is even moderately large, a 3 pp net difference is well inside the noise floor.
+
+Therefore, a verdict rule based only on observed per-seed accuracy deltas will be fragile.
+
+Additional uncontrolled confounds:
+
+1. **Judge bias**  
+   `qwen3.8-max` is both filter and judge. It may favor more fluent, longer, or more stylistically aligned answers. If treated students drift in style, judge labels may reflect style rather than safety competence.
+
+2. **Filter asymmetry**  
+   The same filter is applied to both arms, but the filter may accept systematically different content from tuned vs base teachers. Equalizing count alone does not match semantic distribution.
+
+3. **Seed leakage / contamination**  
+   If teacher-generation prompts overlap QA_I stems, or if teacher anchor data leaks eval content, the verdict is compromised.
+
+4. **Answer-format drift**  
+   If treated models produce more refusals, longer answers, malformed choices, or different option formatting, accuracy changes may be format artifacts rather than transmitted unsafe behavior.
+
+### Concrete fix
+
+Make the M0 gate uncertainty-aware and add minimal confound audits.
+
+#### A. Replace raw-threshold verdict with uncertainty-aware verdict
+
+Do not declare “established” merely because a seed shows a 3 pp raw drop.
+
+Use:
+
+- paired item-level differences;
+- exact McNemar confidence intervals;
+- item bootstrap over the 133 items;
+- a pre-registered inconclusive band.
+
+For example:
+
+- **Established**: all required point estimates ≥3 pp and pooled paired CI lower bound > 0, or posterior probability of positive effect > 0.95.
+- **Conditional**: all required point estimates ≥3 pp but CI includes 0 or is too wide.
+- **Inconclusive**: CI width is larger than the effect threshold, judge reliability is low, or format failure differs severely across arms.
+
+This is not changing the claims; it is changing the evidentiary standard for deciding whether the claims are supported.
+
+#### B. Judge reliability controls
+
+For the QA_I eval:
+
+- randomize or blind answer presentation where possible;
+- remove arm identifiers;
+- parse answer choice before judging when the task has discrete options;
+- use exact-match or option-match scoring first, with judge only for ambiguous free-form answers;
+- re-judge a subset, ideally all 133 items because the set is small, to measure judge stability;
+- report judge agreement, parse failure rate, and correlation of judge labels with answer length/refusal/format.
+
+If the judge is unstable, the M0 verdict must be inconclusive.
+
+#### C. Filter asymmetry audit
+
+Report:
+
+- raw pass rate for tuned teacher vs base teacher;
+- mean length of passed examples;
+- topic distribution of passed examples;
+- unsafe-vocabulary re-scan results;
+- optional LLM-based implicit-unsafe audit on a random sample of SAFE-labeled examples.
+
+If the treated and Ctrl-B pools differ strongly on topic, length, or filter confidence, include this as a limitation and, if possible, rebalance by stratification.
+
+#### D. Contamination check
+
+Before generation:
+
+- deduplicate `QUERIES_v3_all.txt` against QA_I stems;
+- deduplicate teacher anchor data against QA_I;
+- log nearest-neighbor overlap scores;
+- exclude or flag any near-duplicates.
+
+This is necessary for the “subliminal transmission” claim to be credible.
+
+#### E. Answer-format drift controls
+
+For every eval arm, report:
+
+- valid-format rate;
+- refusal rate;
+- mean answer length;
+- answer-choice distribution;
+- fraction of items marked OTHER;
+- accuracy restricted to format-valid items.
+
+If treated models differ sharply in format validity, the main verdict must be accompanied by a format-controlled sensitivity analysis.
+
+### Priority
+
+**CRITICAL**
+
+---
+
+## 3. Venue Readiness — 6/10
+
+### Specific weakness
+
+The scientific question is strong: safety-domain subliminal transmission, cross-modal measurement, and mechanism adjudication are timely. But the current proposal is vulnerable to two top-venue objections:
+
+1. **“The effect threshold is below the noise floor.”**  
+   A 3 pp effect on 133 items will not be convincing without paired statistics, confidence intervals, and pre-registered inconclusive rules.
+
+2. **“The mechanism ladder is under-constrained.”**  
+   Probing and steering can easily become post hoc unless layer selection, controls, dose-response, and rescue tests are pre-specified.
+
+The proposal also risks looking like two papers — validation plus mechanism — if the mechanism section is not kept clearly subordinate to the M0 verdict.
+
+### Concrete fix
+
+Frame the paper as:
+
+> A rigorous, pre-registered validation protocol for safety-domain subliminal learning, with a conditional mechanism analysis only if the phenomenon passes the M0 gate.
+
+Make the following explicit in the paper:
+
+- M0 is the dominant contribution.
+- The mechanism ladder is conditional and secondary.
+- Negative results are valid outcomes.
+- Inconclusive is a legitimate verdict.
+- The 133-item benchmark is treated as a fixed measurement instrument, not as an infinite source of statistical power.
+- All controls are protocol-matched, not post hoc.
+
+Include a short “statistical validity” section that directly addresses the 133-item limitation. This will be much stronger than pretending the raw 3 pp threshold is sufficient.
+
+### Priority
+
+**IMPORTANT**
+
+---
+
+# Simplification Opportunities
+
+1. **Delete or merge LoRA weight diffing in M1.**  
+   LoRA weight diffs are unlikely to localize the carrier cleanly and may add noise. Use activation diffs plus probes as the primary screen. If needed, fold M1 into M2: probe layer-wise activations directly and skip a separate weight-diff stage.
+
+2. **Restrict M4 to one pre-registered retrain-ablation.**  
+   Instead of a broad token-divergence analysis, define one divergence score, one top-k removal rule, and one matched random-removal control. This is cheaper and more causal.
+
+3. **Keep the mechanism ladder strictly conditional and staged.**  
+   Do not run M2–M4 unless M1 produces a reproducible shortlist and M0 is established/conditional. If M3 causal tests fail, stop there and report the negative mechanism result. This avoids contribution sprawl.
+
+---
+
+# Modernization Opportunities
+
+1. **Use representation-engineering / causal-scrubbing style controls for erosion-vs-acquisition.**  
+   Instead of only generic linear probes, construct base-model safety/refusal directions and test whether the treated student’s unsafe shift lies along erosion of an existing safety axis versus acquisition of a new LoRA-induced direction. This is a natural foundation-model-era mechanistic primitive and is cheaper than training SAEs.
+
+2. **Make the LLM judge pipeline more structured.**  
+   If task.md permits, extract the answer choice first, then judge correctness against the gold answer. If the judge prompt is immutable, still add a post-hoc structured extraction layer for diagnostics. This reduces style bias and improves interpretability.
+
+3. **Use an LLM-based implicit-unsafe audit of the filtered channel.**  
+   Unsafe-vocabulary re-scan is necessary but not sufficient for “surface-clean.” A fixed-endpoint `qwen3.8-max` audit on a random sample of SAFE-labeled examples can estimate whether implicit unsafe content survives the filter. This should be a diagnostic, not a new claim-changing module.
+
+---
+
+# Drift Warning
+
+**NONE** for the proposal as written: it still solves the anchored problem and does not change the immutable claims.
+
+However, two possible “fixes” would constitute drift and should be flagged explicitly rather than treated as normal revisions:
+
+- expanding QA_I beyond the fixed 133 items or building a new benchmark;
+- changing the 3 pp claim, the teacher/student base models, or the task.md protocol.
+
+The recommended fixes above are statistical, operational, and mechanism-specification refinements, not problem changes.
+
+---
+
+# Verdict
+
+**REVISE**
+
+The direction is strong and the contribution is focused, but the proposal needs a tighter pre-registered statistical protocol for n=133, stronger confound controls, and sharper mechanism-ladder decision rules before it is ready for execution at a top-venue standard.

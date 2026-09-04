@@ -1,0 +1,1803 @@
+{
+  "version": 1,
+  "events": [
+    {
+      "index": 1,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "in situ vibrational spectroscopy microscopy of reaction kinetics at gas-liquid and liquid-solid interfaces",
+        "keywords": [
+          {
+            "text": "situ vibrational",
+            "score": 10
+          },
+          {
+            "text": "vibrational spectroscopy",
+            "score": 9
+          },
+          {
+            "text": "spectroscopy microscopy",
+            "score": 8
+          },
+          {
+            "text": "microscopy reaction",
+            "score": 7
+          },
+          {
+            "text": "reaction kinetics",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4387362600",
+          "title": "Probing liquid/liquid interfaces at and away from equilibrium using vibrational sum frequency generation",
+          "abstract": "The self-assembly and transport of species at oil/aqueous interfaces represent key mechanistic steps in processes spanning from liquid extraction to soft-matter neuromorphic electrical devices. While technologically and fundamentally important, there is a notable lack of chemical understanding regarding these buried...",
+          "year": 2023,
+          "score": 0.8909
+        },
+        {
+          "paper_id": "https://openalex.org/W2161433906",
+          "title": "Low energy electron diffraction (LEED) and sum frequency generation (SFG) vibrational spectroscopy studies of solid-vacuum, solid-air and solid-liquid interfaces",
+          "abstract": "Electron based surface probing techniques can provide detailed information about surface structure or chemical composition in vacuum environments. The development of new surface techniques has made possible in situ molecular level studies of solid-gas interfaces and more recently, solid-liquid interfaces. The aim of...",
+          "year": 2002,
+          "score": 0.8812
+        },
+        {
+          "paper_id": "https://openalex.org/W2798044431",
+          "title": "Determination of the Lewis acidity of amide–AlCl<sub>3</sub> based ionic liquid analogues by combined <i>in situ</i> IR titration and NMR methods",
+          "abstract": "A combinatorial method to determine both acidic strength and acidic amount of each Lewis acid site in amide-AlCl<sub>3</sub> based ionic liquid (IL) analogues was developed by the combination of <i>in situ</i> IR titration and NMR analysis. <sup>31</sup>P NMR was used to distinguish effectively the acidic strength o...",
+          "year": 2018,
+          "score": 0.7257
+        },
+        {
+          "paper_id": "https://openalex.org/W2086677230",
+          "title": "In situ surface dynamics in heterogeneous catalysis",
+          "abstract": "During the former half of the last century the mechanism of heterogeneous catalysis had been studied, keeping the catalyst in a black box, and on the basis of the information outside of the black box, it was discussed just from mere conjectures. The author initiated a method to study directly the behavior of the wor...",
+          "year": 2004,
+          "score": 0.6611
+        },
+        {
+          "paper_id": "https://openalex.org/W4200252898",
+          "title": "Review of: \"In situ Raman spectroscopy reveals the structure and dissociation of interfacial water\"",
+          "abstract": "A nice piece of work done using Raman spectroscopy to examine the joint effect of molecular undercoordination, ionic polarization, and directional electric field on the Raman frequency shift and catalyticity. Discoveries of the blueshift of H-O phonon frequency and the O:H-O bending mode redshift evidence the O:H-O ...",
+          "year": 2021,
+          "score": 0.6237
+        },
+        {
+          "paper_id": "https://openalex.org/W4379377330",
+          "title": "Diffuse reflectance infrared spectroscopy of adsorbates in liquid phase",
+          "abstract": "",
+          "year": 2023,
+          "score": 0.5837
+        },
+        {
+          "paper_id": "https://openalex.org/W3036055323",
+          "title": "Vibrational Sum Frequency Spectroscopy Investigations of Mixed Surfactant Systems at the Oil - Water Interface",
+          "abstract": "The boundary between two immiscible liquids is known to play host to numerous chemical reactions and interactions despite making up a relatively small fraction of the overall system as a whole. Surfactants, the primary classification of the compounds studied herein, are known to preferentially order at an oil-water ...",
+          "year": 2020,
+          "score": 0.5725
+        },
+        {
+          "paper_id": "https://openalex.org/W3118427894",
+          "title": "Ligand-coordinated Ir single-atom catalysts stabilized on oxide supports for ethylene hydrogenation and their evolution under a reductive atmosphere",
+          "abstract": "Effective, stable, durable, and tunable Ir-ligand single-atom catalysts for ethylene hydrogenation, studied <italic>in situ</italic> for structural evolution of Ir single-atoms under a reducing atmosphere.",
+          "year": 2021,
+          "score": 0.553
+        },
+        {
+          "paper_id": "https://openalex.org/W2082484285",
+          "title": "Dephasing of vibrationally excited molecules at surfaces: CO/Ru(0 0 1)",
+          "abstract": "",
+          "year": 2004,
+          "score": 0.5454
+        },
+        {
+          "paper_id": "https://openalex.org/W2980630897",
+          "title": "Time-dependent vibrational sum-frequency generation spectroscopy of the air-water interface",
+          "abstract": "Abstract Vibrational sum-frequency generation spectroscopy is a powerful method to study the microscopic structure and dynamics of interfacial systems. Here we demonstrate a simple computational approach to calculate the time-dependent, frequency-resolved vibrational sum-frequency generation spectrum (TD-vSFG) of th...",
+          "year": 2019,
+          "score": 0.5434
+        },
+        {
+          "paper_id": "https://openalex.org/W2341559844",
+          "title": "Atomic and Molecular Collisions at Liquid Surfaces",
+          "abstract": "The gas-liquid interface remains one of the least explored, but nevertheless most practically important, environments in which molecular collisions take place. These molecular-level processes underlie many bulk phenomena of fundamental and applied interest, spanning evaporation, respiration, multiphase catalysis, an...",
+          "year": 2016,
+          "score": 0.5409
+        },
+        {
+          "paper_id": "https://openalex.org/W2060004697",
+          "title": "Vibrational relaxation of I2 in complexing solvents: The role of solvent–solute attractive forces",
+          "abstract": "Femtosecond transient absorption studies of I2–arene complexes, with arene=hexamethylbenzene (HMB), mesitylene (MST), or m-xylene (mX), are used to investigate the effect of solvent–solute attractive forces upon the rate of vibrational relaxation in solution. Comparison of measurements on I2–MST complexes in neat me...",
+          "year": 1998,
+          "score": 0.5407
+        },
+        {
+          "paper_id": "https://openalex.org/W2024067989",
+          "title": "In situ IR spectroscopy for developing catalysts and catalytic processes",
+          "abstract": "",
+          "year": 1999,
+          "score": 0.538
+        },
+        {
+          "paper_id": "https://openalex.org/W4220778332",
+          "title": "Ion Pairing and Molecular Orientation at Liquid/Liquid Interfaces: Self-Assembly and Function",
+          "abstract": "Molecular orientation plays a pivotal role in defining the functionality and chemistry of interfaces, yet accurate measurements probing this important feature are few, due, in part, to technical and analytical limitations in extracting information from molecular monolayers. For example, buried liquid/liquid interfac...",
+          "year": 2022,
+          "score": 0.5299
+        },
+        {
+          "paper_id": "https://openalex.org/W4288096211",
+          "title": "Development of Heavy Element Chemistry at Interfaces: Observing Actinide Complexes at the Oil/Water Interface in Solvent Extraction by Nonlinear Vibrational Spectroscopy",
+          "abstract": "Understanding the chemistry of elements at the bottom of the periodic table is a challenging goal in chemistry. Observing actinide species at interfaces by using interface-selective second-order nonlinear optical spectroscopy, such as vibrational sum frequency generation (VSFG) spectroscopy, is a promising route for...",
+          "year": 2022,
+          "score": 0.5289
+        },
+        {
+          "paper_id": "https://openalex.org/W2606849089",
+          "title": "Vibrational Spectroscopy in Studies of Atmospheric Corrosion",
+          "abstract": "Vibrational spectroscopy has been successfully used for decades in studies of the atmospheric corrosion processes, mainly to identify the nature of corrosion products but also to quantify their amounts. In this review article, a summary of the main achievements is presented with focus on how the techniques infrared ...",
+          "year": 2017,
+          "score": 0.5274
+        },
+        {
+          "paper_id": "https://openalex.org/W2090977060",
+          "title": "Molecular-dynamics simulations of solvent effects on the C–H stretching Raman bands of cyclohexane-d11 in supercritical CO2 and liquid solvents",
+          "abstract": "Molecular-dynamics simulations are used to elucidate the molecular basis for the solvent effects on the isolated C–H stretching bands observed in the Raman spectrum of cyclohexane-d11. The main focus is on modeling the density dependence of the spectrum in supercritical CO2 recently reported by Pan, McDonald, and Ma...",
+          "year": 1999,
+          "score": 0.5248
+        },
+        {
+          "paper_id": "https://openalex.org/W753004270",
+          "title": "Surface chemistry of liquid metals",
+          "abstract": "The fundamental surface chemistry of the behavior of liquid metals spreading on a solid substrate is not at all well understood. Each of these questions involves knowing the details of the structure of interfaces and their dynamics. For example the structure of a monolayer of tin oxide on pure liquid tin is unknown....",
+          "year": 1993,
+          "score": 0.5239
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "What experimental measurement techniques and analytical methods enable microscopic- and nanoscale characterization of interfacial phenomena, including film thickness, mass transfer, heat transfer, and reaction behavior, at gas-liquid, liquid-solid, and solid-solid interfaces?",
+        "keywords": [
+          {
+            "text": "microscale interface measurement",
+            "score": 10
+          },
+          {
+            "text": "nanoscale interfacial characterization",
+            "score": 9
+          },
+          {
+            "text": "gas-liquid interface",
+            "score": 8
+          },
+          {
+            "text": "liquid-solid interface",
+            "score": 7
+          },
+          {
+            "text": "thin-film thickness measurement",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4223928347",
+          "title": "Interfacial wettability and mass transfer characterizations for gas–liquid–solid triple‐phase catalysis",
+          "abstract": "Heterogeneous catalysis is inseparable from interfacial mass transfer and chemical reaction processes determined by the structure and microenvironment. Different from high-temperature thermochemical processes, photo- and electrocatalysis operated at mild conditions often involve both gas and liquid phases, making it...",
+          "year": 2022,
+          "score": 0.7053
+        },
+        {
+          "paper_id": "https://openalex.org/W70749269",
+          "title": "An Experimental and Theoretical Study of Surfactant Dynamics at Microscale Interfaces",
+          "abstract": "Surfactants are important in countless fields of research and industrial processing. Their value is inherently dependent on our ability to characterize their fundamental transport parameters, such as diffusion coefficients and kinetic rate constants, and thus predict their dynamic and equilibrium behavior in a wide ...",
+          "year": 2011,
+          "score": 0.6111
+        },
+        {
+          "paper_id": "https://openalex.org/W1973283073",
+          "title": "Towards the microscopic understanding of solid/liquid interfaces",
+          "abstract": "In order to reveal the realistic picture of an aqueous electrolyte solution at a solid/liquid interface, it is necessary to understand the so-called 'structuring of water' at the interfacial regions and around the solvated ions. In this paper, some suggestive topics from this point of view are introduced which inclu...",
+          "year": 2011,
+          "score": 0.5907
+        },
+        {
+          "paper_id": "https://openalex.org/W2038108516",
+          "title": "Comment on ’’The structure of a hard sphere fluid in contact with a soft repulsive wall’’",
+          "abstract": "Recent speculative statements concerning the interfacial fluid density profiles of various liquid/solid interface systems are examined by using the Monte Carlo method to simulate the various profiles. (AIP)",
+          "year": 1978,
+          "score": 0.5873
+        },
+        {
+          "paper_id": "https://openalex.org/W3084749218",
+          "title": "Perspective on experimental evaluation of adsorption energies at solid/liquid interfaces",
+          "abstract": "Abstract Almost 15 years ago, first papers appeared, in which the density functional theory (DFT) was used to predict activity trends of electrocatalytic reactions. That was a major contribution of computational chemistry in building the theory of electrocatalysis. The possibility of computational electrocatalyst de...",
+          "year": 2020,
+          "score": 0.5704
+        },
+        {
+          "paper_id": "https://openalex.org/W3110597650",
+          "title": "Phase-Dependent Surfactant Transport on the Microscale: Interfacial Tension and Droplet Coalescence",
+          "abstract": "Liquid-liquid emulsion systems are usually stabilized by additives, known as surfactants, which can be observed in various environments and applications such as oily bilgewater, water-entrained diesel fuel, oil production, food processing, cosmetics, and pharmaceuticals. One important factor that stabilizes emulsion...",
+          "year": 2020,
+          "score": 0.57
+        },
+        {
+          "paper_id": "https://openalex.org/W1974568171",
+          "title": "Water distribution at solid/liquid interfaces visualized by frequency modulation atomic force microscopy",
+          "abstract": "Interfacial phenomena at solid/water interfaces play an important role in a wide range of industrial technologies and biological processes. However, it has been a great challenge to directly probe the molecular-scale behavior of water at solid/water interfaces. Recently, there have been tremendous advancements in fr...",
+          "year": 2010,
+          "score": 0.5538
+        },
+        {
+          "paper_id": "https://openalex.org/W2093609527",
+          "title": "Automation of surface cleaning and sample addition for surface balances",
+          "abstract": "An apparatus is described for surface cleaning and sample addition for the measurement of physical properties of insoluble molecules at the air/water interface. To clean the surface the subphase liquid level is increased to engage aspirators positioned above the surface. These also adjust the liquid level by reprodu...",
+          "year": 1984,
+          "score": 0.5511
+        },
+        {
+          "paper_id": "https://openalex.org/W2005728146",
+          "title": "In Situ Fluorescence Microscopic Measurements of Complexation Reactions at Liquid/Liquid Interface",
+          "abstract": "In situ microscopic measurement is a novel approach to clarify the intrinsic mechanism of complexation reactions occurring at liquid/liquid interfaces. The present review was mainly focused on recent three topics of methodology of in situ fluorescence microscopic observation and measurement of interfacial complexati...",
+          "year": 2005,
+          "score": 0.5379
+        },
+        {
+          "paper_id": "https://openalex.org/W4239810389",
+          "title": "Advances in measurement of interfacial chemical activity",
+          "abstract": "The latest developments in interfacial mapping at NPL using scanning electrochemical microscopy (SECM) are reviewed. A suite of electrochemical imaging techniques has been developed that enable the multiscale mapping of electroactivity at solid-liquid interfaces, as demonstrated by a number of applications. Micron- ...",
+          "year": 2015,
+          "score": 0.5344
+        },
+        {
+          "paper_id": "https://openalex.org/W3162073010",
+          "title": "Atomic-level nature of solid/liquid interface for energy conversion revealed by frequency modulation atomic force microscopy",
+          "abstract": "Abstract Understanding and controlling the mechanism of energy conversion related to the development of a sustainable society not only make our lives more convenient but also make them more meaningful and enrichens us. The physical properties at the interface between solid and liquid (solid/liquid interface) play a ...",
+          "year": 2021,
+          "score": 0.5337
+        },
+        {
+          "paper_id": "https://openalex.org/W4395048290",
+          "title": "Microcalorimetry Techniques for Studying Interactions at Solid–Liquid Interface: A Review",
+          "abstract": "Solid–liquid interfacial phenomena play an essential role in our everyday lives and are often regarded as the outcome of interactions at the solid–liquid interface. However, the intricately intrinsic mechanism underlying interfacial interactions renders in situ simulations and direct measurements challenging. As an ...",
+          "year": 2024,
+          "score": 0.5325
+        },
+        {
+          "paper_id": "https://openalex.org/W4307203297",
+          "title": "A study of complex solid-liquid interfaces using atomic force microscopy",
+          "abstract": "In the preceding sections, we introduced different components of a complex solid-liquid interface. The aim of this thesis is to study the interactions in a complex solid-liquid interface by introducing the complexities in a step-by-step manner. Even though we would not be able to draw a general principle encompassin...",
+          "year": 2022,
+          "score": 0.5319
+        },
+        {
+          "paper_id": "https://openalex.org/W4243893639",
+          "title": "Liquid Cell Electron Microscopy of Dynamic Phenomena at Solid‐Liquid Interfaces",
+          "abstract": "An understanding of solid‐liquid interfaces at the atomic scale is significant for a variety of processes ranging from materials synthesis to material corrosion and energy conversion and storage. My group focuses on the study of precipitation and dissolution at solid‐liquid interfaces primarily by developing and app...",
+          "year": 2016,
+          "score": 0.5291
+        },
+        {
+          "paper_id": "https://openalex.org/W2071193446",
+          "title": "Solid/Liquid Interfaces with Atomic Scale",
+          "abstract": "Of the phenomena which occur at the interface between a solid and a liquid, common examples include the deposition and corrosion of metals, the charging and discharging of storage batteries, and the wet processing of semiconductor devices. Developments in STM operated at solid-liquid interfaces led to its valuation ...",
+          "year": 2010,
+          "score": 0.5283
+        },
+        {
+          "paper_id": "https://openalex.org/W3192361924",
+          "title": "Modeling Chemical Reactivity at the Interfaces of Emulsions: Effects of Partitioning and Temperature",
+          "abstract": "Bulk phase chemistry is hardly ever a reasonable approximation to interpret chemical reactivity in compartmentalized systems, because multiphasic systems may alter the course of chemical reactions by modifying the local concentrations and orientations of reactants and by modifying their physical properties (acid-bas...",
+          "year": 2021,
+          "score": 0.5251
+        },
+        {
+          "paper_id": "https://openalex.org/W4311252283",
+          "title": "Operando X-ray characterization of interfacial charge transfer and structural rearrangements",
+          "abstract": "Key technologies in energy conversion and storage, sensing and chemical synthesis rely on a detailed knowledge about charge transfer processes at electrified solid-liquid interfaces. However, these interfaces continuously evolve as a function of applied potentials, ionic concentrations and time. We therefore need to...",
+          "year": 2022,
+          "score": 0.5245
+        },
+        {
+          "paper_id": "https://openalex.org/W1973278256",
+          "title": "Interfacial tension measurement of immiscible liquids using a capillary tube",
+          "abstract": "The interfacial tension of immiscible liquids is an important thermophysical property that is useful in the behavior of liquids both in microgravity (Martinez et al. (1987) and Karri and Mathur (1988)) and in enhanced oil recovery processes under normal gravity (Slattery (1974)). Many techniques are available for it...",
+          "year": 1992,
+          "score": 0.5218
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "interferometric optical measurement of nanometer-thick gas-liquid films and interface deformation",
+        "keywords": [
+          {
+            "text": "interferometric optical",
+            "score": 10
+          },
+          {
+            "text": "optical measurement",
+            "score": 9
+          },
+          {
+            "text": "measurement nanometer",
+            "score": 8
+          },
+          {
+            "text": "nanometer thick",
+            "score": 7
+          },
+          {
+            "text": "thick gas",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W7014105567",
+          "title": "Optical density gradients measured on a liquid-liquid interface",
+          "abstract": "There are two areas in analytical chemistry which have yet to be studied extensively. These areas are the study of macromolecules and the study of surfaces. This thesis discusses research done on an interfacial surface to discover how the interface reacts when potential charge is applied to it. The thesis presents a...",
+          "year": 1987,
+          "score": 0.5784
+        },
+        {
+          "paper_id": "https://openalex.org/W1999635657",
+          "title": "Measurement of the Soret and diffusion coefficients for benchmark binary mixtures by means of digital interferometry",
+          "abstract": "We report on the development of the optical digital interferometry (ODI) technique for measuring diffusion and Soret coefficients. The unique feature of this method is that it traces the transient path of the system in the entire two-dimensional cross section of a cell. In this way, it is applicable not only for mea...",
+          "year": 2011,
+          "score": 0.5305
+        },
+        {
+          "paper_id": "https://openalex.org/W2671324058",
+          "title": "1410 Dynamic Observation of Nano-thick Lubricant with a High-resolution Ellipsometric Microscope",
+          "abstract": "Established ellipsometric microscopes have low resolution because diagonal observation set a limit to focused area due to focal depth of objective lens. In this paper, we represent a new illumination method. We arrange an objective lens pointing vertically downward to sample, and condense illumination light into bac...",
+          "year": 2008,
+          "score": 0.521
+        },
+        {
+          "paper_id": "https://openalex.org/W2629483175",
+          "title": "Measurements for thickness distribution of molecularly thin lubricant film by using ellipsometric microscopy",
+          "abstract": "Direct visualization method for molecularly thin lubricant films on magnetic disks is presented. Visualization of a molecularly thin film is an extremely useful technique for the investigation of replenishment and retention of thin lubricant films. Ellipsometry can provide thickness and refractive index of a molecul...",
+          "year": 2004,
+          "score": 0.5142
+        },
+        {
+          "paper_id": "https://openalex.org/W2646597196",
+          "title": "H-1-2 Real-Time Visualization of Replenishment Process of nm-Thick Lubricant Films Using Ellipsometric Microscopy",
+          "abstract": "Recovery or replenishment of lubricant holes caused by sliding is important for thin-film lubrication. However, due to the difficulty of measurement, the recovery process of molecularly thin lubricant films has not been fully clarified yet. In this report, we tried to observe the recovery process of monolayer thick ...",
+          "year": 2014,
+          "score": 0.5108
+        },
+        {
+          "paper_id": "https://openalex.org/W2081238724",
+          "title": "A simple, inexpensive, real‐time interferometric cure monitoring system for optically cured polymers",
+          "abstract": "Abstract Optically cured polymers play a crucial role in many commercial applications, ranging from UV‐cured inks, coatings, and dental fillings to the optical fabrication of three‐dimensional prototypes by means of stereolithography. However, our understanding of the detailed processes that occur in the curing of t...",
+          "year": 2013,
+          "score": 0.5072
+        },
+        {
+          "paper_id": "https://openalex.org/W3039339370",
+          "title": "A Fiber-Optic Gas Sensor and Method for the Measurement of Refractive Index Dispersion in NIR",
+          "abstract": "This paper presents a method for gas concentration determination based on the measurement of the refractive index dispersion of a gas near the gas resonance in the near-infrared region (NIR). The gas refractive index dispersion line shape is reconstructed from the variation in the spectral interference fringes' peri...",
+          "year": 2020,
+          "score": 0.5067
+        },
+        {
+          "paper_id": "https://openalex.org/W4411456958",
+          "title": "Fiber-Coupled Multipass NIR Sensor for In Situ, Real-Time Water Vapor Outgassing Monitoring",
+          "abstract": "This work presents the recent development of a fiber-coupled multipass near-infrared (NIR) gas sensor used to monitor water vapor desorption of small material coupons. The gas sensor design employs a White cell topology to maximize the optical path length over a compact, hand-size footprint. Water vapor concentratio...",
+          "year": 2025,
+          "score": 0.4947
+        },
+        {
+          "paper_id": "https://openalex.org/W4295118072",
+          "title": "New method of determination of the Fr\\\\'eedericksz threshold based upon\\n precise fluctuation measurement",
+          "abstract": "In this paper we report a new method for determining the critical threshold\\nof the Fr\\\\'eedericksz transition driven by an electric field. It is based on\\nthe measurement of the amplitude of the molecule fluctuations as a function of\\nthe voltage difference applied to a planar nematic cell. The precise\\nmeasurement...",
+          "year": 2013,
+          "score": 0.4931
+        },
+        {
+          "paper_id": "https://openalex.org/W2059644624",
+          "title": "PORTABLE INTERFERENCE REFRACTOMETERS IN ANAESTHESIA",
+          "abstract": "",
+          "year": 1970,
+          "score": 0.4922
+        },
+        {
+          "paper_id": "https://openalex.org/W2592671616",
+          "title": "Interface Driven Dynamics at Nanoscales:Polymer thin films and Electrical Double Layer",
+          "abstract": "The electrical double layer (EDL) is formed due to the accumulation of charge at the interface of a metal surface in contact with an electrolyte. The total charge in the EDL compensates the charge on the metal surface. As EDL is the layer that \"connects\" the electrode to the \"bulk\", all electrode mediated transport ...",
+          "year": 2006,
+          "score": 0.4914
+        },
+        {
+          "paper_id": "https://openalex.org/W4390401159",
+          "title": "Retracted: XRD Peak Profile Analysis of SiC Reinforced Al<sub>2</sub>O<sub>3</sub> Ceramic Composite Synthesized by Electrical Resistance Heating and Microwave Sintering: A Comparison",
+          "abstract": "",
+          "year": 2023,
+          "score": 0.4901
+        },
+        {
+          "paper_id": "https://openalex.org/W4210808963",
+          "title": "Numerical investigations on phase-diversity optical digital coherent receiver-based noncontact photoacoustic signal detection",
+          "abstract": "Optical interferometry is promising for noncontact photoacoustic (PA) signal detection; however, the intensity detection of the interference signal makes the system insensitive and unreliable due to fluctuations in the optical path length difference. To address this, a noncontact PA signal detection utilizing an opt...",
+          "year": 2022,
+          "score": 0.4893
+        },
+        {
+          "paper_id": "https://openalex.org/W4319762948",
+          "title": "RESEARCH ON PIEZO-ELECTRIC MATERIALS TO BE USED IN PRESSURE MEASUREMENTS",
+          "abstract": "Quantum-based methods have the potential to become primary standards for the SI unit of pressure, the pascal.Some of these standards are based on the determination of the refractive index of a gas under different pressure conditions by Fabry-Perot (FP)based refractrometry methods.These methods depend on the control ...",
+          "year": 2023,
+          "score": 0.4892
+        },
+        {
+          "paper_id": "https://openalex.org/W4287114647",
+          "title": "Reflective laser-based particle detector",
+          "abstract": "A reflective laser-based particle detector for detecting contamination particles moving through a vacuum. Laser light is directed through a vacuum access window in the containment vessel and toward a reflective surface on an inner surface opposite the window. A photonic detector is positioned to monitor reflected la...",
+          "year": 2023,
+          "score": 0.4839
+        },
+        {
+          "paper_id": "https://openalex.org/W1969728621",
+          "title": "Effect of hydrocarbon adsorption on the wettability of rare earth oxide ceramics",
+          "abstract": "Vapor condensation is routinely used as an effective means of transferring heat, with dropwise condensation exhibiting a 5 − 7x heat transfer improvement compared to filmwise condensation. However, state-of-the-art techniques to promote dropwise condensation rely on functional hydrophobic coatings, which are often n...",
+          "year": 2014,
+          "score": 0.4835
+        },
+        {
+          "paper_id": "https://openalex.org/W4413785323",
+          "title": "Uncertainties in CO<sub>2</sub> Impurity Measurements Using FTIR",
+          "abstract": "As carbon capture, utilization, and storage (CCUS) rapidly expands, reliable CO<sub xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">2</sub> impurity monitoring is essential for verifying compliance with purity specifications. Although these specifications define which impuri...",
+          "year": 2025,
+          "score": 0.4805
+        },
+        {
+          "paper_id": "https://openalex.org/W7123371308",
+          "title": "All-optical photoacoustic tomography via beam deflection",
+          "abstract": "Photoacoustic imaging (PAI) uniquely combines the advantages of optical contrast with deep tissue penetration capability of acoustic waves, enabling imaging at depths of several centimeters. Conventional photoacoustic imaging methods have relied on pulsed lasers to induce the photoacoustic effect, coupled with array...",
+          "year": 2026,
+          "score": 0.4788
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "atomic force microscopy and surface force apparatus probing of nanoscale solid-solid interfacial contact, transport, and reactions",
+        "keywords": [
+          {
+            "text": "atomic force",
+            "score": 10
+          },
+          {
+            "text": "force microscopy",
+            "score": 9
+          },
+          {
+            "text": "microscopy surface",
+            "score": 8
+          },
+          {
+            "text": "surface force",
+            "score": 7
+          },
+          {
+            "text": "force apparatus",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4307203297",
+          "title": "A study of complex solid-liquid interfaces using atomic force microscopy",
+          "abstract": "In the preceding sections, we introduced different components of a complex solid-liquid interface. The aim of this thesis is to study the interactions in a complex solid-liquid interface by introducing the complexities in a step-by-step manner. Even though we would not be able to draw a general principle encompassin...",
+          "year": 2022,
+          "score": 0.6557
+        },
+        {
+          "paper_id": "https://openalex.org/W2080613819",
+          "title": "Visualization of Ionic-Liquid/Solid Interfaces by Frequency Modulation Atomic Force Microscopy",
+          "abstract": "Solvation structures on liquid/solid interfaces are essential for understanding the mechanisms of various electrochemical reactions. Here, we demonstrate structural analysis on interfaces of ionic liquids (ILs) and electrodes by frequency modulation atomic force microscopy (FM-AFM). A quartz-based force sensor was u...",
+          "year": 2013,
+          "score": 0.6373
+        },
+        {
+          "paper_id": "https://openalex.org/W2565855637",
+          "title": "Correlative Atomic Force and Transmission Electron Microscopy toward Applications of Atomic Force Microscopy to Heterogeneous Systems",
+          "abstract": "Journal Article Correlative Atomic Force and Transmission Electron Microscopy toward Applications of Atomic Force Microscopy to Heterogeneous Systems Get access Yutaro Yamada, Yutaro Yamada Graduate School of Natural Science & Technology, Kanazawa University, Kanazawa, Japan Search for other works by this author on:...",
+          "year": 2016,
+          "score": 0.622
+        },
+        {
+          "paper_id": "https://openalex.org/W2287848333",
+          "title": "Nanometer-ranged attraction induced by multivalent ions between similar and dissimilar surfaces probed using an atomic force microscope (AFM)",
+          "abstract": "Direct force measurements between positively charged amidine latex (AL) and negatively charged sulfate latex (SL) particles are carried out using an atomic force microscope (AFM). Forces between three different pairs, namely AL-AL, AL-SL, and SL-SL, are measured in solutions containing multivalent cationic aliphatic...",
+          "year": 2016,
+          "score": 0.5996
+        },
+        {
+          "paper_id": "https://openalex.org/W2011794354",
+          "title": "Atomic force microscopy and direct surface force measurements (IUPAC Technical Report)",
+          "abstract": "Abstract The atomic force microscope (AFM) is designed to provide high-resolution (in the ideal case, atomic) topographical analysis, applicable to both conducting and nonconducting surfaces. The basic imaging principle is very simple: a sample attached to a piezoelectric positioner is rastered beneath a sharp tip a...",
+          "year": 2005,
+          "score": 0.5819
+        },
+        {
+          "paper_id": "https://openalex.org/W1825136010",
+          "title": "Extracting local surface charges and charge regulation behavior from atomic force microscopy measurements at heterogeneous solid-electrolyte interfaces",
+          "abstract": "We present a method to determine the local surface charge of solid-liquid interfaces from Atomic Force Microscopy (AFM) measurements that takes into account shifts of the adsorption/desorption equilibria of protons and ions as the cantilever tip approaches the sample. We recorded AFM force distance curves in dynamic...",
+          "year": 2015,
+          "score": 0.5615
+        },
+        {
+          "paper_id": "https://openalex.org/W4321480595",
+          "title": "Nanoscale Electron Transfer Variations at Electrocatalyst–Electrolyte Interfaces Resolved by <i>in Situ</i> Conductive Atomic Force Microscopy",
+          "abstract": "Rational innovation of electrocatalysts requires detailed knowledge of spatial property variations across the solid-electrolyte interface. We introduce correlative atomic force microscopy (AFM) to simultaneously probe, <i>in situ</i> and at the nanoscale, electrical conductivity, chemical-frictional, and morphologic...",
+          "year": 2023,
+          "score": 0.5553
+        },
+        {
+          "paper_id": "https://openalex.org/W2947600896",
+          "title": "Atomic Force Spectroscopy on Ionic Liquids",
+          "abstract": "Ionic liquids have become of significant relevance in chemistry, as they can serve as environmentally-friendly solvents, electrolytes, and lubricants with bespoke properties. In particular for electrochemical applications, an understanding of the interface structure between the ionic liquid and an electrified interf...",
+          "year": 2019,
+          "score": 0.5523
+        },
+        {
+          "paper_id": "https://openalex.org/W2494786685",
+          "title": "A study of interaction forces at the solid-liquid interface using atomic force microscopy",
+          "abstract": "Solid-liquid interfaces are not only omnipresent in our daily lives, but also in many applications in industry and technology. However, our fundamental understanding of the physical properties of these interfaces is far from complete. In this thesis, we study properties, such as solvation forces, DLVO forces and ele...",
+          "year": 2016,
+          "score": 0.5507
+        },
+        {
+          "paper_id": "https://openalex.org/W2034360536",
+          "title": "Structural Analysis of Ionic-liquid/Organic-monolayer Interface by Phase Modulation Atomic Force Microscopy Utilizing a Quartz Tuning Fork Sensor",
+          "abstract": "Structural analysis of the interfaces between an ionic liquid (IL) and an organic monolayer was carried out by phase modulation atomic force microscopy (PM-AFM). A quartz tuning fork sensor with a sharpened tungsten tip was used as a force sensor instead of a Si cantilever. Topographic imaging of the monolayer-cover...",
+          "year": 2014,
+          "score": 0.5498
+        },
+        {
+          "paper_id": "https://openalex.org/W2335300252",
+          "title": "Nanomechanical Measurements in Biological Atomic Force Microscopy (AFM)",
+          "abstract": "Extended abstract of a paper presented at Microscopy and Microanalysis 2013 in Indianapolis, Indiana, USA, August 4 – August 8, 2013.",
+          "year": 2013,
+          "score": 0.5498
+        },
+        {
+          "paper_id": "https://openalex.org/W2788098118",
+          "title": "Efficient simulation method for nano-patterned charged surfaces in an electrolyte solution",
+          "abstract": "We present a method to efficiently simulate nano-patterned charged surfaces inside an electrolyte solution. Simulations are performed in the grand canonical ensemble and are used to calculate the force between surfaces with various charge patterns. The electric field produced by the surfaces is calculated analytical...",
+          "year": 2018,
+          "score": 0.5367
+        },
+        {
+          "paper_id": "https://openalex.org/W2076780551",
+          "title": "Importance of Charge Regulation in Attractive Double-Layer Forces between Dissimilar Surfaces",
+          "abstract": "Direct force measurements between oppositely charged latex particles in aqueous electrolyte solutions were carried out with a multiparticle colloidal probe technique based on atomic force microscopy. Force profiles between two dissimilarly charged surfaces can be only described when charge regulation effects are tak...",
+          "year": 2010,
+          "score": 0.5342
+        },
+        {
+          "paper_id": "https://openalex.org/W4221092458",
+          "title": "Effect of additive metal salt on ionic liquid/Li <sub>4</sub> Ti <sub>5</sub> O <sub>12</sub> electrode interfaces investigated by atomic force microscopy",
+          "abstract": "Abstract Ionic liquids (ILs) form layered solvation structures at IL/electrode interfaces relevant to many electrochemical applications. Recently, we observed a partially disturbed solvation structure at the 1-ethyl-3-methylimidazolium bis(trifluoromethylsulfonyl)imide (EMI-TFSI)/spinel lithium titanate oxide (Li 4 ...",
+          "year": 2022,
+          "score": 0.5324
+        },
+        {
+          "paper_id": "https://openalex.org/W2533565016",
+          "title": "High Resolution Imaging of Electrode and Analyses of Potential-Dependent Structuring of Interfacial Liquid Forming Electric Double Layer",
+          "abstract": "An electric double layer (EDL) formed at an electrolyte/electrode interface provides a steep potential slope which facilitates electrochemical reactions at the interface. This review paper summarizes recent our study on the structuring of liquid phase molecules at some electrolyte/electrode interfaces investigated u...",
+          "year": 2016,
+          "score": 0.5304
+        },
+        {
+          "paper_id": "https://openalex.org/W2328388461",
+          "title": "Accurate Predictions of Forces in the Presence of Multivalent Ions by Poisson–Boltzmann Theory",
+          "abstract": "Forces between positively and negatively charged colloidal particles across aqueous salt solutions containing multivalent ions are measured directly with the atomic force microscope (AFM). The measurements are interpreted quantitatively with Poisson-Boltzmann (PB) theory. Thereby, the surface potentials and regulati...",
+          "year": 2014,
+          "score": 0.5282
+        },
+        {
+          "paper_id": "https://openalex.org/W6903369447",
+          "title": "Interfacial Forces are Modified by the Growth of Surface Nanostructures",
+          "abstract": "Nanostructures formed by chemical reaction can modify the interfacial forces present in aqueous solution near a surface. This study uses force-volume microscopy to explore this phenomenon for the growth of manganese oxide nanostructures on rhodochrosite. The interfacial forces above the oxide nanostructures are domi...",
+          "year": 2016,
+          "score": 0.5281
+        },
+        {
+          "paper_id": "https://openalex.org/W3202458801",
+          "title": "Facet‐Dependent Surface Charge and Hydration of Semiconducting Nanoparticles at Variable pH",
+          "abstract": "Understanding structure and function of solid-liquid interfaces is essential for the development of nanomaterials for various applications including heterogeneous catalysis in liquid phase processes and water splitting for storage of renewable electricity. The characteristic anisotropy of crystalline nanoparticles i...",
+          "year": 2021,
+          "score": 0.5238
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "evanescent-wave fluorescence and TIRF measurements of near-wall concentration and mass transfer at liquid-solid interfaces",
+        "keywords": [
+          {
+            "text": "evanescent wave",
+            "score": 10
+          },
+          {
+            "text": "wave fluorescence",
+            "score": 9
+          },
+          {
+            "text": "fluorescence tirf",
+            "score": 8
+          },
+          {
+            "text": "tirf measurements",
+            "score": 7
+          },
+          {
+            "text": "measurements near",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W3028689404",
+          "title": "Nanoscale Mapping of the Directional Flow Patterns at Liquid-Solid Interfaces",
+          "abstract": "The nanoscale behavior of liquid molecules and solutes along the interface with solids controls many processes such as molecular exchanges, wetting, electrochemistry, nanofluidics, biomolecular function, and lubrication. Experimentally, several techniques can explore the equilibrium molecular arrangement of liquids ...",
+          "year": 2020,
+          "score": 0.6995
+        },
+        {
+          "paper_id": "https://openalex.org/W2005728146",
+          "title": "In Situ Fluorescence Microscopic Measurements of Complexation Reactions at Liquid/Liquid Interface",
+          "abstract": "In situ microscopic measurement is a novel approach to clarify the intrinsic mechanism of complexation reactions occurring at liquid/liquid interfaces. The present review was mainly focused on recent three topics of methodology of in situ fluorescence microscopic observation and measurement of interfacial complexati...",
+          "year": 2005,
+          "score": 0.6761
+        },
+        {
+          "paper_id": "https://openalex.org/W4386428795",
+          "title": "Fluorescence Imaging of Concentration Fields of Dissolved Gases at Water Interfaces",
+          "abstract": "Characterization of materials at interfaces includes also transfer processes taking place there. This is an ubiquitous phenomenon in the environment, technical processes, and living species. Because at least one of the two phases at the interface is mobile, these processes are characterized by a complex interplay be...",
+          "year": 2023,
+          "score": 0.6462
+        },
+        {
+          "paper_id": "https://openalex.org/W2015746632",
+          "title": "Studying flow close to an interface by total internal reflection fluorescence cross-correlation spectroscopy: Quantitative data analysis",
+          "abstract": "Total internal reflection fluorescence cross-correlation spectroscopy (TIR-FCCS) has recently [S. Yordanov et al., Optics Express 17, 21149 (2009)] been established as an experimental method to probe hydrodynamic flows near surfaces, on length scales of tens of nanometers. Its main advantage is that fluorescence occ...",
+          "year": 2011,
+          "score": 0.6265
+        },
+        {
+          "paper_id": "https://openalex.org/W6959365559",
+          "title": "Imaging Fluorescence-Correlation Spectroscopy for\\nMeasuring Fast Surface Diffusion at Liquid/Solid Interfaces",
+          "abstract": "The\\ndevelopment of techniques to probe interfacial molecular transport\\nis important for understanding and optimizing surface-based analytical\\nmethods including surface-enhanced spectroscopies, biological assays,\\nand chemical separations. Single-molecule-fluorescence imaging and\\ntracking has been used to measure...",
+          "year": 2016,
+          "score": 0.6108
+        },
+        {
+          "paper_id": "https://openalex.org/W2004641103",
+          "title": "Sharp‐line structure in the fluorescence and excitation spectra of greening etiolated leaves",
+          "abstract": "Vibrationally resolved sharp‐line optical fluorescence and excitation spectra are observed for etiolated and greening barley leaves at T = 5 K. Conditions necessary for obtaining fine‐structured spectra in the case of chromophores in biological cells are discussed. The observed fine‐line spectra confirm earlier resu...",
+          "year": 1984,
+          "score": 0.5557
+        },
+        {
+          "paper_id": "https://openalex.org/W2076125266",
+          "title": "Colloidal dynamics near a wall studied by evanescent wave light scattering: Experimental and theoretical improvements and methodological limitations",
+          "abstract": "The dynamics of colloidal spheres near to a wall is studied with an evanescent wave scattering setup that allows for an independent variation of the components of the scattering wave vector normal and parallel to the wall. The correlation functions obtained with this novel instrumentation are interpreted on the basi...",
+          "year": 2007,
+          "score": 0.5532
+        },
+        {
+          "paper_id": "https://openalex.org/W2151650469",
+          "title": "Role of the Interface in Solvent Extraction Processes",
+          "abstract": "Abstract This paper reviews 25 years’ investigation of kinetics of metal chelate extraction systems under high speed stirring conditions. Values of chelate formation rate constants for both analytical and hydrometallurgical extractants derived from such measurements using the assumption that the rate-determining ste...",
+          "year": 1988,
+          "score": 0.5529
+        },
+        {
+          "paper_id": "https://openalex.org/W4298870425",
+          "title": "Methods and systems for monitoring a solid-liquid interface",
+          "abstract": "Methods and systems are provided for monitoring a solid-liquid interface, including providing a vessel configured to contain an at least partially melted material; detecting radiation reflected from a surface of a liquid portion of the at least partially melted material; providing sound energy to the surface; measur...",
+          "year": 2023,
+          "score": 0.5489
+        },
+        {
+          "paper_id": "https://openalex.org/W4239810389",
+          "title": "Advances in measurement of interfacial chemical activity",
+          "abstract": "The latest developments in interfacial mapping at NPL using scanning electrochemical microscopy (SECM) are reviewed. A suite of electrochemical imaging techniques has been developed that enable the multiscale mapping of electroactivity at solid-liquid interfaces, as demonstrated by a number of applications. Micron- ...",
+          "year": 2015,
+          "score": 0.5455
+        },
+        {
+          "paper_id": "https://openalex.org/W82053856",
+          "title": "MICROSCALE RESOLUTION OF INTERFACIAL MASS-TRANSFER RATES IN ELECTRODE PROCESSES",
+          "abstract": "Results of four interrelated studies concerning the nature of electrolytic gas evolution are reported: (1) configurations of axisymmetric bubbles formed on curved surfaces are evaluated; (2) mass-transfer enhancement by a stream of bubbles rising near a mass-transfer surface is resolved spatially and temporally usin...",
+          "year": 1987,
+          "score": 0.5405
+        },
+        {
+          "paper_id": "https://openalex.org/W1733859067",
+          "title": "Visualisation of Oxygen Concentration Profiles in the Aqueous Boundary Layer",
+          "abstract": "In environment studies as well as for technical application, the study of air-water gas exchange is crucial. For process studies, a novel visualisation technique of oxygen concentrations in water was realised with high spatial resolution. To resolve turbulent processes in water, also the temporal resolution was push...",
+          "year": 2007,
+          "score": 0.5369
+        },
+        {
+          "paper_id": "https://openalex.org/W1998133813",
+          "title": "Velocity Profiles of Water Flowing Past Solid Glass Surfaces Using Fluorescent Nanoparticles and Molecules as Velocity Probes",
+          "abstract": "Measurements of the velocity profile of water flowing on a glass surface using fluorescent nanoparticles and single fluorescent molecules as velocity probes show that the no slip boundary condition holds down to at least 10 nm from the surface. For water flowing on a hydrophobic solid surface, silanized glass, the n...",
+          "year": 2008,
+          "score": 0.5312
+        },
+        {
+          "paper_id": "https://openalex.org/W2946141182",
+          "title": "Response properties at dynamic liquid-liquid interfaces",
+          "abstract": "Despite the importance of the dielectric continuum response property of liquids at a shared interface, related simulations have so far mostly considered solid-liquid interfaces. We present a novel coarse grain approach to this problem which yields dielectric profiles with features of sharpness if the statistical ana...",
+          "year": 2018,
+          "score": 0.522
+        },
+        {
+          "paper_id": "https://openalex.org/W2007688572",
+          "title": "Scalar concentration measurements in liquid-phase flows with pulsed lasers",
+          "abstract": "",
+          "year": 2004,
+          "score": 0.5197
+        },
+        {
+          "paper_id": "https://openalex.org/W2107204741",
+          "title": "Direct observation of ionic structure at solid-liquid interfaces: a deep look into the Stern Layer",
+          "abstract": "",
+          "year": 2014,
+          "score": 0.5152
+        },
+        {
+          "paper_id": "https://openalex.org/W2515101906",
+          "title": "",
+          "abstract": "Mass transfer processes across an oil/water interface were discussed on the basis of electrochemistry of single micrometer-sized oil-droplets in water. Electrolysis of a solute in a single oil-droplet contacted with a microelectrode in water can be quickly completed, and mass transfer processes of the product from t...",
+          "year": 2001,
+          "score": 0.5131
+        },
+        {
+          "paper_id": "https://openalex.org/W3005761568",
+          "title": "Organic enrichment at aqueous interfaces studied with non-linear spectroscopy: cooperative adsorption of soluble saccharides to lipid monolayers",
+          "abstract": "Field measurements of sea spray aerosols have reported high concentrations of soluble organic material that are in excess of the concentration of soluble organics in the ocean. The studies described in this dissertation investigated a possible mechanism for this increase deemed cooperative adsorption. The cooperativ...",
+          "year": 2020,
+          "score": 0.5051
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "microscale thermography and micro-thermometer measurements of heat transfer across gas-liquid and liquid-solid interfaces",
+        "keywords": [
+          {
+            "text": "microscale thermography",
+            "score": 10
+          },
+          {
+            "text": "thermography micro",
+            "score": 9
+          },
+          {
+            "text": "micro thermometer",
+            "score": 8
+          },
+          {
+            "text": "thermometer measurements",
+            "score": 7
+          },
+          {
+            "text": "measurements heat",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4307349930",
+          "title": "Review of Optical Thermometry Techniques for Flows at the Microscale towards Their Applicability to Gas Microflows",
+          "abstract": "Thermometry techniques have been widely developed during the last decades to analyze thermal properties of various fluid flows. Following the increasing interest for microfluidic applications, most of these techniques have been adapted to the microscale and some new experimental approaches have emerged. In the last ...",
+          "year": 2022,
+          "score": 0.6545
+        },
+        {
+          "paper_id": "https://openalex.org/W2792269483",
+          "title": "Investigating Small-Scale Air–Sea Exchange Processes via Thermography",
+          "abstract": "The exchange of trace gases such as carbon dioxide or methane between the atmosphere and the ocean plays a key role for the climate system. However, the investigation of air-sea gas exchange rates lacks fast and accurate measurement techniques that can be used in field campaigns, e.g. onboard a ship on the ocean. A ...",
+          "year": 2018,
+          "score": 0.5495
+        },
+        {
+          "paper_id": "https://openalex.org/W2329444223",
+          "title": "Quantitative Temperature Imaging by Scanning Thermal Microscopy",
+          "abstract": "",
+          "year": 2003,
+          "score": 0.5334
+        },
+        {
+          "paper_id": "https://openalex.org/W4385633780",
+          "title": "Microcalorimeter fabrication and new measurement methodology for thermal sensing in microfluidics",
+          "abstract": "",
+          "year": 2023,
+          "score": 0.5198
+        },
+        {
+          "paper_id": "https://openalex.org/W406796519",
+          "title": "Microscale real temperature measurement on Scanning Thermal Microscopy",
+          "abstract": "Scanning Thermal Microscope takes topographic and thermal images with sub-micron spatial resolution. A real temperature measurement method on the SThM has been developed by using a thermal feedback system, where a cantilever is kept same temperature as sample by generating heat proportional to heat flow along it. Th...",
+          "year": 2002,
+          "score": 0.5181
+        },
+        {
+          "paper_id": "https://openalex.org/W2233166595",
+          "title": "Chapter 1. Nanoscale Thermometry and Temperature Measurement",
+          "abstract": "Temperature measurement on the nanoscale is important for applications such as detecting the local temperature changes associated with microelectronics, optics, microfluidics, chemical reaction and biochemical processes, such as living cells and nanomedicine. The drive for information at this scale comes from the el...",
+          "year": 2015,
+          "score": 0.5176
+        },
+        {
+          "paper_id": "https://openalex.org/W4248826365",
+          "title": "Molecular Thermometry",
+          "abstract": "",
+          "year": 2010,
+          "score": 0.5095
+        },
+        {
+          "paper_id": "https://openalex.org/W2790727705",
+          "title": "Guiding Rules for Selecting a Nanothermometer",
+          "abstract": "Temperature is a basic parameter influencing the behavior of systems in physics, chemistry and biology. From living cells to microcircuits, a wide range of cases require thermometry techniques that can be applied to reduced areas, offering sub-micrometric resolution and high accuracy. Since traditional thermometers ...",
+          "year": 2018,
+          "score": 0.5093
+        },
+        {
+          "paper_id": "https://openalex.org/W3157191404",
+          "title": "Development of Highly Sensitive Temperature Microsensors for Localized Measurements",
+          "abstract": "This paper presents the design, fabrication and characterization of temperature microsensors based on Resistance Temperature Detectors (RTDs) with a meander-shaped geometry. Numerical simulations were performed for studying the sensitivity of the RTDs according to their windings numbers as well as for optimizing the...",
+          "year": 2021,
+          "score": 0.5093
+        },
+        {
+          "paper_id": "https://openalex.org/W2902322108",
+          "title": "Raman Thermometry in Water, Ethanol, and Ethanol/Nitrogen Mixtures from Ambient to Critical Conditions",
+          "abstract": "We present investigations into remote liquid temperature sensing with Raman spectroscopy using different evaluation methods for the OH stretching vibration band. Water, ethanol, and ethanol saturated with nitrogen, all as liquids or liquid-like supercritical fluids, are pumped through a heated microcapillary system ...",
+          "year": 2018,
+          "score": 0.5091
+        },
+        {
+          "paper_id": "https://openalex.org/W1971268056",
+          "title": "The Kelvin and temperature measurements",
+          "abstract": "The International Temperature Scale of 1990 (ITS-90) is defined from 0.65 K upwards to the highest temperature measurable by spectral radiation thermometry, the radiation thermometry being based on the Planck radiation law. When it was developed, the ITS-90 represented thermodynamic temperatures as closely as possib...",
+          "year": 2001,
+          "score": 0.5073
+        },
+        {
+          "paper_id": "https://openalex.org/W2009023242",
+          "title": "AUTOMATIC ADIABATIC SOLUTION CALORIMETER USING THERMISTORS",
+          "abstract": "A calorimeter is described, of capacity 40–50 ml, which is suitable for the investigation of solutions between 0 °C and 70 °C. Temperatures are measured to better than 0.0001 °C using thermistors and the latter are also used to provide automatic adiabatic control. A novel mechanism is used for opening sample cells a...",
+          "year": 1963,
+          "score": 0.5054
+        },
+        {
+          "paper_id": "https://openalex.org/W4312039685",
+          "title": "Phosphor thermometry in heat transfer fluids and liquid organic hydrogen carrier systems using (Sr,Ca)SiAlN<sub>3</sub>:Eu<sup>2+</sup>",
+          "abstract": "Abstract Temperature control in heat exchangers in reacting and non-reacting flows is of great importance for process optimization. In this context, phosphor thermometry is a promising technique for remote planar temperature sensing. The thermometry technique is based on exciting a luminescent material by a laser pu...",
+          "year": 2022,
+          "score": 0.5045
+        },
+        {
+          "paper_id": "https://openalex.org/W2322795480",
+          "title": "Joining Time-Resolved Thermometry and Magnetic-Induced Heating in a Single Nanoparticle Unveils Intriguing Thermal Properties",
+          "abstract": "Whereas efficient and sensitive nanoheaters and nanothermometers are demanding tools in modern bio- and nanomedicine, joining both features in a single nanoparticle still remains a real challenge, despite the recent progress achieved, most of it within the last year. Here we demonstrate a successful realization of t...",
+          "year": 2015,
+          "score": 0.5025
+        },
+        {
+          "paper_id": "https://openalex.org/W2085773982",
+          "title": "Heat of Ion Exchange Reaction as Determined by Means of Flow Micro-Calorimetry. I. Cation Exchange in Aqueous System",
+          "abstract": "Abstract The applicability of flow micro-calorimetry to the measurement of ion exchange heat was investigated by use of H-form resin of Dowex 50W×4 having a low degree of cross-linking. It was found that: accurate measurement of ion exchange heat can be performed by means of flow micro-calorimetry; the data obtained...",
+          "year": 1976,
+          "score": 0.5019
+        },
+        {
+          "paper_id": "https://openalex.org/W2480780645",
+          "title": "Thin film resistance sensor for wall heat flux measurement in premixed combustion",
+          "abstract": "Heat flux measurement method with thin film resistance sensor in a premixed gas combustion field has been studied to develop an accurate heat flux sensor, and to grasp and improve a heat transfer loss of the engine in SIP (Cross-ministerial Strategic Innovation Promotion Program) innovative combustion technology pro...",
+          "year": 2016,
+          "score": 0.5008
+        },
+        {
+          "paper_id": "https://openalex.org/W2169394994",
+          "title": "An Optofluidic Temperature Probe",
+          "abstract": "We report the application of a microfluidic device for semi-contact temperature measurement in picoliter volumes of aqueous media. Our device, a freely positionable multifunctional pipette, operates by a hydrodynamic confinement principle, i.e., by creating a virtual flow cell of micrometer dimensions within a great...",
+          "year": 2013,
+          "score": 0.4982
+        },
+        {
+          "paper_id": "https://openalex.org/W2211064576",
+          "title": "Wideband fluorescence-based thermometry by neural network recognition: Photothermal application with 10 ns time resolution",
+          "abstract": "Neural network recognition of features of the fluorescence spectrum of a thermosensitive probe is exploited in order to achieve fluorescence-based thermometry with an accuracy of 200 mK with 100 MHz bandwidth, and with high robustness against fluctuations of the probe laser intensity used. The concept is implemented...",
+          "year": 2015,
+          "score": 0.495
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "ellipsometry, reflectometry, and X-ray or neutron reflectivity characterization of nanoscale thin-film thickness and interfacial structure",
+        "keywords": [
+          {
+            "text": "ellipsometry reflectometry",
+            "score": 10
+          },
+          {
+            "text": "reflectometry ray",
+            "score": 9
+          },
+          {
+            "text": "ray neutron",
+            "score": 8
+          },
+          {
+            "text": "neutron reflectivity",
+            "score": 7
+          },
+          {
+            "text": "reflectivity characterization",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4308711154",
+          "title": "A mobile setup for simultaneous and <i>in situ</i> neutron reflectivity, infrared spectroscopy, and ellipsometry studies",
+          "abstract": "Neutron reflectivity at the solid/liquid interface offers unique opportunities for resolving the structure-function relationships of interfacial layers in soft matter science. It is a non-destructive technique for detailed analysis of layered structures on molecular length scales, providing thickness, density, rough...",
+          "year": 2022,
+          "score": 0.552
+        },
+        {
+          "paper_id": "https://openalex.org/W2989927350",
+          "title": "Novel method of phase determination in neutron reflectometry using reference layer",
+          "abstract": "Abstract We describe a novel method for phase recovery in neutron reflectometry which is based on using Gd reference layer of known thickness. Deposition of Gd reference layer at the top of unknown nanostructure allows us to reconstruct the complex reflection coefficient from the structure and to solve phase problem...",
+          "year": 2019,
+          "score": 0.5198
+        },
+        {
+          "paper_id": "https://openalex.org/W2143747793",
+          "title": "Simultaneous measurement of X-ray specular reflection and off-specular diffuse scattering from liquid surfaces using a two-dimensional pixel array detector: the liquid-interface reflectometer of BL37XU at SPring-8",
+          "abstract": "An X-ray reflectometer for simultaneous measurement of specular and off-specular reflection of liquid surfaces is described. The reflectometer, equipped with a two-dimensional single X-ray photon-counting pixel array detector obtained the full range of X-ray specular and off-specular reflections in an extremely shor...",
+          "year": 2010,
+          "score": 0.5177
+        },
+        {
+          "paper_id": "https://openalex.org/W3031067419",
+          "title": "Structure of DPPC Monolayers at the Air/Buffer Interface: A Neutron Reflectometry and Ellipsometry Study",
+          "abstract": "Langmuir monolayers of 1,2-dipalmitoyl-sn-glycerol-3-phosphocholine, known as DPPC, at the air/water interface are extensively used as model systems of biomembranes and pulmonary surfactant. The properties of these monolayers have been mainly investigated by surface pressure–area isotherms coupled with different com...",
+          "year": 2020,
+          "score": 0.517
+        },
+        {
+          "paper_id": "https://openalex.org/W4385890082",
+          "title": "Reflective, polarizing, and magnetically soft amorphous Fe/Si multilayer neutron optics with isotope-enriched 11B4C inducing atomically flat interfaces",
+          "abstract": "The utilization of polarized neutrons is of great importance in scientific disciplines spanning materials science, physics, biology, and chemistry. Polarization analysis offers insights into otherwise unattainable sample information such as magnetic domains and structures, protein crystallography, composition, orien...",
+          "year": 2023,
+          "score": 0.5158
+        },
+        {
+          "paper_id": "https://openalex.org/W2192874131",
+          "title": "Potential dependent structure of an ionic liquid at ionic liquid/water interface probed by x-ray reflectivity measurements",
+          "abstract": "",
+          "year": 2015,
+          "score": 0.5145
+        },
+        {
+          "paper_id": "https://openalex.org/W4413099577",
+          "title": "Linear Reciprocating Tribometer for In Situ Neutron Reflectometry of Soft Matter",
+          "abstract": "Neutron reflectometry is a technique for measuring structure near planar interfaces that has been previously used to non-destructively characterize the polymer density of hydrated, dilute, and soft materials. Previous investigations have conducted neutron reflectometry measurements of liquids, gels, emulsion, and po...",
+          "year": 2025,
+          "score": 0.5133
+        },
+        {
+          "paper_id": "https://openalex.org/W4229028088",
+          "title": "New Design of a Sample Cell for Neutron Reflectometry in Liquid–Liquid Systems and Its Application for Studying Structures at Air–Liquid and Liquid–Liquid Interfaces",
+          "abstract": "Knowledge of interfacial structures in liquid–liquid systems is imperative, especially for improving two-phase biological and chemical reactions. Therefore, we developed a new sample cell for neutron reflectometry (NR), which enables us to observe the layer structure around the interface, and investigated the adsorp...",
+          "year": 2022,
+          "score": 0.5115
+        },
+        {
+          "paper_id": "https://openalex.org/W2064456117",
+          "title": "X‐Ray Reflectometry Study of Self‐Assembled Ionic Nanolayers",
+          "abstract": "The self‐assembly technique has been applied for the fabrication of thin films including macrocyclic molecules. These multilayered structures, grown by sequential deposition of oppositely charged molecules, were characterised with X‐ray reflectometry. The data obtained indicate regular thickness of ion pair layers f...",
+          "year": 2012,
+          "score": 0.5113
+        },
+        {
+          "paper_id": "https://openalex.org/W2103413880",
+          "title": "Polymer-Cushioned Bilayers. I. A Structural Study of Various Preparation Methods Using Neutron Reflectometry",
+          "abstract": "",
+          "year": 1999,
+          "score": 0.51
+        },
+        {
+          "paper_id": "https://openalex.org/W6903229860",
+          "title": "Neutron Reflectivity\\nStudy on the Adsorption Layer\\nof Polyethylene Grown on Si Substrate",
+          "abstract": "To investigate the structure of the interface between\\npolyethylene\\nfilms and substrates, the neutron reflectivity (NR) of deuterated\\npolyethylene (dPE) thin films deposited on Si substrates was measured,\\ndemonstrating water accumulation at the interface, even under ambient\\nconditions. After leaching the thermal...",
+          "year": 2024,
+          "score": 0.5098
+        },
+        {
+          "paper_id": "https://openalex.org/W4382407120",
+          "title": "Combined, time-resolved, <i>in situ</i> neutron reflectometry and X-ray diffraction analysis of dynamic SEI formation during electrochemical N<sub>2</sub> reduction",
+          "abstract": "In situ neutron reflectometry and GI-XRD reveal the dynamics of SEI formation and layer composition during Li-NRR with current cycling.",
+          "year": 2023,
+          "score": 0.5093
+        },
+        {
+          "paper_id": "https://openalex.org/W2611150343",
+          "title": "Using soft x-ray absorption spectroscopy to characterize electrode/electrolyte interfaces in-situ and operando",
+          "abstract": "",
+          "year": 2017,
+          "score": 0.5087
+        },
+        {
+          "paper_id": "https://openalex.org/W3004876356",
+          "title": "X-ray and Neutron Reflectivity Studies of Styrene-Maleic Acid Polymer Interactions with Galactolipid-Containing Monolayers",
+          "abstract": "",
+          "year": 2020,
+          "score": 0.5082
+        },
+        {
+          "paper_id": "https://openalex.org/W2984044814",
+          "title": "Reflectometry Reveals Accumulation of Surfactant Impurities at Bare Oil/Water Interfaces",
+          "abstract": "Bare interfaces between water and hydrophobic media like air or oil are of fundamental scientific interest and of great relevance for numerous applications. A number of observations involving water/hydrophobic interfaces have, however, eluded a consensus mechanistic interpretation so far. Recent theoretical studies ...",
+          "year": 2019,
+          "score": 0.5079
+        },
+        {
+          "paper_id": "https://openalex.org/W2013035551",
+          "title": "Ionic multilayers at the free surface of an ionic liquid, trioctylmethylammonium bis(nonafluorobutanesulfonyl)amide, probed by x-ray reflectivity measurements",
+          "abstract": "The presence of ionic multilayers at the free surface of an ionic liquid, trioctylmethylammonium bis(nonafluorobutanesulfonyl)amide ([TOMA(+)][C(4)C(4)N(-)]), extending into the bulk from the surface to the depth of approximately 60 A has been probed by x-ray reflectivity measurements. The reflectivity versus moment...",
+          "year": 2010,
+          "score": 0.5045
+        },
+        {
+          "paper_id": "https://openalex.org/W3007388084",
+          "title": "Structuring of colloidal silica nanoparticle suspensions near water–silica interfaces probed by specular neutron reflectivity",
+          "abstract": "Structuring of aqueous suspensions of colloidal silica nanoparticles near an isolated planar silica-water interface is studied by specular neutron reflectivity. The reflectivity data clearly show that the suspensions develop a damped, oscillatory concentration profile in the normal direction to the interface. The wa...",
+          "year": 2020,
+          "score": 0.5043
+        },
+        {
+          "paper_id": "https://openalex.org/W2007129605",
+          "title": "Bayesian inference analysis of ellipsometry data",
+          "abstract": "Variable angle spectroscopic ellipsometry is a nondestructive technique for accurately determining the thicknesses and refractive indices of thin films. Experimentally, the ellipsometry parameters \\ensuremath{\\psi} and \\ensuremath{\\Delta} are measured, and the sample structure is then determined by one of a variety ...",
+          "year": 1999,
+          "score": 0.5036
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "step": "step1",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "micro-PIV and micro-LIF imaging of microscopic velocity and concentration fields near deformable gas-liquid interfaces",
+        "keywords": [
+          {
+            "text": "micro piv",
+            "score": 10
+          },
+          {
+            "text": "piv micro",
+            "score": 9
+          },
+          {
+            "text": "micro lif",
+            "score": 8
+          },
+          {
+            "text": "lif imaging",
+            "score": 7
+          },
+          {
+            "text": "imaging microscopic",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 18,
+        "retrieval_mode": "hybrid",
+        "after": null,
+        "before": null,
+        "target_field": "Chemistry",
+        "retrieval_bias": {}
+      },
+      "paper_count": 18,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W199278740",
+          "title": "Microfluidic studies of interfacial transport",
+          "abstract": "velocity profiles measured by PIV . . . . . . . . . 4.4 Average velocity profiles measured by PIV . . . . . . . . . . 4.5 Experimental and numerical effective slip lengths b ef f as functions of the protrusion angle and surface porosity . 4.6 Experimental and numerical effective friction factor C f and numerical dra...",
+          "year": 2013,
+          "score": 0.554
+        },
+        {
+          "paper_id": "https://openalex.org/W2180652174",
+          "title": "Dynamics and statics of liquid-liquid and gas-liquid interfaces on non-uniform substrates at the micron and sub-micron scales",
+          "abstract": "Droplets and bubbles are ubiquitous motifs found in natural and industrial processes. In the absence of significant external forces, liquid-liquid and gas-liquid interfaces form constant mean curvature surfaces that locally minimize the free energy of a given system subject to constraints. However, even for sub-micr...",
+          "year": 2015,
+          "score": 0.5505
+        },
+        {
+          "paper_id": "https://openalex.org/W2101624765",
+          "title": "Using surface force apparatus, diffusion and velocimetry to measure slip lengths",
+          "abstract": "Determining the slip lengths for liquids flowing close to smooth walls is challenging. The reason lies in the fact that the scales that must be addressed range between a few and hundreds of nanometres. Several techniques have been used over the last few years. Here, we consider three of them based on surface force a...",
+          "year": 2007,
+          "score": 0.5112
+        },
+        {
+          "paper_id": "https://openalex.org/W2090518273",
+          "title": "Microscopic Imaging of Fluorescence Anisotropy of Rhodamine B at the Free and Surfactant-Modified Toluene/Water Interfaces Excited under Total Internal Reflection Conditions",
+          "abstract": "The present study successfully carried out microscopic imaging of the steady-state in-plane fluorescence anisotropy ( rin ) of rhodamine B at the free and surfactant-modified toluene/water interfaces excited under total internal reflection conditions with an inverted microscope, a laser system, a linear polarizer, a...",
+          "year": 2010,
+          "score": 0.5065
+        },
+        {
+          "paper_id": "https://openalex.org/W2017795874",
+          "title": "Ellipsoidal particles at fluid interfaces",
+          "abstract": "For partially wetting, ellipsoidal colloids trapped at a fluid interface, their effective, interface-mediated interactions of capillary and fluctuation-induced type are analyzed. For contact angles different from 90( degrees ) , static interface deformations arise which lead to anisotropic capillary forces that are ...",
+          "year": 2008,
+          "score": 0.5051
+        },
+        {
+          "paper_id": "https://openalex.org/W1775110685",
+          "title": "Sustaining dry surfaces under water",
+          "abstract": "Rough surfaces immersed under water remain practically dry if the liquid-solid contact is on roughness peaks, while the roughness valleys are filled with gas. Mechanisms that prevent water from invading the valleys are well studied. However, to remain practically dry under water, additional mechanisms need considera...",
+          "year": 2015,
+          "score": 0.5026
+        },
+        {
+          "paper_id": "https://openalex.org/W2964115844",
+          "title": "Using a bio-inspired copper complex to investigate reactive mass transfer around an oxygen bubble rising freely in a thin-gap cell",
+          "abstract": "",
+          "year": 2019,
+          "score": 0.494
+        },
+        {
+          "paper_id": "https://openalex.org/W2202771803",
+          "title": "Size-dependent control of colloid transport via solute gradients in dead-end channels",
+          "abstract": "Transport of colloids in dead-end channels is involved in widespread applications including drug delivery and underground oil and gas recovery. In such geometries, Brownian motion may be considered as the sole mechanism that enables transport of colloidal particles into or out of the channels, but it is, unfortunate...",
+          "year": 2015,
+          "score": 0.4888
+        },
+        {
+          "paper_id": "https://openalex.org/W2068218275",
+          "title": "Viscosity of a Newtonian fluid calculated from the deformation of droplets covered with a surfactant under a linear shear flow",
+          "abstract": "",
+          "year": 2006,
+          "score": 0.4886
+        },
+        {
+          "paper_id": "https://openalex.org/W3164369958",
+          "title": "Physiological fluid interfaces: Functional microenvironments, drug delivery targets, and first line of defense",
+          "abstract": "",
+          "year": 2021,
+          "score": 0.4857
+        },
+        {
+          "paper_id": "https://openalex.org/W2161598149",
+          "title": "Capillarity-induced ordering of spherical colloids on an interface with anisotropic curvature",
+          "abstract": "Objects floating at a liquid interface, such as breakfast cereals floating in a bowl of milk or bubbles at the surface of a soft drink, clump together as a result of capillary attraction. This attraction arises from deformation of the liquid interface due to gravitational forces; these deformations cause excess surf...",
+          "year": 2013,
+          "score": 0.4819
+        },
+        {
+          "paper_id": "https://openalex.org/W4394593785",
+          "title": "Molecular machines working at interfaces: physics, chemistry, evolution and nanoarchitectonics",
+          "abstract": "As a post-nanotechnology concept, nanoarchitectonics combines nanotechnology with advanced materials science. Molecular machines made by assembling molecular units and their organizational bodies are also products of nanoarchitectonics. They can be regarded as the smallest functional materials. Originally, studies o...",
+          "year": 2024,
+          "score": 0.4799
+        },
+        {
+          "paper_id": "https://openalex.org/W3026452904",
+          "title": "Film formations of aggregates due to lateral capillary forces",
+          "abstract": "The lateral capillary force is of significant importance in liquid film coating processes [1]. This force, for particles much smaller than the capillary length, decays with the inverse of the separation distance between particles centres and is, thus, considered a longrange force [2] . In this paper, we study the ro...",
+          "year": 2017,
+          "score": 0.4792
+        },
+        {
+          "paper_id": "https://openalex.org/W2107166616",
+          "title": "Hydrodynamic interactions and Brownian forces in colloidal suspensions: Coarse-graining over time and length scales",
+          "abstract": "We describe in detail how to implement a coarse-grained hybrid molecular dynamics and stochastic rotation dynamics simulation technique that captures the combined effects of Brownian and hydrodynamic forces in colloidal suspensions. The importance of carefully tuning the simulation parameters to correctly resolve th...",
+          "year": 2006,
+          "score": 0.4787
+        },
+        {
+          "paper_id": "https://openalex.org/W1993514502",
+          "title": "Arrest and Flow of Colloidal Glasses",
+          "abstract": "",
+          "year": 2003,
+          "score": 0.4767
+        },
+        {
+          "paper_id": "https://openalex.org/W2023982914",
+          "title": "Alternating Vorticity Bands in a Solution of Wormlike Micelles",
+          "abstract": "We report on structural characterization of vorticity bands formed in a wormlike micellar solution by Rheo--small-angle neutron scattering and video imaging experiments. Below a critical shear stress tau{c} in Newtonian and shear-thinning regime, only a minor flow alignment of the micelles is observed. Above tau{c},...",
+          "year": 2007,
+          "score": 0.4701
+        },
+        {
+          "paper_id": "https://openalex.org/W2111166701",
+          "title": "Crystal Nucleation of Colloidal Suspensions under Shear",
+          "abstract": "We use Brownian dynamics simulations in combination with the umbrella sampling technique to study the effect of shear flow on homogeneous crystal nucleation. We find that a homogeneous shear rate leads to a significant suppression of the crystal nucleation rate and to an increase of the size of the critical nucleus....",
+          "year": 2004,
+          "score": 0.4699
+        },
+        {
+          "paper_id": "https://openalex.org/W2484696244",
+          "title": "Detection Techniques for Extracellular Polymeric Substances in Biofilms: A Review",
+          "abstract": "Extracellular polymeric substances (EPS) are one of the main components of biofilm, prompting biofilm to form a cohesive three-dimensional framework. Numerous methods are available to help characterize the properties and the structural, chemical and physical organizations of EPS during the biofilm formation process....",
+          "year": 2016,
+          "score": 0.4693
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "step": "step6",
+      "command_name": "paper-search",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Existing interfacial measurement approaches provide only partial, modality-specific observables and cannot simultaneously resolve coupled nanoscale structure, chemical state, charge transfer, flow, temperature, and mass/heat flux at operating multiphase interfaces, nor quantitatively connect this local heterogeneity to macroscopic evaporation, reaction, combustion, spray-drying, or cooling rates.",
+        "field": "abstract",
+        "top_k": 2,
+        "after": null,
+        "before": null
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4401349955",
+          "title": "Surface and interfacial sciences for future technologies",
+          "abstract": "Physical science has undergone an evolutional transition in research focus from solid bulks to surfaces, culminating in numerous prominent achievements. Currently, it is experiencing a new exploratory phase-interfacial science. Many a technology with a tremendous impact is closely associated with a functional interface which delineates the boundary between disparate materials or phases, evokes complexities that surpass its pristine comprising surfaces, and thereby unveils a plethora of distinctive properties. Such an interface may generate completely new or significantly enhanced properties. These specific properties are closely related to the interfacial states formed at the interfaces. Therefore, establishing a quantitative relationship between the interfacial states and their functionalities has become a key scientific issue in interfacial science. However, interfacial science also faces several challenges such as invisibility in characterization, inaccuracy in calculation, and difficulty in precise construction. To tackle these challenges, people must develop new strategies for precise detection, accurate computation, and meticulous construction of functional interfaces. Such strategies are anticipated to provide a comprehensive toolbox tailored for future interfacial science explorations and thereby lay a solid scientific foundation for several key future technologies.",
+          "year": 2024,
+          "score": 0.6449209451675415
+        },
+        {
+          "paper_id": "https://openalex.org/W4390232513",
+          "title": "&amp;lt;italic&amp;gt;In situ &amp;lt;/italic&amp;gt;characterization of dynamic molecular behaviours at gas/liquid or liquid/liquid interfaces",
+          "abstract": "<p indent=\"0mm\">Gas/liquid and liquid/liquid interfaces, with their unique dynamic molecular behaviours such as high molecular reactivity, specific molecular enrichment, wide range of molecular motions, and distinctive molecular trajectories, have attracted significant research interest. Owing to the inherent fluidity and deformability of liquids, these interfaces exhibit complex dynamic interfacial properties related to wetting, emulsification, phase separation, phase fusion, and environmental versatility, which play pivotal roles in various fields including materials science, chemical engineering, bioengineering, and environmental science. <italic>In situ </italic>characterization techniques for gas-liquid and liquid-liquid interfaces offer comprehensive insights into the dynamic molecular properties occurring at the heterogeneous interface between the two phases. The gas/liquid and liquid/liquid interface layers have a dynamic region with thicknesses ranging from angstroms to nanometers, separating the homogeneous gas phase from the liquid phase or one liquid phase from another. Their dynamically changing structures are heterogeneous and distinct from the fundamental chemical and physical properties of the two phases. Weak signal intensities often result in low signal-to-noise ratios. The states of the two bulk phases (e.g., impurities and concentration distribution of specific molecules) and the environmental conditions at the interface (e.g., temperature and pressure) can affect the interfacial molecular behaviours, making it challenging to distinguish the location and interface within a very short time. Over the past decade, characterization technologies for gas/liquid and liquid/liquid interfaces have undergone continuous upgrades and iterations. Emerging characterization methods, such as high-resolution imaging, high-speed cameras, interface-functionalized molecular luminescence tracing, imaging with various luminescence light sources, and the construction of multiscale interface models, have been utilized to obtain the interfacial properties of molecular aggregation at the macroscopic level. Spectroscopic characterization strategies, including linear and nonlinear spectroscopy combined with molecular dynamics simulations, were employed to understand the interactions of interface molecules at the molecular level. The integration of multiscale experimental results with theory holds promise for addressing issues such as material transport, phase stability, transformation, and interfacial chemical reactivity at the gas/liquid and liquid/liquid interfaces. In the development of characterization mechanisms, emerging technologies such as field-induced droplet ionization mass spectrometry and liquid gating technology have systematically demonstrated their application advantages in the multiscale characterization of dynamic gas/liquid and liquid/liquid interfaces. The practicality of characterization techniques for dynamic molecular behaviour at gas/liquid or liquid/liquid interfaces is heavily dependent on the advancement of interfacial analysis tools. This article provides an overview of some research achievements in the <italic>in situ</italic> characterization of the dynamic molecular behaviour at gas/liquid and liquid/liquid interfaces. First, we introduce the properties of the molecular structures and dynamic behaviour patterns. Subsequently, the focus is on progress in macroscopic- and molecular-level characterization techniques as well as innovative methods. Macroscopic-level characterization techniques, including surface/interface mechanical characterization methods and imaging-assisted analysis methods, and molecular-level characterization techniques, including spectroscopic analysis and computational simulation-assisted analysis methods, have enhanced our understanding of the dynamic molecular structures at the surface/interface and behavioural patterns across multiple dimensions. Macroscopic-level characterization techniques are relatively simple; however, they can provide qualitative and quantitative information on the macroscopic aggregation states of interfacial molecules. Molecular-level characterization techniques are more complex but can reveal crucial processes at the interface, deepening our microscopic insight into the interface behaviour. Finally, a comprehensive analysis of the current challenges and future directions in the field is provided, laying the foundation for the future development and application of characterization techniques.",
+          "year": 2023,
+          "score": 0.6316989660263062
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Develop physics-informed multimodal learning frameworks that fuse asynchronous, heterogeneous sensor streams, align them in space and time, and infer latent interfacial fields while propagating uncertainty to continuum-scale transport rates.",
+        "keywords": [
+          {
+            "text": "multimodal data fusion",
+            "score": 9
+          },
+          {
+            "text": "physics-informed machine learning",
+            "score": 9
+          },
+          {
+            "text": "spatiotemporal super-resolution",
+            "score": 8
+          },
+          {
+            "text": "uncertainty quantification",
+            "score": 8
+          },
+          {
+            "text": "digital twin",
+            "score": 7
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4414969316",
+          "title": "FieldFormer: Physics-Informed Transformers for Spatio-Temporal Field Reconstruction from Sparse Sensors",
+          "abstract": "Spatio-temporal sensor data is often sparse, noisy, and irregular, and existing interpolation or learning methods struggle here because they either ignore governing PDEs or do not scale. We introduce FieldFormer, a transformer-based framework for mesh-free spatio-temporal field reconstruction that combines data-driv...",
+          "year": 2025,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W4401159511",
+          "title": "BRIDGING MACHINE LEARNING AND PHYSICS: ADVANCEMENTS IN CONTINNUM MECHANICS AND TRANSPORT PHENOMENA",
+          "abstract": "",
+          "year": 2024,
+          "score": 0.984
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Adapt multimodal medical imaging and image-guided inverse methods that co-register structural, functional, thermal, and molecular signals to reconstruct coupled dynamic fields in complex living systems.",
+        "keywords": [
+          {
+            "text": "multimodal imaging",
+            "score": 9
+          },
+          {
+            "text": "image registration",
+            "score": 8
+          },
+          {
+            "text": "tomographic reconstruction",
+            "score": 8
+          },
+          {
+            "text": "functional molecular imaging",
+            "score": 7
+          },
+          {
+            "text": "inverse problems",
+            "score": 8
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W7128955655",
+          "title": "Toward Integral Field Tomography of Living Systems",
+          "abstract": "Modern medical diagnostics relies on modality-specific approximations—CT for density, MRI for proton environments, ultrasound for mechanical impedance, and PET for metabolic proxies—each observing a projection of the organism rather than the organism itself. Disease, however, is not merely a structural anomaly but a...",
+          "year": 2026,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W4389628273",
+          "title": "Unveiling dynamic interactions: in vivo imaging chronicles inflammation and regeneration in living organisms",
+          "abstract": "",
+          "year": 2023,
+          "score": 0.8469
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "step": "step6",
+      "command_name": "paper-search",
+      "cache_hit": true,
+      "payload": {
+        "query_text": "Existing interfacial measurement approaches provide only partial, modality-specific observables and cannot simultaneously resolve coupled nanoscale structure, chemical state, charge transfer, flow, temperature, and mass/heat flux at operating multiphase interfaces, nor quantitatively connect this local heterogeneity to macroscopic evaporation, reaction, combustion, spray-drying, or cooling rates.",
+        "field": "abstract",
+        "top_k": 2,
+        "after": null,
+        "before": null
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4401349955",
+          "title": "Surface and interfacial sciences for future technologies",
+          "abstract": "Physical science has undergone an evolutional transition in research focus from solid bulks to surfaces, culminating in numerous prominent achievements. Currently, it is experiencing a new exploratory phase-interfacial science. Many a technology with a tremendous impact is closely associated with a functional interface which delineates the boundary between disparate materials or phases, evokes complexities that surpass its pristine comprising surfaces, and thereby unveils a plethora of distinctive properties. Such an interface may generate completely new or significantly enhanced properties. These specific properties are closely related to the interfacial states formed at the interfaces. Therefore, establishing a quantitative relationship between the interfacial states and their functionalities has become a key scientific issue in interfacial science. However, interfacial science also faces several challenges such as invisibility in characterization, inaccuracy in calculation, and difficulty in precise construction. To tackle these challenges, people must develop new strategies for precise detection, accurate computation, and meticulous construction of functional interfaces. Such strategies are anticipated to provide a comprehensive toolbox tailored for future interfacial science explorations and thereby lay a solid scientific foundation for several key future technologies.",
+          "year": 2024,
+          "score": 0.6449209451675415
+        },
+        {
+          "paper_id": "https://openalex.org/W4390232513",
+          "title": "&amp;lt;italic&amp;gt;In situ &amp;lt;/italic&amp;gt;characterization of dynamic molecular behaviours at gas/liquid or liquid/liquid interfaces",
+          "abstract": "<p indent=\"0mm\">Gas/liquid and liquid/liquid interfaces, with their unique dynamic molecular behaviours such as high molecular reactivity, specific molecular enrichment, wide range of molecular motions, and distinctive molecular trajectories, have attracted significant research interest. Owing to the inherent fluidity and deformability of liquids, these interfaces exhibit complex dynamic interfacial properties related to wetting, emulsification, phase separation, phase fusion, and environmental versatility, which play pivotal roles in various fields including materials science, chemical engineering, bioengineering, and environmental science. <italic>In situ </italic>characterization techniques for gas-liquid and liquid-liquid interfaces offer comprehensive insights into the dynamic molecular properties occurring at the heterogeneous interface between the two phases. The gas/liquid and liquid/liquid interface layers have a dynamic region with thicknesses ranging from angstroms to nanometers, separating the homogeneous gas phase from the liquid phase or one liquid phase from another. Their dynamically changing structures are heterogeneous and distinct from the fundamental chemical and physical properties of the two phases. Weak signal intensities often result in low signal-to-noise ratios. The states of the two bulk phases (e.g., impurities and concentration distribution of specific molecules) and the environmental conditions at the interface (e.g., temperature and pressure) can affect the interfacial molecular behaviours, making it challenging to distinguish the location and interface within a very short time. Over the past decade, characterization technologies for gas/liquid and liquid/liquid interfaces have undergone continuous upgrades and iterations. Emerging characterization methods, such as high-resolution imaging, high-speed cameras, interface-functionalized molecular luminescence tracing, imaging with various luminescence light sources, and the construction of multiscale interface models, have been utilized to obtain the interfacial properties of molecular aggregation at the macroscopic level. Spectroscopic characterization strategies, including linear and nonlinear spectroscopy combined with molecular dynamics simulations, were employed to understand the interactions of interface molecules at the molecular level. The integration of multiscale experimental results with theory holds promise for addressing issues such as material transport, phase stability, transformation, and interfacial chemical reactivity at the gas/liquid and liquid/liquid interfaces. In the development of characterization mechanisms, emerging technologies such as field-induced droplet ionization mass spectrometry and liquid gating technology have systematically demonstrated their application advantages in the multiscale characterization of dynamic gas/liquid and liquid/liquid interfaces. The practicality of characterization techniques for dynamic molecular behaviour at gas/liquid or liquid/liquid interfaces is heavily dependent on the advancement of interfacial analysis tools. This article provides an overview of some research achievements in the <italic>in situ</italic> characterization of the dynamic molecular behaviour at gas/liquid and liquid/liquid interfaces. First, we introduce the properties of the molecular structures and dynamic behaviour patterns. Subsequently, the focus is on progress in macroscopic- and molecular-level characterization techniques as well as innovative methods. Macroscopic-level characterization techniques, including surface/interface mechanical characterization methods and imaging-assisted analysis methods, and molecular-level characterization techniques, including spectroscopic analysis and computational simulation-assisted analysis methods, have enhanced our understanding of the dynamic molecular structures at the surface/interface and behavioural patterns across multiple dimensions. Macroscopic-level characterization techniques are relatively simple; however, they can provide qualitative and quantitative information on the macroscopic aggregation states of interfacial molecules. Molecular-level characterization techniques are more complex but can reveal crucial processes at the interface, deepening our microscopic insight into the interface behaviour. Finally, a comprehensive analysis of the current challenges and future directions in the field is provided, laying the foundation for the future development and application of characterization techniques.",
+          "year": 2023,
+          "score": 0.6316989660263062
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Multimodal spatiotemporal data fusion and physics-informed probabilistic learning for combining asynchronous, modality-specific sensor streams into coherent estimates of coupled latent fields and system-level rates.",
+        "keywords": [
+          {
+            "text": "multimodal data fusion",
+            "score": 9
+          },
+          {
+            "text": "physics-informed machine learning",
+            "score": 9
+          },
+          {
+            "text": "spatiotemporal inference",
+            "score": 8
+          },
+          {
+            "text": "uncertainty quantification",
+            "score": 7
+          },
+          {
+            "text": "digital twin",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W2943666166",
+          "title": "Multimodal Data Fusion of Non-Gaussian Spatial Fields in Sensor Networks",
+          "abstract": "We develop a robust data fusion algorithm for field reconstruction of multiple physical phenomena. The contribution of this paper is twofold: First, we demonstrate how multi-spatial fields which can have any marginal distributions and exhibit complex dependence structures can be constructed. To this end we develop a...",
+          "year": 2019,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W3034376705",
+          "title": "Multi-Modal Sensor Fusion: A Principled Approach to Optimality.",
+          "abstract": "",
+          "year": 2020,
+          "score": 0.9364
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Data assimilation and multiscale flux inversion methods that integrate sparse local observations with governing models to upscale heterogeneous measurements into system-scale heat, mass, and momentum flux estimates.",
+        "keywords": [
+          {
+            "text": "data assimilation",
+            "score": 10
+          },
+          {
+            "text": "flux upscaling",
+            "score": 9
+          },
+          {
+            "text": "inverse modeling",
+            "score": 8
+          },
+          {
+            "text": "multiscale observation fusion",
+            "score": 8
+          },
+          {
+            "text": "surface energy balance",
+            "score": 6
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W2898008281",
+          "title": "Inverse Problems and Data Assimilation",
+          "abstract": "This concise introduction provides an entry point to the world of inverse problems and data assimilation for advanced undergraduates and beginning graduate students in the mathematical sciences. It will also appeal to researchers in science and engineering who are interested in the systematic underpinnings of method...",
+          "year": 2023,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W2112748697",
+          "title": "Data Assimilation in Multiscale Chemical Transport Models",
+          "abstract": "",
+          "year": 2007,
+          "score": 0.9973
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "step": "step6",
+      "command_name": "paper-search",
+      "cache_hit": true,
+      "payload": {
+        "query_text": "Existing interfacial measurement approaches provide only partial, modality-specific observables and cannot simultaneously resolve coupled nanoscale structure, chemical state, charge transfer, flow, temperature, and mass/heat flux at operating multiphase interfaces, nor quantitatively connect this local heterogeneity to macroscopic evaporation, reaction, combustion, spray-drying, or cooling rates.",
+        "field": "abstract",
+        "top_k": 2,
+        "after": null,
+        "before": null
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W4401349955",
+          "title": "Surface and interfacial sciences for future technologies",
+          "abstract": "Physical science has undergone an evolutional transition in research focus from solid bulks to surfaces, culminating in numerous prominent achievements. Currently, it is experiencing a new exploratory phase-interfacial science. Many a technology with a tremendous impact is closely associated with a functional interface which delineates the boundary between disparate materials or phases, evokes complexities that surpass its pristine comprising surfaces, and thereby unveils a plethora of distinctive properties. Such an interface may generate completely new or significantly enhanced properties. These specific properties are closely related to the interfacial states formed at the interfaces. Therefore, establishing a quantitative relationship between the interfacial states and their functionalities has become a key scientific issue in interfacial science. However, interfacial science also faces several challenges such as invisibility in characterization, inaccuracy in calculation, and difficulty in precise construction. To tackle these challenges, people must develop new strategies for precise detection, accurate computation, and meticulous construction of functional interfaces. Such strategies are anticipated to provide a comprehensive toolbox tailored for future interfacial science explorations and thereby lay a solid scientific foundation for several key future technologies.",
+          "year": 2024,
+          "score": 0.6449209451675415
+        },
+        {
+          "paper_id": "https://openalex.org/W4390232513",
+          "title": "&amp;lt;italic&amp;gt;In situ &amp;lt;/italic&amp;gt;characterization of dynamic molecular behaviours at gas/liquid or liquid/liquid interfaces",
+          "abstract": "<p indent=\"0mm\">Gas/liquid and liquid/liquid interfaces, with their unique dynamic molecular behaviours such as high molecular reactivity, specific molecular enrichment, wide range of molecular motions, and distinctive molecular trajectories, have attracted significant research interest. Owing to the inherent fluidity and deformability of liquids, these interfaces exhibit complex dynamic interfacial properties related to wetting, emulsification, phase separation, phase fusion, and environmental versatility, which play pivotal roles in various fields including materials science, chemical engineering, bioengineering, and environmental science. <italic>In situ </italic>characterization techniques for gas-liquid and liquid-liquid interfaces offer comprehensive insights into the dynamic molecular properties occurring at the heterogeneous interface between the two phases. The gas/liquid and liquid/liquid interface layers have a dynamic region with thicknesses ranging from angstroms to nanometers, separating the homogeneous gas phase from the liquid phase or one liquid phase from another. Their dynamically changing structures are heterogeneous and distinct from the fundamental chemical and physical properties of the two phases. Weak signal intensities often result in low signal-to-noise ratios. The states of the two bulk phases (e.g., impurities and concentration distribution of specific molecules) and the environmental conditions at the interface (e.g., temperature and pressure) can affect the interfacial molecular behaviours, making it challenging to distinguish the location and interface within a very short time. Over the past decade, characterization technologies for gas/liquid and liquid/liquid interfaces have undergone continuous upgrades and iterations. Emerging characterization methods, such as high-resolution imaging, high-speed cameras, interface-functionalized molecular luminescence tracing, imaging with various luminescence light sources, and the construction of multiscale interface models, have been utilized to obtain the interfacial properties of molecular aggregation at the macroscopic level. Spectroscopic characterization strategies, including linear and nonlinear spectroscopy combined with molecular dynamics simulations, were employed to understand the interactions of interface molecules at the molecular level. The integration of multiscale experimental results with theory holds promise for addressing issues such as material transport, phase stability, transformation, and interfacial chemical reactivity at the gas/liquid and liquid/liquid interfaces. In the development of characterization mechanisms, emerging technologies such as field-induced droplet ionization mass spectrometry and liquid gating technology have systematically demonstrated their application advantages in the multiscale characterization of dynamic gas/liquid and liquid/liquid interfaces. The practicality of characterization techniques for dynamic molecular behaviour at gas/liquid or liquid/liquid interfaces is heavily dependent on the advancement of interfacial analysis tools. This article provides an overview of some research achievements in the <italic>in situ</italic> characterization of the dynamic molecular behaviour at gas/liquid and liquid/liquid interfaces. First, we introduce the properties of the molecular structures and dynamic behaviour patterns. Subsequently, the focus is on progress in macroscopic- and molecular-level characterization techniques as well as innovative methods. Macroscopic-level characterization techniques, including surface/interface mechanical characterization methods and imaging-assisted analysis methods, and molecular-level characterization techniques, including spectroscopic analysis and computational simulation-assisted analysis methods, have enhanced our understanding of the dynamic molecular structures at the surface/interface and behavioural patterns across multiple dimensions. Macroscopic-level characterization techniques are relatively simple; however, they can provide qualitative and quantitative information on the macroscopic aggregation states of interfacial molecules. Molecular-level characterization techniques are more complex but can reveal crucial processes at the interface, deepening our microscopic insight into the interface behaviour. Finally, a comprehensive analysis of the current challenges and future directions in the field is provided, laying the foundation for the future development and application of characterization techniques.",
+          "year": 2023,
+          "score": 0.6316989660263062
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Physics-informed multimodal data fusion and spatiotemporal inverse methods that combine heterogeneous sensor streams to reconstruct latent physical fields and predict system-level transport rates.",
+        "keywords": [
+          {
+            "text": "multimodal data fusion",
+            "score": 10
+          },
+          {
+            "text": "physics-informed machine learning",
+            "score": 9
+          },
+          {
+            "text": "spatiotemporal inverse problems",
+            "score": 8
+          },
+          {
+            "text": "uncertainty quantification",
+            "score": 8
+          },
+          {
+            "text": "latent field reconstruction",
+            "score": 7
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W2921417107",
+          "title": "Integrating physics-based models with sensor data: An inverse modeling approach",
+          "abstract": "",
+          "year": 2019,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W1982185356",
+          "title": "Acceleration of uncertainty updating in the description of transport processes in heterogeneous materials",
+          "abstract": "",
+          "year": 2012,
+          "score": 0.8114
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "step": "step6",
+      "command_name": "search-papers",
+      "cache_hit": false,
+      "payload": {
+        "query_text": "Multisensor data assimilation and scale-aware flux inversion frameworks used to integrate remote, in situ, and proxy observations of heterogeneous surfaces into estimates of coupled heat, mass, and momentum exchange.",
+        "keywords": [
+          {
+            "text": "data assimilation",
+            "score": 10
+          },
+          {
+            "text": "multiscale flux inversion",
+            "score": 9
+          },
+          {
+            "text": "remote sensing fusion",
+            "score": 8
+          },
+          {
+            "text": "surface energy balance",
+            "score": 7
+          },
+          {
+            "text": "uncertainty quantification",
+            "score": 7
+          }
+        ],
+        "titles": [],
+        "reference_titles": [],
+        "source_type": "idea_text",
+        "source_title": null,
+        "top_k": 2,
+        "retrieval_mode": "semantic",
+        "after": null,
+        "before": null,
+        "target_field": null,
+        "retrieval_bias": {}
+      },
+      "paper_count": 2,
+      "papers": [
+        {
+          "paper_id": "https://openalex.org/W2167962621",
+          "title": "Natural integration of scalar fluxes from complex terrain",
+          "abstract": "",
+          "year": 1999,
+          "score": 1.0
+        },
+        {
+          "paper_id": "https://openalex.org/W4237030416",
+          "title": "Supplementary material to \"The SURFEXv7.2 land and ocean surface platform for coupled or offline simulation of Earth surface variables and fluxes\"",
+          "abstract": "",
+          "year": 2012,
+          "score": 0.9951
+        }
+      ]
+    }
+  ]
+}

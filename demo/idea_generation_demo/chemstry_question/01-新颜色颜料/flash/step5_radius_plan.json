@@ -1,0 +1,13 @@
+{
+  "use_same_field": true,
+  "use_cross_domain": true,
+  "preferred_radii": [
+    "R1",
+    "R2"
+  ],
+  "same_field_top_k": 1,
+  "num_cross_domains": 1,
+  "cross_domain_top_k_per_domain": 1,
+  "rationale": "flash workflow: skip the LLM radius gate and use the compact default plan to keep one same-field and one cross-domain evidence path when available",
+  "compressed_stage": "step5"
+}

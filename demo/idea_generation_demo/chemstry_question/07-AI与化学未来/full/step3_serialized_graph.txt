@@ -1,0 +1,82 @@
+# SEED
+META
+topic: Research question: Will AI redefine the future of chemistry?
+Context: AI and machine learning have the potential to greatly benefit organic chemistry, leading to more rapid synthesis of molecules. These computational technologies can greatly optimize and accelerate drug development by, for example, predicting successful pathways to synthesize target molecules.
+seed_paper: MechRetro is a chemical-mechanism-driven graph learning framework for interpretable retrosynthesis prediction and pathway planning
+
+# CITATION SUBGRAPH (3 refs, temporally ordered by year)
+
+## [1] Permutation invariant graph-to-sequence model for template-free retrosynthesis and reaction prediction (2021, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 1
+cited_in_sections = []
+cite_count = 4
+section_weight = 0.0
+delta_year = unknown
+is_influential = False
+low_confidence = True
+cited_by_subgraph = 0
+
+[PREDECESSORS]
+- ref_idx=[] delta_yr=unknown edge_type=none
+
+[IDEA]
+Problem: Synthesis planning and reaction outcome prediction are two fundamental problems in computer-aided organic chemistry for which a variety of data-driven approaches have emerged. Natural language approaches that model each problem as a SMILES-to-SMILES translation lead to a simple end-to-end formulatio
+Existing Methods: Unavailable from local metadata.
+Motivation: Synthesis planning and reaction outcome prediction are two fundamental problems in computer-aided organic chemistry for which a variety of data-driven approaches have emerged. Natural language approaches that model each problem as a SMILES-to-SMILES translation lead to a simple end-to-end formulatio
+Proposed Method: Synthesis planning and reaction outcome prediction are two fundamental problems in computer-aided organic chemistry for which a variety of data-driven approaches have emerged. Natural language approaches that model each problem as a SMILES-to-SMILES translation lead to a simple end-to-end formulatio
+Experiment Plan: Unavailable from local metadata.
+
+[ABSTRACT] Synthesis planning and reaction outcome prediction are two fundamental problems in computer-aided organic chemistry for which a variety of data-driven approaches have emerged. Natural language approaches that model each problem as a SMILES-to-SMILES translation lead to a simple end-to-end formulation, reduce the nee...
+
+## [2] A meta-learning approach for selectivity prediction in asymmetric catalysis (2025, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 1
+cited_in_sections = []
+cite_count = 9
+section_weight = 0.0
+delta_year = unknown
+is_influential = False
+low_confidence = True
+cited_by_subgraph = 0
+
+[PREDECESSORS]
+- ref_idx=[] delta_yr=unknown edge_type=none
+
+[IDEA]
+Problem: Transition metal-catalyzed asymmetric reactions are of high contemporary importance in organic synthesis. Recently, machine learning (ML) has shown promise in accelerating the development of newer catalytic protocols. However, the need for large amount of experimental data can present a bottleneck f
+Existing Methods: Unavailable from local metadata.
+Motivation: Transition metal-catalyzed asymmetric reactions are of high contemporary importance in organic synthesis. Recently, machine learning (ML) has shown promise in accelerating the development of newer catalytic protocols. However, the need for large amount of experimental data can present a bottleneck f
+Proposed Method: Transition metal-catalyzed asymmetric reactions are of high contemporary importance in organic synthesis. Recently, machine learning (ML) has shown promise in accelerating the development of newer catalytic protocols. However, the need for large amount of experimental data can present a bottleneck f
+Experiment Plan: Unavailable from local metadata.
+
+[ABSTRACT] Transition metal-catalyzed asymmetric reactions are of high contemporary importance in organic synthesis. Recently, machine learning (ML) has shown promise in accelerating the development of newer catalytic protocols. However, the need for large amount of experimental data can present a bottleneck for implementing ML models. Here, we propose a meta-learning workflow that can harness the literature-derived data to extract shared reaction features and requires only a few examples to predict the outcome of new reactions. Prototypical networks are used as a meta-learning method to predict the enantioselectivity of asymmetric hydrogenation of olefins. This meta-learning model consistently provides significant performance improvement over other popular ML methods such as random forests and graph neural networks. The performance of our meta-model is analyzed with varying sizes of training examples to demonstrate its utility even with limited data. A good model performance on an out-of-sample test set further indicates the general applicability of our approach. We believe this work will provide a leap forward in identifying promising reactions in the early phases of reaction development when minimal data is available.
+
+## [3] Data-Efficient, Chemistry-Aware Machine Learning Predictions of Diels–Alder Reaction Outcomes (2024, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 1
+cited_in_sections = []
+cite_count = 1
+section_weight = 0.0
+delta_year = unknown
+is_influential = False
+low_confidence = True
+cited_by_subgraph = 0
+
+[PREDECESSORS]
+- ref_idx=[] delta_yr=unknown edge_type=none
+
+[IDEA]
+Problem: The application of machine learning models to the prediction of reaction outcomes currently needs large and/or highly featurized datasets. We show that a chemistry-aware model, NERF, which mimics the bonding changes that occur during reactions, allows for highly accurate predictions of the outcomes 
+Existing Methods: Unavailable from local metadata.
+Motivation: The application of machine learning models to the prediction of reaction outcomes currently needs large and/or highly featurized datasets. We show that a chemistry-aware model, NERF, which mimics the bonding changes that occur during reactions, allows for highly accurate predictions of the outcomes 
+Proposed Method: The application of machine learning models to the prediction of reaction outcomes currently needs large and/or highly featurized datasets. We show that a chemistry-aware model, NERF, which mimics the bonding changes that occur during reactions, allows for highly accurate predictions of the outcomes 
+Experiment Plan: Unavailable from local metadata.
+
+[ABSTRACT] The application of machine learning models to the prediction of reaction outcomes currently needs large and/or highly featurized datasets. We show that a chemistry-aware model, NERF, which mimics the bonding changes that occur during reactions, allows for highly accurate predictions of the outcomes of Diels–Alder re...

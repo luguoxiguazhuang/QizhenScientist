@@ -1,0 +1,82 @@
+# SEED
+META
+topic: Research question: Will the periodic table ever be complete?
+Context: The periodic table currently consists of 118 elements, the last four of which were announced in 2016. The International Union of Pure and Applied Chemistry (IUPAC), which formally verifies, recognizes, and names new elements, has a challenging task. Its guidelines for the criteria for element discovery were established 29 years ago, yet in 2018, IUPAC issued an update illustrating the challenges associated with resolving whether the periodic table will ever be complete. IUPAC’s updated report addressed how previously utilized methods and technologies for discovering new elements were being supplanted by innovative approaches. As new techniques are developed, it is possible more elements will be found—the limitations of human inventiveness may be our only obstacle.
+seed_paper: On the discovery of new elements (IUPAC/IUPAP Report)
+
+# CITATION SUBGRAPH (3 refs, temporally ordered by year)
+
+## [1] Entrance channel dependent hot fusion reactions for superheavy element synthesis (2020, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 1
+cited_in_sections = []
+cite_count = 58
+section_weight = 0.0
+delta_year = unknown
+is_influential = True
+low_confidence = True
+cited_by_subgraph = 0
+
+[PREDECESSORS]
+- ref_idx=[] delta_yr=unknown edge_type=none
+
+[IDEA]
+Problem: We have studied the compound nucleus probability, the survival probability, and the evaporation residue cross sections for 6645 projectile-target combinations to synthesize the superheavy nuclei with atomic numbers $Z=110$--126 in the light of the entrance channel effects such as mass asymmetry, cha
+Existing Methods: Unavailable from local metadata.
+Motivation: We have studied the compound nucleus probability, the survival probability, and the evaporation residue cross sections for 6645 projectile-target combinations to synthesize the superheavy nuclei with atomic numbers $Z=110$--126 in the light of the entrance channel effects such as mass asymmetry, cha
+Proposed Method: We have studied the compound nucleus probability, the survival probability, and the evaporation residue cross sections for 6645 projectile-target combinations to synthesize the superheavy nuclei with atomic numbers $Z=110$--126 in the light of the entrance channel effects such as mass asymmetry, cha
+Experiment Plan: Unavailable from local metadata.
+
+[ABSTRACT] We have studied the compound nucleus probability, the survival probability, and the evaporation residue cross sections for 6645 projectile-target combinations to synthesize the superheavy nuclei with atomic numbers $Z=110$--126 in the light of the entrance channel effects such as mass asymmetry, charge asymmetry, isospin asymmetry, non-compound nuclear fission probability, and Businaro-Gallone mass asymmetry. The role of quasifission in every reaction has also been considered. Decay chains of various superheavy nuclei produced from the reactions are portrayed as well. The most striking results are that the measured evaporation residue cross sections are of the order of picobarns, whereas the proposed reactions can yield up to microbarn cross sections for the superheavy nuclei with $110\ensuremath{\le}Z\ensuremath{\le}126$. We suggest future experiments may utilize these hot fusion reactions to synthesize new elements ($Z>118$) or to study the properties of the known superheavy nuclei in greater detail. In particular, a proposed reaction containing both projectiles and targets that are naturally abundant, for example, $_{36}^{82}\mathrm{Kr}+_{90}^{232}\mathrm{Th}\ensuremath{\rightarrow}^{314}126+0n$, yields evaporation residue cross sections as high as 31 nb. The presently available experimental setup can test the prediction with ease to make a dream come true by putting a footstep into the eighth row of the periodic table.
+
+## [2] Superheavy Nuclei XVII: 1640 ≤ A &lt; 1650 Systems (2025, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 1
+cited_in_sections = []
+cite_count = 1
+section_weight = 0.0
+delta_year = unknown
+is_influential = False
+low_confidence = True
+cited_by_subgraph = 0
+
+[PREDECESSORS]
+- ref_idx=[] delta_yr=unknown edge_type=none
+
+[IDEA]
+Problem: Superheavy nuclei and their associated stability continue to be active experimental and theoretical areas of research. Calculations in the superheavy mass region require the selection of an appropriate nuclear interaction. Although this interaction is usually based on the extrapolation of a known nu
+Existing Methods: Unavailable from local metadata.
+Motivation: Superheavy nuclei and their associated stability continue to be active experimental and theoretical areas of research. Calculations in the superheavy mass region require the selection of an appropriate nuclear interaction. Although this interaction is usually based on the extrapolation of a known nu
+Proposed Method: Superheavy nuclei and their associated stability continue to be active experimental and theoretical areas of research. Calculations in the superheavy mass region require the selection of an appropriate nuclear interaction. Although this interaction is usually based on the extrapolation of a known nu
+Experiment Plan: Unavailable from local metadata.
+
+[ABSTRACT] Superheavy nuclei and their associated stability continue to be active experimental and theoretical areas of research. Calculations in the superheavy mass region require the selection of an appropriate nuclear interaction. Although this interaction is usually based on the extrapolation of a known nuclear interaction...
+
+## [3] Atmospheric-pressure ion transfer in a gas flow device connected to the UniCell buffer gas cell for superheavy elements chemistry: simulation studies (2025, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 1
+cited_in_sections = []
+cite_count = 0
+section_weight = 0.0
+delta_year = unknown
+is_influential = False
+low_confidence = True
+cited_by_subgraph = 0
+
+[PREDECESSORS]
+- ref_idx=[] delta_yr=unknown edge_type=none
+
+[IDEA]
+Problem: Abstract Man-made superheavy elements (SHE) are produced as energetic recoils in complete-fusion reactions and need to be thermalized in a gas-filled chamber for chemical studies. The ever-shorter half-lives and decreasing production rates of the elements beyond Fl (atomic number Z = 114)-the heavie
+Existing Methods: Unavailable from local metadata.
+Motivation: Abstract Man-made superheavy elements (SHE) are produced as energetic recoils in complete-fusion reactions and need to be thermalized in a gas-filled chamber for chemical studies. The ever-shorter half-lives and decreasing production rates of the elements beyond Fl (atomic number Z = 114)-the heavie
+Proposed Method: Abstract Man-made superheavy elements (SHE) are produced as energetic recoils in complete-fusion reactions and need to be thermalized in a gas-filled chamber for chemical studies. The ever-shorter half-lives and decreasing production rates of the elements beyond Fl (atomic number Z = 114)-the heavie
+Experiment Plan: Unavailable from local metadata.
+
+[ABSTRACT] Abstract Man-made superheavy elements (SHE) are produced as energetic recoils in complete-fusion reactions and need to be thermalized in a gas-filled chamber for chemical studies. The ever-shorter half-lives and decreasing production rates of the elements beyond Fl (atomic number Z = 114)-the heaviest element chemic...

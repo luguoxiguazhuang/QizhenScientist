@@ -1,0 +1,4 @@
+interface:
+  display_name: "SciAtlas Trend Report"
+  short_description: "Zero-start trend report"
+  default_prompt: "Use $sciatlas-trend-report to handle setup, run search-papers, read artifacts, and map trends in retrieval augmented generation."

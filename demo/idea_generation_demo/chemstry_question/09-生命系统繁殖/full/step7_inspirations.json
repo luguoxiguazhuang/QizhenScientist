@@ -1,0 +1,649 @@
+[
+  {
+    "domain": "same_field",
+    "paper_title": "The Influence of Sexual Selection and Sexual Conflict on the Evolution of Post-Insemination Dynamics",
+    "paper_abstract": "Sexual reproduction is a fundamental process that structures populations and modulates interactions between species. The reproductive process is shaped by selection acting on the variance in mating success. Additionally, conflict between the sexes over the mechanisms by which mating success is optimized effects reproduction. Selection can also act in a sex-specific manner outside of the reproductive process and drive a different class of sexual antagonisms. To understand how sexual conflict shapes evolution within and between the sexes, the action of selection must be connected to the lifecycle of an individual. Such a lifecycle-explicit framework allows for quantitative measurements of sex-specific selection, sexual conflict, and genetic load.\\n\\nHere I connect the action of selection with the appropriate stage of the lifecycle to determine how conflict between the sexes contributes to genome evolution. Using theoretical approaches, I examine if sexually antagonistic viability selection can create genomic divergence between the sexes. I find that selection must be strong to generate measurable divergence, which produces a high genetic load. Additionally, I show that sampling variance can account for much of the signal attributed to sexually antagonistic selection in the literature.\\n\\nUsing experimental approaches, I manipulate sex-specific selection acting during the gametic phase to determine the molecular components of male fertilization success. I develop Caenorhabditis nematodes as a new model system for studying post-insemination reproductive interactions. Contrary to expectation, I find that nematode sperm proteins are hyper-conserved at the sequence level and rapidly evolving at the gene family level. This result suggests an alternative signature of sex-specific selection and conflict. Additionally, I develop a genetic tool for isolating sperm dynamics. This sterility induction system is the first external, non-toxic, reversible sterility induction system in animals.\\n\\nTogether my dissertation highlights how the genomic signatures of sexual selection and conflict are complex and require explicit empirical testing to validate both the phenotype and action of selection. Such complexity indicates that evolutionary systems biology approaches will be the most informative way to move the field forward and establish the importance of sexual conflict in shaping evolution.\\n\\nThis work includes published and unpublished coauthored material.",
+    "radius": "R1",
+    "is_combination_plausible": true,
+    "combination_points": [
+      "Lifecycle-explicit decomposition of selection into sex-specific reproductive stages",
+      "Quantitative accounting of sexual conflict and genetic load as constraints on adaptation",
+      "Stage-specific linking of mating success, gametic/post-insemination dynamics, and viability selection",
+      "Separating true sexually antagonistic selection signals from sampling variance",
+      "Multi-level genetic architecture signatures: conserved sequence evolution versus rapidly changing gene-family composition"
+    ],
+    "combination_plan": "Adapt the candidate paper’s lifecycle-explicit selection framework into a sex-aware, environmentally contingent model that partitions reproductive fitness effects across timing, mate acquisition, gametic/post-insemination interactions, and survival trade-offs. Use sex-specific selection gradients, conflict/load metrics, and genetic variance-covariance structure to predict when reproductive strategies enhance fitness and evolvability versus when they generate constraints.",
+    "justification": "The candidate paper provides a structural abstraction directly relevant to the original problem: it connects selection to explicit lifecycle stages, distinguishes sex-specific effects, and quantifies conflict and genetic load. These mechanisms can be generalized into the requested predictive framework even though the candidate focuses on post-insemination dynamics and nematode experimental systems.",
+    "candidate_id": 1,
+    "source_paper": {
+      "paper_id": "https://openalex.org/W2989981305",
+      "title": "The Influence of Sexual Selection and Sexual Conflict on the Evolution of Post-Insemination Dynamics",
+      "abstract": "Sexual reproduction is a fundamental process that structures populations and modulates interactions between species. The reproductive process is shaped by selection acting on the variance in mating success. Additionally, conflict between the sexes over the mechanisms by which mating success is optimized effects reproduction. Selection can also act in a sex-specific manner outside of the reproductive process and drive a different class of sexual antagonisms. To understand how sexual conflict shapes evolution within and between the sexes, the action of selection must be connected to the lifecycle of an individual. Such a lifecycle-explicit framework allows for quantitative measurements of sex-specific selection, sexual conflict, and genetic load.\\n\\nHere I connect the action of selection with the appropriate stage of the lifecycle to determine how conflict between the sexes contributes to genome evolution. Using theoretical approaches, I examine if sexually antagonistic viability selection can create genomic divergence between the sexes. I find that selection must be strong to generate measurable divergence, which produces a high genetic load. Additionally, I show that sampling variance can account for much of the signal attributed to sexually antagonistic selection in the literature.\\n\\nUsing experimental approaches, I manipulate sex-specific selection acting during the gametic phase to determine the molecular components of male fertilization success. I develop Caenorhabditis nematodes as a new model system for studying post-insemination reproductive interactions. Contrary to expectation, I find that nematode sperm proteins are hyper-conserved at the sequence level and rapidly evolving at the gene family level. This result suggests an alternative signature of sex-specific selection and conflict. Additionally, I develop a genetic tool for isolating sperm dynamics. This sterility induction system is the first external, non-toxic, reversible sterility induction system in animals.\\n\\nTogether my dissertation highlights how the genomic signatures of sexual selection and conflict are complex and require explicit empirical testing to validate both the phenotype and action of selection. Such complexity indicates that evolutionary systems biology approaches will be the most informative way to move the field forward and establish the importance of sexual conflict in shaping evolution.\\n\\nThis work includes published and unpublished coauthored material.",
+      "year": 2019,
+      "keywords": [],
+      "references": [],
+      "citations": [],
+      "is_influential": false,
+      "score": 0.6133813261985779,
+      "idea_fields": {},
+      "raw": {
+        "paper_id": "https://openalex.org/W2989981305",
+        "title": "The Influence of Sexual Selection and Sexual Conflict on the Evolution of Post-Insemination Dynamics",
+        "abstract": "Sexual reproduction is a fundamental process that structures populations and modulates interactions between species. The reproductive process is shaped by selection acting on the variance in mating success. Additionally, conflict between the sexes over the mechanisms by which mating success is optimized effects reproduction. Selection can also act in a sex-specific manner outside of the reproductive process and drive a different class of sexual antagonisms. To understand how sexual conflict shapes evolution within and between the sexes, the action of selection must be connected to the lifecycle of an individual. Such a lifecycle-explicit framework allows for quantitative measurements of sex-specific selection, sexual conflict, and genetic load.\\n\\nHere I connect the action of selection with the appropriate stage of the lifecycle to determine how conflict between the sexes contributes to genome evolution. Using theoretical approaches, I examine if sexually antagonistic viability selection can create genomic divergence between the sexes. I find that selection must be strong to generate measurable divergence, which produces a high genetic load. Additionally, I show that sampling variance can account for much of the signal attributed to sexually antagonistic selection in the literature.\\n\\nUsing experimental approaches, I manipulate sex-specific selection acting during the gametic phase to determine the molecular components of male fertilization success. I develop Caenorhabditis nematodes as a new model system for studying post-insemination reproductive interactions. Contrary to expectation, I find that nematode sperm proteins are hyper-conserved at the sequence level and rapidly evolving at the gene family level. This result suggests an alternative signature of sex-specific selection and conflict. Additionally, I develop a genetic tool for isolating sperm dynamics. This sterility induction system is the first external, non-toxic, reversible sterility induction system in animals.\\n\\nTogether my dissertation highlights how the genomic signatures of sexual selection and conflict are complex and require explicit empirical testing to validate both the phenotype and action of selection. Such complexity indicates that evolutionary systems biology approaches will be the most informative way to move the field forward and establish the importance of sexual conflict in shaping evolution.\\n\\nThis work includes published and unpublished coauthored material.",
+        "publication_year": 2019,
+        "cited_by_count": 0,
+        "score": 0.6133813261985779,
+        "rank": 1,
+        "match_type": "vector_abstract",
+        "authors": [
+          {
+            "author_id": "https://openalex.org/A5030413677",
+            "name": "Katja R. Kasimatis",
+            "position": 9999,
+            "is_corresponding": true,
+            "h_index": 9,
+            "works_count": 39,
+            "cited_by_count": 372
+          }
+        ],
+        "author_names": [
+          "Katja R. Kasimatis"
+        ]
+      }
+    }
+  },
+  {
+    "domain": "same_field",
+    "paper_title": "Sexual selection studies: A NESCent catalyst meeting",
+    "paper_abstract": "A catalyst meeting on sexual selection studies was held in July 2013 at the facilities of the National Evolutionary Synthesis Center (NESCent) in Durham, NC. This article by a subcommittee of the participants foregrounds some of the topics discussed at the meeting. Topics mentioned here include the relevance of heritability estimates to assessing the presence of sexual selection, whether sexual selection is distinct from natural selection, and the utility of distinguishing sexual selection from fecundity selection. A possible definition of sexual selection is offered based on a distinction between sexual selection as a frequency-dependent process and fecundity selection as a density-dependent process. Another topic highlighted is a deep disagreement among participants in the reality of good-genes, sexy-sons, and run-away processes. Finally, the status of conflict in political-economic theory is contrasted with the status accorded to conflict in evolutionary behavioral theory, and the professional responsibility of sexual-selection workers to consider the ethical dimension of their research is underscored.",
+    "radius": "R1",
+    "is_combination_plausible": true,
+    "combination_points": [
+      "Frequency-dependent sexual selection versus density-dependent fecundity selection as an organizing decomposition",
+      "Heritability/evolvability conditions for detecting and sustaining sexual selection",
+      "Explicit separation of sexual selection, natural selection, and fecundity selection as coupled but distinct fitness components",
+      "Conflict-theoretic framing for sex-specific interests and constraints"
+    ],
+    "combination_plan": "Use the frequency-dependent versus density-dependent distinction to structure a sex-aware fitness model in which mate acquisition and sexual selection are frequency-dependent processes while reproductive output and survival trade-offs are density- or environment-dependent processes. Couple this with heritability and genetic-variance conditions to predict when reproductive strategies enhance fitness and evolvability versus when they generate constraints.",
+    "justification": "Although the candidate is a conceptual synthesis rather than a formal method, it provides a transferable organizing abstraction: separating reproductive fitness drivers by their dynamical dependence structure and by selection type. This maps directly onto the original problem's need to integrate genetic architecture, mating ecology, and life-history allocation in an environmentally contingent, sex-aware framework.",
+    "candidate_id": 2,
+    "source_paper": {
+      "paper_id": "https://openalex.org/W4243718834",
+      "title": "Sexual selection studies: A NESCent catalyst meeting",
+      "abstract": "A catalyst meeting on sexual selection studies was held in July 2013 at the facilities of the National Evolutionary Synthesis Center (NESCent) in Durham, NC. This article by a subcommittee of the participants foregrounds some of the topics discussed at the meeting. Topics mentioned here include the relevance of heritability estimates to assessing the presence of sexual selection, whether sexual selection is distinct from natural selection, and the utility of distinguishing sexual selection from fecundity selection. A possible definition of sexual selection is offered based on a distinction between sexual selection as a frequency-dependent process and fecundity selection as a density-dependent process. Another topic highlighted is a deep disagreement among participants in the reality of good-genes, sexy-sons, and run-away processes. Finally, the status of conflict in political-economic theory is contrasted with the status accorded to conflict in evolutionary behavioral theory, and the professional responsibility of sexual-selection workers to consider the ethical dimension of their research is underscored.",
+      "year": 2014,
+      "keywords": [],
+      "references": [],
+      "citations": [],
+      "is_influential": false,
+      "score": 0.6132857203483582,
+      "idea_fields": {},
+      "raw": {
+        "paper_id": "https://openalex.org/W4243718834",
+        "title": "Sexual selection studies: A NESCent catalyst meeting",
+        "abstract": "A catalyst meeting on sexual selection studies was held in July 2013 at the facilities of the National Evolutionary Synthesis Center (NESCent) in Durham, NC. This article by a subcommittee of the participants foregrounds some of the topics discussed at the meeting. Topics mentioned here include the relevance of heritability estimates to assessing the presence of sexual selection, whether sexual selection is distinct from natural selection, and the utility of distinguishing sexual selection from fecundity selection. A possible definition of sexual selection is offered based on a distinction between sexual selection as a frequency-dependent process and fecundity selection as a density-dependent process. Another topic highlighted is a deep disagreement among participants in the reality of good-genes, sexy-sons, and run-away processes. Finally, the status of conflict in political-economic theory is contrasted with the status accorded to conflict in evolutionary behavioral theory, and the professional responsibility of sexual-selection workers to consider the ethical dimension of their research is underscored.",
+        "publication_year": 2014,
+        "cited_by_count": 0,
+        "score": 0.6132857203483582,
+        "rank": 2,
+        "match_type": "vector_abstract",
+        "authors": [
+          {
+            "author_id": "https://openalex.org/A5051515473",
+            "name": "Joan Roughgarden",
+            "position": 1,
+            "is_corresponding": true,
+            "h_index": 41,
+            "works_count": 104,
+            "cited_by_count": 10698
+          },
+          {
+            "author_id": "https://openalex.org/A5002865155",
+            "name": "Elizabeth Adkins–Regan",
+            "position": 2,
+            "is_corresponding": false,
+            "h_index": 44,
+            "works_count": 169,
+            "cited_by_count": 6033
+          },
+          {
+            "author_id": "https://openalex.org/A5016094459",
+            "name": "Erol Akçay",
+            "position": 3,
+            "is_corresponding": false,
+            "h_index": 31,
+            "works_count": 134,
+            "cited_by_count": 3400
+          },
+          {
+            "author_id": "https://openalex.org/A5039514657",
+            "name": "Jeremy Chase Crawford",
+            "position": 4,
+            "is_corresponding": false,
+            "h_index": 43,
+            "works_count": 339,
+            "cited_by_count": 8760
+          },
+          {
+            "author_id": "https://openalex.org/A5031024198",
+            "name": "Raghavendra Gadagkar",
+            "position": 5,
+            "is_corresponding": false,
+            "h_index": 37,
+            "works_count": 321,
+            "cited_by_count": 4371
+          },
+          {
+            "author_id": "https://openalex.org/A5075126259",
+            "name": "Simon C. Griffith",
+            "position": 6,
+            "is_corresponding": false,
+            "h_index": 60,
+            "works_count": 365,
+            "cited_by_count": 13169
+          },
+          {
+            "author_id": "https://openalex.org/A5041327655",
+            "name": "Camilla A. Hinde",
+            "position": 7,
+            "is_corresponding": false,
+            "h_index": 26,
+            "works_count": 70,
+            "cited_by_count": 2751
+          },
+          {
+            "author_id": "https://openalex.org/A5054613470",
+            "name": "Thierry Hoquet",
+            "position": 8,
+            "is_corresponding": false,
+            "h_index": 13,
+            "works_count": 237,
+            "cited_by_count": 746
+          },
+          {
+            "author_id": "https://openalex.org/A5010519712",
+            "name": "Cailin O’Connor",
+            "position": 9,
+            "is_corresponding": false,
+            "h_index": 24,
+            "works_count": 121,
+            "cited_by_count": 2161
+          },
+          {
+            "author_id": "https://openalex.org/A5064837774",
+            "name": "Zofia M. Prokop",
+            "position": 10,
+            "is_corresponding": false,
+            "h_index": 14,
+            "works_count": 38,
+            "cited_by_count": 900
+          },
+          {
+            "author_id": "https://openalex.org/A5011383620",
+            "name": "Richard O. Prum",
+            "position": 11,
+            "is_corresponding": false,
+            "h_index": 62,
+            "works_count": 192,
+            "cited_by_count": 22913
+          },
+          {
+            "author_id": "https://openalex.org/A5086392294",
+            "name": "Sharoni Shafir",
+            "position": 12,
+            "is_corresponding": false,
+            "h_index": 36,
+            "works_count": 105,
+            "cited_by_count": 5275
+          },
+          {
+            "author_id": "https://openalex.org/A5030696650",
+            "name": "Samuel S. Snow",
+            "position": 13,
+            "is_corresponding": false,
+            "h_index": 3,
+            "works_count": 11,
+            "cited_by_count": 44
+          },
+          {
+            "author_id": "https://openalex.org/A5054903099",
+            "name": "Daniel Taylor",
+            "position": 14,
+            "is_corresponding": false,
+            "h_index": 7,
+            "works_count": 19,
+            "cited_by_count": 91
+          },
+          {
+            "author_id": "https://openalex.org/A5033890019",
+            "name": "Jeremy Van Cleve",
+            "position": 15,
+            "is_corresponding": false,
+            "h_index": 20,
+            "works_count": 53,
+            "cited_by_count": 1506
+          },
+          {
+            "author_id": "https://openalex.org/A5036789858",
+            "name": "Michael Weisberg",
+            "position": 16,
+            "is_corresponding": false,
+            "h_index": 26,
+            "works_count": 105,
+            "cited_by_count": 4239
+          }
+        ],
+        "author_names": [
+          "Joan Roughgarden",
+          "Elizabeth Adkins–Regan",
+          "Erol Akçay",
+          "Jeremy Chase Crawford",
+          "Raghavendra Gadagkar",
+          "Simon C. Griffith",
+          "Camilla A. Hinde",
+          "Thierry Hoquet"
+        ]
+      }
+    }
+  },
+  {
+    "domain": "economics",
+    "paper_title": "An optimisation principle for sex allocation in a temporally varying environment",
+    "paper_abstract": "",
+    "radius": "R2",
+    "is_combination_plausible": true,
+    "combination_points": [
+      "Optimization principle for sex allocation",
+      "Temporally varying environment as a contingency structure",
+      "Trade-off analysis between alternative reproductive investments",
+      "Fitness-maximizing allocation rules under environmental fluctuation"
+    ],
+    "combination_plan": "Adapt the candidate’s optimization framework to model sex-specific reproductive strategies as dynamic allocation policies whose fitness and evolvability depend on environmental state, genetic architecture, and mating ecology. Use its temporally contingent allocation logic to identify when reproductive strategies are adaptive versus when they generate constraints.",
+    "justification": "The candidate paper addresses sex allocation under temporal environmental variation, which maps directly onto the original problem’s need for a sex-aware, environmentally contingent framework. Its optimization and trade-off structure can be abstracted to jointly model genetic, mating-ecological, and life-history determinants of reproductive strategy fitness.",
+    "candidate_id": 3,
+    "source_paper": {
+      "paper_id": "https://openalex.org/W2029353030",
+      "title": "An optimisation principle for sex allocation in a temporally varying environment",
+      "abstract": "",
+      "year": 1986,
+      "keywords": [],
+      "references": [],
+      "citations": [],
+      "is_influential": false,
+      "score": 1.0,
+      "idea_fields": {},
+      "raw": {
+        "paper_id": "https://openalex.org/W2029353030",
+        "title": "An optimisation principle for sex allocation in a temporally varying environment",
+        "abstract": null,
+        "publication_year": 1986,
+        "year": 1986,
+        "cited_by_count": 19,
+        "citation_count": 19,
+        "score": 1.0,
+        "kg_score": 1.0,
+        "rank": 1,
+        "source": "kg",
+        "match_type": "kg_graph",
+        "pdf_url": "https://www.nature.com/articles/hdy198616.pdf",
+        "paper_url": "https://openalex.org/W2029353030",
+        "identifiers": [
+          "openalex:https://openalex.org/W2029353030"
+        ],
+        "paper": {
+          "is_retracted": false,
+          "pdf_is_oa": false,
+          "oa_status": "bronze",
+          "is_open_access": true,
+          "language": "en",
+          "pdf_url": "https://www.nature.com/articles/hdy198616.pdf",
+          "title": "An optimisation principle for sex allocation in a temporally varying environment",
+          "type": "article",
+          "pdf_version": "publishedVersion",
+          "venue_source_id": "https://openalex.org/S99462834",
+          "has_abstract": false,
+          "publication_date": "1986-02-01",
+          "id": "https://openalex.org/W2029353030",
+          "venue_source_type": "journal",
+          "pdf_is_published": false,
+          "cited_by_count": 19,
+          "pdf_source_type": "journal",
+          "pdf_source_id": "https://openalex.org/S99462834",
+          "referenced_works_count": 14,
+          "venue_source_display_name": "Heredity",
+          "label": "Paper",
+          "pdf_source_display_name": "Heredity",
+          "venue_raw_source_name": "Heredity",
+          "publication_year": 1986,
+          "created_date": "2025-10-10T00:00:00.000Z",
+          "updated_date": "2025-11-06T03:46:38.306Z",
+          "title_normalized": "anoptimisationprincipleforsexallocationinatemporallyvaryingenvironment",
+          "doi": "https://doi.org/10.1038/hdy.1986.16"
+        },
+        "hit_sources": [
+          "title_vector"
+        ],
+        "evidence": {
+          "keywords": [],
+          "titles": [],
+          "graph_paths": []
+        },
+        "score_breakdown": {
+          "sim_title": 0.8188003230828327,
+          "sim_abstract": 0.0,
+          "title_vector_rerank_score": null,
+          "abstract_vector_rerank_score": null,
+          "combined_vector_rerank_score": 0.7780115604400635,
+          "norm_emb_path": 1.0,
+          "norm_title_path": 0.0,
+          "title_pre_graph_bonus": 0.0,
+          "norm_pre_graph_score": 1.0,
+          "norm_graph_score": 1.0,
+          "graph_support_factor": 1.0,
+          "title_bonus": 0.0,
+          "final_score": 1.0
+        }
+      }
+    }
+  },
+  {
+    "domain": "economics",
+    "paper_title": "Resource Elasticity of Offspring Survival and the Optimal Evolution of Sex Ratios",
+    "paper_abstract": "The fitness of any organisms includes the survival and reproductive rate of adults and the survival of their offspring. Environmental selection pressures might not affect these two aspects of an organism equally. Assuming that an organism first allocates its limited resources to maintain its survival under environme...",
+    "radius": "R2",
+    "is_combination_plausible": true,
+    "combination_points": [
+      "Resource-budget allocation trade-offs between adult survival and offspring survival",
+      "Elasticity or sensitivity of offspring survival to parental resource investment",
+      "Sex-specific optimal allocation under environmentally contingent selection",
+      "Hierarchical allocation rules where maintenance/survival is prioritized before reproductive investment"
+    ],
+    "combination_plan": "Adapt the candidate’s elasticity-based resource allocation framework into a sex-aware life-history model in which genetic architecture, mating ecology, and environmental conditions determine resource acquisition and allocation to survival, mate acquisition, and reproduction. Use sex-specific survival and reproductive elasticities to predict when reproductive strategies increase fitness and evolvability versus when they generate constraints.",
+    "justification": "The candidate paper offers a transferable abstraction: environmentally contingent optimization of limited resources across survival and offspring fitness components with sex-ratio or sex-specific consequences. This maps directly onto the problem’s need to integrate reproductive timing, sexual selection, and reproduction-survival trade-offs into a predictive, sex-aware, environmental framework.",
+    "candidate_id": 4,
+    "source_paper": {
+      "paper_id": "https://openalex.org/W2036680378",
+      "title": "Resource Elasticity of Offspring Survival and the Optimal Evolution of Sex Ratios",
+      "abstract": "The fitness of any organisms includes the survival and reproductive rate of adults and the survival of their offspring. Environmental selection pressures might not affect these two aspects of an organism equally. Assuming that an organism first allocates its limited resources to maintain its survival under environme...",
+      "year": 2013,
+      "keywords": [],
+      "references": [],
+      "citations": [],
+      "is_influential": false,
+      "score": 0.9792,
+      "idea_fields": {},
+      "raw": {
+        "paper_id": "https://openalex.org/W2036680378",
+        "title": "Resource Elasticity of Offspring Survival and the Optimal Evolution of Sex Ratios",
+        "abstract": "The fitness of any organisms includes the survival and reproductive rate of adults and the survival of their offspring. Environmental selection pressures might not affect these two aspects of an organism equally. Assuming that an organism first allocates its limited resources to maintain its survival under environme...",
+        "publication_year": 2013,
+        "year": 2013,
+        "cited_by_count": 7,
+        "citation_count": 7,
+        "score": 0.9792,
+        "kg_score": 0.9792,
+        "rank": 2,
+        "source": "kg",
+        "match_type": "kg_graph",
+        "pdf_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0053904&type=printable",
+        "paper_url": "https://openalex.org/W2036680378",
+        "identifiers": [
+          "openalex:https://openalex.org/W2036680378"
+        ],
+        "paper": {
+          "is_retracted": false,
+          "pdf_is_oa": false,
+          "oa_status": "gold",
+          "is_open_access": true,
+          "language": "en",
+          "pdf_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0053904&type=printable",
+          "title": "Resource Elasticity of Offspring Survival and the Optimal Evolution of Sex Ratios",
+          "type": "article",
+          "pdf_version": "publishedVersion",
+          "venue_source_id": "https://openalex.org/S202381698",
+          "has_abstract": true,
+          "publication_date": "2013-01-23",
+          "id": "https://openalex.org/W2036680378",
+          "venue_source_type": "journal",
+          "pdf_is_published": false,
+          "cited_by_count": 7,
+          "pdf_source_type": "journal",
+          "pdf_source_id": "https://openalex.org/S202381698",
+          "referenced_works_count": 21,
+          "venue_source_display_name": "PLoS ONE",
+          "label": "Paper",
+          "abstract": "The fitness of any organisms includes the survival and reproductive rate of adults and the survival of their offspring. Environmental selection pressures might not affect these two aspects of an organism equally. Assuming that an organism first allocates its limited resources to maintain its survival under environmental selection pressure, our model, based on the evolutionarily stable strategy theory, surprisingly shows that the sex ratio is greatly affected by the environmental pressure intensity and by the reproductive resource elasticity of offspring survival. Moreover, the concept of the resource elasticity of offspring survival intrinsically integrates the ecological concepts of K selection and r selection. The model shows that in a species with reproductive strategy K, increased environmental selection pressure will reduce resource allocation to the male function. By contrast, in a species with reproductive strategy r, harsher environmental selection pressure will increase allocation to the male function. The elasticity of offspring survival might vary not only across species, but also across many other factors affecting the same species (e.g., age structure, spatial heterogeneity), which explains sex ratio differences across species or age structures and spatial heterogeneity in the same species.",
+          "pdf_source_display_name": "PLoS ONE",
+          "venue_raw_source_name": "PLoS ONE",
+          "publication_year": 2013,
+          "created_date": "2025-10-10T00:00:00.000Z",
+          "updated_date": "2026-01-13T01:12:25.745Z",
+          "title_normalized": "resourceelasticityofoffspringsurvivalandtheoptimalevolutionofsexratios",
+          "doi": "https://doi.org/10.1371/journal.pone.0053904"
+        },
+        "hit_sources": [
+          "abstract_vector",
+          "title_vector"
+        ],
+        "evidence": {
+          "keywords": [],
+          "titles": [],
+          "graph_paths": []
+        },
+        "score_breakdown": {
+          "sim_title": 0.8114581083777153,
+          "sim_abstract": 0.8192407356490305,
+          "title_vector_rerank_score": null,
+          "abstract_vector_rerank_score": null,
+          "combined_vector_rerank_score": 0.017364220693707466,
+          "norm_emb_path": 0.9739921151010629,
+          "norm_title_path": 0.0,
+          "title_pre_graph_bonus": 0.0,
+          "norm_pre_graph_score": 0.9739921151010628,
+          "norm_graph_score": 0.9739921151010628,
+          "graph_support_factor": 1.0,
+          "title_bonus": 0.0,
+          "final_score": 0.9791936920808502
+        }
+      }
+    }
+  },
+  {
+    "domain": "computer_science",
+    "paper_title": "Agent-Based Modelling as a Tool to Advance Evolutionary Population Theory",
+    "paper_abstract": "",
+    "radius": "R2",
+    "is_combination_plausible": true,
+    "combination_points": [
+      "Agent-based modelling as an integrative framework for evolutionary population dynamics",
+      "Explicit representation of heterogeneous individuals with sex, genotype, and life-history state",
+      "Local interaction rules for mate acquisition, sexual selection, and reproduction-survival trade-offs",
+      "Environmentally contingent decision rules and feedbacks between ecology and evolution",
+      "Emergent population-level outcomes such as fitness, evolvability, and constraints from individual-level mechanisms"
+    ],
+    "combination_plan": "Use agent-based modelling to build a sex-aware, environmentally contingent evolutionary framework in which individuals carry genetic architectures for reproductive timing, mating success, and survival allocation, interact under defined mating ecologies, and produce emergent measures of fitness and evolvability. This allows the joint effects of genetic variance, sexual selection, and life-history trade-offs to be studied interactively rather than in isolation.",
+    "justification": "The candidate paper’s core abstraction—agent-based modelling as a way to advance evolutionary population theory—maps directly onto the problem’s need to integrate multiple interacting drivers of reproduction across sexes and environments. Even without direct empirical overlap, the individual-based, mechanism-rich modelling paradigm provides a transferable structure for linking genetic architecture, mating ecology, and allocation trade-offs to evolutionary outcomes.",
+    "candidate_id": 5,
+    "source_paper": {
+      "paper_id": "https://openalex.org/W2527272295",
+      "title": "Agent-Based Modelling as a Tool to Advance Evolutionary Population Theory",
+      "abstract": "",
+      "year": 2016,
+      "keywords": [],
+      "references": [],
+      "citations": [],
+      "is_influential": false,
+      "score": 1.0,
+      "idea_fields": {},
+      "raw": {
+        "paper_id": "https://openalex.org/W2527272295",
+        "title": "Agent-Based Modelling as a Tool to Advance Evolutionary Population Theory",
+        "abstract": null,
+        "publication_year": 2016,
+        "year": 2016,
+        "cited_by_count": 1,
+        "citation_count": 1,
+        "score": 1.0,
+        "kg_score": 1.0,
+        "rank": 1,
+        "source": "kg",
+        "match_type": "kg_graph",
+        "pdf_url": "https://lirias.kuleuven.be/bitstream/123456789/548498/1/Van%20Bavel%20et%20al%202016%20-%20Agent-Based%20Modelling%20as%20a%20Tool%20to%20Advance%20Evolutionary%20Population%20Theory.pdf",
+        "paper_url": "https://openalex.org/W2527272295",
+        "identifiers": [
+          "openalex:https://openalex.org/W2527272295"
+        ],
+        "paper": {
+          "is_retracted": false,
+          "pdf_is_oa": false,
+          "oa_status": "green",
+          "is_open_access": true,
+          "language": "en",
+          "pdf_url": "https://lirias.kuleuven.be/bitstream/123456789/548498/1/Van%20Bavel%20et%20al%202016%20-%20Agent-Based%20Modelling%20as%20a%20Tool%20to%20Advance%20Evolutionary%20Population%20Theory.pdf",
+          "title": "Agent-Based Modelling as a Tool to Advance Evolutionary Population Theory",
+          "type": "article",
+          "pdf_version": "submittedVersion",
+          "venue_source_id": "https://openalex.org/S4306401954",
+          "has_abstract": false,
+          "publication_date": "2016-01-01",
+          "id": "https://openalex.org/W2527272295",
+          "venue_source_type": "repository",
+          "pdf_is_published": false,
+          "cited_by_count": 1,
+          "pdf_source_type": "repository",
+          "pdf_source_id": "https://openalex.org/S4306401954",
+          "referenced_works_count": 0,
+          "venue_source_display_name": "Lirias (KU Leuven)",
+          "label": "Paper",
+          "pdf_source_display_name": "Lirias (KU Leuven)",
+          "venue_raw_source_name": "Agent-Based Modelling in Population Studies: Concepts, Methods, and Applications, Chapt. 1, (3-27), (The Springer Series on Demographic Methods and Population Analysis , 41)",
+          "publication_year": 2016,
+          "created_date": "2025-10-10T00:00:00.000Z",
+          "updated_date": "2025-11-06T04:12:42.849Z",
+          "title_normalized": "agentbasedmodellingasatooltoadvanceevolutionarypopulationtheory"
+        },
+        "hit_sources": [
+          "title_vector"
+        ],
+        "evidence": {
+          "keywords": [],
+          "titles": [],
+          "graph_paths": []
+        },
+        "score_breakdown": {
+          "sim_title": 0.7502567253650843,
+          "sim_abstract": 0.0,
+          "title_vector_rerank_score": null,
+          "abstract_vector_rerank_score": null,
+          "combined_vector_rerank_score": 0.08568646758794785,
+          "norm_emb_path": 1.0,
+          "norm_title_path": 0.0,
+          "title_pre_graph_bonus": 0.0,
+          "norm_pre_graph_score": 1.0,
+          "norm_graph_score": 1.0,
+          "graph_support_factor": 1.0,
+          "title_bonus": 0.0,
+          "final_score": 1.0
+        }
+      }
+    }
+  },
+  {
+    "domain": "computer_science",
+    "paper_title": "A demogenetic individual based model for the evolution of traits and genome architecture under sexual selection",
+    "paper_abstract": "Abstract Sexual selection has long been known to favor the evolution of mating behaviors such as mate preference and competitiveness, and to affect their genetic architecture, for instance by favoring genetic correlation between some traits. Reciprocally, genetic architecture can affect the expression and the evolva...",
+    "radius": "R2",
+    "is_combination_plausible": true,
+    "combination_points": [
+      "Demogenetic individual-based modeling that couples demography, inheritance, trait evolution, and mating dynamics",
+      "Explicit representation of genetic architecture, including genetic correlations and genome structure",
+      "Feedback between sexual selection and the evolution of mating traits and competitiveness",
+      "Sex-specific selection and trait expression within a population-dynamic framework"
+    ],
+    "combination_plan": "Adapt the candidate’s demogenetic individual-based modeling structure as a scaffold for a sex-aware, environmentally contingent framework in which genetic architecture, mate acquisition, sexual selection, and reproduction-survival trade-offs are represented as interacting individual-level processes. Use its treatment of genetic correlations and sexual-selection feedbacks to predict when reproductive strategies increase fitness and evolvability versus when they generate evolutionary constraints.",
+    "justification": "The candidate paper provides a mechanistic abstraction for jointly modeling genetic architecture, sexual selection, and demographic dynamics, which maps directly onto the problem’s need to integrate isolated reproductive drivers into a predictive, sex-aware framework.",
+    "candidate_id": 6,
+    "source_paper": {
+      "paper_id": "https://openalex.org/W3015117265",
+      "title": "A demogenetic individual based model for the evolution of traits and genome architecture under sexual selection",
+      "abstract": "Abstract Sexual selection has long been known to favor the evolution of mating behaviors such as mate preference and competitiveness, and to affect their genetic architecture, for instance by favoring genetic correlation between some traits. Reciprocally, genetic architecture can affect the expression and the evolva...",
+      "year": 2020,
+      "keywords": [],
+      "references": [],
+      "citations": [],
+      "is_influential": false,
+      "score": 0.9846,
+      "idea_fields": {},
+      "raw": {
+        "paper_id": "https://openalex.org/W3015117265",
+        "title": "A demogenetic individual based model for the evolution of traits and genome architecture under sexual selection",
+        "abstract": "Abstract Sexual selection has long been known to favor the evolution of mating behaviors such as mate preference and competitiveness, and to affect their genetic architecture, for instance by favoring genetic correlation between some traits. Reciprocally, genetic architecture can affect the expression and the evolva...",
+        "publication_year": 2020,
+        "year": 2020,
+        "cited_by_count": 2,
+        "citation_count": 2,
+        "score": 0.9846,
+        "kg_score": 0.9846,
+        "rank": 2,
+        "source": "kg",
+        "match_type": "kg_graph",
+        "pdf_url": "https://www.biorxiv.org/content/biorxiv/early/2020/11/16/2020.04.01.014514.full.pdf",
+        "paper_url": "https://openalex.org/W3015117265",
+        "identifiers": [
+          "openalex:https://openalex.org/W3015117265"
+        ],
+        "paper": {
+          "is_retracted": false,
+          "pdf_is_oa": true,
+          "oa_status": "gold",
+          "is_open_access": true,
+          "language": "en",
+          "pdf_url": "https://www.biorxiv.org/content/biorxiv/early/2020/11/16/2020.04.01.014514.full.pdf",
+          "title": "A demogenetic individual based model for the evolution of traits and genome architecture under sexual selection",
+          "type": "preprint",
+          "pdf_version": "acceptedVersion",
+          "venue_source_id": "https://openalex.org/S4306402512",
+          "has_abstract": true,
+          "publication_date": "2020-04-02",
+          "id": "https://openalex.org/W3015117265",
+          "venue_source_type": "repository",
+          "pdf_is_published": false,
+          "cited_by_count": 2,
+          "referenced_works_count": 122,
+          "venue_source_display_name": "HAL (Le Centre pour la Communication Scientifique Directe)",
+          "label": "Paper",
+          "abstract": "Abstract Sexual selection has long been known to favor the evolution of mating behaviors such as mate preference and competitiveness, and to affect their genetic architecture, for instance by favoring genetic correlation between some traits. Reciprocally, genetic architecture can affect the expression and the evolvability of traits and mating behaviors. But sexual selection is highly context-dependent, making interactions between individuals a central process in evolution, governing the transmission of genotypes to the next generation. This loop between the genetic structure conditioning the expression and evolution of traits and behaviour, and the feedback of this phenotypic evolution on the architecture of the genome in the dynamic context of sexual selection, has yet to be thoroughly investigated. We argue that demogenetic agent-based models (DG-ABM) are especially suited to tackle such a challenge because they allow explicit modelling of both the genetic architecture of traits and the behavioural interactions in a dynamic population context. We here present a DG-ABM able to simultaneously track individual variation in traits (such as gametic investment, preference, competitiveness), fitness and genetic architecture throughout evolution. Using two simulation experiments, we compare various mating systems and show that behavioral interactions during mating triggered some complex feedback in our model, between fitness, population demography, and genetic architecture, placing interactions between individuals at the core of evolution through sexual selection. DG-ABMs can, therefore, relate to theoretical patterns expected at the population level from simpler analytical models in evolutionary biology, and at the same time provide a more comprehensive framework regarding individual trait and behaviour variation, that is usually envisioned separately from genome architecture in behavioural ecology.",
+          "venue_raw_source_name": "2021",
+          "publication_year": 2020,
+          "created_date": "2025-10-10T00:00:00.000Z",
+          "updated_date": "2026-01-17T23:10:49.606Z",
+          "title_normalized": "ademogeneticindividualbasedmodelfortheevolutionoftraitsandgenomearchitectureundersexualselection",
+          "doi": "https://doi.org/10.1101/2020.04.01.014514"
+        },
+        "hit_sources": [
+          "abstract_vector"
+        ],
+        "evidence": {
+          "keywords": [],
+          "titles": [],
+          "graph_paths": []
+        },
+        "score_breakdown": {
+          "sim_title": 0.6891155005712208,
+          "sim_abstract": 0.7838879216357995,
+          "title_vector_rerank_score": null,
+          "abstract_vector_rerank_score": null,
+          "combined_vector_rerank_score": 0.008620844222605228,
+          "norm_emb_path": 0.9807383419493909,
+          "norm_title_path": 0.0,
+          "title_pre_graph_bonus": 0.0,
+          "norm_pre_graph_score": 0.9807383419493909,
+          "norm_graph_score": 0.9807383419493909,
+          "graph_support_factor": 1.0,
+          "title_bonus": 0.0,
+          "final_score": 0.9845906735595127
+        }
+      }
+    }
+  }
+]

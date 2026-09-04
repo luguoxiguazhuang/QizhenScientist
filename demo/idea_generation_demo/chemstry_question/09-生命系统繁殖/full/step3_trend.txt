@@ -1,0 +1,62 @@
+Trends:
+
+Paper 0 to Paper 1:  
+Paper 0 is best read as the 2021 modeling study, *Assortative mating can help adaptation of flowering time to a changing climate: Insights from a polygenic model*. It treats reproductive timing as a polygenic trait shaped by nonrandom mating. Its central advance is to show that assortative mating can have antagonistic effects on genetic variance: it creates positive associations among similar allelic effects, which can inflate genetic variance, but it can also reduce polymorphism, which depresses variance. Under environmental change, however, assortative mating can increase standing genetic variance, reduce the lag between the population and the moving optimum, and provide a fitness advantage relative to random mating. This connects directly to the seed idea that genetic variance in reproductive timing contributes to trait evolvability.  
+Paper 1, the 2023 study *Sex-specific selection patterns in a dioecious insect-pollinated plant*, shifts the focus from abstract mating-system effects on genetic variance to the concrete phenotypic and sex-specific selection acting on reproductive traits. In *Silene dioica*, female fitness is more strongly associated with fertility-linked traits such as flower number and gamete production, while male fitness is shaped by flowering duration, corolla width, reproductive success, and number of mates. The transition therefore moves from “how mating patterns preserve or reshape genetic variation in reproductive timing” to “how that variation is translated into sex-specific reproductive success through natural selection, pollinator-mediated selection, and sexual selection.”
+
+Paper 1 to Paper 2:  
+Paper 1 emphasizes mate acquisition, floral trait selection, and sex-specific reproductive success. Paper 2, the 2025 study *Asymmetric life-history trade-offs shape sex-biased longevity patterns*, broadens the evolutionary frame from reproductive trait expression to the allocation trade-off between reproduction and survival. It models monogamous individuals evolving under sex-specific reproductive constraints: males trade survival against mating opportunities, while females trade survival against offspring production. The key result is that either sex can evolve greater longevity, but male-biased longevity evolves under a wider range of conditions because female longevity is more tightly constrained by offspring production, which affects the fertility of both sexes. The transition is therefore from “what traits determine mating and fertility success” to “how reproductive strategies shape survival, ageing, and lifespan evolution.” Reproduction is no longer treated only as a process of attracting mates or producing gametes; it becomes a central component of a broader life-history optimization problem.
+
+Key Turning Points:
+
+1. From random mating to nonrandom mating as an evolutionary mechanism.  
+   The 2021 paper marks a turning point by treating assortative mating not merely as a demographic detail but as a mechanism that can alter genetic variance, adaptive tracking, and fitness under climate change. This moves the field beyond simple random-mating assumptions and connects reproductive timing directly to evolvability.
+
+2. From general reproductive success to sex-specific selection.  
+   The 2023 paper shifts attention from population-level mating dynamics to the different selective pressures experienced by males and females. Its use of Bateman-style metrics and trait-fitness associations shows that reproductive drivers are not sex-neutral. In males, mating success and attractive floral traits matter strongly; in females, fertility-linked traits are more central.
+
+3. From trait selection to life-history trade-offs.  
+   The 2025 paper expands the question from “which traits improve reproduction?” to “how does reproduction compete with survival?” This is a major conceptual shift because it places reproductive success inside a broader allocation framework where longevity, mortality, and sex-specific fertility constraints shape evolutionary outcomes.
+
+4. From static adaptation to changing environments.  
+   Across the subgraph, a key turning point is the movement from stable-optimum thinking toward environments that change directionally, fluctuate, or impose density-dependent mortality. The 2021 paper explicitly models climate change, while the 2025 paper introduces extrinsic mortality that can obscure evolved longevity differences. This makes the drivers of reproduction contingent on ecological context rather than fixed biological constants.
+
+Recurring Limitations:
+
+1. Strong context dependence.  
+   The advantage of assortative mating depends on environmental change, stabilizing selection, and the extent to which genetic variance limits adaptation. The plant study finds limited pollinator-mediated selection under its experimental conditions, especially in the absence of pollen limitation. The longevity model shows that extrinsic mortality can obscure evolved sex-biased lifespan differences. In each case, the evolutionary outcome is highly conditional.
+
+2. Simplified mating systems.  
+   The 2021 model focuses on assortative mating by flowering time, the 2023 study focuses on a dioecious insect-pollinated plant, and the 2025 model assumes monogamy. These simplifications are useful, but they leave open how general the results are across polygamous systems, selfing species, hermaphrodites, animals with parental care, or systems with strong mate competition outside flowering overlap.
+
+3. Incomplete integration of genetic variance, selection, and demography.  
+   The 2021 paper emphasizes genetic variance and adaptation, the 2023 paper estimates selection on reproductive traits, and the 2025 paper models survival-reproduction trade-offs. However, none fully integrates all three levels: the maintenance of genetic variation, sex-specific trait selection, and life-history-demographic feedbacks in a single predictive framework.
+
+4. Difficulty measuring reproductive trade-offs directly.  
+   The papers recognize that reproduction is shaped by trade-offs, but the empirical and theoretical resolution of those trade-offs remains limited. For example, mating opportunity, gamete production, offspring production, survival, and longevity are difficult to measure simultaneously in natural populations, especially across changing environments.
+
+5. Sex-specific mechanisms are identified but not unified.  
+   All three papers show that males and females can experience different reproductive pressures. However, they use different frameworks: assortative mating and genetic variance in the first, Bateman-style sexual selection in the second, and sex-specific survival trade-offs in the third. A unified theory of how these sex-specific processes interact remains unresolved.
+
+Structural Gaps:
+
+1. No unified framework links genetic variance in reproductive timing, mate acquisition, sex-specific selection, and life-history trade-offs.  
+   The field still lacks a general mechanistic model that connects the genetic architecture of reproductive traits, the ecology of mate finding, sex-specific fitness effects, and survival-longevity trade-offs. Each paper addresses one component, but the combined system remains unsolved.
+
+2. The conditions under which assortative mating or sexual selection helps versus constrains adaptation are not fully resolved.  
+   Assortative mating can increase genetic variance and improve tracking of a changing environment, but it can also reduce polymorphism. Sexual selection can improve mating success, but it may also favor traits that reduce survival or fertility. A major open problem is predicting when these mechanisms enhance evolutionary resilience and when they create maladaptive constraints.
+
+3. Ecological mating agents are not yet fully integrated with life-history evolution.  
+   Pollinators, mate availability, flowering-time overlap, density-dependent mortality, and climate-driven phenological shifts all influence reproduction, but current models often treat them separately. An unresolved scientific problem is how ecological interactions shape both immediate reproductive success and longer-term survival strategies.
+
+4. Sex-specific reproductive constraints lack a general theory across mating systems.  
+   The 2025 model shows that female longevity can be more constrained because offspring production affects fertility of both sexes, but this result depends on monogamy and specific trade-off assumptions. It remains unclear how these dynamics change under polygyny, polyandry, hermaphroditism, parental care, or plant systems with separate male and female function but variable resource allocation.
+
+5. Multivariate reproductive evolution remains underdeveloped.  
+   Reproduction is shaped by multiple correlated traits: flowering time, flower number, corolla width, gamete production, mate number, offspring production, and lifespan. Existing studies often focus on one trait axis or one trade-off. A major open problem is understanding how genetic correlations and multivariate selection constrain or facilitate the evolution of whole reproductive strategies.
+
+6. Empirical validation across environments and generations remains limited.  
+   The models generate clear predictions about assortative mating, genetic variance, sex-specific selection, and longevity, but testing them requires long-term, multigenerational data on reproductive timing, mate success, fertility, survival, and environmental change. Such integrated empirical datasets remain a major unresolved need.
+
+7. Reproductive timing mismatch is not fully resolved as an evolutionary driver.  
+   Flowering time, mate availability, pollinator activity, and climate change can create temporal mismatches. The 2021 paper treats flowering-time adaptation under assortative mating, but the broader problem of how phenological mismatch interacts with sexual selection, pollinator dependence, and survival trade-offs remains open.

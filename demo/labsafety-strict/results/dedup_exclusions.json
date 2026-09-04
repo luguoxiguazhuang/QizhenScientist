@@ -1,0 +1,5 @@
+{
+  "excluded_query_indices": [],
+  "excluded_anchor_indices": [],
+  "source": "runs/R001_dedup_scan/dedup_report.json"
+}

@@ -1,0 +1,443 @@
+# SEED
+META
+topic: Research question: Are there more color pigments to discover?
+Context: It is possible to create new pigments, but not new colors. The first synthetic pigment was made in the early 1700s. In 2009, chemist Mas Subramanian accidently created a new blue pigment called “YInMn Blue.”
+seed_paper: Development of High NIR‐Reflective Red Li<sub>2</sub>MnO<sub>3</sub> Pigments
+
+# CITATION SUBGRAPH (17 refs, temporally ordered by year)
+
+## [1] Effect of hydrothermal treatment on the acidity distribution of γ-Al 2 O 3 support (2006, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 1
+cited_in_sections = []
+cite_count = 0
+section_weight = 0.0
+delta_year = unknown
+is_influential = True
+low_confidence = True
+cited_by_subgraph = 1
+
+[PREDECESSORS]
+- ref_idx=[] delta_yr=unknown edge_type=none
+
+[IDEA]
+Problem: The paper addresses how hydrothermal treatment influences the acidity distribution of γ-Al2O3 supports, which is critical for their catalytic performance.
+Existing Methods: Existing approaches typically characterize γ-Al2O3 acidity after conventional preparation or calcination, but they provide limited insight into how hydrothermal modification redistributes acid sites.
+Motivation: A better understanding is needed of how hydrothermal treatment can tune the acid-site distribution of γ-Al2O3 supports to optimize catalyst support properties.
+Proposed Method: The paper proposes applying hydrothermal treatment to γ-Al2O3 and systematically analyzing the resulting changes in its acidity distribution.
+Experiment Plan: The study likely validates this by preparing hydrothermally treated γ-Al2O3 samples and comparing their acid-site populations using characterization methods such as NH3-TPD, pyridine-IR, and structural analysis.
+
+[ABSTRACT] 
+
+## [2] Mn3+ in Trigonal Bipyramidal Coordination: A New Blue Chromophore (2009, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 1
+cited_in_sections = []
+cite_count = 0
+section_weight = 0.0
+delta_year = unknown
+is_influential = True
+low_confidence = True
+cited_by_subgraph = 4
+
+[PREDECESSORS]
+- ref_idx=[] delta_yr=unknown edge_type=none
+
+[IDEA]
+Problem: The paper addresses the origin of intense blue coloration in oxides containing dilute Mn3+ ions in trigonal bipyramidal coordination.
+Existing Methods: Existing approaches to oxide chromophores often rely on empirical color assignments or conventional coordination environments, without a detailed electronic-structure explanation for unusual Mn3+ sites. This limits the ability to understand or design new intense blue pigments.
+Motivation: A new approach is needed to connect local coordination symmetry, electronic transitions, and optical color in Mn3+-doped oxides. The paper fills this gap by showing that trigonal bipyramidal Mn3+ is a general and intense blue chromophore.
+Proposed Method: The paper combines optical measurements with first-principles density functional theory to identify a symmetry-allowed transition from Mn 3d(x2-y2,xy)-O 2p(x,y) valence states to a narrow Mn 3d(z2) conduction state. It demonstrates this mechanism in a prototype hexagonal YMnO3-YInO3 solid solution and generalizes it to diluted Mn3+ in trigonal bipyramidal coordination.
+Experiment Plan: The authors validate the mechanism by measuring optical absorption and color in the prototype solid solution and comparing the results with calculated electronic structures. They further test generality by examining other diluted Mn3+ oxides with trigonal bipyramidal coordination.
+
+[ABSTRACT] We show that trivalent manganese, Mn(3+), imparts an intense blue color to oxides when it is introduced at dilution in trigonal bipyramidal coordination. Our optical measurements and first-principles density functional theory calculations indicate that the blue color results from an intense absorption in the red/green region. This absorption is due in turn to a symmetry-allowed optical transition between the valence-band maximum, composed of Mn 3d(x(2)-y(2),xy) states strongly hybridized with O 2p(x,y) states, and the narrow Mn 3d(z(2))-based conduction-band minimum. We begin by demonstrating and explaining the effect using a well-defined prototype system: the hexagonal YMnO(3)-YInO(3) solid solution. We then show that the behavior is a general feature of diluted Mn(3+) in this coordination environment.
+
+## [3] Li 2 MnO 3 : a rare red-coloured manganese( iv ) oxide exhibiting tunable red–yellow–green emission (2015, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 1
+cited_in_sections = []
+cite_count = 0
+section_weight = 0.0
+delta_year = unknown
+is_influential = True
+low_confidence = True
+cited_by_subgraph = 4
+
+[PREDECESSORS]
+- ref_idx=[] delta_yr=unknown edge_type=none
+
+[IDEA]
+Problem: The paper addresses the origin of the unusual red color and tunable red–yellow–green emission in the manganese(IV) oxide Li2MnO3.
+Existing Methods: Existing manganese oxide and Mn(IV)-based optical materials generally lack combined red coloration and broadly tunable emission, and their structure–property relationships are often poorly understood.
+Motivation: A new understanding is needed to explain how a rare Mn(IV) oxide can exhibit such distinctive optical behavior and to identify the structural features responsible for it.
+Proposed Method: The paper proposes that Li2MnO3 exhibits its rare red color and tunable emission because of honeycomb-ordered LiMn6 units within a rock-salt-based layered structure.
+Experiment Plan: The approach is validated by examining Li2MnO3’s structural features and correlating them with its observed red coloration and tunable red–yellow–green emission properties.
+
+[ABSTRACT] Li 2 MnO 3 is a rare, red-coloured, Mn( iv ) oxide that shows tunable red–yellow–green emission: both the red colour and the tunable emission likely arise from the honey-comb ordered LiMn 6 units in the rock salt based layered structure of this oxide.
+
+## [4] Organic/inorganic hybrid pigments from flavylium cations and palygorskite (2018, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 2
+cited_in_sections = []
+cite_count = 0
+section_weight = 0.0
+delta_year = unknown
+is_influential = True
+low_confidence = True
+cited_by_subgraph = 3
+
+[PREDECESSORS]
+- ref_idx=[] delta_yr=unknown edge_type=none
+
+[IDEA]
+Problem: Natural and synthetic dyes used as pigments often suffer from limited color stability, photostability, and thermal stability, especially under changing pH conditions.
+Existing Methods: Maya Blue-inspired organic/inorganic hybrid pigments can stabilize dyes by adsorption or inclusion in clay hosts, but suitable chromophore-host combinations and structure-adsorption relationships remain insufficiently explored.
+Motivation: Flavylium cations offer attractive colors and fluorescence, but their practical use requires protection from environmental degradation and understanding of how substituents affect incorporation into clay channels.
+Proposed Method: The paper prepares hybrid pigments by adsorbing five flavylium cations onto palygorskite, identifying FL1 and FL2, which lack a 4-methyl substituent, as strongly bound fluorescent pigments.
+Experiment Plan: The approach is validated by characterizing spectroscopic and fluorescence properties, color response to external pH, photochemical stability, and thermal stability of the flavylium/palygorskite pigments.
+
+[ABSTRACT] Features such as color, brightness and fluorescence are extremely important in applications of pigments. Hybrid materials inspired by the ancient Maya Blue pigment are a promising alternative to improve the properties and applicability of natural and synthetic dyes. In this work, we report the preparation, photophysical properties, and stability of several fluorescent hybrid pigments based on flavylium cations (FL) adsorbed on palygorskite (PAL). Five flavylium cations were investigated, viz., the 3′,4′,7-trimethoxyflavylium (FL1), 7-hydroxy-4′-methoxy-flavylium (FL2), 7-hydroxy-4-methylflavylium (FL3), 5,7-dihydroxy-4-methylflavylium (FL4) and 7-methoxy-4-methylflavylium (FL5) cations. Only FL1 and FL2, without a methyl substituent at the 4-position that could hinder inclusion in palygorskite channels, adsorbed strongly on PAL, producing fluorescent hybrid pigments with attractive colors. The spectroscopic and fluorescence properties of the FL1/PAL and FL2/PAL hybrid pigments were characterized. The color of the adsorbed dyes was somewhat more resistant to changes in external pH, photochemical stability was maintained and the thermal lability was markedly improved in the FL/PAL hybrid pigments, pointing to flavylium cations as promising chromophores for the development of fluorescent hybrid pigments with attractive colors.
+
+## [5] A Comparative Study on Color Stability of Anthocyanin Hybrid Pigments Derived from 1D and 2D Clay Minerals (2019, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 1
+cited_in_sections = []
+cite_count = 46
+section_weight = 0.0
+delta_year = 1
+is_influential = True
+low_confidence = True
+cited_by_subgraph = 3
+
+[PREDECESSORS]
+- ref_idx=6 delta_yr=0 edge_type=parallel_pred
+
+[IDEA]
+Problem: Natural anthocyanin pigments have limited color stability, and it is unclear how different clay mineral structures affect their loading, interaction mechanisms, and stability in hybrid pigments.
+Existing Methods: Anthocyanins can be combined with clay minerals to improve pigment stability, but existing studies do not systematically compare one-dimensional and two-dimensional clay hosts or explain how their structures influence color stability and responsive color change.
+Motivation: A comparative understanding of clay-anthocyanin interactions is needed to design more stable natural hybrid pigments with improved thermal, chemical, and reversible gas-sensitive allochroic properties.
+Proposed Method: The paper fabricates anthocyanin hybrid pigments by loading blueberry-derived anthocyanin onto halloysite, sepiolite, kaolinite, and montmorillonite, and compares their interaction mechanisms and resulting color stability.
+Experiment Plan: The study evaluates pigment stability and color-change behavior through thermal and chemical resistance tests, reversible HCl/NH3 gas response measurements, and preparation of an anthocyanin/sepiolite-coated pH test paper.
+
+[ABSTRACT] Anthocyanin extracted from the fresh blue berry fruits was loaded onto different clay minerals including one-dimensional tubular halloysite and fibrous sepiolite, and two-dimensional lamellar kaolinite and montmorillonite to fabricate reversible allochroic hybrid pigments. The effect of the possible interaction mechanism between anthocyanin and clay minerals on the color stability of hybrid pigments was investigated. Due to the difference in the structures and properties of clay minerals, natural anthocyanin was inclined to be absorbed on the surface and intercalated into the interlayer of 2:1 type layered montmorillonite, while it was mainly anchored on the surface of 1:1 type kaolinite and halloysite. By contrast, it was simultaneously loaded on the surface and confined into the nanochannels and/or grooves of 2:1 type chain-layered sepiolite. Interestingly, the resulting hybrid pigments presented good thermal stability and resistance to chemical reagents, as well as reversible gas-sensitive allochroic behavior in HCl or NH3 gases, especially anthocyanin/sepiolite hybrid pigments due to the shielding effect of the well-defined nanochannels and grooves of sepiolite. Based on this color-change behavior, a simple pH test paper was also prepared with obvious color change at different pH values by coating the filter paper with anthocyanin/sepiolite hybrid pigments.
+
+## [6] Acid/base reversible allochroic anthocyanin/palygorskite hybrid pigments: Preparation, stability and potential applications (2019, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 1
+cited_in_sections = []
+cite_count = 38
+section_weight = 0.0
+delta_year = 1
+is_influential = True
+low_confidence = True
+cited_by_subgraph = 4
+
+[PREDECESSORS]
+- ref_idx=4 delta_yr=1 edge_type=explicit_pred
+
+[IDEA]
+Problem: The paper addresses the need for acid/base responsive pigments that can reversibly change color while maintaining sufficient stability for practical applications.
+Existing Methods: Existing color-changing systems often rely on free anthocyanins or synthetic pH-sensitive dyes, which may suffer from limited stability, poor reusability, or insufficient compatibility with solid pigment applications.
+Motivation: A new approach is needed to combine natural anthocyanin color responsiveness with a mineral support to improve stability and enable reversible acid/base color switching.
+Proposed Method: The paper proposes preparing hybrid pigments by incorporating anthocyanins into palygorskite, creating acid/base reversible allochroic pigments with enhanced stability.
+Experiment Plan: The study likely validates the approach by preparing the hybrid pigments, characterizing their structure and color response, testing reversible acid/base color changes, and evaluating stability for potential applications.
+
+[ABSTRACT] 
+
+## [7] Systematic color variation across the solid solution members, Li2Mn1-Ti O3 (0.0 ≤ x ≤ 1.0) (2019, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 1
+cited_in_sections = []
+cite_count = 3
+section_weight = 0.0
+delta_year = 1
+is_influential = True
+low_confidence = True
+cited_by_subgraph = 2
+
+[PREDECESSORS]
+- ref_idx=3 delta_yr=4 edge_type=explicit_pred
+
+[IDEA]
+Problem: The paper addresses how the visible color of Li2Mn1-xTixO3 solid-solution oxides changes systematically with Mn/Ti composition.
+Existing Methods: Prior studies often report color qualitatively for individual lithium transition-metal oxides without a continuous compositional series or quantitative optical analysis.
+Motivation: A systematic compositional study is needed to link color variation to substitution-driven changes in crystal and electronic structure across the solid solution.
+Proposed Method: The paper investigates a complete Li2Mn1-xTixO3 series, from x = 0.0 to x = 1.0, and correlates composition with structural and optical/color properties.
+Experiment Plan: Samples across the solid solution are synthesized and characterized using structural analysis and diffuse-reflectance or visible spectroscopy to track color changes versus composition.
+
+[ABSTRACT] 
+
+## [8] Effect of [MnO6] Octahedra to the Coloring Mechanism of (Li1–xNax)2MnO3 (2020, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 1
+cited_in_sections = []
+cite_count = 14
+section_weight = 0.0
+delta_year = 0
+is_influential = True
+low_confidence = True
+cited_by_subgraph = 3
+
+[PREDECESSORS]
+- ref_idx=3 delta_yr=5 edge_type=explicit_pred
+- ref_idx=7 delta_yr=1 edge_type=explicit_pred
+
+[IDEA]
+Problem: The paper addresses how the local steric structure of [MnO6] octahedra controls the optical absorption and red coloration of Mn4+-containing (Li1–xNax)2MnO3 pigments.
+Existing Methods: Prior Mn4+-based pigment and phosphor studies generally rely on compositional tuning and optical spectroscopy, but they do not fully connect specific octahedral bond-length changes and distortions to spin-allowed and spin-forbidden d–d transitions.
+Motivation: A clearer structure–color relationship is needed to design environment-friendly inorganic red pigments with high red color purity using Mn4+ as the coloring source.
+Proposed Method: The paper introduces Na+ substitution into Li2MnO3 to enlarge and distort [MnO6] octahedra, then links these structural changes to d–d transition shifts, absorption intensity, and color purity.
+Experiment Plan: It synthesizes (Li1–xNax)2MnO3 solid solutions by solid-state reaction and validates the mechanism using crystal-structure analysis, optical absorption spectroscopy, and colorimetric evaluation across x = 0–0.10.
+
+[ABSTRACT] High Resolution Image Download MS PowerPoint Slide (Li 1– x Na x ) 2 MnO 3 (0 ≤ x ≤ 0.10) solid solutions were synthesized by a conventional solid-state reaction technique to investigate the relationship between the steric structure of the [MnO 6 ] octahedra and coloration mechanisms. The color, optical properties, and crystal structure of the solid solutions were characterized. The (Li 1– x Na x ) 2 MnO 3 (0 ≤ x ≤ 0.10) solid solutions absorbed the visible light at wavelengths shorter than 550 nm and around 680 nm. The former and latter optical absorption bands were attributed to the spin-allowed ( 4 A 2g → 4 T 1g, 4 T 2g ) and spin-forbidden ( 4 A 2g → 2 E g, 2 T 1g ) d–d transitions of tetravalent manganese ions, respectively. The absorption band assigned to the 4 A 2g → 4 T 2g transition shifted toward longer wavelengths with the enlargement of the average [Mn(2)O 6 ] bond distance by doping Na + . In contrast, the latter absorption bands did not shift but the absorption intensities increased due to the distortion of the [Mn(2)O 6 ] octahedra. Consequently, the red color purity of the sample gradually increased with the increase in the Na + concentration. Among the (Li 1– x Na x ) 2 MnO 3 (0 ≤ x ≤ 0.10) samples synthesized in this study, the highest red color purity was obtained in the (Li 0.93 Na 0.07 ) 2 MnO 3 (hue angle: h ° = 39.1) sample. The results of this study provide important insights for the development of environment-friendly inorganic red pigments containing Mn 4+ ions as a coloring source.
+
+## [9] Anthocyanin Hybrid Nanopigments from Pomegranate Waste: Colour, Thermomechanical Stability and Environmental Impact of Polyester-Based Bionanocomposites (2021, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 2
+cited_in_sections = []
+cite_count = 27
+section_weight = 0.0
+delta_year = -1
+is_influential = True
+low_confidence = True
+cited_by_subgraph = 1
+
+[PREDECESSORS]
+- ref_idx=5 delta_yr=2 edge_type=explicit_pred
+- ref_idx=6 delta_yr=2 edge_type=explicit_pred
+- ref_idx=0 delta_yr=1 edge_type=explicit_pred
+
+[IDEA]
+Problem: The paper addresses the need for sustainable natural colorants with improved thermal stability, tunable color, and low environmental impact for polyester-based bionanocomposites.
+Existing Methods: Existing approaches often rely on synthetic pigments or natural dyes with limited thermal stability, color control, and insufficient integration into circular bioeconomy frameworks.
+Motivation: A new approach is needed to valorize pomegranate waste into stable hybrid nanopigments while improving color performance, material reinforcement, and environmental sustainability.
+Proposed Method: The paper proposes synthesizing anthocyanin hybrid nanopigments using pomegranate-derived dye combined with calcined hydrotalcite or montmorillonite nanoclays, optionally with biomordants, and incorporating them into polyester bionanocomposites.
+Experiment Plan: The approach is validated by evaluating color variation, thermal stability, mechanical properties, gloss, and environmental impact through life cycle assessment of the resulting nanofillers and bionanocomposites.
+
+[ABSTRACT] In the present work, anthocyanin (ACN) hybrid nanopigments were synthetized by using a natural pomegranate dye (PD) and calcined hydrotalcite (HT) and montmorillonite (MMT) nanoclays. A wide colour gamut was obtained with MMT-based nanopigments ranging from reddish to bluish hues caused by structural transformations of ACNs at different pH values. However, a buffer effect was observed with HT obtaining samples a similar final colour regardless of the synthesis conditions. Nanopigments added with a biomordant extracted from pomegranate peels showed a different colour compared to the incorporation of a commercial mordant due to the intrinsic colouring properties of the pomegranate bioadditive. The developed nanopigments were incorporated at 7 wt% loading to produce novel polyester-based bionanocomposites which were characterized in terms of thermal, mechanical and colour properties. The encapsulation of PD into the nanoclays improved its thermal stability, in particular for MMT-based nanopigments. The pH changes observed during the nanofillers synthesis affected the final colour of the MMT-based nanocomposites, inducing a general increase in ∆E* and a decrease in gloss values. Slight improvements were obtained in terms of elastic modulus for MMT-based polymer samples confirming the applicability of the developed bionanocomposites as colouring and reinforcement materials. A very similar environmental profile was obtained for MMT and HT-based nanofillers showing MMT-based nanopigments a slightly better general behaviour. The results of the LCA study evidenced the suitability of the processes used in this work to the circular bioeconomy approach through sustainable food waste management and the production of bioplastics using waste substrates.
+
+## [10] New red pigments based on Li3AlMnO5 for NIR reflective cool coatings (2021, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 2
+cited_in_sections = []
+cite_count = 19
+section_weight = 0.0
+delta_year = -1
+is_influential = True
+low_confidence = True
+cited_by_subgraph = 1
+
+[PREDECESSORS]
+- ref_idx=2 delta_yr=12 edge_type=explicit_pred
+- ref_idx=0 delta_yr=1 edge_type=explicit_pred
+- ref_idx=8 delta_yr=1 edge_type=explicit_pred
+
+[IDEA]
+Problem: The paper addresses the need for red pigments that can provide strong visible red color while reflecting near-infrared radiation for cool coating applications.
+Existing Methods: Existing red pigments often rely on organic dyes, toxic heavy-metal compounds, or conventional inorganic pigments that may suffer from poor durability, limited NIR reflectance, or environmental concerns.
+Motivation: A new inorganic red pigment is needed to combine stable red coloration with high NIR reflectance, enabling energy-saving cool coatings without relying on less durable or hazardous pigment systems.
+Proposed Method: The paper proposes developing new red pigments based on Li3AlMnO5, using this manganese-containing oxide framework to achieve red color and high NIR reflective behavior.
+Experiment Plan: The study likely validates the pigments by synthesizing Li3AlMnO5-based powders, characterizing their structure and color, measuring NIR/solar reflectance, and assessing their performance in reflective coating formulations.
+
+[ABSTRACT] 
+
+## [11] Novel Orange Color Pigments Based on La3LiMnO7 (2021, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 2
+cited_in_sections = []
+cite_count = 3
+section_weight = 0.0
+delta_year = -1
+is_influential = True
+low_confidence = True
+cited_by_subgraph = 0
+
+[PREDECESSORS]
+- ref_idx=3 delta_yr=6 edge_type=explicit_pred
+- ref_idx=0 delta_yr=1 edge_type=explicit_pred
+- ref_idx=8 delta_yr=1 edge_type=explicit_pred
+
+[IDEA]
+Problem: The paper addresses the need for bright, environmentally friendly inorganic orange pigments with strong color performance.
+Existing Methods: Commercially available orange pigments are used, but they show lower redness and yellowness values and may raise environmental or toxicity concerns.
+Motivation: A new non-toxic orange pigment is needed that provides a brighter orange color than existing commercial products.
+Proposed Method: The paper proposes La3LiMn1−xTixO7 pigments, especially La3LiMn0.97Ti0.03O7, synthesized by a solid-state reaction method.
+Experiment Plan: The authors validate the approach by characterizing crystal structure, optical absorption, and color properties, then comparing the pigment’s redness and yellowness with commercial orange pigments.
+
+[ABSTRACT] La3LiMn1−xTixO7 (0 ≤ x ≤ 0.05) samples were synthesized by a solid-state reaction method, and a single-phase form was observed for the samples in the range of x ≤ 0.03. Crystal structure, optical properties, and color of the La3LiMn1−xTixO7 (0 ≤ x ≤ 0.03) samples were characterized. Strong optical absorption was observed at a wavelength between 400 and 550 nm, and a shoulder absorption peak also appeared around 690 nm in all samples; orange colors were also exhibited. Among the samples synthesized, the most brilliant orange color was obtained at La3LiMn0.97Ti0.03O7. The redness (a*) and yellowness (b*) values of this pigment were higher than those of the commercially available orange pigments. Therefore, the orange color of this pigment is brighter than those of the commercial products. Since the La3LiMn0.97Ti0.03O pigment is composed of non-toxic elements, it could be a new environmentally friendly inorganic orange pigment.
+
+## [12] Relation between crystal structure and optical properties in the correlated blue pigment YIn1−xMnxO3 (2022, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 1
+cited_in_sections = []
+cite_count = 4
+section_weight = 0.0
+delta_year = -2
+is_influential = True
+low_confidence = True
+cited_by_subgraph = 1
+
+[PREDECESSORS]
+- ref_idx=2 delta_yr=13 edge_type=explicit_pred
+
+[IDEA]
+Problem: The paper addresses the origin of the bright blue color in the correlated pigment YIn1−xMnxO3 and whether it is directly caused by the local oxygen coordination environment of Mn impurities.
+Existing Methods: Prior work had suggested that Mn in an unusual trigonal bipyramidal coordination is responsible for the color, but lacked a quantitative link between local Mn structure, many-body optical transitions, and measured diffuse reflectance.
+Motivation: A new approach is needed to connect atomic-scale Mn coordination and correlated electronic transitions to the macroscopic optical response of a scattering pigment sample.
+Proposed Method: The paper combines dynamical mean-field theory for quasi-atomic Mn multiplets at low doping with a Kubelka-Munk effective-medium model to compute diffuse reflectance from different local Mn coordinations.
+Experiment Plan: The approach is validated by comparing predicted absorption and diffuse reflectance for different Mn coordination polyhedra with experimental pigment color, identifying a distorted two-pyramid Mn environment as consistent with the observed blue color.
+
+[ABSTRACT] A material's properties and functionalities are determined by its chemical constituents and the atomic arrangement in which they crystallize. For the recently discovered pigment ${\mathrm{YIn}}_{1\ensuremath{-}x}{\mathrm{Mn}}_{x}{\mathrm{O}}_{3}$, for instance, it had been surmised that its bright blue color owes to an unusual, trigonal bipyramidal, oxygen coordination of the manganese impurities. Here, we demonstrate that, indeed, a direct correspondence between details of the local Mn environment and the pigment's blue color holds: Combining realistic many-body calculations (dynamical mean-field theory to treat the quasi-atomic Mn-multiplets at low doping $x=8%$) with an effective medium description (Kubelka-Munk model to describe scattering in a milled pigment sample), we find that only a Mn-coordination polyhedra consisting of two distorted oxygen pyramids results in a diffuse reflectance commensurate with the experimental blue color. We motivate that the distortion of the bipyramid helps circumventing atomic selection rules, allowing for dipolar $d\text{\ensuremath{-}}d$ transitions and creating the desired two-peak absorption profile.
+
+## [13] Thermochromic properties of some colored oxide materials (2022, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 4
+cited_in_sections = []
+cite_count = 0
+section_weight = 0.0
+delta_year = unknown
+is_influential = True
+low_confidence = True
+cited_by_subgraph = 1
+
+[PREDECESSORS]
+- ref_idx=[] delta_yr=unknown edge_type=none
+
+[IDEA]
+Problem: The paper addresses the need to systematically characterize and quantify the high-temperature thermochromic behavior of colored, commercially available, non-toxic oxide materials.
+Existing Methods: Existing studies of thermochromic oxides often lack comprehensive, comparable colorimetric datasets over wide temperature ranges and may not focus on non-toxic commercial powders suitable for practical use.
+Motivation: A quantitative understanding of reversible color change in these oxides is needed to predict their performance and to design blends for high-temperature thermochromic applications.
+Proposed Method: The paper measures temperature-dependent CIELAB color parameters and calculates the color contrast ΔE to quantify thermochromism, complemented by DSC analysis to detect possible physico-chemical transitions.
+Experiment Plan: The approach is validated by testing several oxides up to 500 °C, comparing their color evolution, reversibility, and exceptional behaviors such as weak thermochromism in Er2O3 and incomplete recovery in WO3.
+
+[ABSTRACT] The thermochromic properties up to 500 °C of some colored, commercial and non-toxic oxides were studied. It includes Bi2O3, Fe2O3, In2O3, WO3, Er2O3, YAG:Ce (Ce doped yttrium aluminum garnet Y3Al5O12) and YInMn-Blue (Mn doped yttrium indium oxide YInO3). From the CIELAB colorimetric parameters (L*a*b*), evolution of the color contrast ΔE with temperature was calculated. It allowed estimating that most of these oxides change color reversibly with increasing temperature, the strongest thermochromism being found for Bi2O3 (ΔE ∼ 65 at 500 °C). Two exceptions were identified: i) Er2O3 which stayed almost identically pink with ΔE<7 even at 500 °C and ii) WO3 which original color was not recovered upon cooling back to room temperature. While the color change of the other oxides was gradual with increasing temperature, YAG:Ce compound behaved differently since its thermochromicity abruptly started above 300 °C. DSC analyses did not allow detecting any physico-chemical event in relation with these peculiarities. The obtained datasets for all these compounds can be used for anticipating the thermochromic properties of these powders and the blends made out of them.
+
+## [14] Organic–Inorganic Hybrid Pigments Based on Bentonite: Strategies to Stabilize the Quinoidal Base Form of Anthocyanin (2023, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 2
+cited_in_sections = []
+cite_count = 19
+section_weight = 0.0
+delta_year = -3
+is_influential = True
+low_confidence = True
+cited_by_subgraph = 0
+
+[PREDECESSORS]
+- ref_idx=4 delta_yr=5 edge_type=explicit_pred
+- ref_idx=6 delta_yr=4 edge_type=explicit_pred
+- ref_idx=0 delta_yr=3 edge_type=explicit_pred
+
+[IDEA]
+Problem: Anthocyanin natural pigments are attractive alternatives to toxic synthetic food dyes, but they are unstable under light, pH changes, oxygen, and temperature.
+Existing Methods: Existing strategies include using natural anthocyanins directly or combining biomolecules with inorganic materials such as clay minerals to improve stability.
+Motivation: A new approach is needed to specifically stabilize the fragile quinoidal base form of anthocyanins, which is responsible for desirable purple and blue colors but degrades easily.
+Proposed Method: The paper proposes organic–inorganic hybrid pigments made by intercalating cetyltrimethylammonium bromide into bentonite clay and incorporating anthocyanin dye under different pH conditions.
+Experiment Plan: The authors characterize the organobentonite structure and dye incorporation, then evaluate photostability under visible light for 200 hours, comparing pigments prepared at different pH values.
+
+[ABSTRACT] Anthocyanins are one of the natural pigments that humanity has employed the most and can substitute synthetic food dyes, which are considered toxic. They are responsible for most purple, blue, and red pigment nuances in tubers, fruits, and flowers. However, they have some limitations in light, pH, oxygen, and temperature conditions. Combining biomolecules and inorganic materials such as clay minerals can help to reverse these limitations. The present work aims to produce materials obtained using cetyltrimethylammonium bromide in bentonite clay for incorporation and photostabilization of anthocyanin dye. Characterizations showed that the organic molecules were intercalated between the clay mineral layers, and the dye was successfully incorporated at a different pH. Visible light-driven photostability tests were performed with 200 h of irradiation, confirming that the organic-inorganic matrices were efficient enough to stabilize the quinoidal base form of anthocyanin. The pigment prepared at pH 10 was three-fold more stable than pH 4, showing that the increase in the synthesis pH promotes more stable colors, probably due to the stronger intermolecular interaction obtained under these conditions. Therefore, organobentonite hybrids allow to stabilize the fragile color coming from the quinoidal base form of anthocyanin dyes.
+
+## [15] High-Pressure Route to Irreversible Thermochromic Materials (2024, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 2
+cited_in_sections = []
+cite_count = 6
+section_weight = 0.0
+delta_year = -4
+is_influential = True
+low_confidence = True
+cited_by_subgraph = 0
+
+[PREDECESSORS]
+- ref_idx=2 delta_yr=15 edge_type=explicit_pred
+- ref_idx=0 delta_yr=1 edge_type=explicit_pred
+
+[IDEA]
+Problem: Irreversible thermochromic materials that operate at high temperatures often suffer from low durability or rely on toxic elements. The paper addresses the need for stable, non-toxic high-temperature irreversible color-change materials.
+Existing Methods: Existing irreversible thermochromism in solids is usually based on chemical changes, which can reduce durability. Materials operating above 1000 °C often contain toxic elements.
+Motivation: A new approach is needed to achieve high-temperature irreversible thermochromism without chemical degradation or toxic constituents. The paper fills this gap by using pressure-stabilized metastable phases to enable durable color change through structural transitions.
+Proposed Method: The paper proposes using high-pressure synthesis to create a metastable high-pressure phase of an inorganic material containing transition-metal and rare-earth ions. Upon heating at ambient pressure, the material irreversibly transforms to a stable phase, changing the local environment of transition-metal ions and producing a color change.
+Experiment Plan: The approach is validated in the perovskite family RIn0.9Mn0.1O3, where R = Y, Dy, Tb, Gd, or Eu. The authors observe irreversible thermochromism above 1000 °C and show that the operating temperature can be tuned by changing the rare-earth ion.
+
+[ABSTRACT] Irreversible thermochromic materials change color when heated but do not return to their original color when cooled. This property enables the permanent storage of temperature history and can serve as a temperature marker. However, irreversible thermochromism in solids is usually based on chemical changes, leading to potential drawbacks such as low durability. Additionally, irreversible thermochromic materials operating at high temperatures above 1000 °C often contain toxic elements. Here, we propose a material design that achieves high-temperature irreversible thermochromism without chemical changes, which is applicable to inorganic materials containing no toxic elements. The design utilizes high-pressure (HP) synthesis to obtain a metastable HP phase of an inorganic material consisting of transition-metal (TM) and rare-earth (R) ions. The color is dominated by d–d transitions of the TM ions. When heated under ambient pressure (AP), a metastable HP phase sample can undergo an irreversible structural phase transition to a stable AP phase due to thermally activated diffusion of constituent ions. The resulting change in the local environment around the TM ions can induce the color change. Additionally, the R ions are likely to be difficult to diffuse, thus increasing the transition temperature. Therefore, high-temperature irreversible thermochromism is expected. We demonstrate this proposal by observing irreversible thermochromism above 1000 °C in a perovskite family RIn 0.9 Mn 0.1 O 3 (R = Y, Dy, Tb, Gd, and Eu). Furthermore, the operating temperature can be tuned by changing the R-site ions. Our proposal is not limited to this perovskite family and provides a useful guideline for exploring new thermochromic materials.
+
+## [16] Studies of the Morphology of Hematite Synthesized from Waste Iron Sulfate (2024, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 2
+cited_in_sections = []
+cite_count = 8
+section_weight = 0.0
+delta_year = -4
+is_influential = True
+low_confidence = True
+cited_by_subgraph = 0
+
+[PREDECESSORS]
+- ref_idx=0 delta_yr=3 edge_type=explicit_pred
+
+[IDEA]
+Problem: The paper addresses the need to convert waste iron sulfate into valuable hematite iron pigments while reducing waste disposal challenges and supporting sustainable pigment production.
+Existing Methods: Existing pigment synthesis approaches often rely on conventional heating, virgin iron sources, or insufficiently optimized oxidation and precipitation conditions, which can limit efficiency, sustainability, and particle morphology control.
+Motivation: A new approach is needed to transform waste iron sulfate into high-quality iron oxide pigments using faster, energy-efficient reactions with controlled morphology and crystalline structure.
+Proposed Method: The paper proposes synthesizing hematite pigments from waste iron sulfate by optimizing pH, oxidizing agents such as hydrogen peroxide or atmospheric air, and precipitation agents such as sodium hydroxide or ammonia solution.
+Experiment Plan: The approach is validated by characterizing the synthesized pigments using Helium Ion Microscopy for particle morphology and X-ray diffraction for crystalline iron oxide phase identification.
+
+[ABSTRACT] Microwave-based reactions have gained traction in recent years due to their ability to enhance reaction rates and yield while reducing energy consumption. Also, according to the conception of 'waste to materials', various waste feeds are intensively sought to be tested. The experimental setup of this study involved varying pH levels, oxidation agents, and precipitation agents to optimize the synthesis process of iron red based on waste iron sulfate. The selection of oxidation and precipitation agents was found to significantly influence the pigment synthesis process. Various oxidizing agents, including hydrogen peroxide and atmospheric air, were evaluated for their effectiveness in promoting the oxidation of ferrous ions to ferric ions, essential for pigment formation. Additionally, different precipitation agents such as sodium hydroxide and ammonia solution were assessed for their ability to precipitate iron hydroxides and facilitate pigment particle formation. The characterization of synthesized pigments revealed promising results in terms of quality and color properties. Helium Ion Microscopy (HIM) analysis confirmed the formation of well-defined pigment particles with controlled morphology. X-ray diffraction (XRD) studies provided insights into the crystalline structure of the pigments, indicating the presence of characteristic iron oxide phases. By improving this technology, waste iron sulfate can be efficiently transformed into valuable iron pigments, offering a sustainable solution for waste management while meeting the growing demand for high-quality pigments.
+
+## [17] Cr3+-doped LaAlO3 red pigments with enhanced near-infrared reflectance for energy-efficient coatings (2025, venue=N/A)
+authors: N/A
+
+[EDGE]
+layer_depth = 2
+cited_in_sections = []
+cite_count = 4
+section_weight = 0.0
+delta_year = -5
+is_influential = True
+low_confidence = True
+cited_by_subgraph = 0
+
+[PREDECESSORS]
+- ref_idx=0 delta_yr=5 edge_type=explicit_pred
+- ref_idx=10 delta_yr=4 edge_type=explicit_pred
+
+[IDEA]
+Problem: Red pigments used in coatings often absorb near-infrared radiation, leading to unwanted heat buildup and reduced energy efficiency in buildings and surfaces.
+Existing Methods: Conventional red pigments such as iron oxides, organic dyes, or complex inorganic pigments can provide color but typically have limited near-infrared reflectance, thermal stability, or environmental compatibility.
+Motivation: There is a need for red pigments that maintain strong visible color while reflecting near-infrared radiation to enable cooler, energy-efficient coatings.
+Proposed Method: The paper proposes Cr3+-doped LaAlO3 pigments, using chromium substitution in a perovskite host to produce red coloration and enhance near-infrared reflectance.
+Experiment Plan: The study likely synthesizes the doped pigments, characterizes their structure, color, and optical properties, and evaluates near-infrared reflectance and coating performance for energy-efficient applications.
+
+[ABSTRACT]
