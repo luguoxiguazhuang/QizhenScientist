@@ -10,7 +10,17 @@ import react from '@vitejs/plugin-react'
 import docsMarkdown from './docs/vite-plugin-docs.js'
 
 const IDEA_SCRIPT_ROOT = resolve(__dirname, '../../idea_generation_scripts')
+const FRONTEND_ENV_FILE = resolve(__dirname, '../.env')
 const IDEA_JOBS = new Map()
+
+async function readIdeaBaseEnv() {
+  try {
+    return await readFile(resolve(IDEA_SCRIPT_ROOT, '.env'), 'utf8')
+  } catch (error) {
+    if (error.code !== 'ENOENT') throw error
+    return readFile(FRONTEND_ENV_FILE, 'utf8')
+  }
+}
 
 function replaceEnvValue(source, key, value) {
   // run_idea.sh sources this file, so quote user-provided values as shell
@@ -52,7 +62,7 @@ function ideaGenerationApi() {
           if (!baseUrl || !apiKey || !question?.trim()) {
             res.statusCode = 400
             res.setHeader('Content-Type', 'application/json')
-            res.end(JSON.stringify({ error: '请填写 Base URL、API Key 和研究问题。' }))
+            res.end(JSON.stringify({ error: '请提供 Qwen3.8-Max 的 API Key 和 base URL。' }))
             return
           }
 
@@ -66,7 +76,7 @@ function ideaGenerationApi() {
           const tempDir = await mkdtemp(resolve(tmpdir(), 'qizhen-idea-'))
           const inputPath = resolve(tempDir, 'input_question.json')
           const envPath = resolve(tempDir, '.env')
-          const baseEnv = await readFile(resolve(IDEA_SCRIPT_ROOT, '.env'), 'utf8')
+          const baseEnv = await readIdeaBaseEnv()
           let envText = replaceEnvValue(baseEnv, 'LLM_API_KEY', apiKey)
           envText = replaceEnvValue(envText, 'LLM_BASE_URL', baseUrl)
           envText = replaceEnvValue(envText, 'LLM_MODEL', model || 'qwen3.8-max')

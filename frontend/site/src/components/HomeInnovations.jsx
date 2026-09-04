@@ -158,7 +158,7 @@ function IdeaDialog({ onClose }) {
           </div>
         ) : (
           <form className="idea-form" onSubmit={submit}>
-            <p className="idea-form__intro">请提供 Qwen3.8-Max 的 OpenAI 兼容接口信息和 API Key。默认模型为 Qwen3.8-Max，运行模式为 Flash。</p>
+            <p className="idea-form__intro">请提供Qwen3.8-Max的API Key和base URL即可。</p>
             <div className="idea-form__grid">
               <label>Qwen Base URL<input required type="url" value={form.baseUrl} onChange={update('baseUrl')} placeholder="https://.../v1" disabled={running} /></label>
               <label>Qwen API Key<input required type="password" value={form.apiKey} onChange={update('apiKey')} placeholder="sk-..." disabled={running} /></label>
