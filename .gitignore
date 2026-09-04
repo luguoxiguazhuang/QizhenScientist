@@ -27,4 +27,4 @@ demo/labsafety-strict/runs/
 *.bin
 
 # Archived experiment trajectories are repository data, not model weights
-!demo/real-machine-iteration/results/**/*.pt
+!demo/experiment-iteration/results/**/*.pt
