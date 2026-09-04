@@ -6,6 +6,7 @@ ENV_FILE="${ENV_FILE:-$ROOT_DIR/.env}"
 INPUT_FILE="${INPUT_FILE:-$ROOT_DIR/input_question.json}"
 IDEA_FILE="${IDEA_FILE:-$ROOT_DIR/idea.md}"
 MODE_VALUE="${FULL:-false}"
+PYTHON="$ROOT_DIR/.runtime/.venv/bin/python"
 
 [[ -f "$ENV_FILE" ]] || { echo "Missing .env; run ./setup.sh first." >&2; exit 1; }
 [[ -f "$INPUT_FILE" ]] || { echo "Missing input JSON: $INPUT_FILE" >&2; exit 1; }
@@ -25,9 +26,13 @@ case "${MODE_VALUE,,}" in
 esac
 
 command -v jq >/dev/null || { echo "jq is required" >&2; exit 1; }
-PYTHON="$ROOT_DIR/.runtime/.venv/bin/python"
 REPO_DIR="$ROOT_DIR/SciAtlas"
-[[ -x "$PYTHON" && -d "$REPO_DIR" ]] || { echo "Run ./setup.sh first." >&2; exit 1; }
+[[ -d "$REPO_DIR" ]] || { echo "Missing local SciAtlas checkout: $REPO_DIR" >&2; exit 1; }
+if [[ ! -x "$PYTHON" ]]; then
+  echo "Preparing the local idea-generation environment..." >&2
+  "$ROOT_DIR/setup.sh"
+fi
+[[ -x "$PYTHON" ]] || { echo "Unable to prepare the local Python environment." >&2; exit 1; }
 
 QUESTION_TEXT="$(jq -r '.question // empty' "$INPUT_FILE")"
 DESCRIPTION_TEXT="$(jq -r '.description // empty' "$INPUT_FILE")"
