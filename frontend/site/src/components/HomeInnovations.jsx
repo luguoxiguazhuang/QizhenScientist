@@ -62,7 +62,7 @@ const SAFETY_STEPS = [
   { title: '读取研究任务', kicker: 'task.md', text: '探索化学领域多模态模型是否会被看似安全的数据微调成不安全的模型。', output: '研究问题 / 安全性假设' },
   { title: '生成实验计划', kicker: '规划', text: '先构造不安全教师模型，再过滤其安全回答，微调学生模型，最后测试学生模型的安全能力。', output: '四阶段实验计划 / 对照设计' },
   { title: '迭代扫描学习率', kicker: '迭代', text: '扫描不同学习率，直到学生模型出现稳定的不安全行为；实验在 LR=1e-3 时观察到安全回答正确率明显下降。', image: withBase('demos/model-safety/seed-delta.png'), output: 'LR=1e-3 / 安全正确率下降' },
-  { title: '实验结果', kicker: '结果', text: '其一，训练数据逐条通过了语义安全审查，风险仍然完成了传递，说明对训练数据的内容筛选并不构成有效防线；其二，教师输出与学生训练数据均为纯文本，失效却出现在图文混合的问题上，说明风险能够跨越模态边界，在原有数据分布之外显现。由此可确认，部署前的安全检查不能停留在训练数据的内容层面。', image: withBase('demos/model-safety/dual-leg.png'), output: '输出实验结果文档' },
+  { title: '实验结果', kicker: '结果', text: '学生模型在包含文本与图像的多模态实验室安全问题上，不安全回答率达到48.6%，相比之下，未经微调的基线为20.3%，以常规教师生成的安全数据训练的对照学生模型为18.3%。这说明：即使训练数据逐条通过了语义安全审查，风险也完成了传递。', image: withBase('demos/model-safety/dual-leg.png'), output: '输出实验结果文档' },
 ]
 
 const EXPERIMENT_PLAN_SECTIONS = [
@@ -203,7 +203,7 @@ function DemoDialog({ type, onClose }) {
   return <div className="idea-dialog-backdrop" role="presentation" onMouseDown={(event) => event.target === event.currentTarget && onClose()}>
     <section className="demo-dialog" role="dialog" aria-modal="true" aria-labelledby="demo-dialog-title">
       <div className="demo-dialog__header">
-        <div><span className="eyebrow">{isSafety ? '化学模型安全应用' : '启真智能真机实验体系'}</span><h2 id="demo-dialog-title">{isSafety ? '从 task.md 到安全评估' : 'Suzuki 反应条件优化 · 真机闭环'}</h2></div>
+        <div><span className="eyebrow">{isSafety ? '化学模型安全应用' : '启真智能真机实验体系'}</span><h2 id="demo-dialog-title">{isSafety ? '基于机理可解释性的化学模型安全应用与部署' : 'Suzuki 反应条件优化 · 真机闭环'}</h2></div>
         <button className="icon-button" type="button" onClick={onClose} aria-label="关闭"><X size={20} /></button>
       </div>
       <ProgressRail steps={steps} activeIndex={activeIndex} />
