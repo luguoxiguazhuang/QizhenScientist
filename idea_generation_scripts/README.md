@@ -1,6 +1,6 @@
 # Standalone idea-generation scripts
 1.填写.env中的LLM_API_KEY和LLM_BASE_URL。并提供Sciatlas Key。
-2.首次点击前端“生成”或运行 `./run_idea.sh` 时会自动创建本地 Python 环境并安装依赖；也可以提前运行 `./setup.sh`。
+2.首次点击前端“生成”、运行 `./run_idea.sh` 或执行前端 `npm run build` 时，会自动创建本地 Python 环境并安装依赖；也可以提前运行 `./setup.sh`。
 
 ```bash
 ./setup.sh

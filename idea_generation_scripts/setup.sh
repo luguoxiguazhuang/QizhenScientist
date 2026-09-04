@@ -33,8 +33,8 @@ sed -i "s#^-r requirements.txt#-r $REPO_DIR/requirements.txt#" "$RUNTIME_DIR/req
 # OpenAI-compatible Qwen client fail before its first request.
 "$VENV_DIR/bin/python" -m pip install "httpx[socks]"
 
-if [[ ! -f "$ROOT_DIR/.env" ]]; then
-  echo "Missing $ROOT_DIR/.env" >&2
-  exit 1
+if [[ -f "$ROOT_DIR/.env" ]]; then
+  echo "Setup complete. The local .env will be used for idea-generation runs."
+else
+  echo "Setup complete. Configure SCIATLAS_API_KEY and LLM_API_KEY before running ideas."
 fi
-echo "Setup complete. Fill SCIATLAS_API_KEY and LLM_API_KEY in .env, then run ./run_idea.sh."

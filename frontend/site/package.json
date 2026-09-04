@@ -9,6 +9,7 @@
   },
   "scripts": {
     "dev": "vite",
+    "prebuild": "bash ../../idea_generation_scripts/setup.sh",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint .",
