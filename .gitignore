@@ -11,6 +11,7 @@ __pycache__/
 .pytest_cache/
 .runtime/.venv/
 idea_generation_scripts/.runtime/
+idea_generation_scripts/runs/
 node_modules/
 
 # Regenerable experiment checkpoints and raw run data
@@ -25,9 +26,3 @@ demo/labsafety-strict/runs/
 *.pt
 *.pth
 *.bin
-
-# Archived experiment trajectories are repository data, not model weights
-!demo/experiment-iteration/results/**/*.pt
-
-# 本地凭证/账单记录，不上传版本库
-qwen调用凭证/

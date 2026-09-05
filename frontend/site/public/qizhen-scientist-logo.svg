@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
-  <title id="title">启真 Scientist</title>
-  <desc id="desc">启真 Scientist 的 Q 形标志</desc>
-  <rect width="64" height="64" rx="18" fill="#0f766e"/>
-  <circle cx="30" cy="29" r="14" fill="none" stroke="#fff" stroke-width="5"/>
-  <path d="M40 39 50 49" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
-  <circle cx="49" cy="15" r="3" fill="#d8f3ed"/>
-</svg>
