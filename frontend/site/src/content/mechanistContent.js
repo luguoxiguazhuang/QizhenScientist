@@ -86,6 +86,10 @@ export const PAGE_ACCENTS = {
      same value the Database page carries; the two are never on screen together,
      and inventing a fifth hue to avoid that would be worse. */
   home: '#0f766e',
+  /* 真机执行页。用站点自己的 --accent（橙）而不是从某个 case 借一个：这一页讲的
+     是执行链路本身，不属于任何一个研究案例。它和用 --primary（青）的首页、知识
+     图谱页也就此区分开。 */
+  realMachine: '#c4652d',
   cases: CASE_THEMES['subliminal-lab-safety'].accent,
   database: CASE_THEMES['belief-intervention'].accent,
   skills: CASE_THEMES['belief-mechanism'].accent,

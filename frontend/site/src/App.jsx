@@ -21,6 +21,11 @@ import { PAGE_ACCENTS } from './content/mechanistContent.js'
 // page.
 const DatabasePage = lazy(() => import('./components/DatabasePage.jsx'))
 
+// Split for the same reason, though for a much smaller amount: the real-machine
+// page is the only thing that pulls in realMachine.js and its own stylesheet,
+// and none of it belongs in the home-page bundle.
+const RealMachinePage = lazy(() => import('./components/RealMachinePage.jsx'))
+
 // The two case routes carry the site's heaviest content — paper figures, data
 // charts, and four case bodies that are themselves split again behind their own
 // Suspense boundary. Splitting them keeps that weight off the home page, which
@@ -131,6 +136,7 @@ export default function App() {
               <Routes location={location}>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/knowledge-graphs" element={<DatabasePage />} />
+                <Route path="/real-machine" element={<RealMachinePage />} />
                 {/* A real page, not a redirect home. A wrong URL that silently
                     lands on the home page tells the visitor nothing about what
                     happened to the one they asked for. */}

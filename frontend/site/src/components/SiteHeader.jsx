@@ -6,6 +6,7 @@ import './SiteHeader.css'
 const NAV_LINKS = [
   { to: '/', label: '首页', end: true },
   { to: '/knowledge-graphs', label: '知识图谱' },
+  { to: '/real-machine', label: '真机执行' },
 ]
 
 function navLinkClass({ isActive }) {
